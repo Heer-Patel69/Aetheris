@@ -4,25 +4,25 @@ import shutil
 from pathlib import Path
 
 # Config paths
-GLOBAL_UNIVOID_DIR = Path("~/.univoid").expanduser().resolve()
+GLOBAL_AETHERIS_DIR = Path("~/.aetheris").expanduser().resolve()
 GLOBAL_SKILLS_DIR = Path("~/.gemini/config/skills").expanduser().resolve()
 AGENTS_RULES_FILE = Path("~/.gemini/config/AGENTS.md").expanduser().resolve()
 
 SKILL_MODULES = [
-    "univoid-brain-kernel",
-    "univoid-project-discovery",
-    "univoid-routing-engine",
-    "univoid-verification-engine",
-    "univoid-context-engine",
-    "univoid-memory-engine",
-    "univoid-planner"
+    "aetheris-kernel",
+    "aetheris-project-discovery",
+    "aetheris-skill-orchestrator",
+    "aetheris-verification-engine",
+    "aetheris-context-engine",
+    "aetheris-memory-engine",
+    "aetheris-product-intelligence"
 ]
 
 RULES_BLOCK = """
-## UniVoid Brain OS v2.1 — Global Rules
+## Aetheris Kernel v2.1 — Global Rules
 
 When handling any task that involves coding, refactoring, planning, or multi-step execution:
-1. Verify if the `univoid-brain-kernel` skill is available.
+1. Verify if the `aetheris-kernel` skill is available.
 2. If available, always follow the Kernel's pipeline loop (INGEST ➔ DISCOVER ➔ PLAN ➔ ROUTE ➔ EXECUTE ➔ VERIFY ➔ COMMIT ➔ LOG).
 3. Do not bypass verification gates or execute unverified shell commands.
 4. Keep context packages minimal.
@@ -31,7 +31,7 @@ When handling any task that involves coding, refactoring, planning, or multi-ste
 class TransactionalInstaller:
     def __init__(self, source_dir):
         self.source_dir = Path(source_dir).resolve()
-        self.backup_dir = Path("~/.univoid_backup").expanduser().resolve()
+        self.backup_dir = Path("~/.aetheris_backup").expanduser().resolve()
         self.temp_build_dir = self.source_dir / "build"
         
     def _preflight_check(self):
@@ -45,12 +45,12 @@ class TransactionalInstaller:
             
         # Test permission to write in global paths
         try:
-            GLOBAL_UNIVOID_DIR.mkdir(parents=True, exist_ok=True)
-            test_file = GLOBAL_UNIVOID_DIR / ".install_test"
+            GLOBAL_AETHERIS_DIR.mkdir(parents=True, exist_ok=True)
+            test_file = GLOBAL_AETHERIS_DIR / ".install_test"
             test_file.touch()
             test_file.unlink()
         except Exception as e:
-            sys.stderr.write(f"Permission Error: Cannot write to {GLOBAL_UNIVOID_DIR}: {e}\n")
+            sys.stderr.write(f"Permission Error: Cannot write to {GLOBAL_AETHERIS_DIR}: {e}\n")
             return False
             
         print("Preflight check passed.")
@@ -60,12 +60,12 @@ class TransactionalInstaller:
         """
         Backup existing global runtime configurations before overwriting.
         """
-        if GLOBAL_UNIVOID_DIR.exists():
+        if GLOBAL_AETHERIS_DIR.exists():
             print(f"Creating backup of existing global runtime to {self.backup_dir}...")
             try:
                 if self.backup_dir.exists():
                     shutil.rmtree(self.backup_dir)
-                shutil.copytree(GLOBAL_UNIVOID_DIR, self.backup_dir)
+                shutil.copytree(GLOBAL_AETHERIS_DIR, self.backup_dir)
                 print("Backup complete.")
             except Exception as e:
                 sys.stderr.write(f"Warning: Backup failed: {e}. Proceeding with caution.\n")
@@ -88,17 +88,17 @@ class TransactionalInstaller:
         # Restore backup runtime folder
         if self.backup_dir.exists():
             try:
-                if GLOBAL_UNIVOID_DIR.exists():
-                    shutil.rmtree(GLOBAL_UNIVOID_DIR)
-                shutil.copytree(self.backup_dir, GLOBAL_UNIVOID_DIR)
+                if GLOBAL_AETHERIS_DIR.exists():
+                    shutil.rmtree(GLOBAL_AETHERIS_DIR)
+                shutil.copytree(self.backup_dir, GLOBAL_AETHERIS_DIR)
                 print("Rollback complete. Restored original configuration.")
             except Exception as e:
                 sys.stderr.write(f"Error: Rollback failed: {e}. Runtime may be in a corrupted state.\n")
         else:
             # Delete partial runtime
-            if GLOBAL_UNIVOID_DIR.exists():
+            if GLOBAL_AETHERIS_DIR.exists():
                 try:
-                    shutil.rmtree(GLOBAL_UNIVOID_DIR)
+                    shutil.rmtree(GLOBAL_AETHERIS_DIR)
                 except Exception:
                     pass
             print("Rollback finished. Partial files removed.")
@@ -125,12 +125,12 @@ class TransactionalInstaller:
             
             # Create scripts subfolder inside the skill
             scripts_dir = target_skill / "scripts"
-            scripts_dir.mkdir(exist_ok=True)
+            if scripts_dir.exists():
+                shutil.rmtree(scripts_dir)
             
-            # Deploy execution scripts directly to the skill scripts folder (ADR-007)
+            # Deploy execution scripts and packages directly to the skill scripts folder (ADR-007)
             src_src_dir = self.source_dir / "src"
-            for py_script in src_src_dir.glob("*.py"):
-                shutil.copy(py_script, scripts_dir)
+            shutil.copytree(src_src_dir, scripts_dir)
                 
         print("Skills deployed.")
 
@@ -139,28 +139,29 @@ class TransactionalInstaller:
         Create global directories and copy default config templates.
         """
         print("Creating global runtime directories...")
-        (GLOBAL_UNIVOID_DIR / "runtime").mkdir(parents=True, exist_ok=True)
-        (GLOBAL_UNIVOID_DIR / "config").mkdir(parents=True, exist_ok=True)
-        (GLOBAL_UNIVOID_DIR / "logs").mkdir(parents=True, exist_ok=True)
-        (GLOBAL_UNIVOID_DIR / "plugins").mkdir(parents=True, exist_ok=True)
+        (GLOBAL_AETHERIS_DIR / "config").mkdir(parents=True, exist_ok=True)
+        (GLOBAL_AETHERIS_DIR / "logs").mkdir(parents=True, exist_ok=True)
+        (GLOBAL_AETHERIS_DIR / "plugins").mkdir(parents=True, exist_ok=True)
         
-        # Copy core python scripts to the global runtime path
+        # Copy core python scripts recursively to the global runtime path
         src_src_dir = self.source_dir / "src"
-        for py_script in src_src_dir.glob("*.py"):
-            shutil.copy(py_script, GLOBAL_UNIVOID_DIR / "runtime")
+        target_runtime_dir = GLOBAL_AETHERIS_DIR / "runtime"
+        if target_runtime_dir.exists():
+            shutil.rmtree(target_runtime_dir)
+        shutil.copytree(src_src_dir, target_runtime_dir)
             
         # Copy default configs ONLY if they don't exist (preserves user settings)
         src_config_dir = self.source_dir / "config"
         for config_file in src_config_dir.glob("*.yaml"):
-            target_file = GLOBAL_UNIVOID_DIR / "config" / config_file.name
+            target_file = GLOBAL_AETHERIS_DIR / "config" / config_file.name
             if not target_file.exists():
                 shutil.copy(config_file, target_file)
                 
         # Copy schemas
-        (GLOBAL_UNIVOID_DIR / "schemas").mkdir(parents=True, exist_ok=True)
+        (GLOBAL_AETHERIS_DIR / "schemas").mkdir(parents=True, exist_ok=True)
         src_schema_dir = self.source_dir / "schemas"
         for schema_file in src_schema_dir.glob("*.json"):
-            shutil.copy(schema_file, GLOBAL_UNIVOID_DIR / "schemas" / schema_file.name)
+            shutil.copy(schema_file, GLOBAL_AETHERIS_DIR / "schemas" / schema_file.name)
             
         print("Global directories and configurations initialized.")
 
@@ -177,7 +178,7 @@ class TransactionalInstaller:
                 current_rules = f.read()
                 
         # Inject rules only if they do not already exist
-        if "UniVoid Brain OS" not in current_rules:
+        if "Aetheris Kernel" not in current_rules:
             with open(AGENTS_RULES_FILE, "a", encoding="utf-8") as f:
                 f.write(RULES_BLOCK)
             print("Rules injected.")
@@ -202,7 +203,7 @@ class TransactionalInstaller:
                 shutil.rmtree(self.backup_dir)
                 
             print("\n=======================================================")
-            print("UniVoid Brain OS v2.1 installed successfully.")
+            print("Aetheris Kernel v2.1 installed successfully.")
             print("Restart Antigravity to activate the global runtime.")
             print("=======================================================")
             
@@ -222,7 +223,7 @@ if __name__ == "__main__":
     if action == "install" or action == "update":
         installer.install()
     elif action == "uninstall":
-        print("To uninstall, remove '~/.univoid' and skills in '~/.gemini/config/skills/' starting with 'univoid-'.")
+        print("To uninstall, remove '~/.aetheris' and skills in '~/.gemini/config/skills/' starting with 'aetheris-'.")
     else:
         sys.stderr.write(f"Unknown action: {action}\n")
         sys.exit(1)

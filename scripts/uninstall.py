@@ -3,30 +3,30 @@ import sys
 import shutil
 from pathlib import Path
 
-GLOBAL_UNIVOID_DIR = Path("~/.univoid").expanduser().resolve()
+GLOBAL_AETHERIS_DIR = Path("~/.aetheris").expanduser().resolve()
 GLOBAL_SKILLS_DIR = Path("~/.gemini/config/skills").expanduser().resolve()
 AGENTS_RULES_FILE = Path("~/.gemini/config/AGENTS.md").expanduser().resolve()
 
 SKILL_MODULES = [
-    "univoid-brain-kernel",
-    "univoid-project-discovery",
-    "univoid-routing-engine",
-    "univoid-verification-engine",
-    "univoid-context-engine",
-    "univoid-memory-engine",
-    "univoid-planner"
+    "aetheris-kernel",
+    "aetheris-project-discovery",
+    "aetheris-skill-orchestrator",
+    "aetheris-verification-engine",
+    "aetheris-context-engine",
+    "aetheris-memory-engine",
+    "aetheris-product-intelligence"
 ]
 
 def uninstall():
     print("=======================================================")
-    print("UniVoid Brain OS — Uninstaller")
+    print("Aetheris Kernel — Uninstaller")
     print("=======================================================\n")
     
     # 1. Remove global runtime directory
-    if GLOBAL_UNIVOID_DIR.exists():
-        print(f"Removing global runtime directory: {GLOBAL_UNIVOID_DIR}...")
+    if GLOBAL_AETHERIS_DIR.exists():
+        print(f"Removing global runtime directory: {GLOBAL_AETHERIS_DIR}...")
         try:
-            shutil.rmtree(GLOBAL_UNIVOID_DIR)
+            shutil.rmtree(GLOBAL_AETHERIS_DIR)
             print("  ✅ Removed global runtime.")
         except Exception as e:
             sys.stderr.write(f"  ❌ Error removing global runtime: {e}\n")
@@ -50,7 +50,7 @@ def uninstall():
                 content = f.read()
                 
             # Locate rules block and remove it
-            rule_marker = "## UniVoid Brain OS v2.1"
+            rule_marker = "## Aetheris Kernel v2.1"
             if rule_marker in content:
                 parts = content.split(rule_marker)
                 # Keep everything before the marker, and drop the rule block
@@ -65,7 +65,7 @@ def uninstall():
             sys.stderr.write(f"  ❌ Error cleaning AGENTS.md: {e}\n")
             
     print("\n=======================================================")
-    print("Uninstallation complete. UniVoid Brain OS has been removed.")
+    print("Uninstallation complete. Aetheris Kernel has been removed.")
     print("=======================================================")
 
 if __name__ == "__main__":

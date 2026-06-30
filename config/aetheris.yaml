@@ -1,0 +1,37 @@
+version: "2.1.0"
+environment: "production"
+
+timeouts:
+  ingest: 5000
+  discover: 10000
+  plan: 15000
+  route: 5000
+  execute: 60000
+  verify: 30000
+  commit: 10000
+  log: 5000
+
+limits:
+  max_retries_per_task: 3
+  max_telemetry_dir_size_mb: 200
+  max_plugin_hook_execution_ms: 50
+
+paths:
+  global_runtime_dir: "~/.aetheris/runtime"
+  global_config_dir: "~/.aetheris/config"
+  global_log_dir: "~/.aetheris/logs"
+  global_plugin_dir: "~/.aetheris/plugins"
+
+optimization:
+  enabled: true
+  max_context_tokens: 15000
+  cache_dir: "~/.aetheris/cache"
+  index_dir: "~/.aetheris/indexes"
+  default_local_provider: "ollama"
+  local_providers:
+    ollama: "http://localhost:11434"
+    lm_studio: "http://localhost:1234/v1"
+  model_specializations:
+    reasoning: "gemini-1.5-pro"
+    coding: "gemini-1.5-flash"
+    local: "qwen2.5-coder:7b"

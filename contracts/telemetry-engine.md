@@ -33,8 +33,8 @@ The Telemetry & Logging Engine MUST NOT:
 - Telemetry path configuration
 
 ## Outputs
-- Append-only JSONL files in `~/.univoid/brain/logs/`
-- Workspace-scoped logs in `<workspace>/.univoid/telemetry/`
+- Append-only JSONL files in `~/.aetheris/logs/`
+- Workspace-scoped logs in `<workspace>/.aetheris/telemetry/`
 
 ## State
 - Persistent State: Trace files stored on disk

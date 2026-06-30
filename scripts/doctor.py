@@ -4,17 +4,17 @@ import json
 from pathlib import Path
 
 # Paths to verify
-GLOBAL_UNIVOID_DIR = Path("~/.univoid").expanduser().resolve()
+GLOBAL_AETHERIS_DIR = Path("~/.aetheris").expanduser().resolve()
 GLOBAL_SKILLS_DIR = Path("~/.gemini/config/skills").expanduser().resolve()
 
 SKILL_MODULES = [
-    "univoid-brain-kernel",
-    "univoid-project-discovery",
-    "univoid-routing-engine",
-    "univoid-verification-engine",
-    "univoid-context-engine",
-    "univoid-memory-engine",
-    "univoid-planner"
+    "aetheris-kernel",
+    "aetheris-project-discovery",
+    "aetheris-skill-orchestrator",
+    "aetheris-verification-engine",
+    "aetheris-context-engine",
+    "aetheris-memory-engine",
+    "aetheris-product-intelligence"
 ]
 
 class DiagnosticsEngine:
@@ -52,7 +52,7 @@ class DiagnosticsEngine:
             "telemetry.py", "event_bus.py", "plugins.py", "utils.py",
             "skill_scanner.py", "skill_parser.py", "registry_cache.py"
         ]
-        runtime_dir = GLOBAL_UNIVOID_DIR / "runtime"
+        runtime_dir = GLOBAL_AETHERIS_DIR / "runtime"
         
         if not runtime_dir.exists():
             print("  [FAIL] Global runtime directory does not exist.")
@@ -75,16 +75,16 @@ class DiagnosticsEngine:
         """
         print("[3/5] Validating configs & compiling Dynamic Skill Registry...")
         # Import config manager from runtime
-        sys.path.insert(0, str(GLOBAL_UNIVOID_DIR / "runtime"))
+        sys.path.insert(0, str(GLOBAL_AETHERIS_DIR / "runtime"))
         try:
             import time
             from config import ConfigManager
             manager = ConfigManager(self.workspace_path)
             
             # Test loading core configurations
-            configs = ["brain", "models", "gates", "costs", "plugins"]
+            configs = ["aetheris", "models", "gates", "costs", "plugins"]
             for cfg in configs:
-                schema_name = "brain" if cfg == "brain" else cfg
+                schema_name = "aetheris" if cfg == "aetheris" else cfg
                 data = manager.load_config(cfg, schema_name)
                 if not data:
                     print(f"  [FAIL] Config {cfg} failed to load or validate.")
@@ -126,8 +126,8 @@ class DiagnosticsEngine:
         """
         print("[4/5] Testing directory permissions...")
         test_paths = [
-            GLOBAL_UNIVOID_DIR / "logs",
-            self.workspace_path / ".univoid" if self.workspace_path.exists() else None
+            GLOBAL_AETHERIS_DIR / "logs",
+            self.workspace_path / ".aetheris" if self.workspace_path.exists() else None
         ]
         
         for path in test_paths:
@@ -149,7 +149,7 @@ class DiagnosticsEngine:
         Check log directory size limits.
         """
         print("[5/5] Reviewing log sizes...")
-        log_file = GLOBAL_UNIVOID_DIR / "logs/execution-trace.jsonl"
+        log_file = GLOBAL_AETHERIS_DIR / "logs/execution-trace.jsonl"
         if log_file.exists():
             size_mb = log_file.stat().st_size / (1024 * 1024)
             print(f"  [INFO] Current trace log size is {size_mb:.2f} MB.")
@@ -163,7 +163,7 @@ class DiagnosticsEngine:
 
     def run_diagnostics(self):
         print("=======================================================")
-        print("UniVoid Brain OS — Diagnostics (Doctor)")
+        print("Aetheris Kernel — Diagnostics (Doctor)")
         print("=======================================================\n")
         
         results = [

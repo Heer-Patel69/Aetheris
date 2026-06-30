@@ -1,14 +1,14 @@
-# UniVoid Brain OS — System Constitution
+# Aetheris Kernel — System Constitution
 
 **Version**: 2.0.0
 **Status**: RATIFIED
-**Authority**: This document is the supreme governing specification of the UniVoid Brain OS. Every architecture decision record, module contract, configuration schema, test plan, and line of implementation code must be traceable to a principle defined here. If any artifact conflicts with this constitution, the constitution prevails.
+**Authority**: This document is the supreme governing specification of the Aetheris Kernel. Every architecture decision record, module contract, configuration schema, test plan, and line of implementation code must be traceable to a principle defined here. If any artifact conflicts with this constitution, the constitution prevails.
 
 ---
 
 ## Article I — Vision
 
-The UniVoid Brain OS is a permanent intelligence layer for Antigravity.
+The Aetheris Kernel is a permanent intelligence layer for Antigravity.
 
 It is not a prompt. It is not a template. It is not a collection of instructions.
 
@@ -64,7 +64,7 @@ It manages lifecycle, scheduling, memory, and resource allocation. It does not p
 
 ### III.2 — The Runtime is Global
 
-The Brain OS belongs to no project. It survives opening empty folders, cloning new repositories, switching workspaces, restarting Antigravity, and rebooting the operating system. Its installation is global. Its state is partitioned: global brain state, per-project state, and per-session state — each with distinct ownership and lifecycle.
+The Aetheris Kernel belongs to no project. It survives opening empty folders, cloning new repositories, switching workspaces, restarting Antigravity, and rebooting the operating system. Its installation is global. Its state is partitioned: global brain state, per-project state, and per-session state — each with distinct ownership and lifecycle.
 
 ### III.3 — The Runtime Adapts
 
@@ -90,18 +90,14 @@ Every piece of state, every capability, every decision domain has exactly one ow
 
 | Domain | Owner | No Other Module May |
 |---|---|---|
-| Execution lifecycle | Kernel | Start, stop, or reorder pipeline stages |
-| Workspace analysis | Project Discovery | Read workspace files for profiling purposes |
-| File selection for context | Context Engine | Decide what information a task needs |
-| Task decomposition | Planner | Break tasks into subtasks or determine execution order |
-| Model recommendation | LLM Router | Evaluate or recommend model selection |
-| Specialist selection | Specialist Router | Activate or deactivate specialists |
-| Output validation | Verification Engine | Approve or reject specialist outputs |
-| Persistent state | Memory Engine | Read or write project profiles, decisions, or conventions |
-| Token/cost estimation | Cost Optimizer | Estimate resource consumption |
-| Configuration | Configuration Manager | Load, validate, or merge configuration |
-| Extensions | Plugin Manager | Register, activate, or deactivate plugins |
-| Execution logs | Telemetry Engine | Write diagnostic or decision records |
+| Execution lifecycle & recovery | Aetheris Kernel | Start, stop, reorder pipeline steps, or run autonomous rollbacks |
+| Product requirements & tech choices | Product & Architecture Intelligence (PAIE) | Infer user journeys, generate blueprints, or justify tech decisions |
+| Context, indexing & resources | Runtime & Context Intelligence (RCIE) | Index codebase, compile prompt/context, or track host CPU/RAM |
+| Standards & Definition of Done | Engineering Standards & Readiness (ESRE) | Verify OWASP/SOLID rules, audit accessibility, or certify completion |
+| Memory, patterns & benchmarks | Memory, Knowledge & Learning (MKLE) | Persist decisions, store patterns, or save performance profiles |
+| Routing & skill management | Adaptive Orchestration Layer (AOL) | Register, scan, version skills, or route LLM providers |
+| Environment & LLM adapters | Universal Adapter Layer (UAL) | Abstract IDE interfaces or model completions |
+| Command line & SDK interfaces | Runtime SDK & CLI (RSC) | Expose API hooks or execute root CLI parsing |
 
 ### IV.3 — Ownership Transfer
 
@@ -149,7 +145,7 @@ The runtime MUST NOT read `.env` files. The runtime MUST NOT log, display, cache
 
 ### VI.2 — Workspace Boundary
 
-The runtime MUST NOT read, write, or modify files outside the active workspace, the global brain state directory (`~/.univoid/brain/`), and the global skill installation directory (`~/.gemini/config/skills/univoid-*/`). All other paths are forbidden.
+The runtime MUST NOT read, write, or modify files outside the active workspace, the global brain state directory (`~/.aetheris/`), and the global skill installation directory (`~/.gemini/config/skills/aetheris-*/`). All other paths are forbidden.
 
 ### VI.3 — Execution Boundary
 
@@ -199,7 +195,7 @@ The runtime MUST prefer deterministic algorithms over heuristic ones. Scoring fo
 
 ## Article VIII — Coding Principles
 
-These principles govern all implementation code within the Brain OS — Python scripts, configuration parsers, test harnesses, and management tools.
+These principles govern all implementation code within the Aetheris Kernel — Python scripts, configuration parsers, test harnesses, and management tools.
 
 ### VIII.1 — Single Responsibility
 
@@ -318,7 +314,7 @@ This constitution is effective immediately upon creation. All subsequent archite
 The constitution is versioned alongside the runtime. Its version is tracked in the repository's `VERSION` file.
 
 ```
-UniVoid Brain OS System Constitution
+Aetheris Kernel System Constitution
 Version: 2.0.0
 Ratified: 2026-06-30
 ```

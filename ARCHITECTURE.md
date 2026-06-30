@@ -1,116 +1,86 @@
-# UniVoid Brain OS — Architecture
+# Aetheris Kernel — Architecture
 
-**Version**: 2.0.0
+**Version**: 3.0.0
 
 ---
 
 ## System Overview
 
-UniVoid Brain OS is a modular AI orchestration runtime for Antigravity. It coordinates 217 specialized Agency agents through an 8-stage execution pipeline, deployed as a combination of Antigravity skills (LLM-facing instructions), Python scripts (I/O operations), and YAML configuration (model catalogs, routing hints, gate thresholds).
+Aetheris Kernel is an Autonomous Software Engineering Operating System (ASE-OS). It is structured into **8 core engines** that cooperate to automatically discover business requirements, make and record technology decisions, compile context packages, run concurrent task DAGs, handle autonomous build/compile recoveries, and enforce a strict Definition of Done (DoD) before completion.
 
 ## System Diagram
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        BRAIN KERNEL                                 │
-│  Lifecycle management, pipeline orchestration, component dispatch   │
-│  Pipeline: INGEST → DISCOVER → PLAN → ROUTE → EXECUTE → VERIFY    │
-│            → COMMIT → LOG                                          │
-├─────────────────┬───────────────┬───────────────┬───────────────────┤
-│  DISCOVERY      │  ROUTING      │  PLANNING     │  VERIFICATION     │
-│  ├ Scanner.py   │  ├ LLM Router │  ├ Planner    │  ├ Gate Runner    │
-│  ├ Detectors    │  ├ Specialist │  └ Scheduler  │  ├ Exec Review    │
-│  └ Profile Bldr │  └ Provider   │               │  └ Recovery       │
-├─────────────────┴───────────────┴───────────────┴───────────────────┤
-│  CONTEXT ENGINE       │  MEMORY ENGINE       │  COST OPTIMIZER      │
-│  ├ File Selector      │  ├ Profile Store     │  ├ Token Estimator   │
-│  ├ Compressor         │  ├ Decision Log      │  └ Budget Advisor    │
-│  └ Cache              │  └ Convention Cache  │                      │
-├───────────────────────┴──────────────────────┴──────────────────────┤
-│  CONFIG MANAGER  │  PLUGIN MANAGER  │  TELEMETRY   │  INSTALLER     │
-│  ├ Loader        │  ├ Registry      │  ├ Logger    │  ├ Install      │
-│  └ Validator     │  └ Lifecycle     │  └ Doctor    │  ├ Update       │
-│                  │                  │              │  └ Uninstall     │
-└──────────────────┴──────────────────┴──────────────┴─────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│                          AETHERIS KERNEL                               │
+│  DAG Scheduler, worker pool execution, autonomous recovery engine      │
+├───────────────────┬────────────────────┬───────────────────────────────┤
+│  PRODUCT & ARCH   │  RUNTIME & CONTEXT │  STANDARDS &                  │
+│  INTELLIGENCE     │  INTELLIGENCE      │  READINESS (ESRE)             │
+│  ├ Product Disc.  │  ├ Incremental Scan│  ├ Standards Auditor          │
+│  ├ Requirements   │  ├ Semantic Graph  │  └ DoD Readiness Check        │
+│  ├ Architecture   │  ├ Resource Manager│                               │
+│  └ Tech Decisions │  └ Local Enhancer  │                               │
+├───────────────────┴────────────────────┴───────────────────────────────┤
+│  MEMORY, KNOWLEDGE & LEARNING (MKLE)                                   │
+│  ├ Project Memory  ├ Engineering Knowledge  ├ Workflow Memory  ├ Benchmarks│
+├────────────────────────────────────────┬───────────────────────────────┤
+│  ADAPTIVE ORCHESTRATION (AOL)          │  UNIVERSAL ADAPTER (UAL)      │
+│  ├ Skill Router  └ Model Orchestrator  │  ├ IDE Adapter  └Model Adapter│
+└────────────────────────────────────────┴───────────────────────────────┘
 ```
 
 ## Execution Pipeline
 
+Aetheris does not run static linear phases. It compiles goals into dynamic Directed Acyclic Graphs (DAGs) and runs them concurrently:
+
 ```
-User Request → INGEST → DISCOVER → PLAN → ROUTE → EXECUTE → VERIFY → COMMIT → LOG
-                                                      ↑          │
-                                                      └── FAIL ──┘
+Goal → Product Discovery → Architecture Design → DAG Build → Execute DAG ─► ESRE Audit ─► DoD Approved
+                                                                ▲             │
+                                                                └─ RCA & Fix ─┘
 ```
 
-| Stage | Owner | Purpose |
+## Core Subsystems & Responsibilities
+
+| Subsystem | Owner | Primary Purpose |
 |---|---|---|
-| INGEST | Kernel | Classify intent (BUILD/FIX/REFACTOR/ANALYZE/DEPLOY/CREATE) |
-| DISCOVER | Project Discovery | Scan workspace, build/load project profile |
-| PLAN | Planner | Decompose task into ordered, dependency-aware subtasks |
-| ROUTE | LLM Router + Specialist Router | Recommend model, select specialist team |
-| EXECUTE | Selected Specialists | Generate solutions in isolation |
-| VERIFY | Verification Engine | Run 7 quality gates |
-| COMMIT | Memory Engine | Record decisions, present approved result |
-| LOG | Telemetry Engine | Record execution trace |
-
-## Module Boundary Rules
-
-- 12 modules, each with exactly one responsibility
-- No module performs another module's job (Constitution Article II.6)
-- Modules communicate through the Kernel via dispatch, never directly
-- Each module owns specific state (Constitution Article IV)
+| Aetheris Kernel | Core Engine | Lifecycle management, concurrent task DAG scheduling, autonomous recovery rollbacks |
+| PAIE | Product & Architecture | Product Discovery Loop (uncertainty mapping), requirements generation, technology decisions |
+| RCIE | Runtime & Context | Incremental scanning, semantic graph relationships, resource management, local model enhancement |
+| ESRE | Standards & Readiness | Enforce coding principles (SOLID, OWASP, Clean), WCAG accessibility audits, verify DoD |
+| MKLE | Memory & Knowledge | Persistent storage for project config, reusable engineering patterns, execution history |
+| AOL | Adaptive Orchestration | Dynamic registry scanner, versioning, routing of skills and LLM provider queries |
+| UAL | Universal Adapter | Abstract IDE platforms (Cursor, Antigravity, CLI) and model endpoint clients |
 
 ## State Ownership Map
 
 | State | Owner | Location |
 |---|---|---|
-| Global brain config | Config Manager | `~/.univoid/brain/config/` |
-| Project profiles | Memory Engine | `<workspace>/.univoid/memory/` |
-| Architectural decisions | Memory Engine | `<workspace>/.univoid/memory/decisions.jsonl` |
-| Conventions cache | Memory Engine | `<workspace>/.univoid/memory/conventions.yaml` |
-| Execution logs | Telemetry Engine | `~/.univoid/brain/logs/` |
-| Plugin registry | Plugin Manager | `~/.univoid/brain/plugins.yaml` |
-| Session state | Kernel | In-memory only |
+| Global core config | Config Manager | `~/.aetheris/config/aetheris.yaml` |
+| Project profiles & memory | MKLE | `<workspace>/.aetheris/memory/project-profile.yaml` |
+| Architectural decisions | MKLE | `<workspace>/.aetheris/memory/decisions.jsonl` |
+| Technology trade-off logs | PAIE / MKLE | `<workspace>/.aetheris/memory/tech-decisions.jsonl` |
+| Reusable engineering patterns | MKLE | `~/.aetheris/knowledge/` |
+| Telemetry & runtime benchmarks | MKLE | `~/.aetheris/benchmarks/` |
 
 ## Component-to-Implementation Mapping
 
-| Module | Skill (.md) | Script (.py) | Config (.yaml) |
-|---|---|---|---|
-| Kernel | ✅ | — | — |
-| Project Discovery | ✅ | ✅ scanner.py | — |
-| Context Engine | ✅ | ✅ context.py | — |
-| Planner | ✅ | — | — |
-| LLM Router | ✅ | — | ✅ models.yaml |
-| Specialist Router | ✅ | — | ✅ specialists.yaml |
-| Verification Engine | ✅ | — | ✅ gates.yaml |
-| Memory Engine | ✅ | ✅ memory.py | — |
-| Cost Optimizer | ✅ | — | ✅ costs.yaml |
-| Config Manager | — | ✅ config.py | ✅ brain.yaml |
-| Plugin Manager | ✅ | ✅ plugins.py | ✅ plugins.yaml |
-| Telemetry Engine | — | ✅ telemetry.py | — |
-
-## Dependency Graph
-
-```
-Config Manager ← (everything depends on config)
-Telemetry Engine ← (everything should log)
-Memory Engine ← Discovery, Routing
-Project Discovery ← Context Engine, Specialist Router
-Context Engine ← Planner
-Planner ← Specialist Router
-LLM Router ← Cost Optimizer
-Specialist Router ← Cost Optimizer, Project Discovery
-Verification Engine ← Config (gates.yaml)
-Plugin Manager ← Config
-Kernel ← ALL (implemented last)
-```
+| Engine | Namespace (under `src/`) | Entry points / Wrappers |
+|---|---|---|
+| Kernel | `kernel/` | `event_bus.py`, `telemetry.py`, `utils.py` |
+| PAIE | `intelligence/` | `scanner.py`, `context.py` (wrappers) |
+| RCIE | `intelligence/` | `scanner.py`, `context.py` (wrappers) |
+| ESRE | `validation/` | `readiness.py` (readiness) |
+| MKLE | `storage/` | `memory.py` (wrapper for storage manager) |
+| AOL | `orchestration/` | `config.py`, `plugins.py`, `registry_cache.py`, `skill_scanner.py` |
+| UAL | `adapters/` | `ide.py`, `model.py` |
 
 ## Configuration Hierarchy
 
 ```
-Level 1 — brain-os/config/*.yaml (shipped defaults, lowest priority)
-Level 2 — ~/.univoid/brain/config/*.yaml (user overrides)
-Level 3 — <workspace>/.univoid/config/*.yaml (project overrides)
+Level 1 — aetheris/config/*.yaml (shipped defaults, lowest priority)
+Level 2 — ~/.aetheris/config/*.yaml (user overrides)
+Level 3 — <workspace>/.aetheris/config/*.yaml (project overrides)
 Level 4 — Runtime overrides (highest priority, not persisted)
 ```
 
@@ -119,6 +89,6 @@ Level 4 — Runtime overrides (highest priority, not persisted)
 | Constraint | Impact | Workaround |
 |---|---|---|
 | No programmatic model switching | LLM Router is advisory | Recommend model in trace; adapt to active model |
-| No request interception | Brain OS activation not guaranteed | Global AGENTS.md as fallback instruction |
+| No request interception | Aetheris Kernel activation not guaranteed | Global AGENTS.md as fallback instruction |
 | No token count access | Cost optimization is estimation-based | Advisory cost tracking, not metering |
 | No background processes | No persistent daemon | Scripts invoked on-demand; state persists via filesystem |

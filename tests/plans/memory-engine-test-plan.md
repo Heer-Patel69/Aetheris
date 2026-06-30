@@ -7,7 +7,7 @@ This test plan covers cache read/write performance, fingerprint checks, corrupti
 
 ### 2.1 — Cache Read/Write (Pass)
 - **Condition**: Read and write project profiles and decisions.
-- **Expected Outcome**: Profile is serialized and stored in `.univoid/memory/project-profile.yaml` and retrieved in <50ms.
+- **Expected Outcome**: Profile is serialized and stored in `.aetheris/memory/project-profile.yaml` and retrieved in <50ms.
 
 ### 2.2 — Fingerprint Validation (Pass)
 - **Condition**: Calculate a fingerprint and compare it against the cached fingerprint in a workspace.
@@ -18,7 +18,7 @@ This test plan covers cache read/write performance, fingerprint checks, corrupti
 - **Expected Outcome**: Memory Engine catches the parsing exception, deletes the corrupted file, dispatches a `CacheCorrupted` event, and allows the Discovery Engine to rebuild state.
 
 ### 2.4 — Workspace Isolation (Security / Boundary)
-- **Condition**: Attempt to read memory state from a sibling workspace path using directory traversal (`../../other-project/.univoid/`).
+- **Condition**: Attempt to read memory state from a sibling workspace path using directory traversal (`../../other-project/.aetheris/`).
 - **Expected Outcome**: Memory Engine blocks the request, logs path violation, and returns permission error.
 
 ## 3. Performance Benchmarks

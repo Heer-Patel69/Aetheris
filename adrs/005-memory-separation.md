@@ -7,16 +7,16 @@ APPROVED
 AI memory systems often suffer from "context contamination" — project-specific details leaking into the global system, or session-level data polluting the long-term project history. We must partition memory into strict layers with distinct lifecycles and invalidation triggers.
 
 ## Decision
-We partition the Brain OS memory system into three isolated domains:
+We partition the Aetheris Kernel memory system into three isolated domains:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ GLOBAL BRAIN STATE (~/.univoid/brain/)                     │
+│ GLOBAL BRAIN STATE (~/.aetheris/)                     │
 │ Lifetime: Permanent. Contains: user settings, usage logs   │
 └──────────────────────────────┬──────────────────────────────┘
                                ▼
 ┌─────────────────────────────────────────────────────────────┐
-│ PROJECT STATE (<workspace>/.univoid/memory/)                │
+│ PROJECT STATE (<workspace>/.aetheris/memory/)                │
 │ Lifetime: Git-lifecycle. Contains: ADR log, profile cache   │
 └──────────────────────────────┬──────────────────────────────┘
                                ▼
@@ -26,11 +26,11 @@ We partition the Brain OS memory system into three isolated domains:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-1. **Global Memory (`~/.univoid/brain/`)**:
+1. **Global Memory (`~/.aetheris/`)**:
    - Holds metrics (tokens used, run counts), provider profiles, and plugin configurations.
    - Project-specific paths, codebase names, or source code snippets must **never** be written to global memory.
 
-2. **Project Memory (`<workspace>/.univoid/memory/`)**:
+2. **Project Memory (`<workspace>/.aetheris/memory/`)**:
    - Holds the cached Project Profile, the append-only `decisions.jsonl` (ADRs), and `conventions.yaml`.
    - **Staleness Fingerprint**: Calculated as a SHA-256 hash of the directory structure and critical configuration files (e.g., `package.json`, `supabase/config.toml`, `next.config.js`).
    - On workspace initialization, the Memory Engine compares the current fingerprint against the cached fingerprint in `project-profile.yaml`. If they differ, the cache is marked stale and the Discovery Engine is re-run.

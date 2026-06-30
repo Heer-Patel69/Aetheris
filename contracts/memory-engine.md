@@ -28,7 +28,7 @@ The Memory Engine MUST NOT:
 - Execute external executables or commands.
 
 ## Inputs
-- State storage paths (Global: `~/.univoid/brain/`, Project: `<workspace>/.univoid/memory/`)
+- State storage paths (Global: `~/.aetheris/`, Project: `<workspace>/.aetheris/memory/`)
 - Project profiles, ADR records, and coding conventions
 - Workspace fingerprint hashes
 
@@ -85,7 +85,7 @@ The Memory Engine MUST NOT:
 - State schema version must match SemVer version contract
 
 ## Security Rules
-- Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.univoid or workspace/.univoid).
+- Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).
 - Redact secrets before serializing memory fields.
 - Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.
 

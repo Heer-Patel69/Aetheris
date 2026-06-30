@@ -1,10 +1,10 @@
 # Module: Kernel
 
 ## Header
-- Name: univoid-brain-kernel
+- Name: aetheris-kernel
 - Version: 2.1.0
 - Purpose: Coordinate the execution lifecycle without performing any specialist work.
-- Owner: Brain OS
+- Owner: Aetheris Kernel
 - Dependencies: None (all other modules depend on Kernel)
 - Security Level: CRITICAL
 - Performance Target: <100ms overhead per pipeline stage dispatch.
@@ -98,7 +98,7 @@ The Kernel MUST NOT:
 ## Security Rules
 - Never execute user-provided code.
 - Never read files outside the active workspace.
-- Never modify the Brain OS installation.
+- Never modify the Aetheris Kernel installation.
 - Never expose session state to other sessions.
 - Never bypass the verification stage.
 

@@ -7,7 +7,7 @@ This test plan covers the verification of writing, masking, and rotating trace l
 
 ### 2.1 — Successful Trace Write (Pass)
 - **Condition**: Dispatch pipeline stage events from Kernel.
-- **Expected Outcome**: Structured JSONL log records are written to `~/.univoid/brain/logs/execution-trace.jsonl` immediately after each stage completes. Log records contain valid session IDs and JSON structures.
+- **Expected Outcome**: Structured JSONL log records are written to `~/.aetheris/logs/execution-trace.jsonl` immediately after each stage completes. Log records contain valid session IDs and JSON structures.
 
 ### 2.2 — Path Masking Verification (Pass)
 - **Condition**: Pass file system paths containing username folders (e.g. `C:\Users\heerp\project\`) to the logger.

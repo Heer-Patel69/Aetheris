@@ -1,4 +1,4 @@
-# UniVoid Brain OS — Next Session Steps
+# Aetheris Kernel — Next Session Steps
 
 **Version**: 2.0.0
 **Target Phase**: Phase 2 — Module Contracts
@@ -12,16 +12,16 @@ In the next session, you must specify the formal **Module Contracts** for all 12
 ## Prerequisites
 
 Read the following files from the repository root to recover full context:
-1. [00_SYSTEM_CONSTITUTION.md](file:///c:/AI/Agency%20owner/brain-os/00_SYSTEM_CONSTITUTION.md) — The supreme governing design philosophy and constraints.
-2. [PROJECT_STATE.md](file:///c:/AI/Agency%20owner/brain-os/PROJECT_STATE.md) — The active tracker showing Phase status.
-3. [DECISIONS.md](file:///c:/AI/Agency%20owner/brain-os/DECISIONS.md) — Approved D-001 through D-010 decisions and ADRs 001-010.
-4. All files in the [adrs/](file:///c:/AI/Agency%20owner/brain-os/adrs) folder.
+1. [00_SYSTEM_CONSTITUTION.md](file:///c:/AI/Agency%20owner/aetheris/00_SYSTEM_CONSTITUTION.md) — The supreme governing design philosophy and constraints.
+2. [PROJECT_STATE.md](file:///c:/AI/Agency%20owner/aetheris/PROJECT_STATE.md) — The active tracker showing Phase status.
+3. [DECISIONS.md](file:///c:/AI/Agency%20owner/aetheris/DECISIONS.md) — Approved D-001 through D-010 decisions and ADRs 001-010.
+4. All files in the [adrs/](file:///c:/AI/Agency%20owner/aetheris/adrs) folder.
 
 ---
 
 ## Action Plan — Phase 2: Module Contracts
 
-You must generate 12 markdown files under `brain-os/contracts/`.
+You must generate 12 markdown files under `aetheris/contracts/`.
 
 ### 1. Contract Template
 
@@ -92,18 +92,18 @@ What verifies correct operation.
 
 Write the 12 contracts in this sequence. Review each against the System Constitution before proceeding:
 
-1. `brain-os/contracts/config-manager.md`
-2. `brain-os/contracts/telemetry-engine.md`
-3. `brain-os/contracts/memory-engine.md`
-4. `brain-os/contracts/project-discovery.md`
-5. `brain-os/contracts/context-engine.md`
-6. `brain-os/contracts/planner.md`
-7. `brain-os/contracts/llm-router.md`
-8. `brain-os/contracts/specialist-router.md`
-9. `brain-os/contracts/cost-optimizer.md`
-10. `brain-os/contracts/verification-engine.md`
-11. `brain-os/contracts/plugin-manager.md`
-12. `brain-os/contracts/kernel.md` (LAST)
+1. `aetheris/contracts/config-manager.md`
+2. `aetheris/contracts/telemetry-engine.md`
+3. `aetheris/contracts/memory-engine.md`
+4. `aetheris/contracts/project-discovery.md`
+5. `aetheris/contracts/context-engine.md`
+6. `aetheris/contracts/planner.md`
+7. `aetheris/contracts/llm-router.md`
+8. `aetheris/contracts/specialist-router.md`
+9. `aetheris/contracts/cost-optimizer.md`
+10. `aetheris/contracts/verification-engine.md`
+11. `aetheris/contracts/plugin-manager.md`
+12. `aetheris/contracts/kernel.md` (LAST)
 
 ### 3. Verification
 

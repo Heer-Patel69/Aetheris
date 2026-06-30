@@ -1,5 +1,5 @@
 ---
-name: univoid-routing-engine
+name: aetheris-skill-orchestrator
 description: Scoring and selection engine for LLM models and specialized Agency agents.
 metadata:
   version: v2
@@ -27,4 +27,3 @@ When routing is dispatched:
 
 > [!NOTE]
 > Specialist routing is dynamic. Keep teams minimal. Dynamically adapt team size based on task complexity.
-

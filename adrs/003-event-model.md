@@ -37,5 +37,5 @@ We implement a **Stateless Event Propagation Model** managed by the Kernel durin
 - Debugging is simple because the entire event stream is captured sequentially in the telemetry log.
 
 ## Alternatives Considered
-- **File-based Event Queue**: Writing events to an append-only JSON file at `~/.univoid/brain/events.json` and polling it. *Rejected* because it causes excessive disk I/O, risks race conditions on concurrent executions, and is unnecessary since all execution is orchestrated sequentially by the Kernel.
+- **File-based Event Queue**: Writing events to an append-only JSON file at `~/.aetheris/events.json` and polling it. *Rejected* because it causes excessive disk I/O, risks race conditions on concurrent executions, and is unnecessary since all execution is orchestrated sequentially by the Kernel.
 - **Direct Module Invocation**: Allowing Python scripts to directly import and call functions from other scripts. *Rejected* because it creates a monolithic codebase and violates the single responsibility principle.

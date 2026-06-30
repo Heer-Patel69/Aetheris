@@ -1,5 +1,5 @@
 ---
-name: univoid-planner
+name: aetheris-product-intelligence
 description: Task decomposition, sequencing, and dependency mapping engine.
 metadata:
   version: v2

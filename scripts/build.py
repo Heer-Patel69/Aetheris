@@ -55,7 +55,7 @@ class SkillBuilder:
 
     def build_all(self):
         print("=======================================================")
-        print("UniVoid Brain OS — Compiler (Build)")
+        print("Aetheris Kernel — Compiler (Build)")
         print("=======================================================\n")
         
         skills_dir = self.source_dir / "skills"

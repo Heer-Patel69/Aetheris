@@ -1,6 +1,6 @@
-# UniVoid Brain OS — Memory State
+# Aetheris Kernel — Memory State
 
-**Version**: 2.0.0
+**Version**: 3.0.0
 **Project**: Permanent AI Orchestration Runtime for Antigravity
 
 ---
@@ -29,3 +29,4 @@
 8. **Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).
 9. **Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).
 10. **Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).
+11. **Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).

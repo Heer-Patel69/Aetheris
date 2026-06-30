@@ -28,11 +28,11 @@ The Configuration Manager MUST NOT:
 - Store runtime session state.
 
 ## Inputs
-- Default config files: `brain-os/config/*.yaml`
-- User global config folder: `~/.univoid/brain/config/*.yaml`
-- Project config folder: `<workspace>/.univoid/config/*.yaml`
+- Default config files: `aetheris/config/*.yaml`
+- User global config folder: `~/.aetheris/config/*.yaml`
+- Project config folder: `<workspace>/.aetheris/config/*.yaml`
 - Runtime overrides passed via command-line options
-- Config schemas: `brain-os/schemas/*.schema.json`
+- Config schemas: `aetheris/schemas/*.schema.json`
 
 ## Outputs
 - Validated, merged configuration object (JSON/dictionary)

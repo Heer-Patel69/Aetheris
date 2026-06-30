@@ -4,7 +4,7 @@
 APPROVED
 
 ## Context
-The UniVoid Brain OS runtime needs to be highly modular to prevent context window exhaustion and ensure maintainability. We need to clearly define the boundaries of a "module" and establish rules for when logic belongs in the LLM instruction layer (Skills/References) versus the execution layer (Python scripts).
+The Aetheris Kernel runtime needs to be highly modular to prevent context window exhaustion and ensure maintainability. We need to clearly define the boundaries of a "module" and establish rules for when logic belongs in the LLM instruction layer (Skills/References) versus the execution layer (Python scripts).
 
 ## Decision
 We establish a strict tripartite architectural structure for every module:

@@ -1,8 +1,8 @@
-# UniVoid Brain OS — Project State
+# Aetheris Kernel — Project State
 
 **Version**: 3.0.0
-**Last Updated**: 2026-06-30T21:15:00+05:30
-**Current Phase**: PRODUCTION READY (v3.0 Dynamic Agency Integration Active)
+**Last Updated**: 2026-07-01T00:46:00+05:30
+**Current Phase**: PRODUCTION READY (v3.0 Modular ASE-OS Architecture Active)
 
 ---
 
@@ -27,10 +27,10 @@
 
 | Artifact | Path | Size |
 |---|---|---|
-| System Constitution | `brain-os/00_SYSTEM_CONSTITUTION.md` | 16,306 bytes |
-| VERSION | `brain-os/VERSION` | 6 bytes |
+| System Constitution | `aetheris/00_SYSTEM_CONSTITUTION.md` | 16,306 bytes |
+| VERSION | `aetheris/VERSION` | 6 bytes |
 | 217 Agency Skills (installed) | `~/.gemini/config/skills/agency-*` | ~2 MB total |
-| Brain OS v1.0 Skill (to be replaced) | `~/.gemini/config/skills/univoid-brain-os/` | 33,861 bytes |
+| Aetheris Kernel v1.0 Skill (to be replaced) | `~/.gemini/config/skills/aetheris-aetheris/` | 33,861 bytes |
 
 ## Active Blockers
 
@@ -39,8 +39,8 @@ None. Phase 1 can begin immediately.
 ## Known Issues
 
 1. **bash unavailable** — Windows system, all scripts must be Python
-2. **v1.0 still installed** — `univoid-brain-os` skill must be removed when v2.0 installs
-3. **No global AGENTS.md** — Installer must create it for Brain OS activation
+2. **v1.0 still installed** — `aetheris-brain-os` skill must be removed when v2.0 installs
+3. **No global AGENTS.md** — Installer must create it for Aetheris Kernel activation
 
 ## Environment
 
@@ -51,4 +51,4 @@ None. Phase 1 can begin immediately.
 - Global Skills: `C:\Users\heerp\.gemini\config\skills\`
 - App Data: `C:\Users\heerp\.gemini\antigravity-ide\`
 - Workspace: `c:\AI\Agency owner\`
-- Brain OS Source: `c:\AI\Agency owner\brain-os\`
+- Aetheris Kernel Source: `c:\AI\Agency owner\aetheris\`

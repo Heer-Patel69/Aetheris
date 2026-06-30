@@ -1,6 +1,6 @@
 ---
-name: univoid-project-discovery
-description: Workspace directory sweep and framework detection engine for UniVoid Brain OS.
+name: aetheris-project-discovery
+description: Workspace directory sweep and framework detection engine for Aetheris Kernel.
 metadata:
   version: v2
   patch: 2.1.0
@@ -20,7 +20,7 @@ When triggered or dispatched by the Kernel:
    - Languages and framework targets
    - Conventions (naming conventions, styling libraries, testing frameworks)
    - Configuration hashes (fingerprint)
-4. Record findings and pass the Project Profile to the Memory Engine to cache in `.univoid/memory/project-profile.yaml`.
+4. Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.
 
 ---
 

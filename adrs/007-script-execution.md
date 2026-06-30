@@ -14,7 +14,7 @@ We establish the following standard contract for all executable Python scripts i
    - The LLM invokes them using the `run_command` tool.
    - Example invocation command line:
      ```powershell
-     python "C:\Users\heerp\.gemini\config\skills\univoid-project-discovery\scripts\scanner.py" --workspace "c:\AI\Agency owner"
+     python "C:\Users\heerp\.gemini\config\skills\aetheris-project-discovery\scripts\scanner.py" --workspace "c:\AI\Agency owner"
      ```
 
 2. **Input Contract**:

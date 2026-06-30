@@ -16,7 +16,7 @@ We identify and work around four key platform constraints:
 ### 2. No Request Interception Hooks
 - **Constraint**: Antigravity does not run a daemon that intercepts every user prompt before the model reads it.
 - **Workaround**: We use two hooks:
-  - A global rules file `~/.gemini/config/AGENTS.md` which instructs the model to check if `univoid-brain-kernel` is present and follow its pipeline loop.
+  - A global rules file `~/.gemini/config/AGENTS.md` which instructs the model to check if `aetheris-kernel` is present and follow its pipeline loop.
   - The Kernel instruction set, which forces the LLM to process every input through the 8 stages sequentially.
 
 ### 3. No Direct Token or Cost Metering

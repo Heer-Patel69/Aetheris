@@ -14,7 +14,7 @@ The Plugin Manager exists solely to safely load and coordinate runtime extension
 
 ## Responsibilities
 - Register external plugins and validate their `manifest.yaml` definitions.
-- Enforce version compatibility checks between plugins and the Brain OS master version.
+- Enforce version compatibility checks between plugins and the Aetheris Kernel master version.
 - Expose hooks for plugins to subscribe to pipeline stages (e.g., pre-DISCOVER, post-VERIFY).
 - Manage plugin state lifetimes (Loaded, Active, Disabled, Error).
 - Run diagnostic health checks on plugins during startup.
@@ -28,7 +28,7 @@ The Plugin Manager MUST NOT:
 - Modify the global configurations list without validation.
 
 ## Inputs
-- Global plugin registry file: `~/.univoid/brain/plugins.yaml`
+- Global plugin registry file: `~/.aetheris/plugins.yaml`
 - Individual plugin directory paths containing `manifest.yaml` and source code
 - Pipeline hook registration requests
 
@@ -68,7 +68,7 @@ The Plugin Manager MUST NOT:
   Publish PluginLoadFailed -> reject plugin -> log error to telemetry -> continue loading remaining plugins
 - If plugin throws exception during hook execution:
   Catch exception -> publish PluginDisabled -> mark plugin status as "Error" -> bypass hook -> notify telemetry -> continue
-- If plugin version incompatible with Brain OS version:
+- If plugin version incompatible with Aetheris Kernel version:
   Log version conflict -> disable plugin -> publish PluginLoadFailed -> continue
 
 ## Quality Standards
@@ -78,7 +78,7 @@ The Plugin Manager MUST NOT:
 
 ## Security Rules
 - Every plugin must declare its requested permissions in `manifest.yaml`.
-- Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.univoid/`.
+- Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.
 - Never load or execute plugin binaries (DLLs, EXEs) — plugins must be Python-only source modules.
 
 ## Recovery Strategy

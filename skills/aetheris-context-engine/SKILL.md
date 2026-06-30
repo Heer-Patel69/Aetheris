@@ -1,5 +1,5 @@
 ---
-name: univoid-context-engine
+name: aetheris-context-engine
 description: Context selection, token optimization, and code compression engine.
 metadata:
   version: v2

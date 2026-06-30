@@ -1,5 +1,5 @@
 ---
-name: univoid-verification-engine
+name: aetheris-verification-engine
 description: Quality gates auditor and verification coordinator for specialist outputs.
 metadata:
   version: v2

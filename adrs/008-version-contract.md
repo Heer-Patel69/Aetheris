@@ -4,13 +4,13 @@
 APPROVED
 
 ## Context
-As the Brain OS runtime evolves, changes to configuration formats, memory schemas, and script contracts can introduce bugs if versions mismatch. We need a clear contract for how versions are defined, validated, and managed across the runtime components.
+As the Aetheris Kernel runtime evolves, changes to configuration formats, memory schemas, and script contracts can introduce bugs if versions mismatch. We need a clear contract for how versions are defined, validated, and managed across the runtime components.
 
 ## Decision
 We enforce a strict versioning policy based on **Semantic Versioning 2.0.0 (SemVer)**:
 
 1. **Master Version**:
-   - The master version is defined in a single file: `brain-os/VERSION` (currently `2.0.0`).
+   - The master version is defined in a single file: `aetheris/VERSION` (currently `2.0.0`).
    - Every skill `SKILL.md` must declare this version in its frontmatter metadata block:
      ```yaml
      metadata:

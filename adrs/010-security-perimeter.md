@@ -13,11 +13,11 @@ We enforce a strict **Security Perimeter** for all modules, scripts, and skills:
    - **Allowed Read Areas**:
      - The active workspace directory (recursive).
      - The global configurations folder (`~/.gemini/config/`).
-     - The global state directory (`~/.univoid/brain/`).
+     - The global state directory (`~/.aetheris/`).
    - **Allowed Write Areas**:
-     - The project state folder (`<workspace>/.univoid/`).
-     - The global state folder (`~/.univoid/brain/`).
-     - The global skill installation folder (`~/.gemini/config/skills/univoid-*/`) during installation/updates only.
+     - The project state folder (`<workspace>/.aetheris/`).
+     - The global state folder (`~/.aetheris/`).
+     - The global skill installation folder (`~/.gemini/config/skills/aetheris-*/`) during installation/updates only.
    - **Forbidden Areas**: All other paths are strictly off-limits. No reading home directories, system temporary files, or other repositories.
 
 2. **Secret Separation Invariant**:
