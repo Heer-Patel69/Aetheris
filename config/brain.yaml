@@ -1,0 +1,23 @@
+version: "2.1.0"
+environment: "production"
+
+timeouts:
+  ingest: 5000
+  discover: 10000
+  plan: 15000
+  route: 5000
+  execute: 60000
+  verify: 30000
+  commit: 10000
+  log: 5000
+
+limits:
+  max_retries_per_task: 3
+  max_telemetry_dir_size_mb: 200
+  max_plugin_hook_execution_ms: 50
+
+paths:
+  global_runtime_dir: "~/.univoid/brain/runtime"
+  global_config_dir: "~/.univoid/brain/config"
+  global_log_dir: "~/.univoid/brain/logs"
+  global_plugin_dir: "~/.univoid/brain/plugins"

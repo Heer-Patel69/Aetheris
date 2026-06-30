@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PluginsConfigSchema",
+  "type": "object",
+  "properties": {
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+          "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+          "enabled": { "type": "boolean", "default": true },
+          "path": { "type": "string" },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["read_workspace", "write_memory", "execute_scripts", "read_config"]
+            }
+          },
+          "hooks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "stage": {
+                  "type": "string",
+                  "enum": ["INGEST", "DISCOVER", "PLAN", "ROUTE", "EXECUTE", "VERIFY", "COMMIT", "LOG"]
+                },
+                "priority": { "type": "integer", "minimum": 1, "maximum": 100, "default": 50 }
+              },
+              "additionalProperties": false,
+              "required": ["stage", "priority"]
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": ["name", "version", "enabled", "path", "permissions", "hooks"]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["plugins"]
+}

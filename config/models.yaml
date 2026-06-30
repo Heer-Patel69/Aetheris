@@ -1,0 +1,48 @@
+gemini-3.5-flash:
+  provider: "google"
+  context_window: 1000000
+  strengths:
+    - "speed"
+    - "cost"
+    - "simple code edits"
+    - "structural scanning"
+  weaknesses:
+    - "complex reasoning"
+    - "architecture planning"
+  cost_per_1k_input_tokens: 0.0001
+  cost_per_1k_output_tokens: 0.0003
+  recommended_for:
+    - "trivial"
+    - "moderate"
+
+claude-opus-4.6:
+  provider: "anthropic"
+  context_window: 200000
+  strengths:
+    - "deep reasoning"
+    - "security reviews"
+    - "refactoring"
+    - "architecture planning"
+  weaknesses:
+    - "latency"
+    - "cost"
+  cost_per_1k_input_tokens: 0.015
+  cost_per_1k_output_tokens: 0.075
+  recommended_for:
+    - "complex"
+    - "architectural"
+
+gemini-2.5-pro:
+  provider: "google"
+  context_window: 1000000
+  strengths:
+    - "balanced reasoning"
+    - "tool execution"
+    - "context window depth"
+  weaknesses:
+    - "cost is moderate"
+  cost_per_1k_input_tokens: 0.00125
+  cost_per_1k_output_tokens: 0.00375
+  recommended_for:
+    - "moderate"
+    - "complex"

@@ -1,0 +1,23 @@
+gates:
+  architecture:
+    strictness: "moderate"
+    fail_on_unknown_imports: true
+    fail_on_new_dependencies: false
+  security:
+    strictness: "strict"
+    block_hardcoded_secrets: true
+    block_sql_injection: true
+    block_xss_injection: true
+  performance:
+    strictness: "moderate"
+    warn_on_n2_algorithms: true
+  maintainability:
+    strictness: "moderate"
+    require_type_hints: true
+    require_unit_tests: false
+  accessibility:
+    strictness: "off"
+  business:
+    strictness: "moderate"
+  documentation:
+    strictness: "moderate"

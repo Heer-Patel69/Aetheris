@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GatesConfigSchema",
+  "type": "object",
+  "properties": {
+    "gates": {
+      "type": "object",
+      "properties": {
+        "architecture": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] },
+            "fail_on_unknown_imports": { "type": "boolean" },
+            "fail_on_new_dependencies": { "type": "boolean" }
+          },
+          "additionalProperties": false,
+          "required": ["strictness", "fail_on_unknown_imports", "fail_on_new_dependencies"]
+        },
+        "security": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] },
+            "block_hardcoded_secrets": { "type": "boolean" },
+            "block_sql_injection": { "type": "boolean" },
+            "block_xss_injection": { "type": "boolean" }
+          },
+          "additionalProperties": false,
+          "required": ["strictness", "block_hardcoded_secrets", "block_sql_injection", "block_xss_injection"]
+        },
+        "performance": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] },
+            "warn_on_n2_algorithms": { "type": "boolean" }
+          },
+          "additionalProperties": false,
+          "required": ["strictness", "warn_on_n2_algorithms"]
+        },
+        "maintainability": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] },
+            "require_type_hints": { "type": "boolean" },
+            "require_unit_tests": { "type": "boolean" }
+          },
+          "additionalProperties": false,
+          "required": ["strictness", "require_type_hints", "require_unit_tests"]
+        },
+        "accessibility": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] }
+          },
+          "additionalProperties": false,
+          "required": ["strictness"]
+        },
+        "business": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] }
+          },
+          "additionalProperties": false,
+          "required": ["strictness"]
+        },
+        "documentation": {
+          "type": "object",
+          "properties": {
+            "strictness": { "type": "string", "enum": ["strict", "moderate", "off"] }
+          },
+          "additionalProperties": false,
+          "required": ["strictness"]
+        }
+      },
+      "additionalProperties": false,
+      "required": ["architecture", "security", "performance", "maintainability", "accessibility", "business", "documentation"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["gates"]
+}

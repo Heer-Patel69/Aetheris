@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ModelsConfigSchema",
+  "type": "object",
+  "patternProperties": {
+    "^[a-zA-Z0-9\\-_\\.]+$": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": ["google", "anthropic", "openai", "custom"]
+        },
+        "context_window": {
+          "type": "integer",
+          "minimum": 1000
+        },
+        "strengths": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "weaknesses": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "cost_per_1k_input_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cost_per_1k_output_tokens": {
+          "type": "number",
+          "minimum": 0
+        },
+        "recommended_for": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["trivial", "moderate", "complex", "architectural"]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "context_window",
+        "strengths",
+        "weaknesses",
+        "cost_per_1k_input_tokens",
+        "cost_per_1k_output_tokens",
+        "recommended_for"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
