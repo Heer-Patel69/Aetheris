@@ -4,6 +4,11 @@ import sys
 import json
 from pathlib import Path
 
+# Add workspace src directory to path for IDE static import resolution
+local_src = Path(__file__).resolve().parent.parent / "src"
+if local_src.exists() and str(local_src) not in sys.path:
+    sys.path.insert(0, str(local_src))
+
 # Add runtime directory to path
 GLOBAL_AETHERIS_DIR = Path("~/.aetheris").expanduser()
 sys.path.insert(0, str(GLOBAL_AETHERIS_DIR / "runtime"))

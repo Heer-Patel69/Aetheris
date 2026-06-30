@@ -48,32 +48,21 @@ class AetherisKernel:
         self.telemetry.log_stage_start("sess-autonomous", "SESSION_START")
         self._update_dashboard("Ingesting user goal...", 5.0)
         
-        # Step 1: Goal Expansion (IPUE)
-        print("Ingesting and expanding product goal...")
+        # Step 1: Build Engineering Understanding (UEUE)
+        print("Analyzing project files and compiling Engineering Graph...")
         try:
             from kernel.goal_manager import GoalManager
             goal_mgr = GoalManager(self.workspace_path)
-            goal_tree = goal_mgr.expand_goal(user_goal)
-            self.telemetry.log_stage_complete("sess-autonomous", "GOAL_EXPANDED", 0, {"tree": goal_tree})
-        except ImportError:
-            print("Warning: GoalManager module not yet fully implemented. Using fallback structure.")
-            goal_tree = {"goal": user_goal, "inferred_subsystems": ["database", "auth", "api", "frontend"]}
-            
-        self._update_dashboard("Performing Product Completeness Analysis...", 20.0)
-        
-        # Step 2: Technology selection & Blueprint generation (PAIE)
-        print("Designing Universal Blueprint and making Tech Decisions...")
-        try:
-            from intelligence.blueprint import UniversalBlueprintEngine
-            blueprint_engine = UniversalBlueprintEngine(self.workspace_path)
-            blueprint = blueprint_engine.compile_blueprint(goal_tree)
-            self.telemetry.log_stage_complete("sess-autonomous", "BLUEPRINT_CREATED", 0, {"blueprint": blueprint})
-        except ImportError:
-            print("Warning: Blueprint Engine not yet fully implemented. Using mock blueprint.")
+            understanding = goal_mgr.build_engineering_understanding(user_goal)
+            blueprint = understanding["blueprint"]
+            self.telemetry.log_stage_complete("sess-autonomous", "UEUE_COMPLETED", 0, {"understanding": understanding})
+        except Exception as e:
+            print(f"Warning: UEUE module failed: {e}. Using fallback structure.")
             blueprint = {
-                "platform": "Web",
+                "target_platform": "Universal Service Engine",
                 "vision": user_goal,
-                "technology_stack": {"database": "PostgreSQL", "frontend": "React"}
+                "technology_stack": {"database": "PostgreSQL", "frontend": "Next.js"},
+                "inferred_subsystems": ["database_migrations", "authentication", "api_controllers", "frontend_views", "unit_testing"]
             }
             
         self._update_dashboard("Compiling Task DAG...", 40.0)
