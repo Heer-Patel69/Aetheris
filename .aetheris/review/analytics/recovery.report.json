@@ -1,0 +1,6 @@
+{
+  "git_failure_recovery": "SUCCESS",
+  "model_failure_recovery": "SUCCESS",
+  "disk_failure_recovery": "NOT VERIFIED",
+  "state_corruption_recovery": "FAILED"
+}

@@ -1,0 +1,22 @@
+{
+  "decisions": [
+    {
+      "topic": "database",
+      "choice": "PostgreSQL",
+      "confidence": 1.0,
+      "reason": "Discovered environment indicators for PostgreSQL"
+    },
+    {
+      "topic": "frontend",
+      "choice": "Next.js",
+      "confidence": 0.5,
+      "reason": "Discovered environment indicators for Next.js"
+    },
+    {
+      "topic": "orm",
+      "choice": "Prisma",
+      "confidence": 0.5,
+      "reason": "Discovered environment indicators for Prisma"
+    }
+  ]
+}

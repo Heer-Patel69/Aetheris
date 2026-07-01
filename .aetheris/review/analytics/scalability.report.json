@@ -1,0 +1,19 @@
+{
+  "benchmarks": [
+    {
+      "files": 100,
+      "latency_seconds": 15,
+      "memory_mb": 120
+    },
+    {
+      "files": 1000,
+      "latency_seconds": 145,
+      "memory_mb": 450
+    },
+    {
+      "files": 10000,
+      "latency_seconds": "TIMEOUT",
+      "memory_mb": "OOM"
+    }
+  ]
+}

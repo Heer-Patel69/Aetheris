@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.aetheris/
+scratch/
+test_compliance_workspace/
+.pytest_cache/
+*.log
+**/__pycache__/
+scripts/__pycache__/
+scratch/__pycache__/

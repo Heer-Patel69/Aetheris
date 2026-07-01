@@ -21,6 +21,11 @@ paths:
   global_config_dir: "~/.aetheris/config"
   global_log_dir: "~/.aetheris/logs"
   global_plugin_dir: "~/.aetheris/plugins"
+  master_prompt: "docs/MASTER_PROMPT.md"
+
+policies:
+  workflow: "12-phase-autonomous"
+  enforce_dod: true
 
 optimization:
   enabled: true

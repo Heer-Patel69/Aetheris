@@ -1,0 +1,11 @@
+{
+  "startup_ms": 45,
+  "planning_latency_ms": 12500,
+  "execution_latency_ms": 4200,
+  "recovery_latency_ms": 1500,
+  "memory_usage_mb": 112,
+  "cpu_usage_percentage": 15.4,
+  "disk_io_ops": 820,
+  "token_usage_total": 45000,
+  "model_cost_usd": 0.85
+}

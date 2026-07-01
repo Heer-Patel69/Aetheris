@@ -1,0 +1,63 @@
+{
+  "goal": "Build a secure auth API",
+  "tasks": [
+    {
+      "id": "task:database_migrations",
+      "name": "Database Migrations",
+      "status": "PENDING",
+      "dependencies": []
+    },
+    {
+      "id": "task:authentication",
+      "name": "Authentication",
+      "status": "PENDING",
+      "dependencies": [
+        "task:database_migrations"
+      ]
+    },
+    {
+      "id": "task:dockerization",
+      "name": "Dockerization",
+      "status": "PENDING",
+      "dependencies": [
+        "task:database_migrations"
+      ]
+    },
+    {
+      "id": "task:api_controllers",
+      "name": "Api Controllers",
+      "status": "PENDING",
+      "dependencies": [
+        "task:database_migrations",
+        "task:authentication"
+      ]
+    },
+    {
+      "id": "task:frontend_views",
+      "name": "Frontend Views",
+      "status": "PENDING",
+      "dependencies": [
+        "task:api_controllers"
+      ]
+    },
+    {
+      "id": "task:unit_testing",
+      "name": "Unit Testing",
+      "status": "PENDING",
+      "dependencies": [
+        "task:api_controllers",
+        "task:frontend_views"
+      ]
+    },
+    {
+      "id": "task:deployment_pipelines",
+      "name": "Deployment Pipelines",
+      "status": "PENDING",
+      "dependencies": [
+        "task:unit_testing",
+        "task:dockerization"
+      ]
+    }
+  ],
+  "created_at": "2026-06-30T20:14:03Z"
+}

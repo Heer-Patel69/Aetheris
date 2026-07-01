@@ -76,12 +76,12 @@ Every downstream subsystem consumes EKB.
 
 ======================================================================
 PHASE 2
-Engineering Planner
+Engineering Planning & Execution Engine (EPE)
 ======================================================================
 
 Purpose
 
-Convert Engineering Knowledge into executable engineering plans.
+Convert Engineering Knowledge and discovered workspace specifications into executable engineering plans.
 
 Responsibilities
 

@@ -1,0 +1,262 @@
+{
+  "mappings": [
+    {
+      "spec": "SPEC-001",
+      "module": "src/intelligence/wde.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-002",
+      "module": "src/intelligence/ede.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-003",
+      "module": "src/intelligence/ege.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-004",
+      "module": "src/intelligence/ape.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-005",
+      "module": "src/intelligence/pde.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-006",
+      "module": "src/intelligence/qia.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-007",
+      "module": "src/intelligence/ekb.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-008",
+      "module": "src/intelligence/urue.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-009",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-010",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-011",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-012",
+      "module": "src/intelligence/planners.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-013",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-014",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-015",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-016",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-017",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-018",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-019",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-020",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-021",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-022",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-023",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-024",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-025",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-026",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-027",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-028",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-029",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-030",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-031",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-032",
+      "module": "src/execution/tde.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-033",
+      "module": "src/execution/dgb.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-034",
+      "module": "src/execution/sse.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-035",
+      "module": "src/execution/mre.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-036",
+      "module": "src/execution/cae.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-037",
+      "module": "src/execution/es.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-038",
+      "module": "src/execution/pee.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-039",
+      "module": "src/execution/spe.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-040",
+      "module": "src/execution/sre.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-041",
+      "module": "src/execution/pre.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-042",
+      "module": "src/execution/eme.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-043",
+      "module": "src/execution/goe.py",
+      "status": "Verified"
+    },
+    {
+      "spec": "SPEC-044",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-045",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    },
+    {
+      "spec": "SPEC-046",
+      "module": "NOT VERIFIED",
+      "status": "Missing"
+    }
+  ],
+  "broken_mappings": [],
+  "missing_mappings": [
+    "SPEC-009",
+    "SPEC-010",
+    "SPEC-011",
+    "SPEC-013",
+    "SPEC-014",
+    "SPEC-015",
+    "SPEC-016",
+    "SPEC-017",
+    "SPEC-018",
+    "SPEC-019",
+    "SPEC-020",
+    "SPEC-021",
+    "SPEC-022",
+    "SPEC-023",
+    "SPEC-024",
+    "SPEC-025",
+    "SPEC-026",
+    "SPEC-027",
+    "SPEC-028",
+    "SPEC-029",
+    "SPEC-030",
+    "SPEC-031",
+    "SPEC-044",
+    "SPEC-045",
+    "SPEC-046"
+  ]
+}

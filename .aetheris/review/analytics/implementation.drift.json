@@ -1,0 +1,10 @@
+{
+  "drift_detected": [
+    {
+      "file": "src/intelligence/planners.py",
+      "severity": "CRITICAL",
+      "spec_drift": "SPEC-012 through SPEC-030 are compiled into a monolithic class, deviating from isolated domain specification principles.",
+      "drift_percentage": 45
+    }
+  ]
+}

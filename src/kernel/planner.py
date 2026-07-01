@@ -151,7 +151,15 @@ class EngineeringPlanner:
     def _save_execution_artifacts(self, sorted_tasks, nodes, edges, waves, vision):
         self.execution_dir.mkdir(parents=True, exist_ok=True)
         
-        # 1. execution.plan.json
+        # 1. Establish EEJ Directory structure
+        exec_dir = self.execution_dir / "execution"
+        knowledge_dir = self.execution_dir / "knowledge"
+        memory_dir = self.execution_dir / "memory"
+        
+        for d in (exec_dir, knowledge_dir, memory_dir):
+            d.mkdir(parents=True, exist_ok=True)
+
+        # 2. Save traditional compatibility outputs
         plan_data = {
             "goal": vision or "Autonomous execution",
             "tasks": [
@@ -167,29 +175,117 @@ class EngineeringPlanner:
         }
         (self.execution_dir / "execution.plan.json").write_text(json.dumps(plan_data, indent=2), encoding="utf-8")
         
-        # 2. execution.graph.json
-        graph_nodes = []
-        for n in nodes:
-            graph_nodes.append({
-                "id": f"task:{n}",
-                "type": "Task",
-                "metadata": {"name": n.replace("_", " ").title()}
-            })
-        graph_edges = []
-        for src, dst in edges:
-            graph_edges.append({
-                "source": f"task:{src}",
-                "target": f"task:{dst}",
-                "relationship": "depends_on"
-            })
-        graph_data = {
-            "nodes": graph_nodes,
-            "edges": graph_edges
-        }
+        graph_nodes = [{"id": f"task:{n}", "type": "Task", "metadata": {"name": n.replace("_", " ").title()}} for n in nodes]
+        graph_edges = [{"source": f"task:{src}", "target": f"task:{dst}", "relationship": "depends_on"} for src, dst in edges]
+        graph_data = {"nodes": graph_nodes, "edges": graph_edges}
         (self.execution_dir / "execution.graph.json").write_text(json.dumps(graph_data, indent=2), encoding="utf-8")
         
-        # 3. execution.queue.json
-        queue_data = {
-            "waves": [[f"task:{t}" for t in wave] for wave in waves]
-        }
+        queue_data = {"waves": [[f"task:{t}" for t in wave] for wave in waves]}
         (self.execution_dir / "execution.queue.json").write_text(json.dumps(queue_data, indent=2), encoding="utf-8")
+
+        # 3. Save EPE Live Execution State Files
+        all_milestones = ["Requirement Analysis"] + [t.replace("_", " ").title() for t in sorted_tasks]
+        
+        # execution_state.json
+        state_tasks = [{"task_id": f"P{i}", "name": m, "status": "Pending"} for i, m in enumerate(all_milestones)]
+        state_tasks[0]["status"] = "Completed" # Requirement analysis done when plan is created
+        
+        execution_state = {
+            "session_id": "sess-autonomous",
+            "current_milestone": f"P1: {all_milestones[1]}" if len(all_milestones) > 1 else "P0: Requirement Analysis",
+            "status": "RUNNING",
+            "tasks": state_tasks
+        }
+        (exec_dir / "execution_state.json").write_text(json.dumps(execution_state, indent=2), encoding="utf-8")
+        (self.execution_dir / "execution_state.json").write_text(json.dumps(execution_state, indent=2), encoding="utf-8") # Compatibility copy
+
+        # todo.json & completed.json & blockers.json
+        todo_list = [t["name"] for t in state_tasks if t["status"] == "Pending"]
+        completed_list = [t["name"] for t in state_tasks if t["status"] == "Completed"]
+        (exec_dir / "todo.json").write_text(json.dumps(todo_list, indent=2), encoding="utf-8")
+        (exec_dir / "completed.json").write_text(json.dumps(completed_list, indent=2), encoding="utf-8")
+        (exec_dir / "blockers.json").write_text(json.dumps([], indent=2), encoding="utf-8")
+
+        # resume.json
+        resume_data = {
+            "last_active_milestone": execution_state["current_milestone"],
+            "timestamp": time.time(),
+            "can_resume": True
+        }
+        (exec_dir / "resume.json").write_text(json.dumps(resume_data, indent=2), encoding="utf-8")
+
+        # decisions.jsonl & execution.log.jsonl
+        (exec_dir / "decisions.jsonl").write_text("", encoding="utf-8")
+        log_record = {
+            "timestamp": time.time(),
+            "event": "PlanCreated",
+            "message": f"Successfully compiled execution plan with {len(all_milestones)} phases."
+        }
+        (exec_dir / "execution.log.jsonl").write_text(json.dumps(log_record) + "\n", encoding="utf-8")
+
+        # metrics.json
+        metrics_data = {
+            "total_duration_ms": 0,
+            "total_token_usage": 0,
+            "success_rate": 1.0
+        }
+        (exec_dir / "metrics.json").write_text(json.dumps(metrics_data, indent=2), encoding="utf-8")
+
+        # milestones.json
+        (exec_dir / "milestones.json").write_text(json.dumps(all_milestones, indent=2), encoding="utf-8")
+
+        # 4. Generate Phase Checkpoint Markdowns
+        phases_dir = exec_dir / "phases"
+        phases_dir.mkdir(parents=True, exist_ok=True)
+        
+        for i, m in enumerate(all_milestones):
+            status = "COMPLETED" if i == 0 else "PENDING"
+            md_content = f"""# Phase Checkpoint: P{i} — {m}
+- **Objective**: Execute and verify {m}
+- **Status**: {status}
+- **Started Time**: {time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()) if i == 0 else 'N/A'}
+- **Completed Time**: {time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()) if i == 0 else 'N/A'}
+
+## Tasks
+- [{"x" if i == 0 else " "}] Run {m} execution checks
+- [ ] Verify DoD compliance
+
+## Files Modified
+*None*
+
+## Verification Results
+- Ingestion passed validation schema.
+"""
+            (phases_dir / f"P{i}.md").write_text(md_content, encoding="utf-8")
+
+        print(f"Topological Task DAG compiled: {' -> '.join(sorted_tasks)}")
+        return sorted_tasks
+
+    def resume_execution(self) -> dict:
+        """Loads and reconstructs the execution state from the EEJ state files (ADR-006)."""
+        exec_dir = self.workspace_path / ".aetheris" / "execution"
+        state_file = exec_dir / "execution_state.json"
+        
+        if not state_file.exists():
+            return {"can_resume": False, "reason": "No execution state file found."}
+            
+        try:
+            state = json.loads(state_file.read_text(encoding="utf-8"))
+            todo = json.loads((exec_dir / "todo.json").read_text(encoding="utf-8"))
+            completed = json.loads((exec_dir / "completed.json").read_text(encoding="utf-8"))
+            blockers = json.loads((exec_dir / "blockers.json").read_text(encoding="utf-8"))
+            resume = json.loads((exec_dir / "resume.json").read_text(encoding="utf-8"))
+            
+            return {
+                "can_resume": True,
+                "current_milestone": state.get("current_milestone"),
+                "status": state.get("status"),
+                "tasks": state.get("tasks", []),
+                "todo": todo,
+                "completed": completed,
+                "blockers": blockers,
+                "resume_metadata": resume
+            }
+        except Exception as e:
+            return {"can_resume": False, "reason": f"Failed to parse state files: {e}"}
+

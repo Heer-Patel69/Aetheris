@@ -1,0 +1,23 @@
+{
+  "waves": [
+    [
+      "task:database_migrations"
+    ],
+    [
+      "task:authentication",
+      "task:dockerization"
+    ],
+    [
+      "task:api_controllers"
+    ],
+    [
+      "task:frontend_views"
+    ],
+    [
+      "task:unit_testing"
+    ],
+    [
+      "task:deployment_pipelines"
+    ]
+  ]
+}

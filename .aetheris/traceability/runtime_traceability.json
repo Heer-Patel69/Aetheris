@@ -1,0 +1,481 @@
+{
+  "orphan_runtime_components": [],
+  "runtime_components": [
+    {
+      "entrypoints": [
+        "src/intelligence/ape.py"
+      ],
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "APE_COMPLETED",
+        "APE_FAILED",
+        "APE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Architecture Intelligence"
+    },
+    {
+      "entrypoints": [
+        "src/execution/acge.py",
+        "src/execution/cae.py",
+        "src/execution/dgb.py",
+        "src/execution/dge.py",
+        "src/execution/eme.py",
+        "src/execution/eo.py",
+        "src/execution/es.py",
+        "src/execution/goe.py",
+        "src/execution/mre.py",
+        "src/execution/pee.py",
+        "src/execution/pre.py",
+        "src/execution/spe.py",
+        "src/execution/sre.py",
+        "src/execution/sse.py",
+        "src/execution/tde.py"
+      ],
+      "mapped_specs": [
+        "SPEC-032",
+        "SPEC-033",
+        "SPEC-034",
+        "SPEC-035",
+        "SPEC-036",
+        "SPEC-037",
+        "SPEC-038",
+        "SPEC-039",
+        "SPEC-040",
+        "SPEC-041",
+        "SPEC-042",
+        "SPEC-043",
+        "SPEC-044",
+        "SPEC-045",
+        "SPEC-046"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "ACGE_COMPLETED",
+        "ACGE_FAILED",
+        "ACGE_STARTED",
+        "CAE_COMPLETED",
+        "CAE_FAILED",
+        "CAE_STARTED",
+        "DGB_COMPLETED",
+        "DGB_FAILED",
+        "DGB_STARTED",
+        "DGE_COMPLETED",
+        "DGE_FAILED",
+        "DGE_STARTED",
+        "EME_COMPLETED",
+        "EME_FAILED",
+        "EME_STARTED",
+        "EO_COMPLETED",
+        "EO_FAILED",
+        "EO_STARTED",
+        "ES_COMPLETED",
+        "ES_FAILED",
+        "ES_STARTED",
+        "GOE_COMPLETED",
+        "GOE_FAILED",
+        "GOE_STARTED",
+        "MRE_COMPLETED",
+        "MRE_FAILED",
+        "MRE_STARTED",
+        "PEE_COMPLETED",
+        "PEE_FAILED",
+        "PEE_STARTED",
+        "PRE_COMPLETED",
+        "PRE_FAILED",
+        "PRE_STARTED",
+        "SPE_COMPLETED",
+        "SPE_FAILED",
+        "SPE_STARTED",
+        "SRE_COMPLETED",
+        "SRE_FAILED",
+        "SRE_STARTED",
+        "SSE_COMPLETED",
+        "SSE_FAILED",
+        "SSE_STARTED",
+        "TDE_COMPLETED",
+        "TDE_FAILED",
+        "TDE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Autonomous Engineering Engine"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/ede.py"
+      ],
+      "mapped_specs": [
+        "SPEC-005"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "EDE_COMPLETED",
+        "EDE_FAILED",
+        "EDE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Decision Intelligence"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/coe.py",
+        "src/intelligence/coe2.py",
+        "src/intelligence/dsee.py",
+        "src/intelligence/eoe.py",
+        "src/intelligence/ere.py",
+        "src/intelligence/fve.py",
+        "src/intelligence/hde.py",
+        "src/intelligence/io.py",
+        "src/intelligence/kre.py",
+        "src/intelligence/lce.py",
+        "src/intelligence/mie.py",
+        "src/intelligence/mmce.py",
+        "src/intelligence/mre.py",
+        "src/intelligence/pce.py",
+        "src/intelligence/ple.py",
+        "src/intelligence/poe.py",
+        "src/intelligence/sbe.py",
+        "src/intelligence/sre.py",
+        "src/intelligence/toe.py"
+      ],
+      "mapped_specs": [
+        "SPEC-047",
+        "SPEC-048",
+        "SPEC-049",
+        "SPEC-050",
+        "SPEC-051",
+        "SPEC-052",
+        "SPEC-053",
+        "SPEC-054",
+        "SPEC-055",
+        "SPEC-056",
+        "SPEC-057",
+        "SPEC-058",
+        "SPEC-059",
+        "SPEC-060",
+        "SPEC-061",
+        "SPEC-062",
+        "SPEC-063",
+        "SPEC-064",
+        "SPEC-065"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "COE2_COMPLETED",
+        "COE2_FAILED",
+        "COE2_STARTED",
+        "COE_COMPLETED",
+        "COE_FAILED",
+        "COE_STARTED",
+        "DSEE_COMPLETED",
+        "DSEE_FAILED",
+        "DSEE_STARTED",
+        "EOE_COMPLETED",
+        "EOE_FAILED",
+        "EOE_STARTED",
+        "ERE_COMPLETED",
+        "ERE_FAILED",
+        "ERE_STARTED",
+        "FVE_COMPLETED",
+        "FVE_FAILED",
+        "FVE_STARTED",
+        "HDE_COMPLETED",
+        "HDE_FAILED",
+        "HDE_STARTED",
+        "IO_COMPLETED",
+        "IO_FAILED",
+        "IO_STARTED",
+        "KRE_COMPLETED",
+        "KRE_FAILED",
+        "KRE_STARTED",
+        "LCE_COMPLETED",
+        "LCE_FAILED",
+        "LCE_STARTED",
+        "MIE_COMPLETED",
+        "MIE_FAILED",
+        "MIE_STARTED",
+        "MMCE_COMPLETED",
+        "MMCE_FAILED",
+        "MMCE_STARTED",
+        "MRE_COMPLETED",
+        "MRE_FAILED",
+        "MRE_STARTED",
+        "PCE_COMPLETED",
+        "PCE_FAILED",
+        "PCE_STARTED",
+        "PLE_COMPLETED",
+        "PLE_FAILED",
+        "PLE_STARTED",
+        "POE_COMPLETED",
+        "POE_FAILED",
+        "POE_STARTED",
+        "SBE_COMPLETED",
+        "SBE_FAILED",
+        "SBE_STARTED",
+        "SRE_COMPLETED",
+        "SRE_FAILED",
+        "SRE_STARTED",
+        "TOE_COMPLETED",
+        "TOE_FAILED",
+        "TOE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Engineering Intelligence Layer"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/wde.py"
+      ],
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "WDE_COMPLETED",
+        "WDE_FAILED",
+        "WDE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Engineering Knowledge System"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/planners.py"
+      ],
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "APIE_COMPLETED",
+        "APIE_FAILED",
+        "APIE_STARTED",
+        "BPE_COMPLETED",
+        "BPE_FAILED",
+        "BPE_STARTED",
+        "CGPE_COMPLETED",
+        "CGPE_FAILED",
+        "CGPE_STARTED",
+        "CPE_COMPLETED",
+        "CPE_FAILED",
+        "CPE_STARTED",
+        "DOPE_COMPLETED",
+        "DOPE_FAILED",
+        "DOPE_STARTED",
+        "DPE_COMPLETED",
+        "DPE_FAILED",
+        "DPE_STARTED",
+        "DRPE_COMPLETED",
+        "DRPE_FAILED",
+        "DRPE_STARTED",
+        "EDPE_COMPLETED",
+        "EDPE_FAILED",
+        "EDPE_STARTED",
+        "EEPE_COMPLETED",
+        "EEPE_FAILED",
+        "EEPE_STARTED",
+        "ESPE_COMPLETED",
+        "ESPE_FAILED",
+        "ESPE_STARTED",
+        "FEBC_COMPLETED",
+        "FEBC_FAILED",
+        "FEBC_STARTED",
+        "FPE_COMPLETED",
+        "FPE_FAILED",
+        "FPE_STARTED",
+        "IPE_COMPLETED",
+        "IPE_FAILED",
+        "IPE_STARTED",
+        "MLPE_COMPLETED",
+        "MLPE_FAILED",
+        "MLPE_STARTED",
+        "OPE_COMPLETED",
+        "OPE_FAILED",
+        "OPE_STARTED",
+        "PVE_COMPLETED",
+        "PVE_FAILED",
+        "PVE_STARTED",
+        "RCPE_COMPLETED",
+        "RCPE_FAILED",
+        "RCPE_STARTED",
+        "RPE_COMPLETED",
+        "RPE_FAILED",
+        "RPE_STARTED",
+        "RRPE_COMPLETED",
+        "RRPE_FAILED",
+        "RRPE_STARTED",
+        "SPE_COMPLETED",
+        "SPE_FAILED",
+        "SPE_STARTED",
+        "SPPE_COMPLETED",
+        "SPPE_FAILED",
+        "SPPE_STARTED",
+        "TPE_COMPLETED",
+        "TPE_FAILED",
+        "TPE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Engineering Planning System"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/ege.py"
+      ],
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "EGE_COMPLETED",
+        "EGE_FAILED",
+        "EGE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Graph Intelligence"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/ekb.py"
+      ],
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "EKB_COMPLETED",
+        "EKB_FAILED",
+        "EKB_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Knowledge Storage"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/pde.py"
+      ],
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "PDE_COMPLETED",
+        "PDE_FAILED",
+        "PDE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Product Intelligence"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/qia.py"
+      ],
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "QIA_COMPLETED",
+        "QIA_FAILED",
+        "QIA_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Query Intelligence"
+    },
+    {
+      "entrypoints": [
+        "src/intelligence/urue.py"
+      ],
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "metrics": [
+        "duration_ms",
+        "success_rate",
+        "failure_count",
+        "artifact_count"
+      ],
+      "observability_events": [
+        "URUE_COMPLETED",
+        "URUE_FAILED",
+        "URUE_STARTED"
+      ],
+      "orphan": false,
+      "runtime_component": "Requirement Intelligence"
+    }
+  ]
+}

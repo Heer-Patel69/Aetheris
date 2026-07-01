@@ -1,0 +1,69 @@
+{
+  "orphan_schemas": [],
+  "schemas": [
+    {
+      "mapped_specs": [
+        "SPEC-001",
+        "SPEC-007",
+        "SPEC-046"
+      ],
+      "path": "schemas/aetheris.schema.json",
+      "property_count": 6,
+      "required": [
+        "version",
+        "environment",
+        "timeouts",
+        "limits",
+        "paths",
+        "optimization"
+      ],
+      "title": "BrainConfigSchema"
+    },
+    {
+      "mapped_specs": [
+        "SPEC-022",
+        "SPEC-059",
+        "SPEC-045"
+      ],
+      "path": "schemas/costs.schema.json",
+      "property_count": 0,
+      "required": [],
+      "title": "CostsConfigSchema"
+    },
+    {
+      "mapped_specs": [
+        "SPEC-031",
+        "SPEC-040",
+        "SPEC-045"
+      ],
+      "path": "schemas/gates.schema.json",
+      "property_count": 1,
+      "required": [
+        "gates"
+      ],
+      "title": "GatesConfigSchema"
+    },
+    {
+      "mapped_specs": [
+        "SPEC-047",
+        "SPEC-035"
+      ],
+      "path": "schemas/models.schema.json",
+      "property_count": 0,
+      "required": [],
+      "title": "ModelsConfigSchema"
+    },
+    {
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "path": "schemas/plugins.schema.json",
+      "property_count": 1,
+      "required": [
+        "plugins"
+      ],
+      "title": "PluginsConfigSchema"
+    }
+  ]
+}

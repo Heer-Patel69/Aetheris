@@ -1,0 +1,11 @@
+{
+  "user_goal": "Build a secure auth API",
+  "inferred_subsystems": [
+    "database_migrations",
+    "authentication",
+    "api_controllers",
+    "frontend_views",
+    "unit_testing",
+    "dockerization"
+  ]
+}

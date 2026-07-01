@@ -1,0 +1,5098 @@
+{
+  "nodes": [
+    {
+      "id": "file:00_SYSTEM_CONSTITUTION.md",
+      "type": "File",
+      "metadata": {
+        "size": 16680,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:ARCHITECTURE.md",
+      "type": "File",
+      "metadata": {
+        "size": 6061,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:CHANGELOG.md",
+      "type": "File",
+      "metadata": {
+        "size": 2753,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:DECISIONS.md",
+      "type": "File",
+      "metadata": {
+        "size": 4808,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:MEMORY.md",
+      "type": "File",
+      "metadata": {
+        "size": 2742,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Instruction vs. Execution Separation**: LLM dispatches and coordinates via skills/references; filesystem modifications, calculations, and hashing are handled by Python scripts (ADR-001).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Single Owner**: Only the designated module may write to its state directory (ADR-002).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Stateless Kernel Execution**: Event bus resides in the pipeline loop context, passed through JSON outputs (ADR-003).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Tier Merge**: Config overrides merge deep recursively: Tier 1 (defaults) -> Tier 2 (shipped defaults) -> Tier 3 (user global) -> Tier 4 (project local) (ADR-004).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Memory Partitioning**: Global settings, project profiles, and session variables are kept strictly separate; project profiles invalidate using fingerprints (ADR-005).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Skill Splitting**: Decompose runtime into 8 distinct global skills to reduce context bloat (ADR-006).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Execution Contract**: Scripts take CLI flags, output JSON to stdout, print info to stderr, exit with code 0 on success (ADR-007).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:NEXT_SESSION.md",
+      "type": "File",
+      "metadata": {
+        "size": 3205,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:PROJECT_STATE.md",
+      "type": "File",
+      "metadata": {
+        "size": 1859,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:README.md",
+      "type": "File",
+      "metadata": {
+        "size": 10,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:TASKS.md",
+      "type": "File",
+      "metadata": {
+        "size": 3052,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:VERSION",
+      "type": "File",
+      "metadata": {
+        "size": 5,
+        "suffix": ""
+      }
+    },
+    {
+      "id": "file:adrs\\001-module-boundaries.md",
+      "type": "File",
+      "metadata": {
+        "size": 2806,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:No file system manipulation in markdown**: Skills and references must never instruct the LLM to perform ad-hoc file operations. They must instead instruct the LLM to invoke the module's corresponding Python script (e.g., `python scripts/scanner.py`).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:No reasoning in scripts**: Python scripts must not attempt to reason about user intent, architect solutions, or make qualitative decisions. They are input-output machines that process data, query files, and return structured JSON/YAML.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:On-demand loading**: Reference documents must be kept small (under 8KB each) and focused on a single topic. The LLM must only read them when explicitly entering that specific pipeline stage.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:adrs\\002-state-ownership.md",
+      "type": "File",
+      "metadata": {
+        "size": 2723,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\003-event-model.md",
+      "type": "File",
+      "metadata": {
+        "size": 2483,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\004-configuration-hierarchy.md",
+      "type": "File",
+      "metadata": {
+        "size": 3018,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\005-memory-separation.md",
+      "type": "File",
+      "metadata": {
+        "size": 4066,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\006-skill-decomposition.md",
+      "type": "File",
+      "metadata": {
+        "size": 2750,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\007-script-execution.md",
+      "type": "File",
+      "metadata": {
+        "size": 2379,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\008-version-contract.md",
+      "type": "File",
+      "metadata": {
+        "size": 2160,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\009-platform-constraints.md",
+      "type": "File",
+      "metadata": {
+        "size": 2746,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:adrs\\010-security-perimeter.md",
+      "type": "File",
+      "metadata": {
+        "size": 2522,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:config\\aetheris.yaml",
+      "type": "File",
+      "metadata": {
+        "size": 866,
+        "suffix": ".yaml"
+      }
+    },
+    {
+      "id": "file:config\\costs.yaml",
+      "type": "File",
+      "metadata": {
+        "size": 205,
+        "suffix": ".yaml"
+      }
+    },
+    {
+      "id": "file:config\\gates.yaml",
+      "type": "File",
+      "metadata": {
+        "size": 573,
+        "suffix": ".yaml"
+      }
+    },
+    {
+      "id": "file:config\\models.yaml",
+      "type": "File",
+      "metadata": {
+        "size": 1065,
+        "suffix": ".yaml"
+      }
+    },
+    {
+      "id": "file:config\\plugins.yaml",
+      "type": "File",
+      "metadata": {
+        "size": 11,
+        "suffix": ".yaml"
+      }
+    },
+    {
+      "id": "file:contracts\\config-manager.md",
+      "type": "File",
+      "metadata": {
+        "size": 4259,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Never read credentials or secrets.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never write configurations back to the repository.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify file permissions of configuration directories before reading.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Fail closed if a secret is found in a project-level config file.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\context-engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 4214,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Strictly validate all selected file paths against the workspace boundary.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Scan file contents for secrets before packaging; redact any matched patterns.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never load files outside the active workspace.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\event-bus.md",
+      "type": "File",
+      "metadata": {
+        "size": 3842,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Prevent subscriber hijacking: verify module names against registered skills in Configuration before registering.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never pass unvalidated or raw payloads through the bus.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Enforce strict typing on event payload schemas.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\kernel.md",
+      "type": "File",
+      "metadata": {
+        "size": 4516,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Never execute user-provided code.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never read files outside the active workspace.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never modify the Aetheris Kernel installation.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never expose session state to other sessions.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never bypass the verification stage.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\memory-engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 4706,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Redact secrets before serializing memory fields.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\planner.md",
+      "type": "File",
+      "metadata": {
+        "size": 3770,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Plan steps must never specify execution of unsafe scripts or commands.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify that plan dependencies do not involve paths outside the workspace perimeter.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Plan descriptions must not contain sensitive codebase secrets.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\plugin-manager.md",
+      "type": "File",
+      "metadata": {
+        "size": 4426,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Every plugin must declare its requested permissions in `manifest.yaml`.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never load or execute plugin binaries (DLLs, EXEs) \u2014 plugins must be Python-only source modules.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\project-discovery.md",
+      "type": "File",
+      "metadata": {
+        "size": 4241,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Never read `.env` files or files containing secrets.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Redact matching key/credential patterns in any config snippet parsed.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Validate paths to prevent directory traversal outside the workspace perimeter.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\resource-router.md",
+      "type": "File",
+      "metadata": {
+        "size": 4612,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Roster recommendations must never expose internal user profiles.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Scoring formulas must be deterministic and run in memory (no external command dependencies).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Strictly validate agent names to prevent command injections.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\telemetry-engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 3827,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Scrub all credentials before writing logs.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Strictly validate log file path parameters to prevent directory traversal.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never transmit log data over any network connection.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:contracts\\verification-engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 4644,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Verification engine must scan for credentials, private keys, and tokens in every patch.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify that code patches do not read/write files outside the workspace perimeter.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Code analysis must run inside in-memory parser sandboxes.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:rfcs\\RFC-000-Roadmap.md",
+      "type": "File",
+      "metadata": {
+        "size": 7606,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-001-EKC.md",
+      "type": "File",
+      "metadata": {
+        "size": 1809,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-002-Planner.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-003-Skill-Intelligence.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-004-Model-Intelligence.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-005-Execution-Engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-006-Recovery-Engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-007-Production-Auditor.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-008-Learning-Engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-009-Optimization-Engine.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:rfcs\\RFC-010-Benchmarking-Platform.md",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:schemas\\aetheris.schema.json",
+      "type": "File",
+      "metadata": {
+        "size": 3314,
+        "suffix": ".json"
+      }
+    },
+    {
+      "id": "file:schemas\\costs.schema.json",
+      "type": "File",
+      "metadata": {
+        "size": 494,
+        "suffix": ".json"
+      }
+    },
+    {
+      "id": "file:schemas\\gates.schema.json",
+      "type": "File",
+      "metadata": {
+        "size": 3055,
+        "suffix": ".json"
+      }
+    },
+    {
+      "id": "file:schemas\\models.schema.json",
+      "type": "File",
+      "metadata": {
+        "size": 1394,
+        "suffix": ".json"
+      }
+    },
+    {
+      "id": "file:schemas\\plugins.schema.json",
+      "type": "File",
+      "metadata": {
+        "size": 1528,
+        "suffix": ".json"
+      }
+    },
+    {
+      "id": "file:scratch\\benchmark_goal_manager.py",
+      "type": "File",
+      "metadata": {
+        "size": 2569,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:function:run_benchmark",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:time",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:os",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:sys",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:json",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:pathlib",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:kernel",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:scratch\\Dockerfile",
+      "type": "File",
+      "metadata": {
+        "size": 83,
+        "suffix": ""
+      }
+    },
+    {
+      "id": "file:scratch\\ekc.py",
+      "type": "File",
+      "metadata": {
+        "size": 16403,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeCompiler",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_find_files",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_file_hash",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_engineering_understanding",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:update",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:query",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:diagnostics",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:benchmark",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:export",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:scratch\\PRD.md",
+      "type": "File",
+      "metadata": {
+        "size": 265,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:persona:Students looking for homework tracking",
+      "type": "Persona",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:persona:Teachers managing class schedules",
+      "type": "Persona",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Task completion date must be in the future",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Free accounts can have at most 10 active tasks",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:feature:User Auth via JWT tokens",
+      "type": "Feature",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:feature:Task Board view",
+      "type": "Feature",
+      "metadata": {}
+    },
+    {
+      "id": "file:scratch\\schema.prisma",
+      "type": "File",
+      "metadata": {
+        "size": 177,
+        "suffix": ".prisma"
+      }
+    },
+    {
+      "id": "symbol:prisma_model:User",
+      "type": "Prisma_model",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:prisma_model:Task",
+      "type": "Prisma_model",
+      "metadata": {}
+    },
+    {
+      "id": "table:User",
+      "type": "Table",
+      "metadata": {
+        "name": "User"
+      }
+    },
+    {
+      "id": "table:Task",
+      "type": "Table",
+      "metadata": {
+        "name": "Task"
+      }
+    },
+    {
+      "id": "file:scratch\\test_v4_autonomous_loop.py",
+      "type": "File",
+      "metadata": {
+        "size": 1699,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:function:run_integration_test",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:intelligence",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:scripts\\build.py",
+      "type": "File",
+      "metadata": {
+        "size": 3503,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:SkillBuilder",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_skill_markdown",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_all",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:yaml",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:scripts\\doctor.py",
+      "type": "File",
+      "metadata": {
+        "size": 7540,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:DiagnosticsEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_skills",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_runtime_scripts",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_configurations",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_permissions",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_log_sizes",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_diagnostics",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:config",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:traceback",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:scripts\\install.py",
+      "type": "File",
+      "metadata": {
+        "size": 9254,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TransactionalInstaller",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_preflight_check",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_backup",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_rollback",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_build_and_deploy_skills",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_create_global_dirs",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_inject_agents_rules",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:install",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:shutil",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:scripts\\uninstall.py",
+      "type": "File",
+      "metadata": {
+        "size": 2910,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:function:uninstall",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-context-engine\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1045,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Invoke the context script via:",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:The script filters workspace files by relevance to task keywords, extracts public signatures from files larger than 20KB, redacts secrets, and computes token counts.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Parse the output JSON Package.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Load the selected, compressed context payload into the active LLM reasoning frame.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-kernel\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 2159,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1126,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Invoke the memory script via `python scripts/memory.py` to read or write cache files.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Store project-scoped files (cached profiles, ADR decision logs, conventions) strictly in the `<workspace>/.aetheris/memory/` directory.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Append approved architectural decision records sequentially to `decisions.jsonl`.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Validate fingerprint consistency before reloading profiles.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:If parsing files raises corruption errors, delete the files and trigger re-discovery.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1135,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Extract the primary goal and requirements from the classified user intent.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Decompose the request into atomic, sequential task steps.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Establish dependencies between steps (e.g. database schema change before frontend UI hookups).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Run check to ensure no circular dependencies exist.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Identify potential security or performance risks for each step.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Define explicit, measurable success criteria for every step.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Package details into the structured Execution Plan JSON.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1178,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Run the workspace scanner script via:",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Parse the JSON profile returned on standard output.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Extract:",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Languages and framework targets",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Conventions (naming conventions, styling libraries, testing frameworks)",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Configuration hashes (fingerprint)",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1600,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Query the **Dynamic Registry** to get all dynamically discovered Agency and custom skills (ADR-005). Do NOT rely on static YAML files.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Load the active Project Profile and Task Intent from workspace memory.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Perform capability matching by intersecting Task Requirements with skill fields: `capabilities`, `languages`, `frameworks`, and `keywords`.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Calculate the confidence score ($S$) for candidate specialists:",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Select all specialists scoring $S \\ge 80$. If no specialist scores above 80, default to Kernel generalist mode.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Assemble a dynamic Execution Team (1-2 specialists for Trivial tasks, 3-5 for Medium tasks, 6-10 for Large tasks).",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Query `config/models.yaml` and `config/costs.yaml` to evaluate active model requirements and estimate run costs.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Present the routing roster and estimated costs in the trace before execution begins.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "type": "File",
+      "metadata": {
+        "size": 1685,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "symbol:rule:Architecture Gate**: Verify code uses frameworks and styles matching the Project Profile.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Security Gate**: Run scanning for credentials, connection strings, SQL injection, and XSS. Halt and reject immediately on any violation.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Performance Gate**: Check algorithmic complexity. Warn on inefficient nested loops.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Maintainability Gate**: Verify file changes conform to naming standards, include basic comments, and contain type hints if required by strictness levels.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Accessibility Gate**: Run basic checks on markup tags.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Business Alignment Gate**: Ensure modifications fulfill the plan requirements.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Documentation Gate**: Verify code updates documentation/readme files if new files or API endpoints are created.",
+      "type": "Rule",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\config.py",
+      "type": "File",
+      "metadata": {
+        "size": 940,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "import:orchestration",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\context.py",
+      "type": "File",
+      "metadata": {
+        "size": 706,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\event_bus.py",
+      "type": "File",
+      "metadata": {
+        "size": 39,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\memory.py",
+      "type": "File",
+      "metadata": {
+        "size": 42,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "import:storage",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\plugins.py",
+      "type": "File",
+      "metadata": {
+        "size": 49,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\registry_cache.py",
+      "type": "File",
+      "metadata": {
+        "size": 56,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\scanner.py",
+      "type": "File",
+      "metadata": {
+        "size": 407,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\skill_parser.py",
+      "type": "File",
+      "metadata": {
+        "size": 52,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\skill_scanner.py",
+      "type": "File",
+      "metadata": {
+        "size": 54,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\telemetry.py",
+      "type": "File",
+      "metadata": {
+        "size": 46,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\utils.py",
+      "type": "File",
+      "metadata": {
+        "size": 77,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\adapters\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\intelligence\\blueprint.py",
+      "type": "File",
+      "metadata": {
+        "size": 2238,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:UniversalBlueprintEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile_blueprint",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\intelligence\\context.py",
+      "type": "File",
+      "metadata": {
+        "size": 6798,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:ContextEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_estimate_tokens",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_compress_file",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_relevance",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_context_package",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:re",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\intelligence\\decision.py",
+      "type": "File",
+      "metadata": {
+        "size": 2019,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:DecisionIntelligenceEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_decision",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_decisions",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\intelligence\\scanner.py",
+      "type": "File",
+      "metadata": {
+        "size": 7675,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:ProjectScanner",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_fingerprint",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_parse_package_json",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:scan",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:hashlib",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\intelligence\\technology.py",
+      "type": "File",
+      "metadata": {
+        "size": 2104,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TechnologyIntelligence",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:evaluate_tech_stack",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\intelligence\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\kernel\\core.py",
+      "type": "File",
+      "metadata": {
+        "size": 5531,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:AetherisKernel",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_update_dashboard",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_autonomous_loop",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:validation",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\event_bus.py",
+      "type": "File",
+      "metadata": {
+        "size": 3670,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:EventBus",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:register_subscriber",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:publish",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:dispatch_next",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:clear_queue",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:uuid",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "import:collections",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\goal_manager.py",
+      "type": "File",
+      "metadata": {
+        "size": 33630,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TelemetryEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Compiler",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:BaseCompilerPlugin",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Symbol",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:KnowledgeNode",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Relationship",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringGraph",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeBase",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:PythonAdapter",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:MarkdownAdapter",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:PrismaAdapter",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:SqlAdapter",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_start",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_complete",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_failed",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:initialize",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:cleanup",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:to_dict",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_node",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_edge",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:prune_file_nodes",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_artifact",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_artifact",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\planner.py",
+      "type": "File",
+      "metadata": {
+        "size": 7613,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:EngineeringPlanner",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_task_dag",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:plan",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_topological_sort",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_build_concurrency_waves",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_execution_artifacts",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\recovery.py",
+      "type": "File",
+      "metadata": {
+        "size": 1341,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:AutonomousRecoveryEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:perform_rca",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:apply_remediation",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\scheduler.py",
+      "type": "File",
+      "metadata": {
+        "size": 2680,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:RuntimeScheduler",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_state",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:execute_dag",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\telemetry.py",
+      "type": "File",
+      "metadata": {
+        "size": 4682,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:function:_mask_paths",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_rotate_logs",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_write_log",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\utils.py",
+      "type": "File",
+      "metadata": {
+        "size": 2900,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:function:initialize_perimeter",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:is_safe_path",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:redact_secrets",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_environment",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\kernel\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\orchestration\\config.py",
+      "type": "File",
+      "metadata": {
+        "size": 8014,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:ConfigManager",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_deep_merge",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_yaml",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_schema",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_config",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_registry",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_config",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:jsonschema",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\orchestration\\plugins.py",
+      "type": "File",
+      "metadata": {
+        "size": 6345,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:PluginManager",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_get_master_version",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_registry",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_registry",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_manifest",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:register_plugin",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\orchestration\\registry_cache.py",
+      "type": "File",
+      "metadata": {
+        "size": 6498,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:RegistryCache",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_cache_file",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_cache_file",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:find_by_capability",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\orchestration\\skill_parser.py",
+      "type": "File",
+      "metadata": {
+        "size": 6071,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:SkillParser",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_extract_capabilities",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse_skill",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\orchestration\\skill_scanner.py",
+      "type": "File",
+      "metadata": {
+        "size": 2436,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:SkillScanner",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_root",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:scan_roots",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\orchestration\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\sdk\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\storage\\manager.py",
+      "type": "File",
+      "metadata": {
+        "size": 5128,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:MemoryEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_safe_read_yaml",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_safe_write_yaml",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_profile",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_profile",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_conventions",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_conventions",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_decision",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:verify_fingerprint",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\storage\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:src\\validation\\readiness.py",
+      "type": "File",
+      "metadata": {
+        "size": 1420,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:ReadinessEngine",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:verify_definition_of_done",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:src\\validation\\__init__.py",
+      "type": "File",
+      "metadata": {
+        "size": 0,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "file:tests\\test_ekc_capabilities.py",
+      "type": "File",
+      "metadata": {
+        "size": 4468,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TestEKCCapabilities",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ApplicationController",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:setUp",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:event_handler",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:tearDown",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_complete_compiler_passes",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:start",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:stop",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "import:unittest",
+      "type": "Import",
+      "metadata": {}
+    },
+    {
+      "id": "file:tests\\test_goal_manager.py",
+      "type": "File",
+      "metadata": {
+        "size": 2491,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TestGoalManager",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_expand_goal_discovery",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:tests\\test_planner_capabilities.py",
+      "type": "File",
+      "metadata": {
+        "size": 3070,
+        "suffix": ".py"
+      }
+    },
+    {
+      "id": "symbol:class:TestPlannerCapabilities",
+      "type": "Class",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_planning_generation",
+      "type": "Function",
+      "metadata": {}
+    },
+    {
+      "id": "file:tests\\plans\\config-manager-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1957,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\context-engine-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1800,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\event-bus-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1652,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\kernel-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1786,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\memory-engine-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1651,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\planner-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1673,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\plugin-manager-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1859,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\project-discovery-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1644,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\resource-router-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1775,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\telemetry-engine-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1810,
+        "suffix": ".md"
+      }
+    },
+    {
+      "id": "file:tests\\plans\\verification-engine-test-plan.md",
+      "type": "File",
+      "metadata": {
+        "size": 1808,
+        "suffix": ".md"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Instruction vs. Execution Separation**: LLM dispatches and coordinates via skills/references; filesystem modifications, calculations, and hashing are handled by Python scripts (ADR-001).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Single Owner**: Only the designated module may write to its state directory (ADR-002).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Stateless Kernel Execution**: Event bus resides in the pipeline loop context, passed through JSON outputs (ADR-003).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Tier Merge**: Config overrides merge deep recursively: Tier 1 (defaults) -> Tier 2 (shipped defaults) -> Tier 3 (user global) -> Tier 4 (project local) (ADR-004).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Memory Partitioning**: Global settings, project profiles, and session variables are kept strictly separate; project profiles invalidate using fingerprints (ADR-005).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Skill Splitting**: Decompose runtime into 8 distinct global skills to reduce context bloat (ADR-006).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Execution Contract**: Scripts take CLI flags, output JSON to stdout, print info to stderr, exit with code 0 on success (ADR-007).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:MEMORY.md",
+      "target": "symbol:rule:Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:adrs\\001-module-boundaries.md",
+      "target": "symbol:rule:No file system manipulation in markdown**: Skills and references must never instruct the LLM to perform ad-hoc file operations. They must instead instruct the LLM to invoke the module's corresponding Python script (e.g., `python scripts/scanner.py`).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:adrs\\001-module-boundaries.md",
+      "target": "symbol:rule:No reasoning in scripts**: Python scripts must not attempt to reason about user intent, architect solutions, or make qualitative decisions. They are input-output machines that process data, query files, and return structured JSON/YAML.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:adrs\\001-module-boundaries.md",
+      "target": "symbol:rule:On-demand loading**: Reference documents must be kept small (under 8KB each) and focused on a single topic. The LLM must only read them when explicitly entering that specific pipeline stage.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\config-manager.md",
+      "target": "symbol:rule:Never read credentials or secrets.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\config-manager.md",
+      "target": "symbol:rule:Never write configurations back to the repository.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\config-manager.md",
+      "target": "symbol:rule:Verify file permissions of configuration directories before reading.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\config-manager.md",
+      "target": "symbol:rule:Fail closed if a secret is found in a project-level config file.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\context-engine.md",
+      "target": "symbol:rule:Strictly validate all selected file paths against the workspace boundary.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\context-engine.md",
+      "target": "symbol:rule:Scan file contents for secrets before packaging; redact any matched patterns.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\context-engine.md",
+      "target": "symbol:rule:Never load files outside the active workspace.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\event-bus.md",
+      "target": "symbol:rule:Prevent subscriber hijacking: verify module names against registered skills in Configuration before registering.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\event-bus.md",
+      "target": "symbol:rule:Never pass unvalidated or raw payloads through the bus.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\event-bus.md",
+      "target": "symbol:rule:Enforce strict typing on event payload schemas.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\kernel.md",
+      "target": "symbol:rule:Never execute user-provided code.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\kernel.md",
+      "target": "symbol:rule:Never read files outside the active workspace.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\kernel.md",
+      "target": "symbol:rule:Never modify the Aetheris Kernel installation.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\kernel.md",
+      "target": "symbol:rule:Never expose session state to other sessions.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\kernel.md",
+      "target": "symbol:rule:Never bypass the verification stage.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\memory-engine.md",
+      "target": "symbol:rule:Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\memory-engine.md",
+      "target": "symbol:rule:Redact secrets before serializing memory fields.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\memory-engine.md",
+      "target": "symbol:rule:Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\planner.md",
+      "target": "symbol:rule:Plan steps must never specify execution of unsafe scripts or commands.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\planner.md",
+      "target": "symbol:rule:Verify that plan dependencies do not involve paths outside the workspace perimeter.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\planner.md",
+      "target": "symbol:rule:Plan descriptions must not contain sensitive codebase secrets.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\plugin-manager.md",
+      "target": "symbol:rule:Every plugin must declare its requested permissions in `manifest.yaml`.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\plugin-manager.md",
+      "target": "symbol:rule:Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\plugin-manager.md",
+      "target": "symbol:rule:Never load or execute plugin binaries (DLLs, EXEs) \u2014 plugins must be Python-only source modules.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\project-discovery.md",
+      "target": "symbol:rule:Never read `.env` files or files containing secrets.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\project-discovery.md",
+      "target": "symbol:rule:Redact matching key/credential patterns in any config snippet parsed.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\project-discovery.md",
+      "target": "symbol:rule:Validate paths to prevent directory traversal outside the workspace perimeter.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\resource-router.md",
+      "target": "symbol:rule:Roster recommendations must never expose internal user profiles.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\resource-router.md",
+      "target": "symbol:rule:Scoring formulas must be deterministic and run in memory (no external command dependencies).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\resource-router.md",
+      "target": "symbol:rule:Strictly validate agent names to prevent command injections.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\telemetry-engine.md",
+      "target": "symbol:rule:Scrub all credentials before writing logs.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\telemetry-engine.md",
+      "target": "symbol:rule:Strictly validate log file path parameters to prevent directory traversal.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\telemetry-engine.md",
+      "target": "symbol:rule:Never transmit log data over any network connection.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\verification-engine.md",
+      "target": "symbol:rule:Verification engine must scan for credentials, private keys, and tokens in every patch.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\verification-engine.md",
+      "target": "symbol:rule:Verify that code patches do not read/write files outside the workspace perimeter.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:contracts\\verification-engine.md",
+      "target": "symbol:rule:Code analysis must run inside in-memory parser sandboxes.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "symbol:function:run_benchmark",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\benchmark_goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:class:EngineeringKnowledgeCompiler",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:_find_files",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:_calculate_file_hash",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:compile",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:build_engineering_understanding",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:update",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:query",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:diagnostics",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:validate",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:benchmark",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\ekc.py",
+      "target": "symbol:function:export",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:persona:Students looking for homework tracking",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:persona:Teachers managing class schedules",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:rule:Task completion date must be in the future",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:rule:Free accounts can have at most 10 active tasks",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:feature:User Auth via JWT tokens",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\PRD.md",
+      "target": "symbol:feature:Task Board view",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\schema.prisma",
+      "target": "symbol:prisma_model:User",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\schema.prisma",
+      "target": "symbol:prisma_model:Task",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\schema.prisma",
+      "target": "table:User",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\schema.prisma",
+      "target": "table:Task",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "symbol:function:run_integration_test",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scratch\\test_v4_autonomous_loop.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "symbol:class:SkillBuilder",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "symbol:function:validate_skill_markdown",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "symbol:function:build_all",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\build.py",
+      "target": "import:yaml",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:class:DiagnosticsEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:check_skills",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:check_runtime_scripts",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:check_configurations",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:check_permissions",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:check_log_sizes",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "symbol:function:run_diagnostics",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:config",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\doctor.py",
+      "target": "import:traceback",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:class:TransactionalInstaller",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_preflight_check",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_backup",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_rollback",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_build_and_deploy_skills",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_create_global_dirs",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:_inject_agents_rules",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "symbol:function:install",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "import:shutil",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\install.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\uninstall.py",
+      "target": "symbol:function:uninstall",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\uninstall.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\uninstall.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\uninstall.py",
+      "target": "import:shutil",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:scripts\\uninstall.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-context-engine\\SKILL.md",
+      "target": "symbol:rule:Invoke the context script via:",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-context-engine\\SKILL.md",
+      "target": "symbol:rule:The script filters workspace files by relevance to task keywords, extracts public signatures from files larger than 20KB, redacts secrets, and computes token counts.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-context-engine\\SKILL.md",
+      "target": "symbol:rule:Parse the output JSON Package.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-context-engine\\SKILL.md",
+      "target": "symbol:rule:Load the selected, compressed context payload into the active LLM reasoning frame.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "target": "symbol:rule:Invoke the memory script via `python scripts/memory.py` to read or write cache files.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "target": "symbol:rule:Store project-scoped files (cached profiles, ADR decision logs, conventions) strictly in the `<workspace>/.aetheris/memory/` directory.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "target": "symbol:rule:Append approved architectural decision records sequentially to `decisions.jsonl`.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "target": "symbol:rule:Validate fingerprint consistency before reloading profiles.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-memory-engine\\SKILL.md",
+      "target": "symbol:rule:If parsing files raises corruption errors, delete the files and trigger re-discovery.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Extract the primary goal and requirements from the classified user intent.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Decompose the request into atomic, sequential task steps.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Establish dependencies between steps (e.g. database schema change before frontend UI hookups).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Run check to ensure no circular dependencies exist.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Identify potential security or performance risks for each step.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Define explicit, measurable success criteria for every step.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-product-intelligence\\SKILL.md",
+      "target": "symbol:rule:Package details into the structured Execution Plan JSON.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Run the workspace scanner script via:",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Parse the JSON profile returned on standard output.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Extract:",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Languages and framework targets",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Conventions (naming conventions, styling libraries, testing frameworks)",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Configuration hashes (fingerprint)",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-project-discovery\\SKILL.md",
+      "target": "symbol:rule:Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Query the **Dynamic Registry** to get all dynamically discovered Agency and custom skills (ADR-005). Do NOT rely on static YAML files.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Load the active Project Profile and Task Intent from workspace memory.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Perform capability matching by intersecting Task Requirements with skill fields: `capabilities`, `languages`, `frameworks`, and `keywords`.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Calculate the confidence score ($S$) for candidate specialists:",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Select all specialists scoring $S \\ge 80$. If no specialist scores above 80, default to Kernel generalist mode.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Assemble a dynamic Execution Team (1-2 specialists for Trivial tasks, 3-5 for Medium tasks, 6-10 for Large tasks).",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Query `config/models.yaml` and `config/costs.yaml` to evaluate active model requirements and estimate run costs.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "target": "symbol:rule:Present the routing roster and estimated costs in the trace before execution begins.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Architecture Gate**: Verify code uses frameworks and styles matching the Project Profile.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Security Gate**: Run scanning for credentials, connection strings, SQL injection, and XSS. Halt and reject immediately on any violation.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Performance Gate**: Check algorithmic complexity. Warn on inefficient nested loops.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Maintainability Gate**: Verify file changes conform to naming standards, include basic comments, and contain type hints if required by strictness levels.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Accessibility Gate**: Run basic checks on markup tags.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Business Alignment Gate**: Ensure modifications fulfill the plan requirements.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:skills\\aetheris-verification-engine\\SKILL.md",
+      "target": "symbol:rule:Documentation Gate**: Verify code updates documentation/readme files if new files or API endpoints are created.",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\config.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\config.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\config.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\context.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\context.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\context.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\event_bus.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\memory.py",
+      "target": "import:storage",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\plugins.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\registry_cache.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\scanner.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\skill_parser.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\skill_scanner.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\telemetry.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\utils.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "symbol:class:UniversalBlueprintEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "symbol:function:compile_blueprint",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\blueprint.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:class:ContextEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:function:_estimate_tokens",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:function:_compress_file",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:function:_calculate_relevance",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "symbol:function:build_context_package",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:re",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\context.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "symbol:class:DecisionIntelligenceEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "symbol:function:log_decision",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "symbol:function:get_decisions",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\decision.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "symbol:class:ProjectScanner",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "symbol:function:_calculate_fingerprint",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "symbol:function:_parse_package_json",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "symbol:function:scan",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\scanner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\technology.py",
+      "target": "symbol:class:TechnologyIntelligence",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\technology.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\technology.py",
+      "target": "symbol:function:evaluate_tech_stack",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\technology.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\intelligence\\technology.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "symbol:class:AetherisKernel",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "symbol:function:_update_dashboard",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "symbol:function:run_autonomous_loop",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\core.py",
+      "target": "import:validation",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:class:EventBus",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:function:register_subscriber",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:function:publish",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:function:dispatch_next",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "symbol:function:clear_queue",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "import:uuid",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "import:collections",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\event_bus.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:EventBus",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:TelemetryEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:Compiler",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:BaseCompilerPlugin",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:Symbol",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:KnowledgeNode",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:Relationship",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:EngineeringGraph",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:EngineeringKnowledgeBase",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:PythonAdapter",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:MarkdownAdapter",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:PrismaAdapter",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:SqlAdapter",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:class:EngineeringKnowledgeCompiler",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:publish",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:log_stage_start",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:log_stage_complete",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:log_stage_failed",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:compile",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:update",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:query",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:diagnostics",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:validate",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:benchmark",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:export",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:initialize",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:discover",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:lex",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:parse",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:semantic",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:relationships",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:cleanup",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:to_dict",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:add_node",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:add_edge",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:prune_file_nodes",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:save_artifact",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:load_artifact",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:_find_files",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:_calculate_file_hash",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "symbol:function:build_engineering_understanding",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:re",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:class:EngineeringKnowledgeBase",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:class:EngineeringPlanner",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:load_artifact",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:build_task_dag",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:plan",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:_topological_sort",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:_build_concurrency_waves",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "symbol:function:_save_execution_artifacts",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\planner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "symbol:class:AutonomousRecoveryEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "symbol:function:perform_rca",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "symbol:function:apply_remediation",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "import:re",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\recovery.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "symbol:class:RuntimeScheduler",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "symbol:function:_save_state",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "symbol:function:execute_dag",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\scheduler.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:class:TelemetryEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:_mask_paths",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:_rotate_logs",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:_write_log",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:log_stage_start",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:log_stage_complete",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "symbol:function:log_stage_failed",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\telemetry.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "symbol:function:initialize_perimeter",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "symbol:function:is_safe_path",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "symbol:function:redact_secrets",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "symbol:function:validate_environment",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "import:re",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\kernel\\utils.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:class:ConfigManager",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:_deep_merge",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:_load_yaml",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:_load_schema",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:validate_config",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:get_registry",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "symbol:function:load_config",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:yaml",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:jsonschema",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\config.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:class:PluginManager",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:_get_master_version",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:load_registry",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:_save_registry",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:validate_manifest",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "symbol:function:register_plugin",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\plugins.py",
+      "target": "import:yaml",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:class:RegistryCache",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:function:_load_cache_file",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:function:_save_cache_file",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:function:load_registry",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "symbol:function:find_by_capability",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\registry_cache.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "symbol:class:SkillParser",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "symbol:function:_extract_capabilities",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "symbol:function:parse_skill",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "import:re",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "import:yaml",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_parser.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "symbol:class:SkillScanner",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "symbol:function:add_root",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "symbol:function:scan_roots",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\orchestration\\skill_scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:class:MemoryEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:_safe_read_yaml",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:_safe_write_yaml",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:get_profile",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:save_profile",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:get_conventions",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:save_conventions",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:get_decisions",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:save_decision",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "symbol:function:verify_fingerprint",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\storage\\manager.py",
+      "target": "import:yaml",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "symbol:class:ReadinessEngine",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "symbol:function:__init__",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "symbol:function:verify_definition_of_done",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:src\\validation\\readiness.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:class:TestEKCCapabilities",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:class:ApplicationController",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:setUp",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:event_handler",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:tearDown",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:test_complete_compiler_passes",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:start",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "symbol:function:stop",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:unittest",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:shutil",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:time",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:sys",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_ekc_capabilities.py",
+      "target": "import:os",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "symbol:class:TestGoalManager",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "symbol:function:setUp",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "symbol:function:tearDown",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "symbol:function:test_expand_goal_discovery",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "import:unittest",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "import:shutil",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "symbol:class:TestPlannerCapabilities",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "symbol:function:setUp",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "symbol:function:tearDown",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "symbol:function:test_planning_generation",
+      "relationship": "defines",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "import:unittest",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "import:shutil",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "import:json",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on",
+      "metadata": {}
+    },
+    {
+      "source": "file:tests\\test_planner_capabilities.py",
+      "target": "import:kernel",
+      "relationship": "depends_on",
+      "metadata": {}
+    }
+  ]
+}

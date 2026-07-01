@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "id": "task:database_migrations",
+      "type": "Task",
+      "metadata": {
+        "name": "Database Migrations"
+      }
+    },
+    {
+      "id": "task:authentication",
+      "type": "Task",
+      "metadata": {
+        "name": "Authentication"
+      }
+    },
+    {
+      "id": "task:api_controllers",
+      "type": "Task",
+      "metadata": {
+        "name": "Api Controllers"
+      }
+    },
+    {
+      "id": "task:frontend_views",
+      "type": "Task",
+      "metadata": {
+        "name": "Frontend Views"
+      }
+    },
+    {
+      "id": "task:unit_testing",
+      "type": "Task",
+      "metadata": {
+        "name": "Unit Testing"
+      }
+    },
+    {
+      "id": "task:dockerization",
+      "type": "Task",
+      "metadata": {
+        "name": "Dockerization"
+      }
+    },
+    {
+      "id": "task:deployment_pipelines",
+      "type": "Task",
+      "metadata": {
+        "name": "Deployment Pipelines"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "task:database_migrations",
+      "target": "task:authentication",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:database_migrations",
+      "target": "task:api_controllers",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:authentication",
+      "target": "task:api_controllers",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:api_controllers",
+      "target": "task:frontend_views",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:api_controllers",
+      "target": "task:unit_testing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:frontend_views",
+      "target": "task:unit_testing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:database_migrations",
+      "target": "task:dockerization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:unit_testing",
+      "target": "task:deployment_pipelines",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "task:dockerization",
+      "target": "task:deployment_pipelines",
+      "relationship": "depends_on"
+    }
+  ]
+}

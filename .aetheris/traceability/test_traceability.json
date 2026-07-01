@@ -1,0 +1,393 @@
+{
+  "orphan_tests": [],
+  "test_case_count": 66,
+  "test_file_count": 14,
+  "tests": [
+    {
+      "imports": [
+        "intelligence.ape",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "path": "tests/test_ape.py",
+      "test_case_count": 5,
+      "test_cases": [
+        "test_architecture_validator",
+        "test_domain_boundary_planner",
+        "test_end_to_end_plan",
+        "test_storage_planner",
+        "test_style_selector"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.ede",
+        "intelligence.ekb",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-005"
+      ],
+      "path": "tests/test_ede.py",
+      "test_case_count": 3,
+      "test_cases": [
+        "test_decision_rollback",
+        "test_evaluate_decision",
+        "test_evaluate_decision_sqlite"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.ege",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "path": "tests/test_ege.py",
+      "test_case_count": 4,
+      "test_cases": [
+        "test_add_nodes_and_edges",
+        "test_cycle_detection",
+        "test_impact_analysis",
+        "test_isolated_nodes"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.ekb",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "path": "tests/test_ekb.py",
+      "test_case_count": 4,
+      "test_cases": [
+        "test_integrity_failure",
+        "test_query_objects",
+        "test_register_and_get_object",
+        "test_versioning_updates"
+      ]
+    },
+    {
+      "imports": [
+        "json",
+        "kernel.goal_manager",
+        "os",
+        "pathlib",
+        "shutil",
+        "sys",
+        "time",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "PLATFORM-SUPPORT"
+      ],
+      "path": "tests/test_ekc_capabilities.py",
+      "test_case_count": 1,
+      "test_cases": [
+        "test_complete_compiler_passes"
+      ]
+    },
+    {
+      "imports": [
+        "execution.acge",
+        "execution.cae",
+        "execution.dgb",
+        "execution.dge",
+        "execution.eme",
+        "execution.eo",
+        "execution.es",
+        "execution.goe",
+        "execution.mre",
+        "execution.pee",
+        "execution.pre",
+        "execution.spe",
+        "execution.sre",
+        "execution.sse",
+        "execution.tde",
+        "intelligence.ekb",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-032",
+        "SPEC-033",
+        "SPEC-034",
+        "SPEC-035",
+        "SPEC-036",
+        "SPEC-037",
+        "SPEC-038",
+        "SPEC-039",
+        "SPEC-040",
+        "SPEC-041",
+        "SPEC-042",
+        "SPEC-043",
+        "SPEC-044",
+        "SPEC-045",
+        "SPEC-046"
+      ],
+      "path": "tests/test_execution.py",
+      "test_case_count": 15,
+      "test_cases": [
+        "test_autonomous_code_generation_engine",
+        "test_context_assembly_engine",
+        "test_dependency_graph_builder",
+        "test_documentation_generation_engine",
+        "test_execution_metrics_engine",
+        "test_execution_orchestrator",
+        "test_execution_scheduler",
+        "test_git_operations_engine",
+        "test_model_routing_engine",
+        "test_parallel_execution_engine",
+        "test_patch_recovery_engine",
+        "test_self_review_engine",
+        "test_skill_selection_engine",
+        "test_state_persistence_engine",
+        "test_task_decomposition_engine"
+      ]
+    },
+    {
+      "imports": [
+        "kernel.goal_manager",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "PLATFORM-SUPPORT"
+      ],
+      "path": "tests/test_goal_manager.py",
+      "test_case_count": 1,
+      "test_cases": [
+        "test_expand_goal_discovery"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.pde",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "path": "tests/test_pde.py",
+      "test_case_count": 5,
+      "test_cases": [
+        "test_complexity_estimator",
+        "test_domain_classifier",
+        "test_end_to_end_discover",
+        "test_persona_discovery_engine",
+        "test_prompt_evidence_merger"
+      ]
+    },
+    {
+      "imports": [
+        "json",
+        "kernel.goal_manager",
+        "kernel.planner",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "PLATFORM-SUPPORT"
+      ],
+      "path": "tests/test_planner_capabilities.py",
+      "test_case_count": 1,
+      "test_cases": [
+        "test_planning_generation"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.ekb",
+        "intelligence.planners",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "path": "tests/test_planners.py",
+      "test_case_count": 7,
+      "test_cases": [
+        "test_backend_planning_engine",
+        "test_database_and_api_planning_engines",
+        "test_design_planning_engine",
+        "test_final_engineering_blueprint_compiler",
+        "test_frontend_planning_engine",
+        "test_security_planning_engine",
+        "test_tdd_compiler_reports"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.ege",
+        "intelligence.ekb",
+        "intelligence.qia",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "path": "tests/test_qia.py",
+      "test_case_count": 5,
+      "test_cases": [
+        "test_analyze_impact_cascade",
+        "test_end_to_end_query_impact",
+        "test_graph_traversal_dependents",
+        "test_intent_resolver",
+        "test_query_parser"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.coe",
+        "intelligence.coe2",
+        "intelligence.dsee",
+        "intelligence.eoe",
+        "intelligence.ere",
+        "intelligence.fve",
+        "intelligence.hde",
+        "intelligence.io",
+        "intelligence.kre",
+        "intelligence.lce",
+        "intelligence.mie",
+        "intelligence.mmce",
+        "intelligence.mre",
+        "intelligence.pce",
+        "intelligence.ple",
+        "intelligence.poe",
+        "intelligence.sbe",
+        "intelligence.sre",
+        "intelligence.toe",
+        "os",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-047",
+        "SPEC-048",
+        "SPEC-049",
+        "SPEC-050",
+        "SPEC-051",
+        "SPEC-052",
+        "SPEC-053",
+        "SPEC-054",
+        "SPEC-055",
+        "SPEC-056",
+        "SPEC-057",
+        "SPEC-058",
+        "SPEC-059",
+        "SPEC-060",
+        "SPEC-061",
+        "SPEC-062",
+        "SPEC-063",
+        "SPEC-064",
+        "SPEC-065"
+      ],
+      "path": "tests/test_rfc004_core.py",
+      "test_case_count": 6,
+      "test_cases": [
+        "test_knowledge_and_context",
+        "test_model_intelligence_engine",
+        "test_optimization_and_evolution",
+        "test_prompt_compiler_engine",
+        "test_prompt_optimization_engine",
+        "test_reasoning_and_reflection"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.urue",
+        "json",
+        "pathlib",
+        "shutil",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "path": "tests/test_urue.py",
+      "test_case_count": 4,
+      "test_cases": [
+        "test_end_to_end_understand",
+        "test_intent_extractor",
+        "test_prompt_normalizer",
+        "test_requirement_expander"
+      ]
+    },
+    {
+      "imports": [
+        "intelligence.wde",
+        "json",
+        "os",
+        "pathlib",
+        "shutil",
+        "sys",
+        "unittest"
+      ],
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "path": "tests/test_wde.py",
+      "test_case_count": 5,
+      "test_cases": [
+        "test_directory_walker",
+        "test_end_to_end_scan",
+        "test_file_fingerprint_manager",
+        "test_ignore_rule_manager",
+        "test_schema_validator"
+      ]
+    }
+  ]
+}

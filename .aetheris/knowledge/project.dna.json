@@ -1,0 +1,14 @@
+{
+  "project_name": "Evolving Codebase",
+  "philosophy": "Goal-driven micro-services architecture, high test coverage",
+  "design_language": "Minimalist responsive UI components",
+  "architectural_style": "Clean MVC / Domain separation",
+  "preferred_patterns": [
+    "Repository Pattern",
+    "Zod Validation"
+  ],
+  "forbidden_patterns": [
+    "Inline CSS modules",
+    "Hardcoded secret variables"
+  ]
+}

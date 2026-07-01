@@ -1,0 +1,644 @@
+{
+  "files": [
+    {
+      "file": "src\\config.py",
+      "loc": 23,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 98
+    },
+    {
+      "file": "src\\context.py",
+      "loc": 17,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\event_bus.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\memory.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\plugins.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\registry_cache.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\scanner.py",
+      "loc": 11,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\skill_parser.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\skill_scanner.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\telemetry.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\utils.py",
+      "loc": 1,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\adapters\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\execution\\acge.py",
+      "loc": 85,
+      "comment_density": 0.024,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.14,
+      "max_complexity": 2,
+      "maintainability_index": 92
+    },
+    {
+      "file": "src\\execution\\cae.py",
+      "loc": 86,
+      "comment_density": 0.07,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.29,
+      "max_complexity": 2,
+      "maintainability_index": 91
+    },
+    {
+      "file": "src\\execution\\dgb.py",
+      "loc": 159,
+      "comment_density": 0.069,
+      "num_classes": 1,
+      "num_functions": 8,
+      "avg_complexity": 5.5,
+      "max_complexity": 12,
+      "maintainability_index": 75
+    },
+    {
+      "file": "src\\execution\\dge.py",
+      "loc": 63,
+      "comment_density": 0.063,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.14,
+      "max_complexity": 2,
+      "maintainability_index": 93
+    },
+    {
+      "file": "src\\execution\\eme.py",
+      "loc": 48,
+      "comment_density": 0.021,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.0,
+      "max_complexity": 1,
+      "maintainability_index": 94
+    },
+    {
+      "file": "src\\execution\\eo.py",
+      "loc": 68,
+      "comment_density": 0.029,
+      "num_classes": 1,
+      "num_functions": 10,
+      "avg_complexity": 1.0,
+      "max_complexity": 1,
+      "maintainability_index": 93
+    },
+    {
+      "file": "src\\execution\\es.py",
+      "loc": 76,
+      "comment_density": 0.066,
+      "num_classes": 1,
+      "num_functions": 8,
+      "avg_complexity": 1.25,
+      "max_complexity": 3,
+      "maintainability_index": 92
+    },
+    {
+      "file": "src\\execution\\goe.py",
+      "loc": 52,
+      "comment_density": 0.019,
+      "num_classes": 1,
+      "num_functions": 8,
+      "avg_complexity": 1.0,
+      "max_complexity": 1,
+      "maintainability_index": 94
+    },
+    {
+      "file": "src\\execution\\mre.py",
+      "loc": 106,
+      "comment_density": 0.019,
+      "num_classes": 1,
+      "num_functions": 8,
+      "avg_complexity": 2.62,
+      "max_complexity": 7,
+      "maintainability_index": 86
+    },
+    {
+      "file": "src\\execution\\pee.py",
+      "loc": 68,
+      "comment_density": 0.029,
+      "num_classes": 1,
+      "num_functions": 8,
+      "avg_complexity": 1.38,
+      "max_complexity": 4,
+      "maintainability_index": 92
+    },
+    {
+      "file": "src\\execution\\pre.py",
+      "loc": 68,
+      "comment_density": 0.015,
+      "num_classes": 1,
+      "num_functions": 9,
+      "avg_complexity": 1.56,
+      "max_complexity": 5,
+      "maintainability_index": 91
+    },
+    {
+      "file": "src\\execution\\spe.py",
+      "loc": 57,
+      "comment_density": 0.018,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.43,
+      "max_complexity": 4,
+      "maintainability_index": 92
+    },
+    {
+      "file": "src\\execution\\sre.py",
+      "loc": 69,
+      "comment_density": 0.029,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.86,
+      "max_complexity": 5,
+      "maintainability_index": 90
+    },
+    {
+      "file": "src\\execution\\sse.py",
+      "loc": 75,
+      "comment_density": 0.027,
+      "num_classes": 1,
+      "num_functions": 5,
+      "avg_complexity": 2.8,
+      "max_complexity": 9,
+      "maintainability_index": 87
+    },
+    {
+      "file": "src\\execution\\tde.py",
+      "loc": 121,
+      "comment_density": 0.033,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 1.29,
+      "max_complexity": 3,
+      "maintainability_index": 90
+    },
+    {
+      "file": "src\\execution\\__init__.py",
+      "loc": 1,
+      "comment_density": 1.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 99
+    },
+    {
+      "file": "src\\intelligence\\ape.py",
+      "loc": 239,
+      "comment_density": 0.084,
+      "num_classes": 8,
+      "num_functions": 11,
+      "avg_complexity": 5.09,
+      "max_complexity": 15,
+      "maintainability_index": 72
+    },
+    {
+      "file": "src\\intelligence\\blueprint.py",
+      "loc": 51,
+      "comment_density": 0.078,
+      "num_classes": 1,
+      "num_functions": 2,
+      "avg_complexity": 2.5,
+      "max_complexity": 4,
+      "maintainability_index": 89
+    },
+    {
+      "file": "src\\intelligence\\context.py",
+      "loc": 169,
+      "comment_density": 0.101,
+      "num_classes": 1,
+      "num_functions": 5,
+      "avg_complexity": 5.8,
+      "max_complexity": 16,
+      "maintainability_index": 74
+    },
+    {
+      "file": "src\\intelligence\\decision.py",
+      "loc": 55,
+      "comment_density": 0.0,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 3.33,
+      "max_complexity": 6,
+      "maintainability_index": 87
+    },
+    {
+      "file": "src\\intelligence\\ede.py",
+      "loc": 89,
+      "comment_density": 0.045,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 3.0,
+      "max_complexity": 5,
+      "maintainability_index": 86
+    },
+    {
+      "file": "src\\intelligence\\ege.py",
+      "loc": 122,
+      "comment_density": 0.049,
+      "num_classes": 1,
+      "num_functions": 9,
+      "avg_complexity": 4.56,
+      "max_complexity": 10,
+      "maintainability_index": 80
+    },
+    {
+      "file": "src\\intelligence\\ekb.py",
+      "loc": 120,
+      "comment_density": 0.067,
+      "num_classes": 1,
+      "num_functions": 6,
+      "avg_complexity": 5.67,
+      "max_complexity": 15,
+      "maintainability_index": 77
+    },
+    {
+      "file": "src\\intelligence\\pde.py",
+      "loc": 255,
+      "comment_density": 0.063,
+      "num_classes": 10,
+      "num_functions": 12,
+      "avg_complexity": 3.0,
+      "max_complexity": 10,
+      "maintainability_index": 78
+    },
+    {
+      "file": "src\\intelligence\\planners.py",
+      "loc": 1204,
+      "comment_density": 0.007,
+      "num_classes": 29,
+      "num_functions": 56,
+      "avg_complexity": 1.61,
+      "max_complexity": 20,
+      "maintainability_index": 34
+    },
+    {
+      "file": "src\\intelligence\\qia.py",
+      "loc": 191,
+      "comment_density": 0.031,
+      "num_classes": 5,
+      "num_functions": 8,
+      "avg_complexity": 5.88,
+      "max_complexity": 13,
+      "maintainability_index": 72
+    },
+    {
+      "file": "src\\intelligence\\scanner.py",
+      "loc": 177,
+      "comment_density": 0.09,
+      "num_classes": 1,
+      "num_functions": 4,
+      "avg_complexity": 10.0,
+      "max_complexity": 22,
+      "maintainability_index": 61
+    },
+    {
+      "file": "src\\intelligence\\technology.py",
+      "loc": 55,
+      "comment_density": 0.018,
+      "num_classes": 1,
+      "num_functions": 2,
+      "avg_complexity": 2.5,
+      "max_complexity": 4,
+      "maintainability_index": 89
+    },
+    {
+      "file": "src\\intelligence\\urue.py",
+      "loc": 357,
+      "comment_density": 0.062,
+      "num_classes": 10,
+      "num_functions": 12,
+      "avg_complexity": 5.75,
+      "max_complexity": 22,
+      "maintainability_index": 64
+    },
+    {
+      "file": "src\\intelligence\\wde.py",
+      "loc": 577,
+      "comment_density": 0.087,
+      "num_classes": 11,
+      "num_functions": 21,
+      "avg_complexity": 7.52,
+      "max_complexity": 24,
+      "maintainability_index": 48
+    },
+    {
+      "file": "src\\intelligence\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\kernel\\core.py",
+      "loc": 359,
+      "comment_density": 0.07,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 9.33,
+      "max_complexity": 24,
+      "maintainability_index": 54
+    },
+    {
+      "file": "src\\kernel\\event_bus.py",
+      "loc": 98,
+      "comment_density": 0.082,
+      "num_classes": 1,
+      "num_functions": 5,
+      "avg_complexity": 3.2,
+      "max_complexity": 7,
+      "maintainability_index": 85
+    },
+    {
+      "file": "src\\kernel\\goal_manager.py",
+      "loc": 846,
+      "comment_density": 0.064,
+      "num_classes": 14,
+      "num_functions": 66,
+      "avg_complexity": 2.95,
+      "max_complexity": 41,
+      "maintainability_index": 48
+    },
+    {
+      "file": "src\\kernel\\planner.py",
+      "loc": 291,
+      "comment_density": 0.1,
+      "num_classes": 2,
+      "num_functions": 9,
+      "avg_complexity": 7.11,
+      "max_complexity": 28,
+      "maintainability_index": 64
+    },
+    {
+      "file": "src\\kernel\\recovery.py",
+      "loc": 38,
+      "comment_density": 0.053,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 1.33,
+      "max_complexity": 2,
+      "maintainability_index": 94
+    },
+    {
+      "file": "src\\kernel\\scheduler.py",
+      "loc": 101,
+      "comment_density": 0.109,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 3.33,
+      "max_complexity": 5,
+      "maintainability_index": 84
+    },
+    {
+      "file": "src\\kernel\\telemetry.py",
+      "loc": 121,
+      "comment_density": 0.058,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 3.29,
+      "max_complexity": 7,
+      "maintainability_index": 84
+    },
+    {
+      "file": "src\\kernel\\utils.py",
+      "loc": 82,
+      "comment_density": 0.11,
+      "num_classes": 0,
+      "num_functions": 4,
+      "avg_complexity": 3.75,
+      "max_complexity": 7,
+      "maintainability_index": 84
+    },
+    {
+      "file": "src\\kernel\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\orchestration\\config.py",
+      "loc": 198,
+      "comment_density": 0.076,
+      "num_classes": 1,
+      "num_functions": 7,
+      "avg_complexity": 5.14,
+      "max_complexity": 8,
+      "maintainability_index": 74
+    },
+    {
+      "file": "src\\orchestration\\plugins.py",
+      "loc": 149,
+      "comment_density": 0.04,
+      "num_classes": 1,
+      "num_functions": 6,
+      "avg_complexity": 4.33,
+      "max_complexity": 10,
+      "maintainability_index": 79
+    },
+    {
+      "file": "src\\orchestration\\registry_cache.py",
+      "loc": 162,
+      "comment_density": 0.093,
+      "num_classes": 1,
+      "num_functions": 5,
+      "avg_complexity": 7.4,
+      "max_complexity": 17,
+      "maintainability_index": 69
+    },
+    {
+      "file": "src\\orchestration\\skill_parser.py",
+      "loc": 146,
+      "comment_density": 0.048,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 10.67,
+      "max_complexity": 24,
+      "maintainability_index": 60
+    },
+    {
+      "file": "src\\orchestration\\skill_scanner.py",
+      "loc": 65,
+      "comment_density": 0.046,
+      "num_classes": 1,
+      "num_functions": 3,
+      "avg_complexity": 4.67,
+      "max_complexity": 10,
+      "maintainability_index": 82
+    },
+    {
+      "file": "src\\orchestration\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\sdk\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\storage\\manager.py",
+      "loc": 137,
+      "comment_density": 0.022,
+      "num_classes": 1,
+      "num_functions": 10,
+      "avg_complexity": 2.9,
+      "max_complexity": 9,
+      "maintainability_index": 84
+    },
+    {
+      "file": "src\\storage\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    },
+    {
+      "file": "src\\validation\\readiness.py",
+      "loc": 32,
+      "comment_density": 0.062,
+      "num_classes": 1,
+      "num_functions": 2,
+      "avg_complexity": 1.0,
+      "max_complexity": 1,
+      "maintainability_index": 95
+    },
+    {
+      "file": "src\\validation\\__init__.py",
+      "loc": 0,
+      "comment_density": 0.0,
+      "num_classes": 0,
+      "num_functions": 0,
+      "avg_complexity": 0.0,
+      "max_complexity": 1,
+      "maintainability_index": 100
+    }
+  ]
+}

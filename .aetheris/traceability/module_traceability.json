@@ -1,0 +1,3507 @@
+{
+  "modules": [
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/adapters/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "sys",
+        "json",
+        "orchestration.config"
+      ],
+      "line_count": 23,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/config.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "sys",
+        "json",
+        "intelligence.context"
+      ],
+      "line_count": 17,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/context.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "kernel.event_bus"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/event_bus.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/execution/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [
+        "engineering.decisions.json",
+        "generated.files.json",
+        "implementation.report.json",
+        "src/auth_middleware.py",
+        "src/db_init_bootstrap.sql"
+      ],
+      "classes": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "ekb_objects": [
+        "execution_decision_log",
+        "execution_generated_code"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 85,
+      "mapped_requirements": [
+        "SPEC-039-FR-001",
+        "SPEC-039-FR-002",
+        "SPEC-039-FR-003",
+        "SPEC-039-FR-004",
+        "SPEC-039-FR-005",
+        "SPEC-039-FR-006",
+        "SPEC-039-FR-007",
+        "SPEC-039-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "methods": [
+        "AutonomousCodeGenerationEngine.__init__",
+        "AutonomousCodeGenerationEngine.generate_code",
+        "AutonomousCodeGenerationEngine.modify_file",
+        "AutonomousCodeGenerationEngine.create_file",
+        "AutonomousCodeGenerationEngine.update_project",
+        "AutonomousCodeGenerationEngine.record_decision",
+        "AutonomousCodeGenerationEngine.validate_output"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/acge.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        ".aetheris/planning/database/entities.plan.json",
+        "context.dependencies.json",
+        "execution.context.json",
+        "token.budget.json"
+      ],
+      "classes": [
+        "ContextAssemblyEngine"
+      ],
+      "ekb_objects": [
+        "execution_context_payload"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 86,
+      "mapped_requirements": [
+        "SPEC-036-FR-001",
+        "SPEC-036-FR-002",
+        "SPEC-036-FR-003",
+        "SPEC-036-FR-004",
+        "SPEC-036-FR-005",
+        "SPEC-036-FR-006",
+        "SPEC-036-FR-007",
+        "SPEC-036-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "methods": [
+        "ContextAssemblyEngine.__init__",
+        "ContextAssemblyEngine.assemble_context",
+        "ContextAssemblyEngine.compress",
+        "ContextAssemblyEngine.estimate_tokens",
+        "ContextAssemblyEngine.retrieve_dependencies",
+        "ContextAssemblyEngine.collect_memory",
+        "ContextAssemblyEngine.validate_context"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/cae.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "critical.path.json",
+        "dependency.graph.json",
+        "execution.dag.json",
+        "parallel.groups.json"
+      ],
+      "classes": [
+        "DependencyGraphBuilder"
+      ],
+      "ekb_objects": [
+        "execution_dag",
+        "topological_order"
+      ],
+      "events": [],
+      "functions": [
+        "dfs",
+        "dfs"
+      ],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 159,
+      "mapped_requirements": [
+        "SPEC-033-FR-001",
+        "SPEC-033-FR-002",
+        "SPEC-033-FR-003",
+        "SPEC-033-FR-004",
+        "SPEC-033-FR-005",
+        "SPEC-033-FR-006",
+        "SPEC-033-FR-007",
+        "SPEC-033-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "methods": [
+        "DependencyGraphBuilder.__init__",
+        "DependencyGraphBuilder.build_graph",
+        "DependencyGraphBuilder.detect_cycles",
+        "DependencyGraphBuilder.get_topological_order",
+        "DependencyGraphBuilder.calculate_critical_path",
+        "DependencyGraphBuilder.get_parallel_groups"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/dgb.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [
+        "000{idx + 1}_decision.md",
+        "README.md",
+        "api.md",
+        "documentation.metrics.json"
+      ],
+      "classes": [
+        "DocumentationGenerationEngine"
+      ],
+      "ekb_objects": [
+        "execution_docs_metrics"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 63,
+      "mapped_requirements": [
+        "SPEC-044-FR-001",
+        "SPEC-044-FR-002",
+        "SPEC-044-FR-003",
+        "SPEC-044-FR-004",
+        "SPEC-044-FR-005",
+        "SPEC-044-FR-006",
+        "SPEC-044-FR-007",
+        "SPEC-044-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "methods": [
+        "DocumentationGenerationEngine.__init__",
+        "DocumentationGenerationEngine.generate_documentation",
+        "DocumentationGenerationEngine.update_documentation",
+        "DocumentationGenerationEngine.validate_docs",
+        "DocumentationGenerationEngine.generate_readme",
+        "DocumentationGenerationEngine.generate_api_docs",
+        "DocumentationGenerationEngine.generate_adrs"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/dge.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "engineering.dashboard.json",
+        "execution.metrics.json",
+        "performance.report.json"
+      ],
+      "classes": [
+        "ExecutionMetricsEngine"
+      ],
+      "ekb_objects": [
+        "execution_dashboard_metrics"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 48,
+      "mapped_requirements": [
+        "SPEC-045-FR-001",
+        "SPEC-045-FR-002",
+        "SPEC-045-FR-003",
+        "SPEC-045-FR-004",
+        "SPEC-045-FR-005",
+        "SPEC-045-FR-006",
+        "SPEC-045-FR-007",
+        "SPEC-045-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "methods": [
+        "ExecutionMetricsEngine.__init__",
+        "ExecutionMetricsEngine.record_metric",
+        "ExecutionMetricsEngine.generate_dashboard",
+        "ExecutionMetricsEngine.engineering_score",
+        "ExecutionMetricsEngine.cost_analysis",
+        "ExecutionMetricsEngine.performance_report",
+        "ExecutionMetricsEngine.historical_comparison"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/eme.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "execution.lifecycle.json",
+        "orchestrator.state.json",
+        "system.timeline.json"
+      ],
+      "classes": [
+        "ExecutionOrchestrator"
+      ],
+      "ekb_objects": [
+        "execution_orchestrator_lifecycle"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "time",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 68,
+      "mapped_requirements": [
+        "SPEC-046-FR-001",
+        "SPEC-046-FR-002",
+        "SPEC-046-FR-003",
+        "SPEC-046-FR-004",
+        "SPEC-046-FR-005",
+        "SPEC-046-FR-006",
+        "SPEC-046-FR-007",
+        "SPEC-046-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "ExecutionOrchestrator.__init__",
+        "ExecutionOrchestrator.run",
+        "ExecutionOrchestrator.pause",
+        "ExecutionOrchestrator.resume",
+        "ExecutionOrchestrator.cancel",
+        "ExecutionOrchestrator.shutdown",
+        "ExecutionOrchestrator.restart",
+        "ExecutionOrchestrator.execution_status",
+        "ExecutionOrchestrator.system_health",
+        "ExecutionOrchestrator.orchestrate"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/eo.py",
+      "public_api_count": 9
+    },
+    {
+      "artifacts": [
+        "execution.queue.json",
+        "parallel.batches.json",
+        "scheduler.plan.json"
+      ],
+      "classes": [
+        "ExecutionScheduler"
+      ],
+      "ekb_objects": [
+        "execution_scheduler_plan"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 76,
+      "mapped_requirements": [
+        "SPEC-037-FR-001",
+        "SPEC-037-FR-002",
+        "SPEC-037-FR-003",
+        "SPEC-037-FR-004",
+        "SPEC-037-FR-005",
+        "SPEC-037-FR-006",
+        "SPEC-037-FR-007",
+        "SPEC-037-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "methods": [
+        "ExecutionScheduler.__init__",
+        "ExecutionScheduler.schedule",
+        "ExecutionScheduler.reschedule_on_failure",
+        "ExecutionScheduler.pause_execution",
+        "ExecutionScheduler.resume_execution",
+        "ExecutionScheduler.critical_path",
+        "ExecutionScheduler.execution_order",
+        "ExecutionScheduler.parallel_batches"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/es.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [
+        "commit.history.json",
+        "git.plan.json"
+      ],
+      "classes": [
+        "GitOperationsEngine"
+      ],
+      "ekb_objects": [
+        "execution_git_commit"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "time",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 52,
+      "mapped_requirements": [
+        "SPEC-043-FR-001",
+        "SPEC-043-FR-002",
+        "SPEC-043-FR-003",
+        "SPEC-043-FR-004",
+        "SPEC-043-FR-005",
+        "SPEC-043-FR-006",
+        "SPEC-043-FR-007",
+        "SPEC-043-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "methods": [
+        "GitOperationsEngine.__init__",
+        "GitOperationsEngine.commit",
+        "GitOperationsEngine.create_branch",
+        "GitOperationsEngine.merge",
+        "GitOperationsEngine.tag_release",
+        "GitOperationsEngine.repository_health",
+        "GitOperationsEngine.generate_commit_message",
+        "GitOperationsEngine.rollback"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/goe.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [
+        "model.assignment.json",
+        "routing.decisions.json"
+      ],
+      "classes": [
+        "ModelRoutingEngine"
+      ],
+      "ekb_objects": [
+        "model_routing_decisions"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 106,
+      "mapped_requirements": [
+        "SPEC-035-FR-001",
+        "SPEC-035-FR-002",
+        "SPEC-035-FR-003",
+        "SPEC-035-FR-004",
+        "SPEC-035-FR-005",
+        "SPEC-035-FR-006",
+        "SPEC-035-FR-007",
+        "SPEC-035-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "methods": [
+        "ModelRoutingEngine.__init__",
+        "ModelRoutingEngine.route_model",
+        "ModelRoutingEngine.rank_models_for_task",
+        "ModelRoutingEngine.estimate_cost",
+        "ModelRoutingEngine.estimate_latency",
+        "ModelRoutingEngine.confidence",
+        "ModelRoutingEngine.provider_health",
+        "ModelRoutingEngine.reroute"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/mre.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [
+        "auth.plan.json",
+        "conflict.map.json",
+        "database.plan.json",
+        "execution.batches.json",
+        "parallel.execution.plan.json"
+      ],
+      "classes": [
+        "ParallelExecutionEngine"
+      ],
+      "ekb_objects": [
+        "execution_parallel_batches"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 68,
+      "mapped_requirements": [
+        "SPEC-038-FR-001",
+        "SPEC-038-FR-002",
+        "SPEC-038-FR-003",
+        "SPEC-038-FR-004",
+        "SPEC-038-FR-005",
+        "SPEC-038-FR-006",
+        "SPEC-038-FR-007",
+        "SPEC-038-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "methods": [
+        "ParallelExecutionEngine.__init__",
+        "ParallelExecutionEngine.create_batches",
+        "ParallelExecutionEngine.allocate_resources",
+        "ParallelExecutionEngine.detect_conflicts",
+        "ParallelExecutionEngine.merge_batches",
+        "ParallelExecutionEngine.pause_batch",
+        "ParallelExecutionEngine.resume_batch",
+        "ParallelExecutionEngine.cancel_batch"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/pee.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [
+        "failure.analysis.json",
+        "patch.plan.json",
+        "recovery.report.json",
+        "src/auth_middleware.py"
+      ],
+      "classes": [
+        "PatchRecoveryEngine"
+      ],
+      "ekb_objects": [
+        "execution_patch_plan"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 68,
+      "mapped_requirements": [
+        "SPEC-041-FR-001",
+        "SPEC-041-FR-002",
+        "SPEC-041-FR-003",
+        "SPEC-041-FR-004",
+        "SPEC-041-FR-005",
+        "SPEC-041-FR-006",
+        "SPEC-041-FR-007",
+        "SPEC-041-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "methods": [
+        "PatchRecoveryEngine.__init__",
+        "PatchRecoveryEngine.recover",
+        "PatchRecoveryEngine.patch",
+        "PatchRecoveryEngine.rollback",
+        "PatchRecoveryEngine.retry",
+        "PatchRecoveryEngine.resume",
+        "PatchRecoveryEngine.classify_failure",
+        "PatchRecoveryEngine.analyze_root_cause",
+        "PatchRecoveryEngine.validate_patch"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/pre.py",
+      "public_api_count": 8
+    },
+    {
+      "artifacts": [
+        "checkpoint.json",
+        "execution.snapshot.json",
+        "resume.state.json"
+      ],
+      "classes": [
+        "StatePersistenceEngine"
+      ],
+      "ekb_objects": [
+        "execution_checkpoint_snap"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "time",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 57,
+      "mapped_requirements": [
+        "SPEC-042-FR-001",
+        "SPEC-042-FR-002",
+        "SPEC-042-FR-003",
+        "SPEC-042-FR-004",
+        "SPEC-042-FR-005",
+        "SPEC-042-FR-006",
+        "SPEC-042-FR-007",
+        "SPEC-042-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "methods": [
+        "StatePersistenceEngine.__init__",
+        "StatePersistenceEngine.checkpoint",
+        "StatePersistenceEngine.resume",
+        "StatePersistenceEngine.restore",
+        "StatePersistenceEngine.save_state",
+        "StatePersistenceEngine.load_state",
+        "StatePersistenceEngine.validate_checkpoint"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/spe.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "engineering.review.json",
+        "quality.score.json",
+        "review.findings.json"
+      ],
+      "classes": [
+        "SelfReviewEngine"
+      ],
+      "ekb_objects": [
+        "execution_review_report"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 69,
+      "mapped_requirements": [
+        "SPEC-040-FR-001",
+        "SPEC-040-FR-002",
+        "SPEC-040-FR-003",
+        "SPEC-040-FR-004",
+        "SPEC-040-FR-005",
+        "SPEC-040-FR-006",
+        "SPEC-040-FR-007",
+        "SPEC-040-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "methods": [
+        "SelfReviewEngine.__init__",
+        "SelfReviewEngine.review",
+        "SelfReviewEngine.score_quality",
+        "SelfReviewEngine.detect_smells",
+        "SelfReviewEngine.recommend",
+        "SelfReviewEngine.approve",
+        "SelfReviewEngine.reject"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/sre.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "missing.skills.json",
+        "required.skills.json",
+        "skill.selection.json",
+        "task.skills.map.json"
+      ],
+      "classes": [
+        "SkillSelectionEngine"
+      ],
+      "ekb_objects": [
+        "task_skills_mappings"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 75,
+      "mapped_requirements": [
+        "SPEC-034-FR-001",
+        "SPEC-034-FR-002",
+        "SPEC-034-FR-003",
+        "SPEC-034-FR-004",
+        "SPEC-034-FR-005",
+        "SPEC-034-FR-006",
+        "SPEC-034-FR-007",
+        "SPEC-034-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-034"
+      ],
+      "methods": [
+        "SkillSelectionEngine.__init__",
+        "SkillSelectionEngine.select_skills",
+        "SkillSelectionEngine.rank_skills_for_task",
+        "SkillSelectionEngine.identify_missing_skills",
+        "SkillSelectionEngine.recommend_fallback"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/sse.py",
+      "public_api_count": 4
+    },
+    {
+      "artifacts": [
+        "auth.plan.json",
+        "database.plan.json",
+        "endpoint.plan.json",
+        "entities.plan.json",
+        "execution.tree.json",
+        "features.json",
+        "modules.json",
+        "stories.json",
+        "task.registry.json",
+        "tasks.json"
+      ],
+      "classes": [
+        "TaskDecompositionEngine"
+      ],
+      "ekb_objects": [
+        "execution_tasks_list",
+        "execution_tree"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 121,
+      "mapped_requirements": [
+        "SPEC-032-FR-001",
+        "SPEC-032-FR-002",
+        "SPEC-032-FR-003",
+        "SPEC-032-FR-004",
+        "SPEC-032-FR-005",
+        "SPEC-032-FR-006",
+        "SPEC-032-FR-007",
+        "SPEC-032-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "methods": [
+        "TaskDecompositionEngine.__init__",
+        "TaskDecompositionEngine.generate_tasks",
+        "TaskDecompositionEngine.split_task",
+        "TaskDecompositionEngine.merge_tasks",
+        "TaskDecompositionEngine.validate_task",
+        "TaskDecompositionEngine.estimate_effort",
+        "TaskDecompositionEngine.export_execution_tree"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/execution/tde.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [
+        "architecture.graph.json",
+        "architecture.plan.json"
+      ],
+      "classes": [
+        "ArchitectureStyleSelector",
+        "DomainBoundaryPlanner",
+        "ModulePlanner",
+        "StoragePlanner",
+        "SecurityBoundaryPlanner",
+        "ArchitectureValidator",
+        "ArchitecturePlanningEngine",
+        "EventBus"
+      ],
+      "ekb_objects": [],
+      "events": [
+        "ArchitecturePlanGenerated",
+        "ArchitecturePlanningStarted",
+        "ArchitectureStyleSelected",
+        "ArchitectureValidated",
+        "DependencyGraphGenerated",
+        "DomainBoundariesCreated",
+        "ModulesGenerated"
+      ],
+      "functions": [
+        "dfs",
+        "__init__",
+        "publish"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "kernel.event_bus"
+      ],
+      "line_count": 239,
+      "mapped_requirements": [
+        "SPEC-004-FR-001",
+        "SPEC-004-FR-002",
+        "SPEC-004-FR-003",
+        "SPEC-004-FR-004",
+        "SPEC-004-FR-005",
+        "SPEC-004-FR-006",
+        "SPEC-004-FR-007",
+        "SPEC-004-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "methods": [
+        "ArchitectureStyleSelector.select",
+        "DomainBoundaryPlanner.group",
+        "ModulePlanner.plan_folder_structure",
+        "StoragePlanner.plan",
+        "SecurityBoundaryPlanner.plan",
+        "ArchitectureValidator.validate",
+        "ArchitecturePlanningEngine.__init__",
+        "ArchitecturePlanningEngine.plan",
+        "EventBus.__init__",
+        "EventBus.publish"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ape.py",
+      "public_api_count": 10
+    },
+    {
+      "artifacts": [
+        "product.blueprint.json"
+      ],
+      "classes": [
+        "UniversalBlueprintEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "intelligence.technology",
+        "intelligence.decision",
+        "sys"
+      ],
+      "line_count": 51,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "UniversalBlueprintEngine.__init__",
+        "UniversalBlueprintEngine.compile_blueprint"
+      ],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/blueprint.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "CostOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 6,
+      "mapped_requirements": [
+        "SPEC-059-FR-001",
+        "SPEC-059-FR-002",
+        "SPEC-059-FR-003",
+        "SPEC-059-FR-004",
+        "SPEC-059-FR-005",
+        "SPEC-059-FR-006",
+        "SPEC-059-FR-007",
+        "SPEC-059-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-059"
+      ],
+      "methods": [
+        "CostOptimizationEngine.__init__",
+        "CostOptimizationEngine.calculate_optimal_cost"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/coe.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "ContextOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-061-FR-001",
+        "SPEC-061-FR-002",
+        "SPEC-061-FR-003",
+        "SPEC-061-FR-004",
+        "SPEC-061-FR-005",
+        "SPEC-061-FR-006",
+        "SPEC-061-FR-007",
+        "SPEC-061-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-061"
+      ],
+      "methods": [
+        "ContextOptimizationEngine.__init__",
+        "ContextOptimizationEngine.filter_context"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/coe2.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "ContextEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "re",
+        "sys",
+        "json",
+        "pathlib",
+        "kernel.utils"
+      ],
+      "line_count": 169,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "ContextEngine.__init__",
+        "ContextEngine._estimate_tokens",
+        "ContextEngine._compress_file",
+        "ContextEngine._calculate_relevance",
+        "ContextEngine.build_context_package"
+      ],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/context.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "DecisionIntelligenceEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "kernel.utils",
+        "sys"
+      ],
+      "line_count": 55,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "DecisionIntelligenceEngine.__init__",
+        "DecisionIntelligenceEngine.log_decision",
+        "DecisionIntelligenceEngine.get_decisions"
+      ],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/decision.py",
+      "public_api_count": 2
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "DynamicSkillEvolutionEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-062-FR-001",
+        "SPEC-062-FR-002",
+        "SPEC-062-FR-003",
+        "SPEC-062-FR-004",
+        "SPEC-062-FR-005",
+        "SPEC-062-FR-006",
+        "SPEC-062-FR-007",
+        "SPEC-062-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-062"
+      ],
+      "methods": [
+        "DynamicSkillEvolutionEngine.__init__",
+        "DynamicSkillEvolutionEngine.evolve_skill"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/dsee.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "{decision_id}.json",
+        "{decision_id}_history.json"
+      ],
+      "classes": [
+        "EngineeringDecisionEngine"
+      ],
+      "ekb_objects": [
+        "decision"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 89,
+      "mapped_requirements": [
+        "SPEC-005-FR-001",
+        "SPEC-005-FR-002",
+        "SPEC-005-FR-003",
+        "SPEC-005-FR-004",
+        "SPEC-005-FR-005",
+        "SPEC-005-FR-006",
+        "SPEC-005-FR-007",
+        "SPEC-005-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-005"
+      ],
+      "methods": [
+        "EngineeringDecisionEngine.__init__",
+        "EngineeringDecisionEngine.evaluate_decision",
+        "EngineeringDecisionEngine.rollback_decision"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ede.py",
+      "public_api_count": 2
+    },
+    {
+      "artifacts": [
+        "architecture.graph.json"
+      ],
+      "classes": [
+        "EngineeringGraphEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [
+        "dfs"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "line_count": 122,
+      "mapped_requirements": [
+        "SPEC-006-FR-001",
+        "SPEC-006-FR-002",
+        "SPEC-006-FR-003",
+        "SPEC-006-FR-004",
+        "SPEC-006-FR-005",
+        "SPEC-006-FR-006",
+        "SPEC-006-FR-007",
+        "SPEC-006-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "methods": [
+        "EngineeringGraphEngine.__init__",
+        "EngineeringGraphEngine._load_graph",
+        "EngineeringGraphEngine._save_graph",
+        "EngineeringGraphEngine.add_node",
+        "EngineeringGraphEngine.add_edge",
+        "EngineeringGraphEngine.detect_cycles",
+        "EngineeringGraphEngine.get_impacted_nodes",
+        "EngineeringGraphEngine.get_isolated_nodes"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ege.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [
+        "*.json",
+        "{obj_id}.json",
+        "{obj_id}_history.json",
+        "{obj_id}_v{version}.json"
+      ],
+      "classes": [
+        "EngineeringKnowledgeBase"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "hashlib",
+        "time",
+        "pathlib",
+        "typing"
+      ],
+      "line_count": 120,
+      "mapped_requirements": [
+        "SPEC-007-FR-001",
+        "SPEC-007-FR-002",
+        "SPEC-007-FR-003",
+        "SPEC-007-FR-004",
+        "SPEC-007-FR-005",
+        "SPEC-007-FR-006",
+        "SPEC-007-FR-007",
+        "SPEC-007-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "methods": [
+        "EngineeringKnowledgeBase.__init__",
+        "EngineeringKnowledgeBase._calculate_checksum",
+        "EngineeringKnowledgeBase.register_object",
+        "EngineeringKnowledgeBase.get_object",
+        "EngineeringKnowledgeBase.query_objects",
+        "EngineeringKnowledgeBase.purge_all"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ekb.py",
+      "public_api_count": 4
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "ExecutionOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 6,
+      "mapped_requirements": [
+        "SPEC-060-FR-001",
+        "SPEC-060-FR-002",
+        "SPEC-060-FR-003",
+        "SPEC-060-FR-004",
+        "SPEC-060-FR-005",
+        "SPEC-060-FR-006",
+        "SPEC-060-FR-007",
+        "SPEC-060-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-060"
+      ],
+      "methods": [
+        "ExecutionOptimizationEngine.__init__",
+        "ExecutionOptimizationEngine.optimize_execution"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/eoe.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "EngineeringReasoningEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 15,
+      "mapped_requirements": [
+        "SPEC-050-FR-001",
+        "SPEC-050-FR-002",
+        "SPEC-050-FR-003",
+        "SPEC-050-FR-004",
+        "SPEC-050-FR-005",
+        "SPEC-050-FR-006",
+        "SPEC-050-FR-007",
+        "SPEC-050-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-050"
+      ],
+      "methods": [
+        "EngineeringReasoningEngine.__init__",
+        "EngineeringReasoningEngine.reason_through_problem"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ere.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "FactVerificationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-055-FR-001",
+        "SPEC-055-FR-002",
+        "SPEC-055-FR-003",
+        "SPEC-055-FR-004",
+        "SPEC-055-FR-005",
+        "SPEC-055-FR-006",
+        "SPEC-055-FR-007",
+        "SPEC-055-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-055"
+      ],
+      "methods": [
+        "FactVerificationEngine.__init__",
+        "FactVerificationEngine.verify_fact"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/fve.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "HallucinationDetectionEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 6,
+      "mapped_requirements": [
+        "SPEC-056-FR-001",
+        "SPEC-056-FR-002",
+        "SPEC-056-FR-003",
+        "SPEC-056-FR-004",
+        "SPEC-056-FR-005",
+        "SPEC-056-FR-006",
+        "SPEC-056-FR-007",
+        "SPEC-056-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-056"
+      ],
+      "methods": [
+        "HallucinationDetectionEngine.__init__",
+        "HallucinationDetectionEngine.scan_for_hallucinations"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/hde.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "IntelligenceOrchestrator"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 9,
+      "mapped_requirements": [
+        "SPEC-065-FR-001",
+        "SPEC-065-FR-002",
+        "SPEC-065-FR-003",
+        "SPEC-065-FR-004",
+        "SPEC-065-FR-005",
+        "SPEC-065-FR-006",
+        "SPEC-065-FR-007",
+        "SPEC-065-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-065"
+      ],
+      "methods": [
+        "IntelligenceOrchestrator.__init__",
+        "IntelligenceOrchestrator.assemble_package"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/io.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "00_SYSTEM_CONSTITUTION.md"
+      ],
+      "classes": [
+        "KnowledgeRetrievalEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-053-FR-001",
+        "SPEC-053-FR-002",
+        "SPEC-053-FR-003",
+        "SPEC-053-FR-004",
+        "SPEC-053-FR-005",
+        "SPEC-053-FR-006",
+        "SPEC-053-FR-007",
+        "SPEC-053-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-053"
+      ],
+      "methods": [
+        "KnowledgeRetrievalEngine.__init__",
+        "KnowledgeRetrievalEngine.retrieve_evidence"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/kre.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "LongContextEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-052-FR-001",
+        "SPEC-052-FR-002",
+        "SPEC-052-FR-003",
+        "SPEC-052-FR-004",
+        "SPEC-052-FR-005",
+        "SPEC-052-FR-006",
+        "SPEC-052-FR-007",
+        "SPEC-052-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-052"
+      ],
+      "methods": [
+        "LongContextEngine.__init__",
+        "LongContextEngine.chunk_repository"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/lce.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "model.capabilities.json",
+        "model.registry.json"
+      ],
+      "classes": [
+        "ModelIntelligenceEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "line_count": 59,
+      "mapped_requirements": [
+        "SPEC-047-FR-001",
+        "SPEC-047-FR-002",
+        "SPEC-047-FR-003",
+        "SPEC-047-FR-004",
+        "SPEC-047-FR-005",
+        "SPEC-047-FR-006",
+        "SPEC-047-FR-007",
+        "SPEC-047-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-047"
+      ],
+      "methods": [
+        "ModelIntelligenceEngine.__init__",
+        "ModelIntelligenceEngine._bootstrap_registries",
+        "ModelIntelligenceEngine.get_optimal_model"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/mie.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "MultiModelConsensusEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-064-FR-001",
+        "SPEC-064-FR-002",
+        "SPEC-064-FR-003",
+        "SPEC-064-FR-004",
+        "SPEC-064-FR-005",
+        "SPEC-064-FR-006",
+        "SPEC-064-FR-007",
+        "SPEC-064-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-064"
+      ],
+      "methods": [
+        "MultiModelConsensusEngine.__init__",
+        "MultiModelConsensusEngine.resolve_consensus"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/mmce.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "MemoryRankingEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 14,
+      "mapped_requirements": [
+        "SPEC-054-FR-001",
+        "SPEC-054-FR-002",
+        "SPEC-054-FR-003",
+        "SPEC-054-FR-004",
+        "SPEC-054-FR-005",
+        "SPEC-054-FR-006",
+        "SPEC-054-FR-007",
+        "SPEC-054-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-054"
+      ],
+      "methods": [
+        "MemoryRankingEngine.__init__",
+        "MemoryRankingEngine.rank_memories"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/mre.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "PromptCompilerEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 15,
+      "mapped_requirements": [
+        "SPEC-048-FR-001",
+        "SPEC-048-FR-002",
+        "SPEC-048-FR-003",
+        "SPEC-048-FR-004",
+        "SPEC-048-FR-005",
+        "SPEC-048-FR-006",
+        "SPEC-048-FR-007",
+        "SPEC-048-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-048"
+      ],
+      "methods": [
+        "PromptCompilerEngine.__init__",
+        "PromptCompilerEngine.compile_prompt"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/pce.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "product.plan.json"
+      ],
+      "classes": [
+        "PromptEvidenceMerger",
+        "BusinessIntentAnalyzer",
+        "DomainClassifier",
+        "PersonaDiscoveryEngine",
+        "WorkflowDiscoveryEngine",
+        "FeatureDiscoveryEngine",
+        "MVPPlanner",
+        "ComplexityEstimator",
+        "ProductDiscoveryEngine",
+        "EventBus"
+      ],
+      "ekb_objects": [],
+      "events": [
+        "BusinessIntentExtracted",
+        "PersonaDiscovered",
+        "ProductDiscoveryStarted",
+        "ProductPlanGenerated",
+        "ProductValidated",
+        "WorkflowDiscovered"
+      ],
+      "functions": [
+        "__init__",
+        "publish"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "pathlib",
+        "typing",
+        "kernel.event_bus"
+      ],
+      "line_count": 255,
+      "mapped_requirements": [
+        "SPEC-003-FR-001",
+        "SPEC-003-FR-002",
+        "SPEC-003-FR-003",
+        "SPEC-003-FR-004",
+        "SPEC-003-FR-005",
+        "SPEC-003-FR-006",
+        "SPEC-003-FR-007",
+        "SPEC-003-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "methods": [
+        "PromptEvidenceMerger.merge",
+        "BusinessIntentAnalyzer.analyze",
+        "DomainClassifier.classify",
+        "PersonaDiscoveryEngine.discover",
+        "WorkflowDiscoveryEngine.discover",
+        "FeatureDiscoveryEngine.discover",
+        "MVPPlanner.plan",
+        "ComplexityEstimator.estimate",
+        "ProductDiscoveryEngine.__init__",
+        "ProductDiscoveryEngine.discover",
+        "EventBus.__init__",
+        "EventBus.publish"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/pde.py",
+      "public_api_count": 11
+    },
+    {
+      "artifacts": [
+        "alerting.plan.json",
+        "api.plan.json",
+        "architecture.docs.plan.json",
+        "auth.plan.json",
+        "authorization.plan.json",
+        "background_jobs.json",
+        "backup.plan.json",
+        "blueprint.diff.json",
+        "blueprint_v*.json",
+        "blueprint_v{version}.json",
+        "business.continuity.plan.json",
+        "capacity.plan.json",
+        "compliance.plan.json",
+        "components.plan.json",
+        "controllers.plan.json",
+        "cost.plan.json",
+        "coverage.plan.json",
+        "database.plan.json",
+        "dependency.plan.json",
+        "design.plan.json",
+        "devops.plan.json",
+        "docker.plan.json",
+        "docs.plan.json",
+        "dr.plan.json",
+        "endpoint.plan.json",
+        "engineering.blueprint.json",
+        "engineering.blueprint.md",
+        "engineering.summary.json",
+        "engineering_review.json",
+        "entities.plan.json",
+        "execution.input.json",
+        "execution.plan.json",
+        "governance.plan.json",
+        "growth.cost.json",
+        "guidelines.md",
+        "hosting.plan.json",
+        "indexes.plan.json",
+        "infrastructure.plan.json",
+        "integration.plan.json",
+        "lifecycle.plan.json",
+        "load.profile.json",
+        "logging.plan.json",
+        "maintenance.plan.json",
+        "metrics.plan.json",
+        "migration.plan.json",
+        "mitigation.plan.json",
+        "modules.plan.json",
+        "monthly.cost.json",
+        "network.plan.json",
+        "observability.plan.json",
+        "owasp.plan.json",
+        "pages.plan.json",
+        "performance.plan.json",
+        "pipeline.plan.json",
+        "planning.validation.report.json",
+        "providers.plan.json",
+        "readme.plan.json",
+        "relationships.plan.json",
+        "release.plan.json",
+        "request.plan.json",
+        "request_pipeline.json",
+        "resource.plan.json",
+        "response.plan.json",
+        "restore.plan.json",
+        "risk.plan.json",
+        "roadmap.json",
+        "rollback.plan.json",
+        "rollout.plan.json",
+        "routing.plan.json",
+        "scalability.plan.json",
+        "services.plan.json",
+        "states.plan.json",
+        "tasks.json",
+        "technical.debt.plan.json",
+        "test.matrix.json",
+        "testing.plan.json",
+        "threat.model.json",
+        "tokens.json",
+        "tracing.plan.json",
+        "tradeoffs.json"
+      ],
+      "classes": [
+        "DesignPlanningEngine",
+        "FrontendPlanningEngine",
+        "BackendPlanningEngine",
+        "DatabasePlanningEngine",
+        "APIPlanningEngine",
+        "SecurityPlanningEngine",
+        "InfrastructurePlanningEngine",
+        "ExternalServicesPlanningEngine",
+        "DevOpsPlanningEngine",
+        "TestingPlanningEngine",
+        "DocumentationPlanningEngine",
+        "EngineeringExecutionPlanningEngine",
+        "ResourceCapacityPlanningEngine",
+        "CostPlanningEngine",
+        "RiskPlanningEngine",
+        "ComplianceGovernancePlanningEngine",
+        "ObservabilityPlanningEngine",
+        "ScalabilityPerformancePlanningEngine",
+        "DisasterRecoveryPlanningEngine",
+        "ReleaseRolloutPlanningEngine",
+        "MaintenanceLifecyclePlanningEngine",
+        "PlanningValidationEngine",
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "ekb_objects": [
+        "backend_background_jobs",
+        "backend_controllers_plan",
+        "backend_modules_plan",
+        "backend_request_pipeline",
+        "backend_services_plan",
+        "cost_plan",
+        "dependency_plan",
+        "design_plan",
+        "design_tokens",
+        "engineering_blueprint",
+        "engineering_review",
+        "frontend_components_plan",
+        "frontend_pages_plan",
+        "frontend_routing_plan",
+        "frontend_states_plan",
+        "resource_plan",
+        "risk_plan",
+        "spec_012_backup",
+        "spec_012_database",
+        "spec_012_entities",
+        "spec_013_api",
+        "spec_013_endpoint",
+        "spec_014_auth",
+        "spec_014_authorization",
+        "spec_015_infra",
+        "spec_016_services",
+        "spec_017_devops",
+        "spec_018_testing",
+        "spec_019_docs",
+        "spec_020_execution",
+        "spec_021_resource",
+        "spec_022_cost",
+        "spec_023_risk",
+        "spec_024_compliance",
+        "spec_025_observability",
+        "spec_026_performance",
+        "spec_027_dr",
+        "spec_028_release",
+        "spec_029_maintenance",
+        "spec_031_validation",
+        "tradeoff_matrix"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb"
+      ],
+      "line_count": 1204,
+      "mapped_requirements": [
+        "SPEC-009-FR-001",
+        "SPEC-009-FR-002",
+        "SPEC-009-FR-003",
+        "SPEC-009-FR-004",
+        "SPEC-009-FR-005",
+        "SPEC-009-FR-006",
+        "SPEC-009-FR-007",
+        "SPEC-009-FR-008",
+        "SPEC-010-FR-001",
+        "SPEC-010-FR-002",
+        "SPEC-010-FR-003",
+        "SPEC-010-FR-004",
+        "SPEC-010-FR-005",
+        "SPEC-010-FR-006",
+        "SPEC-010-FR-007",
+        "SPEC-010-FR-008",
+        "SPEC-011-FR-001",
+        "SPEC-011-FR-002",
+        "SPEC-011-FR-003",
+        "SPEC-011-FR-004",
+        "SPEC-011-FR-005",
+        "SPEC-011-FR-006",
+        "SPEC-011-FR-007",
+        "SPEC-011-FR-008",
+        "SPEC-012-FR-001",
+        "SPEC-012-FR-002",
+        "SPEC-012-FR-003",
+        "SPEC-012-FR-004",
+        "SPEC-012-FR-005",
+        "SPEC-012-FR-006",
+        "SPEC-012-FR-007",
+        "SPEC-012-FR-008",
+        "SPEC-013-FR-001",
+        "SPEC-013-FR-002",
+        "SPEC-013-FR-003",
+        "SPEC-013-FR-004",
+        "SPEC-013-FR-005",
+        "SPEC-013-FR-006",
+        "SPEC-013-FR-007",
+        "SPEC-013-FR-008",
+        "SPEC-014-FR-001",
+        "SPEC-014-FR-002",
+        "SPEC-014-FR-003",
+        "SPEC-014-FR-004",
+        "SPEC-014-FR-005",
+        "SPEC-014-FR-006",
+        "SPEC-014-FR-007",
+        "SPEC-014-FR-008",
+        "SPEC-015-FR-001",
+        "SPEC-015-FR-002",
+        "SPEC-015-FR-003",
+        "SPEC-015-FR-004",
+        "SPEC-015-FR-005",
+        "SPEC-015-FR-006",
+        "SPEC-015-FR-007",
+        "SPEC-015-FR-008",
+        "SPEC-016-FR-001",
+        "SPEC-016-FR-002",
+        "SPEC-016-FR-003",
+        "SPEC-016-FR-004",
+        "SPEC-016-FR-005",
+        "SPEC-016-FR-006",
+        "SPEC-016-FR-007",
+        "SPEC-016-FR-008",
+        "SPEC-017-FR-001",
+        "SPEC-017-FR-002",
+        "SPEC-017-FR-003",
+        "SPEC-017-FR-004",
+        "SPEC-017-FR-005",
+        "SPEC-017-FR-006",
+        "SPEC-017-FR-007",
+        "SPEC-017-FR-008",
+        "SPEC-018-FR-001",
+        "SPEC-018-FR-002",
+        "SPEC-018-FR-003",
+        "SPEC-018-FR-004",
+        "SPEC-018-FR-005",
+        "SPEC-018-FR-006",
+        "SPEC-018-FR-007",
+        "SPEC-018-FR-008",
+        "SPEC-019-FR-001",
+        "SPEC-019-FR-002",
+        "SPEC-019-FR-003",
+        "SPEC-019-FR-004",
+        "SPEC-019-FR-005",
+        "SPEC-019-FR-006",
+        "SPEC-019-FR-007",
+        "SPEC-019-FR-008",
+        "SPEC-020-FR-001",
+        "SPEC-020-FR-002",
+        "SPEC-020-FR-003",
+        "SPEC-020-FR-004",
+        "SPEC-020-FR-005",
+        "SPEC-020-FR-006",
+        "SPEC-020-FR-007",
+        "SPEC-020-FR-008",
+        "SPEC-021-FR-001",
+        "SPEC-021-FR-002",
+        "SPEC-021-FR-003",
+        "SPEC-021-FR-004",
+        "SPEC-021-FR-005",
+        "SPEC-021-FR-006",
+        "SPEC-021-FR-007",
+        "SPEC-021-FR-008",
+        "SPEC-022-FR-001",
+        "SPEC-022-FR-002",
+        "SPEC-022-FR-003",
+        "SPEC-022-FR-004",
+        "SPEC-022-FR-005",
+        "SPEC-022-FR-006",
+        "SPEC-022-FR-007",
+        "SPEC-022-FR-008",
+        "SPEC-023-FR-001",
+        "SPEC-023-FR-002",
+        "SPEC-023-FR-003",
+        "SPEC-023-FR-004",
+        "SPEC-023-FR-005",
+        "SPEC-023-FR-006",
+        "SPEC-023-FR-007",
+        "SPEC-023-FR-008",
+        "SPEC-024-FR-001",
+        "SPEC-024-FR-002",
+        "SPEC-024-FR-003",
+        "SPEC-024-FR-004",
+        "SPEC-024-FR-005",
+        "SPEC-024-FR-006",
+        "SPEC-024-FR-007",
+        "SPEC-024-FR-008",
+        "SPEC-025-FR-001",
+        "SPEC-025-FR-002",
+        "SPEC-025-FR-003",
+        "SPEC-025-FR-004",
+        "SPEC-025-FR-005",
+        "SPEC-025-FR-006",
+        "SPEC-025-FR-007",
+        "SPEC-025-FR-008",
+        "SPEC-026-FR-001",
+        "SPEC-026-FR-002",
+        "SPEC-026-FR-003",
+        "SPEC-026-FR-004",
+        "SPEC-026-FR-005",
+        "SPEC-026-FR-006",
+        "SPEC-026-FR-007",
+        "SPEC-026-FR-008",
+        "SPEC-027-FR-001",
+        "SPEC-027-FR-002",
+        "SPEC-027-FR-003",
+        "SPEC-027-FR-004",
+        "SPEC-027-FR-005",
+        "SPEC-027-FR-006",
+        "SPEC-027-FR-007",
+        "SPEC-027-FR-008",
+        "SPEC-028-FR-001",
+        "SPEC-028-FR-002",
+        "SPEC-028-FR-003",
+        "SPEC-028-FR-004",
+        "SPEC-028-FR-005",
+        "SPEC-028-FR-006",
+        "SPEC-028-FR-007",
+        "SPEC-028-FR-008",
+        "SPEC-029-FR-001",
+        "SPEC-029-FR-002",
+        "SPEC-029-FR-003",
+        "SPEC-029-FR-004",
+        "SPEC-029-FR-005",
+        "SPEC-029-FR-006",
+        "SPEC-029-FR-007",
+        "SPEC-029-FR-008",
+        "SPEC-030-FR-001",
+        "SPEC-030-FR-002",
+        "SPEC-030-FR-003",
+        "SPEC-030-FR-004",
+        "SPEC-030-FR-005",
+        "SPEC-030-FR-006",
+        "SPEC-030-FR-007",
+        "SPEC-030-FR-008",
+        "SPEC-031-FR-001",
+        "SPEC-031-FR-002",
+        "SPEC-031-FR-003",
+        "SPEC-031-FR-004",
+        "SPEC-031-FR-005",
+        "SPEC-031-FR-006",
+        "SPEC-031-FR-007",
+        "SPEC-031-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "methods": [
+        "DesignPlanningEngine.__init__",
+        "DesignPlanningEngine.plan_design",
+        "FrontendPlanningEngine.__init__",
+        "FrontendPlanningEngine.plan_frontend",
+        "BackendPlanningEngine.__init__",
+        "BackendPlanningEngine.plan_backend",
+        "DatabasePlanningEngine.__init__",
+        "DatabasePlanningEngine.plan",
+        "APIPlanningEngine.__init__",
+        "APIPlanningEngine.plan",
+        "SecurityPlanningEngine.__init__",
+        "SecurityPlanningEngine.plan",
+        "InfrastructurePlanningEngine.__init__",
+        "InfrastructurePlanningEngine.plan",
+        "ExternalServicesPlanningEngine.__init__",
+        "ExternalServicesPlanningEngine.plan",
+        "DevOpsPlanningEngine.__init__",
+        "DevOpsPlanningEngine.plan",
+        "TestingPlanningEngine.__init__",
+        "TestingPlanningEngine.plan",
+        "DocumentationPlanningEngine.__init__",
+        "DocumentationPlanningEngine.plan",
+        "EngineeringExecutionPlanningEngine.__init__",
+        "EngineeringExecutionPlanningEngine.plan",
+        "ResourceCapacityPlanningEngine.__init__",
+        "ResourceCapacityPlanningEngine.plan",
+        "CostPlanningEngine.__init__",
+        "CostPlanningEngine.plan",
+        "RiskPlanningEngine.__init__",
+        "RiskPlanningEngine.plan",
+        "ComplianceGovernancePlanningEngine.__init__",
+        "ComplianceGovernancePlanningEngine.plan",
+        "ObservabilityPlanningEngine.__init__",
+        "ObservabilityPlanningEngine.plan",
+        "ScalabilityPerformancePlanningEngine.__init__",
+        "ScalabilityPerformancePlanningEngine.plan",
+        "DisasterRecoveryPlanningEngine.__init__",
+        "DisasterRecoveryPlanningEngine.plan",
+        "ReleaseRolloutPlanningEngine.__init__",
+        "ReleaseRolloutPlanningEngine.plan",
+        "MaintenanceLifecyclePlanningEngine.__init__",
+        "MaintenanceLifecyclePlanningEngine.plan",
+        "PlanningValidationEngine.__init__",
+        "PlanningValidationEngine.validate_all",
+        "PlanningMemoryEngine.__init__",
+        "PlanningMemoryEngine.save_version",
+        "PlanningMemoryEngine.get_latest_version",
+        "BlueprintDiffEngine.__init__",
+        "BlueprintDiffEngine.diff_blueprints",
+        "ResourceCapacityKPIs.calculate_kpis",
+        "ComplexityAnalyzer.analyze",
+        "QuestionsEngine.check_confidence_gate",
+        "FinalEngineeringBlueprintCompiler.__init__",
+        "FinalEngineeringBlueprintCompiler.compile_blueprint",
+        "TechnicalDesignDocumentCompiler.__init__",
+        "TechnicalDesignDocumentCompiler.compile_tdd_reports"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/planners.py",
+      "public_api_count": 30
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "PlanningOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-057-FR-001",
+        "SPEC-057-FR-002",
+        "SPEC-057-FR-003",
+        "SPEC-057-FR-004",
+        "SPEC-057-FR-005",
+        "SPEC-057-FR-006",
+        "SPEC-057-FR-007",
+        "SPEC-057-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-057"
+      ],
+      "methods": [
+        "PlanningOptimizationEngine.__init__",
+        "PlanningOptimizationEngine.optimize_plan"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/ple.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "PromptOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 13,
+      "mapped_requirements": [
+        "SPEC-049-FR-001",
+        "SPEC-049-FR-002",
+        "SPEC-049-FR-003",
+        "SPEC-049-FR-004",
+        "SPEC-049-FR-005",
+        "SPEC-049-FR-006",
+        "SPEC-049-FR-007",
+        "SPEC-049-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-049"
+      ],
+      "methods": [
+        "PromptOptimizationEngine.__init__",
+        "PromptOptimizationEngine.optimize_prompt"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/poe.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "impact.index.json",
+        "query.index.json"
+      ],
+      "classes": [
+        "QueryParser",
+        "IntentResolver",
+        "GraphTraversalEngine",
+        "ImpactAnalyzer",
+        "QueryAndImpactAnalysisEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib",
+        "typing",
+        "intelligence.ekb",
+        "intelligence.ege"
+      ],
+      "line_count": 191,
+      "mapped_requirements": [
+        "SPEC-008-FR-001",
+        "SPEC-008-FR-002",
+        "SPEC-008-FR-003",
+        "SPEC-008-FR-004",
+        "SPEC-008-FR-005",
+        "SPEC-008-FR-006",
+        "SPEC-008-FR-007",
+        "SPEC-008-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "methods": [
+        "QueryParser.parse",
+        "IntentResolver.resolve",
+        "GraphTraversalEngine.__init__",
+        "GraphTraversalEngine.get_dependents",
+        "ImpactAnalyzer.compile_report",
+        "QueryAndImpactAnalysisEngine.__init__",
+        "QueryAndImpactAnalysisEngine.query",
+        "QueryAndImpactAnalysisEngine.analyze_impact"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/qia.py",
+      "public_api_count": 6
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "SkillBenchmarkEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 5,
+      "mapped_requirements": [
+        "SPEC-063-FR-001",
+        "SPEC-063-FR-002",
+        "SPEC-063-FR-003",
+        "SPEC-063-FR-004",
+        "SPEC-063-FR-005",
+        "SPEC-063-FR-006",
+        "SPEC-063-FR-007",
+        "SPEC-063-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-063"
+      ],
+      "methods": [
+        "SkillBenchmarkEngine.__init__",
+        "SkillBenchmarkEngine.benchmark_skill"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/sbe.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "composer.json",
+        "docker-compose.yml",
+        "firebase.json",
+        "package-lock.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "requirements.txt",
+        "tsconfig.json"
+      ],
+      "classes": [
+        "ProjectScanner"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "sys",
+        "json",
+        "hashlib",
+        "pathlib",
+        "kernel.utils"
+      ],
+      "line_count": 177,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "ProjectScanner.__init__",
+        "ProjectScanner._calculate_fingerprint",
+        "ProjectScanner._parse_package_json",
+        "ProjectScanner.scan"
+      ],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/scanner.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "SelfReflectionEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 12,
+      "mapped_requirements": [
+        "SPEC-051-FR-001",
+        "SPEC-051-FR-002",
+        "SPEC-051-FR-003",
+        "SPEC-051-FR-004",
+        "SPEC-051-FR-005",
+        "SPEC-051-FR-006",
+        "SPEC-051-FR-007",
+        "SPEC-051-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-051"
+      ],
+      "methods": [
+        "SelfReflectionEngine.__init__",
+        "SelfReflectionEngine.critique_solution"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/sre.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "TechnologyIntelligence"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "pathlib"
+      ],
+      "line_count": 55,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "TechnologyIntelligence.__init__",
+        "TechnologyIntelligence.evaluate_tech_stack"
+      ],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/intelligence/technology.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "TokenOptimizationEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 6,
+      "mapped_requirements": [
+        "SPEC-058-FR-001",
+        "SPEC-058-FR-002",
+        "SPEC-058-FR-003",
+        "SPEC-058-FR-004",
+        "SPEC-058-FR-005",
+        "SPEC-058-FR-006",
+        "SPEC-058-FR-007",
+        "SPEC-058-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-058"
+      ],
+      "methods": [
+        "TokenOptimizationEngine.__init__",
+        "TokenOptimizationEngine.compress_tokens"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/toe.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "requirement.json"
+      ],
+      "classes": [
+        "PromptNormalizer",
+        "IntentExtractor",
+        "EntityExtractor",
+        "RequirementClassifier",
+        "EvidenceCollector",
+        "RequirementExpander",
+        "ConfidenceCalculator",
+        "ClarificationEngine",
+        "UniversalRequirementUnderstandingEngine",
+        "EventBus"
+      ],
+      "ekb_objects": [],
+      "events": [
+        "RequirementIngestCompleted",
+        "RequirementIngestStarted"
+      ],
+      "functions": [
+        "__init__",
+        "publish"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "pathlib",
+        "typing",
+        "kernel.event_bus"
+      ],
+      "line_count": 357,
+      "mapped_requirements": [
+        "SPEC-002-FR-001",
+        "SPEC-002-FR-002",
+        "SPEC-002-FR-003",
+        "SPEC-002-FR-004",
+        "SPEC-002-FR-005",
+        "SPEC-002-FR-006",
+        "SPEC-002-FR-007",
+        "SPEC-002-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "methods": [
+        "PromptNormalizer.normalize",
+        "IntentExtractor.extract",
+        "EntityExtractor.extract",
+        "RequirementClassifier.classify",
+        "EvidenceCollector.merge",
+        "RequirementExpander.expand",
+        "ConfidenceCalculator.calculate",
+        "ClarificationEngine.inspect",
+        "UniversalRequirementUnderstandingEngine.__init__",
+        "UniversalRequirementUnderstandingEngine.understand",
+        "EventBus.__init__",
+        "EventBus.publish"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/urue.py",
+      "public_api_count": 11
+    },
+    {
+      "artifacts": [
+        "docker-compose.yaml",
+        "docker-compose.yml",
+        "fingerprints.json",
+        "package.json",
+        "pnpm-lock.yaml",
+        "requirements.txt",
+        "{name}.json"
+      ],
+      "classes": [
+        "IgnoreRuleManager",
+        "DirectoryWalker",
+        "FileFingerprintManager",
+        "DiscoveryCache",
+        "LanguageDetector",
+        "FrameworkDetector",
+        "DependencyDetector",
+        "GitMetadataCollector",
+        "SchemaValidator",
+        "WorkspaceDiscoveryEngine",
+        "EventBus"
+      ],
+      "ekb_objects": [],
+      "events": [
+        "WorkspaceDiscoveryCompleted",
+        "WorkspaceDiscoveryStarted"
+      ],
+      "functions": [
+        "__init__",
+        "publish"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "hashlib",
+        "fnmatch",
+        "subprocess",
+        "pathlib",
+        "typing",
+        "re",
+        "kernel.event_bus"
+      ],
+      "line_count": 577,
+      "mapped_requirements": [
+        "SPEC-001-FR-001",
+        "SPEC-001-FR-002",
+        "SPEC-001-FR-003",
+        "SPEC-001-FR-004",
+        "SPEC-001-FR-005",
+        "SPEC-001-FR-006",
+        "SPEC-001-FR-007",
+        "SPEC-001-FR-008"
+      ],
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "methods": [
+        "IgnoreRuleManager.__init__",
+        "IgnoreRuleManager._load_gitignore",
+        "IgnoreRuleManager.is_ignored",
+        "DirectoryWalker.__init__",
+        "DirectoryWalker.walk",
+        "FileFingerprintManager.calculate_sha256",
+        "FileFingerprintManager.analyze_deltas",
+        "DiscoveryCache.__init__",
+        "DiscoveryCache.load",
+        "DiscoveryCache.save",
+        "LanguageDetector.detect",
+        "FrameworkDetector.__init__",
+        "FrameworkDetector.detect",
+        "DependencyDetector.__init__",
+        "DependencyDetector.extract",
+        "GitMetadataCollector.collect",
+        "SchemaValidator.validate_wde_schemas",
+        "WorkspaceDiscoveryEngine.__init__",
+        "WorkspaceDiscoveryEngine.scan",
+        "EventBus.__init__",
+        "EventBus.publish"
+      ],
+      "orphan": false,
+      "owner_type": "SPEC",
+      "path": "src/intelligence/wde.py",
+      "public_api_count": 14
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [
+        "execution_state.json",
+        "runtime.json"
+      ],
+      "classes": [
+        "AetherisKernel"
+      ],
+      "ekb_objects": [
+        "architecture_plan",
+        "product_plan",
+        "requirement",
+        "wde_inventories"
+      ],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "sys",
+        "json",
+        "pathlib",
+        "kernel.event_bus",
+        "kernel.telemetry",
+        "kernel.utils",
+        "intelligence.ekb",
+        "intelligence.wde",
+        "intelligence.urue",
+        "intelligence.pde",
+        "intelligence.ape",
+        "intelligence.ede",
+        "intelligence.qia",
+        "intelligence.planners",
+        "intelligence.planners",
+        "intelligence.planners",
+        "intelligence.planners",
+        "intelligence.planners",
+        "execution.tde",
+        "execution.dgb",
+        "execution.sse",
+        "execution.mre",
+        "execution.cae",
+        "execution.es",
+        "execution.pee",
+        "execution.acge",
+        "execution.sre",
+        "execution.pre",
+        "execution.spe",
+        "execution.goe",
+        "execution.dge",
+        "execution.eme",
+        "execution.eo",
+        "intelligence.planners",
+        "kernel.planner",
+        "kernel.scheduler",
+        "validation.readiness"
+      ],
+      "line_count": 359,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "AetherisKernel.__init__",
+        "AetherisKernel._update_dashboard",
+        "AetherisKernel.run_autonomous_loop"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/core.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "EventBus"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "time",
+        "uuid",
+        "sys",
+        "collections",
+        "kernel.telemetry"
+      ],
+      "line_count": 98,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "EventBus.__init__",
+        "EventBus.register_subscriber",
+        "EventBus.publish",
+        "EventBus.dispatch_next",
+        "EventBus.clear_queue"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/event_bus.py",
+      "public_api_count": 4
+    },
+    {
+      "artifacts": [
+        "{name}.json"
+      ],
+      "classes": [
+        "Compiler",
+        "BaseCompilerPlugin",
+        "Symbol",
+        "KnowledgeNode",
+        "Relationship",
+        "EngineeringGraph",
+        "EngineeringKnowledgeBase",
+        "PythonAdapter",
+        "MarkdownAdapter",
+        "PrismaAdapter",
+        "SqlAdapter",
+        "EngineeringKnowledgeCompiler",
+        "EventBus",
+        "TelemetryEngine"
+      ],
+      "ekb_objects": [],
+      "events": [
+        "CompilationFinished",
+        "DiscoveryStarted",
+        "GraphUpdated",
+        "KnowledgeUpdated",
+        "LanguageParsed"
+      ],
+      "functions": [
+        "__init__",
+        "publish",
+        "__init__",
+        "log_stage_start",
+        "log_stage_complete",
+        "log_stage_failed"
+      ],
+      "imports": [
+        "os",
+        "re",
+        "json",
+        "time",
+        "hashlib",
+        "pathlib",
+        "kernel.event_bus",
+        "kernel.telemetry"
+      ],
+      "line_count": 846,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "Compiler.compile",
+        "Compiler.update",
+        "Compiler.query",
+        "Compiler.diagnostics",
+        "Compiler.validate",
+        "Compiler.benchmark",
+        "Compiler.export",
+        "BaseCompilerPlugin.initialize",
+        "BaseCompilerPlugin.discover",
+        "BaseCompilerPlugin.lex",
+        "BaseCompilerPlugin.parse",
+        "BaseCompilerPlugin.semantic",
+        "BaseCompilerPlugin.relationships",
+        "BaseCompilerPlugin.validate",
+        "BaseCompilerPlugin.cleanup",
+        "Symbol.__init__",
+        "Symbol.to_dict",
+        "KnowledgeNode.__init__",
+        "KnowledgeNode.to_dict",
+        "Relationship.__init__",
+        "Relationship.to_dict",
+        "EngineeringGraph.__init__",
+        "EngineeringGraph.add_node",
+        "EngineeringGraph.add_edge",
+        "EngineeringGraph.prune_file_nodes",
+        "EngineeringGraph.to_dict",
+        "EngineeringKnowledgeBase.__init__",
+        "EngineeringKnowledgeBase.save_artifact",
+        "EngineeringKnowledgeBase.load_artifact",
+        "PythonAdapter.discover",
+        "PythonAdapter.lex",
+        "PythonAdapter.parse",
+        "PythonAdapter.semantic",
+        "PythonAdapter.relationships",
+        "MarkdownAdapter.discover",
+        "MarkdownAdapter.lex",
+        "MarkdownAdapter.parse",
+        "MarkdownAdapter.semantic",
+        "MarkdownAdapter.relationships",
+        "PrismaAdapter.discover",
+        "PrismaAdapter.lex",
+        "PrismaAdapter.parse",
+        "PrismaAdapter.semantic",
+        "PrismaAdapter.relationships",
+        "SqlAdapter.discover",
+        "SqlAdapter.lex",
+        "SqlAdapter.parse",
+        "SqlAdapter.semantic",
+        "SqlAdapter.relationships",
+        "EngineeringKnowledgeCompiler.__init__",
+        "EngineeringKnowledgeCompiler._find_files",
+        "EngineeringKnowledgeCompiler._calculate_file_hash",
+        "EngineeringKnowledgeCompiler.compile",
+        "EngineeringKnowledgeCompiler.build_engineering_understanding",
+        "EngineeringKnowledgeCompiler.update",
+        "EngineeringKnowledgeCompiler.query",
+        "EngineeringKnowledgeCompiler.diagnostics",
+        "EngineeringKnowledgeCompiler.validate",
+        "EngineeringKnowledgeCompiler.benchmark",
+        "EngineeringKnowledgeCompiler.export",
+        "EventBus.__init__",
+        "EventBus.publish",
+        "TelemetryEngine.__init__",
+        "TelemetryEngine.log_stage_start",
+        "TelemetryEngine.log_stage_complete",
+        "TelemetryEngine.log_stage_failed"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/goal_manager.py",
+      "public_api_count": 60
+    },
+    {
+      "artifacts": [
+        "P{i}.md",
+        "blockers.json",
+        "completed.json",
+        "execution.graph.json",
+        "execution.plan.json",
+        "execution.queue.json",
+        "execution_state.json",
+        "metrics.json",
+        "milestones.json",
+        "resume.json",
+        "todo.json",
+        "{name}.json"
+      ],
+      "classes": [
+        "EngineeringPlanner",
+        "EngineeringKnowledgeBase"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [
+        "__init__",
+        "load_artifact"
+      ],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "pathlib",
+        "kernel.goal_manager"
+      ],
+      "line_count": 291,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "EngineeringPlanner.__init__",
+        "EngineeringPlanner.build_task_dag",
+        "EngineeringPlanner.plan",
+        "EngineeringPlanner._topological_sort",
+        "EngineeringPlanner._build_concurrency_waves",
+        "EngineeringPlanner._save_execution_artifacts",
+        "EngineeringPlanner.resume_execution",
+        "EngineeringKnowledgeBase.__init__",
+        "EngineeringKnowledgeBase.load_artifact"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/planner.py",
+      "public_api_count": 5
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "AutonomousRecoveryEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "re",
+        "pathlib"
+      ],
+      "line_count": 38,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "AutonomousRecoveryEngine.__init__",
+        "AutonomousRecoveryEngine.perform_rca",
+        "AutonomousRecoveryEngine.apply_remediation"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/recovery.py",
+      "public_api_count": 2
+    },
+    {
+      "artifacts": [
+        "P{idx}.md",
+        "completed.json",
+        "execution_state.json",
+        "todo.json"
+      ],
+      "classes": [
+        "RuntimeScheduler"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "pathlib",
+        "kernel.recovery"
+      ],
+      "line_count": 101,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "RuntimeScheduler.__init__",
+        "RuntimeScheduler._save_state",
+        "RuntimeScheduler.execute_dag"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/scheduler.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "TelemetryEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "time",
+        "pathlib",
+        "kernel.utils",
+        "sys",
+        "sys"
+      ],
+      "line_count": 121,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [
+        "TelemetryEngine.__init__",
+        "TelemetryEngine._mask_paths",
+        "TelemetryEngine._rotate_logs",
+        "TelemetryEngine._write_log",
+        "TelemetryEngine.log_stage_start",
+        "TelemetryEngine.log_stage_complete",
+        "TelemetryEngine.log_stage_failed"
+      ],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/telemetry.py",
+      "public_api_count": 3
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [
+        "initialize_perimeter",
+        "is_safe_path",
+        "redact_secrets",
+        "validate_environment"
+      ],
+      "imports": [
+        "os",
+        "re",
+        "sys",
+        "pathlib"
+      ],
+      "line_count": 82,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "path": "src/kernel/utils.py",
+      "public_api_count": 4
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "storage.manager"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/memory.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [
+        "specialists.yaml",
+        "{config_name}.yaml",
+        "{schema_name}.schema.json"
+      ],
+      "classes": [
+        "ConfigManager"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "sys",
+        "pathlib",
+        "kernel.utils",
+        "yaml",
+        "jsonschema",
+        "orchestration.registry_cache"
+      ],
+      "line_count": 198,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [
+        "ConfigManager.__init__",
+        "ConfigManager._deep_merge",
+        "ConfigManager._load_yaml",
+        "ConfigManager._load_schema",
+        "ConfigManager.validate_config",
+        "ConfigManager.get_registry",
+        "ConfigManager.load_config"
+      ],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/config.py",
+      "public_api_count": 3
+    },
+    {
+      "artifacts": [
+        "manifest.yaml",
+        "~/.aetheris/plugins.yaml"
+      ],
+      "classes": [
+        "PluginManager"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "sys",
+        "json",
+        "pathlib",
+        "kernel.utils",
+        "yaml"
+      ],
+      "line_count": 149,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [
+        "PluginManager.__init__",
+        "PluginManager._get_master_version",
+        "PluginManager.load_registry",
+        "PluginManager._save_registry",
+        "PluginManager.validate_manifest",
+        "PluginManager.register_plugin"
+      ],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/plugins.py",
+      "public_api_count": 3
+    },
+    {
+      "artifacts": [
+        "registry.json"
+      ],
+      "classes": [
+        "RegistryCache"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "json",
+        "time",
+        "sys",
+        "pathlib",
+        "kernel.utils",
+        "orchestration.skill_scanner",
+        "orchestration.skill_parser"
+      ],
+      "line_count": 162,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [
+        "RegistryCache.__init__",
+        "RegistryCache._load_cache_file",
+        "RegistryCache._save_cache_file",
+        "RegistryCache.load_registry",
+        "RegistryCache.find_by_capability"
+      ],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/registry_cache.py",
+      "public_api_count": 2
+    },
+    {
+      "artifacts": [
+        "composer.json",
+        "manage.py"
+      ],
+      "classes": [
+        "SkillParser"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "re",
+        "sys",
+        "pathlib",
+        "yaml",
+        "json"
+      ],
+      "line_count": 146,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [
+        "SkillParser.__init__",
+        "SkillParser._extract_capabilities",
+        "SkillParser.parse_skill"
+      ],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/skill_parser.py",
+      "public_api_count": 1
+    },
+    {
+      "artifacts": [
+        "SKILL.md"
+      ],
+      "classes": [
+        "SkillScanner"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "sys",
+        "pathlib",
+        "kernel.utils",
+        "json"
+      ],
+      "line_count": 65,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "methods": [
+        "SkillScanner.__init__",
+        "SkillScanner.add_root",
+        "SkillScanner.scan_roots"
+      ],
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "path": "src/orchestration/skill_scanner.py",
+      "public_api_count": 2
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "orchestration.plugins"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/plugins.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "orchestration.registry_cache"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/registry_cache.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "sys",
+        "json",
+        "intelligence.scanner"
+      ],
+      "line_count": 11,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/scanner.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/sdk/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "orchestration.skill_parser"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/skill_parser.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "orchestration.skill_scanner"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/skill_scanner.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "path": "src/storage/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [
+        "conventions.yaml",
+        "project-profile.yaml"
+      ],
+      "classes": [
+        "MemoryEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "sys",
+        "pathlib",
+        "kernel.utils",
+        "yaml"
+      ],
+      "line_count": 137,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "methods": [
+        "MemoryEngine.__init__",
+        "MemoryEngine._safe_read_yaml",
+        "MemoryEngine._safe_write_yaml",
+        "MemoryEngine.get_profile",
+        "MemoryEngine.save_profile",
+        "MemoryEngine.get_conventions",
+        "MemoryEngine.save_conventions",
+        "MemoryEngine.get_decisions",
+        "MemoryEngine.save_decision",
+        "MemoryEngine.verify_fingerprint"
+      ],
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "path": "src/storage/manager.py",
+      "public_api_count": 7
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "kernel.telemetry"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/telemetry.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "kernel.utils"
+      ],
+      "line_count": 1,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "path": "src/utils.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [],
+      "line_count": 0,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-031",
+        "SPEC-040",
+        "SPEC-045"
+      ],
+      "methods": [],
+      "orphan": false,
+      "owner_type": "READINESS-VALIDATION",
+      "path": "src/validation/__init__.py",
+      "public_api_count": 0
+    },
+    {
+      "artifacts": [],
+      "classes": [
+        "ReadinessEngine"
+      ],
+      "ekb_objects": [],
+      "events": [],
+      "functions": [],
+      "imports": [
+        "os",
+        "json",
+        "pathlib"
+      ],
+      "line_count": 32,
+      "mapped_requirements": [],
+      "mapped_specs": [
+        "SPEC-031",
+        "SPEC-040",
+        "SPEC-045"
+      ],
+      "methods": [
+        "ReadinessEngine.__init__",
+        "ReadinessEngine.verify_definition_of_done"
+      ],
+      "orphan": false,
+      "owner_type": "READINESS-VALIDATION",
+      "path": "src/validation/readiness.py",
+      "public_api_count": 1
+    }
+  ],
+  "orphan_modules": []
+}

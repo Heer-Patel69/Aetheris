@@ -1,0 +1,94 @@
+{
+  "violations": [
+    {
+      "file": "src\\execution\\acge.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\cae.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\dgb.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\dge.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\eme.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\eo.py",
+      "line": 5,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\es.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\goe.py",
+      "line": 5,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\mre.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\pee.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\pre.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\spe.py",
+      "line": 5,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\sre.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\sse.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    },
+    {
+      "file": "src\\execution\\tde.py",
+      "line": 4,
+      "content": "from intelligence.ekb import EngineeringKnowledgeBase",
+      "type": "Layer violation (Execution importing Intelligence)"
+    }
+  ]
+}

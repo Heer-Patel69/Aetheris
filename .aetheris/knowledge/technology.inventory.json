@@ -1,0 +1,13 @@
+{
+  "confidence_scores": {
+    "database": 1.0,
+    "docker": 1.0,
+    "ci_cd": 0.0,
+    "auth": 1.0
+  },
+  "evidence": [
+    "Dockerfile detected: scratch\\Dockerfile",
+    "Database models discovered in schemas (scratch\\schema.prisma): ['User', 'Task']",
+    "Authentication feature explicitly specified in markdown requirement lists."
+  ]
+}

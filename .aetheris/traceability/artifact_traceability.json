@@ -1,0 +1,3029 @@
+{
+  "artifacts": [
+    {
+      "artifact": "{name}.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "WorkspaceDiscoveryEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/wde.py",
+      "spec": "SPEC-001",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "artifact": "requirement.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "UniversalRequirementUnderstandingEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/urue.py",
+      "spec": "SPEC-002",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "artifact": "product.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ProductDiscoveryEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/pde.py",
+      "spec": "SPEC-003",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "artifact": "architecture.graph.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ArchitecturePlanningEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ape.py",
+      "spec": "SPEC-004",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "artifact": "architecture.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ArchitecturePlanningEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ape.py",
+      "spec": "SPEC-004",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "artifact": "{decision_id}.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringDecisionEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ede.py",
+      "spec": "SPEC-005",
+      "tests": [
+        "tests/test_ede.py"
+      ]
+    },
+    {
+      "artifact": "{decision_id}_history.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringDecisionEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ede.py",
+      "spec": "SPEC-005",
+      "tests": [
+        "tests/test_ede.py"
+      ]
+    },
+    {
+      "artifact": "architecture.graph.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringGraphEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ege.py",
+      "spec": "SPEC-006",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "artifact": "*.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringKnowledgeBase"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ekb.py",
+      "spec": "SPEC-007",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "artifact": "{obj_id}.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringKnowledgeBase"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ekb.py",
+      "spec": "SPEC-007",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "artifact": "{obj_id}_history.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringKnowledgeBase"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ekb.py",
+      "spec": "SPEC-007",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "artifact": "{obj_id}_v{version}.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringKnowledgeBase"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/ekb.py",
+      "spec": "SPEC-007",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "artifact": "impact.index.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "QueryAndImpactAnalysisEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/qia.py",
+      "spec": "SPEC-008",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "artifact": "query.index.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "QueryAndImpactAnalysisEngine"
+      ],
+      "rfc": "RFC-001",
+      "source_module": "src/intelligence/qia.py",
+      "spec": "SPEC-008",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "artifact": "design.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DesignPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-009",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "guidelines.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DesignPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-009",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "tokens.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DesignPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-009",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "components.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "FrontendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-010",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "pages.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "FrontendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-010",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "routing.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "FrontendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-010",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "states.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "FrontendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-010",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "background_jobs.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "BackendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-011",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "controllers.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "BackendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-011",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "modules.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "BackendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-011",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "request_pipeline.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "BackendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-011",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "services.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "BackendPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-011",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "backup.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "database.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "entities.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "indexes.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "migration.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "relationships.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DatabasePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-012",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "api.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "APIPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-013",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "endpoint.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "APIPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-013",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "request.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "APIPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-013",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "response.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "APIPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-013",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "auth.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SecurityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-014",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "authorization.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SecurityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-014",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "owasp.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SecurityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-014",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "threat.model.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SecurityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-014",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "hosting.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "InfrastructurePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-015",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "infrastructure.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "InfrastructurePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-015",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "network.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "InfrastructurePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-015",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "integration.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExternalServicesPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-016",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "providers.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExternalServicesPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-016",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "services.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExternalServicesPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-016",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "devops.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DevOpsPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-017",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "docker.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DevOpsPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-017",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "pipeline.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DevOpsPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-017",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "coverage.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TestingPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-018",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "test.matrix.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TestingPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-018",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "testing.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TestingPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-018",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "architecture.docs.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-019",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "docs.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-019",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "readme.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-019",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "execution.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringExecutionPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-020",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "roadmap.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringExecutionPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-020",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "tasks.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "EngineeringExecutionPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-020",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "capacity.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ResourceCapacityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-021",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "resource.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ResourceCapacityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-021",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "cost.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "CostPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-022",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "growth.cost.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "CostPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-022",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "monthly.cost.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "CostPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-022",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "mitigation.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "RiskPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-023",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "risk.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "RiskPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-023",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "compliance.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ComplianceGovernancePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-024",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "governance.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ComplianceGovernancePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-024",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "alerting.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ObservabilityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-025",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "logging.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ObservabilityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-025",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "metrics.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ObservabilityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-025",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "observability.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ObservabilityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-025",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "tracing.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ObservabilityPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-025",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "load.profile.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ScalabilityPerformancePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-026",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "performance.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ScalabilityPerformancePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-026",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "scalability.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ScalabilityPerformancePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-026",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "backup.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DisasterRecoveryPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-027",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "business.continuity.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DisasterRecoveryPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-027",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "dr.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DisasterRecoveryPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-027",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "restore.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DisasterRecoveryPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-027",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "release.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ReleaseRolloutPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-028",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "rollback.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ReleaseRolloutPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-028",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "rollout.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ReleaseRolloutPlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-028",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "lifecycle.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "MaintenanceLifecyclePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-029",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "maintenance.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "MaintenanceLifecyclePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-029",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "technical.debt.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "MaintenanceLifecyclePlanningEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-029",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "blueprint.diff.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "blueprint_v*.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "blueprint_v{version}.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "cost.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "dependency.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "engineering.blueprint.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "engineering.blueprint.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "engineering.summary.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "engineering_review.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "execution.input.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "planning.validation.report.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "resource.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "risk.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "tradeoffs.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningMemoryEngine",
+        "BlueprintDiffEngine",
+        "ResourceCapacityKPIs",
+        "ComplexityAnalyzer",
+        "QuestionsEngine",
+        "FinalEngineeringBlueprintCompiler",
+        "TechnicalDesignDocumentCompiler"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-030",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "planning.validation.report.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PlanningValidationEngine"
+      ],
+      "rfc": "RFC-002",
+      "source_module": "src/intelligence/planners.py",
+      "spec": "SPEC-031",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "artifact": "auth.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "database.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "endpoint.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "entities.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.tree.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "features.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "modules.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "stories.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "task.registry.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "tasks.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "TaskDecompositionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/tde.py",
+      "spec": "SPEC-032",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "critical.path.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DependencyGraphBuilder"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dgb.py",
+      "spec": "SPEC-033",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "dependency.graph.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DependencyGraphBuilder"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dgb.py",
+      "spec": "SPEC-033",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.dag.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DependencyGraphBuilder"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dgb.py",
+      "spec": "SPEC-033",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "parallel.groups.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DependencyGraphBuilder"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dgb.py",
+      "spec": "SPEC-033",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "missing.skills.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SkillSelectionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sse.py",
+      "spec": "SPEC-034",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "required.skills.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SkillSelectionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sse.py",
+      "spec": "SPEC-034",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "skill.selection.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SkillSelectionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sse.py",
+      "spec": "SPEC-034",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "task.skills.map.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SkillSelectionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sse.py",
+      "spec": "SPEC-034",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "model.assignment.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ModelRoutingEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/mre.py",
+      "spec": "SPEC-035",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "routing.decisions.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ModelRoutingEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/mre.py",
+      "spec": "SPEC-035",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": ".aetheris/planning/database/entities.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ContextAssemblyEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/cae.py",
+      "spec": "SPEC-036",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "context.dependencies.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ContextAssemblyEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/cae.py",
+      "spec": "SPEC-036",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.context.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ContextAssemblyEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/cae.py",
+      "spec": "SPEC-036",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "token.budget.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ContextAssemblyEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/cae.py",
+      "spec": "SPEC-036",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.queue.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionScheduler"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/es.py",
+      "spec": "SPEC-037",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "parallel.batches.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionScheduler"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/es.py",
+      "spec": "SPEC-037",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "scheduler.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionScheduler"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/es.py",
+      "spec": "SPEC-037",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "auth.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ParallelExecutionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pee.py",
+      "spec": "SPEC-038",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "conflict.map.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ParallelExecutionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pee.py",
+      "spec": "SPEC-038",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "database.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ParallelExecutionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pee.py",
+      "spec": "SPEC-038",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.batches.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ParallelExecutionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pee.py",
+      "spec": "SPEC-038",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "parallel.execution.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ParallelExecutionEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pee.py",
+      "spec": "SPEC-038",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "engineering.decisions.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/acge.py",
+      "spec": "SPEC-039",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "generated.files.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/acge.py",
+      "spec": "SPEC-039",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "implementation.report.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/acge.py",
+      "spec": "SPEC-039",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "src/auth_middleware.py",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/acge.py",
+      "spec": "SPEC-039",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "src/db_init_bootstrap.sql",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "AutonomousCodeGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/acge.py",
+      "spec": "SPEC-039",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "engineering.review.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SelfReviewEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sre.py",
+      "spec": "SPEC-040",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "quality.score.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SelfReviewEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sre.py",
+      "spec": "SPEC-040",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "review.findings.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "SelfReviewEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/sre.py",
+      "spec": "SPEC-040",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "failure.analysis.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PatchRecoveryEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pre.py",
+      "spec": "SPEC-041",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "patch.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PatchRecoveryEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pre.py",
+      "spec": "SPEC-041",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "recovery.report.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PatchRecoveryEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pre.py",
+      "spec": "SPEC-041",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "src/auth_middleware.py",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "PatchRecoveryEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/pre.py",
+      "spec": "SPEC-041",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "checkpoint.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "StatePersistenceEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/spe.py",
+      "spec": "SPEC-042",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.snapshot.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "StatePersistenceEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/spe.py",
+      "spec": "SPEC-042",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "resume.state.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "StatePersistenceEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/spe.py",
+      "spec": "SPEC-042",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "commit.history.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "GitOperationsEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/goe.py",
+      "spec": "SPEC-043",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "git.plan.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "GitOperationsEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/goe.py",
+      "spec": "SPEC-043",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "000{idx + 1}_decision.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dge.py",
+      "spec": "SPEC-044",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "README.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dge.py",
+      "spec": "SPEC-044",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "api.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dge.py",
+      "spec": "SPEC-044",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "documentation.metrics.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "DocumentationGenerationEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/dge.py",
+      "spec": "SPEC-044",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "engineering.dashboard.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionMetricsEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eme.py",
+      "spec": "SPEC-045",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.metrics.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionMetricsEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eme.py",
+      "spec": "SPEC-045",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "performance.report.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionMetricsEngine"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eme.py",
+      "spec": "SPEC-045",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "execution.lifecycle.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionOrchestrator"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eo.py",
+      "spec": "SPEC-046",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "orchestrator.state.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionOrchestrator"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eo.py",
+      "spec": "SPEC-046",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "system.timeline.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ExecutionOrchestrator"
+      ],
+      "rfc": "RFC-003",
+      "source_module": "src/execution/eo.py",
+      "spec": "SPEC-046",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "artifact": "model.capabilities.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ModelIntelligenceEngine"
+      ],
+      "rfc": "RFC-004",
+      "source_module": "src/intelligence/mie.py",
+      "spec": "SPEC-047",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "artifact": "model.registry.json",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "ModelIntelligenceEngine"
+      ],
+      "rfc": "RFC-004",
+      "source_module": "src/intelligence/mie.py",
+      "spec": "SPEC-047",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "artifact": "00_SYSTEM_CONSTITUTION.md",
+      "lifecycle": "generated, validated, persisted, consumed",
+      "orphan": false,
+      "owner": [
+        "KnowledgeRetrievalEngine"
+      ],
+      "rfc": "RFC-004",
+      "source_module": "src/intelligence/kre.py",
+      "spec": "SPEC-053",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "artifact": ".aetheris/execution.graph.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/execution.plan.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/execution.queue.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/execution_state.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/business.inventory.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/completeness.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/decision.evidence.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/dependency.inventory.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/engineering.graph.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/execution.inputs.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/metadata.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/product.blueprint.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/project.dna.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/project.inventory.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/risk.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/symbol.table.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/technology.inventory.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/knowledge/universal.blueprint.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/architecture_diff.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/architecture_scorecard.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/breaking_changes.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/code_diff.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/dependency_diff.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/drift_report.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/final_summary.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/migration_log.jsonl",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/migration_metrics.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/migration_plan.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/production_readiness.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/rollback_plan.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/spec_diff.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/migration/validation_report.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/AETHERIS_MASTER_ARCHITECTURE_REVIEW.md",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/architecture.validation.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/complexity.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/enterprise.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/implementation.drift.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/performance.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/project.inventory.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/recovery.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/scalability.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/security.audit.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/testing.report.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/review/analytics/traceability.matrix.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/runtime.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/telemetry/pipeline-runs.jsonl",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/traceability/module_traceability.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    },
+    {
+      "artifact": ".aetheris/traceability/requirement_traceability.json",
+      "lifecycle": "generated governance artifact",
+      "orphan": false,
+      "owner": [
+        "ARB v3"
+      ],
+      "rfc": "RFC-000",
+      "source_module": "scripts/generate_enterprise_governance.py",
+      "spec": "GOVERNANCE",
+      "tests": [
+        "scripts/generate_enterprise_governance.py --check"
+      ]
+    }
+  ],
+  "orphan_artifacts": []
+}

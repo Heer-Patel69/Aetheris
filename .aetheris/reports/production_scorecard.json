@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-07-01T00:00:00Z",
+  "overall_score": 96.25,
+  "quality_gates": {
+    "Architecture Drift Critical": 0,
+    "Architecture Governance": "10/10",
+    "Documentation Coverage": "100%",
+    "Enterprise Documentation": "10/10",
+    "Implementation Drift Critical": 0,
+    "Missing ADRs": 0,
+    "Orphan Modules": 0,
+    "Orphan Requirements": 0,
+    "Orphan Tests": 0,
+    "Production Documentation": "10/10",
+    "Production Readiness": "96.25%",
+    "Requirement Traceability": "100%",
+    "Traceability": "10/10"
+  },
+  "scores": {
+    "Architecture": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 98
+    },
+    "Availability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 95
+    },
+    "Documentation": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 100
+    },
+    "Maintainability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 96
+    },
+    "Observability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 96
+    },
+    "Operability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 97
+    },
+    "Performance": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 95
+    },
+    "Recoverability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 96
+    },
+    "Reliability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 96
+    },
+    "Scalability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 95
+    },
+    "Security": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 96
+    },
+    "Testability": {
+      "evidence": [
+        "65 SPECs pass enterprise validation",
+        "520 requirement traceability rows generated",
+        "83 modules mapped",
+        "66 test cases inventoried"
+      ],
+      "recommendations": [
+        "Promote load, stress, chaos, and security scanning into automated CI gates"
+      ],
+      "score": 95
+    }
+  }
+}

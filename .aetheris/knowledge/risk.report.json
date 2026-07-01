@@ -1,0 +1,8 @@
+{
+  "risks": [
+    {
+      "severity": "High",
+      "text": "CI/CD pipeline workflows are missing."
+    }
+  ]
+}

@@ -1,0 +1,2335 @@
+{
+  "symbols": [
+    {
+      "id": "symbol:rule:Instruction vs. Execution Separation**: LLM dispatches and coordinates via skills/references; filesystem modifications, calculations, and hashing are handled by Python scripts (ADR-001).",
+      "name": "Instruction vs. Execution Separation**: LLM dispatches and coordinates via skills/references; filesystem modifications, calculations, and hashing are handled by Python scripts (ADR-001).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Single Owner**: Only the designated module may write to its state directory (ADR-002).",
+      "name": "Single Owner**: Only the designated module may write to its state directory (ADR-002).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Stateless Kernel Execution**: Event bus resides in the pipeline loop context, passed through JSON outputs (ADR-003).",
+      "name": "Stateless Kernel Execution**: Event bus resides in the pipeline loop context, passed through JSON outputs (ADR-003).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Tier Merge**: Config overrides merge deep recursively: Tier 1 (defaults) -> Tier 2 (shipped defaults) -> Tier 3 (user global) -> Tier 4 (project local) (ADR-004).",
+      "name": "Tier Merge**: Config overrides merge deep recursively: Tier 1 (defaults) -> Tier 2 (shipped defaults) -> Tier 3 (user global) -> Tier 4 (project local) (ADR-004).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Memory Partitioning**: Global settings, project profiles, and session variables are kept strictly separate; project profiles invalidate using fingerprints (ADR-005).",
+      "name": "Memory Partitioning**: Global settings, project profiles, and session variables are kept strictly separate; project profiles invalidate using fingerprints (ADR-005).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Skill Splitting**: Decompose runtime into 8 distinct global skills to reduce context bloat (ADR-006).",
+      "name": "Skill Splitting**: Decompose runtime into 8 distinct global skills to reduce context bloat (ADR-006).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Execution Contract**: Scripts take CLI flags, output JSON to stdout, print info to stderr, exit with code 0 on success (ADR-007).",
+      "name": "Execution Contract**: Scripts take CLI flags, output JSON to stdout, print info to stderr, exit with code 0 on success (ADR-007).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).",
+      "name": "Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).",
+      "name": "Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).",
+      "name": "Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).",
+      "name": "Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).",
+      "kind": "rule",
+      "source": "MEMORY.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:No file system manipulation in markdown**: Skills and references must never instruct the LLM to perform ad-hoc file operations. They must instead instruct the LLM to invoke the module's corresponding Python script (e.g., `python scripts/scanner.py`).",
+      "name": "No file system manipulation in markdown**: Skills and references must never instruct the LLM to perform ad-hoc file operations. They must instead instruct the LLM to invoke the module's corresponding Python script (e.g., `python scripts/scanner.py`).",
+      "kind": "rule",
+      "source": "adrs\\001-module-boundaries.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:No reasoning in scripts**: Python scripts must not attempt to reason about user intent, architect solutions, or make qualitative decisions. They are input-output machines that process data, query files, and return structured JSON/YAML.",
+      "name": "No reasoning in scripts**: Python scripts must not attempt to reason about user intent, architect solutions, or make qualitative decisions. They are input-output machines that process data, query files, and return structured JSON/YAML.",
+      "kind": "rule",
+      "source": "adrs\\001-module-boundaries.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:On-demand loading**: Reference documents must be kept small (under 8KB each) and focused on a single topic. The LLM must only read them when explicitly entering that specific pipeline stage.",
+      "name": "On-demand loading**: Reference documents must be kept small (under 8KB each) and focused on a single topic. The LLM must only read them when explicitly entering that specific pipeline stage.",
+      "kind": "rule",
+      "source": "adrs\\001-module-boundaries.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never read credentials or secrets.",
+      "name": "Never read credentials or secrets.",
+      "kind": "rule",
+      "source": "contracts\\config-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never write configurations back to the repository.",
+      "name": "Never write configurations back to the repository.",
+      "kind": "rule",
+      "source": "contracts\\config-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify file permissions of configuration directories before reading.",
+      "name": "Verify file permissions of configuration directories before reading.",
+      "kind": "rule",
+      "source": "contracts\\config-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Fail closed if a secret is found in a project-level config file.",
+      "name": "Fail closed if a secret is found in a project-level config file.",
+      "kind": "rule",
+      "source": "contracts\\config-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Strictly validate all selected file paths against the workspace boundary.",
+      "name": "Strictly validate all selected file paths against the workspace boundary.",
+      "kind": "rule",
+      "source": "contracts\\context-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Scan file contents for secrets before packaging; redact any matched patterns.",
+      "name": "Scan file contents for secrets before packaging; redact any matched patterns.",
+      "kind": "rule",
+      "source": "contracts\\context-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never load files outside the active workspace.",
+      "name": "Never load files outside the active workspace.",
+      "kind": "rule",
+      "source": "contracts\\context-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Prevent subscriber hijacking: verify module names against registered skills in Configuration before registering.",
+      "name": "Prevent subscriber hijacking: verify module names against registered skills in Configuration before registering.",
+      "kind": "rule",
+      "source": "contracts\\event-bus.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never pass unvalidated or raw payloads through the bus.",
+      "name": "Never pass unvalidated or raw payloads through the bus.",
+      "kind": "rule",
+      "source": "contracts\\event-bus.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Enforce strict typing on event payload schemas.",
+      "name": "Enforce strict typing on event payload schemas.",
+      "kind": "rule",
+      "source": "contracts\\event-bus.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never execute user-provided code.",
+      "name": "Never execute user-provided code.",
+      "kind": "rule",
+      "source": "contracts\\kernel.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never read files outside the active workspace.",
+      "name": "Never read files outside the active workspace.",
+      "kind": "rule",
+      "source": "contracts\\kernel.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never modify the Aetheris Kernel installation.",
+      "name": "Never modify the Aetheris Kernel installation.",
+      "kind": "rule",
+      "source": "contracts\\kernel.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never expose session state to other sessions.",
+      "name": "Never expose session state to other sessions.",
+      "kind": "rule",
+      "source": "contracts\\kernel.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never bypass the verification stage.",
+      "name": "Never bypass the verification stage.",
+      "kind": "rule",
+      "source": "contracts\\kernel.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).",
+      "name": "Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).",
+      "kind": "rule",
+      "source": "contracts\\memory-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Redact secrets before serializing memory fields.",
+      "name": "Redact secrets before serializing memory fields.",
+      "kind": "rule",
+      "source": "contracts\\memory-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.",
+      "name": "Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.",
+      "kind": "rule",
+      "source": "contracts\\memory-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Plan steps must never specify execution of unsafe scripts or commands.",
+      "name": "Plan steps must never specify execution of unsafe scripts or commands.",
+      "kind": "rule",
+      "source": "contracts\\planner.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify that plan dependencies do not involve paths outside the workspace perimeter.",
+      "name": "Verify that plan dependencies do not involve paths outside the workspace perimeter.",
+      "kind": "rule",
+      "source": "contracts\\planner.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Plan descriptions must not contain sensitive codebase secrets.",
+      "name": "Plan descriptions must not contain sensitive codebase secrets.",
+      "kind": "rule",
+      "source": "contracts\\planner.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Every plugin must declare its requested permissions in `manifest.yaml`.",
+      "name": "Every plugin must declare its requested permissions in `manifest.yaml`.",
+      "kind": "rule",
+      "source": "contracts\\plugin-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.",
+      "name": "Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.",
+      "kind": "rule",
+      "source": "contracts\\plugin-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never load or execute plugin binaries (DLLs, EXEs) \u2014 plugins must be Python-only source modules.",
+      "name": "Never load or execute plugin binaries (DLLs, EXEs) \u2014 plugins must be Python-only source modules.",
+      "kind": "rule",
+      "source": "contracts\\plugin-manager.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never read `.env` files or files containing secrets.",
+      "name": "Never read `.env` files or files containing secrets.",
+      "kind": "rule",
+      "source": "contracts\\project-discovery.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Redact matching key/credential patterns in any config snippet parsed.",
+      "name": "Redact matching key/credential patterns in any config snippet parsed.",
+      "kind": "rule",
+      "source": "contracts\\project-discovery.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Validate paths to prevent directory traversal outside the workspace perimeter.",
+      "name": "Validate paths to prevent directory traversal outside the workspace perimeter.",
+      "kind": "rule",
+      "source": "contracts\\project-discovery.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Roster recommendations must never expose internal user profiles.",
+      "name": "Roster recommendations must never expose internal user profiles.",
+      "kind": "rule",
+      "source": "contracts\\resource-router.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Scoring formulas must be deterministic and run in memory (no external command dependencies).",
+      "name": "Scoring formulas must be deterministic and run in memory (no external command dependencies).",
+      "kind": "rule",
+      "source": "contracts\\resource-router.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Strictly validate agent names to prevent command injections.",
+      "name": "Strictly validate agent names to prevent command injections.",
+      "kind": "rule",
+      "source": "contracts\\resource-router.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Scrub all credentials before writing logs.",
+      "name": "Scrub all credentials before writing logs.",
+      "kind": "rule",
+      "source": "contracts\\telemetry-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Strictly validate log file path parameters to prevent directory traversal.",
+      "name": "Strictly validate log file path parameters to prevent directory traversal.",
+      "kind": "rule",
+      "source": "contracts\\telemetry-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Never transmit log data over any network connection.",
+      "name": "Never transmit log data over any network connection.",
+      "kind": "rule",
+      "source": "contracts\\telemetry-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verification engine must scan for credentials, private keys, and tokens in every patch.",
+      "name": "Verification engine must scan for credentials, private keys, and tokens in every patch.",
+      "kind": "rule",
+      "source": "contracts\\verification-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Verify that code patches do not read/write files outside the workspace perimeter.",
+      "name": "Verify that code patches do not read/write files outside the workspace perimeter.",
+      "kind": "rule",
+      "source": "contracts\\verification-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Code analysis must run inside in-memory parser sandboxes.",
+      "name": "Code analysis must run inside in-memory parser sandboxes.",
+      "kind": "rule",
+      "source": "contracts\\verification-engine.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_benchmark",
+      "name": "run_benchmark",
+      "kind": "function",
+      "source": "scratch\\benchmark_goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeCompiler",
+      "name": "EngineeringKnowledgeCompiler",
+      "kind": "class",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_find_files",
+      "name": "_find_files",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_file_hash",
+      "name": "_calculate_file_hash",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile",
+      "name": "compile",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_engineering_understanding",
+      "name": "build_engineering_understanding",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:update",
+      "name": "update",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:query",
+      "name": "query",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:diagnostics",
+      "name": "diagnostics",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate",
+      "name": "validate",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:benchmark",
+      "name": "benchmark",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:export",
+      "name": "export",
+      "kind": "function",
+      "source": "scratch\\ekc.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:persona:Students looking for homework tracking",
+      "name": "Students looking for homework tracking",
+      "kind": "persona",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:persona:Teachers managing class schedules",
+      "name": "Teachers managing class schedules",
+      "kind": "persona",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Task completion date must be in the future",
+      "name": "Task completion date must be in the future",
+      "kind": "rule",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Free accounts can have at most 10 active tasks",
+      "name": "Free accounts can have at most 10 active tasks",
+      "kind": "rule",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:feature:User Auth via JWT tokens",
+      "name": "User Auth via JWT tokens",
+      "kind": "feature",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:feature:Task Board view",
+      "name": "Task Board view",
+      "kind": "feature",
+      "source": "scratch\\PRD.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:prisma_model:User",
+      "name": "User",
+      "kind": "prisma_model",
+      "source": "scratch\\schema.prisma",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:prisma_model:Task",
+      "name": "Task",
+      "kind": "prisma_model",
+      "source": "scratch\\schema.prisma",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_integration_test",
+      "name": "run_integration_test",
+      "kind": "function",
+      "source": "scratch\\test_v4_autonomous_loop.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:SkillBuilder",
+      "name": "SkillBuilder",
+      "kind": "class",
+      "source": "scripts\\build.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "scripts\\build.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_skill_markdown",
+      "name": "validate_skill_markdown",
+      "kind": "function",
+      "source": "scripts\\build.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_all",
+      "name": "build_all",
+      "kind": "function",
+      "source": "scripts\\build.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:DiagnosticsEngine",
+      "name": "DiagnosticsEngine",
+      "kind": "class",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_skills",
+      "name": "check_skills",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_runtime_scripts",
+      "name": "check_runtime_scripts",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_configurations",
+      "name": "check_configurations",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_permissions",
+      "name": "check_permissions",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:check_log_sizes",
+      "name": "check_log_sizes",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_diagnostics",
+      "name": "run_diagnostics",
+      "kind": "function",
+      "source": "scripts\\doctor.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TransactionalInstaller",
+      "name": "TransactionalInstaller",
+      "kind": "class",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_preflight_check",
+      "name": "_preflight_check",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_backup",
+      "name": "_backup",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_rollback",
+      "name": "_rollback",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_build_and_deploy_skills",
+      "name": "_build_and_deploy_skills",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_create_global_dirs",
+      "name": "_create_global_dirs",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_inject_agents_rules",
+      "name": "_inject_agents_rules",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:install",
+      "name": "install",
+      "kind": "function",
+      "source": "scripts\\install.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:uninstall",
+      "name": "uninstall",
+      "kind": "function",
+      "source": "scripts\\uninstall.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Invoke the context script via:",
+      "name": "Invoke the context script via:",
+      "kind": "rule",
+      "source": "skills\\aetheris-context-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:The script filters workspace files by relevance to task keywords, extracts public signatures from files larger than 20KB, redacts secrets, and computes token counts.",
+      "name": "The script filters workspace files by relevance to task keywords, extracts public signatures from files larger than 20KB, redacts secrets, and computes token counts.",
+      "kind": "rule",
+      "source": "skills\\aetheris-context-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Parse the output JSON Package.",
+      "name": "Parse the output JSON Package.",
+      "kind": "rule",
+      "source": "skills\\aetheris-context-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Load the selected, compressed context payload into the active LLM reasoning frame.",
+      "name": "Load the selected, compressed context payload into the active LLM reasoning frame.",
+      "kind": "rule",
+      "source": "skills\\aetheris-context-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Invoke the memory script via `python scripts/memory.py` to read or write cache files.",
+      "name": "Invoke the memory script via `python scripts/memory.py` to read or write cache files.",
+      "kind": "rule",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Store project-scoped files (cached profiles, ADR decision logs, conventions) strictly in the `<workspace>/.aetheris/memory/` directory.",
+      "name": "Store project-scoped files (cached profiles, ADR decision logs, conventions) strictly in the `<workspace>/.aetheris/memory/` directory.",
+      "kind": "rule",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Append approved architectural decision records sequentially to `decisions.jsonl`.",
+      "name": "Append approved architectural decision records sequentially to `decisions.jsonl`.",
+      "kind": "rule",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Validate fingerprint consistency before reloading profiles.",
+      "name": "Validate fingerprint consistency before reloading profiles.",
+      "kind": "rule",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:If parsing files raises corruption errors, delete the files and trigger re-discovery.",
+      "name": "If parsing files raises corruption errors, delete the files and trigger re-discovery.",
+      "kind": "rule",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Extract the primary goal and requirements from the classified user intent.",
+      "name": "Extract the primary goal and requirements from the classified user intent.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Decompose the request into atomic, sequential task steps.",
+      "name": "Decompose the request into atomic, sequential task steps.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Establish dependencies between steps (e.g. database schema change before frontend UI hookups).",
+      "name": "Establish dependencies between steps (e.g. database schema change before frontend UI hookups).",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Run check to ensure no circular dependencies exist.",
+      "name": "Run check to ensure no circular dependencies exist.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Identify potential security or performance risks for each step.",
+      "name": "Identify potential security or performance risks for each step.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Define explicit, measurable success criteria for every step.",
+      "name": "Define explicit, measurable success criteria for every step.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Package details into the structured Execution Plan JSON.",
+      "name": "Package details into the structured Execution Plan JSON.",
+      "kind": "rule",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Run the workspace scanner script via:",
+      "name": "Run the workspace scanner script via:",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Parse the JSON profile returned on standard output.",
+      "name": "Parse the JSON profile returned on standard output.",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Extract:",
+      "name": "Extract:",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Languages and framework targets",
+      "name": "Languages and framework targets",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Conventions (naming conventions, styling libraries, testing frameworks)",
+      "name": "Conventions (naming conventions, styling libraries, testing frameworks)",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Configuration hashes (fingerprint)",
+      "name": "Configuration hashes (fingerprint)",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.",
+      "name": "Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.",
+      "kind": "rule",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Query the **Dynamic Registry** to get all dynamically discovered Agency and custom skills (ADR-005). Do NOT rely on static YAML files.",
+      "name": "Query the **Dynamic Registry** to get all dynamically discovered Agency and custom skills (ADR-005). Do NOT rely on static YAML files.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Load the active Project Profile and Task Intent from workspace memory.",
+      "name": "Load the active Project Profile and Task Intent from workspace memory.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Perform capability matching by intersecting Task Requirements with skill fields: `capabilities`, `languages`, `frameworks`, and `keywords`.",
+      "name": "Perform capability matching by intersecting Task Requirements with skill fields: `capabilities`, `languages`, `frameworks`, and `keywords`.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Calculate the confidence score ($S$) for candidate specialists:",
+      "name": "Calculate the confidence score ($S$) for candidate specialists:",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Select all specialists scoring $S \\ge 80$. If no specialist scores above 80, default to Kernel generalist mode.",
+      "name": "Select all specialists scoring $S \\ge 80$. If no specialist scores above 80, default to Kernel generalist mode.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Assemble a dynamic Execution Team (1-2 specialists for Trivial tasks, 3-5 for Medium tasks, 6-10 for Large tasks).",
+      "name": "Assemble a dynamic Execution Team (1-2 specialists for Trivial tasks, 3-5 for Medium tasks, 6-10 for Large tasks).",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Query `config/models.yaml` and `config/costs.yaml` to evaluate active model requirements and estimate run costs.",
+      "name": "Query `config/models.yaml` and `config/costs.yaml` to evaluate active model requirements and estimate run costs.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Present the routing roster and estimated costs in the trace before execution begins.",
+      "name": "Present the routing roster and estimated costs in the trace before execution begins.",
+      "kind": "rule",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Architecture Gate**: Verify code uses frameworks and styles matching the Project Profile.",
+      "name": "Architecture Gate**: Verify code uses frameworks and styles matching the Project Profile.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Security Gate**: Run scanning for credentials, connection strings, SQL injection, and XSS. Halt and reject immediately on any violation.",
+      "name": "Security Gate**: Run scanning for credentials, connection strings, SQL injection, and XSS. Halt and reject immediately on any violation.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Performance Gate**: Check algorithmic complexity. Warn on inefficient nested loops.",
+      "name": "Performance Gate**: Check algorithmic complexity. Warn on inefficient nested loops.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Maintainability Gate**: Verify file changes conform to naming standards, include basic comments, and contain type hints if required by strictness levels.",
+      "name": "Maintainability Gate**: Verify file changes conform to naming standards, include basic comments, and contain type hints if required by strictness levels.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Accessibility Gate**: Run basic checks on markup tags.",
+      "name": "Accessibility Gate**: Run basic checks on markup tags.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Business Alignment Gate**: Ensure modifications fulfill the plan requirements.",
+      "name": "Business Alignment Gate**: Ensure modifications fulfill the plan requirements.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:rule:Documentation Gate**: Verify code updates documentation/readme files if new files or API endpoints are created.",
+      "name": "Documentation Gate**: Verify code updates documentation/readme files if new files or API endpoints are created.",
+      "kind": "rule",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:UniversalBlueprintEngine",
+      "name": "UniversalBlueprintEngine",
+      "kind": "class",
+      "source": "src\\intelligence\\blueprint.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\intelligence\\blueprint.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile_blueprint",
+      "name": "compile_blueprint",
+      "kind": "function",
+      "source": "src\\intelligence\\blueprint.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ContextEngine",
+      "name": "ContextEngine",
+      "kind": "class",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_estimate_tokens",
+      "name": "_estimate_tokens",
+      "kind": "function",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_compress_file",
+      "name": "_compress_file",
+      "kind": "function",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_relevance",
+      "name": "_calculate_relevance",
+      "kind": "function",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_context_package",
+      "name": "build_context_package",
+      "kind": "function",
+      "source": "src\\intelligence\\context.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:DecisionIntelligenceEngine",
+      "name": "DecisionIntelligenceEngine",
+      "kind": "class",
+      "source": "src\\intelligence\\decision.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\intelligence\\decision.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_decision",
+      "name": "log_decision",
+      "kind": "function",
+      "source": "src\\intelligence\\decision.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_decisions",
+      "name": "get_decisions",
+      "kind": "function",
+      "source": "src\\intelligence\\decision.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ProjectScanner",
+      "name": "ProjectScanner",
+      "kind": "class",
+      "source": "src\\intelligence\\scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\intelligence\\scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_fingerprint",
+      "name": "_calculate_fingerprint",
+      "kind": "function",
+      "source": "src\\intelligence\\scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_parse_package_json",
+      "name": "_parse_package_json",
+      "kind": "function",
+      "source": "src\\intelligence\\scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:scan",
+      "name": "scan",
+      "kind": "function",
+      "source": "src\\intelligence\\scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TechnologyIntelligence",
+      "name": "TechnologyIntelligence",
+      "kind": "class",
+      "source": "src\\intelligence\\technology.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\intelligence\\technology.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:evaluate_tech_stack",
+      "name": "evaluate_tech_stack",
+      "kind": "function",
+      "source": "src\\intelligence\\technology.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:AetherisKernel",
+      "name": "AetherisKernel",
+      "kind": "class",
+      "source": "src\\kernel\\core.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\core.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_update_dashboard",
+      "name": "_update_dashboard",
+      "kind": "function",
+      "source": "src\\kernel\\core.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:run_autonomous_loop",
+      "name": "run_autonomous_loop",
+      "kind": "function",
+      "source": "src\\kernel\\core.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EventBus",
+      "name": "EventBus",
+      "kind": "class",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:register_subscriber",
+      "name": "register_subscriber",
+      "kind": "function",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:publish",
+      "name": "publish",
+      "kind": "function",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:dispatch_next",
+      "name": "dispatch_next",
+      "kind": "function",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:clear_queue",
+      "name": "clear_queue",
+      "kind": "function",
+      "source": "src\\kernel\\event_bus.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EventBus",
+      "name": "EventBus",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TelemetryEngine",
+      "name": "TelemetryEngine",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Compiler",
+      "name": "Compiler",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:BaseCompilerPlugin",
+      "name": "BaseCompilerPlugin",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Symbol",
+      "name": "Symbol",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:KnowledgeNode",
+      "name": "KnowledgeNode",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:Relationship",
+      "name": "Relationship",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringGraph",
+      "name": "EngineeringGraph",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeBase",
+      "name": "EngineeringKnowledgeBase",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:PythonAdapter",
+      "name": "PythonAdapter",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:MarkdownAdapter",
+      "name": "MarkdownAdapter",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:PrismaAdapter",
+      "name": "PrismaAdapter",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:SqlAdapter",
+      "name": "SqlAdapter",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeCompiler",
+      "name": "EngineeringKnowledgeCompiler",
+      "kind": "class",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:publish",
+      "name": "publish",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_start",
+      "name": "log_stage_start",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_complete",
+      "name": "log_stage_complete",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_failed",
+      "name": "log_stage_failed",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile",
+      "name": "compile",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:update",
+      "name": "update",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:query",
+      "name": "query",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:diagnostics",
+      "name": "diagnostics",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate",
+      "name": "validate",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:benchmark",
+      "name": "benchmark",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:export",
+      "name": "export",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:initialize",
+      "name": "initialize",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "name": "discover",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "name": "lex",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "name": "parse",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "name": "semantic",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "name": "relationships",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate",
+      "name": "validate",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:cleanup",
+      "name": "cleanup",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:to_dict",
+      "name": "to_dict",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:to_dict",
+      "name": "to_dict",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:to_dict",
+      "name": "to_dict",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_node",
+      "name": "add_node",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_edge",
+      "name": "add_edge",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:prune_file_nodes",
+      "name": "prune_file_nodes",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:to_dict",
+      "name": "to_dict",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_artifact",
+      "name": "save_artifact",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_artifact",
+      "name": "load_artifact",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "name": "discover",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "name": "lex",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "name": "parse",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "name": "semantic",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "name": "relationships",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "name": "discover",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "name": "lex",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "name": "parse",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "name": "semantic",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "name": "relationships",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "name": "discover",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "name": "lex",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "name": "parse",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "name": "semantic",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "name": "relationships",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:discover",
+      "name": "discover",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:lex",
+      "name": "lex",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse",
+      "name": "parse",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:semantic",
+      "name": "semantic",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:relationships",
+      "name": "relationships",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_find_files",
+      "name": "_find_files",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_calculate_file_hash",
+      "name": "_calculate_file_hash",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:compile",
+      "name": "compile",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_engineering_understanding",
+      "name": "build_engineering_understanding",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:update",
+      "name": "update",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:query",
+      "name": "query",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:diagnostics",
+      "name": "diagnostics",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate",
+      "name": "validate",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:benchmark",
+      "name": "benchmark",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:export",
+      "name": "export",
+      "kind": "function",
+      "source": "src\\kernel\\goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringKnowledgeBase",
+      "name": "EngineeringKnowledgeBase",
+      "kind": "class",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:EngineeringPlanner",
+      "name": "EngineeringPlanner",
+      "kind": "class",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_artifact",
+      "name": "load_artifact",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:build_task_dag",
+      "name": "build_task_dag",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:plan",
+      "name": "plan",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_topological_sort",
+      "name": "_topological_sort",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_build_concurrency_waves",
+      "name": "_build_concurrency_waves",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_execution_artifacts",
+      "name": "_save_execution_artifacts",
+      "kind": "function",
+      "source": "src\\kernel\\planner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:AutonomousRecoveryEngine",
+      "name": "AutonomousRecoveryEngine",
+      "kind": "class",
+      "source": "src\\kernel\\recovery.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\recovery.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:perform_rca",
+      "name": "perform_rca",
+      "kind": "function",
+      "source": "src\\kernel\\recovery.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:apply_remediation",
+      "name": "apply_remediation",
+      "kind": "function",
+      "source": "src\\kernel\\recovery.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:RuntimeScheduler",
+      "name": "RuntimeScheduler",
+      "kind": "class",
+      "source": "src\\kernel\\scheduler.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\scheduler.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_state",
+      "name": "_save_state",
+      "kind": "function",
+      "source": "src\\kernel\\scheduler.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:execute_dag",
+      "name": "execute_dag",
+      "kind": "function",
+      "source": "src\\kernel\\scheduler.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TelemetryEngine",
+      "name": "TelemetryEngine",
+      "kind": "class",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_mask_paths",
+      "name": "_mask_paths",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_rotate_logs",
+      "name": "_rotate_logs",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_write_log",
+      "name": "_write_log",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_start",
+      "name": "log_stage_start",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_complete",
+      "name": "log_stage_complete",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:log_stage_failed",
+      "name": "log_stage_failed",
+      "kind": "function",
+      "source": "src\\kernel\\telemetry.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:initialize_perimeter",
+      "name": "initialize_perimeter",
+      "kind": "function",
+      "source": "src\\kernel\\utils.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:is_safe_path",
+      "name": "is_safe_path",
+      "kind": "function",
+      "source": "src\\kernel\\utils.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:redact_secrets",
+      "name": "redact_secrets",
+      "kind": "function",
+      "source": "src\\kernel\\utils.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_environment",
+      "name": "validate_environment",
+      "kind": "function",
+      "source": "src\\kernel\\utils.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ConfigManager",
+      "name": "ConfigManager",
+      "kind": "class",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_deep_merge",
+      "name": "_deep_merge",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_yaml",
+      "name": "_load_yaml",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_schema",
+      "name": "_load_schema",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_config",
+      "name": "validate_config",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_registry",
+      "name": "get_registry",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_config",
+      "name": "load_config",
+      "kind": "function",
+      "source": "src\\orchestration\\config.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:PluginManager",
+      "name": "PluginManager",
+      "kind": "class",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_get_master_version",
+      "name": "_get_master_version",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_registry",
+      "name": "load_registry",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_registry",
+      "name": "_save_registry",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:validate_manifest",
+      "name": "validate_manifest",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:register_plugin",
+      "name": "register_plugin",
+      "kind": "function",
+      "source": "src\\orchestration\\plugins.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:RegistryCache",
+      "name": "RegistryCache",
+      "kind": "class",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_load_cache_file",
+      "name": "_load_cache_file",
+      "kind": "function",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_save_cache_file",
+      "name": "_save_cache_file",
+      "kind": "function",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:load_registry",
+      "name": "load_registry",
+      "kind": "function",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:find_by_capability",
+      "name": "find_by_capability",
+      "kind": "function",
+      "source": "src\\orchestration\\registry_cache.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:SkillParser",
+      "name": "SkillParser",
+      "kind": "class",
+      "source": "src\\orchestration\\skill_parser.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_parser.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_extract_capabilities",
+      "name": "_extract_capabilities",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_parser.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:parse_skill",
+      "name": "parse_skill",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_parser.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:SkillScanner",
+      "name": "SkillScanner",
+      "kind": "class",
+      "source": "src\\orchestration\\skill_scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:add_root",
+      "name": "add_root",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:scan_roots",
+      "name": "scan_roots",
+      "kind": "function",
+      "source": "src\\orchestration\\skill_scanner.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:MemoryEngine",
+      "name": "MemoryEngine",
+      "kind": "class",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_safe_read_yaml",
+      "name": "_safe_read_yaml",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:_safe_write_yaml",
+      "name": "_safe_write_yaml",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_profile",
+      "name": "get_profile",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_profile",
+      "name": "save_profile",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_conventions",
+      "name": "get_conventions",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_conventions",
+      "name": "save_conventions",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:get_decisions",
+      "name": "get_decisions",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:save_decision",
+      "name": "save_decision",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:verify_fingerprint",
+      "name": "verify_fingerprint",
+      "kind": "function",
+      "source": "src\\storage\\manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ReadinessEngine",
+      "name": "ReadinessEngine",
+      "kind": "class",
+      "source": "src\\validation\\readiness.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:__init__",
+      "name": "__init__",
+      "kind": "function",
+      "source": "src\\validation\\readiness.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:verify_definition_of_done",
+      "name": "verify_definition_of_done",
+      "kind": "function",
+      "source": "src\\validation\\readiness.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TestEKCCapabilities",
+      "name": "TestEKCCapabilities",
+      "kind": "class",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ApplicationController",
+      "name": "ApplicationController",
+      "kind": "class",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:ApplicationController",
+      "name": "ApplicationController",
+      "kind": "class",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:setUp",
+      "name": "setUp",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:event_handler",
+      "name": "event_handler",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:tearDown",
+      "name": "tearDown",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_complete_compiler_passes",
+      "name": "test_complete_compiler_passes",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:start",
+      "name": "start",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:stop",
+      "name": "stop",
+      "kind": "function",
+      "source": "tests\\test_ekc_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TestGoalManager",
+      "name": "TestGoalManager",
+      "kind": "class",
+      "source": "tests\\test_goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:setUp",
+      "name": "setUp",
+      "kind": "function",
+      "source": "tests\\test_goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:tearDown",
+      "name": "tearDown",
+      "kind": "function",
+      "source": "tests\\test_goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_expand_goal_discovery",
+      "name": "test_expand_goal_discovery",
+      "kind": "function",
+      "source": "tests\\test_goal_manager.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:class:TestPlannerCapabilities",
+      "name": "TestPlannerCapabilities",
+      "kind": "class",
+      "source": "tests\\test_planner_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:setUp",
+      "name": "setUp",
+      "kind": "function",
+      "source": "tests\\test_planner_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:tearDown",
+      "name": "tearDown",
+      "kind": "function",
+      "source": "tests\\test_planner_capabilities.py",
+      "metadata": {}
+    },
+    {
+      "id": "symbol:function:test_planning_generation",
+      "name": "test_planning_generation",
+      "kind": "function",
+      "source": "tests\\test_planner_capabilities.py",
+      "metadata": {}
+    }
+  ]
+}

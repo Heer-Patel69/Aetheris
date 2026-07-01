@@ -1,0 +1,384 @@
+{
+  "personas": [
+    {
+      "text": "Students looking for homework tracking",
+      "source": "scratch\\PRD.md"
+    },
+    {
+      "text": "Teachers managing class schedules",
+      "source": "scratch\\PRD.md"
+    }
+  ],
+  "rules": [
+    {
+      "text": "Instruction vs. Execution Separation**: LLM dispatches and coordinates via skills/references; filesystem modifications, calculations, and hashing are handled by Python scripts (ADR-001).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Single Owner**: Only the designated module may write to its state directory (ADR-002).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Stateless Kernel Execution**: Event bus resides in the pipeline loop context, passed through JSON outputs (ADR-003).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Tier Merge**: Config overrides merge deep recursively: Tier 1 (defaults) -> Tier 2 (shipped defaults) -> Tier 3 (user global) -> Tier 4 (project local) (ADR-004).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Memory Partitioning**: Global settings, project profiles, and session variables are kept strictly separate; project profiles invalidate using fingerprints (ADR-005).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Skill Splitting**: Decompose runtime into 8 distinct global skills to reduce context bloat (ADR-006).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Execution Contract**: Scripts take CLI flags, output JSON to stdout, print info to stderr, exit with code 0 on success (ADR-007).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Semantic Versioning**: Standard SemVer 2.0.0 for matching files and caches (ADR-008).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Platform Workarounds**: LLM Router is advisory; Kernel uses global AGENTS.md rules for activation; Cost Optimizer estimates tokens via string heuristics (ADR-009).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Perimeter Controls**: Sandbox reads workspace + config + brain state paths only; RLS/credentials must be redacted; no file deletion allowed (ADR-010).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "Autonomous ASE-OS Pipeline**: Runs topological Task DAGs concurrently, checks resource manager constraints, implements uncertainty discovery queries, runs autonomous RCA recovery loops, and verifies the strict Definition of Done (DoD) before committing tasks (ADR-011).",
+      "source": "MEMORY.md"
+    },
+    {
+      "text": "No file system manipulation in markdown**: Skills and references must never instruct the LLM to perform ad-hoc file operations. They must instead instruct the LLM to invoke the module's corresponding Python script (e.g., `python scripts/scanner.py`).",
+      "source": "adrs\\001-module-boundaries.md"
+    },
+    {
+      "text": "No reasoning in scripts**: Python scripts must not attempt to reason about user intent, architect solutions, or make qualitative decisions. They are input-output machines that process data, query files, and return structured JSON/YAML.",
+      "source": "adrs\\001-module-boundaries.md"
+    },
+    {
+      "text": "On-demand loading**: Reference documents must be kept small (under 8KB each) and focused on a single topic. The LLM must only read them when explicitly entering that specific pipeline stage.",
+      "source": "adrs\\001-module-boundaries.md"
+    },
+    {
+      "text": "Never read credentials or secrets.",
+      "source": "contracts\\config-manager.md"
+    },
+    {
+      "text": "Never write configurations back to the repository.",
+      "source": "contracts\\config-manager.md"
+    },
+    {
+      "text": "Verify file permissions of configuration directories before reading.",
+      "source": "contracts\\config-manager.md"
+    },
+    {
+      "text": "Fail closed if a secret is found in a project-level config file.",
+      "source": "contracts\\config-manager.md"
+    },
+    {
+      "text": "Strictly validate all selected file paths against the workspace boundary.",
+      "source": "contracts\\context-engine.md"
+    },
+    {
+      "text": "Scan file contents for secrets before packaging; redact any matched patterns.",
+      "source": "contracts\\context-engine.md"
+    },
+    {
+      "text": "Never load files outside the active workspace.",
+      "source": "contracts\\context-engine.md"
+    },
+    {
+      "text": "Prevent subscriber hijacking: verify module names against registered skills in Configuration before registering.",
+      "source": "contracts\\event-bus.md"
+    },
+    {
+      "text": "Never pass unvalidated or raw payloads through the bus.",
+      "source": "contracts\\event-bus.md"
+    },
+    {
+      "text": "Enforce strict typing on event payload schemas.",
+      "source": "contracts\\event-bus.md"
+    },
+    {
+      "text": "Never execute user-provided code.",
+      "source": "contracts\\kernel.md"
+    },
+    {
+      "text": "Never read files outside the active workspace.",
+      "source": "contracts\\kernel.md"
+    },
+    {
+      "text": "Never modify the Aetheris Kernel installation.",
+      "source": "contracts\\kernel.md"
+    },
+    {
+      "text": "Never expose session state to other sessions.",
+      "source": "contracts\\kernel.md"
+    },
+    {
+      "text": "Never bypass the verification stage.",
+      "source": "contracts\\kernel.md"
+    },
+    {
+      "text": "Restrict read/write operations strictly to paths starting with the approved perimeter (c:/.aetheris or workspace/.aetheris).",
+      "source": "contracts\\memory-engine.md"
+    },
+    {
+      "text": "Redact secrets before serializing memory fields.",
+      "source": "contracts\\memory-engine.md"
+    },
+    {
+      "text": "Isolate workspace memory directories: enforce file access controls so one project cannot access another's memory directory.",
+      "source": "contracts\\memory-engine.md"
+    },
+    {
+      "text": "Plan steps must never specify execution of unsafe scripts or commands.",
+      "source": "contracts\\planner.md"
+    },
+    {
+      "text": "Verify that plan dependencies do not involve paths outside the workspace perimeter.",
+      "source": "contracts\\planner.md"
+    },
+    {
+      "text": "Plan descriptions must not contain sensitive codebase secrets.",
+      "source": "contracts\\planner.md"
+    },
+    {
+      "text": "Every plugin must declare its requested permissions in `manifest.yaml`.",
+      "source": "contracts\\plugin-manager.md"
+    },
+    {
+      "text": "Enforce strict path checks: plugins are forbidden from calling write operations outside `<workspace>/.aetheris/`.",
+      "source": "contracts\\plugin-manager.md"
+    },
+    {
+      "text": "Never load or execute plugin binaries (DLLs, EXEs) \u2014 plugins must be Python-only source modules.",
+      "source": "contracts\\plugin-manager.md"
+    },
+    {
+      "text": "Never read `.env` files or files containing secrets.",
+      "source": "contracts\\project-discovery.md"
+    },
+    {
+      "text": "Redact matching key/credential patterns in any config snippet parsed.",
+      "source": "contracts\\project-discovery.md"
+    },
+    {
+      "text": "Validate paths to prevent directory traversal outside the workspace perimeter.",
+      "source": "contracts\\project-discovery.md"
+    },
+    {
+      "text": "Roster recommendations must never expose internal user profiles.",
+      "source": "contracts\\resource-router.md"
+    },
+    {
+      "text": "Scoring formulas must be deterministic and run in memory (no external command dependencies).",
+      "source": "contracts\\resource-router.md"
+    },
+    {
+      "text": "Strictly validate agent names to prevent command injections.",
+      "source": "contracts\\resource-router.md"
+    },
+    {
+      "text": "Scrub all credentials before writing logs.",
+      "source": "contracts\\telemetry-engine.md"
+    },
+    {
+      "text": "Strictly validate log file path parameters to prevent directory traversal.",
+      "source": "contracts\\telemetry-engine.md"
+    },
+    {
+      "text": "Never transmit log data over any network connection.",
+      "source": "contracts\\telemetry-engine.md"
+    },
+    {
+      "text": "Verification engine must scan for credentials, private keys, and tokens in every patch.",
+      "source": "contracts\\verification-engine.md"
+    },
+    {
+      "text": "Verify that code patches do not read/write files outside the workspace perimeter.",
+      "source": "contracts\\verification-engine.md"
+    },
+    {
+      "text": "Code analysis must run inside in-memory parser sandboxes.",
+      "source": "contracts\\verification-engine.md"
+    },
+    {
+      "text": "Task completion date must be in the future",
+      "source": "scratch\\PRD.md"
+    },
+    {
+      "text": "Free accounts can have at most 10 active tasks",
+      "source": "scratch\\PRD.md"
+    },
+    {
+      "text": "Invoke the context script via:",
+      "source": "skills\\aetheris-context-engine\\SKILL.md"
+    },
+    {
+      "text": "The script filters workspace files by relevance to task keywords, extracts public signatures from files larger than 20KB, redacts secrets, and computes token counts.",
+      "source": "skills\\aetheris-context-engine\\SKILL.md"
+    },
+    {
+      "text": "Parse the output JSON Package.",
+      "source": "skills\\aetheris-context-engine\\SKILL.md"
+    },
+    {
+      "text": "Load the selected, compressed context payload into the active LLM reasoning frame.",
+      "source": "skills\\aetheris-context-engine\\SKILL.md"
+    },
+    {
+      "text": "Invoke the memory script via `python scripts/memory.py` to read or write cache files.",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md"
+    },
+    {
+      "text": "Store project-scoped files (cached profiles, ADR decision logs, conventions) strictly in the `<workspace>/.aetheris/memory/` directory.",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md"
+    },
+    {
+      "text": "Append approved architectural decision records sequentially to `decisions.jsonl`.",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md"
+    },
+    {
+      "text": "Validate fingerprint consistency before reloading profiles.",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md"
+    },
+    {
+      "text": "If parsing files raises corruption errors, delete the files and trigger re-discovery.",
+      "source": "skills\\aetheris-memory-engine\\SKILL.md"
+    },
+    {
+      "text": "Extract the primary goal and requirements from the classified user intent.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Decompose the request into atomic, sequential task steps.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Establish dependencies between steps (e.g. database schema change before frontend UI hookups).",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Run check to ensure no circular dependencies exist.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Identify potential security or performance risks for each step.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Define explicit, measurable success criteria for every step.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Package details into the structured Execution Plan JSON.",
+      "source": "skills\\aetheris-product-intelligence\\SKILL.md"
+    },
+    {
+      "text": "Run the workspace scanner script via:",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Parse the JSON profile returned on standard output.",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Extract:",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Languages and framework targets",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Conventions (naming conventions, styling libraries, testing frameworks)",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Configuration hashes (fingerprint)",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Record findings and pass the Project Profile to the Memory Engine to cache in `.aetheris/memory/project-profile.yaml`.",
+      "source": "skills\\aetheris-project-discovery\\SKILL.md"
+    },
+    {
+      "text": "Query the **Dynamic Registry** to get all dynamically discovered Agency and custom skills (ADR-005). Do NOT rely on static YAML files.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Load the active Project Profile and Task Intent from workspace memory.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Perform capability matching by intersecting Task Requirements with skill fields: `capabilities`, `languages`, `frameworks`, and `keywords`.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Calculate the confidence score ($S$) for candidate specialists:",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Select all specialists scoring $S \\ge 80$. If no specialist scores above 80, default to Kernel generalist mode.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Assemble a dynamic Execution Team (1-2 specialists for Trivial tasks, 3-5 for Medium tasks, 6-10 for Large tasks).",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Query `config/models.yaml` and `config/costs.yaml` to evaluate active model requirements and estimate run costs.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Present the routing roster and estimated costs in the trace before execution begins.",
+      "source": "skills\\aetheris-skill-orchestrator\\SKILL.md"
+    },
+    {
+      "text": "Architecture Gate**: Verify code uses frameworks and styles matching the Project Profile.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Security Gate**: Run scanning for credentials, connection strings, SQL injection, and XSS. Halt and reject immediately on any violation.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Performance Gate**: Check algorithmic complexity. Warn on inefficient nested loops.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Maintainability Gate**: Verify file changes conform to naming standards, include basic comments, and contain type hints if required by strictness levels.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Accessibility Gate**: Run basic checks on markup tags.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Business Alignment Gate**: Ensure modifications fulfill the plan requirements.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    },
+    {
+      "text": "Documentation Gate**: Verify code updates documentation/readme files if new files or API endpoints are created.",
+      "source": "skills\\aetheris-verification-engine\\SKILL.md"
+    }
+  ],
+  "features": [
+    {
+      "text": "User Auth via JWT tokens",
+      "source": "scratch\\PRD.md"
+    },
+    {
+      "text": "Task Board view",
+      "source": "scratch\\PRD.md"
+    }
+  ]
+}

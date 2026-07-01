@@ -1,0 +1,4798 @@
+{
+  "apis": [
+    {
+      "api": "AutonomousCodeGenerationEngine.generate_code",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousCodeGenerationEngine.modify_file",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousCodeGenerationEngine.create_file",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousCodeGenerationEngine.update_project",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousCodeGenerationEngine.record_decision",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousCodeGenerationEngine.validate_output",
+      "mapped_specs": [
+        "SPEC-039"
+      ],
+      "module": "src/execution/acge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.assemble_context",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.compress",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.estimate_tokens",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.retrieve_dependencies",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.collect_memory",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ContextAssemblyEngine.validate_context",
+      "mapped_specs": [
+        "SPEC-036"
+      ],
+      "module": "src/execution/cae.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DependencyGraphBuilder.build_graph",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DependencyGraphBuilder.detect_cycles",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DependencyGraphBuilder.get_topological_order",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DependencyGraphBuilder.calculate_critical_path",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DependencyGraphBuilder.get_parallel_groups",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "dfs",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "dfs",
+      "mapped_specs": [
+        "SPEC-033"
+      ],
+      "module": "src/execution/dgb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.generate_documentation",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.update_documentation",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.validate_docs",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.generate_readme",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.generate_api_docs",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DocumentationGenerationEngine.generate_adrs",
+      "mapped_specs": [
+        "SPEC-044"
+      ],
+      "module": "src/execution/dge.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.record_metric",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.generate_dashboard",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.engineering_score",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.cost_analysis",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.performance_report",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionMetricsEngine.historical_comparison",
+      "mapped_specs": [
+        "SPEC-045"
+      ],
+      "module": "src/execution/eme.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.run",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.pause",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.resume",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.cancel",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.shutdown",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.restart",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.execution_status",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.system_health",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionOrchestrator.orchestrate",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/execution/eo.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.schedule",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.reschedule_on_failure",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.pause_execution",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.resume_execution",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.critical_path",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.execution_order",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ExecutionScheduler.parallel_batches",
+      "mapped_specs": [
+        "SPEC-037"
+      ],
+      "module": "src/execution/es.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.commit",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.create_branch",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.merge",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.tag_release",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.repository_health",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.generate_commit_message",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "GitOperationsEngine.rollback",
+      "mapped_specs": [
+        "SPEC-043"
+      ],
+      "module": "src/execution/goe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.route_model",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.rank_models_for_task",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.estimate_cost",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.estimate_latency",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.confidence",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.provider_health",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ModelRoutingEngine.reroute",
+      "mapped_specs": [
+        "SPEC-035"
+      ],
+      "module": "src/execution/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.create_batches",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.allocate_resources",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.detect_conflicts",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.merge_batches",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.pause_batch",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.resume_batch",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ParallelExecutionEngine.cancel_batch",
+      "mapped_specs": [
+        "SPEC-038"
+      ],
+      "module": "src/execution/pee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.recover",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.patch",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.rollback",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.retry",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.resume",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.classify_failure",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.analyze_root_cause",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PatchRecoveryEngine.validate_patch",
+      "mapped_specs": [
+        "SPEC-041"
+      ],
+      "module": "src/execution/pre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.checkpoint",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.resume",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.restore",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.save_state",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.load_state",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "StatePersistenceEngine.validate_checkpoint",
+      "mapped_specs": [
+        "SPEC-042"
+      ],
+      "module": "src/execution/spe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.review",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.score_quality",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.detect_smells",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.recommend",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.approve",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReviewEngine.reject",
+      "mapped_specs": [
+        "SPEC-040"
+      ],
+      "module": "src/execution/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SkillSelectionEngine.select_skills",
+      "mapped_specs": [
+        "SPEC-034"
+      ],
+      "module": "src/execution/sse.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SkillSelectionEngine.rank_skills_for_task",
+      "mapped_specs": [
+        "SPEC-034"
+      ],
+      "module": "src/execution/sse.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SkillSelectionEngine.identify_missing_skills",
+      "mapped_specs": [
+        "SPEC-034"
+      ],
+      "module": "src/execution/sse.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SkillSelectionEngine.recommend_fallback",
+      "mapped_specs": [
+        "SPEC-034"
+      ],
+      "module": "src/execution/sse.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.generate_tasks",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.split_task",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.merge_tasks",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.validate_task",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.estimate_effort",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TaskDecompositionEngine.export_execution_tree",
+      "mapped_specs": [
+        "SPEC-032"
+      ],
+      "module": "src/execution/tde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ArchitectureStyleSelector.select",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "DomainBoundaryPlanner.group",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "ModulePlanner.plan_folder_structure",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "StoragePlanner.plan",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "SecurityBoundaryPlanner.plan",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "ArchitectureValidator.validate",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "ArchitecturePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "dfs",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "publish",
+      "mapped_specs": [
+        "SPEC-004"
+      ],
+      "module": "src/intelligence/ape.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_ape.py"
+      ]
+    },
+    {
+      "api": "UniversalBlueprintEngine.compile_blueprint",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/blueprint.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "CostOptimizationEngine.calculate_optimal_cost",
+      "mapped_specs": [
+        "SPEC-059"
+      ],
+      "module": "src/intelligence/coe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ContextOptimizationEngine.filter_context",
+      "mapped_specs": [
+        "SPEC-061"
+      ],
+      "module": "src/intelligence/coe2.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ContextEngine.build_context_package",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/context.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DecisionIntelligenceEngine.log_decision",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/decision.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DecisionIntelligenceEngine.get_decisions",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/decision.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "DynamicSkillEvolutionEngine.evolve_skill",
+      "mapped_specs": [
+        "SPEC-062"
+      ],
+      "module": "src/intelligence/dsee.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "EngineeringDecisionEngine.evaluate_decision",
+      "mapped_specs": [
+        "SPEC-005"
+      ],
+      "module": "src/intelligence/ede.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ede.py"
+      ]
+    },
+    {
+      "api": "EngineeringDecisionEngine.rollback_decision",
+      "mapped_specs": [
+        "SPEC-005"
+      ],
+      "module": "src/intelligence/ede.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ede.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraphEngine.add_node",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraphEngine.add_edge",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraphEngine.detect_cycles",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraphEngine.get_impacted_nodes",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraphEngine.get_isolated_nodes",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "dfs",
+      "mapped_specs": [
+        "SPEC-006"
+      ],
+      "module": "src/intelligence/ege.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_ege.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.register_object",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/intelligence/ekb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.get_object",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/intelligence/ekb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.query_objects",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/intelligence/ekb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.purge_all",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/intelligence/ekb.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "ExecutionOptimizationEngine.optimize_execution",
+      "mapped_specs": [
+        "SPEC-060"
+      ],
+      "module": "src/intelligence/eoe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "EngineeringReasoningEngine.reason_through_problem",
+      "mapped_specs": [
+        "SPEC-050"
+      ],
+      "module": "src/intelligence/ere.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "FactVerificationEngine.verify_fact",
+      "mapped_specs": [
+        "SPEC-055"
+      ],
+      "module": "src/intelligence/fve.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "HallucinationDetectionEngine.scan_for_hallucinations",
+      "mapped_specs": [
+        "SPEC-056"
+      ],
+      "module": "src/intelligence/hde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "IntelligenceOrchestrator.assemble_package",
+      "mapped_specs": [
+        "SPEC-065"
+      ],
+      "module": "src/intelligence/io.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "KnowledgeRetrievalEngine.retrieve_evidence",
+      "mapped_specs": [
+        "SPEC-053"
+      ],
+      "module": "src/intelligence/kre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "LongContextEngine.chunk_repository",
+      "mapped_specs": [
+        "SPEC-052"
+      ],
+      "module": "src/intelligence/lce.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ModelIntelligenceEngine.get_optimal_model",
+      "mapped_specs": [
+        "SPEC-047"
+      ],
+      "module": "src/intelligence/mie.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "MultiModelConsensusEngine.resolve_consensus",
+      "mapped_specs": [
+        "SPEC-064"
+      ],
+      "module": "src/intelligence/mmce.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "MemoryRankingEngine.rank_memories",
+      "mapped_specs": [
+        "SPEC-054"
+      ],
+      "module": "src/intelligence/mre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PromptCompilerEngine.compile_prompt",
+      "mapped_specs": [
+        "SPEC-048"
+      ],
+      "module": "src/intelligence/pce.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PromptEvidenceMerger.merge",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "BusinessIntentAnalyzer.analyze",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "DomainClassifier.classify",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "PersonaDiscoveryEngine.discover",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "WorkflowDiscoveryEngine.discover",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "FeatureDiscoveryEngine.discover",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "MVPPlanner.plan",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "ComplexityEstimator.estimate",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "ProductDiscoveryEngine.discover",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "publish",
+      "mapped_specs": [
+        "SPEC-003"
+      ],
+      "module": "src/intelligence/pde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_pde.py"
+      ]
+    },
+    {
+      "api": "DesignPlanningEngine.plan_design",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "FrontendPlanningEngine.plan_frontend",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "BackendPlanningEngine.plan_backend",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "DatabasePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "APIPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "SecurityPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "InfrastructurePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ExternalServicesPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "DevOpsPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "TestingPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "DocumentationPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "EngineeringExecutionPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ResourceCapacityPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "CostPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "RiskPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ComplianceGovernancePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ObservabilityPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ScalabilityPerformancePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "DisasterRecoveryPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ReleaseRolloutPlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "MaintenanceLifecyclePlanningEngine.plan",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "PlanningValidationEngine.validate_all",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "PlanningMemoryEngine.save_version",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "PlanningMemoryEngine.get_latest_version",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "BlueprintDiffEngine.diff_blueprints",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ResourceCapacityKPIs.calculate_kpis",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "ComplexityAnalyzer.analyze",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "QuestionsEngine.check_confidence_gate",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "FinalEngineeringBlueprintCompiler.compile_blueprint",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "TechnicalDesignDocumentCompiler.compile_tdd_reports",
+      "mapped_specs": [
+        "SPEC-009",
+        "SPEC-010",
+        "SPEC-011",
+        "SPEC-012",
+        "SPEC-013",
+        "SPEC-014",
+        "SPEC-015",
+        "SPEC-016",
+        "SPEC-017",
+        "SPEC-018",
+        "SPEC-019",
+        "SPEC-020",
+        "SPEC-021",
+        "SPEC-022",
+        "SPEC-023",
+        "SPEC-024",
+        "SPEC-025",
+        "SPEC-026",
+        "SPEC-027",
+        "SPEC-028",
+        "SPEC-029",
+        "SPEC-030",
+        "SPEC-031"
+      ],
+      "module": "src/intelligence/planners.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_planners.py"
+      ]
+    },
+    {
+      "api": "PlanningOptimizationEngine.optimize_plan",
+      "mapped_specs": [
+        "SPEC-057"
+      ],
+      "module": "src/intelligence/ple.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PromptOptimizationEngine.optimize_prompt",
+      "mapped_specs": [
+        "SPEC-049"
+      ],
+      "module": "src/intelligence/poe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "QueryParser.parse",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "IntentResolver.resolve",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "GraphTraversalEngine.get_dependents",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "ImpactAnalyzer.compile_report",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "QueryAndImpactAnalysisEngine.query",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "QueryAndImpactAnalysisEngine.analyze_impact",
+      "mapped_specs": [
+        "SPEC-008"
+      ],
+      "module": "src/intelligence/qia.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_qia.py"
+      ]
+    },
+    {
+      "api": "SkillBenchmarkEngine.benchmark_skill",
+      "mapped_specs": [
+        "SPEC-063"
+      ],
+      "module": "src/intelligence/sbe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ProjectScanner.scan",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/scanner.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SelfReflectionEngine.critique_solution",
+      "mapped_specs": [
+        "SPEC-051"
+      ],
+      "module": "src/intelligence/sre.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "TechnologyIntelligence.evaluate_tech_stack",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/intelligence/technology.py",
+      "orphan": false,
+      "owner_type": "PLATFORM-SUPPORT",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TokenOptimizationEngine.compress_tokens",
+      "mapped_specs": [
+        "SPEC-058"
+      ],
+      "module": "src/intelligence/toe.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PromptNormalizer.normalize",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "IntentExtractor.extract",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "EntityExtractor.extract",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "RequirementClassifier.classify",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "EvidenceCollector.merge",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "RequirementExpander.expand",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "ConfidenceCalculator.calculate",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "ClarificationEngine.inspect",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "UniversalRequirementUnderstandingEngine.understand",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "publish",
+      "mapped_specs": [
+        "SPEC-002"
+      ],
+      "module": "src/intelligence/urue.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_urue.py"
+      ]
+    },
+    {
+      "api": "IgnoreRuleManager.is_ignored",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "DirectoryWalker.walk",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "FileFingerprintManager.calculate_sha256",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "FileFingerprintManager.analyze_deltas",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "DiscoveryCache.load",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "DiscoveryCache.save",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "LanguageDetector.detect",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "FrameworkDetector.detect",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "DependencyDetector.extract",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "GitMetadataCollector.collect",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "SchemaValidator.validate_wde_schemas",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "WorkspaceDiscoveryEngine.scan",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "public",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "publish",
+      "mapped_specs": [
+        "SPEC-001"
+      ],
+      "module": "src/intelligence/wde.py",
+      "orphan": false,
+      "owner_type": "SPEC",
+      "stability": "module",
+      "tests": [
+        "tests/test_wde.py"
+      ]
+    },
+    {
+      "api": "AetherisKernel.run_autonomous_loop",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/core.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EventBus.register_subscriber",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/event_bus.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/event_bus.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EventBus.dispatch_next",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/event_bus.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EventBus.clear_queue",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/event_bus.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.compile",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.update",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.query",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.diagnostics",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.validate",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.benchmark",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Compiler.export",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.initialize",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.discover",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.lex",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.parse",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.semantic",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.relationships",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.validate",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "BaseCompilerPlugin.cleanup",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Symbol.to_dict",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "KnowledgeNode.to_dict",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "Relationship.to_dict",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraph.add_node",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraph.add_edge",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraph.prune_file_nodes",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringGraph.to_dict",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.save_artifact",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.load_artifact",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PythonAdapter.discover",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PythonAdapter.lex",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PythonAdapter.parse",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PythonAdapter.semantic",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PythonAdapter.relationships",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "MarkdownAdapter.discover",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "MarkdownAdapter.lex",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "MarkdownAdapter.parse",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "MarkdownAdapter.semantic",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "MarkdownAdapter.relationships",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PrismaAdapter.discover",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PrismaAdapter.lex",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PrismaAdapter.parse",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PrismaAdapter.semantic",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "PrismaAdapter.relationships",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SqlAdapter.discover",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SqlAdapter.lex",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SqlAdapter.parse",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SqlAdapter.semantic",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "SqlAdapter.relationships",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.compile",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.build_engineering_understanding",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.update",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.query",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.diagnostics",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.validate",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.benchmark",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeCompiler.export",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EventBus.publish",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_start",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_complete",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_failed",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "publish",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "log_stage_start",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "log_stage_complete",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "log_stage_failed",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/goal_manager.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringPlanner.build_task_dag",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/planner.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringPlanner.plan",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/planner.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringPlanner.resume_execution",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/planner.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "EngineeringKnowledgeBase.load_artifact",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/planner.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "load_artifact",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/planner.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousRecoveryEngine.perform_rca",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/recovery.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "AutonomousRecoveryEngine.apply_remediation",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/recovery.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "RuntimeScheduler.execute_dag",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/scheduler.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_start",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/telemetry.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_complete",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/telemetry.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "TelemetryEngine.log_stage_failed",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/telemetry.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "initialize_perimeter",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/utils.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "is_safe_path",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/utils.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "redact_secrets",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/utils.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "validate_environment",
+      "mapped_specs": [
+        "SPEC-046"
+      ],
+      "module": "src/kernel/utils.py",
+      "orphan": false,
+      "owner_type": "KERNEL-RUNTIME",
+      "stability": "module",
+      "tests": [
+        "tests/test_execution.py"
+      ]
+    },
+    {
+      "api": "ConfigManager.validate_config",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/config.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ConfigManager.get_registry",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/config.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "ConfigManager.load_config",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/config.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PluginManager.load_registry",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/plugins.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PluginManager.validate_manifest",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/plugins.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "PluginManager.register_plugin",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/plugins.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "RegistryCache.load_registry",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/registry_cache.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "RegistryCache.find_by_capability",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/registry_cache.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "SkillParser.parse_skill",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/skill_parser.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "SkillScanner.add_root",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/skill_scanner.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "SkillScanner.scan_roots",
+      "mapped_specs": [
+        "SPEC-034",
+        "SPEC-063"
+      ],
+      "module": "src/orchestration/skill_scanner.py",
+      "orphan": false,
+      "owner_type": "ADAPTIVE-ORCHESTRATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_rfc004_core.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.get_profile",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.save_profile",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.get_conventions",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.save_conventions",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.get_decisions",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.save_decision",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "MemoryEngine.verify_fingerprint",
+      "mapped_specs": [
+        "SPEC-007"
+      ],
+      "module": "src/storage/manager.py",
+      "orphan": false,
+      "owner_type": "MEMORY-STORAGE",
+      "stability": "public",
+      "tests": [
+        "tests/test_ekb.py"
+      ]
+    },
+    {
+      "api": "ReadinessEngine.verify_definition_of_done",
+      "mapped_specs": [
+        "SPEC-031",
+        "SPEC-040",
+        "SPEC-045"
+      ],
+      "module": "src/validation/readiness.py",
+      "orphan": false,
+      "owner_type": "READINESS-VALIDATION",
+      "stability": "public",
+      "tests": [
+        "tests/test_execution.py",
+        "tests/test_planners.py"
+      ]
+    }
+  ],
+  "orphan_apis": []
+}
