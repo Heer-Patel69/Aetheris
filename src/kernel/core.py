@@ -388,10 +388,13 @@ class AetherisKernel:
         print("Autonomous loop completed successfully.")
         return True
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 3 or sys.argv[1] != "--goal":
-        sys.stderr.write("Usage: python core.py --goal <product_description>\n")
+        sys.stderr.write("Usage: aetheris --goal <product_description>\n")
         sys.exit(1)
     goal = sys.argv[2]
     kernel = AetherisKernel(os.getcwd())
     kernel.run_autonomous_loop(goal)
+
+if __name__ == "__main__":
+    main()
