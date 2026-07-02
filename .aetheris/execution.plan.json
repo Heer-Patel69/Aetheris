@@ -1,5 +1,5 @@
 {
-  "goal": "Build a secure auth API",
+  "goal": "Your task is to generate the official README.md for Aetheris. This is NOT a normal GitHub README. This should be one of the best open-source README files ever written. It should feel like the documentation quality of Docker, Kubernetes, Terraform, LangChain, React, Next.js and Linux combined. The README must completely explain Aetheris to someone who has never heard of it. Never summarize. Never write placeholder text. Never leave TODOs. Everything must be production-ready. Everything must be beautifully formatted. Everything must be visually appealing. Use Mermaid diagrams. Use tables. Use callouts. Use emojis only where appropriate. Write in professional technical English. The README should be approximately 8,000-15,000 words. The README MUST start with installation. Installation must feel as simple as Docker or Node. Generate sections in this order: Hero, Installation, Quick Start, What is Aetheris, Why Aetheris, Core Philosophy, What Can Aetheris Build, Features, AntiGravity, Repository Intelligence, Engineering Lifecycle, Architecture, CLI, Dashboard, Skills, Departments, RFC Documentation, SPEC Documentation, Project Workflow, Folder Structure, Configuration, Examples, Benchmarks, Best Practices, Plugin Development, Enterprise, Roadmap, Community, License. The README must look like it belongs to a billion-dollar open-source engineering platform. Explain everything deeply. Use diagrams, architecture drawings, beautiful tables, examples, command outputs, code blocks, workflows, and engineering terminology.",
   "tasks": [
     {
       "id": "task:database_migrations",
@@ -16,14 +16,6 @@
       ]
     },
     {
-      "id": "task:dockerization",
-      "name": "Dockerization",
-      "status": "PENDING",
-      "dependencies": [
-        "task:database_migrations"
-      ]
-    },
-    {
       "id": "task:api_controllers",
       "name": "Api Controllers",
       "status": "PENDING",
@@ -33,20 +25,11 @@
       ]
     },
     {
-      "id": "task:frontend_views",
-      "name": "Frontend Views",
-      "status": "PENDING",
-      "dependencies": [
-        "task:api_controllers"
-      ]
-    },
-    {
       "id": "task:unit_testing",
       "name": "Unit Testing",
       "status": "PENDING",
       "dependencies": [
-        "task:api_controllers",
-        "task:frontend_views"
+        "task:api_controllers"
       ]
     },
     {
@@ -54,10 +37,9 @@
       "name": "Deployment Pipelines",
       "status": "PENDING",
       "dependencies": [
-        "task:unit_testing",
-        "task:dockerization"
+        "task:unit_testing"
       ]
     }
   ],
-  "created_at": "2026-06-30T20:14:03Z"
+  "created_at": "2026-07-02T17:24:40Z"
 }

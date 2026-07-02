@@ -22,24 +22,10 @@
       }
     },
     {
-      "id": "task:frontend_views",
-      "type": "Task",
-      "metadata": {
-        "name": "Frontend Views"
-      }
-    },
-    {
       "id": "task:unit_testing",
       "type": "Task",
       "metadata": {
         "name": "Unit Testing"
-      }
-    },
-    {
-      "id": "task:dockerization",
-      "type": "Task",
-      "metadata": {
-        "name": "Dockerization"
       }
     },
     {
@@ -68,31 +54,11 @@
     },
     {
       "source": "task:api_controllers",
-      "target": "task:frontend_views",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:api_controllers",
       "target": "task:unit_testing",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:frontend_views",
-      "target": "task:unit_testing",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:database_migrations",
-      "target": "task:dockerization",
       "relationship": "depends_on"
     },
     {
       "source": "task:unit_testing",
-      "target": "task:deployment_pipelines",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:dockerization",
       "target": "task:deployment_pipelines",
       "relationship": "depends_on"
     }

@@ -1,8 +1,10 @@
 # Aetheris Master Prompt: Production-Grade Autonomous Software Engineering Workflow
 
 **Version:** ARB vNext  
-**Status:** Approved / Canonical Standard  
-**Purpose:** This master prompt defines the mandatory workflow Aetheris must follow before generating, modifying, or deploying any software project. The objective is to ensure every project is planned, validated, implemented, tested, secured, documented, benchmarked, and production-ready with no engineering shortcuts.
+**Status:** Superseded — see [`AEOS_GLOBAL_OPERATING_POLICY.md`](AEOS_GLOBAL_OPERATING_POLICY.md) (AEOS vNext)  
+**Purpose:** Historical reference for the 12-phase ARB workflow. The canonical global operating policy is now AEOS vNext.
+
+> **Canonical policy:** [`AEOS_GLOBAL_OPERATING_POLICY.md`](AEOS_GLOBAL_OPERATING_POLICY.md)
 
 ---
 

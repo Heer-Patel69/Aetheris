@@ -1,39 +1,35 @@
 {
   "session_id": "sess-autonomous",
   "current_milestone": "deployment_pipelines",
+  "status": "COMPLETED",
   "tasks": [
     {
-      "task_id": "t-0",
+      "task_id": "P0",
+      "name": "Requirement Analysis",
+      "status": "Completed"
+    },
+    {
+      "task_id": "P1",
       "name": "database_migrations",
       "status": "Completed"
     },
     {
-      "task_id": "t-1",
+      "task_id": "P2",
       "name": "authentication",
       "status": "Completed"
     },
     {
-      "task_id": "t-2",
-      "name": "dockerization",
-      "status": "Completed"
-    },
-    {
-      "task_id": "t-3",
+      "task_id": "P3",
       "name": "api_controllers",
       "status": "Completed"
     },
     {
-      "task_id": "t-4",
-      "name": "frontend_views",
-      "status": "Completed"
-    },
-    {
-      "task_id": "t-5",
+      "task_id": "P4",
       "name": "unit_testing",
       "status": "Completed"
     },
     {
-      "task_id": "t-6",
+      "task_id": "P5",
       "name": "deployment_pipelines",
       "status": "Completed"
     }

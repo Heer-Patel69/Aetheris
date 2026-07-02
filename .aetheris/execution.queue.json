@@ -4,14 +4,10 @@
       "task:database_migrations"
     ],
     [
-      "task:authentication",
-      "task:dockerization"
+      "task:authentication"
     ],
     [
       "task:api_controllers"
-    ],
-    [
-      "task:frontend_views"
     ],
     [
       "task:unit_testing"

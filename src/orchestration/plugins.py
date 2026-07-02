@@ -19,11 +19,13 @@ class PluginManager:
         self.master_version = self._get_master_version()
         
     def _get_master_version(self):
-        version_file = Path(__file__).parent.parent / "VERSION"
+        version_file = Path(__file__).resolve().parent.parent / "VERSION"
+        if not version_file.exists():
+            version_file = Path(__file__).resolve().parent.parent.parent / "VERSION"
         if version_file.exists():
             with open(version_file, "r", encoding="utf-8") as f:
                 return f.read().strip()
-        return "2.1.0"
+        return "3.1.0"
 
     def load_registry(self):
         """

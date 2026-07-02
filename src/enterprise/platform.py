@@ -50,11 +50,13 @@ class AuditLogger:
         
         self.logger = logging.getLogger("AetherisAuditLogger")
         self.logger.setLevel(logging.INFO)
-        if not self.logger.handlers:
-            handler = logging.FileHandler(self.log_file, encoding="utf-8")
-            formatter = logging.Formatter('%(asctime)s - [AUDIT] - %(message)s')
-            handler.setFormatter(formatter)
-            self.logger.addHandler(handler)
+        for h in list(self.logger.handlers):
+            self.logger.removeHandler(h)
+            h.close()
+        handler = logging.FileHandler(self.log_file, encoding="utf-8")
+        formatter = logging.Formatter('%(asctime)s - [AUDIT] - %(message)s')
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
 
     def log_action(self, user_id, tenant_id, action, status):
         msg = f"User: '{user_id}' | Tenant: '{tenant_id}' | Action: '{action}' | Status: '{status}'"

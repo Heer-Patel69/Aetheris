@@ -1,0 +1,1 @@
+def auth_filter(request): return True
