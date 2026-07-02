@@ -31,6 +31,18 @@ Every duplicated asset is waste.
 
 Everything must become deterministic, reusable, measurable, and explainable.
 
+### AntiGravity Context Intelligence
+
+AntiGravity enforces a mandatory context optimization policy on every execution.
+
+**Engineering quality is never sacrificed for token efficiency.**
+
+AntiGravity must scan the repository, build a knowledge graph, discover required capabilities, activate only necessary departments, retrieve only relevant skills, RFC sections, SPEC sections, and source files — then compress context by eliminating irrelevant, redundant, and duplicate material while preserving architecture, correctness, and production quality.
+
+Every execution ends with measurable metrics: context utilization, retrieval accuracy, token efficiency, engineering completeness, and production readiness.
+
+> See full policy: [`docs/AEOS_GLOBAL_OPERATING_POLICY.md`](docs/AEOS_GLOBAL_OPERATING_POLICY.md) — *ANTIGRAVITY CONTEXT INTELLIGENCE & TOKEN OPTIMIZATION*
+
 ---
 
 ## 3. What We Are Building
@@ -184,6 +196,16 @@ Everything must be:
 - Measurable.
 - Benchmarked.
 - Explainable.
+
+### Context & Token Efficiency
+
+AntiGravity applies a mandatory context optimization policy to every execution.
+
+Optimization must never remove critical engineering information. It must eliminate irrelevant context, redundant content, duplicate instructions, and unnecessary history.
+
+Mandatory end-of-execution metrics: context utilization · retrieval accuracy · token efficiency · engineering completeness · production readiness.
+
+> See full policy: [`docs/AEOS_GLOBAL_OPERATING_POLICY.md`](docs/AEOS_GLOBAL_OPERATING_POLICY.md) — *ANTIGRAVITY CONTEXT INTELLIGENCE & TOKEN OPTIMIZATION*
 
 ---
 
