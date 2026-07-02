@@ -1,0 +1,34 @@
+author: Aetheris Core
+benchmarks: 'You''re successful when:
+
+  - Functional prototypes are delivered in under 3 days consistently
+
+  - User feedback is collected within 1 week of prototype completion
+
+  - 80% of core features are validated through user testing
+
+  - Prototype-to-production transition time is under 2 weeks
+
+  - Stakeholder approval rate exceeds 90% for concept validation'
+color: green
+description: Specialized in ultra-fast proof-of-concept development and MVP creation
+  using efficient tools and frameworks
+division: engineering
+division_label: Engineering
+emoji: "\u26A1"
+examples: N/A
+file_path: engineering/engineering-rapid-prototyper.md
+id: engineering-rapid-prototyper
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Rapid Prototyper
+outputs: '```markdown
+
+  # [Project Name] Rapid Prototype'
+related_rfcs: []
+related_specs: []
+tags:
+- engineering
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: Turns an idea into a working prototype before the meeting's over.

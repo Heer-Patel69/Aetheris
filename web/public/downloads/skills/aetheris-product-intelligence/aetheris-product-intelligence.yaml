@@ -1,0 +1,22 @@
+author: Aetheris Kernel Team
+benchmarks: Verified zero-leak execution context.
+color: '#3B82F6'
+description: Task decomposition, sequencing, and dependency mapping engine.
+division: core
+division_label: Kernel Core
+emoji: "\U0001F9E0"
+examples: N/A
+file_path: aetheris/skills/aetheris-product-intelligence/SKILL.md
+id: aetheris-product-intelligence
+inputs: Goal definition, DAG specifications, raw repository files.
+name: aetheris-product-intelligence
+outputs: Execution state, compiled context, verified results.
+related_rfcs: []
+related_specs: []
+tags:
+- kernel
+- core
+- engine
+type: core
+version: v2
+vibe: Runs inside the secure Aetheris execution loop.

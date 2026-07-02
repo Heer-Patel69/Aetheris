@@ -1,0 +1,24 @@
+{
+  "id": "gis-bim-specialist",
+  "type": "agency",
+  "name": "BIM/GIS Specialist",
+  "description": "Integration specialist who bridges Building Information Modeling and Geographic Information Systems \u2014 Revit/IFC data conversion, indoor mapping, digital twin architecture, and facility management data models.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "gold",
+  "emoji": "\ud83c\udfd7\ufe0f",
+  "vibe": "Where buildings meet geography \u2014 the spatial side of the built world.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-bim-specialist.md"
+}

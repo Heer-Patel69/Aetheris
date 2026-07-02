@@ -1,0 +1,24 @@
+{
+  "id": "marketing-ai-citation-strategist",
+  "type": "agency",
+  "name": "AI Citation Strategist",
+  "description": "Expert in AI recommendation engine optimization (AEO/GEO) \u2014 audits brand visibility across ChatGPT, Claude, Gemini, and Perplexity, identifies why competitors get cited instead, and delivers content fixes that improve AI citations",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "#6D28D9",
+  "emoji": "\ud83d\udd2e",
+  "vibe": "Figures out why the AI recommends your competitor and rewires the signals so it recommends you instead",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "```markdown\n# Fix Pack: [Brand Name]",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-ai-citation-strategist.md"
+}

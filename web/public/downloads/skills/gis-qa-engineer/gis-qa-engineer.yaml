@@ -1,0 +1,28 @@
+author: Aetheris Core
+benchmarks: N/A
+color: purple
+description: "Quality assurance specialist who validates geospatial data integrity\
+  \ \u2014 topology checks, metadata audits, CRS consistency, accuracy assessment,\
+  \ and compliance verification."
+division: gis
+division_label: GIS
+emoji: "\u2705"
+examples: "```\nQA Report: [dataset name]\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
+  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
+  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\
+  \u2500\nStatus: PASS / CONDITIONAL PASS / FAIL\nDate: YYYY-MM-DD\nReviewer: GIS\
+  \ QA Engineer\n\nCRITICAL (0 issues):\nMAJOR (X issues):\nMINOR (Y issues):\n\n\
+  Summary: [overall assessment]\n\nDetailed findings:\n...\n```"
+file_path: gis/gis-qa-engineer.md
+id: gis-qa-engineer
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: GIS QA Engineer
+outputs: Code modifications, verification reports, decision logs.
+related_rfcs: []
+related_specs: []
+tags:
+- gis
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: Data doesn't ship until QA says it ships.

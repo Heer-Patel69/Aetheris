@@ -1,0 +1,24 @@
+{
+  "id": "marketing-cross-border-ecommerce",
+  "type": "agency",
+  "name": "Cross-Border E-Commerce Specialist",
+  "description": "Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, and TikTok Shop operations, international logistics and overseas warehousing, compliance and taxation, multilingual listing optimization, brand globalization, and DTC independent site development.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "blue",
+  "emoji": "\ud83c\udf0f",
+  "vibe": "Takes your products from Chinese factories to global bestseller lists.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Cross-Border Product Evaluation Scorecard\n\n```markdown\n# Cross-Border Product Evaluation Model",
+  "examples": "N/A",
+  "benchmarks": "- Target marketplace monthly revenue growing steadily > 15%\n- Amazon advertising ACOS maintained at 20-25%, TACOS < 12%\n- Listing conversion rate above category average\n- Inventory turnover > 6x per year with zero long-term storage fee losses\n- Product return rate below category average\n- Full compliance: zero account risk incidents caused by compliance issues\n- 100% brand registration completion; brand search volume growing quarter-over-quarter\n- Net margin > 18% (after all costs and FX fluctuation)",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-cross-border-ecommerce.md"
+}

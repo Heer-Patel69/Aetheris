@@ -1,0 +1,24 @@
+{
+  "id": "gis-spatial-data-scientist",
+  "type": "agency",
+  "name": "Spatial Data Scientist",
+  "description": "Advanced spatial analytics specialist who applies statistical modeling, spatial econometrics, clustering, and predictive analytics to geospatial data \u2014 finding patterns that aren't visible on a map.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "indigo",
+  "emoji": "\ud83d\udcca",
+  "vibe": "Finding the patterns in space that even experienced analysts miss.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-spatial-data-scientist.md"
+}

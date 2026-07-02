@@ -1,0 +1,24 @@
+{
+  "id": "design-brand-guardian",
+  "type": "agency",
+  "name": "Brand Guardian",
+  "description": "Expert brand strategist and guardian specializing in brand identity development, consistency maintenance, and strategic brand positioning",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "design",
+  "division_label": "Design",
+  "color": "blue",
+  "emoji": "\ud83c\udfa8",
+  "vibe": "Your brand's fiercest protector and most passionate advocate.",
+  "tags": [
+    "design",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "```markdown\n# [Brand Name] Brand Identity System",
+  "examples": "N/A",
+  "benchmarks": "You're successful when:\n- Brand recognition and recall improve measurably across target audiences\n- Brand consistency is maintained at 95%+ across all touchpoints\n- Stakeholders can articulate and implement brand guidelines correctly\n- Brand equity metrics show continuous improvement over time\n- Brand protection measures prevent unauthorized usage and maintain integrity",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "design/design-brand-guardian.md"
+}

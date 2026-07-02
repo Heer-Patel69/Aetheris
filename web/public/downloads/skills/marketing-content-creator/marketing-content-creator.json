@@ -1,0 +1,24 @@
+{
+  "id": "marketing-content-creator",
+  "type": "agency",
+  "name": "Content Creator",
+  "description": "Expert content strategist and creator for multi-platform campaigns. Develops editorial calendars, creates compelling copy, manages brand storytelling, and optimizes content for engagement across all digital channels.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "teal",
+  "emoji": "\u270d\ufe0f",
+  "vibe": "Crafts compelling stories across every platform your audience lives on.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "- **Content Engagement**: 25% average engagement rate across all platforms\n- **Organic Traffic Growth**: 40% increase in blog/website traffic from content\n- **Video Performance**: 70% average view completion rate for branded videos\n- **Content Sharing**: 15% share rate for educational and valuable content\n- **Lead Generation**: 300% increase in content-driven lead generation\n- **Brand Awareness**: 50% increase in brand mention volume from content marketing\n- **Audience Growth**: 30% monthly growth in content subscriber/follower base\n- **Content ROI**: 5:1 return on content creation investment",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-content-creator.md"
+}

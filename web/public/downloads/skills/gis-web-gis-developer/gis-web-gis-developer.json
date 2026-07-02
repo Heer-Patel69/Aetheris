@@ -1,0 +1,24 @@
+{
+  "id": "gis-web-gis-developer",
+  "type": "agency",
+  "name": "Web GIS Developer",
+  "description": "Full-stack web GIS engineer who builds interactive mapping applications \u2014 MapLibre GL JS, ArcGIS JS API, Leaflet, real-time dashboards, REST API integration, and geospatial web services.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "blue",
+  "emoji": "\ud83c\udf10",
+  "vibe": "Maps on the web that actually work \u2014 fast, responsive, and beautiful.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-web-gis-developer.md"
+}

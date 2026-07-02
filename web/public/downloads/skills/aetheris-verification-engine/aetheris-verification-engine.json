@@ -1,0 +1,25 @@
+{
+  "id": "aetheris-verification-engine",
+  "type": "core",
+  "name": "aetheris-verification-engine",
+  "description": "Quality gates auditor and verification coordinator for specialist outputs.",
+  "version": "v2",
+  "author": "Aetheris Kernel Team",
+  "division": "core",
+  "division_label": "Kernel Core",
+  "color": "#3B82F6",
+  "emoji": "\ud83e\udde0",
+  "vibe": "Runs inside the secure Aetheris execution loop.",
+  "tags": [
+    "kernel",
+    "core",
+    "engine"
+  ],
+  "inputs": "Goal definition, DAG specifications, raw repository files.",
+  "outputs": "Execution state, compiled context, verified results.",
+  "examples": "N/A",
+  "benchmarks": "Verified zero-leak execution context.",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "aetheris/skills/aetheris-verification-engine/SKILL.md"
+}

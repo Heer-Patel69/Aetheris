@@ -1,0 +1,24 @@
+{
+  "id": "marketing-carousel-growth-engine",
+  "type": "agency",
+  "name": "Carousel Growth Engine",
+  "description": "Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates viral 6-slide carousels via Gemini image generation, publishes directly to feed via Upload-Post API with auto trending music, fetches analytics, and iteratively improves through a data-driven learning loop.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "#FF0050",
+  "emoji": "\ud83c\udfa0",
+  "vibe": "Autonomously generates viral carousels from any URL and publishes them to feed.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Website Analysis Output (`analysis.json`)\n- Complete brand extraction: name, logo, colors, typography, favicon\n- Content analysis: headline, tagline, features, pricing, testimonials, stats, CTAs\n- Internal page navigation: pricing, features, about, testimonials pages\n- Competitor detection from website content (20+ known SaaS competitors)\n- Business type and niche classification\n- Niche-specific hooks and pain points\n- Visual context definition for slide generation\n\n### Carousel Generation Output\n- 6 visually coherent JPG slides (768x1376, 9:16 ratio) via Gemini\n- Structured slide prompts saved to `slide-prompts.json` for analytics correlation\n- Platform-optimized caption (`caption.txt`) with niche-relevant hashtags\n- TikTok title (max 90 characters) with strategic hashtags\n\n### Publishing Output (`post-info.json`)\n- Direct-to-feed publishing on TikTok and Instagram simultaneously via Upload-Post API\n- Auto-trending music on TikTok (`auto_add_music=true`) for higher engagement\n- Public visibility (`privacy_level=PUBLIC_TO_EVERYONE`) for maximum reach\n- `request_id` saved for per-post analytics tracking\n\n### Analytics & Learning Output (`learnings.json`)\n- Profile analytics: followers, impressions, likes, comments, shares\n- Per-post analytics: views, engagement rate for specific carousels via `request_id`\n- Accumulated learnings: best hooks, optimal posting times, winning styles\n- Actionable recommendations for the next carousel",
+  "examples": "N/A",
+  "benchmarks": "- **Publishing Consistency**: 1 carousel per day, every day, fully autonomous\n- **View Growth**: 20%+ month-over-month increase in average views per carousel\n- **Engagement Rate**: 5%+ engagement rate (likes + comments + shares / views)\n- **Hook Win Rate**: Top 3 hook styles identified within 10 posts\n- **Visual Quality**: 90%+ slides pass vision verification on first Gemini generation\n- **Optimal Timing**: Posting time converges to best-performing hour within 2 weeks\n- **Learning Velocity**: Measurable improvement in carousel performance every 5 posts\n- **Cross-Platform Reach**: Simultaneous TikTok + Instagram publishing with platform-specific optimization",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-carousel-growth-engine.md"
+}

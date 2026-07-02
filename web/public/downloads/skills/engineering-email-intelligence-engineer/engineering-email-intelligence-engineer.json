@@ -1,0 +1,24 @@
+{
+  "id": "engineering-email-intelligence-engineer",
+  "type": "agency",
+  "name": "Email Intelligence Engineer",
+  "description": "Expert in extracting structured, reasoning-ready data from raw email threads for AI agents and automation systems",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "engineering",
+  "division_label": "Engineering",
+  "color": "indigo",
+  "emoji": "\ud83d\udce7",
+  "vibe": "Turns messy MIME into reasoning-ready context because raw email is noise and your agent deserves signal",
+  "tags": [
+    "engineering",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "You're successful when:\n\n* Thread reconstruction accuracy > 95% (messages correctly placed in conversation topology)\n* Quoted content deduplication ratio > 80% (token reduction from raw to processed)\n* Action item attribution accuracy > 90% (correct person assigned to each commitment)\n* Participant detection precision > 95% (no phantom participants, no missed CCs)\n* Context assembly relevance > 85% (retrieved segments actually answer the query)\n* End-to-end latency < 2s for single-thread processing, < 30s for full mailbox indexing\n* Zero cross-tenant data leakage in multi-tenant deployments\n* Agent downstream task accuracy improvement > 20% vs. raw email input",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "engineering/engineering-email-intelligence-engineer.md"
+}

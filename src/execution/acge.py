@@ -15,6 +15,13 @@ class AutonomousCodeGenerationEngine:
         """Runs the file editors and records actions inside execution metrics files."""
         tid = task["id"]
         
+        # Trigger actual website generator
+        try:
+            from execution import website_generator
+            website_generator.generate(self.workspace_path)
+        except Exception as e:
+            print(f"Warning: Website generator failed: {e}")
+
         # Determine target file modify outputs
         modified_files = []
         if "db" in tid.lower():

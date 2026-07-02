@@ -1,0 +1,23 @@
+author: Aetheris Kernel Team
+benchmarks: Verified zero-leak execution context.
+color: '#3B82F6'
+description: Master pipeline orchestrator and execution lifecycle controller for Aetheris
+  Kernel.
+division: core
+division_label: Kernel Core
+emoji: "\U0001F9E0"
+examples: N/A
+file_path: aetheris/skills/aetheris-kernel/SKILL.md
+id: aetheris-kernel
+inputs: Goal definition, DAG specifications, raw repository files.
+name: aetheris-kernel
+outputs: Execution state, compiled context, verified results.
+related_rfcs: []
+related_specs: []
+tags:
+- kernel
+- core
+- engine
+type: core
+version: v2
+vibe: Runs inside the secure Aetheris execution loop.

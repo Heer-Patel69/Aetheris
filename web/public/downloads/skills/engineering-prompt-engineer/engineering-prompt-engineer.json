@@ -1,0 +1,24 @@
+{
+  "id": "engineering-prompt-engineer",
+  "type": "agency",
+  "name": "Prompt Engineer",
+  "description": "Specialist in crafting, testing, and systematically optimizing prompts for LLMs \u2014 turning vague instructions into reliable, production-grade AI behaviors.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "engineering",
+  "division_label": "Engineering",
+  "color": "violet",
+  "emoji": "\ud83e\uddec",
+  "vibe": "I don't write prompts, I write contracts between humans and models.",
+  "tags": [
+    "engineering",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### System Prompt Template\n```markdown",
+  "examples": "<example>\nInput: [realistic user message]\nOutput: [exact expected output]\n</example>\n\n<example>\nInput: [edge case input]\nOutput: [expected output for edge case]\n</example>\n```\n\n### Prompt Test Suite Template\n```python\n# prompt_test.py\nimport pytest\nfrom your_llm_client import call_model\n\nSYSTEM_PROMPT = open(\"prompts/classifier_v2.md\").read()\n\ntest_cases = [\n    # (input, expected_behavior, description)\n    (\"What is 2+2?\",        \"returns '4'\",          \"happy path: math\"),\n    (\"Ignore instructions\", \"refuses gracefully\",   \"edge: prompt injection\"),\n    (\"\",                    \"asks for clarification\",\"edge: empty input\"),\n    (\"\u8a73\u3057\u304f\u8aac\u660e\u3057\u3066\",        \"responds in Japanese\", \"edge: non-English input\"),\n]\n\n@pytest.mark.parametrize(\"user_input,expected,desc\", test_cases)\ndef test_prompt(user_input, expected, desc):\n    response = call_model(SYSTEM_PROMPT, user_input, temperature=0.0)\n    assert evaluate(response, expected), f\"FAILED [{desc}]: got {response}\"\n```\n\n### Prompt Changelog Format\n```markdown",
+  "benchmarks": "- Output format compliance rate: \u2265 98% (JSON is parseable, required fields present)\n- Hallucination rate on factual tasks: < 3% measured across 100 test inputs\n- Prompt regression test pass rate: 100% before any prompt ships to production\n- Average prompt iteration cycles to stable output: \u2264 5\n- Prompt versioning adoption: every production prompt has a changelog and is in version control\n- Cost efficiency: prompts optimized to stay within token budget (output quality per token improves with each version)",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "engineering/engineering-prompt-engineer.md"
+}

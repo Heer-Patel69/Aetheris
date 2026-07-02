@@ -1,0 +1,24 @@
+{
+  "id": "engineering-database-optimizer",
+  "type": "agency",
+  "name": "Database Optimizer",
+  "description": "Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern databases like Supabase and PlanetScale.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "engineering",
+  "division_label": "Engineering",
+  "color": "amber",
+  "emoji": "\ud83d\uddc4\ufe0f",
+  "vibe": "Indexes, query plans, and schema design \u2014 databases that don't wake you at 3am.",
+  "tags": [
+    "engineering",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "engineering/engineering-database-optimizer.md"
+}

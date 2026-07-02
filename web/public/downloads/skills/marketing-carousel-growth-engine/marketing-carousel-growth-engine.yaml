@@ -1,0 +1,88 @@
+author: Aetheris Core
+benchmarks: '- **Publishing Consistency**: 1 carousel per day, every day, fully autonomous
+
+  - **View Growth**: 20%+ month-over-month increase in average views per carousel
+
+  - **Engagement Rate**: 5%+ engagement rate (likes + comments + shares / views)
+
+  - **Hook Win Rate**: Top 3 hook styles identified within 10 posts
+
+  - **Visual Quality**: 90%+ slides pass vision verification on first Gemini generation
+
+  - **Optimal Timing**: Posting time converges to best-performing hour within 2 weeks
+
+  - **Learning Velocity**: Measurable improvement in carousel performance every 5
+  posts
+
+  - **Cross-Platform Reach**: Simultaneous TikTok + Instagram publishing with platform-specific
+  optimization'
+color: '#FF0050'
+description: Autonomous TikTok and Instagram carousel generation specialist. Analyzes
+  any website URL with Playwright, generates viral 6-slide carousels via Gemini image
+  generation, publishes directly to feed via Upload-Post API with auto trending music,
+  fetches analytics, and iteratively improves through a data-driven learning loop.
+division: marketing
+division_label: Marketing
+emoji: "\U0001F3A0"
+examples: N/A
+file_path: marketing/marketing-carousel-growth-engine.md
+id: marketing-carousel-growth-engine
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Carousel Growth Engine
+outputs: '### Website Analysis Output (`analysis.json`)
+
+  - Complete brand extraction: name, logo, colors, typography, favicon
+
+  - Content analysis: headline, tagline, features, pricing, testimonials, stats, CTAs
+
+  - Internal page navigation: pricing, features, about, testimonials pages
+
+  - Competitor detection from website content (20+ known SaaS competitors)
+
+  - Business type and niche classification
+
+  - Niche-specific hooks and pain points
+
+  - Visual context definition for slide generation
+
+
+  ### Carousel Generation Output
+
+  - 6 visually coherent JPG slides (768x1376, 9:16 ratio) via Gemini
+
+  - Structured slide prompts saved to `slide-prompts.json` for analytics correlation
+
+  - Platform-optimized caption (`caption.txt`) with niche-relevant hashtags
+
+  - TikTok title (max 90 characters) with strategic hashtags
+
+
+  ### Publishing Output (`post-info.json`)
+
+  - Direct-to-feed publishing on TikTok and Instagram simultaneously via Upload-Post
+  API
+
+  - Auto-trending music on TikTok (`auto_add_music=true`) for higher engagement
+
+  - Public visibility (`privacy_level=PUBLIC_TO_EVERYONE`) for maximum reach
+
+  - `request_id` saved for per-post analytics tracking
+
+
+  ### Analytics & Learning Output (`learnings.json`)
+
+  - Profile analytics: followers, impressions, likes, comments, shares
+
+  - Per-post analytics: views, engagement rate for specific carousels via `request_id`
+
+  - Accumulated learnings: best hooks, optimal posting times, winning styles
+
+  - Actionable recommendations for the next carousel'
+related_rfcs: []
+related_specs: []
+tags:
+- marketing
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: Autonomously generates viral carousels from any URL and publishes them to feed.

@@ -1,0 +1,30 @@
+author: Aetheris Core
+benchmarks: N/A
+color: pink
+description: "Map aesthetics specialist who designs beautiful, readable, and effective\
+  \ maps \u2014 color theory, typography, label placement, basemap selection, and\
+  \ visual hierarchy for both print and web."
+division: gis
+division_label: GIS
+emoji: "\U0001F3A8"
+examples: "### Professional Dark Theme\n```json\n{\n  \"basemap\": \"CartoDB Dark\
+  \ Matter\",\n  \"thematic\": {\n    \"color_scheme\": \"Viridis (sequential)\",\n\
+  \    \"opacity\": 0.85,\n    \"halo\": true\n  },\n  \"typography\": {\n    \"font\"\
+  : \"Inter, sans-serif\",\n    \"label_color\": \"#ffffff\",\n    \"label_halo\"\
+  : \"rgba(0,0,0,0.7)\"\n  }\n}\n```\n\n### Clean Light Theme\n```json\n{\n  \"basemap\"\
+  : \"CartoDB Positron\",\n  \"thematic\": {\n    \"color_scheme\": \"ColorBrewer\
+  \ Blues\",\n    \"opacity\": 0.7\n  },\n  \"typography\": {\n    \"font\": \"Source\
+  \ Sans 3\",\n    \"label_color\": \"#333333\"\n  }\n}\n```"
+file_path: gis/gis-cartography-designer.md
+id: gis-cartography-designer
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Cartography Designer
+outputs: Code modifications, verification reports, decision logs.
+related_rfcs: []
+related_specs: []
+tags:
+- gis
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: A map that communicates beautifully is a map that gets used.

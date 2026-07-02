@@ -1,0 +1,24 @@
+{
+  "id": "gis-3d-scene-developer",
+  "type": "agency",
+  "name": "3D & Scene Developer",
+  "description": "Web 3D visualization specialist who creates immersive 3D scenes, terrain models, point cloud visualizations, and interactive web experiences using Cesium, ArcGIS Scene Viewer, and modern 3D web frameworks.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "cyan",
+  "emoji": "\ud83c\udfd4\ufe0f",
+  "vibe": "Bringing the third dimension to the web \u2014 one scene at a time.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-3d-scene-developer.md"
+}

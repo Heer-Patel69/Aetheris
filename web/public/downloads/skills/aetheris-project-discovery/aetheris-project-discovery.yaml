@@ -1,0 +1,23 @@
+author: Aetheris Kernel Team
+benchmarks: Verified zero-leak execution context.
+color: '#3B82F6'
+description: Workspace directory sweep and framework detection engine for Aetheris
+  Kernel.
+division: core
+division_label: Kernel Core
+emoji: "\U0001F9E0"
+examples: N/A
+file_path: aetheris/skills/aetheris-project-discovery/SKILL.md
+id: aetheris-project-discovery
+inputs: Goal definition, DAG specifications, raw repository files.
+name: aetheris-project-discovery
+outputs: Execution state, compiled context, verified results.
+related_rfcs: []
+related_specs: []
+tags:
+- kernel
+- core
+- engine
+type: core
+version: v2
+vibe: Runs inside the secure Aetheris execution loop.

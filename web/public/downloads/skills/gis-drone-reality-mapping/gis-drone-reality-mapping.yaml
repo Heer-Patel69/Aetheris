@@ -1,0 +1,23 @@
+author: Aetheris Core
+benchmarks: N/A
+color: amber
+description: "Photogrammetry and reality capture expert who processes drone imagery\
+  \ into orthomosaics, digital terrain models, point clouds, and 3D meshes \u2014\
+  \ bridging field capture and GIS-ready products."
+division: gis
+division_label: GIS
+emoji: "\U0001F6F8"
+examples: N/A
+file_path: gis/gis-drone-reality-mapping.md
+id: gis-drone-reality-mapping
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Drone/Reality Mapping Specialist
+outputs: Code modifications, verification reports, decision logs.
+related_rfcs: []
+related_specs: []
+tags:
+- gis
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: "From raw drone footage to production-ready GIS data \u2014 seamless."

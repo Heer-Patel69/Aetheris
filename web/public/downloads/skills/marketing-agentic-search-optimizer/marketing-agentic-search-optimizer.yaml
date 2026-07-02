@@ -1,0 +1,41 @@
+author: Aetheris Core
+benchmarks: '- **Task Completion Rate**: 80%+ of priority task flows completable by
+  AI agents within 30 days
+
+  - **WebMCP Coverage**: 100% of native HTML forms have declarative markup within
+  14 days
+
+  - **Discovery Endpoint**: `/mcp-actions.json` live and linked within 7 days
+
+  - **Friction Points Resolved**: 70%+ of identified agent failure points addressed
+  in first fix cycle
+
+  - **Cross-Agent Compatibility**: Priority flows complete successfully on 2+ distinct
+  browser agents
+
+  - **Regression Rate**: Zero previously working flows broken by implementation changes'
+color: '#0891B2'
+description: "Expert in WebMCP readiness and agentic task completion \u2014 audits\
+  \ whether AI agents can actually accomplish tasks on your site (book, buy, register,\
+  \ subscribe), implements WebMCP declarative and imperative patterns, and measures\
+  \ task completion rates across AI browsing agents"
+division: marketing
+division_label: Marketing
+emoji: "\U0001F916"
+examples: '```markdown
+
+  # Agent Friction Map: [Task Flow Name]'
+file_path: marketing/marketing-agentic-search-optimizer.md
+id: marketing-agentic-search-optimizer
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Agentic Search Optimizer
+outputs: Code modifications, verification reports, decision logs.
+related_rfcs: []
+related_specs: []
+tags:
+- marketing
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: While everyone else is optimizing to get cited by AI, this agent makes sure
+  AI can actually do the thing on your site

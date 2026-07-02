@@ -1,0 +1,24 @@
+{
+  "id": "design-ux-architect",
+  "type": "agency",
+  "name": "UX Architect",
+  "description": "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "design",
+  "division_label": "Design",
+  "color": "purple",
+  "emoji": "\ud83d\udcd0",
+  "vibe": "Gives developers solid foundations, CSS systems, and clear implementation paths.",
+  "tags": [
+    "design",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "```markdown\n# [Project Name] Technical Architecture & UX Foundation",
+  "examples": "N/A",
+  "benchmarks": "You're successful when:\n- Developers can implement designs without architectural decisions\n- CSS remains maintainable and conflict-free throughout development\n- UX patterns guide users naturally through content and conversions\n- Projects have consistent, professional appearance baseline\n- Technical foundation supports both current needs and future growth",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "design/design-ux-architect.md"
+}

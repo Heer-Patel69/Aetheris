@@ -1,0 +1,24 @@
+{
+  "id": "gis-spatial-data-engineer",
+  "type": "agency",
+  "name": "Spatial Data Engineer",
+  "description": "ETL specialist who transforms messy geospatial data from any source into clean, standardized, production-ready datasets \u2014 format conversion, CRS reprojection, attribute normalization, and automated pipelines.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "orange",
+  "emoji": "\ud83d\udce6",
+  "vibe": "Data comes in dirty. It leaves clean, documented, and ready to publish.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-spatial-data-engineer.md"
+}

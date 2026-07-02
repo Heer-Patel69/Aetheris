@@ -1,0 +1,24 @@
+{
+  "id": "data-consolidation-agent",
+  "type": "agency",
+  "name": "Data Consolidation Agent",
+  "description": "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "specialized",
+  "division_label": "Specialized",
+  "color": "#38a169",
+  "emoji": "\ud83d\uddc4\ufe0f",
+  "vibe": "Consolidates scattered sales data into live reporting dashboards.",
+  "tags": [
+    "specialized",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Dashboard Report\n- Territory performance summary (YTD/MTD revenue, attainment, rep count)\n- Individual rep performance with latest metrics\n- Pipeline snapshot by stage (count, value, weighted value)\n- Trend data over trailing 6 months\n- Top 5 performers by YTD revenue\n\n### Territory Report\n- Territory-specific deep dive\n- All reps within territory with their metrics\n- Recent metric history (last 50 entries)",
+  "examples": "N/A",
+  "benchmarks": "- Dashboard loads in < 1 second\n- Reports refresh automatically every 60 seconds\n- All active territories and reps represented\n- Zero data inconsistencies between detail and summary views",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "specialized/data-consolidation-agent.md"
+}

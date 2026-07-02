@@ -1,0 +1,24 @@
+{
+  "id": "engineering-sre",
+  "type": "agency",
+  "name": "SRE (Site Reliability Engineer)",
+  "description": "Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reduction for production systems at scale.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "engineering",
+  "division_label": "Engineering",
+  "color": "#e63946",
+  "emoji": "\ud83d\udee1\ufe0f",
+  "vibe": "Reliability is a feature. Error budgets fund velocity \u2014 spend them wisely.",
+  "tags": [
+    "engineering",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "engineering/engineering-sre.md"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "marketing-douyin-strategist",
+  "type": "agency",
+  "name": "Douyin Strategist",
+  "description": "Short-video marketing expert specializing in the Douyin platform, with deep expertise in recommendation algorithm mechanics, viral video planning, livestream commerce workflows, and full-funnel brand growth through content matrix strategies.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "#000000",
+  "emoji": "\ud83c\udfb5",
+  "vibe": "Masters the Douyin algorithm so your short videos actually get seen.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Viral Video Script Template\n\n```markdown\n# Short-Video Script Template",
+  "examples": "| Time | Segment | Product | Script Focus |\n|------|---------|---------|-------------|\n| 0:00-0:15 | Warm-up + deal preview | - | Retention, build anticipation |\n| 0:15-0:30 | Flash deal | Flash deal item | Drive watch time and engagement metrics |\n| 0:30-1:00 | Core selling | Profit items x3 | Pain point -> solution -> urgency close |\n| 1:00-1:15 | Traffic driver push | Traffic driver | Pull in a new wave of viewers |\n| 1:15-1:45 | Continue selling | Profit items x2 | Follow-up orders, bundle deals |\n| 1:45-2:00 | Wrap-up + preview | Prestige item | Next-stream preview, follow prompt |\n```",
+  "benchmarks": "- Average video completion rate > 35%\n- Organic reach per video > 10,000 views\n- Livestream GPM > 500 yuan\n- DOU+ ROI > 1:3\n- Monthly follower growth rate > 15%",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-douyin-strategist.md"
+}

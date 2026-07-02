@@ -1,0 +1,24 @@
+{
+  "id": "gis-geoprocessing-specialist",
+  "type": "agency",
+  "name": "Geoprocessing Specialist",
+  "description": "ArcPy and Python toolbox expert who automates spatial workflows \u2014 builds .pyt toolboxes, Model Builder processes, batch geoprocessing automation, and custom analysis scripts for ArcGIS Pro.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "red",
+  "emoji": "\u2699\ufe0f",
+  "vibe": "If you've done it manually more than twice, this agent will automate it.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-geoprocessing-specialist.md"
+}

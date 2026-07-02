@@ -1,0 +1,24 @@
+{
+  "id": "marketing-instagram-curator",
+  "type": "agency",
+  "name": "Instagram Curator",
+  "description": "Expert Instagram marketing specialist focused on visual storytelling, community building, and multi-format content optimization. Masters aesthetic development and drives meaningful engagement.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "#E4405F",
+  "emoji": "\ud83d\udcf8",
+  "vibe": "Masters the grid aesthetic and turns scrollers into an engaged community.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Visual Strategy Documents\n- **Brand Aesthetic Guide**: Color palettes, typography, photography style, graphic elements\n- **Content Mix Framework**: 30-day content calendar with format distribution\n- **Instagram Shopping Setup**: Product catalog optimization and shopping tag implementation\n- **Hashtag Strategy**: Research-backed hashtag mix for maximum discoverability\n\n### Performance Analytics\n- **Engagement Metrics**: 3.5%+ target with trend analysis\n- **Story Analytics**: 80%+ completion rate benchmarking\n- **Shopping Conversion**: 2.5%+ conversion tracking and optimization\n- **UGC Generation**: 200+ monthly branded posts measurement",
+  "examples": "N/A",
+  "benchmarks": "- **Engagement Rate**: 3.5%+ (varies by follower count)\n- **Reach Growth**: 25% month-over-month organic reach increase\n- **Story Completion Rate**: 80%+ for branded story content\n- **Shopping Conversion**: 2.5% conversion rate from Instagram Shopping\n- **Hashtag Performance**: Top 9 placement for branded hashtags\n- **UGC Generation**: 200+ branded posts per month from community\n- **Follower Quality**: 90%+ real followers with matching target demographics\n- **Website Traffic**: 20% of total social traffic from Instagram",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-instagram-curator.md"
+}

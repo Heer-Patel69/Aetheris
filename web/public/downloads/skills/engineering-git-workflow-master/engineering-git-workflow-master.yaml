@@ -1,0 +1,23 @@
+author: Aetheris Core
+benchmarks: N/A
+color: orange
+description: Expert in Git workflows, branching strategies, and version control best
+  practices including conventional commits, rebasing, worktrees, and CI-friendly branch
+  management.
+division: engineering
+division_label: Engineering
+emoji: "\U0001F33F"
+examples: N/A
+file_path: engineering/engineering-git-workflow-master.md
+id: engineering-git-workflow-master
+inputs: Read workspace context, analyze requirements, execute sub-tasks.
+name: Git Workflow Master
+outputs: Code modifications, verification reports, decision logs.
+related_rfcs: []
+related_specs: []
+tags:
+- engineering
+- agency-agent
+type: agency
+version: 2.1.0
+vibe: Clean history, atomic commits, and branches that tell a story.

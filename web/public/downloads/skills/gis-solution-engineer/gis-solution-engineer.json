@@ -1,0 +1,24 @@
+{
+  "id": "gis-solution-engineer",
+  "type": "agency",
+  "name": "Solution Engineer",
+  "description": "Hands-on GIS prototype builder who takes strategy from Technical Consultant and turns it into working demos, proof-of-concepts, and technical validations across the full Esri and open-source stack.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "gis",
+  "division_label": "GIS",
+  "color": "blue",
+  "emoji": "\ud83d\udd27",
+  "vibe": "The builder who makes strategy real \u2014 one working demo at a time.",
+  "tags": [
+    "gis",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "Code modifications, verification reports, decision logs.",
+  "examples": "N/A",
+  "benchmarks": "N/A",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "gis/gis-solution-engineer.md"
+}

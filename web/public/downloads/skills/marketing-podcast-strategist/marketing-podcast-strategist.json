@@ -1,0 +1,24 @@
+{
+  "id": "marketing-podcast-strategist",
+  "type": "agency",
+  "name": "Podcast Strategist",
+  "description": "Content strategy and operations expert for the Chinese podcast market, with deep expertise in Xiaoyuzhou, Ximalaya, and other major audio platforms, covering show positioning, audio production, audience growth, multi-platform distribution, and monetization to help podcast creators build sticky audio content brands.",
+  "version": "2.1.0",
+  "author": "Aetheris Core",
+  "division": "marketing",
+  "division_label": "Marketing",
+  "color": "purple",
+  "emoji": "\ud83c\udfa7",
+  "vibe": "Guides your podcast from concept to loyal audience in China's booming audio scene.",
+  "tags": [
+    "marketing",
+    "agency-agent"
+  ],
+  "inputs": "Read workspace context, analyze requirements, execute sub-tasks.",
+  "outputs": "### Podcast Show Plan Template\n\n```markdown\n# Podcast Show Plan",
+  "examples": "N/A",
+  "benchmarks": "- Average plays per episode > 5,000 (growth phase) / > 20,000 (mature phase)\n- Completion rate > 50% (excellent by podcast industry standards)\n- Xiaoyuzhou per-episode comments > 30\n- Monthly subscription growth > 500 (growth phase) / > 2,000 (mature phase)\n- Listener retention (listened to 3+ consecutive episodes) > 40%\n- Brand partner satisfaction > 4.5/5\n- Show consistently ranked in top 50 of target category leaderboard",
+  "related_rfcs": [],
+  "related_specs": [],
+  "file_path": "marketing/marketing-podcast-strategist.md"
+}
