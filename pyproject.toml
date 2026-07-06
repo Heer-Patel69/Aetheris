@@ -1,20 +1,102 @@
 [build-system]
-requires = ["setuptools>=61.0.0"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "aetheris"
-version = "3.1.0"
-description = "Aetheris AI Engineering Operating System"
+version = "0.1.0"
+description = "AI Engineering Operating System Kernel & Context Controller"
 readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Aetheris Team"},
+]
+keywords = ["aetheris", "cli", "engineering", "operating-system", "ai", "runtime"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development",
+    "Topic :: System :: Installation/Setup",
+]
 dependencies = [
-    "pyyaml",
+    "rich>=13.0.0",
+    "click>=8.1.0",
+    "psutil>=5.9.0",
+    "pathspec>=0.11.0",
+    "pyyaml>=6.0.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/aetheris/aetheris"
+Documentation = "https://aetheris.dev"
+Source = "https://github.com/aetheris/aetheris"
+
 [project.scripts]
-aetheris = "kernel.core:main"
+aetheris = "aetheris.cli.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+installer = [
+    "requests>=2.31.0",
+    "tqdm>=4.65.0",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["kernel", "intelligence", "execution", "runtime", "learning", "enterprise", "organization", "evolution", "validation"]
+packages = [
+    "aetheris",
+    "aetheris.cli",
+    "aetheris.intelligence",
+    "aetheris.kernel",
+    "kernel",
+    "intelligence",
+    "execution",
+    "runtime",
+    "learning",
+    "enterprise",
+    "organization",
+    "evolution",
+    "validation",
+    "storage",
+    "orchestration",
+    "adapters",
+    "sdk",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml", "*.yml", "*.json", "*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

@@ -1,0 +1,25 @@
+{
+  "name": "aetheris",
+  "version": "1.0.0",
+  "description": "Aetheris Engineering Operating System - Universal CLI",
+  "author": "Aetheris Team",
+  "license": "MIT",
+  "keywords": ["aetheris", "cli", "engineering", "ai", "runtime"],
+  "homepage": "https://aetheris.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aetheris/aetheris"
+  },
+  "bin": {
+    "aetheris": "./bin/aetheris.js"
+  },
+  "scripts": {
+    "postinstall": "node ./bin/install-python.js",
+    "preuninstall": "node ./bin/uninstall-python.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": ["win32", "darwin", "linux"],
+  "preferGlobal": true
+}

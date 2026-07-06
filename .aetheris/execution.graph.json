@@ -1,31 +1,10 @@
 {
   "nodes": [
     {
-      "id": "task:database_migrations",
+      "id": "task:database_migrations_layer",
       "type": "Task",
       "metadata": {
-        "name": "Database Migrations"
-      }
-    },
-    {
-      "id": "task:authentication",
-      "type": "Task",
-      "metadata": {
-        "name": "Authentication"
-      }
-    },
-    {
-      "id": "task:api_controllers",
-      "type": "Task",
-      "metadata": {
-        "name": "Api Controllers"
-      }
-    },
-    {
-      "id": "task:unit_testing",
-      "type": "Task",
-      "metadata": {
-        "name": "Unit Testing"
+        "name": "Database Migrations Layer"
       }
     },
     {
@@ -36,31 +15,5 @@
       }
     }
   ],
-  "edges": [
-    {
-      "source": "task:database_migrations",
-      "target": "task:authentication",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:database_migrations",
-      "target": "task:api_controllers",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:authentication",
-      "target": "task:api_controllers",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:api_controllers",
-      "target": "task:unit_testing",
-      "relationship": "depends_on"
-    },
-    {
-      "source": "task:unit_testing",
-      "target": "task:deployment_pipelines",
-      "relationship": "depends_on"
-    }
-  ]
+  "edges": []
 }

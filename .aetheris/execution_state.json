@@ -10,26 +10,11 @@
     },
     {
       "task_id": "P1",
-      "name": "database_migrations",
+      "name": "database_migrations_layer",
       "status": "Completed"
     },
     {
       "task_id": "P2",
-      "name": "authentication",
-      "status": "Completed"
-    },
-    {
-      "task_id": "P3",
-      "name": "api_controllers",
-      "status": "Completed"
-    },
-    {
-      "task_id": "P4",
-      "name": "unit_testing",
-      "status": "Completed"
-    },
-    {
-      "task_id": "P5",
       "name": "deployment_pipelines",
       "status": "Completed"
     }
