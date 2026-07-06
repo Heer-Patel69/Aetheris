@@ -1,22 +1,22 @@
-# Engineering Team Assignment: AntiGravity Token Intelligence & Benchmark System (ATIB)
+# Engineering Team Assignment: Third-Party Engine Integration (v4.0)
 
-This document assigns specific roles, skills, and specification domains for the design, development, and integration of the ATIB subsystem.
+This document assigns roles, skills, and specification domains for developing the integration of Headroom, Claude Code, and Claude Code Templates.
 
 ## Roles & Assignments
 
 | Role | Mapped Skills | Governing RFC / SPEC | Responsibility |
 |---|---|---|---|
-| **Product Manager** | `aetheris-product-intelligence` | RFC-008, SPEC-086 (Learning) | Define KPI reporting requirements, token intelligence constraints, and business-focused dashboards. |
-| **Solution Architect** | `aetheris-kernel` | RFC-008, SPEC-170 (Optimization) | Design the core module interfaces, pipeline event integration, and cross-platform adapter architecture. |
-| **Backend & Registry Engineer** | `agency-backend-architect`, `aetheris-context-engine` | RFC-008, SPEC-141 (Self-Evolution) | Develop token intelligence hooks, context optimization heuristics, and cost calculations. |
-| **Repository Intelligence Specialist** | `aetheris-project-discovery` | RFC-001, SPEC-001 (WDE) | Build coverage calculators for skills, RFCs, SPECs, and codebase sizes. |
-| **Data & Historical Analytics Engineer** | `agency-analytics-reporter` | RFC-008 (Learning) | Build historical analytics tracking, file exports, and trend calculations over time. |
-| **QA / Verification Engineer** | `aetheris-verification-engine` | RFC-007, SPEC-163 (DoD) | Verify that context optimization does not degrade engineering quality or bypass security checks. |
+| **Product Manager** | `aetheris-product-intelligence` | SPEC-124 | Define template conversion rules, target state configurations, and visual branding standards. |
+| **Solution Architect** | `aetheris-kernel` | SPEC-123 | Design the modular adapter interface structures under `src/aetheris/adapters/`. |
+| **Backend & Integration Engineer** | `agency-backend-architect` | SPEC-126, SPEC-066 | Develop `template_adapter.py` and `agent_runtime.py`. |
+| **Proxy & Optimization Architect** | `aetheris-context-engine` | SPEC-128, SPEC-076 | Develop `proxy_adapter.py` and integrate it into `KernelController`. |
+| **UI/UX Designer** | `agency-ui-designer` | SPEC-133 | Define theme tokens in `src/config/theme_contract.json` to ensure clean minimal styling. |
+| **QA / Verification Engineer** | `aetheris-verification-engine` | SPEC-131 | Verify file mapping accuracy, subprocess wrapping safety, and compression rules compliance. |
 
 ## Department Mobilization
 
-The following departments are activated to complete this system build:
-- **Engineering / Backend**: For file system integration, parsing, math models, and telemetry hooks.
-- **Product**: For KPI definition and metrics matching.
-- **Quality Assurance**: For writing unit and regression tests.
-- **Documentation**: For maintaining user guide and configuration specifications.
+The following departments are mobilized:
+- **Engineering / Backend**: For subprocess wrapping, path resolution, and filesystem automation.
+- **Engineering / DevOps**: For configuring proxy daemon lifecycles and port settings.
+- **Design / UI/UX**: For establishing visual themes.
+- **Quality Assurance**: For writing unit verification tests.

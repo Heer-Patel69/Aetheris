@@ -1,0 +1,1 @@
+# Aetheris Integration Adapters Namespace

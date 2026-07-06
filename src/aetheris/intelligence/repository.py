@@ -24,6 +24,14 @@ class DiscoveryEngine:
 
     def dynamic_scan(self, progress_callback: Optional[Callable[[str], None]] = None) -> Dict[str, Any]:
         """Scans workspace dynamically, classifying artifacts by structural path conventions."""
+        # Programmatically sync third-party templates before scanning
+        try:
+            from aetheris.adapters.template_adapter import TemplateAdapter
+            TemplateAdapter(str(self.root)).sync()
+        except Exception as e:
+            import sys
+            sys.stderr.write(f"Warning: TemplateAdapter sync failed: {e}\n")
+
         ignore_spec = self._load_ignore_spec()
         manifest: Dict[str, list] = {"skills": [], "rfcs": [], "specs": [], "source_files": []}
 

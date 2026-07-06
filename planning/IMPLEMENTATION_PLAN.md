@@ -1,47 +1,56 @@
-# Implementation Plan — AntiGravity Token Intelligence & Benchmark System (ATIB)
+# Refined Implementation Plan — Third-Party Engine Integration (v4.0)
 
-We will build the **AntiGravity Token Intelligence & Benchmark System (ATIB)** as a set of core engines under the `src/intelligence/` namespace to measure, benchmark, analyze, optimize, and log token usage, cost, and coverage metrics across Aetheris execution sessions.
+Build a production-grade, modular adapter infrastructure under `src/aetheris/adapters/` to integrate Headroom, Claude Code runtime, and the Claude Code Template system (ECC) directly into Aetheris, excluding Ponytail.
+
+## Ingestion Mapping Matrix
+
+| Source Path | Target Aetheris Path | Classification type |
+| --- | --- | --- |
+| `third party/ECC-main/ECC-main/skills/` | `skills/third_party/claude_templates/` | **Engineering Capability Skills** |
+| `third party/ECC-main/ECC-main/AGENTS.md` | `rfcs/third_party/AGENTS.md` | **Structural Rule Contract** |
+| `third party/ECC-main/ECC-main/CLAUDE.md` | `rfcs/third_party/CLAUDE.md` | **Structural Rule Contract** |
+| `third party/ECC-main/ECC-main/RULES.md` | `rfcs/third_party/RULES.md` | **Governance Law** |
 
 ## Proposed Changes
 
-### Component: ATIB Intelligence Subsystems
+### Component: Ingestion & Skill Translation
+#### [NEW] [template_adapter.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/template_adapter.py)
+Programmatically parses and maps third-party skills and global templates (ECC) into valid Aetheris Skills under `skills/third_party/claude_templates/` and RFC standards under `rfcs/third_party/`.
 
-#### [NEW] [token_intelligence.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/token_intelligence.py)
-Implements token measurements, tracking cache hit rates, reasoning tokens, costs, errors, retry counts, latency, and context window limits.
+#### [MODIFY] [repository.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/intelligence/repository.py)
+Hooks the dynamic scan pipeline to trigger the template parser before crawling files.
 
-#### [NEW] [benchmark_engine.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/benchmark_engine.py)
-Performs benchmarks on loaded files, context reduction delta, skills/RFCs/SPECs activated versus ignored, and computes overall quality indexes.
-
-#### [NEW] [context_optimizer.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/context_optimizer.py)
-Scans skills, RFCs, SPECs, resolves dependencies, filters duplicates, and compiles the compressed context representation.
-
-#### [NEW] [cost_analyzer.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/cost_analyzer.py)
-Maps models to their input/output token cost rates and calculates precise expenses.
-
-#### [NEW] [repository_metrics.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/repository_metrics.py)
-Computes repository sizes, active departments, lines of code, and department/skill/RFC/SPEC coverage rates.
-
-#### [NEW] [historical_analytics.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/historical_analytics.py)
-Tracks and records session histories, aggregates averages, and exports the data to JSON files.
-
-#### [NEW] [dashboard_metrics.py](file:///c:/AI/Agency%20owner/aetheris/src/intelligence/dashboard_metrics.py)
-Generates the live statistics block to expose live token usage, current model status, and readiness scores.
+#### [MODIFY] [wde.py](file:///c:/AI/Aehteris%20main/aetheris/src/intelligence/wde.py)
+Hooks the kernel discovery scanner to trigger template parser updates.
 
 ---
 
-### Component: Aetheris Integration & Tests
+### Component: Runtime Execution & State Control
+#### [NEW] [agent_runtime.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/agent_runtime.py)
+Implements an asynchronous subprocess wrapper around the Claude Code CLI. Reads `.aetheris/ENGINEERING_MANIFEST.json` and injects state configurations as stateless environment configurations/inputs before invocation.
 
-#### [MODIFY] [core.py](file:///c:/AI/Agency%20owner/aetheris/src/kernel/core.py)
-Integrate the ATIB systems into `AetherisKernel.run_autonomous_loop(...)` to track pre-run repository states, execute context compression, track LLM costs on mock stages, and compile the final Execution Report block.
+---
 
-#### [NEW] [test_atib.py](file:///c:/AI/Agency%20owner/aetheris/tests/test_atib.py)
-Wrote full unit tests for all new ATIB engines checking edge cases, cost analysis math, and historical log aggregation.
+### Component: Telemetry & Traffic Compression Proxy
+#### [NEW] [proxy_adapter.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/proxy_adapter.py)
+Manages the Headroom proxy server daemon lifecycle and configures outbound redirection to `http://localhost:8787`. Enforces SmartCrusher compression on logs/payloads with 0% compression on raw source code files.
+
+#### [MODIFY] [core.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/kernel/core.py)
+Integrates Headroom daemon lifecycle management into `KernelController`.
+
+---
+
+### Component: Theme Configuration
+#### [NEW] [theme_contract.json](file:///c:/AI/Aehteris%20main/aetheris/src/config/theme_contract.json)
+Maps design token colors and assets to a clean, high-contrast, minimal luxury monochromatic visual style.
 
 ---
 
 ## Verification Plan
 
 ### Automated Tests
-* Run the unit tests via Python's unittest framework:
-  `$env:PYTHONPATH="src;../scripts;tests" ; .venv\Scripts\python -m unittest tests/test_atib.py`
-* Verify compliance against the global test suite.
+- Build and execute unit tests checking the template scanning logic, mapping parsing accuracy, subprocess state injection, and proxy daemon control.
+
+### Manual Verification
+- Execute `aetheris analyze` and ensure that the ingested third-party skills show up correctly in the CLI matrix.
+- Launch the Aetheris daemon using `aetheris start` and verify that the Headroom proxy process starts successfully.

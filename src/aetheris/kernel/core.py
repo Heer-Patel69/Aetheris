@@ -15,11 +15,11 @@ class KernelController:
         self.pid_file = self.runtime_dir / "kernel_daemon.pid"
 
     def spawn_daemon(self) -> int:
-        """Spawns a background HTTP server daemon on port 8448."""
+        """Spawns a background HTTP server daemon on port 8448 and the Headroom proxy on port 8787."""
         if self.is_running():
             return self.get_active_pid()
 
-        # Spawns localized HTTP environment simulation on port 8448
+        # Start Aetheris HTTP environment simulation on port 8448
         kwargs = {}
         if sys.platform == "win32":
             kwargs["creationflags"] = 0x00000008  # DETACHED_PROCESS
@@ -34,10 +34,25 @@ class KernelController:
 
         with open(self.pid_file, "w", encoding="utf-8") as f:
             f.write(str(proc.pid))
+
+        # Start Headroom Proxy Gateway
+        try:
+            from aetheris.adapters.proxy_adapter import ProxyAdapter
+            ProxyAdapter(os.getcwd()).start_proxy()
+        except Exception as e:
+            sys.stderr.write(f"Warning: Failed to auto-start Headroom proxy: {e}\n")
+
         return proc.pid
 
     def terminate_daemon(self) -> bool:
-        """Safely stops the active daemon and its child process tree."""
+        """Safely stops the active daemon, Headroom proxy, and their child process trees."""
+        # Stop Headroom Proxy Gateway first
+        try:
+            from aetheris.adapters.proxy_adapter import ProxyAdapter
+            ProxyAdapter(os.getcwd()).stop_proxy()
+        except Exception as e:
+            sys.stderr.write(f"Warning: Failed to stop Headroom proxy: {e}\n")
+
         pid = self.get_active_pid()
         if not pid:
             return False

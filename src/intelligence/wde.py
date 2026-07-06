@@ -443,6 +443,13 @@ class WorkspaceDiscoveryEngine:
 
     def scan(self) -> Dict[str, dict]:
         """Main execution runner compiling the 6 inventory models."""
+        # Synchronize third-party templates dynamically
+        try:
+            from aetheris.adapters.template_adapter import TemplateAdapter
+            TemplateAdapter(str(self.workspace_path)).sync()
+        except Exception as e:
+            sys.stderr.write(f"Warning: TemplateAdapter sync failed during WDE scan: {e}\n")
+
         self.event_bus.publish("WorkspaceDiscoveryStarted", "WDE", {"workspace": str(self.workspace_path)})
         start_time = time.time()
         
