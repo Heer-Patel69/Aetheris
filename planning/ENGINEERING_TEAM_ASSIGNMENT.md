@@ -1,22 +1,21 @@
-# Engineering Team Assignment: Third-Party Engine Integration (v4.0)
+# Engineering Team Assignment: Cryptographic Web-Hook Validator Microservice
 
-This document assigns roles, skills, and specification domains for developing the integration of Headroom, Claude Code, and Claude Code Templates.
+This document assigns roles, skills, and specification domains for developing the validation microservice.
 
 ## Roles & Assignments
 
 | Role | Mapped Skills | Governing RFC / SPEC | Responsibility |
 |---|---|---|---|
-| **Product Manager** | `aetheris-product-intelligence` | SPEC-124 | Define template conversion rules, target state configurations, and visual branding standards. |
-| **Solution Architect** | `aetheris-kernel` | SPEC-123 | Design the modular adapter interface structures under `src/aetheris/adapters/`. |
-| **Backend & Integration Engineer** | `agency-backend-architect` | SPEC-126, SPEC-066 | Develop `template_adapter.py` and `agent_runtime.py`. |
-| **Proxy & Optimization Architect** | `aetheris-context-engine` | SPEC-128, SPEC-076 | Develop `proxy_adapter.py` and integrate it into `KernelController`. |
-| **UI/UX Designer** | `agency-ui-designer` | SPEC-133 | Define theme tokens in `src/config/theme_contract.json` to ensure clean minimal styling. |
-| **QA / Verification Engineer** | `aetheris-verification-engine` | SPEC-131 | Verify file mapping accuracy, subprocess wrapping safety, and compression rules compliance. |
+| **Product Manager** | `aetheris-product-intelligence` | SPEC-124 | Define webhook payload parameters, rate-limit thresholds, and dashboard display criteria. |
+| **Solution Architect** | `aetheris-kernel` | SPEC-123 | Design the SQLite database schema and REST API endpoints. |
+| **Backend & Database Engineer** | `agency-backend-architect` | SPEC-126, SPEC-103 | Implement the database mappings, connection handling, and indices. |
+| **Cybersecurity Engineer** | `agency-application-security-engineer` | SPEC-130, SPEC-111 | Implement HMAC-SHA256 signature verification and timing-attack-safe comparisons. |
+| **UI/UX Designer** | `agency-ui-designer` | SPEC-133 | Style the telemetry dashboard using the tokens defined in `src/config/theme_contract.json`. |
+| **QA / Verification Engineer** | `aetheris-verification-engine` | SPEC-131 | Run integration stress tests to verify rate-limiting and timing-safety. |
 
 ## Department Mobilization
 
-The following departments are mobilized:
-- **Engineering / Backend**: For subprocess wrapping, path resolution, and filesystem automation.
-- **Engineering / DevOps**: For configuring proxy daemon lifecycles and port settings.
-- **Design / UI/UX**: For establishing visual themes.
-- **Quality Assurance**: For writing unit verification tests.
+- **Engineering / Backend**: SQLite database modeling and FastAPI routing.
+- **Security**: Timing-attack safe cryptographic validation.
+- **Design**: Branded status view implementation.
+- **Quality Assurance**: Automated validation test scripting.

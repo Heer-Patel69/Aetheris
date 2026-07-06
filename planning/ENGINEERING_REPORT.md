@@ -1,24 +1,25 @@
-# Engineering Report: Third-Party Engine Integration (v4.0)
+# Engineering Report: Cryptographic Web-Hook Validator Microservice
 
-This report maps the traceability matrix and calculates system readiness before code implementation under the v4.0 architecture.
+This report maps the traceability matrix and checks system readiness for the web-hook validator microservice.
 
 ## Traceability Matrix
 
 | Component | Target Location | Specification Domain | Verification Method |
 |---|---|---|---|
-| **Template & Skill Ingestion** | `src/aetheris/adapters/template_adapter.py` | SPEC-104 / SPEC-163 | Run `aetheris analyze` and check dynamic skills matrix. |
-| **Agent Runtime Subprocess** | `src/aetheris/adapters/agent_runtime.py` | SPEC-076 / SPEC-125 | Execute mockup commands with config arguments. |
-| **Headroom Proxy Gateway** | `src/aetheris/adapters/proxy_adapter.py` | SPEC-076 / SPEC-100 | Check daemon process status on daemon start. |
-| **Minimal theme config** | `src/config/theme_contract.json` | SPEC-119 / SPEC-133 | Visual checking of rendered CLI outputs. |
+| **Database & Schema** | `src/microservice/database.py` | SPEC-103 / SPEC-104 | Verify SQLAlchemy indices on fields. |
+| **FastAPI Router** | `src/microservice/router.py` | SPEC-107 / SPEC-111 | Run integration tests verifying HMAC verification. |
+| **Telemetry Dashboard** | `src/microservice/dashboard.py` | SPEC-119 / SPEC-133 | Terminal output checks against theme contract variables. |
+| **Execution State Manifest** | `.aetheris/ENGINEERING_MANIFEST.json` | SPEC-104 / SPEC-125 | Verify file exists and holds state parameters. |
+| **Compliance Tests** | `tests/test_microservice.py` | SPEC-131 / SPEC-153 | Run test cases checking rate-limiting and timing. |
 
 ## Readiness Assessment
 
 | Dimension | Checked Items | Score (1-5) | Status |
 |---|---|---|---|
-| **Requirements Alignment** | Mapped to Headroom proxy, Claude Code CLI, and ECC templates | 5/5 | Ready |
-| **Architecture / Interface Design** | Modular adapters under `src/aetheris/adapters/` | 5/5 | Ready |
-| **Security & Sandbox Isolation** | Clean separation of proxy/CLI, stateless agent configuration | 5/5 | Ready |
-| **Test Coverage Plan** | Mocking subprocess executions and template directories | 5/5 | Ready |
-| **Implementation Sandbox** | Clean repository and third-party directories located | 5/5 | Ready |
+| **Requirements Alignment** | Mapped to FastAPI, SQLite, HMAC verification, rate-limiter, and theme config | 5/5 | Ready |
+| **Architecture / Interface Design** | Decoupled database models and endpoint routers | 5/5 | Ready |
+| **Security & Sandbox Isolation** | HMACS, timing-safe equality, and local sandbox database | 5/5 | Ready |
+| **Test Coverage Plan** | Simulating multiple request payloads and IP-based limits | 5/5 | Ready |
+| **Implementation Sandbox** | Python packages and dependencies available in `.venv` | 5/5 | Ready |
 
 **Readiness Score**: 100/100 (Go-Live Approved)

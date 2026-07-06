@@ -1,56 +1,42 @@
-# Refined Implementation Plan — Third-Party Engine Integration (v4.0)
+# Implementation Plan — Cryptographic Web-Hook Validator Microservice
 
-Build a production-grade, modular adapter infrastructure under `src/aetheris/adapters/` to integrate Headroom, Claude Code runtime, and the Claude Code Template system (ECC) directly into Aetheris, excluding Ponytail.
+Build a production-grade, rate-limited Cryptographic Web-Hook Validator Microservice under `src/microservice/` utilizing FastAPI and SQLite.
 
-## Ingestion Mapping Matrix
+## Ingestion Matrix & Active Skills
 
-| Source Path | Target Aetheris Path | Classification type |
-| --- | --- | --- |
-| `third party/ECC-main/ECC-main/skills/` | `skills/third_party/claude_templates/` | **Engineering Capability Skills** |
-| `third party/ECC-main/ECC-main/AGENTS.md` | `rfcs/third_party/AGENTS.md` | **Structural Rule Contract** |
-| `third party/ECC-main/ECC-main/CLAUDE.md` | `rfcs/third_party/CLAUDE.md` | **Structural Rule Contract** |
-| `third party/ECC-main/ECC-main/RULES.md` | `rfcs/third_party/RULES.md` | **Governance Law** |
+- **Active Ingested Skills:** `api-design`, `security-review`, `postgres-patterns`, `frontend-patterns`
+- **Governance Standards:** `rfcs/third_party/RULES.md`, `rfcs/third_party/AGENTS.md`
 
 ## Proposed Changes
 
-### Component: Ingestion & Skill Translation
-#### [NEW] [template_adapter.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/template_adapter.py)
-Programmatically parses and maps third-party skills and global templates (ECC) into valid Aetheris Skills under `skills/third_party/claude_templates/` and RFC standards under `rfcs/third_party/`.
+### Component: Microservice Backend
+#### [NEW] [database.py](file:///c:/AI/Aehteris%20main/aetheris/src/microservice/database.py)
+Implements SQLite connection and SQLAlchemy models for storing webhook payloads, source IP hashes, and signature processing statuses, with index constraints on query lookup fields.
 
-#### [MODIFY] [repository.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/intelligence/repository.py)
-Hooks the dynamic scan pipeline to trigger the template parser before crawling files.
-
-#### [MODIFY] [wde.py](file:///c:/AI/Aehteris%20main/aetheris/src/intelligence/wde.py)
-Hooks the kernel discovery scanner to trigger template parser updates.
+#### [NEW] [router.py](file:///c:/AI/Aehteris%20main/aetheris/src/microservice/router.py)
+Implements the FastAPI web-hook validation endpoints. Performs timing-attack-safe HMAC signature verification, applies rate-limiting by source IP hash, and sets strict security headers.
 
 ---
 
-### Component: Runtime Execution & State Control
-#### [NEW] [agent_runtime.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/agent_runtime.py)
-Implements an asynchronous subprocess wrapper around the Claude Code CLI. Reads `.aetheris/ENGINEERING_MANIFEST.json` and injects state configurations as stateless environment configurations/inputs before invocation.
+### Component: Telemetry Dashboard View
+#### [NEW] [dashboard.py](file:///c:/AI/Aehteris%20main/aetheris/src/microservice/dashboard.py)
+Generates a monochromatic terminal status panel mapping telemetry statistics to styling parameters read from `src/config/theme_contract.json`.
 
 ---
 
-### Component: Telemetry & Traffic Compression Proxy
-#### [NEW] [proxy_adapter.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/adapters/proxy_adapter.py)
-Manages the Headroom proxy server daemon lifecycle and configures outbound redirection to `http://localhost:8787`. Enforces SmartCrusher compression on logs/payloads with 0% compression on raw source code files.
-
-#### [MODIFY] [core.py](file:///c:/AI/Aehteris%20main/aetheris/src/aetheris/kernel/core.py)
-Integrates Headroom daemon lifecycle management into `KernelController`.
+### Component: Kernel Execution Manifest
+#### [NEW] [ENGINEERING_MANIFEST.json](file:///c:/AI/Aehteris%20main/aetheris/.aetheris/ENGINEERING_MANIFEST.json)
+Initializes state metadata and active phase configurations for runtime processes.
 
 ---
 
-### Component: Theme Configuration
-#### [NEW] [theme_contract.json](file:///c:/AI/Aehteris%20main/aetheris/src/config/theme_contract.json)
-Maps design token colors and assets to a clean, high-contrast, minimal luxury monochromatic visual style.
+### Component: Verification & Compliance Tests
+#### [NEW] [test_microservice.py](file:///c:/AI/Aehteris%20main/aetheris/tests/test_microservice.py)
+Unit and integration stress tests simulating payload deliveries, timing-attacks, and rate-limiting limits.
 
 ---
 
 ## Verification Plan
 
 ### Automated Tests
-- Build and execute unit tests checking the template scanning logic, mapping parsing accuracy, subprocess state injection, and proxy daemon control.
-
-### Manual Verification
-- Execute `aetheris analyze` and ensure that the ingested third-party skills show up correctly in the CLI matrix.
-- Launch the Aetheris daemon using `aetheris start` and verify that the Headroom proxy process starts successfully.
+- Run `pytest` or `unittest` over `tests/test_microservice.py` to check signature verification, rate-limiting limits, and database constraint compliance.
