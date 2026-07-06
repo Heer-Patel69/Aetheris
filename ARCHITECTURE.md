@@ -1,94 +1,102 @@
-# Aetheris Kernel — Architecture
+# Aetheris Engineering Hypervisor — Architecture Reference
 
-**Version**: 3.0.0
+**Specification Version**: AEKS v1.0  
+**Hypervisor Core Version**: 4.0.0  
 
 ---
 
-## System Overview
+## 1. System Overview
 
-Aetheris Kernel is an Autonomous Software Engineering Operating System (ASE-OS). It is structured into **8 core engines** that cooperate to automatically discover business requirements, make and record technology decisions, compile context packages, run concurrent task DAGs, handle autonomous build/compile recoveries, and enforce a strict Definition of Done (DoD) before completion.
+Aetheris operates as an **Engineering Hypervisor**. Instead of hardcoding engine references or third-party integrations, it is structured into **5 Domain Categories** coordinating via an asynchronous **Event Bus**. Third-party frameworks (Headroom, Everything Claude Code, Claude Code Templates) are resolved as abstract capabilities via a **Capability Registry**.
 
-## System Diagram
+---
 
+## 2. System Diagram
+
+```text
+                           USER GOAL
+                               │
+                               ▼
+                AETHERIS ENGINEERING HYPERVISOR
+                               │
+       ┌───────────────────────┴───────────────────────┐
+       │               Lifecycle Manager               │
+       └───────────────────────┬───────────────────────┘
+                               │
+                               ▼
+                       Workflow Scheduler
+                               │
+                               ▼
+                      Capability Registry
+                               │
+    ┌───────────────┬──────────┴──────────┬───────────────┐
+    ▼               ▼                     ▼               ▼
+Core Domain    Intelligence Domain   Runtime Domain  Eng Domain
+    │               │                     │               │
+    └───────────────┼─────────────────────┼───────────────┘
+                    ▼
+          Capability Registry (DI) ➔ standard Interface
+                    │
+            ┌───────┼───────┐
+            ▼       ▼       ▼
+        Headroom   ECC   Templates
+                    │
+                    ▼
+           Multi Model Router ➔ Gemini / Claude / GPT / GLM / Ollama
+                    │
+                    ▼
+         Verification & Benchmarks
+                    │
+                    ▼
+            .aetheris/ State Engine
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│                          AETHERIS KERNEL                               │
-│  DAG Scheduler, worker pool execution, autonomous recovery engine      │
-├───────────────────┬────────────────────┬───────────────────────────────┤
-│  PRODUCT & ARCH   │  RUNTIME & CONTEXT │  STANDARDS &                  │
-│  INTELLIGENCE     │  INTELLIGENCE      │  READINESS (ESRE)             │
-│  ├ Product Disc.  │  ├ Incremental Scan│  ├ Standards Auditor          │
-│  ├ Requirements   │  ├ Semantic Graph  │  └ DoD Readiness Check        │
-│  ├ Architecture   │  ├ Resource Manager│                               │
-│  └ Tech Decisions │  └ Local Enhancer  │                               │
-├───────────────────┴────────────────────┴───────────────────────────────┤
-│  MEMORY, KNOWLEDGE & LEARNING (MKLE)                                   │
-│  ├ Project Memory  ├ Engineering Knowledge  ├ Workflow Memory  ├ Benchmarks│
-├────────────────────────────────────────┬───────────────────────────────┤
-│  ADAPTIVE ORCHESTRATION (AOL)          │  UNIVERSAL ADAPTER (UAL)      │
-│  ├ Skill Router  └ Model Orchestrator  │  ├ IDE Adapter  └Model Adapter│
-└────────────────────────────────────────┴───────────────────────────────┘
-```
 
-## Execution Pipeline
+---
 
-Aetheris does not run static linear phases. It compiles goals into dynamic Directed Acyclic Graphs (DAGs) and runs them concurrently:
+## 3. The Five Architecture Domains
 
-```
-Goal → Product Discovery → Architecture Design → DAG Build → Execute DAG ─► ESRE Audit ─► DoD Approved
-                                                                ▲             │
-                                                                └─ RCA & Fix ─┘
-```
+Aetheris classifies its engines under five logical namespaces:
 
-## Core Subsystems & Responsibilities
-
-| Subsystem | Owner | Primary Purpose |
+| Domain | Purpose | Core Subsystems |
 |---|---|---|
-| Aetheris Kernel | Core Engine | Lifecycle management, concurrent task DAG scheduling, autonomous recovery rollbacks |
-| PAIE | Product & Architecture | Product Discovery Loop (uncertainty mapping), requirements generation, technology decisions |
-| RCIE | Runtime & Context | Incremental scanning, semantic graph relationships, resource management, local model enhancement |
-| ESRE | Standards & Readiness | Enforce coding principles (SOLID, OWASP, Clean), WCAG accessibility audits, verify DoD |
-| MKLE | Memory & Knowledge | Persistent storage for project config, reusable engineering patterns, execution history |
-| AOL | Adaptive Orchestration | Dynamic registry scanner, versioning, routing of skills and LLM provider queries |
-| UAL | Universal Adapter | Abstract IDE platforms (Cursor, Antigravity, CLI) and model endpoint clients |
+| **Core Domain** | Lifecycle orchestration, DAG schedulers, state storage checkpoints, policies, event bus | `KernelEngine`, `LifecycleEngine`, `WorkflowScheduler`, `StateEngine`, `PolicyEngine`, `EventBus` |
+| **Intelligence Domain** | Code analysis, product parsing, context compilation, memory queries, performance metrics | `RepositoryIntel`, `ProductIntel`, `BusinessIntel`, `ArchitectureIntel`, `ContextCompiler`, `MemoryIntel`, `BenchmarkIntel` |
+| **Engineering Domain** | Specialist domain validations (RFC/SPEC checks, DB migrations, API paths, tests, security) | `SkillEngine`, `RFCEngine`, `SPECEngine`, `DependencyEngine`, `APIEngine`, `DatabaseEngine`, `SecurityEngine`, `TestingEngine` |
+| **Runtime Domain** | Sandbox executions, provider daemon managers, DI capability mapping, LLM routing, DoD engines | `ExecutionEngine`, `VerificationEngine`, `ArtifactEngine`, `ProviderManager`, `CapabilityRegistry`, `ModelRouter`, `DoDEngine` |
+| **Infrastructure Domain** | Integrations, CLI CLI click command entries, dashboard visualization, and telemetry logs | `Marketplace`, `Dashboard`, `Telemetry`, `Analytics`, `CLI`, `Cloud`, `Extensions` |
 
-## State Ownership Map
+---
 
-| State | Owner | Location |
-|---|---|---|
-| Global core config | Config Manager | `~/.aetheris/config/aetheris.yaml` |
-| Project profiles & memory | MKLE | `<workspace>/.aetheris/memory/project-profile.yaml` |
-| Architectural decisions | MKLE | `<workspace>/.aetheris/memory/decisions.jsonl` |
-| Technology trade-off logs | PAIE / MKLE | `<workspace>/.aetheris/memory/tech-decisions.jsonl` |
-| Reusable engineering patterns | MKLE | `~/.aetheris/knowledge/` |
-| Telemetry & runtime benchmarks | MKLE | `~/.aetheris/benchmarks/` |
+## 4. Capability Registry & Providers
 
-## Component-to-Implementation Mapping
+Capabilities are resolved dynamically. Concrete provider implementations inherit from base interfaces.
 
-| Engine | Namespace (under `src/`) | Entry points / Wrappers |
-|---|---|---|
-| Kernel | `kernel/` | `event_bus.py`, `telemetry.py`, `utils.py` |
-| PAIE | `intelligence/` | `scanner.py`, `context.py` (wrappers) |
-| RCIE | `intelligence/` | `scanner.py`, `context.py` (wrappers) |
-| ESRE | `validation/` | `readiness.py` (readiness) |
-| MKLE | `storage/` | `memory.py` (wrapper for storage manager) |
-| AOL | `orchestration/` | `config.py`, `plugins.py`, `registry_cache.py`, `skill_scanner.py` |
-| UAL | `adapters/` | `ide.py`, `model.py` |
-
-## Configuration Hierarchy
-
-```
-Level 1 — aetheris/config/*.yaml (shipped defaults, lowest priority)
-Level 2 — ~/.aetheris/config/*.yaml (user overrides)
-Level 3 — <workspace>/.aetheris/config/*.yaml (project overrides)
-Level 4 — Runtime overrides (highest priority, not persisted)
+```text
+                          Standard Interfaces
+                     ┌─────────────┼─────────────┐
+                     ▼             ▼             ▼
+             HeadroomProvider  ECCProvider  ClaudeTemplateProvider
 ```
 
-## Platform Constraints
+- **`compression`**: Handled by `HeadroomProvider` using SmartCrusher rules.
+- **`hooks`**: Handled by `ECCProvider` utilizing Claude Code hooks.
+- **`templates`**: Handled by `ClaudeTemplateProvider` loading Claude Templates.
 
-| Constraint | Impact | Workaround |
-|---|---|---|
-| No programmatic model switching | LLM Router is advisory | Recommend model in trace; adapt to active model |
-| No request interception | Aetheris Kernel activation not guaranteed | Global AGENTS.md as fallback instruction |
-| No token count access | Cost optimization is estimation-based | Advisory cost tracking, not metering |
-| No background processes | No persistent daemon | Scripts invoked on-demand; state persists via filesystem |
+---
+
+## 5. State Ownership Map (`.aetheris/`)
+
+The hypervisor state is tracked under the `.aetheris/` directory matching the layout specified in [AEKS v1.0](docs/AEKS_v1.0.md).
+
+---
+
+## 6. Execution Pipeline
+
+```text
+Goal Received ➔ Index Repository ➔ Resolve Capabilities ➔ Build Task Graph ➔ Execute Batches (Parallel) ➔ Validate DoD ➔ Commit State
+```
+Communication is completely decoupled. Nothing calls another engine directly; everything communicates via the `EventBus`:
+
+```text
+GoalReceived ➔ RepositoryIndexed ➔ CapabilityResolved ➔ TaskScheduled ➔ VerificationPassed ➔ StateSaved
+```

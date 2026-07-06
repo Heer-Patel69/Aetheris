@@ -1,0 +1,5 @@
+from kernel.providers.base import BaseProvider, CompressionCapability, TemplateCapability, ExecutionCapability
+from kernel.providers.registry import CapabilityRegistry
+from kernel.providers.headroom_provider import HeadroomProvider
+from kernel.providers.ecc_provider import ECCProvider
+from kernel.providers.claude_template_provider import ClaudeTemplateProvider

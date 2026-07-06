@@ -10,27 +10,38 @@ from enterprise import EnterprisePlatform
 from organization import AIOrganizationManager
 from learning import LearningSystem
 from evolution import SelfEvolutionOrchestrator
+from kernel.state import StateEngine
+from kernel.providers.registry import CapabilityRegistry
 
 class AetherisKernel:
-    def __init__(self, workspace_path):
+    """
+    AEKS v1.0 Engineering Hypervisor Core.
+    Governs the entire engineering lifecycle, coordinating the Core, Intelligence,
+    Engineering, Runtime, and Infrastructure domains, resolving interchangeable
+    capability modules dynamically via the CapabilityRegistry.
+    """
+    def __init__(self, workspace_path: str):
         self.workspace_path = Path(workspace_path).resolve()
         initialize_perimeter(self.workspace_path)
         self.telemetry = TelemetryEngine(self.workspace_path)
         self.event_bus = EventBus(self.workspace_path, self.telemetry)
-        self.runtime_dashboard_path = self.workspace_path / ".aetheris" / "runtime.json"
-        self.execution_state_path = self.workspace_path / ".aetheris" / "execution_state.json"
         
-        # Register new specification layers
+        # Instantiate AEKS state and registry engines
+        self.state_engine = StateEngine(self.workspace_path)
+        self.state_engine.initialize()
+        self.registry = CapabilityRegistry(self.workspace_path)
+        
+        self.runtime_dashboard_path = self.workspace_path / ".aetheris" / "state" / "runtime.json"
+        self.execution_state_path = self.workspace_path / ".aetheris" / "state" / "execution_state.json"
+        
         self.runtime = AutonomousRuntimeEngine(self.workspace_path)
         self.enterprise = EnterprisePlatform(self.workspace_path)
         self.org_manager = AIOrganizationManager()
         self.learning = LearningSystem(self.workspace_path)
         self.evolution = SelfEvolutionOrchestrator(self.workspace_path)
         
-    def _update_dashboard(self, step_name, progress, model="gemini-1.5-flash", active_specialist="kernel"):
-        """
-        Updates the runtime.json dashboard statistics.
-        """
+    def _update_dashboard(self, step_name: str, progress: float, model: str = "gemini-1.5-flash", active_specialist: str = "kernel") -> None:
+        """Updates runtime dashboard status."""
         try:
             self.runtime_dashboard_path.parent.mkdir(parents=True, exist_ok=True)
             dashboard_data = {
@@ -44,27 +55,39 @@ class AetherisKernel:
                 "autonomous_recoveries": 0,
                 "production_score": 0
             }
-            self.runtime_dashboard_path.write_text(json.dumps(dashboard_data, indent=2), encoding="utf-8")
+            serialized = json.dumps(dashboard_data, indent=2)
+            self.runtime_dashboard_path.write_text(serialized, encoding="utf-8")
+            
+            # Compatibility copy
+            compat_dashboard = self.workspace_path / ".aetheris" / "runtime.json"
+            compat_dashboard.write_text(serialized, encoding="utf-8")
         except Exception as e:
             sys.stderr.write(f"Warning: Failed to update dashboard: {e}\n")
 
-    def run_autonomous_loop(self, user_goal):
+    def run_autonomous_loop(self, user_goal: str) -> bool:
         """
-        Execution loop:
-        1. Ingest goal via Intent & Product Understanding Engine (GoalManager)
-        2. Perform Completeness Analysis
-        3. Compile Universal Blueprint
-        4. Assemble & Execute Task DAG
-        5. Verify Definition of Done
+        Hypervisor Event-Driven Loop execution:
+        1. Ingest goal & publish GoalReceived event.
+        2. Run file system sweep & publish RepositoryIndexed event.
+        3. Compile context using the abstract compression capability.
+        4. Generate dependency DAG workflow.
+        5. Dispatch waves of parallel execution queue batches.
+        6. Verify Definition of Done (DoD) & commit state checkpoints.
         """
         self.telemetry.log_stage_start("sess-autonomous", "SESSION_START")
         self._update_dashboard("Ingesting user goal...", 5.0)
         
-        # Validate request and credentials with Enterprise Platform (SPEC-101)
+        # Publish GoalReceived event
+        self.event_bus.publish("GoalReceived", "Kernel", {"goal": user_goal})
+        
         auth = self.enterprise.authorize_request("secure-aetheris-token-2026", "execute")
         if not auth["authorized"]:
             raise PermissionError(f"Enterprise authorization denied: {auth['status']}")
 
+        # Resolve compression capability (Headroom) and start proxy daemon
+        compression_cap = self.registry.resolve("compression")
+        compression_cap.start()
+        
         # Initialize ATIB subsystems
         from intelligence import (
             TokenIntelligence, RepositoryMetrics, ContextOptimizer,
@@ -91,35 +114,42 @@ class AetherisKernel:
                         })
                     except Exception:
                         pass
+                        
         opt_context = context_opt.optimize_context(user_goal, available_files)
+        
+        # AEKS: Apply compression capability strictly after context compiling
+        for f in opt_context["selected_files"]:
+            f["content"] = compression_cap.compress(f["content"])
+            
         files_used_paths = [f["path"] for f in opt_context["selected_files"]]
         repo_summary = repo_metrics_eng.calculate_metrics(files_used_paths)
 
         # Track simulated API token consumption for each engine step
-        token_intel.track_request(input_tokens=2000, output_tokens=300, latency=0.3)  # WDE
-        token_intel.track_request(input_tokens=5000, output_tokens=800, latency=0.7)  # URUE
-        token_intel.track_request(input_tokens=4000, output_tokens=600, latency=0.5)  # PDE
-        token_intel.track_request(input_tokens=6000, output_tokens=1000, latency=0.8) # APE
-        token_intel.track_request(input_tokens=3000, output_tokens=400, latency=0.4)  # EDE
-        token_intel.track_request(input_tokens=4000, output_tokens=500, latency=0.6)  # QIA
-        token_intel.track_request(input_tokens=8000, output_tokens=1200, latency=1.2) # Planners/Scheduler
-        token_intel.track_request(input_tokens=3000, output_tokens=400, latency=0.5)  # DOD
+        token_intel.track_request(input_tokens=2000, output_tokens=300, latency=0.3)
+        token_intel.track_request(input_tokens=5000, output_tokens=800, latency=0.7)
+        token_intel.track_request(input_tokens=4000, output_tokens=600, latency=0.5)
+        token_intel.track_request(input_tokens=6000, output_tokens=1000, latency=0.8)
+        token_intel.track_request(input_tokens=3000, output_tokens=400, latency=0.4)
+        token_intel.track_request(input_tokens=4000, output_tokens=500, latency=0.6)
+        token_intel.track_request(input_tokens=8000, output_tokens=1200, latency=1.2)
+        token_intel.track_request(input_tokens=3000, output_tokens=400, latency=0.5)
             
-        # Start the runtime engine sandbox (SPEC-066 / SPEC-076)
+        # Start the runtime engine sandbox
         self.runtime.start()
         
-        # Initialize Engineering Knowledge Base (SPEC-007)
+        # Initialize Engineering Knowledge Base
         from intelligence.ekb import EngineeringKnowledgeBase
         ekb = EngineeringKnowledgeBase(str(self.workspace_path))
-        ekb.purge_all() # Clean run
+        ekb.purge_all()
 
-        # Step 1: Run Workspace Discovery Engine (SPEC-001 - WDE)
-        print("Executing Workspace Discovery Engine (SPEC-001)...")
+        # Step 1: Run Workspace Discovery Engine (WDE)
+        print("Executing Workspace Discovery Engine...")
         try:
             from intelligence.wde import WorkspaceDiscoveryEngine
             wde = WorkspaceDiscoveryEngine(self.workspace_path)
             inventories = wde.scan()
             ekb.register_object("wde_inventories", inventories, producer="WDE")
+            self.event_bus.publish("RepositoryIndexed", "WDE", inventories)
         except Exception as e:
             print(f"Warning: WDE module failed: {e}. Utilizing default mock inventories.")
             inventories = {
@@ -127,9 +157,10 @@ class AetherisKernel:
                 "language.inventory": {"languages": {"python": {}}}
             }
             ekb.register_object("wde_inventories", inventories, producer="WDE_Fallback")
+            self.event_bus.publish("RepositoryIndexed", "WDE_Fallback", inventories)
             
-        # Step 2: Run Universal Requirement Understanding Engine (SPEC-002 - URUE)
-        print("Executing Universal Requirement Understanding Engine (SPEC-002)...")
+        # Step 2: Run Universal Requirement Understanding Engine (URUE)
+        print("Executing Universal Requirement Understanding Engine...")
         try:
             from intelligence.urue import UniversalRequirementUnderstandingEngine
             urue = UniversalRequirementUnderstandingEngine(self.workspace_path)
@@ -143,8 +174,8 @@ class AetherisKernel:
             }
             ekb.register_object("requirement", requirement_data, producer="URUE_Fallback")
 
-        # Step 3: Run Product Discovery Engine (SPEC-003 - PDE)
-        print("Executing Product Discovery Engine (SPEC-003)...")
+        # Step 3: Run Product Discovery Engine (PDE)
+        print("Executing Product Discovery Engine...")
         try:
             from intelligence.pde import ProductDiscoveryEngine
             pde = ProductDiscoveryEngine(self.workspace_path)
@@ -157,8 +188,8 @@ class AetherisKernel:
             product_plan = {"features": [], "estimates": {"complexity": "LOW"}}
             ekb.register_object("product_plan", product_plan, producer="PDE_Fallback")
 
-        # Step 4: Run Architecture Planning Engine (SPEC-004 - APE)
-        print("Executing Architecture Planning Engine (SPEC-004)...")
+        # Step 4: Run Architecture Planning Engine (APE)
+        print("Executing Architecture Planning Engine...")
         try:
             from intelligence.ape import ArchitecturePlanningEngine
             ape = ArchitecturePlanningEngine(self.workspace_path)
@@ -166,17 +197,15 @@ class AetherisKernel:
             architecture_plan, architecture_graph = ape.plan(prod_obj)
             ekb.register_object("architecture_plan", architecture_plan, producer="APE")
             
-            # Step 4.5: Run Engineering Decision Engine (SPEC-005 - EDE)
+            # Step 4.5: Run Engineering Decision Engine (EDE)
             from intelligence.ede import EngineeringDecisionEngine
             ede = EngineeringDecisionEngine(str(self.workspace_path), ekb)
             db_opts = ["PostgreSQL", "SQLite"]
             db_decision = ede.evaluate_decision("database", db_opts)
             
-            # Step 4.8: Run Query & Impact Analysis Engine (SPEC-008 - QIA)
+            # Step 4.8: Run Query & Impact Analysis Engine (QIA)
             from intelligence.qia import QueryAndImpactAnalysisEngine
             qia = QueryAndImpactAnalysisEngine(str(self.workspace_path), ekb)
-            
-            # Register structural layers into the graph engine
             qia.ege.add_node("layer:domain", "ArchitectureLayer")
             qia.ege.add_node("layer:application", "ArchitectureLayer")
             qia.ege.add_node("layer:infrastructure", "ArchitectureLayer")
@@ -187,26 +216,22 @@ class AetherisKernel:
             impact_report = qia.analyze_impact("layer:domain")
             print(f"[QIA] Domain layer modification impacts: {', '.join([n['id'] for n in impact_report['affected_nodes']])}")
             
-            # Step 5: Run Design Planning Engine (SPEC-009 - EDPE)
-            print("Executing Design Planning Engine (SPEC-009)...")
+            # Step 5: Run Design Planning Engine
             from intelligence.planners import DesignPlanningEngine
             edpe = DesignPlanningEngine(str(self.workspace_path), ekb)
             design_plan = edpe.plan_design(prod_obj)
             
-            # Step 6: Run Frontend Planning Engine (SPEC-010 - FPE)
-            print("Executing Frontend Planning Engine (SPEC-010)...")
+            # Step 6: Run Frontend Planning Engine
             from intelligence.planners import FrontendPlanningEngine
             fpe = FrontendPlanningEngine(str(self.workspace_path), ekb)
             frontend_plan = fpe.plan_frontend(prod_obj, design_plan)
             
-            # Step 7: Run Backend Planning Engine (SPEC-011 - BPE)
-            print("Executing Backend Planning Engine (SPEC-011)...")
+            # Step 7: Run Backend Planning Engine
             from intelligence.planners import BackendPlanningEngine
             bpe = BackendPlanningEngine(str(self.workspace_path), ekb)
             backend_plan = bpe.plan_backend(prod_obj, architecture_plan)
             
-            # Step 8 to 29: Execute SPEC-012 to SPEC-029 Planning Engines
-            print("Executing Extended Planning Suite (SPEC-012 to SPEC-029)...")
+            # Step 8 to 29: Execute Extended Planning Suite
             from intelligence.planners import (
                 DatabasePlanningEngine, APIPlanningEngine, SecurityPlanningEngine,
                 InfrastructurePlanningEngine, ExternalServicesPlanningEngine, DevOpsPlanningEngine,
@@ -235,14 +260,12 @@ class AetherisKernel:
             ReleaseRolloutPlanningEngine(str(self.workspace_path), ekb).plan(prod_obj)
             MaintenanceLifecyclePlanningEngine(str(self.workspace_path), ekb).plan(prod_obj)
 
-            # Step 30: Final Engineering Blueprint Compiler (SPEC-030)
-            print("Executing Final Engineering Blueprint Compiler (SPEC-030)...")
+            # Step 30: Final Engineering Blueprint Compiler
             from intelligence.planners import FinalEngineeringBlueprintCompiler
             febc = FinalEngineeringBlueprintCompiler(str(self.workspace_path), ekb)
             blueprint_result = febc.compile_blueprint()
             
-            # Step 32 to 34: Run Task Decomposition, Dependency Graph Builder, and Skill Selection Engine (SPEC-032 to SPEC-034)
-            print("Executing Autonomous Execution Planning Engines (SPEC-032 to SPEC-034)...")
+            # Step 32 to 34: Run Task Decomposition, Dependency Graph Builder, and Skill Selection Engine
             from execution.tde import TaskDecompositionEngine
             from execution.dgb import DependencyGraphBuilder
             from execution.sse import SkillSelectionEngine
@@ -256,8 +279,7 @@ class AetherisKernel:
             sse = SkillSelectionEngine(str(self.workspace_path), ekb)
             skills_report = sse.select_skills(exec_tree["tasks"])
             
-            # Step 35 to 37: Run Model Routing, Context Assembly, and Execution Scheduler (SPEC-035 to SPEC-037)
-            print("Executing Execution Intelligence Layer Engines (SPEC-035 to SPEC-037)...")
+            # Step 35 to 37: Run Model Routing, Context Assembly, and Execution Scheduler
             from execution.mre import ModelRoutingEngine
             from execution.cae import ContextAssemblyEngine
             from execution.es import ExecutionScheduler
@@ -274,8 +296,7 @@ class AetherisKernel:
             es = ExecutionScheduler(str(self.workspace_path), ekb)
             schedule_plan = es.schedule(ekb.query_objects({"type": "topological_order"})[0]["content"], route_map)
             
-            # Step 38 to 40: Run Parallel Execution, Code Generation, and Self Review (SPEC-038 to SPEC-040)
-            print("Executing Autonomous Engineering Layer Engines (SPEC-038 to SPEC-040)...")
+            # Step 38 to 40: Run Parallel Execution, Code Generation, and Self Review
             from execution.pee import ParallelExecutionEngine
             from execution.acge import AutonomousCodeGenerationEngine
             from execution.sre import SelfReviewEngine
@@ -295,8 +316,7 @@ class AetherisKernel:
             for report in code_gen_reports:
                 review_reports.append(sre.review(report["modified_files"]))
             
-            # Step 41 to 43: Run Patch & Recovery, State Persistence, and Git Operations (SPEC-041 to SPEC-043)
-            print("Executing Recovery & Continuity Layer Engines (SPEC-041 to SPEC-043)...")
+            # Step 41 to 43: Run Patch & Recovery, State Persistence, and Git Operations
             from execution.pre import PatchRecoveryEngine
             from execution.spe import StatePersistenceEngine
             from execution.goe import GitOperationsEngine
@@ -319,8 +339,7 @@ class AetherisKernel:
                 files_list = [f["path"] for f in report["modified_files"]]
                 goe.commit("task_db_init", "Implement changes verified by self review", files_list)
                 
-            # Step 44 to 46: Run Documentation, Execution Metrics, and Execution Orchestrator (SPEC-044 to SPEC-046)
-            print("Executing System Integration & Orchestration Layer Engines (SPEC-044 to SPEC-046)...")
+            # Step 44 to 46: Run Documentation, Execution Metrics, and Execution Orchestrator
             from execution.dge import DocumentationGenerationEngine
             from execution.eme import ExecutionMetricsEngine
             from execution.eo import ExecutionOrchestrator
@@ -337,16 +356,10 @@ class AetherisKernel:
             eo = ExecutionOrchestrator(str(self.workspace_path), ekb)
             eo.run(str(self.workspace_path), user_goal)
             
-            # Step 7.5: Run Technical Design Document Compiler
-            print("Compiling Technical Design Document Reports...")
             from intelligence.planners import TechnicalDesignDocumentCompiler
             tdd_compiler = TechnicalDesignDocumentCompiler(str(self.workspace_path), ekb)
             tdd_compiler.compile_tdd_reports()
             
-            # Map requirements data into universal blueprint for compatibility
-            req_data = ekb.query_objects({"type": "requirement"})[0]["content"]
-            modules = req_data.get("modules", [])
-            inferred = [m["name"].lower().replace(" ", "_") for m in modules] if modules else ["database_migrations", "authentication", "api_controllers", "unit_testing"]
             blueprint = {
                 "target_platform": "Universal Service Engine",
                 "vision": user_goal,
@@ -354,11 +367,10 @@ class AetherisKernel:
                     "database": db_decision["selected_option"],
                     "frontend": "Next.js"
                 },
-                "inferred_subsystems": inferred
+                "inferred_subsystems": [m["name"].lower().replace(" ", "_") for m in requirement_data.get("modules", [])] if requirement_data.get("modules") else ["database_migrations", "authentication", "api_controllers", "unit_testing"]
             }
-            self.telemetry.log_stage_complete("sess-autonomous", "UEUE_COMPLETED", 0, {"understanding": req_data})
         except Exception as e:
-            print(f"Warning: APE/EDE/QIA/Planners module failed: {e}. Using fallback structure.")
+            print(f"Warning: Planners failed: {e}. Using fallback structure.")
             blueprint = {
                 "target_platform": "Universal Service Engine",
                 "vision": user_goal,
@@ -366,9 +378,7 @@ class AetherisKernel:
                 "inferred_subsystems": ["database_migrations", "authentication", "api_controllers", "frontend_views", "unit_testing"]
             }
             
-        # Trigger collaborative AI Organization agent session (SPEC-121)
         self.org_manager.run_collaborative_session(user_goal)
-
         self._update_dashboard("Compiling Task DAG...", 40.0)
         
         # Step 3: Plan & Build task DAG
@@ -377,41 +387,36 @@ class AetherisKernel:
             from kernel.planner import EngineeringPlanner
             planner = EngineeringPlanner(self.workspace_path)
             dag = planner.build_task_dag(blueprint)
-            self.telemetry.log_stage_complete("sess-autonomous", "DAG_COMPILED", 0, {"dag": dag})
         except ImportError:
-            print("Warning: EngineeringPlanner not yet fully implemented. Generating sequential plan.")
-            dag = ["db-init", "auth-setup", "api-routes", "frontend-views"]
+            dag = ["database_migrations", "authentication", "api_controllers", "frontend_views", "unit_testing"]
             
+        # Trigger TaskScheduled event
+        self.event_bus.publish("TaskScheduled", "Kernel", {"dag": dag})
+        
         self._update_dashboard("Executing tasks...", 60.0)
         
-        # Step 4: Run Scheduler Loops
+        # Step 4: Run Scheduler Loops (AEKS Parallel Schedulers)
         print("Executing task DAG...")
-        try:
-            from kernel.scheduler import RuntimeScheduler
-            scheduler = RuntimeScheduler(self.workspace_path)
-            scheduler.execute_dag(dag)
-        except ImportError:
-            print("Warning: Scheduler not yet implemented. Performing mock execution.")
-            for step in dag:
-                print(f"Executing step: {step}...")
-                
+        from kernel.scheduler import RuntimeScheduler
+        scheduler = RuntimeScheduler(self.workspace_path)
+        scheduler_success = scheduler.execute_dag(dag)
+        if not scheduler_success:
+            self.event_bus.publish("VerificationFailed", "Scheduler", {"dag": dag})
+            return False
+            
         self._update_dashboard("Verifying Definition of Done...", 90.0)
         
-        # Step 5: Verify DoD
+        # Step 5: Verify DoD (AEKS DoD Engine)
         print("Evaluating Definition of Done compliance...")
-        try:
-            from validation.readiness import ReadinessEngine
-            auditor = ReadinessEngine(self.workspace_path)
-            compliance = auditor.verify_definition_of_done()
-            self.telemetry.log_stage_complete("sess-autonomous", "AUDIT_COMPLETED", 0, {"score": compliance.get("score", 0)})
-        except ImportError:
-            print("Warning: ReadinessEngine not yet implemented. Mocking 100% compliance.")
-            compliance = {"score": 100}
-            
+        from validation.dod import DoDEngine
+        dod_engine = DoDEngine(str(self.workspace_path))
+        compliance = dod_engine.verify_definition_of_done()
+        
+        self.event_bus.publish("StateSaved", "Kernel", {"compliance": compliance})
         self._update_dashboard("Execution Complete.", 100.0)
         self.telemetry.log_stage_complete("sess-autonomous", "SESSION_END", 0, {"status": "SUCCESS"})
         
-        # Log execution learning and experience (SPEC-086)
+        # Log learning metrics
         self.learning.process_execution(
             task_id="sess-autonomous",
             prompt=user_goal,
@@ -453,7 +458,6 @@ class AetherisKernel:
         dash_data = dash_metrics_eng.generate_dashboard(token_summary, repo_summary, trends)
         bench_data = bench_eng.run_benchmark(token_summary, repo_summary, opt_context)
         
-        # Print the Execution Report format specified in ATIB requirement
         print("\n=======================================================")
         print("          ATIB EXECUTION & BENCHMARK REPORT            ")
         print("=======================================================")
@@ -478,31 +482,27 @@ class AetherisKernel:
         print(f"Performance Score:     {repo_summary['coverage']['performance_coverage']}%")
         print(f"Documentation Score:   {repo_summary['coverage']['documentation_coverage']}%")
         print(f"Production Score:      {repo_summary['coverage']['deployment_coverage']}%")
-        print("-------------------------------------------------------")
-        print("Recommendations:")
-        print(" - Maintain distinct modular engine separation.")
-        print(" - Keep context compression optimized to preserve token budget.")
         print("=======================================================\n")
 
-        # Trigger autonomous self-evolution cycle (SPEC-141 / SPEC-170)
         self.evolution.run_evolution_cycle()
         
-        # Stop runtime engine sandbox (SPEC-066)
-        self.runtime.stop()
+        # Stop compression proxy daemon
+        compression_cap.stop()
         
+        self.runtime.stop()
         print("Autonomous loop completed successfully.")
         return True
 
 def main():
     if len(sys.argv) == 2 and sys.argv[1] in ("--version", "-v"):
-        version = "3.1.0"
+        version = "4.0.0"
         try:
             version_file = Path(__file__).resolve().parent.parent.parent / "VERSION"
             if version_file.exists():
                 version = version_file.read_text(encoding="utf-8").strip()
         except Exception:
             pass
-        sys.stdout.write(f"Aetheris Kernel v{version}\n")
+        sys.stdout.write(f"Aetheris Hypervisor Core v{version}\n")
         sys.exit(0)
 
     if len(sys.argv) < 3 or sys.argv[1] != "--goal":

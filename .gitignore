@@ -9,3 +9,7 @@ test_compliance_workspace/
 scripts/__pycache__/
 scratch/__pycache__/
 *.egg-info/
+*.db
+webhook_validator.db
+*.db
+webhook_validator.db

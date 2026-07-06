@@ -36,7 +36,7 @@ ASCII_LOGO = r"""
 def print_banner():
     """Print the branded Aetheris ASCII art header."""
     console.print(f"[bold cyan]{ASCII_LOGO}[/bold cyan]")
-    console.print("[dim cyan]         AI Engineering Operating System | AntiGravity Core v0.1.0[/dim cyan]\n")
+    console.print("[dim cyan]             Aetheris Engineering Hypervisor | AEKS Core v1.0.0[/dim cyan]\n")
 
 
 @click.group(invoke_without_command=True)
@@ -114,9 +114,9 @@ def start():
         pid = controller.spawn_daemon()
         time.sleep(0.8)
 
-    console.print(f"[bold green][OK] Aetheris Kernel successfully locked onto system PID: [cyan]{pid}[/cyan][/bold green]")
-    console.print("> [bold magenta]STATUS: WHOLE CODING PROCESS IS NOW ROUTED AND GOVERNED BY AETHERIS KERNEL[/bold magenta]")
-    console.print("  [dim]Context filters, RFC governance laws, and specifications contract verification loops active.[/dim]")
+    console.print(f"[bold green][OK] Aetheris Hypervisor successfully locked onto system PID: [cyan]{pid}[/cyan][/bold green]")
+    console.print("> [bold magenta]STATUS: CODING LIFECYCLE ROUTED THROUGH AETHERIS HYPERVISOR[/bold magenta]")
+    console.print("  [dim]Capability Registry, decoupled providers, and AEKS v1.0 Definition of Done active.[/dim]")
 
 
 @main.command()

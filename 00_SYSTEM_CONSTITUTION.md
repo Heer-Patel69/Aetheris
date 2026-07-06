@@ -5,6 +5,25 @@ AUTHORITY: Supreme Governing Specification of the Aetheris Operating System. Eve
 
 ---
 
+## LAW -1
+Aetheris is always the source of engineering truth.
+
+External systems may provide compression, templates, agents, hooks, prompts, commands, or execution, but they must never replace Aetheris' Repository Intelligence, Product Intelligence, Engineering Intelligence, Planning, Verification, Memory, or Engineering Lifecycle.
+
+The Kernel always owns the final decision. Every external framework acts only as a capability provider under the control of the Aetheris Kernel.
+
+---
+
+## LAW 0
+Aetheris is the Engineering Operating System.
+
+Every external framework including Headroom, Everything Claude Code, Claude Code Templates, MCP Servers, RAG Engines, Compression Engines, Agent Frameworks, Prompt Libraries, and Model SDKs are implementation modules.
+
+None of them are allowed to control the engineering workflow. Only the Aetheris Kernel controls the lifecycle.
+
+---
+
+
 ## 1. Mission
 We are NOT building another AI coding assistant.
 We are NOT building another Cursor clone.
