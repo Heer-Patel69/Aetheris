@@ -74,27 +74,12 @@ export default function AnalyticsScreen() {
 
       {/* Visual Token Utilization Graph (SVG-driven) */}
       <div className="section-card" style={{ marginTop: 'var(--space-lg)' }}>
-        <div className="section-card-title">Token Load Progression (Last 24 Hours)</div>
-        <div style={{ height: '120px', display: 'flex', alignItems: 'flex-end', gap: '8px', padding: '10px 0', borderBottom: 'var(--border-default)' }}>
-          {[20, 35, 45, 30, 60, 75, 40, 50, 65, 80, 95, 70, 85, 90, 60, 45, 55, 68, 72, 80, 85, 92, 74, 98].map((pct, idx) => (
-            <div
-              key={idx}
-              style={{
-                flex: 1,
-                height: `${pct}%`,
-                background: 'linear-gradient(to top, var(--accent-primary), var(--accent-cyan))',
-                borderRadius: '2px 2px 0 0',
-                transition: 'height 0.5s ease',
-                position: 'relative'
-              }}
-              title={`Hour ${idx + 1}: ${pct}% load`}
-            />
-          ))}
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '10px', color: 'var(--text-muted)', marginTop: '4px' }}>
-          <span>24 Hours Ago</span>
-          <span>12 Hours Ago</span>
-          <span>Active (Now)</span>
+        <div className="section-card-title">Token Load Progression (Live)</div>
+        <div style={{ height: '120px', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: '8px', padding: '10px 0', borderBottom: 'var(--border-default)' }}>
+          {/* No live historical token data is currently emitted by the runtime */}
+          <div className="no-data" style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', border: 'none' }}>
+            <p>Awaiting live telemetry streams...</p>
+          </div>
         </div>
       </div>
     </div>

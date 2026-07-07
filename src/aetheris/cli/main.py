@@ -102,6 +102,37 @@ def analyze():
     console.print(table)
 
 
+def detect_ide_cli() -> str:
+    import os, psutil
+    term_program = os.environ.get("TERM_PROGRAM", "")
+    if "vscode" in term_program.lower():
+        return "VS Code"
+    if "cursor" in term_program.lower() or os.environ.get("CURSOR_APP_PATH"):
+        return "Cursor"
+    
+    if os.path.exists(os.path.expanduser("~/.gemini/antigravity-ide")):
+        return "Antigravity IDE"
+        
+    try:
+        current_proc = psutil.Process(os.getpid())
+        parent = current_proc.parent()
+        for _ in range(5):
+            if not parent:
+                break
+            name = parent.name().lower()
+            if "vscode" in name or "code" in name:
+                return "VS Code"
+            if "cursor" in name:
+                return "Cursor"
+            if "idea" in name or "pycharm" in name or "webstorm" in name:
+                return "JetBrains"
+            if "windsurf" in name:
+                return "Windsurf"
+            parent = parent.parent()
+    except Exception:
+        pass
+    return "Terminal / CLI"
+
 @main.command()
 def start():
     """Enables Aetheris execution management, capturing code generation tasks."""
@@ -109,6 +140,33 @@ def start():
     if controller.is_running():
         console.print(f"[bold yellow]![/bold yellow] Core daemon active at process id: {controller.get_active_pid()}")
         return
+
+    import json, os
+    from pathlib import Path
+    state_dir = Path(".aetheris/state")
+    state_dir.mkdir(parents=True, exist_ok=True)
+    state_path = state_dir / "runtime.json"
+    
+    state = {}
+    if state_path.exists():
+        try:
+            with open(state_path, "r", encoding="utf-8") as f:
+                state = json.load(f)
+        except Exception:
+            pass
+            
+    ide_name = detect_ide_cli()
+    state["ide"] = ide_name
+    
+    if ide_name == "Antigravity IDE":
+        state["model_in_use"] = "Gemini 3.1 Pro (High)"
+    elif ide_name == "Cursor":
+        state["model_in_use"] = "Claude 3.5 Sonnet (Thinking)"
+    else:
+        state["model_in_use"] = "System Default LLM"
+        
+    with open(state_path, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
 
     with Status("[bold green]Spinning up background context compression brokers...", console=console):
         pid = controller.spawn_daemon()
@@ -141,12 +199,43 @@ def stop():
 
 @main.command()
 def dashboard():
-    """Prints the running telemetry portal url path constraints."""
+    """Connects to the running telemetry portal or starts it."""
     print_banner()
     if not controller.is_running():
-        console.print("[bold red]X Server Core offline.[/bold red] Run [yellow]aetheris start[/yellow] to open tracking views.")
+        if click.confirm("Aetheris Runtime is not currently running. Would you like to start it?", default=True):
+            ctx = click.get_current_context()
+            ctx.invoke(start)
+        else:
+            return
+            
+    console.print("Starting Aetheris Mission Control Backend (WebSocket Server)...")
+    import subprocess
+    import os
+    from pathlib import Path
+    
+    ws_server_path = Path(__file__).parent.parent / "infrastructure" / "dashboard_server.py"
+    subprocess.Popen([sys.executable, str(ws_server_path)])
+    
+    console.print("Starting Aetheris Mission Control UI (Vite Dev Server)...")
+    # Determine the web directory
+    # main.py is located at src/aetheris/cli/main.py
+    # web is located at web/ relative to the project root
+    web_dir = Path(__file__).resolve().parent.parent.parent.parent / "web"
+    
+    if not web_dir.exists():
+        console.print(f"[bold red]X[/bold red] Web directory not found at {web_dir}. Are you in the aetheris project root?")
         return
-    console.print("Live Metrics Workspace Address: [bold cyan]http://localhost:8448[/bold cyan]")
+
+    if not (web_dir / "node_modules").exists():
+        console.print("[dim]Installing UI dependencies (this might take a moment)...[/dim]")
+        subprocess.run("npm install", cwd=web_dir, shell=True)
+
+    # Start Vite dev server
+    subprocess.Popen("npm run dev", cwd=web_dir, shell=True)
+    
+    console.print("Connecting to active Aetheris control plane at [bold cyan]http://localhost:5173[/bold cyan]...")
+    import webbrowser
+    webbrowser.open("http://localhost:5173")
 
 
 @main.command()

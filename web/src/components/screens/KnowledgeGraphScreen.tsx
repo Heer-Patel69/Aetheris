@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Network, ZoomIn, ZoomOut, RotateCcw } from 'lucide-react'
+import { useAetheris } from '../../context/AetherisContext'
 
 interface Node {
   id: string;
@@ -18,6 +19,7 @@ interface Edge {
 
 export default function KnowledgeGraphScreen() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const { skills, rfcSpecs, integrations } = useAetheris();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -26,23 +28,32 @@ export default function KnowledgeGraphScreen() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Build standard nodes/edges
+    // Build standard nodes/edges dynamically
     const nodes: Node[] = [
-      { id: '1', label: 'Aetheris Core', type: 'project', x: 250, y: 150, vx: 0, vy: 0 },
-      { id: '2', label: 'agency-ui-designer', type: 'skill', x: 150, y: 100, vx: 0, vy: 0 },
-      { id: '3', label: 'agency-senior-developer', type: 'skill', x: 350, y: 100, vx: 0, vy: 0 },
-      { id: '4', label: 'RFC-001 Workspace', type: 'rfc', x: 250, y: 50, vx: 0, vy: 0 },
-      { id: '5', label: 'SPEC-010 Security', type: 'spec', x: 250, y: 250, vx: 0, vy: 0 },
-      { id: '6', label: 'Headroom Adapter', type: 'integration', x: 100, y: 200, vx: 0, vy: 0 }
+      { id: 'core', label: 'Aetheris Core', type: 'project', x: 250, y: 150, vx: 0, vy: 0 }
     ];
+    const edges: Edge[] = [];
 
-    const edges: Edge[] = [
-      { source: '1', target: '2' },
-      { source: '1', target: '3' },
-      { source: '1', target: '4' },
-      { source: '1', target: '5' },
-      { source: '2', target: '6' }
-    ];
+    // Add Skills
+    skills?.forEach((s, idx) => {
+      const id = `s_${idx}`;
+      nodes.push({ id, label: s.name, type: 'skill', x: Math.random() * 500, y: Math.random() * 300, vx: 0, vy: 0 });
+      edges.push({ source: 'core', target: id });
+    });
+
+    // Add RFCs and Specs
+    rfcSpecs?.forEach((r, idx) => {
+      const id = `r_${idx}`;
+      nodes.push({ id, label: r.id, type: r.type === 'Architecture' ? 'rfc' : 'spec', x: Math.random() * 500, y: Math.random() * 300, vx: 0, vy: 0 });
+      edges.push({ source: 'core', target: id });
+    });
+
+    // Add Integrations
+    integrations?.forEach((i, idx) => {
+      const id = `i_${idx}`;
+      nodes.push({ id, label: i.name, type: 'integration', x: Math.random() * 500, y: Math.random() * 300, vx: 0, vy: 0 });
+      edges.push({ source: 'core', target: id });
+    });
 
     let animationId: number;
 
@@ -135,7 +146,7 @@ export default function KnowledgeGraphScreen() {
     animate();
 
     return () => cancelAnimationFrame(animationId);
-  }, []);
+  }, [skills, rfcSpecs, integrations]);
 
   return (
     <div className="animate-in">

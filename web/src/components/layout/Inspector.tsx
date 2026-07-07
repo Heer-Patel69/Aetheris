@@ -33,19 +33,19 @@ export default function Inspector() {
         <div className="inspector-title">System</div>
         <div className="inspector-row">
           <span className="inspector-label"><Activity size={12} /> CPU</span>
-          <span className="inspector-value">—</span>
+          <span className="inspector-value">{runtime?.cpu_usage !== undefined ? `${runtime.cpu_usage}%` : '—'}</span>
         </div>
         <div className="inspector-row">
           <span className="inspector-label"><HardDrive size={12} /> RAM</span>
-          <span className="inspector-value">—</span>
+          <span className="inspector-value">{runtime?.ram_usage !== undefined ? `${runtime.ram_usage}%` : '—'}</span>
         </div>
         <div className="inspector-row">
           <span className="inspector-label"><Cpu size={12} /> GPU</span>
-          <span className="inspector-value">—</span>
+          <span className="inspector-value">{runtime?.gpu_usage !== undefined ? `${runtime.gpu_usage}%` : '—'}</span>
         </div>
         <div className="inspector-row">
           <span className="inspector-label"><Zap size={12} /> Events/s</span>
-          <span className="inspector-value">—</span>
+          <span className="inspector-value">{runtime?.events_per_second !== undefined ? `${runtime.events_per_second} ev/s` : '—'}</span>
         </div>
       </div>
 

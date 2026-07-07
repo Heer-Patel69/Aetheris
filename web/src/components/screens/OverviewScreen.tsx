@@ -5,7 +5,7 @@ import StatusBadge from '../widgets/StatusBadge'
 import { useAetheris } from '../../context/AetherisContext'
 
 export default function OverviewScreen() {
-  const { runtime, health } = useAetheris();
+  const { runtime, health, skills } = useAetheris();
 
   return (
     <div className="animate-in">
@@ -18,7 +18,7 @@ export default function OverviewScreen() {
       <div className="grid-4" style={{ marginBottom: 'var(--space-xl)' }}>
         <MetricCard
           label="Engines Online"
-          value={runtime ? `${runtime.engines_online}/${runtime.total_engines}` : null}
+          value={runtime && runtime.engines_online !== undefined ? `${runtime.engines_online}/${runtime.total_engines}` : null}
           detail="18-engine architecture"
           icon={<Zap size={14} />}
           accent="var(--accent-success)"
@@ -39,7 +39,7 @@ export default function OverviewScreen() {
         />
         <MetricCard
           label="Skills Registered"
-          value={null}
+          value={skills ? skills.length : null}
           detail="Unified Skill Registry"
           icon={<Blocks size={14} />}
           accent="var(--accent-violet)"

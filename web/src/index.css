@@ -571,3 +571,75 @@ body {
   .sidebar-item { justify-content: center; padding: var(--space-md); }
   .grid-4 { grid-template-columns: 1fr 1fr; }
 }
+
+/* ── App Shell Container ─────────────────────────────────────────────────── */
+.app-shell-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-shell-container .app-shell {
+  flex: 1;
+  height: calc(100vh - 28px);
+}
+
+/* ── Runtime Status Bar ──────────────────────────────────────────────────── */
+.status-bar {
+  height: 28px;
+  background: var(--bg-secondary);
+  border-top: var(--border-subtle);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: 0 var(--space-lg);
+  font-size: 11px;
+  user-select: none;
+  z-index: 10;
+}
+
+.status-bar-section {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.status-bar-label {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.status-bar-value {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.status-bar-value.connected {
+  color: var(--accent-success);
+  font-weight: 700;
+  text-shadow: 0 0 8px var(--accent-success-dim);
+}
+
+.status-bar-value.disconnected {
+  color: var(--accent-danger);
+  font-weight: 700;
+  animation: blink-red 1s infinite alternate;
+}
+
+@keyframes blink-red {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+/* ── Reconnect Banner ────────────────────────────────────────────────────── */
+.reconnect-banner {
+  background: var(--accent-warning-dim);
+  color: var(--accent-warning);
+  border-bottom: 1px solid var(--accent-warning);
+  padding: var(--space-xs) var(--space-lg);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  z-index: 100;
+}

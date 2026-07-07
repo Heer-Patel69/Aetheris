@@ -22,6 +22,7 @@ class ProxyAdapter:
 
     def start_proxy(self) -> int:
         """Spawns the Headroom proxy server in the background."""
+        import sys
         if self.is_running():
             return self.get_active_pid()
 

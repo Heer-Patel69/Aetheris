@@ -3,44 +3,24 @@ import { Blocks, Search, Filter } from 'lucide-react'
 import MetricCard from '../widgets/MetricCard'
 import CacheIndicator from '../widgets/CacheIndicator'
 import StatusBadge from '../widgets/StatusBadge'
-
-// Generate mock skill entries from the registry for display purposes
-// In production, this comes from .aetheris/registry/skills.json
-function generateSkillEntries() {
-  const categories = ['Engineering', 'Marketing', 'Security', 'DevOps', 'Design', 'Testing', 'Sales', 'Support', 'Finance', 'Legal'];
-  const tiers: Array<'hot' | 'warm' | 'cold'> = ['hot', 'warm', 'cold'];
-  const skills = [];
-  for (let i = 0; i < 200; i++) {
-    skills.push({
-      id: `skill-${i}`,
-      name: `agency-skill-${i}`,
-      category: categories[i % categories.length],
-      cache_tier: tiers[i < 50 ? 0 : i < 150 ? 1 : 2],
-      success_rate: Math.round(70 + Math.random() * 30),
-      execution_time_ms: Math.round(50 + Math.random() * 500),
-      quality_score: Math.round(60 + Math.random() * 40),
-      last_used: '—',
-    });
-  }
-  return skills;
-}
+import { useAetheris } from '../../context/AetherisContext'
 
 export default function SkillsScreen() {
   const [search, setSearch] = useState('');
   const [filterTier, setFilterTier] = useState<string>('all');
-  const skills = useMemo(() => generateSkillEntries(), []);
+  const { skills } = useAetheris();
 
   const filtered = useMemo(() => {
-    return skills.filter(s => {
+    return (skills || []).filter(s => {
       const matchSearch = s.name.toLowerCase().includes(search.toLowerCase()) || s.category.toLowerCase().includes(search.toLowerCase());
       const matchTier = filterTier === 'all' || s.cache_tier === filterTier;
       return matchSearch && matchTier;
     });
   }, [skills, search, filterTier]);
 
-  const hotCount = skills.filter(s => s.cache_tier === 'hot').length;
-  const warmCount = skills.filter(s => s.cache_tier === 'warm').length;
-  const coldCount = skills.filter(s => s.cache_tier === 'cold').length;
+  const hotCount = (skills || []).filter(s => s.cache_tier === 'hot').length;
+  const warmCount = (skills || []).filter(s => s.cache_tier === 'warm').length;
+  const coldCount = (skills || []).filter(s => s.cache_tier === 'cold').length;
 
   return (
     <div className="animate-in">
@@ -52,9 +32,9 @@ export default function SkillsScreen() {
       {/* KPIs */}
       <div className="grid-4" style={{ marginBottom: 'var(--space-xl)' }}>
         <MetricCard label="Total Skills" value={skills.length} icon={<Blocks size={14} />} accent="var(--accent-primary)" />
-        <MetricCard label="Avg Success Rate" value={`${Math.round(skills.reduce((a, s) => a + s.success_rate, 0) / skills.length)}%`} accent="var(--accent-success)" />
-        <MetricCard label="Avg Exec Time" value={`${Math.round(skills.reduce((a, s) => a + s.execution_time_ms, 0) / skills.length)}ms`} accent="var(--accent-warning)" />
-        <MetricCard label="Avg Quality" value={`${Math.round(skills.reduce((a, s) => a + s.quality_score, 0) / skills.length)}`} accent="var(--accent-violet)" />
+        <MetricCard label="Avg Success Rate" value={skills.length > 0 ? `${Math.round(skills.reduce((a, s) => a + s.success_rate, 0) / skills.length)}%` : '0%'} accent="var(--accent-success)" />
+        <MetricCard label="Avg Exec Time" value={skills.length > 0 ? `${Math.round(skills.reduce((a, s) => a + s.execution_time_ms, 0) / skills.length)}ms` : '0ms'} accent="var(--accent-warning)" />
+        <MetricCard label="Avg Quality" value={skills.length > 0 ? `${Math.round(skills.reduce((a, s) => a + s.quality_score, 0) / skills.length)}` : '0'} accent="var(--accent-violet)" />
       </div>
 
       {/* Cache Distribution */}
