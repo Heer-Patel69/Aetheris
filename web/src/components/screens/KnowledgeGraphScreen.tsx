@@ -44,7 +44,7 @@ export default function KnowledgeGraphScreen() {
     // Add RFCs and Specs
     rfcSpecs?.forEach((r, idx) => {
       const id = `r_${idx}`;
-      nodes.push({ id, label: r.id, type: r.type === 'Architecture' ? 'rfc' : 'spec', x: Math.random() * 500, y: Math.random() * 300, vx: 0, vy: 0 });
+      nodes.push({ id, label: r.id, type: r.type === 'RFC' ? 'rfc' : 'spec', x: Math.random() * 500, y: Math.random() * 300, vx: 0, vy: 0 });
       edges.push({ source: 'core', target: id });
     });
 

@@ -55,17 +55,25 @@ class DiscoveryEngine:
                 # Context-aware path categorization rules
                 # Filename-prefix checks take priority over directory-based rules
                 # so that SPEC-*.md files inside rfcs/ are correctly classified
+                from aetheris.kernel.event_bus import AetherisEvent, AetherisEventBus
+                bus = AetherisEventBus()
+
                 file_lower = file.lower()
                 if file_lower.startswith("spec-") and file.endswith(".md"):
                     manifest["specs"].append(path_str)
+                    bus.publish_sync(AetherisEvent(category="RFC_DISCOVERED", payload={"name": Path(path_str).stem, "type": "SPEC", "coverage": 100}))
                 elif file_lower.startswith("rfc-") and file.endswith(".md"):
                     manifest["rfcs"].append(path_str)
+                    bus.publish_sync(AetherisEvent(category="RFC_DISCOVERED", payload={"name": Path(path_str).stem, "type": "RFC", "coverage": 100}))
                 elif "skills/" in path_lower and file.endswith(".md"):
                     manifest["skills"].append(path_str)
+                    bus.publish_sync(AetherisEvent(category="SKILL_INDEXED", payload={"name": Path(path_str).stem, "status": "indexed"}))
                 elif "rfcs/" in path_lower and file.endswith(".md"):
                     manifest["rfcs"].append(path_str)
+                    bus.publish_sync(AetherisEvent(category="RFC_DISCOVERED", payload={"name": Path(path_str).stem, "type": "RFC", "coverage": 100}))
                 elif "specs/" in path_lower and file.endswith(".md"):
                     manifest["specs"].append(path_str)
+                    bus.publish_sync(AetherisEvent(category="RFC_DISCOVERED", payload={"name": Path(path_str).stem, "type": "SPEC", "coverage": 100}))
                 elif file.endswith(('.py', '.js', '.ts', '.tsx', '.go', '.rs', '.java', '.cpp', '.h', '.cs')):
                     manifest["source_files"].append(path_str)
 

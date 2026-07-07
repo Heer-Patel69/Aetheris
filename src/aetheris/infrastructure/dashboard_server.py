@@ -92,8 +92,31 @@ async def websocket_endpoint(websocket: WebSocket):
                     pass
 
         while True:
-            data = await websocket.receive_text()
-            # Handle incoming messages from dashboard if necessary
+            raw_data = await websocket.receive_text()
+            try:
+                msg = json.loads(raw_data)
+                cmd_type = msg.get("type")
+                if cmd_type == "START_REPLAY":
+                    exec_id = msg.get("execution_id")
+                    from aetheris.infrastructure.event_store import EventStore
+                    events = EventStore().get_execution_events(exec_id)
+                    await websocket.send_text(json.dumps({"type": "REPLAY_START", "execution_id": exec_id, "total": len(events)}))
+                    for event in events:
+                        await websocket.send_text(json.dumps({
+                            "type": "REPLAY_EVENT",
+                            "payload": event.to_dict()
+                        }))
+                        await asyncio.sleep(0.15) # Simulated replay playback tick
+                    await websocket.send_text(json.dumps({"type": "REPLAY_END", "execution_id": exec_id}))
+                elif cmd_type == "GET_SESSIONS":
+                    from aetheris.infrastructure.event_store import EventStore
+                    sessions = EventStore().get_all_sessions()
+                    await websocket.send_text(json.dumps({
+                        "type": "SESSIONS_LIST",
+                        "payload": sessions
+                    }))
+            except Exception:
+                pass
     except WebSocketDisconnect:
         manager.disconnect(websocket)
 
