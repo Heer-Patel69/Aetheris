@@ -1,0 +1,23 @@
+{
+  "batches": [
+    {
+      "batch_id": "batch_step_1",
+      "tasks": [
+        "task_db_init"
+      ],
+      "locked_files": [
+        "database.plan.json"
+      ]
+    },
+    {
+      "batch_id": "batch_step_2",
+      "tasks": [
+        "task_auth_pipeline"
+      ],
+      "locked_files": [
+        "auth.plan.json"
+      ]
+    }
+  ],
+  "concurrency_limit": 4
+}

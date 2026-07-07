@@ -1,0 +1,9 @@
+{
+  "milestones": [
+    {
+      "id": "M1",
+      "title": "Base DB and Auth Pipeline Ready",
+      "eta_days": 7
+    }
+  ]
+}

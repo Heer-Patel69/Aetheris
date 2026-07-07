@@ -1,0 +1,27 @@
+{
+  "object_id": "frontend_routing_plan_1783016887633",
+  "version": 1,
+  "type": "frontend_routing_plan",
+  "producer": "FPE",
+  "content": {
+    "routes": [
+      {
+        "path": "/",
+        "page": "Home",
+        "type": "public",
+        "layout": "AppShellLayout"
+      },
+      {
+        "path": "/FR-DB",
+        "page": "Fr-Db",
+        "type": "protected",
+        "layout": "DashboardShellLayout"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "81b9d83fe161ce6818892c677f9559cd048a1a33ced2804658b56bce47966366",
+    "verified": true,
+    "timestamp": 1783016887.633151
+  }
+}

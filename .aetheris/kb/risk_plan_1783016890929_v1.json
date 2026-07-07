@@ -1,0 +1,14 @@
+{
+  "object_id": "risk_plan_1783016890929",
+  "version": 1,
+  "type": "risk_plan",
+  "producer": "TDDCompiler",
+  "content": {
+    "security_risks": []
+  },
+  "validation": {
+    "checksum": "6c589208a83e2feef55e1621e5b0978d47ccec1b8502c2524d8fc013c36e3be5",
+    "verified": true,
+    "timestamp": 1783016890.9297636
+  }
+}

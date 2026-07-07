@@ -1,0 +1,32 @@
+{
+  "entities": [
+    {
+      "name": "User",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uuid",
+          "primary_key": true,
+          "nullable": false
+        },
+        {
+          "name": "email",
+          "type": "varchar(255)",
+          "unique": true,
+          "nullable": false
+        },
+        {
+          "name": "password_hash",
+          "type": "varchar(255)",
+          "nullable": false
+        },
+        {
+          "name": "created_at",
+          "type": "timestamptz",
+          "default": "NOW()",
+          "nullable": false
+        }
+      ]
+    }
+  ]
+}

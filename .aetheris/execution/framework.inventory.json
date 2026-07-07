@@ -1,0 +1,8 @@
+{
+  "frameworks": {
+    "react": {
+      "confidence": 0.95,
+      "evidence": "react dependency detected in package manifest"
+    }
+  }
+}

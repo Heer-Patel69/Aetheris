@@ -1,0 +1,5 @@
+{
+  "failover_steps": [
+    "Switch DNS records target to secondary AZ zone replication"
+  ]
+}

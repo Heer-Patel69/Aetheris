@@ -1,0 +1,9 @@
+{
+  "scenarios": [
+    {
+      "id": "TC01",
+      "name": "Success User login",
+      "type": "integration"
+    }
+  ]
+}

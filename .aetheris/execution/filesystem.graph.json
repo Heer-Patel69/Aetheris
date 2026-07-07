@@ -1,0 +1,6220 @@
+{
+  "nodes": [
+    {
+      "id": "file:.env",
+      "type": "File"
+    },
+    {
+      "id": "file:.gitignore",
+      "type": "File"
+    },
+    {
+      "id": "file:.vscode/settings.json",
+      "type": "File"
+    },
+    {
+      "id": "file:00_SYSTEM_CONSTITUTION.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/001-module-boundaries.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/002-state-ownership.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/003-event-model.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/004-configuration-hierarchy.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/005-memory-separation.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/006-skill-decomposition.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/007-script-execution.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/008-version-contract.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/009-platform-constraints.md",
+      "type": "File"
+    },
+    {
+      "id": "file:adrs/010-security-perimeter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:ARCHITECTURE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:CHANGELOG.md",
+      "type": "File"
+    },
+    {
+      "id": "file:config/aetheris.yaml",
+      "type": "File"
+    },
+    {
+      "id": "file:config/costs.yaml",
+      "type": "File"
+    },
+    {
+      "id": "file:config/gates.yaml",
+      "type": "File"
+    },
+    {
+      "id": "file:config/models.yaml",
+      "type": "File"
+    },
+    {
+      "id": "file:config/plugins.yaml",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/config-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/context-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/event-bus.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/kernel.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/memory-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/planner.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/plugin-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/project-discovery.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/resource-router.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/telemetry-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:contracts/verification-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:DECISIONS.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/adr/0001_decision.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/adr/0002_decision.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/AEOS_GLOBAL_OPERATING_POLICY.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/api.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/BENCHMARK_REPORT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/DEPENDENCY_MATRIX.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/DEPLOYMENT_GUIDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/DEVELOPER_DOCUMENTATION.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/FINAL_ARB_REPORT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/IMPLEMENTATION_TRACKER.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/MAINTENANCE_GUIDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/MASTER_PROMPT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/OPERATIONS_MANUAL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/PRODUCTION_READINESS_REPORT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/RELEASE_NOTES.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/SECURITY_REVIEW.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/SYSTEM_ARCHITECTURE_DIAGRAMS.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/TEST_COVERAGE_REPORT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/TRACEABILITY_MATRIX.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/USER_DOCUMENTATION.md",
+      "type": "File"
+    },
+    {
+      "id": "file:docs/WEBSITE_HANDBOOK.md",
+      "type": "File"
+    },
+    {
+      "id": "file:MEMORY.md",
+      "type": "File"
+    },
+    {
+      "id": "file:NEXT_SESSION.md",
+      "type": "File"
+    },
+    {
+      "id": "file:planning/ENGINEERING_REPORT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:planning/ENGINEERING_TEAM_ASSIGNMENT.md",
+      "type": "File"
+    },
+    {
+      "id": "file:planning/IMPLEMENTATION_PLAN.md",
+      "type": "File"
+    },
+    {
+      "id": "file:PROJECT_STATE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:pyproject.toml",
+      "type": "File"
+    },
+    {
+      "id": "file:pyrightconfig.json",
+      "type": "File"
+    },
+    {
+      "id": "file:README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-000-Roadmap.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-001-EKC.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-002-Planner.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-003-Skill-Intelligence.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-003-Validation-Report.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-004-Engineering-Intelligence.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-004-Model-Intelligence.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-005-Execution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-005-Runtime-Infrastructure.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-006-Learning-System.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-007-Enterprise-Platform.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-007-Production-Auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-008-AI-Organization.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-008-Learning-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-009-Self-Evolution.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-010-Benchmarking-Platform.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/RFC-011-Product-Brand-DNA.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-001-WDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-002-URUE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-003-PDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-004-APE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-005-EDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-006-EGE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-007-EKB.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-008-QIA.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-009-EDPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-010-FPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-011-BPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-012-PE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-013-APIE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-014-SPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-015-IPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-016-ESPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-017-DPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-018-TPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-019-DOPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-020-EEPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-021-RCPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-022-CPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-023-RPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-024-CGPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-025-OPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-026-SPPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-027-DRPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-028-RRPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-029-MLPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-030-FEBC.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-031-PVE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-032-TDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-033-DGB.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-034-SSE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-035-MRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-036-CAE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-037-ES.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-038-PEE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-039-ACGE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-040-SRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-041-PRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-042-SPE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-043-GOE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-044-DGE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-045-EME.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-046-EO.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-047-MIE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-048-PCE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-049-POE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-050-ERE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-051-SRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-052-LCE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-053-KRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-054-MRE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-055-FVE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-056-HDE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-057-PLE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-058-TOE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-059-COE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-060-EOE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-061-COE2.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-062-DSEE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-063-SBE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-064-MMCE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-065-IO.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-066-Plugin-SDK-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-067-Extension-Marketplace-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-068-Runtime-Plugin-Loader.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-069-RPC-Framework.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-070-IPC-Framework.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-071-Distributed-Execution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-072-Worker-Pool-Manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-073-Cluster-Manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-074-Node-Discovery-Cluster-Registry.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-075-Distributed-Consensus-Leader-Election.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-076-Sandboxed-Execution-Environment.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-077-Secure-Vault-Secrets-Service.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-078-Distributed-Log-Event-Aggregation-Bus.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-079-High-Performance-Routing-Message-Queue.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-080-Resource-Allocator-Hardware-Scheduler.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-081-Distributed-State-Cache-Synchronization.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-082-Cryptographic-Identity-Trust-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-083-Hot-Reload-Live-Upgrade-Subsystem.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-084-Chaos-Injection-Fault-Simulation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-085-Global-Runtime-Orchestrator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-086-EME2.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-087-PME.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-088-BPE2.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-089-FKE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-090-SKE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-091-PRE2.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-092-SLE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-093-ALE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-094-TLE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-095-RLE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-096-ARSU.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-097-CLE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-098-LAE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-099-AFE.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-100-LSO.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-101-Identity-Authentication-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-102-Role-Based-Access-Control-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-103-Organization-Management-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-104-Workspace-Management-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-105-Multi-Tenancy-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-106-Billing-Subscription-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-107-API-Gateway-Rate-Limiter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-108-Enterprise-Audit-Logging-Service.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-109-Tenant-Resource-Quota-Manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-110-SAML-SSO-Integration-Adapter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-111-Key-Management-Data-Encryption-Service.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-112-Collaboration-Real-Time-Sync-Server.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-113-Compliance-GDPR-Governance-Auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-114-Notification-Webhook-Dispatcher.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-115-Backup-Disaster-Recovery-Orchestrator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-116-Administrative-Control-Panel-(Admin-API).md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-117-Model-Licensing-Usage-Tracker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-118-Agent-Activity-Session-Monitor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-119-System-Health-SLA-Dashboard.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-120-Dynamic-Feature-Flag-Policy-Decider.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-121-CEO-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-122-CTO-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-123-Chief-Architect-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-124-Product-Manager-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-125-Engineering-Manager-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-126-Staff-Backend-Engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-127-Staff-Frontend-Engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-128-Staff-AI-ML-Engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-129-DevOps-Lead.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-130-Security-Lead.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-131-QA-Lead-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-132-Technical-Writer-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-133-UX-UI-Designer-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-134-Product-Marketing-Manager-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-135-Legal-Compliance-Officer-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-136-Scrum-Master-Agile-Coordinator-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-137-Financial-Analyst-Budget-Controller-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-138-Customer-Support-Feedback-Synthesizer-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-139-Human-Resources-Onboarding-Agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-140-Multi-Agent-Collaboration-Protocol.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-141-Self-Architecture-Review-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-142-Self-Decision-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-143-Self-Performance-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-144-Self-Learning-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-145-Self-Evolution-Orchestrator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-146-Self-RFC-Generation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-147-Self-SPEC-Generation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-148-Self-Refactoring-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-149-Self-Benchmark-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-150-Self-Optimization-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-151-Self-Cost-Reduction-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-152-Self-Quality-Improvement-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-153-Self-Testing-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-154-Self-Deployment-Preparation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-155-Evolution-Planning-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-156-Autonomous-Deployment-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-157-Self-Validation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-158-Self-Governance-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-159-Self-Policy-Evolution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-160-Autonomous-Incident-Response-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-161-Autonomous-Recovery-Evolution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-162-Self-Knowledge-Expansion-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-163-Self-Skill-Creation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-164-Self-Runtime-Optimization-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-165-Self-Infrastructure-Evolution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-166-Self-Security-Evolution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-167-Autonomous-Research-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-168-Continuous-Innovation-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-169-Autonomous-Platform-Evolution-Engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:rfcs/SPEC-170-Global-Self-Evolution-Orchestrator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:schemas/aetheris.schema.json",
+      "type": "File"
+    },
+    {
+      "id": "file:schemas/costs.schema.json",
+      "type": "File"
+    },
+    {
+      "id": "file:schemas/gates.schema.json",
+      "type": "File"
+    },
+    {
+      "id": "file:schemas/models.schema.json",
+      "type": "File"
+    },
+    {
+      "id": "file:schemas/plugins.schema.json",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/academic/academic-anthropologist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/academic/academic-geographer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/academic/academic-historian.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/academic/academic-narratologist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/academic/academic-psychologist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-context-engine/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-kernel/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-memory-engine/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-product-intelligence/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-project-discovery/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-skill-orchestrator/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/aetheris-verification-engine/SKILL.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-brand-guardian.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-image-prompt-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-inclusive-visuals-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-persona-walkthrough.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-ui-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-ux-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-ux-researcher.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-visual-storyteller.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/design/design-whimsy-injector.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-ai-data-remediation-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-ai-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-autonomous-optimization-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-backend-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-cms-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-code-reviewer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-codebase-onboarding-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-data-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-database-optimizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-devops-automator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-drupal-shopping-cart.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-email-intelligence-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-embedded-firmware-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-feishu-integration-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-filament-optimization-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-frontend-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-git-workflow-master.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-incident-response-commander.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-it-service-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-minimal-change-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-mobile-app-builder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-multi-agent-systems-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-network-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-orgscript-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-prompt-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-rapid-prototyper.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-senior-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-software-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-solidity-smart-contract-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-sre.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-technical-writer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-voice-ai-integration-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-wechat-mini-program-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/engineering/engineering-wordpress-shopping-cart.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/nexus-spatial-discovery.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/workflow-book-chapter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/workflow-landing-page.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/workflow-startup-mvp.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/examples/workflow-with-memory.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/finance/finance-bookkeeper-controller.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/finance/finance-financial-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/finance/finance-fpa-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/finance/finance-investment-researcher.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/finance/finance-tax-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/blender/blender-addon-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/game-audio-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/game-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/godot/godot-gameplay-scripter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/godot/godot-multiplayer-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/godot/godot-shader-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/level-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/narrative-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/roblox-studio/roblox-avatar-creator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/roblox-studio/roblox-experience-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/roblox-studio/roblox-systems-scripter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/technical-artist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unity/unity-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unity/unity-editor-tool-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unity/unity-multiplayer-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unity/unity-shader-graph-artist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unreal-engine/unreal-multiplayer-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unreal-engine/unreal-systems-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unreal-engine/unreal-technical-artist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/game-development/unreal-engine/unreal-world-builder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-3d-scene-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-bim-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-cartography-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-drone-reality-mapping.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-geoai-ml-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-geoprocessing-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-qa-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-solution-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-spatial-data-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-spatial-data-scientist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-technical-consultant.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/gis/gis-web-gis-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/aider/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/antigravity/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/claude-code/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/codex/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/cursor/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/gemini-cli/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/github-copilot/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/hermes/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/kimi/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/mcp-memory/backend-architect-with-memory.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/mcp-memory/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/mcp-memory/setup.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/openclaw/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/opencode/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/qwen/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/integrations/windsurf/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-aeo-foundations.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-agentic-search-optimizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-ai-citation-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-app-store-optimizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-baidu-seo-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-bilibili-content-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-book-co-author.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-carousel-growth-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-china-ecommerce-operator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-china-market-localization-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-content-creator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-cross-border-ecommerce.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-douyin-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-email-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-global-podcast-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-growth-hacker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-instagram-curator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-kuaishou-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-linkedin-content-creator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-livestream-commerce-coach.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-multi-platform-publisher.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-podcast-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-pr-communications-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-private-domain-operator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-reddit-community-builder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-seo-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-short-video-editing-coach.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-social-media-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-tiktok-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-twitter-engager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-video-optimization-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-wechat-official-account.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-weibo-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-x-twitter-intelligence-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-xiaohongshu-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/marketing/marketing-zhihu-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-creative-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-paid-social-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-ppc-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-programmatic-buyer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-search-query-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/paid-media/paid-media-tracking-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/product/product-behavioral-nudge-engine.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/product/product-feedback-synthesizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/product/product-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/product/product-sprint-prioritizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/product/product-trend-researcher.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-experiment-tracker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-jira-workflow-steward.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-meeting-notes-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-project-shepherd.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-studio-operations.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-management-studio-producer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/project-management/project-manager-senior.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-account-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-coach.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-deal-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-discovery-coach.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-offer-lead-gen-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-outbound-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-pipeline-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/sales/sales-proposal-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/agents-to-install.example",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/build-hermes-plugin.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/check-agent-originality.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/check-divisions.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/check-tools.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/convert.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_rfc005_specs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_rfc007_specs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_rfc008_specs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_rfc009_specs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_rfc009_vol2_specs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/generate_specs_tests.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/i18n/agent-names-zh.json",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/i18n/localize-agents-zh.ps1",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/i18n/README.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/install.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/lib.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/lint-agents.sh",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfc006.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfc007.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfc008.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfc009.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfc009_vol2.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/scripts/verify_rfcs.py",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-appsec-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-blockchain-security-auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-cloud-security-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-compliance-auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-incident-responder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-penetration-tester.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-senior-secops.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-threat-detection-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/security/security-threat-intelligence-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/macos-spatial-metal-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/terminal-integration-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/visionos-spatial-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/xr-cockpit-interaction-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/xr-immersive-developer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/spatial-computing/xr-interface-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/accounts-payable-agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/agentic-identity-trust.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/agents-orchestrator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/automation-governance-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/business-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/change-management-consultant.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/chief-financial-officer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/corporate-training-designer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/customer-service.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/customer-success-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/data-consolidation-agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/data-privacy-officer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/esg-sustainability-officer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/government-digital-presales-consultant.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/grant-writer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/healthcare-customer-service.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/healthcare-marketing-compliance.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/hospitality-guest-services.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/hr-onboarding.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/identity-graph-operator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/language-translator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/legal-billing-time-tracking.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/legal-client-intake.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/legal-document-review.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/loan-officer-assistant.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/lsp-index-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/ma-integration-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/medical-billing-coding-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/operations-manager.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/organizational-psychologist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/personal-growth-mentor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/real-estate-buyer-seller.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/recruitment-specialist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/report-distribution-agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/retail-customer-returns.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/sales-data-extraction-agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/sales-outreach.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-chief-of-staff.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-civil-engineer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-cultural-intelligence-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-developer-advocate.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-document-generator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-french-consulting-market.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-korean-business-navigator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-mcp-builder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-model-qa.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-pricing-analyst.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-salesforce-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-strategy-duel-agent.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/specialized-workflow-architect.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/study-abroad-advisor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/supply-chain-strategist.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/specialized/zk-steward.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/coordination/agent-activation-prompts.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/coordination/handoff-templates.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/EXECUTIVE-BRIEF.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/nexus-strategy.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-0-discovery.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-1-strategy.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-2-foundation.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-3-build.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-4-hardening.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-5-launch.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/playbooks/phase-6-operate.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/QUICKSTART.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/runbooks/scenario-enterprise-feature.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/runbooks/scenario-incident-response.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/runbooks/scenario-marketing-campaign.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/strategy/runbooks/scenario-startup-mvp.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-analytics-reporter.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-executive-summary-generator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-finance-tracker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-infrastructure-maintainer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-legal-compliance-checker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/support/support-support-responder.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-accessibility-auditor.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-api-tester.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-evidence-collector.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-performance-benchmarker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-reality-checker.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-test-results-analyzer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-tool-evaluator.md",
+      "type": "File"
+    },
+    {
+      "id": "file:skills/testing/testing-workflow-optimizer.md",
+      "type": "File"
+    },
+    {
+      "id": "file:src/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/adapters/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/dashboard/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/docs/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/downloads/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/globals.css",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/playground/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/rfc-explorer/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/skills-marketplace/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/spec-explorer/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/app/what-is-aetheris/page.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/auth_middleware.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/command-palette.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/footer.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/hero-scene.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/navbar.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/terminal-demo.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/components/ui-components.tsx",
+      "type": "File"
+    },
+    {
+      "id": "file:src/config.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/context.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/data/docs.ts",
+      "type": "File"
+    },
+    {
+      "id": "file:src/data/rfcs.ts",
+      "type": "File"
+    },
+    {
+      "id": "file:src/data/skills.ts",
+      "type": "File"
+    },
+    {
+      "id": "file:src/data/specs.ts",
+      "type": "File"
+    },
+    {
+      "id": "file:src/db_init_bootstrap.sql",
+      "type": "File"
+    },
+    {
+      "id": "file:src/enterprise/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/enterprise/platform.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/event_bus.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/evolution/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/evolution/orchestrator.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/acge.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/cae.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/dgb.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/dge.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/eme.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/eo.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/es.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/goe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/mre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/pee.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/pre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/spe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/sre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/sse.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/tde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/execution/website_generator.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ape.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/benchmark_engine.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/blueprint.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/coe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/coe2.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/context.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/context_optimizer.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/cost_analyzer.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/dashboard_metrics.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/decision.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/dsee.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ede.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ege.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ekb.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/eoe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ere.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/fve.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/hde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/historical_analytics.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/io.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/kre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/lce.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/mie.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/mmce.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/mre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/pce.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/pde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/planners.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/ple.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/poe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/qia.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/repository_metrics.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/sbe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/scanner.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/sre.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/technology.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/toe.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/token_intelligence.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/urue.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/intelligence/wde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/core.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/event_bus.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/goal_manager.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/planner.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/recovery.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/scheduler.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/telemetry.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/kernel/utils.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/learning/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/learning/engine.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/lib/search.ts",
+      "type": "File"
+    },
+    {
+      "id": "file:src/memory.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/config.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/plugins.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/registry_cache.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/skill_parser.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/orchestration/skill_scanner.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/organization/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/organization/agents.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/plugins.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/registry_cache.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/runtime/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/runtime/cluster.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/runtime/rpc.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/runtime/sandbox.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/scanner.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/sdk/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/skill_parser.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/skill_scanner.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/storage/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/storage/manager.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/telemetry.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/utils.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/validation/__init__.py",
+      "type": "File"
+    },
+    {
+      "id": "file:src/validation/readiness.py",
+      "type": "File"
+    },
+    {
+      "id": "file:TASKS.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/conftest.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/config-manager-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/context-engine-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/event-bus-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/kernel-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/learning-system-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/memory-engine-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/planner-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/plugin-manager-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/project-discovery-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/resource-router-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/runtime-infrastructure-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/telemetry-engine-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/plans/verification-engine-test-plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_all_specs_compliance.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_antigravity.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_ape.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_atib.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_cli.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_compile_repo.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_ede.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_ege.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_ekb.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_ekc_capabilities.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_enterprise.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_evolution.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_execution.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_goal_manager.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_learning.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_organization.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_pde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_planner_capabilities.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_planners.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_qia.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_rfc004_core.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_runtime.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_urue.py",
+      "type": "File"
+    },
+    {
+      "id": "file:tests/test_wde.py",
+      "type": "File"
+    },
+    {
+      "id": "file:VERSION",
+      "type": "File"
+    },
+    {
+      "id": "file:web/.gitignore",
+      "type": "File"
+    },
+    {
+      "id": "file:web/.oxlintrc.json",
+      "type": "File"
+    },
+    {
+      "id": "file:web/docs/planning/execution_plan.md",
+      "type": "File"
+    },
+    {
+      "id": "file:web/docs/planning/prd.md",
+      "type": "File"
+    },
+    {
+      "id": "file:web/docs/requirements/acceptance_criteria.md",
+      "type": "File"
+    },
+    {
+      "id": "file:web/docs/requirements/requirements.md",
+      "type": "File"
+    },
+    {
+      "id": "file:web/docs/requirements/user_stories.md",
+      "type": "File"
+    },
+    {
+      "id": "file:web/index.html",
+      "type": "File"
+    },
+    {
+      "id": "file:web/package-lock.json",
+      "type": "File"
+    },
+    {
+      "id": "file:web/package.json",
+      "type": "File"
+    },
+    {
+      "id": "file:web/public/data.json",
+      "type": "File"
+    },
+    {
+      "id": "file:web/README.md",
+      "type": "File"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:__future__",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:argparse",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:textwrap",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:__future__",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:math",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/build-hermes-plugin.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc005_specs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc005_specs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc007_specs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc007_specs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc008_specs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc008_specs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc008_specs.py",
+      "target": "import:logging",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc008_specs.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc009_specs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc009_specs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc009_vol2_specs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_rfc009_vol2_specs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:learning",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:enterprise",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:organization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:evolution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/generate_specs_tests.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc006.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc006.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc006.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc007.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc007.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc007.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc008.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc008.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc008.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009_vol2.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009_vol2.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfc009_vol2.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfcs.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfcs.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:skills/scripts/verify_rfcs.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/config.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/config.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/config.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/context.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/context.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/context.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/enterprise/__init__.py",
+      "target": "import:enterprise",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/enterprise/platform.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/enterprise/platform.py",
+      "target": "import:logging",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/enterprise/platform.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/event_bus.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/evolution/__init__.py",
+      "target": "import:evolution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/evolution/orchestrator.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/evolution/orchestrator.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/acge.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/acge.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/acge.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/acge.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/acge.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/cae.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/cae.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/cae.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/cae.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dgb.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dgb.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dgb.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dgb.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dge.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dge.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dge.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/dge.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eme.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eme.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eme.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eme.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eo.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eo.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eo.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eo.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/eo.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/es.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/es.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/es.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/es.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/goe.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/goe.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/goe.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/goe.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/goe.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/mre.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/mre.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/mre.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/mre.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pee.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pee.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pee.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pee.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pre.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pre.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pre.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/pre.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/spe.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/spe.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/spe.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/spe.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/spe.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sre.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sre.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sre.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sre.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sse.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sse.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sse.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/sse.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/tde.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/tde.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/tde.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/tde.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:CommandPalette",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:TerminalDemo",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:HeroScene",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:Link",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/execution/website_generator.py",
+      "target": "import:React",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/__init__.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ape.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ape.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ape.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ape.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ape.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/benchmark_engine.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/blueprint.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context_optimizer.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context_optimizer.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/context_optimizer.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/dashboard_metrics.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/decision.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/decision.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/decision.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/decision.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/decision.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ede.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ede.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ede.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ede.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ede.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ege.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ege.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ege.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ege.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/ekb.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/historical_analytics.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/historical_analytics.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/historical_analytics.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/mie.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/mie.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/mie.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/pde.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/planners.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/planners.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/planners.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/planners.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/qia.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/repository_metrics.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/repository_metrics.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/repository_metrics.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/scanner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/technology.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/technology.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/token_intelligence.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/token_intelligence.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/urue.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:fnmatch",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:subprocess",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:typing",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/intelligence/wde.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:enterprise",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:organization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:learning",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:evolution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/core.py",
+      "target": "import:validation",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/event_bus.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/event_bus.py",
+      "target": "import:uuid",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/event_bus.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/event_bus.py",
+      "target": "import:collections",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/event_bus.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:hashlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/planner.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/planner.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/planner.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/planner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/planner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/recovery.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/recovery.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/recovery.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/scheduler.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/scheduler.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/scheduler.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/scheduler.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/scheduler.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/telemetry.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/utils.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/utils.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/utils.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/kernel/utils.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/learning/__init__.py",
+      "target": "import:learning",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/learning/engine.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/learning/engine.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/memory.py",
+      "target": "import:storage",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:yaml",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:jsonschema",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/config.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/plugins.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/plugins.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/plugins.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/plugins.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/plugins.py",
+      "target": "import:yaml",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/registry_cache.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_parser.py",
+      "target": "import:re",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_parser.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_parser.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_parser.py",
+      "target": "import:yaml",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_parser.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_scanner.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_scanner.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_scanner.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/orchestration/skill_scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/organization/__init__.py",
+      "target": "import:organization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/plugins.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/registry_cache.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/__init__.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/__init__.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/__init__.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/rpc.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/sandbox.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/sandbox.py",
+      "target": "import:subprocess",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/sandbox.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/runtime/sandbox.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/scanner.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/scanner.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/scanner.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/skill_parser.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/skill_scanner.py",
+      "target": "import:orchestration",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/storage/manager.py",
+      "target": "import:yaml",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/telemetry.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/utils.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/validation/readiness.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/validation/readiness.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:src/validation/readiness.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/conftest.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/conftest.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:learning",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:enterprise",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:organization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:evolution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_all_specs_compliance.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_antigravity.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_antigravity.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_antigravity.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_antigravity.py",
+      "target": "import:antigravity_planner",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ape.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ape.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ape.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ape.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ape.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_atib.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:io",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_cli.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_compile_repo.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_compile_repo.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_compile_repo.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_compile_repo.py",
+      "target": "import:compile_repo",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_compile_repo.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ede.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ege.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ege.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ege.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ege.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ege.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekb.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekb.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekb.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekb.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekb.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:time",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_ekc_capabilities.py",
+      "target": "import:sys",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_enterprise.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_enterprise.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_enterprise.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_enterprise.py",
+      "target": "import:enterprise",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_evolution.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_evolution.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_evolution.py",
+      "target": "import:evolution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_execution.py",
+      "target": "import:execution",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_goal_manager.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_goal_manager.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_goal_manager.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_goal_manager.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_learning.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_learning.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_learning.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_learning.py",
+      "target": "import:learning",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_organization.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_organization.py",
+      "target": "import:organization",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_pde.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_pde.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_pde.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_pde.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_pde.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planner_capabilities.py",
+      "target": "import:kernel",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_planners.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_qia.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:os",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_rfc004_core.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_runtime.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_runtime.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_runtime.py",
+      "target": "import:runtime",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_urue.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_urue.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_urue.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_urue.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_urue.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_wde.py",
+      "target": "import:unittest",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_wde.py",
+      "target": "import:shutil",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_wde.py",
+      "target": "import:json",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_wde.py",
+      "target": "import:pathlib",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "file:tests/test_wde.py",
+      "target": "import:intelligence",
+      "relationship": "depends_on"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "object_id": "spec_029_maintenance_1783016887817",
+  "version": 1,
+  "type": "spec_029_maintenance",
+  "producer": "MLPE",
+  "content": {
+    "dependency_checks": "Daily automated vulnerability scanning"
+  },
+  "validation": {
+    "checksum": "9e5bd590abd3a31b817ff64f503c390cf775f2f29b720ccc0538f8e8287df7bc",
+    "verified": true,
+    "timestamp": 1783016887.8172178
+  }
+}

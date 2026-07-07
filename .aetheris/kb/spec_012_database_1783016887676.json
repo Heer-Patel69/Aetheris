@@ -1,0 +1,19 @@
+{
+  "object_id": "spec_012_database_1783016887676",
+  "version": 1,
+  "type": "spec_012_database",
+  "producer": "DPE",
+  "content": {
+    "engine": "PostgreSQL",
+    "version": "16",
+    "hosting": "Managed Instance",
+    "multi_tenancy": {
+      "strategy": "Shared Database Separate Schemas"
+    }
+  },
+  "validation": {
+    "checksum": "e7d8c1f75e75cca9914d063680f3c846e2f00b707de186be2f0e85a0918845ea",
+    "verified": true,
+    "timestamp": 1783016887.6764712
+  }
+}

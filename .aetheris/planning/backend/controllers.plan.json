@@ -1,0 +1,18 @@
+{
+  "controllers": [
+    {
+      "name": "PersistenceContextController",
+      "service": "PersistenceContextService",
+      "routes": [
+        "/data_schema_migration"
+      ]
+    },
+    {
+      "name": "CoreDomainController",
+      "service": "CoreDomainService",
+      "routes": [
+        "/low_latency_scan_execution"
+      ]
+    }
+  ]
+}

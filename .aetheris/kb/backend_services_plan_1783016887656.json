@@ -1,0 +1,29 @@
+{
+  "object_id": "backend_services_plan_1783016887656",
+  "version": 1,
+  "type": "backend_services_plan",
+  "producer": "BPE",
+  "content": {
+    "services": [
+      {
+        "name": "PersistenceContextService",
+        "repository": "PersistenceContextRepository",
+        "methods": [
+          "execute_data_schema_migration"
+        ]
+      },
+      {
+        "name": "CoreDomainService",
+        "repository": "CoreDomainRepository",
+        "methods": [
+          "execute_low_latency_scan_execution"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "6fa3d9d11d19cb68d0164209c6dd529f571b0d6c4f3ff5b5728b9469a28e0a05",
+    "verified": true,
+    "timestamp": 1783016887.6563675
+  }
+}

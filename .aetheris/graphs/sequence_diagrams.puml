@@ -1,0 +1,10 @@
+@startuml
+sequenceDiagram
+    actor Admin
+    participant E as EnterprisePlatform
+    participant A as AuditLogger
+    Admin->>E: authorize_request(token, action)
+    E->>A: log_action(user, tenant, action, status)
+    A-->>E: Log Written
+    E-->>Admin: Authorization Result
+@enduml

@@ -1,0 +1,6 @@
+{
+  "tasks": [
+    "task_db_init",
+    "task_auth_pipeline"
+  ]
+}

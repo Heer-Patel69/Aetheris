@@ -1,0 +1,16 @@
+{
+  "object_id": "spec_012_backup_1783016887685",
+  "version": 1,
+  "type": "spec_012_backup",
+  "producer": "DPE",
+  "content": {
+    "strategy": "daily_snapshot",
+    "pitr_enabled": true,
+    "retention_days": 30
+  },
+  "validation": {
+    "checksum": "dd330e84ad353fe0c688b6827583ffa32d343f89f3716f65b11ec268adf730b3",
+    "verified": true,
+    "timestamp": 1783016887.6860151
+  }
+}

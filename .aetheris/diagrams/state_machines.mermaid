@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> OFFLINE
+    OFFLINE --> INITIALIZING: Start Command
+    INITIALIZING --> RUNNING: Auth SUCCESS
+    RUNNING --> SANDBOX_ACTIVE: Sandbox Setup
+    SANDBOX_ACTIVE --> EVOLUTION_ACTIVE: Tasks Complete
+    EVOLUTION_ACTIVE --> CLEANUP: Evolution Complete
+    CLEANUP --> OFFLINE: Stop Sandbox

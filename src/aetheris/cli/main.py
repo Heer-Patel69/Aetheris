@@ -177,5 +177,76 @@ def skill(name):
             console.print(f"[bold red]X[/bold red] No registered system capability fits query identifier: '{name}'")
 
 
+@main.command()
+@click.argument('goal', required=False)
+def build(goal):
+    """Executes the autonomous engineering lifecycle build based on the manifest."""
+    print_banner()
+    console.print("[bold blue]Initiating Autonomous Engineering Build Pipeline...[/bold blue]\n")
+
+    import os
+    import yaml
+    from pathlib import Path
+    from aetheris.kernel.manifest import create_default_manifest
+
+    # 1. Ensure .aetheris folder is initialized
+    dot_aetheris = Path(".aetheris")
+    if not dot_aetheris.exists():
+        console.print("[bold yellow]![/bold yellow] State workspace not initialized. Running aetheris init first...")
+        ctx = click.get_current_context()
+        ctx.invoke(init)
+
+    # 2. Check for manifest.yaml
+    manifest_path = dot_aetheris / "manifest.yaml"
+    if not manifest_path.exists():
+        console.print("[bold yellow]![/bold yellow] Engineering Manifest not found. Creating default .aetheris/manifest.yaml...")
+        create_default_manifest(manifest_path)
+
+    # 3. Load manifest
+    try:
+        with open(manifest_path, "r", encoding="utf-8") as f:
+            manifest = yaml.safe_load(f) or {}
+    except Exception as e:
+        console.print(f"[bold red]X[/bold red] Failed to load manifest: {e}")
+        return
+
+    # 4. Determine build goal
+    build_goal = goal
+    if not build_goal:
+        build_goal = manifest.get("project", {}).get("goal", "Official Aetheris Website")
+
+    console.print(f"[bold green]Goal Locked:[/bold green] [cyan]{build_goal}[/cyan]\n")
+
+    # 5. Display Engineering Laws
+    laws = manifest.get("engineering_laws", [])
+    if laws:
+        console.print("[bold magenta]=== ENGINEERING LAWS COMPLIANCE ===[/bold magenta]")
+        for law in laws:
+            console.print(f" • [dim]{law}[/dim]")
+        console.print("===================================\n")
+
+    # 6. Instantiate and run kernel autonomous loop
+    try:
+        from kernel.core import AetherisKernel
+    except ImportError:
+        from aetheris.kernel.core import AetherisKernel
+
+    # Render progress phases
+    phases = manifest.get("phase_order", [])
+    if phases:
+        console.print(f"[bold yellow]Executing {len(phases)} Engineering Phases sequentially...[/bold yellow]")
+        for phase in phases:
+            console.print(f" -> [dim]{phase}[/dim]")
+        console.print()
+
+    kernel = AetherisKernel(os.getcwd())
+    success = kernel.run_autonomous_loop(build_goal)
+
+    if success:
+        console.print("\n[bold green][OK] Autonomous engineering build completed successfully.[/bold green]")
+    else:
+        console.print("\n[bold red][X] Autonomous engineering build failed. Check logs for details.[/bold red]")
+
+
 if __name__ == '__main__':
     main()

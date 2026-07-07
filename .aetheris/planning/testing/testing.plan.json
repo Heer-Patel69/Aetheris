@@ -1,0 +1,4 @@
+{
+  "framework": "pytest",
+  "target_coverage_percentage": 85
+}

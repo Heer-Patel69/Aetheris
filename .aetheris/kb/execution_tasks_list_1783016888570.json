@@ -1,0 +1,53 @@
+{
+  "object_id": "execution_tasks_list_1783016888570",
+  "version": 1,
+  "type": "execution_tasks_list",
+  "producer": "TDE",
+  "content": {
+    "tasks": [
+      {
+        "id": "task_db_init",
+        "parent": "story_db_init",
+        "priority": "HIGH",
+        "dependencies": [],
+        "estimated_effort_hours": 4.0,
+        "required_inputs": [
+          "entities.plan.json",
+          "database.plan.json"
+        ],
+        "expected_outputs": [
+          "bootstrap migration SQL scripts"
+        ],
+        "definition_of_done": [
+          "Schema successfully bootstrapped in target engine instance"
+        ],
+        "rollback_strategy": "Run backward migration prune scripts"
+      },
+      {
+        "id": "task_auth_pipeline",
+        "parent": "story_auth_jwt",
+        "priority": "HIGH",
+        "dependencies": [
+          "task_db_init"
+        ],
+        "estimated_effort_hours": 6.0,
+        "required_inputs": [
+          "auth.plan.json",
+          "endpoint.plan.json"
+        ],
+        "expected_outputs": [
+          "Authentication CORS/JWT middleware filters"
+        ],
+        "definition_of_done": [
+          "Unauthenticated requests blocked with status 401"
+        ],
+        "rollback_strategy": "Disable auth checks from router middleware stack"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "b586a1757cdeadd4570c763ec288e8a122e0116e4286e598e26a624a1025fe84",
+    "verified": true,
+    "timestamp": 1783016888.5701313
+  }
+}

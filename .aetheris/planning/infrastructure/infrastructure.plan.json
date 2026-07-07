@@ -1,0 +1,5 @@
+{
+  "provider": "AWS",
+  "region": "us-east-1",
+  "topology": "VPC Multi-AZ"
+}

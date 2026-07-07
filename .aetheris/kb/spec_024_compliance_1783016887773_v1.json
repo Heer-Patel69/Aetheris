@@ -1,0 +1,17 @@
+{
+  "object_id": "spec_024_compliance_1783016887773",
+  "version": 1,
+  "type": "spec_024_compliance",
+  "producer": "CGPE",
+  "content": {
+    "compliance_targets": [
+      "GDPR",
+      "SOC 2"
+    ]
+  },
+  "validation": {
+    "checksum": "6855262111ea386f29d7ab89abd027b8a493dba10921157776a4c9c6882d687e",
+    "verified": true,
+    "timestamp": 1783016887.7737403
+  }
+}

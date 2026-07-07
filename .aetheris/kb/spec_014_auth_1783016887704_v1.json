@@ -1,0 +1,16 @@
+{
+  "object_id": "spec_014_auth_1783016887704",
+  "version": 1,
+  "type": "spec_014_auth",
+  "producer": "SPE",
+  "content": {
+    "token_standard": "JWT",
+    "signature_algorithm": "RS256",
+    "expiration_minutes": 15
+  },
+  "validation": {
+    "checksum": "72c478e3721e282a71ceda1566e838e5ef4e8c6e212216b339aa73fd8f1a0023",
+    "verified": true,
+    "timestamp": 1783016887.7046955
+  }
+}

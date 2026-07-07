@@ -1,0 +1,19 @@
+{
+  "object_id": "spec_016_services_1783016887720",
+  "version": 1,
+  "type": "spec_016_services",
+  "producer": "ESPE",
+  "content": {
+    "vendors": [
+      {
+        "name": "Stripe",
+        "purpose": "Payments Processing"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "de208036c53da27713a1e424944bc5fa9690a474ebb0d796d1a0b701d189ed7a",
+    "verified": true,
+    "timestamp": 1783016887.7207355
+  }
+}

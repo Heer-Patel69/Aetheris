@@ -1,0 +1,12 @@
+[
+  {
+    "id": "feat_db_init",
+    "module_id": "mod_db",
+    "name": "Database Schema Initialization"
+  },
+  {
+    "id": "feat_auth_jwt",
+    "module_id": "mod_auth",
+    "name": "JWT Token Verification"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "queues": [
+    "default_queue",
+    "notifications_queue"
+  ],
+  "workers": [
+    {
+      "name": "NotificationWorker",
+      "trigger": "OnNotificationEvent"
+    },
+    {
+      "name": "TelemetryWorker",
+      "trigger": "CronEveryHour"
+    }
+  ]
+}

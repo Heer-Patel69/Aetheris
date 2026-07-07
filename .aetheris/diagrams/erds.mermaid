@@ -1,0 +1,5 @@
+erDiagram
+    TENANT ||--o{ USER : contains
+    USER ||--o{ AUDIT_LOG : triggers
+    TASK ||--o{ EXPERIENCE_RECORD : generates
+    EXPERIENCE_RECORD ||--|| METRICS : contains

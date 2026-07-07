@@ -1,0 +1,27 @@
+{
+  "object_id": "backend_background_jobs_1783016887665",
+  "version": 1,
+  "type": "backend_background_jobs",
+  "producer": "BPE",
+  "content": {
+    "queues": [
+      "default_queue",
+      "notifications_queue"
+    ],
+    "workers": [
+      {
+        "name": "NotificationWorker",
+        "trigger": "OnNotificationEvent"
+      },
+      {
+        "name": "TelemetryWorker",
+        "trigger": "CronEveryHour"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "ae5693ab1ea8c0feabd4268e5b1e8529affa79bbf2d470bfc35c9bea9b128394",
+    "verified": true,
+    "timestamp": 1783016887.6659434
+  }
+}

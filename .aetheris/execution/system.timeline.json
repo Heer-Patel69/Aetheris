@@ -1,0 +1,11 @@
+[
+  {
+    "state": "Discover"
+  },
+  {
+    "state": "Plan"
+  },
+  {
+    "state": "Execute"
+  }
+]

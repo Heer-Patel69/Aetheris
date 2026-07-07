@@ -1,0 +1,30 @@
+{
+  "object_id": "dec_database",
+  "version": 1,
+  "type": "decision",
+  "producer": "EDE",
+  "content": {
+    "id": "dec_database",
+    "category": "database",
+    "selected_option": "SQLite",
+    "alternatives": [
+      "PostgreSQL",
+      "SQLite"
+    ],
+    "tradeoffs": {
+      "benefits": [
+        "Optimized score of 0.93 chosen for SQLite"
+      ],
+      "drawbacks": [
+        "Alternatives ['PostgreSQL'] bypassed"
+      ]
+    },
+    "confidence_score": 0.93,
+    "rationale": "Authoritative selection based on EDE multi-criteria scoring algorithm."
+  },
+  "validation": {
+    "checksum": "a3351ebc1aa0bca54be7e7189da546ad7846ef43a26cb60300370e72c79169c6",
+    "verified": true,
+    "timestamp": 1783016887.5864267
+  }
+}

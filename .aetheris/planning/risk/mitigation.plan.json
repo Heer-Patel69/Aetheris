@@ -1,0 +1,8 @@
+{
+  "mitigations": [
+    {
+      "risk_id": "R01",
+      "action": "Implement circuit breaker logic on controllers"
+    }
+  ]
+}

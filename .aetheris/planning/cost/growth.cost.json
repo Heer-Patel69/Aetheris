@@ -1,0 +1,12 @@
+{
+  "growth_scale_costs": [
+    {
+      "users": 100,
+      "cost": 130.0
+    },
+    {
+      "users": 10000,
+      "cost": 320.0
+    }
+  ]
+}

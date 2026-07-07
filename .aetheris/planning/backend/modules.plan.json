@@ -1,0 +1,28 @@
+{
+  "modules": [
+    {
+      "name": "PersistenceContext",
+      "domain_entities": [
+        "PersistenceContextEntity"
+      ],
+      "services": [
+        "PersistenceContextService"
+      ],
+      "controllers": [
+        "PersistenceContextController"
+      ]
+    },
+    {
+      "name": "CoreDomain",
+      "domain_entities": [
+        "CoreDomainEntity"
+      ],
+      "services": [
+        "CoreDomainService"
+      ],
+      "controllers": [
+        "CoreDomainController"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "object_id": "spec_025_observability_1783016887783",
+  "version": 1,
+  "type": "spec_025_observability",
+  "producer": "OPE",
+  "content": {
+    "agent": "Prometheus Metrics Collector"
+  },
+  "validation": {
+    "checksum": "3de5c0704073b6942b8a6b12471152e70899a48a390c77e20d5582bc04ae65b4",
+    "verified": true,
+    "timestamp": 1783016887.7835412
+  }
+}

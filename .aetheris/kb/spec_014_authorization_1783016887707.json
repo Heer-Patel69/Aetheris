@@ -1,0 +1,20 @@
+{
+  "object_id": "spec_014_authorization_1783016887707",
+  "version": 1,
+  "type": "spec_014_authorization",
+  "producer": "SPE",
+  "content": {
+    "matrix": {
+      "/api/v1/auth/login": {
+        "roles": [
+          "anonymous"
+        ]
+      }
+    }
+  },
+  "validation": {
+    "checksum": "9511111d96aeb1122c768819b9268a730f38296ef982716b983df6e54b13e023",
+    "verified": true,
+    "timestamp": 1783016887.707805
+  }
+}

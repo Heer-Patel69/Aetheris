@@ -1,0 +1,6 @@
+{
+  "caching": {
+    "redis_enabled": true,
+    "ttl_seconds": 3600
+  }
+}

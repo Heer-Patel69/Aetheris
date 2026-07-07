@@ -1,0 +1,13 @@
+{
+  "average_tokens_per_project": 8040.0,
+  "average_cost": 0.0008,
+  "average_latency": 1.0,
+  "average_repository_coverage": 6.18,
+  "average_skill_utilization": 7.77,
+  "average_rfc_utilization": 6.04,
+  "average_spec_utilization": 6.43,
+  "average_context_reduction": 10.91,
+  "average_engineering_score": 20.0,
+  "average_production_readiness": 20.0,
+  "session_count": 5
+}

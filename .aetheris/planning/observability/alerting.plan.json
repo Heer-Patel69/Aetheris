@@ -1,0 +1,9 @@
+{
+  "rules": [
+    {
+      "name": "HighLatencyAlert",
+      "metric": "http_request_duration_seconds",
+      "threshold": 2.0
+    }
+  ]
+}

@@ -26,6 +26,17 @@ class AetherisKernel:
         self.telemetry = TelemetryEngine(self.workspace_path)
         self.event_bus = EventBus(self.workspace_path, self.telemetry)
         
+        # Ingest manifest if available
+        self.manifest_path = self.workspace_path / ".aetheris" / "manifest.yaml"
+        self.manifest = {}
+        if self.manifest_path.exists():
+            try:
+                import yaml
+                with open(self.manifest_path, "r", encoding="utf-8") as f:
+                    self.manifest = yaml.safe_load(f) or {}
+            except Exception as e:
+                sys.stderr.write(f"Warning: Failed to load manifest in AetherisKernel: {e}\n")
+
         # Instantiate AEKS state and registry engines
         self.state_engine = StateEngine(self.workspace_path)
         self.state_engine.initialize()
@@ -346,6 +357,13 @@ class AetherisKernel:
             
             dge = DocumentationGenerationEngine(str(self.workspace_path), ekb)
             dge.generate_documentation(ekb.query_objects({"type": "execution_decision_log"}))
+
+            try:
+                from execution.document_compiler import DocumentCompiler
+                doc_compiler = DocumentCompiler(self.workspace_path, self.manifest)
+                doc_compiler.compile_all(user_goal)
+            except Exception as e:
+                sys.stderr.write(f"Warning: Failed to compile documents: {e}\n")
             
             eme = ExecutionMetricsEngine(str(self.workspace_path), ekb)
             eme.record_metric("total_execution_seconds", 4.2)

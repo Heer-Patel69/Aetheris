@@ -1,0 +1,14 @@
+{
+  "object_id": "cost_plan_1783016890935",
+  "version": 1,
+  "type": "cost_plan",
+  "producer": "TDDCompiler",
+  "content": {
+    "monthly_estimate_usd": 130.0
+  },
+  "validation": {
+    "checksum": "dece52a0a8dae5b7c9a182ad44238a618995d1cf146a8002d94fbdee51ee4f0f",
+    "verified": true,
+    "timestamp": 1783016890.9359488
+  }
+}

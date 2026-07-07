@@ -1,0 +1,9 @@
+{
+  "tool": "Prisma Migrations",
+  "steps": [
+    {
+      "version": "20260701000000_init",
+      "description": "Bootstrap core users schema"
+    }
+  ]
+}

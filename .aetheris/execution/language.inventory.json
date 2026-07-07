@@ -1,0 +1,48 @@
+{
+  "languages": {
+    "json": {
+      "file_count": 12,
+      "percentage": 0.02
+    },
+    "markdown": {
+      "file_count": 539,
+      "percentage": 0.74
+    },
+    "yaml": {
+      "file_count": 5,
+      "percentage": 0.01
+    },
+    "toml": {
+      "file_count": 1,
+      "percentage": 0.0
+    },
+    "shell": {
+      "file_count": 8,
+      "percentage": 0.01
+    },
+    "python": {
+      "file_count": 142,
+      "percentage": 0.19
+    },
+    "powershell": {
+      "file_count": 1,
+      "percentage": 0.0
+    },
+    "typescript": {
+      "file_count": 20,
+      "percentage": 0.03
+    },
+    "css": {
+      "file_count": 1,
+      "percentage": 0.0
+    },
+    "sql": {
+      "file_count": 1,
+      "percentage": 0.0
+    },
+    "html": {
+      "file_count": 1,
+      "percentage": 0.0
+    }
+  }
+}

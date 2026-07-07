@@ -1,0 +1,13 @@
+{
+  "evaluations": [
+    {
+      "vendor": "Stripe",
+      "alternatives": [
+        "PayPal",
+        "Adyen"
+      ],
+      "monthly_fee_cap": 0.0,
+      "confidence": 0.98
+    }
+  ]
+}

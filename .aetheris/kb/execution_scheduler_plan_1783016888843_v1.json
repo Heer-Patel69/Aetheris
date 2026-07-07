@@ -1,0 +1,40 @@
+{
+  "object_id": "execution_scheduler_plan_1783016888843",
+  "version": 1,
+  "type": "execution_scheduler_plan",
+  "producer": "ES",
+  "content": {
+    "queue": [
+      {
+        "step": 1,
+        "parallel_tasks": [
+          {
+            "task_id": "task_db_init",
+            "assigned_model": "gemini-1.5-flash",
+            "assigned_skill": "agency-database-optimizer"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "parallel_tasks": [
+          {
+            "task_id": "task_auth_pipeline",
+            "assigned_model": "claude-3-5-sonnet",
+            "assigned_skill": "agency-cloud-security-architect"
+          }
+        ]
+      }
+    ],
+    "total_steps": 2,
+    "critical_path": [
+      "task_db_init",
+      "task_auth_pipeline"
+    ]
+  },
+  "validation": {
+    "checksum": "7243bef1fd6d0a44238a29395628b32dd8a705b923391d8f6a6498345d98ed38",
+    "verified": true,
+    "timestamp": 1783016888.8436618
+  }
+}

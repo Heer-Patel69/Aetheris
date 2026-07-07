@@ -1,0 +1,5 @@
+{
+  "token_standard": "JWT",
+  "signature_algorithm": "RS256",
+  "expiration_minutes": 15
+}

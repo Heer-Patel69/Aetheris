@@ -1,0 +1,44 @@
+{
+  "object_id": "design_tokens_1783016887625",
+  "version": 1,
+  "type": "design_tokens",
+  "producer": "EDPE",
+  "content": {
+    "colors": {
+      "primary": "hsl(260, 60%, 45%)",
+      "secondary": "hsl(200, 10%, 50%)",
+      "background": "hsl(0, 0%, 100%)",
+      "text": "hsl(220, 20%, 10%)"
+    },
+    "spacing_scale": {
+      "base": "8px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "typography_scale": {
+      "font_family": "Inter, sans-serif",
+      "base_size": "16px",
+      "h1": "2.25rem",
+      "h2": "1.5rem",
+      "h3": "1.25rem"
+    },
+    "borders": {
+      "radius": "8px",
+      "width": "1px",
+      "color": "hsl(200, 10%, 80%)"
+    },
+    "elevation": {
+      "none": "none",
+      "low": "0 1px 3px rgba(0,0,0,0.12)",
+      "medium": "0 4px 6px rgba(0,0,0,0.1)"
+    }
+  },
+  "validation": {
+    "checksum": "b90e08aaf1c1c46d2b04d3a3fa50b4b2eb97f605dc7c91423638490b8734d0c3",
+    "verified": true,
+    "timestamp": 1783016887.6252851
+  }
+}

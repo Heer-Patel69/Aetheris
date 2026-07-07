@@ -1,0 +1,16 @@
+{
+  "object_id": "resource_plan_1783016890919",
+  "version": 1,
+  "type": "resource_plan",
+  "producer": "TDDCompiler",
+  "content": {
+    "hosting": {
+      "scale_minimum": 2
+    }
+  },
+  "validation": {
+    "checksum": "80169d7697b2906f7bc83068b646b481e0d9ad3907e7cec710e22e6b917e5e4a",
+    "verified": true,
+    "timestamp": 1783016890.9198828
+  }
+}

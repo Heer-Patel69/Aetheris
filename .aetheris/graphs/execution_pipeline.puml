@@ -1,0 +1,13 @@
+@startuml
+stateDiagram-v2
+    [*] --> Ingestion
+    Ingestion --> SandboxInit: Auth Validated
+    SandboxInit --> OrgSession: Sandbox Active
+    OrgSession --> PlanGeneration: Roles Aligned
+    PlanGeneration --> TaskExecution: DAG Compiled
+    TaskExecution --> Verification: Test Runs Done
+    Verification --> LearningCommit: Gates Approved
+    LearningCommit --> CodeEvolution: Metrics Logged
+    CodeEvolution --> SandboxCleanup: Patch Done
+    SandboxCleanup --> [*]: Exit SUCCESS
+@enduml

@@ -1,0 +1,9 @@
+{
+  "matrix": {
+    "/api/v1/auth/login": {
+      "roles": [
+        "anonymous"
+      ]
+    }
+  }
+}

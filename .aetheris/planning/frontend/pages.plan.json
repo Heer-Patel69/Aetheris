@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "name": "Home",
+      "path": "/",
+      "components": [
+        "HomeHeader",
+        "HomeContainer",
+        "HomeFooter"
+      ]
+    },
+    {
+      "name": "Fr-Db",
+      "path": "/FR-DB",
+      "components": [
+        "Fr-DbHeader",
+        "Fr-DbContainer",
+        "Fr-DbFooter"
+      ]
+    }
+  ]
+}

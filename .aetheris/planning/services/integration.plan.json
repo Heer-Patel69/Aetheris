@@ -1,0 +1,6 @@
+{
+  "webhook_retry_policy": {
+    "max_attempts": 5,
+    "backoff": "exponential"
+  }
+}

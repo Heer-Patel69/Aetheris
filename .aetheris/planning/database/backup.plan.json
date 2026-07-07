@@ -1,0 +1,5 @@
+{
+  "strategy": "daily_snapshot",
+  "pitr_enabled": true,
+  "retention_days": 30
+}

@@ -1,0 +1,15 @@
+{
+  "object_id": "spec_018_testing_1783016887734",
+  "version": 1,
+  "type": "spec_018_testing",
+  "producer": "TPE",
+  "content": {
+    "framework": "pytest",
+    "target_coverage_percentage": 85
+  },
+  "validation": {
+    "checksum": "5b899718f398a2cf25149e49525e1f8354d98afb4788233b7e560d0c09668aa2",
+    "verified": true,
+    "timestamp": 1783016887.7347312
+  }
+}

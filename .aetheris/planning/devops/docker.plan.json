@@ -1,0 +1,4 @@
+{
+  "base_image": "python:3.12-alpine",
+  "multi_stage": true
+}

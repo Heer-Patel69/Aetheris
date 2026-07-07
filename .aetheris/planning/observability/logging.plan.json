@@ -1,0 +1,11 @@
+{
+  "format": "JSON",
+  "fields": [
+    "timestamp",
+    "trace_id",
+    "span_id",
+    "severity",
+    "message",
+    "context"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "object_id": "frontend_pages_plan_1783016887637",
+  "version": 1,
+  "type": "frontend_pages_plan",
+  "producer": "FPE",
+  "content": {
+    "pages": [
+      {
+        "name": "Home",
+        "path": "/",
+        "components": [
+          "HomeHeader",
+          "HomeContainer",
+          "HomeFooter"
+        ]
+      },
+      {
+        "name": "Fr-Db",
+        "path": "/FR-DB",
+        "components": [
+          "Fr-DbHeader",
+          "Fr-DbContainer",
+          "Fr-DbFooter"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "799e17cefd70fae22ae4169465e6676c4ddc12c7e49b612920f848c0cbe26333",
+    "verified": true,
+    "timestamp": 1783016887.637367
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "style": "Standard Model-View-Controller (MVC) Architecture",
+  "folder_structure": {
+    "src/models": [],
+    "src/views": [],
+    "src/controllers": []
+  },
+  "caching": {
+    "enabled": false,
+    "strategy": "none",
+    "target_modules": []
+  },
+  "security": {
+    "isolation_type": "none",
+    "zones": [
+      "Public"
+    ]
+  },
+  "boundaries": [
+    {
+      "context": "PersistenceContext",
+      "features": [
+        "Data Schema Migration"
+      ]
+    },
+    {
+      "context": "CoreDomain",
+      "features": [
+        "Low Latency Scan Execution"
+      ]
+    }
+  ]
+}

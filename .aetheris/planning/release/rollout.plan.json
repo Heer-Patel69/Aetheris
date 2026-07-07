@@ -1,0 +1,12 @@
+{
+  "canary_steps": [
+    {
+      "percent": 10,
+      "duration_hours": 1
+    },
+    {
+      "percent": 100,
+      "duration_hours": 0
+    }
+  ]
+}

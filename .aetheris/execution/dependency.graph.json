@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": "task_db_init",
+      "label": "task_db_init"
+    },
+    {
+      "id": "task_auth_pipeline",
+      "label": "task_auth_pipeline"
+    }
+  ],
+  "edges": [
+    {
+      "source": "task_db_init",
+      "target": "task_auth_pipeline",
+      "type": "depends_on"
+    }
+  ]
+}

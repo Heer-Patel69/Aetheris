@@ -1,0 +1,19 @@
+{
+  "schemas": {
+    "LoginResponse": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "expires_in": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "token",
+        "expires_in"
+      ]
+    }
+  }
+}

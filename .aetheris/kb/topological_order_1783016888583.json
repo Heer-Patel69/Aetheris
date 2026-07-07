@@ -1,0 +1,17 @@
+{
+  "object_id": "topological_order_1783016888583",
+  "version": 1,
+  "type": "topological_order",
+  "producer": "DGB",
+  "content": {
+    "order": [
+      "task_db_init",
+      "task_auth_pipeline"
+    ]
+  },
+  "validation": {
+    "checksum": "bdcf32d226f204ae59c2bc599a99620319c0ac9d0537d5ce0f65791164f4c822",
+    "verified": true,
+    "timestamp": 1783016888.5836828
+  }
+}

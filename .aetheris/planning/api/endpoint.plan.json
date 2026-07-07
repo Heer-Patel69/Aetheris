@@ -1,0 +1,11 @@
+{
+  "endpoints": [
+    {
+      "path": "/api/v1/auth/login",
+      "method": "POST",
+      "requires_auth": false,
+      "description": "Authenticate user credential session",
+      "rate_limit_tier": "standard"
+    }
+  ]
+}

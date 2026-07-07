@@ -1,6 +1,10 @@
 __pycache__/
 *.pyc
-.aetheris/
+# Aetheris Workspace tracking
+.aetheris/cache/
+.aetheris/runtime/
+.aetheris/state/
+.aetheris/logs/
 scratch/
 test_compliance_workspace/
 .pytest_cache/

@@ -1,0 +1,4 @@
+{
+  "peak_transactions_per_second": 100,
+  "growth_saturation_threshold_percentage": 85
+}

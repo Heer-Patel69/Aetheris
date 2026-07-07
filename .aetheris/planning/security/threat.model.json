@@ -1,0 +1,10 @@
+{
+  "stride": [
+    {
+      "id": "T01",
+      "category": "Spoofing",
+      "threat": "Adversary brute-forces user logins",
+      "mitigation": "Enforce API Gateway rate limiting"
+    }
+  ]
+}

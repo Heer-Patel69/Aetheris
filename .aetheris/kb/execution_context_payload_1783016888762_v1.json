@@ -1,0 +1,26 @@
+{
+  "object_id": "execution_context_payload_1783016888762",
+  "version": 1,
+  "type": "execution_context_payload",
+  "producer": "CAE",
+  "content": {
+    "task_id": "task_db_init",
+    "token_budget_limit": 100000,
+    "assembled_tokens_count": 265,
+    "payload": {
+      "system_instructions": "You are an autonomous agent executing task: task_db_init",
+      "relevant_files": [
+        {
+          "path": ".aetheris/planning/database/entities.plan.json",
+          "content": "{\n  \"entities\": [\n    {\n      \"name\": \"User\",\n      \"fields\": [\n        {\n          \"name\": \"id\",\n          \"type\": \"uuid\",\n          \"primary_key\": true,\n          \"nullable\": false\n        },\n        {\n          \"name\": \"email\",\n          \"type\": \"varchar(255)\",\n          \"unique\": true,\n          \"nullable\": false\n        },\n        {\n          \"name\": \"password_hash\",\n          \"type\": \"varchar(255)\",\n          \"nullable\": false\n        },\n        {\n          \"name\": \"created_at\",\n          \"type\": \"timestamptz\",\n          \"default\": \"NOW()\",\n          \"nullable\": false\n        }\n      ]\n    }\n  ]\n}"
+        }
+      ],
+      "blueprint_context": "Database schema: User table configured with uuid primary key."
+    }
+  },
+  "validation": {
+    "checksum": "2e0b9caf375757231ba1a5c4531fbd3bf05843a6dcf71bbf20f924427cd93747",
+    "verified": true,
+    "timestamp": 1783016888.7625902
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "object_id": "spec_012_entities_1783016887680",
+  "version": 1,
+  "type": "spec_012_entities",
+  "producer": "DPE",
+  "content": {
+    "entities": [
+      {
+        "name": "User",
+        "fields": [
+          {
+            "name": "id",
+            "type": "uuid",
+            "primary_key": true,
+            "nullable": false
+          },
+          {
+            "name": "email",
+            "type": "varchar(255)",
+            "unique": true,
+            "nullable": false
+          },
+          {
+            "name": "password_hash",
+            "type": "varchar(255)",
+            "nullable": false
+          },
+          {
+            "name": "created_at",
+            "type": "timestamptz",
+            "default": "NOW()",
+            "nullable": false
+          }
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "47bcfe0c0ab9dfb7245ce08f299a9f2ed363f2ce7411bef47df65d89c5db9ea1",
+    "verified": true,
+    "timestamp": 1783016887.6808167
+  }
+}

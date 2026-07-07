@@ -1,0 +1,34 @@
+{
+  "object_id": "execution_parallel_batches_1783016888856",
+  "version": 1,
+  "type": "execution_parallel_batches",
+  "producer": "PEE",
+  "content": {
+    "batches": [
+      {
+        "batch_id": "batch_step_1",
+        "tasks": [
+          "task_db_init"
+        ],
+        "locked_files": [
+          "database.plan.json"
+        ]
+      },
+      {
+        "batch_id": "batch_step_2",
+        "tasks": [
+          "task_auth_pipeline"
+        ],
+        "locked_files": [
+          "auth.plan.json"
+        ]
+      }
+    ],
+    "concurrency_limit": 4
+  },
+  "validation": {
+    "checksum": "5bfcebd1ba241f3c8fe20df302c26bf4712095bcb836b9f80d7c6e91b8298c61",
+    "verified": true,
+    "timestamp": 1783016888.8563259
+  }
+}

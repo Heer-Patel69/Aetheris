@@ -1,0 +1,8 @@
+{
+  "trigger_metrics": [
+    {
+      "metric": "http_error_rate_percentage",
+      "threshold": 1.0
+    }
+  ]
+}

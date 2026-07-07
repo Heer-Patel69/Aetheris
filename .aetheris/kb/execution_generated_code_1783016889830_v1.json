@@ -1,0 +1,22 @@
+{
+  "object_id": "execution_generated_code_1783016889830",
+  "version": 1,
+  "type": "execution_generated_code",
+  "producer": "ACGE",
+  "content": {
+    "modified_files": [
+      {
+        "path": "src/db_init_bootstrap.sql",
+        "action": "create",
+        "reason": "Bootstrap baseline users table",
+        "lines_added": 1,
+        "lines_removed": 0
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "7cbd838f7bf903b52073da0d4e97e2b41e830c7063976a8331fc73bf86782270",
+    "verified": true,
+    "timestamp": 1783016889.8304474
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "strengths": [
+    "Strict Layer Isolation",
+    "Topological task DAG"
+  ],
+  "weaknesses": [
+    "Single database instance"
+  ],
+  "scalability": {
+    "tier_100_users": {
+      "status": "SUPPORTED"
+    },
+    "tier_10000000_users": {
+      "status": "UNSUPPORTED"
+    }
+  }
+}

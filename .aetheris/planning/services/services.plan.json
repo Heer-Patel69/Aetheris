@@ -1,0 +1,8 @@
+{
+  "vendors": [
+    {
+      "name": "Stripe",
+      "purpose": "Payments Processing"
+    }
+  ]
+}

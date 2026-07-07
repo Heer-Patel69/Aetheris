@@ -1,0 +1,5 @@
+{
+  "protocol": "REST",
+  "versioning": "URL-based (/v1/)",
+  "base_url": "/api/v1"
+}

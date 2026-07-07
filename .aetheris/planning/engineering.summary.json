@@ -1,0 +1,5 @@
+{
+  "database_engine": "PostgreSQL",
+  "security_standard": "JWT",
+  "validation_status": "PASSED"
+}

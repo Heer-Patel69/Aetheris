@@ -1,0 +1,6 @@
+{
+  "collectors": [
+    "http_requests_total",
+    "db_connections_active"
+  ]
+}

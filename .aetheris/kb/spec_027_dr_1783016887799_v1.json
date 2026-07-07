@@ -1,0 +1,15 @@
+{
+  "object_id": "spec_027_dr_1783016887799",
+  "version": 1,
+  "type": "spec_027_dr",
+  "producer": "DRPE",
+  "content": {
+    "rto_minutes": 60,
+    "rpo_minutes": 1440
+  },
+  "validation": {
+    "checksum": "be9fff9a8472baaf9722ff3ba834975f1e214869718dae232cffce8d20facf7d",
+    "verified": true,
+    "timestamp": 1783016887.7998884
+  }
+}

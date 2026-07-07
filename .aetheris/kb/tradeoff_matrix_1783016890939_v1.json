@@ -1,0 +1,14 @@
+{
+  "object_id": "tradeoff_matrix_1783016890939",
+  "version": 1,
+  "type": "tradeoff_matrix",
+  "producer": "TDDCompiler",
+  "content": {
+    "decisions": []
+  },
+  "validation": {
+    "checksum": "1672e9728a2079c90e1a3de3b2279d199f0bc1a90b366656915700a3922c7f18",
+    "verified": true,
+    "timestamp": 1783016890.9400125
+  }
+}

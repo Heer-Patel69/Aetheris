@@ -1,0 +1,10 @@
+[
+  {
+    "severity": "WARNING",
+    "evidence": "def auth_filter(request): return True",
+    "recommendation": "Do not hardcode return True in auth middleware. Verify JWT signature tokens.",
+    "affected_files": [
+      "src/auth_middleware.py"
+    ]
+  }
+]

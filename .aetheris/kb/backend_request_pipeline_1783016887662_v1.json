@@ -1,0 +1,23 @@
+{
+  "object_id": "backend_request_pipeline_1783016887662",
+  "version": 1,
+  "type": "backend_request_pipeline",
+  "producer": "BPE",
+  "content": {
+    "filters": [
+      "CORSFilter",
+      "RateLimiterFilter",
+      "AuthHeaderFilter",
+      "ValidationFilter"
+    ],
+    "security": {
+      "authentication": "JWT validation token checker",
+      "authorization": "RBAC role validator check"
+    }
+  },
+  "validation": {
+    "checksum": "7c847e8e6c48810c51cc954b61c8cd118e1f7de439537d3f16229fe23fc06b61",
+    "verified": true,
+    "timestamp": 1783016887.662653
+  }
+}

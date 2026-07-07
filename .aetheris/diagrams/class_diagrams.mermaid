@@ -1,0 +1,24 @@
+classDiagram
+    class AetherisKernel {
+        +workspace_path: Path
+        +runtime: AutonomousRuntimeEngine
+        +enterprise: EnterprisePlatform
+        +org_manager: AIOrganizationManager
+        +learning: LearningSystem
+        +evolution: SelfEvolutionOrchestrator
+        +run_autonomous_loop(user_goal)
+    }
+    class SandboxedExecutor {
+        +workspace_path: Path
+        +execute(cmd, env, timeout)
+        +is_safe(path)
+    }
+    class EnterprisePlatform {
+        +identity: IdentityManager
+        +tenants: TenantManager
+        +rbac: RBACManager
+        +audit: AuditLogger
+        +authorize_request(token, action)
+    }
+    AetherisKernel --> SandboxedExecutor
+    AetherisKernel --> EnterprisePlatform

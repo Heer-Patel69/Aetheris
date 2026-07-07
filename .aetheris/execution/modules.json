@@ -1,0 +1,12 @@
+[
+  {
+    "id": "mod_db",
+    "name": "Database Schema Setup",
+    "description": "Configure tables, indexes, and baseline migration scripts."
+  },
+  {
+    "id": "mod_auth",
+    "name": "Authentication Gateway",
+    "description": "API middleware filters and session scopes validations."
+  }
+]

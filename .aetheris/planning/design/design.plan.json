@@ -1,0 +1,50 @@
+{
+  "style": "Minimalist Apple Style",
+  "personality": "Elegant, Simple, Professional",
+  "tokens": {
+    "colors": {
+      "primary": "hsl(260, 60%, 45%)",
+      "secondary": "hsl(200, 10%, 50%)",
+      "background": "hsl(0, 0%, 100%)",
+      "text": "hsl(220, 20%, 10%)"
+    },
+    "spacing_scale": {
+      "base": "8px",
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "typography_scale": {
+      "font_family": "Inter, sans-serif",
+      "base_size": "16px",
+      "h1": "2.25rem",
+      "h2": "1.5rem",
+      "h3": "1.25rem"
+    },
+    "borders": {
+      "radius": "8px",
+      "width": "1px",
+      "color": "hsl(200, 10%, 80%)"
+    },
+    "elevation": {
+      "none": "none",
+      "low": "0 1px 3px rgba(0,0,0,0.12)",
+      "medium": "0 4px 6px rgba(0,0,0,0.1)"
+    }
+  },
+  "motion": {
+    "transition_speed": "200ms ease",
+    "hover_scale": 1.02
+  },
+  "accessibility": {
+    "target": "WCAG AA",
+    "min_contrast_ratio": 4.5
+  },
+  "templates": {
+    "empty_states": "Centered illustration, clear value text, and prominent CTA button.",
+    "loading_states": "Content skeletal loaders matching view layouts.",
+    "notifications": "Toast popups with status-specific borders (Success/Error/Warning)."
+  }
+}

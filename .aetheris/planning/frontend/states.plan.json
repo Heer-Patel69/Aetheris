@@ -1,0 +1,14 @@
+{
+  "global_state": "ContextAPI / Redux Toolkit Provider",
+  "contexts": [
+    "AuthContext",
+    "ThemeContext",
+    "NotificationContext"
+  ],
+  "caching": {
+    "local_storage": [
+      "user_session"
+    ],
+    "offline_support": "ServiceWorker background syncing enabled for dashboard changes"
+  }
+}

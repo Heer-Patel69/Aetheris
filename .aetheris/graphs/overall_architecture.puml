@@ -1,0 +1,14 @@
+@startuml
+graph TD
+    User["User Goal / Objective"] --> Auth["Enterprise Auth (platform.py)"]
+    Auth --> Sandbox["Sandbox Activation (sandbox.py)"]
+    Sandbox --> Kernel["Aetheris Kernel (core.py)"]
+    Kernel --> Org["AI Org Collaboration (agents.py)"]
+    Org --> Planner["Planner (planner.py)"]
+    Planner --> Exec["Execution Scheduler (es.py)"]
+    Exec --> Quality["Quality Gate (qia.py)"]
+    Quality --> EKB["EKB Persistence (ekb.py)"]
+    EKB --> Learn["Learning Loop (engine.py)"]
+    Learn --> Evol["Self-Evolution Loop (orchestrator.py)"]
+    Evol --> Exit["Sandbox Shutdown & Exit"]
+@enduml

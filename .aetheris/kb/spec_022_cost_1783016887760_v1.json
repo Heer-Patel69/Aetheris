@@ -1,0 +1,14 @@
+{
+  "object_id": "spec_022_cost_1783016887760",
+  "version": 1,
+  "type": "spec_022_cost",
+  "producer": "CPE",
+  "content": {
+    "monthly_budget_cap": 150.0
+  },
+  "validation": {
+    "checksum": "4837493903ac82917ecc47268bf820bd1fed8f396b41d973dfbc6a1d4ddaf56d",
+    "verified": true,
+    "timestamp": 1783016887.760987
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "compute": "ECS Fargate",
+  "instances": [
+    {
+      "role": "app-server",
+      "cpu": "256",
+      "memory": "512MB"
+    }
+  ]
+}

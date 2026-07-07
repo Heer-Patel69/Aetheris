@@ -1,0 +1,4 @@
+{
+  "data_retention_days": 365,
+  "access_control": "Enforce Strict RBAC roles validation"
+}

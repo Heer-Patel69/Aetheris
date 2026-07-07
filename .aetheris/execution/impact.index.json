@@ -1,0 +1,19 @@
+{
+  "target_node": "layer:domain",
+  "total_affected": 2,
+  "affected_nodes": [
+    {
+      "id": "layer:application",
+      "type": "ArchitectureLayer",
+      "path_distance": 1
+    },
+    {
+      "id": "layer:infrastructure",
+      "type": "ArchitectureLayer",
+      "path_distance": 1
+    }
+  ],
+  "risks": [
+    "Low risk: local scope dependents affected."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "object_id": "backend_modules_plan_1783016887652",
+  "version": 1,
+  "type": "backend_modules_plan",
+  "producer": "BPE",
+  "content": {
+    "modules": [
+      {
+        "name": "PersistenceContext",
+        "domain_entities": [
+          "PersistenceContextEntity"
+        ],
+        "services": [
+          "PersistenceContextService"
+        ],
+        "controllers": [
+          "PersistenceContextController"
+        ]
+      },
+      {
+        "name": "CoreDomain",
+        "domain_entities": [
+          "CoreDomainEntity"
+        ],
+        "services": [
+          "CoreDomainService"
+        ],
+        "controllers": [
+          "CoreDomainController"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "31afa5a074264665043a9e43e0340e1fee785ab275b11807a74a880e0d902b04",
+    "verified": true,
+    "timestamp": 1783016887.6526241
+  }
+}

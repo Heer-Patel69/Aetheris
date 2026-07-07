@@ -1,0 +1,21 @@
+{
+  "object_id": "execution_checkpoint_snap_1783016890614",
+  "version": 1,
+  "type": "execution_checkpoint_snap",
+  "producer": "SPE",
+  "content": {
+    "checkpoint_id": "checkpoint_1783016890",
+    "blueprint_version": 2,
+    "completed_tasks": [
+      "task_db_init",
+      "task_auth_pipeline"
+    ],
+    "active_task_id": "",
+    "timestamp": "1783016890.6086435"
+  },
+  "validation": {
+    "checksum": "0de3c6ebd823754e59064574c7e57c6ed18d93f5cdd57de15c934fce173efaa3",
+    "verified": true,
+    "timestamp": 1783016890.6148508
+  }
+}

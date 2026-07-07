@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "Home",
+      "type": "public",
+      "layout": "AppShellLayout"
+    },
+    {
+      "path": "/FR-DB",
+      "page": "Fr-Db",
+      "type": "protected",
+      "layout": "DashboardShellLayout"
+    }
+  ]
+}

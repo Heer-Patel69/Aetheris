@@ -1,0 +1,6 @@
+{
+  "debt_categories": [
+    "dependency upgrades",
+    "legacy mock replacements"
+  ]
+}

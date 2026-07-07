@@ -1,0 +1,16 @@
+{
+  "object_id": "execution_review_report_1783016890584",
+  "version": 1,
+  "type": "execution_review_report",
+  "producer": "SRE",
+  "content": {
+    "approved": true,
+    "overall_quality_score": 100.0,
+    "findings": []
+  },
+  "validation": {
+    "checksum": "7beae9037aece55c7d1cf25827f0a24b8993eb3ee13f9f9937ef786b4330e459",
+    "verified": true,
+    "timestamp": 1783016890.5853193
+  }
+}

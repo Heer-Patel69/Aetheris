@@ -1,0 +1,21 @@
+{
+  "object_id": "spec_023_risk_1783016887767",
+  "version": 1,
+  "type": "spec_023_risk",
+  "producer": "RPE",
+  "content": {
+    "risks": [
+      {
+        "id": "R01",
+        "name": "Third party API desync",
+        "probability": "low",
+        "impact": "medium"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "157c57e8119140d261d174d8f2c6abacc1a3e987d42d65fe07d7efbb2e28dce0",
+    "verified": true,
+    "timestamp": 1783016887.7673285
+  }
+}

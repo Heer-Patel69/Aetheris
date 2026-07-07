@@ -1,0 +1,22 @@
+{
+  "object_id": "spec_013_endpoint_1783016887695",
+  "version": 1,
+  "type": "spec_013_endpoint",
+  "producer": "APIE",
+  "content": {
+    "endpoints": [
+      {
+        "path": "/api/v1/auth/login",
+        "method": "POST",
+        "requires_auth": false,
+        "description": "Authenticate user credential session",
+        "rate_limit_tier": "standard"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "5d20b2df3d41ec315a95576fb534c6fd784453c31e1b4491667d3f5b08d8ceb3",
+    "verified": true,
+    "timestamp": 1783016887.695799
+  }
+}

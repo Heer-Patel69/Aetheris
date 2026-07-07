@@ -1,0 +1,25 @@
+{
+  "object_id": "frontend_states_plan_1783016887643",
+  "version": 1,
+  "type": "frontend_states_plan",
+  "producer": "FPE",
+  "content": {
+    "global_state": "ContextAPI / Redux Toolkit Provider",
+    "contexts": [
+      "AuthContext",
+      "ThemeContext",
+      "NotificationContext"
+    ],
+    "caching": {
+      "local_storage": [
+        "user_session"
+      ],
+      "offline_support": "ServiceWorker background syncing enabled for dashboard changes"
+    }
+  },
+  "validation": {
+    "checksum": "8a42040c45dd2b5191b68b29d9b822e115ba606247511ae63bf2e6de0fe9b9b1",
+    "verified": true,
+    "timestamp": 1783016887.6436324
+  }
+}

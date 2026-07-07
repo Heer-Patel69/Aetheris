@@ -1,0 +1,30 @@
+{
+  "object_id": "execution_dag_1783016888580",
+  "version": 1,
+  "type": "execution_dag",
+  "producer": "DGB",
+  "content": {
+    "nodes": [
+      {
+        "id": "task_db_init",
+        "label": "task_db_init"
+      },
+      {
+        "id": "task_auth_pipeline",
+        "label": "task_auth_pipeline"
+      }
+    ],
+    "edges": [
+      {
+        "source": "task_db_init",
+        "target": "task_auth_pipeline",
+        "type": "depends_on"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "3b69de5dbad2079584f226115c0f483ecad3e8c0fb8568969d9e5ed32b763b89",
+    "verified": true,
+    "timestamp": 1783016888.5806735
+  }
+}

@@ -1,0 +1,18 @@
+sequenceDiagram
+    participant U as User
+    participant K as Kernel
+    participant S as Sandbox
+    participant O as AI Org
+    participant L as Learning
+    participant E as Evolution
+    
+    U->>K: run_autonomous_loop()
+    K->>S: start()
+    K->>O: run_collaborative_session()
+    O->>K: Returns Task List
+    K->>S: execute(cmd)
+    S->>K: Execution Report
+    K->>L: process_execution()
+    K->>E: run_evolution_cycle()
+    K->>S: stop()
+    K->>U: Final Compliance Report

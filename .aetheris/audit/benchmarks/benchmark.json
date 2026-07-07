@@ -1,0 +1,67 @@
+{
+  "subsystems": {
+    "kernel": {
+      "latency_ms": 12,
+      "token_usage": 0,
+      "ram_mb": 45,
+      "cpu_pct": 2.5,
+      "score": 95
+    },
+    "planner": {
+      "latency_ms": 150,
+      "token_usage": 4500,
+      "ram_mb": 120,
+      "cpu_pct": 12.0,
+      "score": 90
+    },
+    "execution": {
+      "latency_ms": 3200,
+      "token_usage": 18000,
+      "ram_mb": 250,
+      "cpu_pct": 45.0,
+      "score": 88
+    },
+    "intelligence": {
+      "latency_ms": 45,
+      "token_usage": 8000,
+      "ram_mb": 90,
+      "cpu_pct": 5.0,
+      "score": 92
+    },
+    "runtime": {
+      "latency_ms": 0,
+      "token_usage": 0,
+      "ram_mb": 0,
+      "cpu_pct": 0.0,
+      "score": 0
+    },
+    "learning": {
+      "latency_ms": 0,
+      "token_usage": 0,
+      "ram_mb": 0,
+      "cpu_pct": 0.0,
+      "score": 0
+    },
+    "enterprise": {
+      "latency_ms": 0,
+      "token_usage": 0,
+      "ram_mb": 0,
+      "cpu_pct": 0.0,
+      "score": 0
+    },
+    "organization": {
+      "latency_ms": 0,
+      "token_usage": 0,
+      "ram_mb": 0,
+      "cpu_pct": 0.0,
+      "score": 0
+    },
+    "self_evolution": {
+      "latency_ms": 0,
+      "token_usage": 0,
+      "ram_mb": 0,
+      "cpu_pct": 0.0,
+      "score": 0
+    }
+  }
+}

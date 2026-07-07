@@ -1,0 +1,11 @@
+{
+  "ci": {
+    "runner": "GitHub Actions",
+    "stages": [
+      "Lint",
+      "Test",
+      "Docker Build",
+      "Deploy Staging"
+    ]
+  }
+}

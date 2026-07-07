@@ -1,0 +1,19 @@
+{
+  "object_id": "spec_020_execution_1783016887748",
+  "version": 1,
+  "type": "spec_020_execution",
+  "producer": "EEPE",
+  "content": {
+    "sprints": [
+      {
+        "id": "Sprint 1",
+        "duration": "14 days"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "9e6ca4aa893598799d1a58e18669bc4224804a8db1bfacfe67a6ccde87368e85",
+    "verified": true,
+    "timestamp": 1783016887.7488656
+  }
+}

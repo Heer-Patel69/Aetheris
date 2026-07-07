@@ -1,0 +1,16 @@
+graph LR
+    subgraph Core System
+        Kernel[Kernel Module]
+    end
+    subgraph Isolated Security
+        Platform[Enterprise Platform]
+        Sandbox[Sandboxed Executor]
+    end
+    subgraph Evolution Layer
+        Evol[Evolution Orchestrator]
+        Learn[Learning System]
+    end
+    Kernel --> Platform
+    Kernel --> Sandbox
+    Kernel --> Evol
+    Kernel --> Learn

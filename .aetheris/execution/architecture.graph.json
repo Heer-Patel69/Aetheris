@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "layer:models",
+      "type": "ArchitectureLayer"
+    },
+    {
+      "id": "layer:views",
+      "type": "ArchitectureLayer"
+    },
+    {
+      "id": "layer:controllers",
+      "type": "ArchitectureLayer"
+    },
+    {
+      "id": "layer:domain",
+      "type": "ArchitectureLayer",
+      "metadata": {}
+    },
+    {
+      "id": "layer:application",
+      "type": "ArchitectureLayer",
+      "metadata": {}
+    },
+    {
+      "id": "layer:infrastructure",
+      "type": "ArchitectureLayer",
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "source": "layer:infrastructure",
+      "target": "layer:application",
+      "relationship": "depends_on"
+    },
+    {
+      "source": "layer:application",
+      "target": "layer:domain",
+      "relationship": "depends_on"
+    }
+  ]
+}

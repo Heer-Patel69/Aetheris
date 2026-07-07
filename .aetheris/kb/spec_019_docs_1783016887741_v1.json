@@ -1,0 +1,15 @@
+{
+  "object_id": "spec_019_docs_1783016887741",
+  "version": 1,
+  "type": "spec_019_docs",
+  "producer": "DoPE",
+  "content": {
+    "format": "Markdown",
+    "target_audience": "Software Engineers"
+  },
+  "validation": {
+    "checksum": "3a08261cc69d89143c9b846880b0efcb36737a986518ad61902b513695ea1027",
+    "verified": true,
+    "timestamp": 1783016887.7419307
+  }
+}

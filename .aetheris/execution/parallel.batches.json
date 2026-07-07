@@ -1,0 +1,22 @@
+[
+  {
+    "step": 1,
+    "parallel_tasks": [
+      {
+        "task_id": "task_db_init",
+        "assigned_model": "gemini-1.5-flash",
+        "assigned_skill": "agency-database-optimizer"
+      }
+    ]
+  },
+  {
+    "step": 2,
+    "parallel_tasks": [
+      {
+        "task_id": "task_auth_pipeline",
+        "assigned_model": "claude-3-5-sonnet",
+        "assigned_skill": "agency-cloud-security-architect"
+      }
+    ]
+  }
+]

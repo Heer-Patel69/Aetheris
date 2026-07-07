@@ -1,0 +1,31 @@
+{
+  "mappings": [
+    {
+      "task_id": "task_db_init",
+      "selected_skills": [
+        {
+          "name": "agency-database-optimizer",
+          "confidence": 0.95,
+          "role": "primary"
+        }
+      ],
+      "fallback_skill": "agency-senior-developer"
+    },
+    {
+      "task_id": "task_auth_pipeline",
+      "selected_skills": [
+        {
+          "name": "agency-cloud-security-architect",
+          "confidence": 0.9,
+          "role": "primary"
+        }
+      ],
+      "fallback_skill": "agency-senior-developer"
+    }
+  ],
+  "required_skills": [
+    "agency-database-optimizer",
+    "agency-cloud-security-architect"
+  ],
+  "missing_skills": []
+}

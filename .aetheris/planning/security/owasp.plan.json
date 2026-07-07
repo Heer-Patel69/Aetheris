@@ -1,0 +1,9 @@
+{
+  "csrf_protection_enabled": true,
+  "xss_headers_enabled": true,
+  "cors_policy": {
+    "allowed_origins": [
+      "https://localhost:3000"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "story_db_init",
+    "feature_id": "feat_db_init",
+    "name": "As a system admin, I need a database schema to bootstrap User identities."
+  },
+  {
+    "id": "story_auth_jwt",
+    "feature_id": "feat_auth_jwt",
+    "name": "As an API consumer, I need JWT authorization validation checks on routes."
+  }
+]

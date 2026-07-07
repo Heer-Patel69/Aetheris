@@ -1,0 +1,16 @@
+{
+  "object_id": "spec_015_infra_1783016887713",
+  "version": 1,
+  "type": "spec_015_infra",
+  "producer": "IPE",
+  "content": {
+    "provider": "AWS",
+    "region": "us-east-1",
+    "topology": "VPC Multi-AZ"
+  },
+  "validation": {
+    "checksum": "3ea81f4c82817e4605fe01a796e81797db8015ea57ca2a7538ed9fbb7621aac7",
+    "verified": true,
+    "timestamp": 1783016887.7139924
+  }
+}

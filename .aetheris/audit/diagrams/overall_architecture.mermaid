@@ -1,0 +1,7 @@
+graph TD
+    User["User Goal / Objective"] --> Kernel["Aetheris Kernel (core.py)"]
+    Kernel --> Planner["Planner (planner.py)"]
+    Planner --> Orchestrator["Skill Orchestrator"]
+    Orchestrator --> Exec["Execution Engine (goe.py)"]
+    Exec --> Quality["Quality Gate Auditor (qia.py)"]
+    Quality --> EKB["Engineering Knowledge Base (ekb.py)"]

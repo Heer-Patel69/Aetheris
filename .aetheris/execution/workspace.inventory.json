@@ -1,0 +1,5158 @@
+{
+  "workspace_root": "C:/AI/Agency owner/aetheris",
+  "scanned_at": "2026-07-02T18:28:07Z",
+  "files": [
+    {
+      "path": ".env",
+      "size_bytes": 16,
+      "modified_at": 1783011697.5196333,
+      "fingerprint": "880c9d3c8b00de4e7e8da7e87b925855aa0d0824f9953b01f80b21687dbf9a52",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 168,
+      "modified_at": 1783011697.5206347,
+      "fingerprint": "f493786032f961562eab94acbd1dad2ba1a0204557bc01c96e3666557ce054e5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "size_bytes": 49,
+      "modified_at": 1783011697.5218847,
+      "fingerprint": "b585776babba99d04fdee49f28d010e4b72604a62d6a2c7c3e075bd473f11add",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "00_SYSTEM_CONSTITUTION.md",
+      "size_bytes": 8907,
+      "modified_at": 1783011548.1364698,
+      "fingerprint": "55250f82da1920cf94557d31dcf49012583e4f4f70418355d02cb2730ab847b0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/001-module-boundaries.md",
+      "size_bytes": 2806,
+      "modified_at": 1783011697.5339007,
+      "fingerprint": "0c9a7d14e1c52c77142241067c8555f27f6caf691db7e0d98fd5dc06a193b83f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/002-state-ownership.md",
+      "size_bytes": 2723,
+      "modified_at": 1783011697.5350988,
+      "fingerprint": "e1d5a9a9a648916f7e2da7fd04059ecc3ec9b1e1700e4c69f382b606883f7698",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/003-event-model.md",
+      "size_bytes": 2483,
+      "modified_at": 1783011697.5365753,
+      "fingerprint": "dac7d1a9a216ffa287171f7ab06d62b614efccba6e4df05ab63b3fda143b6c7d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/004-configuration-hierarchy.md",
+      "size_bytes": 3018,
+      "modified_at": 1783011697.5375764,
+      "fingerprint": "a4ff8765edce4b98272ae79c22d3d8639f3317bd32fe8e92fb0f54cdde40777f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/005-memory-separation.md",
+      "size_bytes": 4066,
+      "modified_at": 1783011697.5390306,
+      "fingerprint": "f733d90558c0f825305ff3ebace074795d9d59237e7cf4739ebb8439990192c0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/006-skill-decomposition.md",
+      "size_bytes": 2750,
+      "modified_at": 1783011697.5400584,
+      "fingerprint": "027f02d35d466cd7584e1cc821c74f53872ae1df3f4ff8844fe791900e5dad33",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/007-script-execution.md",
+      "size_bytes": 2379,
+      "modified_at": 1783011697.5414355,
+      "fingerprint": "c775a6377dafb846dfcca032ae73e1399a1558d739fb342d93d270d69fc0a477",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/008-version-contract.md",
+      "size_bytes": 2160,
+      "modified_at": 1783011697.5424335,
+      "fingerprint": "7ba4b0e36d43b7cd95cbd830e8164b4ba92433d6778092202c850d489564f319",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/009-platform-constraints.md",
+      "size_bytes": 2746,
+      "modified_at": 1783011697.5446062,
+      "fingerprint": "f73e23f3c116706ccd5a684cc65465cd19323fed4737ab94b010916fb37e0d53",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "adrs/010-security-perimeter.md",
+      "size_bytes": 2522,
+      "modified_at": 1783011697.545605,
+      "fingerprint": "f491ad3fa82817a45a4aecb2599e258567371fc1c099e8ec1d62eff67206cd7b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "size_bytes": 6061,
+      "modified_at": 1783011697.5238214,
+      "fingerprint": "cd1a43b1e8393a1921c51094ce657ec03d13d5077ba09a9f2ffd12daaf2e246f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size_bytes": 2753,
+      "modified_at": 1783011697.5248299,
+      "fingerprint": "bb0303977ecb8623bfe1f1ce336c430e9a7359554fca813e5a74fdf664ebe818",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "config/aetheris.yaml",
+      "size_bytes": 977,
+      "modified_at": 1783011697.547905,
+      "fingerprint": "cc03140f20955d408939971cb19f17726857443a19321e870cca65d99ac0645e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "config/costs.yaml",
+      "size_bytes": 205,
+      "modified_at": 1783011697.5489044,
+      "fingerprint": "de6fd33344f0d9175342bec48b6d81b7edc05372485a2bdedf3497745afd08fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "config/gates.yaml",
+      "size_bytes": 573,
+      "modified_at": 1783011697.5499046,
+      "fingerprint": "f0695bfe266bc698c0de9f3adc881e4c1fc452b34fcfd759b884c2cc985c1d57",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "config/models.yaml",
+      "size_bytes": 1065,
+      "modified_at": 1783011697.551249,
+      "fingerprint": "357dfbf0277f9897fb5febeede55645ebefff817753c5fe94a0a6d44a58b1115",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "config/plugins.yaml",
+      "size_bytes": 11,
+      "modified_at": 1783011697.5523922,
+      "fingerprint": "a4618989881f9af4cbf118ad70be33aa351c4bbfe06502c08243edb13542e35f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/config-manager.md",
+      "size_bytes": 4259,
+      "modified_at": 1783011697.554621,
+      "fingerprint": "1b5ca05165dda81cb3819837528c1e2005b8da2a59b5baafdd51c8c1cc303e95",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/context-engine.md",
+      "size_bytes": 4214,
+      "modified_at": 1783011697.555621,
+      "fingerprint": "d7b8b15a0aa62efe57106a00b6f4a0ac8d684e6c460d35e393950ae5862d1c40",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/event-bus.md",
+      "size_bytes": 3842,
+      "modified_at": 1783011697.5576224,
+      "fingerprint": "00055f0339220249772af1d5825ebc7c953578e41a5c8ab89a3d5c79d04b66fa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/kernel.md",
+      "size_bytes": 4516,
+      "modified_at": 1783011697.5586233,
+      "fingerprint": "28895a8fc04f607d764264b2da50548a56b16336fa21ffe233c87277e2d5b0b6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/memory-engine.md",
+      "size_bytes": 4706,
+      "modified_at": 1783011697.5596259,
+      "fingerprint": "57c6223338e37d256b1859022b227bb00f05c213bd28b5affbdc0414a3be649f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/planner.md",
+      "size_bytes": 3770,
+      "modified_at": 1783011697.5596259,
+      "fingerprint": "6a324463aec0797663c36c511307d85d65b98e1f66f60e025f81841958e12d07",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/plugin-manager.md",
+      "size_bytes": 4426,
+      "modified_at": 1783011697.5610263,
+      "fingerprint": "7b799cbb12d0a5c185c723f9f5c75eb2b90ec328520971ed65f97817e631de69",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/project-discovery.md",
+      "size_bytes": 4241,
+      "modified_at": 1783011697.5620255,
+      "fingerprint": "5a00afb60ee491957c17a3ed4c8bc46dad8970d5a2a9701431e51098c1d17403",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/resource-router.md",
+      "size_bytes": 4612,
+      "modified_at": 1783011697.5630252,
+      "fingerprint": "d93f76b4bbd599be1373037c40ce04cea18f2caaa49d38e4a6648d9252705ea5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/telemetry-engine.md",
+      "size_bytes": 3827,
+      "modified_at": 1783011697.5640259,
+      "fingerprint": "897c11a3894ca8e205063a5963eb8cf6c0e6f34573b8f142a3994b9959e6a970",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "contracts/verification-engine.md",
+      "size_bytes": 4644,
+      "modified_at": 1783011697.5654898,
+      "fingerprint": "01769fd11151dfc56cda689367728ae249953779ff768ae45247b4f6041b2080",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "DECISIONS.md",
+      "size_bytes": 4808,
+      "modified_at": 1783011697.5258338,
+      "fingerprint": "66d36ea91c123ca258a9f695a45fe5243b7526b32ae224a46e756944efb4d707",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/adr/0001_decision.md",
+      "size_bytes": 54,
+      "modified_at": 1783013080.410194,
+      "fingerprint": "b27823046a948ff16be853da44d56fa9c33160231895a6cef28b93141cb6f36e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/adr/0002_decision.md",
+      "size_bytes": 54,
+      "modified_at": 1783013080.410194,
+      "fingerprint": "3ecafd6786cca64685d4c57fea9976d03e26b695b290574ec377dee0e203c318",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/AEOS_GLOBAL_OPERATING_POLICY.md",
+      "size_bytes": 17223,
+      "modified_at": 1783011548.1376681,
+      "fingerprint": "3c708a1ec32d8720c41fcb6bd890329d78d08afb96d6178b262fd4759efd7c21",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/api.md",
+      "size_bytes": 74,
+      "modified_at": 1783013080.40917,
+      "fingerprint": "08a2e7d2c5a7dd7de9602ee30296579c11170fb5a419a5d628da31f0c54d9af6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/BENCHMARK_REPORT.md",
+      "size_bytes": 329,
+      "modified_at": 1783011697.5665522,
+      "fingerprint": "76f89accfc6fb99f8780eda3d2d7a5086cef062128bdc6d77c1c481a298086da",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/DEPENDENCY_MATRIX.md",
+      "size_bytes": 450,
+      "modified_at": 1783011697.5676677,
+      "fingerprint": "e4aa90a081ce6bd53446fb5186eb372130cfbd8e55fd5eac63e33d177349d124",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/DEPLOYMENT_GUIDE.md",
+      "size_bytes": 633,
+      "modified_at": 1783011697.5689263,
+      "fingerprint": "70055a91a8383eaae9b2c6ba9811777eac8ebbe0c3417455804ecdea2b5ad083",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/DEVELOPER_DOCUMENTATION.md",
+      "size_bytes": 1010,
+      "modified_at": 1783011697.5689263,
+      "fingerprint": "5c08879d39e331ce2796ee0e16449888218c4660c4fa13b2332d6a3ae6d5491d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/FINAL_ARB_REPORT.md",
+      "size_bytes": 499,
+      "modified_at": 1783011697.570411,
+      "fingerprint": "d452c2ee2c3e7f6a3a58f6bddd00feb7ca99c7869d182e9cdb850f388de560fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_TRACKER.md",
+      "size_bytes": 1462,
+      "modified_at": 1783011697.5719154,
+      "fingerprint": "39cbdd04248f5059772cf9bcc2ae2580e2aa9fbd9158a7933ec428d94e199d67",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/MAINTENANCE_GUIDE.md",
+      "size_bytes": 488,
+      "modified_at": 1783011697.5729158,
+      "fingerprint": "b8ac612c85f5d5567c209deac1f5a7b68ab462a22f979b82b6afa7f0b43483e2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/MASTER_PROMPT.md",
+      "size_bytes": 5983,
+      "modified_at": 1783011715.3879838,
+      "fingerprint": "36d711e65c73f94cab202189a4db84a09da34f6fe35a8e6525b12779b770a645",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/OPERATIONS_MANUAL.md",
+      "size_bytes": 793,
+      "modified_at": 1783011697.5750496,
+      "fingerprint": "10e44aec5db765581b76ec7deb95b1cebbac07c8ca401d938ec51f56268c2aa8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/PRODUCTION_READINESS_REPORT.md",
+      "size_bytes": 497,
+      "modified_at": 1783011697.5760498,
+      "fingerprint": "23524876a09c439bca5f4185bd0d15fa19664a4612bda5273a851546a00df78c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/RELEASE_NOTES.md",
+      "size_bytes": 662,
+      "modified_at": 1783011697.5760498,
+      "fingerprint": "fb8fca898b4a2a036b54be78a3089012b2e8cbce98fcf0f75296444820da782b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/SECURITY_REVIEW.md",
+      "size_bytes": 416,
+      "modified_at": 1783011697.5775523,
+      "fingerprint": "29a9b97109b84227687cb9db0180d8522d9d169aedba38abec39f7dd455ee1ff",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/SYSTEM_ARCHITECTURE_DIAGRAMS.md",
+      "size_bytes": 1118,
+      "modified_at": 1783011697.5798948,
+      "fingerprint": "9256ca5d7f4369f0757ff88ddaa4eaa52dd33d707c8e200b955415f54ac404c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/TEST_COVERAGE_REPORT.md",
+      "size_bytes": 310,
+      "modified_at": 1783011697.5798948,
+      "fingerprint": "7ca09074daff45db47a579850dd378172428251fc34a92540eb6fde6891084f8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/TRACEABILITY_MATRIX.md",
+      "size_bytes": 805,
+      "modified_at": 1783011697.5813754,
+      "fingerprint": "c1fcf1330b950417982bed2fd91dd8937ca74d3760b69da206e23e81fde0e732",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/USER_DOCUMENTATION.md",
+      "size_bytes": 630,
+      "modified_at": 1783011697.5813754,
+      "fingerprint": "18334748ae8ff8ce3eff705da853716d9cd2e32d8f88118d739b8548873fe287",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "docs/WEBSITE_HANDBOOK.md",
+      "size_bytes": 13066,
+      "modified_at": 1783011697.582875,
+      "fingerprint": "62ee34fcb01a8e98b39b43856db0e3a0c6545e662f9e7e232d9d35eaf0b599b5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "MEMORY.md",
+      "size_bytes": 2742,
+      "modified_at": 1783011697.5268288,
+      "fingerprint": "c277c91d84812a9586bd921da171960c5c5a42e32ef4e84bdbc33c543204a4a8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "NEXT_SESSION.md",
+      "size_bytes": 3205,
+      "modified_at": 1783011697.5278716,
+      "fingerprint": "ddd41ac5efed81b30734d129110300b924843251ad8e95779bc1bdd76d42f660",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "planning/ENGINEERING_REPORT.md",
+      "size_bytes": 1793,
+      "modified_at": 1783014058.4961362,
+      "fingerprint": "5ab22b101fcf2a1d30f967f383ee0495bfdd23d72c1077027959ea45b1245f3c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "planning/ENGINEERING_TEAM_ASSIGNMENT.md",
+      "size_bytes": 1890,
+      "modified_at": 1783014043.8577204,
+      "fingerprint": "7ffc5d1f413b43feae4e455f24148a53ef1cff0736e12ead9fbb096d4e4e3c45",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "planning/IMPLEMENTATION_PLAN.md",
+      "size_bytes": 2810,
+      "modified_at": 1783014053.2075622,
+      "fingerprint": "9fe4e0592020da2ff7af38e05c7d8cd23c52beed7e66a17c358b96b2ec746204",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "PROJECT_STATE.md",
+      "size_bytes": 1859,
+      "modified_at": 1783011697.5288727,
+      "fingerprint": "5db74a828a6f71febfe12d17f79ee24ac7265e0bda0f789fbfd3d86263f15e1d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 520,
+      "modified_at": 1783011697.583991,
+      "fingerprint": "cd8b5af1803fce76fcfa757ab7dd163388308caf26c9858ebf1637b16925ff97",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "pyrightconfig.json",
+      "size_bytes": 41,
+      "modified_at": 1783011697.5850775,
+      "fingerprint": "d7cb18cf3a3b7642545c92aeecdeb85b6fcd963b94985b3447875d31236957c0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 20127,
+      "modified_at": 1783014770.7717733,
+      "fingerprint": "781594ff74ab4645e8f7debb5328bd1304e1f774121d21d801b9b138380e80bc",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-000-Roadmap.md",
+      "size_bytes": 8133,
+      "modified_at": 1783011697.5874238,
+      "fingerprint": "36ce13f1214d71a8a531ccdf70ceafc4a786e68cfee09627427b8a71c44601f5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-001-EKC.md",
+      "size_bytes": 1858,
+      "modified_at": 1783011697.5884225,
+      "fingerprint": "3334bbb983970b4a6bf911261e80e74cb11b4efd288914e5df634ca5ef3638e7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-002-Planner.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.5894248,
+      "fingerprint": "dde2f9c7b1420dfd517c190642039257c8011a94c72940bed05313df27eceae7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-003-Skill-Intelligence.md",
+      "size_bytes": 3580,
+      "modified_at": 1783011697.5894248,
+      "fingerprint": "10d4426b3c2c51bddae63083bb3a571bd8c29db039699d7b63b4f988bcebe742",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-003-Validation-Report.md",
+      "size_bytes": 1987,
+      "modified_at": 1783011697.590788,
+      "fingerprint": "b1d6083de67eaf7bd596205e8483b451194e0e1381d39aaa321d9661ce0548e4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-004-Engineering-Intelligence.md",
+      "size_bytes": 2124,
+      "modified_at": 1783011697.5917878,
+      "fingerprint": "60539b70d0ad3878b2933ca8eaea3908dbd635ff12d2007feb988758d3f45255",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-004-Model-Intelligence.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.5928178,
+      "fingerprint": "5d8171f3287474ad96dccfeea17a5fd8fb3b0eb55d6a5afa7f26cd52755db9df",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-005-Execution-Engine.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.593819,
+      "fingerprint": "3e4d4254e8b24389a775b3c53af17e3e920edec0526f657ae9c846584cc0a964",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-005-Runtime-Infrastructure.md",
+      "size_bytes": 7648,
+      "modified_at": 1783011697.5951881,
+      "fingerprint": "6bfeba5c28d6e805ce0fe0f5524335bb68c3bc4a46a0ed60ef78a283530a7b2e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-006-Learning-System.md",
+      "size_bytes": 8706,
+      "modified_at": 1783011697.5961885,
+      "fingerprint": "40da0d055332d43ecd94880acddc4e2b10ecbbb9b482ccd8e3c90ec15aa77d10",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-007-Enterprise-Platform.md",
+      "size_bytes": 7654,
+      "modified_at": 1783011697.5971906,
+      "fingerprint": "a994329602d6a5b9e2eea972117ebc25e2a71e255d2e920bad614b1ee6147665",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-007-Production-Auditor.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.5981865,
+      "fingerprint": "54584431d6c5858b33d64e7cd623a44b68512585628057685220dfc8685a914f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-008-AI-Organization.md",
+      "size_bytes": 7442,
+      "modified_at": 1783011697.5993962,
+      "fingerprint": "e452d88bac6c2918066574e9c16847fa0c53791f93c8d631e7d84702734c1616",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-008-Learning-Engine.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.5993962,
+      "fingerprint": "800a44fdef345eb9a4bff5e9e8f980c1956dd1068dbf5714f0046e8eec8bed57",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-009-Self-Evolution.md",
+      "size_bytes": 9614,
+      "modified_at": 1783011697.6018245,
+      "fingerprint": "d7fd78633c418616cccec226d44234f0f8cc67037be9f74dafdb1b49568a1622",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-010-Benchmarking-Platform.md",
+      "size_bytes": 0,
+      "modified_at": 1783011697.6018245,
+      "fingerprint": "2d4e1b3d190b7a7c4d9b2a392a02796966d853fc691be0542906683c3996f81a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/RFC-011-Product-Brand-DNA.md",
+      "size_bytes": 8976,
+      "modified_at": 1783011697.6039329,
+      "fingerprint": "4e93668216b5c8844b7ebde12f8f2de724e39d21faa6d73148ce7720398effd2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-001-WDE.md",
+      "size_bytes": 44725,
+      "modified_at": 1783011697.6039329,
+      "fingerprint": "c0cb1cf74764f1ae28fcb09765ee0a61c89067915ebe6b4a42eafcb191820e8d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-002-URUE.md",
+      "size_bytes": 44454,
+      "modified_at": 1783011697.6050751,
+      "fingerprint": "bbc613a2c2492ad102e1a36fa86d5918aaa1ccfb76a962ae336b51effe6cf8bb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-003-PDE.md",
+      "size_bytes": 44163,
+      "modified_at": 1783011697.6061075,
+      "fingerprint": "be2915b49d215b975befcaaf75ba7ec2b7fccd9387d22aedc0e02e3ac188fe02",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-004-APE.md",
+      "size_bytes": 44224,
+      "modified_at": 1783011697.6075249,
+      "fingerprint": "f345f9939e010ea6d25d4e5c5123cad9c9d7375d5426d5ae9cd2e0f8d01cbbe2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-005-EDE.md",
+      "size_bytes": 44074,
+      "modified_at": 1783011697.6086514,
+      "fingerprint": "48af78e5fb075c43523881fe47a88ca1d274a7e955380a44015119a339bcb684",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-006-EGE.md",
+      "size_bytes": 44773,
+      "modified_at": 1783011697.6096685,
+      "fingerprint": "c0f6a7ba6b17c3b1c92f2b5f1fe1be83ff2e8d90b5732da6eed9113d5f66a18c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-007-EKB.md",
+      "size_bytes": 44658,
+      "modified_at": 1783011697.6106696,
+      "fingerprint": "09df23b2842faa48a400da84f96b6d32a26cfcddefc6eab98ec52e42c621e2bd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-008-QIA.md",
+      "size_bytes": 44275,
+      "modified_at": 1783011697.6118789,
+      "fingerprint": "5ac46cf16303ef0da88a28be077360e4eb7ae5231e7c97a3dc6f60d0c0dca37e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-009-EDPE.md",
+      "size_bytes": 44174,
+      "modified_at": 1783011697.613338,
+      "fingerprint": "5c29227df9f30d92f4cf154f03dc64b8a56b10de0382e09ccba4cf034dbe7ac0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-010-FPE.md",
+      "size_bytes": 44545,
+      "modified_at": 1783011697.61461,
+      "fingerprint": "998d39a7d5dca3bd6ff5556b0ca9edb0d2bb5f5d929e8142920b8833dad3b72e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-011-BPE.md",
+      "size_bytes": 44691,
+      "modified_at": 1783011697.61561,
+      "fingerprint": "67d8183c234d694c09dbe5d09a72b9d219105635eca5ca49f86cb667b4f92850",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-012-PE.md",
+      "size_bytes": 44445,
+      "modified_at": 1783011697.6170614,
+      "fingerprint": "c4f712fa0c525bbf01a7a916cc76eaba744aceb9cd3271da37e2be1397b537fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-013-APIE.md",
+      "size_bytes": 44312,
+      "modified_at": 1783011697.6184025,
+      "fingerprint": "43c9bd21c3588833f79014637f22827a49cb635df525f2df54df23971cd31bde",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-014-SPE.md",
+      "size_bytes": 44399,
+      "modified_at": 1783011697.6194856,
+      "fingerprint": "7e5b110700cd0d84b02b069fe1a360189a84ad301e461b5511f93344182437b9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-015-IPE.md",
+      "size_bytes": 44345,
+      "modified_at": 1783011697.6194856,
+      "fingerprint": "2b84d937b27dd8aaad72a0e18e614f0af0de26f278f579e6e64f8fa0f3ae2599",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-016-ESPE.md",
+      "size_bytes": 44416,
+      "modified_at": 1783011697.6220438,
+      "fingerprint": "4ed26366951a016158a3219e7339595ede0ed63646a545b43f55e80e251c447c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-017-DPE.md",
+      "size_bytes": 44127,
+      "modified_at": 1783011697.623046,
+      "fingerprint": "4b4f806a94bea3cdedc4c1ccb61687e03ec71cb894f23632ec1b0c5b23e7418f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-018-TPE.md",
+      "size_bytes": 44132,
+      "modified_at": 1783011697.6245236,
+      "fingerprint": "e484502325c23bf889a765a457ff91490b579a4f4717edadcb661fbd6d1596b4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-019-DOPE.md",
+      "size_bytes": 44352,
+      "modified_at": 1783011697.6245236,
+      "fingerprint": "4fd3862968a907a933438827660a39339e795318cea3836538875abcd5df5b4c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-020-EEPE.md",
+      "size_bytes": 44387,
+      "modified_at": 1783011697.6268773,
+      "fingerprint": "186f59280aef5259e3c51c93279350fbb665781d8719086a1bdbbc4eaaedd8e7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-021-RCPE.md",
+      "size_bytes": 44379,
+      "modified_at": 1783011697.6279821,
+      "fingerprint": "bc8241323477f4e90450470428ad3f003c1415fcc50ab96c52ec5119f27eda46",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-022-CPE.md",
+      "size_bytes": 43981,
+      "modified_at": 1783011697.6291907,
+      "fingerprint": "e2aaa1e5fd43a8942fcaf7412328dedda5b9ee1c21cd98253d84ac70c707dcb0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-023-RPE.md",
+      "size_bytes": 44100,
+      "modified_at": 1783011697.6291907,
+      "fingerprint": "11e916d868e42214c40263440d69bb2bcfa0d4ecc38be444525ca578e5f7e0d0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-024-CGPE.md",
+      "size_bytes": 44299,
+      "modified_at": 1783011697.6305282,
+      "fingerprint": "c4551e397e57b23d7d7686e5d9441274a90746334859b63b7b5472b00471448d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-025-OPE.md",
+      "size_bytes": 44394,
+      "modified_at": 1783011697.6320043,
+      "fingerprint": "a016e4105a557cc5903a9e13637a29f93ef1bdbcddf5218ee147538b4f00c9d8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-026-SPPE.md",
+      "size_bytes": 44416,
+      "modified_at": 1783011697.6332517,
+      "fingerprint": "090bc97cbc28737ece455482ef463c49606106e990c4841d6e5c249c7eb52cab",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-027-DRPE.md",
+      "size_bytes": 44437,
+      "modified_at": 1783011697.6347094,
+      "fingerprint": "4d26b3d0c896eacc32636fed7e592b249fff5ecccade332c1ef2eb30f4519bdb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-028-RRPE.md",
+      "size_bytes": 44401,
+      "modified_at": 1783011697.6347094,
+      "fingerprint": "aa7369c392dab91b35a0034135f5eb5c7cf4a1141c1a5cae5ae72b482f1ad1e2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-029-MLPE.md",
+      "size_bytes": 44537,
+      "modified_at": 1783011697.6361592,
+      "fingerprint": "cc0efdbdeeaeb746e52a829418586b674d464ff1fac3d5fb3f53a9cf789e36bd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-030-FEBC.md",
+      "size_bytes": 48309,
+      "modified_at": 1783011697.6371846,
+      "fingerprint": "6f882fb46f7dca270031ef75857d0a190035479fb95f996ab947b161b644a351",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-031-PVE.md",
+      "size_bytes": 44349,
+      "modified_at": 1783011697.638184,
+      "fingerprint": "8a7c3fd5eebc9dd52b1c7926164e57ef2e19a66b865722f9e696aedde74ea676",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-032-TDE.md",
+      "size_bytes": 45351,
+      "modified_at": 1783011697.6391847,
+      "fingerprint": "09d011e0b46fca7f81fa66a39958d49e491ced9153bdcdd103f7bd4e5b158a6a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-033-DGB.md",
+      "size_bytes": 45053,
+      "modified_at": 1783011697.6402686,
+      "fingerprint": "fa250d275a998d800c92b29759923191d90cf8b70669525e40e746ad0fe93275",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-034-SSE.md",
+      "size_bytes": 44724,
+      "modified_at": 1783011697.6414235,
+      "fingerprint": "26af9c5015e642fce28aefdda125f0524d957b2eb56f4f4b886dfa5ab3bfdb64",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-035-MRE.md",
+      "size_bytes": 45279,
+      "modified_at": 1783011697.6424236,
+      "fingerprint": "89df636fc89a16a6258e249c21b7de15551d4de7daafdb415ccf3ee968623cdd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-036-CAE.md",
+      "size_bytes": 45314,
+      "modified_at": 1783011697.6444225,
+      "fingerprint": "6c2ff41bfd236d783b0f66de19bbdb583c0e2dbebf3e7121f9784239314003bc",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-037-ES.md",
+      "size_bytes": 45352,
+      "modified_at": 1783011697.6454208,
+      "fingerprint": "136b70ad804abec27cb21c78e8520c0ee847fdc5e802abcfc344881742e73c20",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-038-PEE.md",
+      "size_bytes": 45552,
+      "modified_at": 1783011697.6464207,
+      "fingerprint": "5ce7def7ea59efe0da6e731ec2857a044e4d3dc0c2885c23789edef00a1ba824",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-039-ACGE.md",
+      "size_bytes": 45776,
+      "modified_at": 1783011697.6474237,
+      "fingerprint": "f4dbcf1ddba04ec9425a367c6bcf334a514e6fc354c2e497bfe2fb4de16921aa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-040-SRE.md",
+      "size_bytes": 45012,
+      "modified_at": 1783011697.649426,
+      "fingerprint": "fe95861ea17b05b2f0aa8ff5f4fae98aeb6b30d49b052e587d601a50b8f239ef",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-041-PRE.md",
+      "size_bytes": 45498,
+      "modified_at": 1783011697.6504235,
+      "fingerprint": "ae5d4e356878d742dfcd76c1a7ba5c308fd760c3d8df42f780ba6b0f976e83f8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-042-SPE.md",
+      "size_bytes": 44981,
+      "modified_at": 1783011697.6514218,
+      "fingerprint": "b4e07a25e74a53ff59ebd5377d6b7c593e95e794f3856721484eac320912e4c4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-043-GOE.md",
+      "size_bytes": 45555,
+      "modified_at": 1783011697.6524231,
+      "fingerprint": "481f6db719b180aebc5a7ae55bd2e7d2aa6484a3f37ef55ba60e2311179d47f3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-044-DGE.md",
+      "size_bytes": 45412,
+      "modified_at": 1783011697.6534219,
+      "fingerprint": "e7956517a94646e70c3a7843a8e6bd933041732b93c706c5b5152d482953b756",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-045-EME.md",
+      "size_bytes": 45168,
+      "modified_at": 1783011697.6554248,
+      "fingerprint": "faca0be7ea0f0f51320d71f9a90ca57480130c2837b912cbd1101fb669e4168b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-046-EO.md",
+      "size_bytes": 45682,
+      "modified_at": 1783011697.6564217,
+      "fingerprint": "a972e9823a8a645ee50d92c4899dfaf6858d83b804113a2d8bd92de8d03531a1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-047-MIE.md",
+      "size_bytes": 44373,
+      "modified_at": 1783011697.6564217,
+      "fingerprint": "68e0793f0118bc09bbc5dffeb6be42a629973fa6b6278dfaaa81d9451a323b53",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-048-PCE.md",
+      "size_bytes": 44209,
+      "modified_at": 1783011697.6579008,
+      "fingerprint": "3637028c76637f0d8d6f46cf2731795eb1dbc4d33aabca55d1358f7a43be0310",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-049-POE.md",
+      "size_bytes": 43959,
+      "modified_at": 1783011697.6603346,
+      "fingerprint": "0e4571e90dfd708fdbc10870bc543a303635bf1df45b98a34e5d2ca0da460094",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-050-ERE.md",
+      "size_bytes": 44417,
+      "modified_at": 1783011697.6617818,
+      "fingerprint": "befdafd59deb8a33bf7a0f16c3426a0635c5446a2c60f0d70f32410c0e3b9078",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-051-SRE.md",
+      "size_bytes": 44221,
+      "modified_at": 1783011697.6627862,
+      "fingerprint": "f5cd17a7fd5c8b14cf5bf9b9827c5fff5429fe234890e8da7b621aada0cbdd79",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-052-LCE.md",
+      "size_bytes": 44045,
+      "modified_at": 1783011697.6637816,
+      "fingerprint": "8a464e491f6429799ddd5001bc899609e8a72339f53134caf9bc9966590c3395",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-053-KRE.md",
+      "size_bytes": 44336,
+      "modified_at": 1783011697.6648786,
+      "fingerprint": "23e42cd7e63fa0b1137a67c5e03b1f7cb4068b64aa1c84d613a1c516e2eff37c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-054-MRE.md",
+      "size_bytes": 44196,
+      "modified_at": 1783011697.6669776,
+      "fingerprint": "9c2d2c9c048fbb4f3580a0a3fa221c3e2a196c2b72e7ba9ee6af980b7dafa27d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-055-FVE.md",
+      "size_bytes": 44039,
+      "modified_at": 1783011697.6669776,
+      "fingerprint": "d53c56f7408dd923a1207f55f08b306157ffc246bae04af88f9309980440acf0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-056-HDE.md",
+      "size_bytes": 44092,
+      "modified_at": 1783011697.6682985,
+      "fingerprint": "a9c015fb5092194ddfec735db3eedac8b2ccf9f30472eed2476267264b6cf636",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-057-PLE.md",
+      "size_bytes": 44055,
+      "modified_at": 1783011697.6693017,
+      "fingerprint": "23c5ec19fa814632b9252a6f71a0ecfb324c6eee2cc71ede1bb5010ff685426e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-058-TOE.md",
+      "size_bytes": 44027,
+      "modified_at": 1783011697.6719,
+      "fingerprint": "5922bdc973d1ffe2510a58bf568143ece4f32401ffc439f3c139d9e50b1e002f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-059-COE.md",
+      "size_bytes": 44050,
+      "modified_at": 1783011697.6719,
+      "fingerprint": "56a6d9c8355e634e2211d106e11112e1ecb28fb3d9c349a0c26fdcb8008beaa4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-060-EOE.md",
+      "size_bytes": 44103,
+      "modified_at": 1783011697.6731803,
+      "fingerprint": "a01f9c1126166d53a3f903859035abf05c0606fe63328322d7574452491a1a1d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-061-COE2.md",
+      "size_bytes": 44244,
+      "modified_at": 1783011697.6745646,
+      "fingerprint": "1a750fecafd3b453ae486dbb9dfaa20bc3c6f1f4a663de7f1f0dcf87689451f2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-062-DSEE.md",
+      "size_bytes": 44257,
+      "modified_at": 1783011697.6769314,
+      "fingerprint": "6f49df6b984d63e19ee97f279eb631a4d35fa9ede96a0d9a840923afc6129f57",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-063-SBE.md",
+      "size_bytes": 44102,
+      "modified_at": 1783011697.6779332,
+      "fingerprint": "7f139124db09878e4ed56b1e97162a131a21ab24a59035095484e56f148ba594",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-064-MMCE.md",
+      "size_bytes": 44274,
+      "modified_at": 1783011697.6790464,
+      "fingerprint": "68dad6d577e63ef33840a2147b804b661170a26442a5ea529039e082d573fd08",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-065-IO.md",
+      "size_bytes": 43876,
+      "modified_at": 1783011697.68009,
+      "fingerprint": "4be17d12919a71d056e686caeac7a621eb9db4ab66ad8cc8e3bb75d66c65e02c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-066-Plugin-SDK-Engine.md",
+      "size_bytes": 44304,
+      "modified_at": 1783011697.6815736,
+      "fingerprint": "6e0a288044fa96476693f3fe744d151a3c13f0d428b364ce91b1e9f1f0711292",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-067-Extension-Marketplace-Engine.md",
+      "size_bytes": 44556,
+      "modified_at": 1783011697.682657,
+      "fingerprint": "fdfd0dcf0c9378787e0d3284686e02eff5c5a967ce75a300e2aba3b82135db2e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-068-Runtime-Plugin-Loader.md",
+      "size_bytes": 44280,
+      "modified_at": 1783011697.6839998,
+      "fingerprint": "a7af634ee73a0274438a4e339a863141e428ff625383c70d4ad411060d995433",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-069-RPC-Framework.md",
+      "size_bytes": 44097,
+      "modified_at": 1783011697.6853793,
+      "fingerprint": "f78a2b0421d865e8e89da16c914bc61450d6aa73cb504a23bd4601d3be3eccf2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-070-IPC-Framework.md",
+      "size_bytes": 44111,
+      "modified_at": 1783011697.686429,
+      "fingerprint": "f0e6f2ab8054b7deb623f94ecfe3b4b42e97e6358bc8598b47a6dd0764f587a5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-071-Distributed-Execution-Engine.md",
+      "size_bytes": 44590,
+      "modified_at": 1783011697.6874275,
+      "fingerprint": "eef4c54db3612d7975f06715def4050a670f0bedc448b7c2b1d6df5057596a0d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-072-Worker-Pool-Manager.md",
+      "size_bytes": 44209,
+      "modified_at": 1783011697.6885073,
+      "fingerprint": "16db2241c67c0bc63acd510e108497bd6cdf300e3e060e8a30df358fe7f2d15d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-073-Cluster-Manager.md",
+      "size_bytes": 44070,
+      "modified_at": 1783011697.6899705,
+      "fingerprint": "959ae639a9af7d23e04013de9afabecc1cda9179ed9f40b872898624f42da4d5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-074-Node-Discovery-Cluster-Registry.md",
+      "size_bytes": 44611,
+      "modified_at": 1783011697.6919658,
+      "fingerprint": "a8c70deead097de66cdc0035e7cb1902b3f916ad3252ecd876e28df38096f700",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-075-Distributed-Consensus-Leader-Election.md",
+      "size_bytes": 44552,
+      "modified_at": 1783011697.6934597,
+      "fingerprint": "a225cdb57a69ec7def478752b133316274b8221788ad85eb6fda256f18c2028b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-076-Sandboxed-Execution-Environment.md",
+      "size_bytes": 44493,
+      "modified_at": 1783011697.6944988,
+      "fingerprint": "015ff4129b752229c7676d53c76f8946aa25406bf871c78ef6c6c2b5b2f037e2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-077-Secure-Vault-Secrets-Service.md",
+      "size_bytes": 44475,
+      "modified_at": 1783011697.6955128,
+      "fingerprint": "a172575285e3eb0c995a02267dc90e4ec55a01c18323c2c59589d874b92d6e75",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-078-Distributed-Log-Event-Aggregation-Bus.md",
+      "size_bytes": 44852,
+      "modified_at": 1783011697.696923,
+      "fingerprint": "466e8146bbaf344e26a29454f8035a9c2ee7bd80aa904e22b97e9a29927ebd2a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-079-High-Performance-Routing-Message-Queue.md",
+      "size_bytes": 44711,
+      "modified_at": 1783011697.698333,
+      "fingerprint": "736882e8d6e758bfc15a16f2b47b1059f164afc76197525c39f7ab19e0bb0fe8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-080-Resource-Allocator-Hardware-Scheduler.md",
+      "size_bytes": 44830,
+      "modified_at": 1783011697.6997142,
+      "fingerprint": "7996ee1aad6c6ff99a6250a1af7a27eac94d73f1aa3ba02229f27715b3d18200",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-081-Distributed-State-Cache-Synchronization.md",
+      "size_bytes": 44797,
+      "modified_at": 1783011697.6997142,
+      "fingerprint": "22554f0f5bd0addb846a6b5262e4a27f8f4e826477ea71161fdea2c5b9fcf9c2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-082-Cryptographic-Identity-Trust-Engine.md",
+      "size_bytes": 44735,
+      "modified_at": 1783011697.700714,
+      "fingerprint": "d5afc52283bc311f9ecefd77274629ef2cda4ddcd5526dd57740bb3e69e14eb9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-083-Hot-Reload-Live-Upgrade-Subsystem.md",
+      "size_bytes": 44418,
+      "modified_at": 1783011697.7021224,
+      "fingerprint": "7818fb1bef593fef037ad57da636d65c4253f26fa1bb6adc34406f2c7079da44",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-084-Chaos-Injection-Fault-Simulation-Engine.md",
+      "size_bytes": 44666,
+      "modified_at": 1783011697.7031255,
+      "fingerprint": "057073616d252738efbca1eba262e290897720652276a36047807ee530177362",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-085-Global-Runtime-Orchestrator.md",
+      "size_bytes": 44625,
+      "modified_at": 1783011697.7043905,
+      "fingerprint": "a3148d65c182b6cad74f767e86d8de09a7b73422921fd7cb99d270878f723823",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-086-EME2.md",
+      "size_bytes": 45205,
+      "modified_at": 1783011697.7053912,
+      "fingerprint": "25e6b63cd9b3e06c6b02b153708a83be215b639d34b588cdb408b9382888c36d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-087-PME.md",
+      "size_bytes": 44886,
+      "modified_at": 1783011697.7067564,
+      "fingerprint": "e369c63fecba52fa0da9a1c277eacbd6fd4b93e4c5790ea8da77bed25624f623",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-088-BPE2.md",
+      "size_bytes": 45211,
+      "modified_at": 1783011697.7077556,
+      "fingerprint": "68a7659aa00580191aac85b47649e67392c0b5855b99c09940e5f08c5aee4ec1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-089-FKE.md",
+      "size_bytes": 44779,
+      "modified_at": 1783011697.7077556,
+      "fingerprint": "64487e78bf2f279abf9819142bc6f5de6b995ae892edfd97e25e199ba7411aac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-090-SKE.md",
+      "size_bytes": 44728,
+      "modified_at": 1783011697.709229,
+      "fingerprint": "0da2708f60585a7bceef576d8126564ca3eb0a8580e77db45b7949bd4402438c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-091-PRE2.md",
+      "size_bytes": 44832,
+      "modified_at": 1783011697.710551,
+      "fingerprint": "1752174f6d7a6cc99f960ecfb01e7133a11612a2cdd57e28ef242d80482260fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-092-SLE.md",
+      "size_bytes": 44597,
+      "modified_at": 1783011697.7115486,
+      "fingerprint": "a8c2a0ae2f6aab663117163c9ca0f929a0e3509c8681dc4f4b22028e12e2dd4e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-093-ALE.md",
+      "size_bytes": 44777,
+      "modified_at": 1783011697.712785,
+      "fingerprint": "ad9f61f6745e4173692731775b2144dca50e6856f3938fdcf8ec800d9029076f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-094-TLE.md",
+      "size_bytes": 44589,
+      "modified_at": 1783011697.712785,
+      "fingerprint": "9a0c54069c32a915b2b4e48097b0f0732d53590a3e444cdfbbf45e492341d0db",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-095-RLE.md",
+      "size_bytes": 44655,
+      "modified_at": 1783011697.7141614,
+      "fingerprint": "fa69ec1e61e01bedcc3a67426f2f2e69933883485abcb30aa9b9772d0e977b64",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-096-ARSU.md",
+      "size_bytes": 45369,
+      "modified_at": 1783011697.715358,
+      "fingerprint": "d16790552e1c02065d7264606b3a6ffa02569d12462d5af63dfdf7f40ff70f80",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-097-CLE.md",
+      "size_bytes": 44649,
+      "modified_at": 1783011697.7163568,
+      "fingerprint": "bf3508c85e6b05584696118f23701770c088fd2e56da51f27d3612a9b73fa8f3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-098-LAE.md",
+      "size_bytes": 44559,
+      "modified_at": 1783011697.7178051,
+      "fingerprint": "5a08dcea4cd3756c5acf2244f428ba0bb649f67c20c0d89a79c480a491c7a681",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-099-AFE.md",
+      "size_bytes": 44749,
+      "modified_at": 1783011697.7188075,
+      "fingerprint": "24a7010a2552b9e266e63ae76ef0b41a7428ac9ab8a2e59c0388f261306b2403",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-100-LSO.md",
+      "size_bytes": 44896,
+      "modified_at": 1783011697.7198024,
+      "fingerprint": "6e5b8ccce0e7ac3d62c99ad1c1b4b61394a6a0f446b6b87739e599c14831fca3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-101-Identity-Authentication-Engine.md",
+      "size_bytes": 11972,
+      "modified_at": 1783011697.7210286,
+      "fingerprint": "131717c7949fd8676e0b8c8b671c23d722493bd299cbe6341deb0a19b364fd29",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-102-Role-Based-Access-Control-Engine.md",
+      "size_bytes": 11722,
+      "modified_at": 1783011697.7224724,
+      "fingerprint": "9f89b81a5a6331cd61e274e432d998234aa91ae9c7a2b8ad84990c85e401f4c1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-103-Organization-Management-Engine.md",
+      "size_bytes": 11611,
+      "modified_at": 1783011697.7224724,
+      "fingerprint": "d8c18b5c063b21d08450c92612bc87690c39812e6e676c3b7a88cc03e0459e51",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-104-Workspace-Management-Engine.md",
+      "size_bytes": 11758,
+      "modified_at": 1783011697.7238262,
+      "fingerprint": "0fba50f53f43f8ed2f2d90bc62ddb656468315872ace2e57a9ae77e145326163",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-105-Multi-Tenancy-Engine.md",
+      "size_bytes": 11535,
+      "modified_at": 1783011697.7253296,
+      "fingerprint": "c84e1274419a621df1455a0b7e437add84869ec16305a58210a409da37e5762b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-106-Billing-Subscription-Engine.md",
+      "size_bytes": 11707,
+      "modified_at": 1783011697.7253296,
+      "fingerprint": "665123b38b0f9d58dea1f84f681d63160c3a11f943fee08299ed4b27e34c2890",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-107-API-Gateway-Rate-Limiter.md",
+      "size_bytes": 11524,
+      "modified_at": 1783011697.7276099,
+      "fingerprint": "c4c7cfa7911da5dec60c818766259cce5cdffa70cbd214ff4ff1cbfb51e23c6f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-108-Enterprise-Audit-Logging-Service.md",
+      "size_bytes": 11655,
+      "modified_at": 1783011697.7290585,
+      "fingerprint": "6ca4a6499bad16481ad24d1461c379cab94ae2e7f8f9a0755a8d07973a9a9a08",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-109-Tenant-Resource-Quota-Manager.md",
+      "size_bytes": 11619,
+      "modified_at": 1783011697.7290585,
+      "fingerprint": "71e9db024e40a30b1da84738c8f65fba5d30431a8f1f461f4197a2a165b02f96",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-110-SAML-SSO-Integration-Adapter.md",
+      "size_bytes": 11703,
+      "modified_at": 1783011697.7302547,
+      "fingerprint": "111899fa00d36676866c2075911582dfa683e837d048e05d7580df9d29bd7524",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-111-Key-Management-Data-Encryption-Service.md",
+      "size_bytes": 11570,
+      "modified_at": 1783011697.731256,
+      "fingerprint": "4d0a7dbca86f4bc236b30015aaa0beaa5e792d4954379a5b151c80586765c1b2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-112-Collaboration-Real-Time-Sync-Server.md",
+      "size_bytes": 11592,
+      "modified_at": 1783011697.7322578,
+      "fingerprint": "c2edc569ebcb73dab87ecfeed84434d4708a7ec7ea1db318c917b146aa361554",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-113-Compliance-GDPR-Governance-Auditor.md",
+      "size_bytes": 11657,
+      "modified_at": 1783011697.7332537,
+      "fingerprint": "a8a67aa0c75b86815c1180c90f222f4d0f9b3e61558093a969a68edfb6962818",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-114-Notification-Webhook-Dispatcher.md",
+      "size_bytes": 11633,
+      "modified_at": 1783011697.73433,
+      "fingerprint": "2f0e53bff9a1a2558940afed1d1a64c541ae62dbe1626d87ae1d601c966d2ded",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-115-Backup-Disaster-Recovery-Orchestrator.md",
+      "size_bytes": 11637,
+      "modified_at": 1783011697.735347,
+      "fingerprint": "4618cb3dd9aff181d8cd3849989d2c5d5923e69685d983bb7426fb6eba5e2301",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-116-Administrative-Control-Panel-(Admin-API).md",
+      "size_bytes": 11732,
+      "modified_at": 1783011697.7367892,
+      "fingerprint": "9198d4adae5254d8cce9b18390d24098657c0c9235a7493e4756d486fccffe15",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-117-Model-Licensing-Usage-Tracker.md",
+      "size_bytes": 11745,
+      "modified_at": 1783011697.7367892,
+      "fingerprint": "994196c7eb28362dc3598c8f2271967cbb7ca937b205611e993034d1cb5a8b57",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-118-Agent-Activity-Session-Monitor.md",
+      "size_bytes": 11616,
+      "modified_at": 1783011697.7391546,
+      "fingerprint": "ebac8b04b30f2da20bdbbb079a8f0aef964d7003dca842b002921b14a11a9eca",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-119-System-Health-SLA-Dashboard.md",
+      "size_bytes": 11531,
+      "modified_at": 1783011697.7391546,
+      "fingerprint": "57687728a5a8e74c359b60270ef9534347c18683fc9ba45ef536fdf32352b663",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-120-Dynamic-Feature-Flag-Policy-Decider.md",
+      "size_bytes": 11653,
+      "modified_at": 1783011697.7404776,
+      "fingerprint": "0781676e7f62837589836d58630e050324925d5118be66e1a7254959eeba3da4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-121-CEO-Agent.md",
+      "size_bytes": 11705,
+      "modified_at": 1783011697.7417777,
+      "fingerprint": "7c6fc8b24e833305aea7f0c78494897471ba642d5517d6cd6a4289d015658fdf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-122-CTO-Agent.md",
+      "size_bytes": 11680,
+      "modified_at": 1783011697.7427764,
+      "fingerprint": "8e42a946c3f635b55afede6315ff00b916ff72f83ab09d29b5be5c2f306779c7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-123-Chief-Architect-Agent.md",
+      "size_bytes": 11755,
+      "modified_at": 1783011697.7427764,
+      "fingerprint": "99a2926bf747a7030b486b56217410077e28db686a5538882cf33ae1aef94c95",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-124-Product-Manager-Agent.md",
+      "size_bytes": 11770,
+      "modified_at": 1783011697.744245,
+      "fingerprint": "e9c0c8d89893d21fad92c21ef60d3c51962d87fc380c6d8a88b3322544f179a8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-125-Engineering-Manager-Agent.md",
+      "size_bytes": 11860,
+      "modified_at": 1783011697.7454696,
+      "fingerprint": "e4cf1648abe35afcb0fe2e3180da68b92d7d3fdeb381ce1cf369ec0c2aa72773",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-126-Staff-Backend-Engineer.md",
+      "size_bytes": 11868,
+      "modified_at": 1783011697.74653,
+      "fingerprint": "69b5267eb8b96ff1e5ab133d628b9d588f36d4b68655fd468e39ac3a99dd2352",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-127-Staff-Frontend-Engineer.md",
+      "size_bytes": 11856,
+      "modified_at": 1783011697.747533,
+      "fingerprint": "cf8ab674686fe7f436b4a402902c0c6a36c43576f9a3b1bd7d23b5589a804683",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-128-Staff-AI-ML-Engineer.md",
+      "size_bytes": 11777,
+      "modified_at": 1783011697.7485292,
+      "fingerprint": "a28216a0f638f1ed2269fb772543cad06f933232940dfcd960f33094847c3629",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-129-DevOps-Lead.md",
+      "size_bytes": 11753,
+      "modified_at": 1783011697.7495503,
+      "fingerprint": "410ed9e15871b4ad093723efb648307c64242f59aed9ee13782cbd4e75afd88a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-130-Security-Lead.md",
+      "size_bytes": 11760,
+      "modified_at": 1783011697.7505858,
+      "fingerprint": "d69bb51c7e8dfd8368aefeb4df1346a4a47f708759a514f5ece933eee88e30b0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-131-QA-Lead-Agent.md",
+      "size_bytes": 11610,
+      "modified_at": 1783011697.7520847,
+      "fingerprint": "33d28a2cb9268d1a02c1711e0dbc5980ff164688a29fd71d24965bf84b45b5ad",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-132-Technical-Writer-Agent.md",
+      "size_bytes": 11777,
+      "modified_at": 1783011697.753086,
+      "fingerprint": "0a7ad15a07c399f87da6c61ea77343c3fb3fa7a3247bfe41331f5295323cc299",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-133-UX-UI-Designer-Agent.md",
+      "size_bytes": 11752,
+      "modified_at": 1783011697.7544575,
+      "fingerprint": "79601ba7d5ede905f5584416413fe5ee2befa07d99ff5eb8ce1624ca4f5f8ea9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-134-Product-Marketing-Manager-Agent.md",
+      "size_bytes": 11882,
+      "modified_at": 1783011697.7544575,
+      "fingerprint": "195d5721d9e13cdbc4557d54d7b5481eb1d79f87dd607c67ca630f722cd8a800",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-135-Legal-Compliance-Officer-Agent.md",
+      "size_bytes": 11912,
+      "modified_at": 1783011697.7554579,
+      "fingerprint": "2944c5153d5da0caf4582e453961c12d1b55d1ce1b6c4d36bdd5d81c6d790948",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-136-Scrum-Master-Agile-Coordinator-Agent.md",
+      "size_bytes": 11782,
+      "modified_at": 1783011697.756727,
+      "fingerprint": "11ac5ede6452c2e77145e2f0dddfd826afd254cc44a97e7e717757099603051a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-137-Financial-Analyst-Budget-Controller-Agent.md",
+      "size_bytes": 11894,
+      "modified_at": 1783011697.758105,
+      "fingerprint": "b172417564ef0c51c9ceb9135d455c6b1a4bdaa9bc66d0c4dbc9ae9d931c68ac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-138-Customer-Support-Feedback-Synthesizer-Agent.md",
+      "size_bytes": 11849,
+      "modified_at": 1783011697.7591052,
+      "fingerprint": "d2f0ee4decd9fd12463a5b16a8c3f3da65d9e7afcb5e3107e61a2c875be62e16",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-139-Human-Resources-Onboarding-Agent.md",
+      "size_bytes": 11827,
+      "modified_at": 1783011697.7601054,
+      "fingerprint": "4342fed59ed591ae8280758d6c92abb69649c996e4e79d76c634924a05a7b987",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-140-Multi-Agent-Collaboration-Protocol.md",
+      "size_bytes": 11984,
+      "modified_at": 1783011697.7611034,
+      "fingerprint": "3175f78370bb7477be9c2025484623049608c5bbb4a340da3fed495529151b50",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-141-Self-Architecture-Review-Engine.md",
+      "size_bytes": 12607,
+      "modified_at": 1783011697.7622697,
+      "fingerprint": "b89264aad90f70805ece422071164ef1aeb367361ec42d5aa4ea3d74bd42e077",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-142-Self-Decision-Engine.md",
+      "size_bytes": 12406,
+      "modified_at": 1783011697.763294,
+      "fingerprint": "558133b52d5d12e10e0bed493e6fcc30b3c5f81b9369417b37fe4fe7d2b007e2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-143-Self-Performance-Engine.md",
+      "size_bytes": 12367,
+      "modified_at": 1783011697.764656,
+      "fingerprint": "8e7f39d556ae8e62c729822d35f0d1d6d9a7d32c85fe410e6cba1f049a7f0382",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-144-Self-Learning-Engine.md",
+      "size_bytes": 12320,
+      "modified_at": 1783011697.764656,
+      "fingerprint": "0a829c8756d994184eee5622532d5b5c4befb159f2d1a2034ffe2bdf84787611",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-145-Self-Evolution-Orchestrator.md",
+      "size_bytes": 12340,
+      "modified_at": 1783011697.7667923,
+      "fingerprint": "99f9f88d6e7ff8ec246ff6f42ff3e84c3e9e3aeaa354d85929bb62453f1c9265",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-146-Self-RFC-Generation-Engine.md",
+      "size_bytes": 12285,
+      "modified_at": 1783011697.76779,
+      "fingerprint": "2e6f2e4e61964b47fb3423fb9ba2b450e8982352e46ae189a82fe9bdee18f46f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-147-Self-SPEC-Generation-Engine.md",
+      "size_bytes": 12315,
+      "modified_at": 1783011697.76779,
+      "fingerprint": "d77810898d13568c3ac438028f85a00ca8a7f520ccd499f68c2ed3719b6e7ad8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-148-Self-Refactoring-Engine.md",
+      "size_bytes": 12262,
+      "modified_at": 1783011697.7692187,
+      "fingerprint": "a27f45b99d55f8ee81988589172a952d5d656d636f61608563ed4c4a68ac1e91",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-149-Self-Benchmark-Engine.md",
+      "size_bytes": 12216,
+      "modified_at": 1783011697.770219,
+      "fingerprint": "d14b1f12b53a8c8269b0b87ec107bda1f61768c1657f20c70389825f4d582dcf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-150-Self-Optimization-Engine.md",
+      "size_bytes": 12274,
+      "modified_at": 1783011697.770219,
+      "fingerprint": "92e01049927ffca8b6d7f3b1517513763df701a278d96b33bb3b96e04e79ab1b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-151-Self-Cost-Reduction-Engine.md",
+      "size_bytes": 12282,
+      "modified_at": 1783011697.771546,
+      "fingerprint": "06c4af6771a79074869ff17a8a6d7a7a585cb42826a0eec1ca31d43816fcca54",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-152-Self-Quality-Improvement-Engine.md",
+      "size_bytes": 12338,
+      "modified_at": 1783011697.772999,
+      "fingerprint": "5262228c8496809b45100bfee83e6d888630b16ccab92e433bb933503903b374",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-153-Self-Testing-Engine.md",
+      "size_bytes": 12192,
+      "modified_at": 1783011697.772999,
+      "fingerprint": "90df9862826a01c279413069ca95f8a929a1a827cc3f7c9a112390a5e53dc40f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-154-Self-Deployment-Preparation-Engine.md",
+      "size_bytes": 12355,
+      "modified_at": 1783011697.7744694,
+      "fingerprint": "b66e9b7009c1179e967377fa1552ea2d5dbbda8e885f475a7f3baaa33ac895dc",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-155-Evolution-Planning-Engine.md",
+      "size_bytes": 12266,
+      "modified_at": 1783011697.7759776,
+      "fingerprint": "1820d81cbf96abd72c078763eb55008a139a2ffed6ec547c4de2f69016d8cdab",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-156-Autonomous-Deployment-Engine.md",
+      "size_bytes": 12400,
+      "modified_at": 1783011697.7759776,
+      "fingerprint": "62547bc4bd2944942923c1a764eaf8b0eca6660723e3310ce35579ce51ac4c55",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-157-Self-Validation-Engine.md",
+      "size_bytes": 12331,
+      "modified_at": 1783011697.7774706,
+      "fingerprint": "fa6f88c5a28845401b687ccb13a02fa2f0bad9993317dea0dfbf572b6f505dfa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-158-Self-Governance-Engine.md",
+      "size_bytes": 12270,
+      "modified_at": 1783011697.7788792,
+      "fingerprint": "f3550a9ad317a2e17192e63e6541dca438f2708a806167e1326dd9409630fe65",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-159-Self-Policy-Evolution-Engine.md",
+      "size_bytes": 12301,
+      "modified_at": 1783011697.7803633,
+      "fingerprint": "2464dd93086b6bb9bd8a0776fc560aeef28c557fa0f4b99389be0a7ddcae1052",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-160-Autonomous-Incident-Response-Engine.md",
+      "size_bytes": 12420,
+      "modified_at": 1783011697.781391,
+      "fingerprint": "5114b9dcd3420858e1b2cf7b524489ca52584a8e7774eefad998bbc88f1d280e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-161-Autonomous-Recovery-Evolution-Engine.md",
+      "size_bytes": 12313,
+      "modified_at": 1783011697.78273,
+      "fingerprint": "268899894adf5532e4e61255ceb5b5cf3088ba112a32f9ab990a89bc5665b639",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-162-Self-Knowledge-Expansion-Engine.md",
+      "size_bytes": 12279,
+      "modified_at": 1783011697.783729,
+      "fingerprint": "78a34167a3e38fed8c24d82c962c9db1f0ceb6006fac09331545768ae72c99a3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-163-Self-Skill-Creation-Engine.md",
+      "size_bytes": 12255,
+      "modified_at": 1783011697.7847283,
+      "fingerprint": "424088404ae6f05cf47349dc3bf957bbb7f5c370e59f965aed93b36e36381985",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-164-Self-Runtime-Optimization-Engine.md",
+      "size_bytes": 12333,
+      "modified_at": 1783011697.7847283,
+      "fingerprint": "2b87bdb8d0a40f985ad471af5a1480150053378138172d6fa38e330d6352fff4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-165-Self-Infrastructure-Evolution-Engine.md",
+      "size_bytes": 12401,
+      "modified_at": 1783011697.7857277,
+      "fingerprint": "d1b87dd5157798b8ad80abae7e5d3ad059d41e5698cb54e40b3d866d58c20a23",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-166-Self-Security-Evolution-Engine.md",
+      "size_bytes": 12351,
+      "modified_at": 1783011697.7870696,
+      "fingerprint": "4c1178d58b314fff98a85f53bd31f1a4ce2d3ca581d6e3accfab5be2e76f2bbe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-167-Autonomous-Research-Engine.md",
+      "size_bytes": 12254,
+      "modified_at": 1783011697.7885213,
+      "fingerprint": "d59f874febe57e2a3efc45db991ec5e3ea744b56797fc770b7e1a420708948ba",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-168-Continuous-Innovation-Engine.md",
+      "size_bytes": 12211,
+      "modified_at": 1783011697.7895212,
+      "fingerprint": "861cdda1b37e02ab4e589bd903fe72d34a956972ebd13eaddd39883e30ede2d0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-169-Autonomous-Platform-Evolution-Engine.md",
+      "size_bytes": 12324,
+      "modified_at": 1783011697.7895212,
+      "fingerprint": "21be8647078b4eace92881007a96479250ce6cf33fe3cac3874b88bc0beaf00f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "rfcs/SPEC-170-Global-Self-Evolution-Orchestrator.md",
+      "size_bytes": 12417,
+      "modified_at": 1783011697.7909634,
+      "fingerprint": "11f01deb82c338046127038af1875a104fc53cbe33ee3da4f4910975986da7ea",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "schemas/aetheris.schema.json",
+      "size_bytes": 3314,
+      "modified_at": 1783011697.791962,
+      "fingerprint": "e7d3ec8e980cd961991ecec73c4bacd3595f7c89ff78f249cc71ed23ad1fb05b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "schemas/costs.schema.json",
+      "size_bytes": 494,
+      "modified_at": 1783011697.7929688,
+      "fingerprint": "0ddb2a3c0b20025ce8ff5ee3b37b6d4a1215d0d170b41e935a8aa543c06d7b34",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "schemas/gates.schema.json",
+      "size_bytes": 3055,
+      "modified_at": 1783011697.7929688,
+      "fingerprint": "62aa530c86b49a355a35cdf3a68019fac7e6a587e73d99718611568609e2590c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "schemas/models.schema.json",
+      "size_bytes": 1394,
+      "modified_at": 1783011697.7951949,
+      "fingerprint": "c1b0738e081bb1eb3d306c18dc6bd03133cd5331bda52608810a2d931dd2fc01",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "schemas/plugins.schema.json",
+      "size_bytes": 1528,
+      "modified_at": 1783011697.7951949,
+      "fingerprint": "8b146b8957b3afad0683c8024fa7e6a285b097845430467580ba7f2691703b01",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/academic/academic-anthropologist.md",
+      "size_bytes": 7878,
+      "modified_at": 1782827153.8346539,
+      "fingerprint": "247b7e474f0a95e3268d0d5265be46e3d76b24f17eff1bee4d420b9e33a28c4e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/academic/academic-geographer.md",
+      "size_bytes": 7740,
+      "modified_at": 1782827153.835657,
+      "fingerprint": "883594597159a5b90febbb6dce3d35f0d7b1cd77127a6b16d84d07fe3063b397",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/academic/academic-historian.md",
+      "size_bytes": 7272,
+      "modified_at": 1782827153.8542843,
+      "fingerprint": "bf3e04c368da94ac9da9206fbd9de72f4ca71b5d0be7cf5f260a26f291aeb93a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/academic/academic-narratologist.md",
+      "size_bytes": 6797,
+      "modified_at": 1782827153.8562965,
+      "fingerprint": "5a7e3db3d906b61620b53a4d95954e94abeacadb2174b753bcf9416234901d1c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/academic/academic-psychologist.md",
+      "size_bytes": 7833,
+      "modified_at": 1782827153.8622987,
+      "fingerprint": "839787a89cad3db6f9950d8e5dd70cc3eee2b58b78c9ef0fe79e122390cb9a58",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-context-engine/SKILL.md",
+      "size_bytes": 1045,
+      "modified_at": 1783011697.8064759,
+      "fingerprint": "d03e2e28c61947625355d77de4d3de1c3e9419d47e6023ff2b44b27c0d48df8c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-kernel/SKILL.md",
+      "size_bytes": 2159,
+      "modified_at": 1783011697.8079052,
+      "fingerprint": "94512e6a312c499da259ee1cffa0ed48d2069d96176df230144ee371907b7bbe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-memory-engine/SKILL.md",
+      "size_bytes": 1126,
+      "modified_at": 1783011697.8093588,
+      "fingerprint": "430b5818d512d0462fa5cf0e6f677971033945de3c36fd8f285d99f8f4d3f61b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-product-intelligence/SKILL.md",
+      "size_bytes": 1135,
+      "modified_at": 1783011697.8103585,
+      "fingerprint": "3c40ad6d369598e45ff0d1895b7c3e2a84d1acc54d3fcaf90eda948aeb6d3f5a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-project-discovery/SKILL.md",
+      "size_bytes": 1178,
+      "modified_at": 1783011697.8118424,
+      "fingerprint": "9aaf0d3bca1e42b7e53d10a5fd4bf0d07ef9b1a53c4df367c7a9b2f81c38e13a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-skill-orchestrator/SKILL.md",
+      "size_bytes": 1600,
+      "modified_at": 1783011697.8129885,
+      "fingerprint": "e5c0faca0216f3c969dc68dac5926e71813b21bb0d4c5f22f5f9ef7dbf60e654",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/aetheris-verification-engine/SKILL.md",
+      "size_bytes": 1685,
+      "modified_at": 1783011697.8144777,
+      "fingerprint": "e4bd60833d7f79351a43915830ee517ccd9f85adc97d3110ae3dc883adff78ec",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-brand-guardian.md",
+      "size_bytes": 11641,
+      "modified_at": 1782827153.869802,
+      "fingerprint": "3932a12ff1166585532025bd2db454c4de5b39036c4692a8a1e1fe6b6469e68f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-image-prompt-engineer.md",
+      "size_bytes": 11160,
+      "modified_at": 1782827153.8738148,
+      "fingerprint": "4c275f0b9e22170d3227ee92443dbe79b15302cd03dc4163051d4f784d9ed037",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-inclusive-visuals-specialist.md",
+      "size_bytes": 6799,
+      "modified_at": 1782827153.875815,
+      "fingerprint": "2e9754de71d831678216a75066640f5d68039a7113befceaa95cbaea68111494",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-persona-walkthrough.md",
+      "size_bytes": 16759,
+      "modified_at": 1782827153.8813436,
+      "fingerprint": "f031cc4341dc381bdad5318ca00a242148606d521a1f1ebb9f0356b0a1f7c814",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-ui-designer.md",
+      "size_bytes": 13339,
+      "modified_at": 1782827153.8823452,
+      "fingerprint": "7da3b8b83ec3654bf504aa4c04054ac1781d935aa82b8bd3781f1f38293a9ca5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-ux-architect.md",
+      "size_bytes": 15758,
+      "modified_at": 1782827153.8833432,
+      "fingerprint": "73ee4bf294130451e9bbd05a9a3d9f58ac721842c6211192dd0949f3f231692a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-ux-researcher.md",
+      "size_bytes": 13030,
+      "modified_at": 1782827153.8853407,
+      "fingerprint": "7080447c0568702b2c2a1b960f695f8dd37e6d1baa1d000a0e7f56b940a01ea3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-visual-storyteller.md",
+      "size_bytes": 7416,
+      "modified_at": 1782827153.8893437,
+      "fingerprint": "4799783f261f9594c0ffa563d2ebf02060b472fb43bef3bbc46e49482102ef4e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/design/design-whimsy-injector.md",
+      "size_bytes": 15851,
+      "modified_at": 1782827153.890352,
+      "fingerprint": "0b7c7fccf930179a835e7ecea6c4de36790867fe5fdc1ff301353d3e01b1ba3c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-ai-data-remediation-engineer.md",
+      "size_bytes": 10691,
+      "modified_at": 1782827153.8963547,
+      "fingerprint": "9800e67aa1185e4a4ad4229d54c338804368d20bcb2d748283576be3770dfc53",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-ai-engineer.md",
+      "size_bytes": 7383,
+      "modified_at": 1782827153.8983538,
+      "fingerprint": "4fbc5ea844b8223c3ab889bc4d21e465632ec83e964c84551f27fd37863a42ac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-autonomous-optimization-architect.md",
+      "size_bytes": 7953,
+      "modified_at": 1782827153.904352,
+      "fingerprint": "4fa326707b5c4572a5e05e8764f94875088493b79a5abba6ba15c5f56c872942",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-backend-architect.md",
+      "size_bytes": 10928,
+      "modified_at": 1782827153.9048572,
+      "fingerprint": "21723c96490926236883d3591c66c5db1140d9741bae1eacab14954a822ec4e6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-cms-developer.md",
+      "size_bytes": 19520,
+      "modified_at": 1782827153.9068766,
+      "fingerprint": "ea9e6c155390a719ebdce3643a8760f4eb957c05c47da1220e1b53b4c77df9b0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-code-reviewer.md",
+      "size_bytes": 3076,
+      "modified_at": 1782827153.90888,
+      "fingerprint": "a4413e96fe27be790629e6cb412529e95f9c0d2172454ec8e938134db1718c61",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-codebase-onboarding-engineer.md",
+      "size_bytes": 9569,
+      "modified_at": 1782827153.910877,
+      "fingerprint": "83d4af21768d657a798652e0b6326fd361aa14101d14fdc638e3e7e646f917cf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-data-engineer.md",
+      "size_bytes": 14687,
+      "modified_at": 1782827153.912878,
+      "fingerprint": "3bbfa6e8774de7a3d76cd07ae36d6b5f99daedff19dfa92eaf7983da5a94865b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-database-optimizer.md",
+      "size_bytes": 5533,
+      "modified_at": 1782827153.913876,
+      "fingerprint": "9b58c8e41c957e9654c9b631d639231fe35a80cf59ae467b598e1141c1be9566",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-devops-automator.md",
+      "size_bytes": 12879,
+      "modified_at": 1782827153.9188778,
+      "fingerprint": "bf6c830e74bba083edf017cce149c61c629ba927c364ba3e662afc90dd475c3b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-drupal-shopping-cart.md",
+      "size_bytes": 21461,
+      "modified_at": 1782827153.9273922,
+      "fingerprint": "40c54d23ea08161891c9a7a43af49742c9bbf5447dccc4925afabaa58da045b0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-email-intelligence-engineer.md",
+      "size_bytes": 16550,
+      "modified_at": 1782827153.9333994,
+      "fingerprint": "cc926f10b77040e6558874545dc9708eda9da62c2d40ff1ea4e10f1a56baf7cb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-embedded-firmware-engineer.md",
+      "size_bytes": 6562,
+      "modified_at": 1782827153.9408312,
+      "fingerprint": "46342fe70c33d26491494b276d70881c3576f8d1c0b9abda3a7106641e1ced20",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-feishu-integration-developer.md",
+      "size_bytes": 21127,
+      "modified_at": 1782827153.9468367,
+      "fingerprint": "fb28f9003a5df3fbeee3208efd7317892bf8d4225533ae325f45406b8d297d15",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-filament-optimization-specialist.md",
+      "size_bytes": 14269,
+      "modified_at": 1782827153.9588397,
+      "fingerprint": "55757bce74c4b2fd55c5d83a88678ba5e9eb408e11c4d2518adfa9ec82122719",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-frontend-developer.md",
+      "size_bytes": 9283,
+      "modified_at": 1782827154.008886,
+      "fingerprint": "cb661e73a58202599b51bb0b43f596515ce028baad91070924d846444fad7013",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-git-workflow-master.md",
+      "size_bytes": 3342,
+      "modified_at": 1782827154.0098886,
+      "fingerprint": "7802a447816de6d26409823476f33f2f40f0a42f24a31e133a894d244afb826c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-incident-response-commander.md",
+      "size_bytes": 21121,
+      "modified_at": 1782827154.0114028,
+      "fingerprint": "a0d3c367fde54c6b9c6b155c3bce57ac8f4a40eb68fb04c974cfe8ddb80bc19f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-it-service-manager.md",
+      "size_bytes": 27663,
+      "modified_at": 1782827154.0186844,
+      "fingerprint": "d99c9466885d9b90820acb07538da736a84727c2982733b3d114ec7febd2f3f1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-minimal-change-engineer.md",
+      "size_bytes": 11231,
+      "modified_at": 1782827154.0259511,
+      "fingerprint": "297d8bbd31ca3867430b345f14ddcabe5f6d4b2c54ed9620b852555bc8f86973",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-mobile-app-builder.md",
+      "size_bytes": 17035,
+      "modified_at": 1782827154.0312092,
+      "fingerprint": "e6da87ea51ae356492fd7a0c03d83bef0a027b33528cab15ee97d02726fa9073",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-multi-agent-systems-architect.md",
+      "size_bytes": 29301,
+      "modified_at": 1782827154.0436475,
+      "fingerprint": "6fa306702605c8d5866e8ddd365bd9b0835f90e66fcad950494a63544ba71d61",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-network-engineer.md",
+      "size_bytes": 13365,
+      "modified_at": 1782841480.238625,
+      "fingerprint": "1503d60eef6e9f4a1c37f56e737b3cf5038b580d50d5a686c08ab94783f3cd2f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-orgscript-engineer.md",
+      "size_bytes": 5611,
+      "modified_at": 1782827154.0456529,
+      "fingerprint": "16d393f0af5115bc118c420871345ad585b79b76a892ff8f85fdb796327684d2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-prompt-engineer.md",
+      "size_bytes": 9477,
+      "modified_at": 1782827154.0486493,
+      "fingerprint": "236b71a6029679f038a09904744f7fba2d0c0411b50d083570517b442b7422a5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-rapid-prototyper.md",
+      "size_bytes": 15492,
+      "modified_at": 1782827154.0506475,
+      "fingerprint": "59369bf2a51e785e3358fc00fa76f39de660f968028d51181d799f98cceefea5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-senior-developer.md",
+      "size_bytes": 6252,
+      "modified_at": 1782827154.0516498,
+      "fingerprint": "b4832054830990175917d9ffec6141415d95478038ddcf8338114900eed0fc9d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-software-architect.md",
+      "size_bytes": 6485,
+      "modified_at": 1782827154.0526505,
+      "fingerprint": "0418b6316c4ce6909752d64b9208879a31688b8e248ffc1e183403fd4eb68db9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-solidity-smart-contract-engineer.md",
+      "size_bytes": 21714,
+      "modified_at": 1782827154.0586612,
+      "fingerprint": "c5995631570134c5663f90cf43f7bdee08ee91a63b982f99a24d2e706d702cf9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-sre.md",
+      "size_bytes": 3882,
+      "modified_at": 1782827154.0606568,
+      "fingerprint": "0b04e63ff7de89a0c5ab8ecc56a04812054a449f2889e5517523b725cc67c6fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-technical-writer.md",
+      "size_bytes": 14210,
+      "modified_at": 1782827154.0646563,
+      "fingerprint": "a5dcfcf6d5be1a49356c0ee3bea214ae6858a60b6763629c0d57056eecdf5d1e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-voice-ai-integration-engineer.md",
+      "size_bytes": 27288,
+      "modified_at": 1782827154.0666554,
+      "fingerprint": "c0b28af099fd48dc5f0f35ffed886c924778210a6a8deab5158849c01702a042",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-wechat-mini-program-developer.md",
+      "size_bytes": 15566,
+      "modified_at": 1782827154.0701663,
+      "fingerprint": "54df5313689f624d3fc73d4ddcddf4f38acac57751ec56362d26275603dbcd4e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/engineering/engineering-wordpress-shopping-cart.md",
+      "size_bytes": 22177,
+      "modified_at": 1782827154.0761788,
+      "fingerprint": "df3d72207125bc6d1ce677c576bb648e6b32e82a10f45039cd06f0343164b606",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/nexus-spatial-discovery.md",
+      "size_bytes": 40664,
+      "modified_at": 1782827154.083181,
+      "fingerprint": "25216cb9373a6ccca2c25314dbaf4da97dfbe92de1c58e2a2e22a3a18d1ff48e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/README.md",
+      "size_bytes": 2402,
+      "modified_at": 1782827154.078178,
+      "fingerprint": "ac8b10554449df2c3e8a2dfabb67076ff68097b2d5a65df14f8f9321550f964b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/workflow-book-chapter.md",
+      "size_bytes": 2101,
+      "modified_at": 1782827154.0911796,
+      "fingerprint": "6f322081324aad71d8d529dc65dbb97555e6bd2cbc328846555ae523ad5d47de",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/workflow-landing-page.md",
+      "size_bytes": 3389,
+      "modified_at": 1782827154.1002603,
+      "fingerprint": "46edba76d43a2cb1dba2c60c8fe6feb473248a32f041a54f43b3c1354bcb60e7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/workflow-startup-mvp.md",
+      "size_bytes": 4594,
+      "modified_at": 1782827154.1048799,
+      "fingerprint": "ef67f7350c52ad60e8de218f7bf70d7d124a24c6ab15f2e4395e6ce20cc47262",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/examples/workflow-with-memory.md",
+      "size_bytes": 9090,
+      "modified_at": 1782827154.1058855,
+      "fingerprint": "6fcd8331a9781abbbffbd492366c4dfeeba8f015e73aaa5017eace73b42a22c8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/finance/finance-bookkeeper-controller.md",
+      "size_bytes": 15247,
+      "modified_at": 1782827154.3249366,
+      "fingerprint": "c4d48548151e84ce5ee4316d11ec104525f65c6441bb44e890ef13dd1cd1e5f8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/finance/finance-financial-analyst.md",
+      "size_bytes": 13448,
+      "modified_at": 1782827154.3259358,
+      "fingerprint": "aa038da39817f2bb798e16fbfeba5a454632c4441051b272fdb93f98b80e9a76",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/finance/finance-fpa-analyst.md",
+      "size_bytes": 16614,
+      "modified_at": 1782827154.3269372,
+      "fingerprint": "8c095c0afcaca4118f2ecbc2d23a89837acb848afcd804920c9f53e371becf92",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/finance/finance-investment-researcher.md",
+      "size_bytes": 15678,
+      "modified_at": 1782827154.328335,
+      "fingerprint": "f4269df56ade65b49dbc1e0d4ac50222c6cde905def136ae77f845f0ea1cf5c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/finance/finance-tax-strategist.md",
+      "size_bytes": 13731,
+      "modified_at": 1782827154.3328454,
+      "fingerprint": "12d01a4840318b91247829fe6ccca6f3c9c7e019716f68edae67b2bce12cac13",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/blender/blender-addon-engineer.md",
+      "size_bytes": 10954,
+      "modified_at": 1782827154.3398595,
+      "fingerprint": "dc77aee8f83f457f6df9d80f82a2caf0e348a504b037fa76d8282112fe0e319b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/game-audio-engineer.md",
+      "size_bytes": 12298,
+      "modified_at": 1782827154.341864,
+      "fingerprint": "8fd28d4b06ba19b0da1c126e82432c75dfb6d900c9a031d01d44e36c3da89de3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/game-designer.md",
+      "size_bytes": 8433,
+      "modified_at": 1782827154.3428593,
+      "fingerprint": "5169b39b6bcf2f219449d03ab5c452affc24a99419430cd8a9d74a0f4d87d944",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/godot/godot-gameplay-scripter.md",
+      "size_bytes": 15538,
+      "modified_at": 1782827154.348863,
+      "fingerprint": "0133bd03a944b01178c91879fd68fc915cec1e9c5d89c554bb9e6f8fe1b7989b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/godot/godot-multiplayer-engineer.md",
+      "size_bytes": 13918,
+      "modified_at": 1782827154.350861,
+      "fingerprint": "bf5a5f16c7460510531b829911611ca3865d6e40158ec3e9a0c9141364700e21",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/godot/godot-shader-developer.md",
+      "size_bytes": 13392,
+      "modified_at": 1782827154.353378,
+      "fingerprint": "1cef74f5bd4a0f27a6c2cff7ed1d1ef43e4c5743faf267c9e463efbf3081cfca",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/level-designer.md",
+      "size_bytes": 10340,
+      "modified_at": 1782827154.3553894,
+      "fingerprint": "5cbf05dcd86c1a16fe0f9d43bb4bf72bde39482dc5993b8353fecc4e42aa1c5f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/narrative-designer.md",
+      "size_bytes": 13160,
+      "modified_at": 1782827154.35639,
+      "fingerprint": "5a33517560b5a3c8cf4521c9778cee0bd85a684007eed27621e5a0c3856309f6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/roblox-studio/roblox-avatar-creator.md",
+      "size_bytes": 14116,
+      "modified_at": 1782827154.3583882,
+      "fingerprint": "b2fb64106bc5c7bee1df470135215a3ab2d010af7603e1ac261efe577f3d1552",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/roblox-studio/roblox-experience-designer.md",
+      "size_bytes": 14863,
+      "modified_at": 1782827154.3593874,
+      "fingerprint": "61e2d04f6b6102ffcead7528f0c5c516a9969967e3f5c4ae018ee2fdc8706681",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/roblox-studio/roblox-systems-scripter.md",
+      "size_bytes": 15204,
+      "modified_at": 1782827154.3613899,
+      "fingerprint": "13fc73b6c98ddfbc2571a91257cdbe32d4a1cbee71d89ce341ad17305a14f3f5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/technical-artist.md",
+      "size_bytes": 11220,
+      "modified_at": 1782827154.3623855,
+      "fingerprint": "45a5ac62dc7590f36b4acbe70e4008329deeeb112c5e04b7e4279b4e854e6231",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unity/unity-architect.md",
+      "size_bytes": 12244,
+      "modified_at": 1782827154.3643868,
+      "fingerprint": "6965ef4752e9110d1163293ba7b5b793710daa7217e43169b175f1d4b9c55bde",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unity/unity-editor-tool-developer.md",
+      "size_bytes": 14889,
+      "modified_at": 1782827154.3663898,
+      "fingerprint": "85134032ea0bf8dbaf137d9a8dc336393fe53fbc6a711be2964a42b682d882e5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unity/unity-multiplayer-engineer.md",
+      "size_bytes": 14947,
+      "modified_at": 1782827154.378912,
+      "fingerprint": "058e2f5a45a51a3edfc8aca9484fb46594f75e24e01dafc60a752fbba92432fa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unity/unity-shader-graph-artist.md",
+      "size_bytes": 13080,
+      "modified_at": 1782827154.3819091,
+      "fingerprint": "09cee41979aaa9ee97eb89272c17f7cf2df3dc490a5cf8480401c9d27ce7ea00",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unreal-engine/unreal-multiplayer-architect.md",
+      "size_bytes": 14039,
+      "modified_at": 1782827154.3869205,
+      "fingerprint": "05a6c3d531f594dc61fdce054c21fc0fa325e7c12ff0e5028d020d4d5e62dc80",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unreal-engine/unreal-systems-engineer.md",
+      "size_bytes": 15507,
+      "modified_at": 1782827154.3889253,
+      "fingerprint": "6c123e908e244fc719b366a0d40e2a8dc8777b9c1513e20a365df922aa1798f0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unreal-engine/unreal-technical-artist.md",
+      "size_bytes": 11854,
+      "modified_at": 1782827154.3909225,
+      "fingerprint": "77563c7aec5b7f0e9c2abc96e6599c123b6f120d4761cc4ae7831eb3e538a599",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/game-development/unreal-engine/unreal-world-builder.md",
+      "size_bytes": 14011,
+      "modified_at": 1782827154.3929212,
+      "fingerprint": "0447f489557f2fc54016b6a9331609e5d68160dbd950d8e5de72da8a15eb32fb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-3d-scene-developer.md",
+      "size_bytes": 5628,
+      "modified_at": 1782827154.3969252,
+      "fingerprint": "5fd4f37a402e7b72fa413bad2c25c86f9750d5d4679d0da05645d97fb6d1ad45",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-analyst.md",
+      "size_bytes": 4487,
+      "modified_at": 1782827154.39792,
+      "fingerprint": "7e62bea91240971bb457108f68c98ce6ff86833d271b9cf48546c59e1d8e9b94",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-bim-specialist.md",
+      "size_bytes": 5594,
+      "modified_at": 1782827154.3994265,
+      "fingerprint": "29772cd70800e936f14ebd337ad6d2e0e8ca9d0a3d2baea8981e5f2f0c73c505",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-cartography-designer.md",
+      "size_bytes": 6968,
+      "modified_at": 1782827154.4034486,
+      "fingerprint": "53dbaca0c563ccf9a134aab9e2d53c5739b46adf6b0be373d1dec3afd67447b0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-drone-reality-mapping.md",
+      "size_bytes": 6007,
+      "modified_at": 1782827154.4044516,
+      "fingerprint": "5784613d822ee704049084c942af52829b488c4760b86a3916893987f6c1a19f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-geoai-ml-engineer.md",
+      "size_bytes": 4947,
+      "modified_at": 1782827154.4059296,
+      "fingerprint": "081f37daa70e39258fcb9e21db3d3416d20b53eb85ee401316114dcd8584f974",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-geoprocessing-specialist.md",
+      "size_bytes": 4817,
+      "modified_at": 1782827154.407926,
+      "fingerprint": "d7759242836af88d676463523707b9716de608a87689621f7f7f3134c98a0a3d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-qa-engineer.md",
+      "size_bytes": 5400,
+      "modified_at": 1782827154.409926,
+      "fingerprint": "e19482953430bdb679b660612ca063af46328be8463de0bf8ca347d496ae281c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-solution-engineer.md",
+      "size_bytes": 4591,
+      "modified_at": 1782827154.413175,
+      "fingerprint": "42fe4703278d9112107e8c93b1c136bd9e0389b6c7984b2a49bed7fd7c64737c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-spatial-data-engineer.md",
+      "size_bytes": 4949,
+      "modified_at": 1782827154.4149854,
+      "fingerprint": "9f6fc91c416adc8f3022a6a041b389c993a6b11789d2081fdb4ec94619cf1a7d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-spatial-data-scientist.md",
+      "size_bytes": 5840,
+      "modified_at": 1782827154.4161656,
+      "fingerprint": "1e287e31ed4286ae35a63f4e54c7dd058ad11405c1ec1a1a72552fe08ed7e269",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-technical-consultant.md",
+      "size_bytes": 4525,
+      "modified_at": 1782827154.4176247,
+      "fingerprint": "fe6866cce803359d5386084037ba159db85fb4f1c4107750a3af9f48c04e4d0e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/gis/gis-web-gis-developer.md",
+      "size_bytes": 5324,
+      "modified_at": 1782827154.418701,
+      "fingerprint": "580571b22cf8083b97fa3e57225a894707056298c6a3e70a9b7e1f84e8be3a33",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/aider/README.md",
+      "size_bytes": 691,
+      "modified_at": 1782827154.423273,
+      "fingerprint": "e2bf5b962288377f3fd05325b777e1590655b21c6d7d67d084b4654b64ed4bd3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/antigravity/README.md",
+      "size_bytes": 1009,
+      "modified_at": 1782827154.4257739,
+      "fingerprint": "97905e35de4afbf96d1981b231f26a800313d29cbf0b65f23af11b45910d2695",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/claude-code/README.md",
+      "size_bytes": 712,
+      "modified_at": 1782827154.428235,
+      "fingerprint": "e0b2aba5f9ae2efd64d0a672ec610740ab40413e4992a09d21513b96f411d660",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/codex/README.md",
+      "size_bytes": 1715,
+      "modified_at": 1782827154.4302363,
+      "fingerprint": "68f25c4c32445ce95a1e0d26055c109900c8b35b35868f9c877c6069cd8beba4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/cursor/README.md",
+      "size_bytes": 729,
+      "modified_at": 1782827154.4327564,
+      "fingerprint": "29a7de456ea43d75018333fc4c8b160e1db91a174ac4a5ef9cabd362df34939d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/gemini-cli/README.md",
+      "size_bytes": 805,
+      "modified_at": 1782827154.434771,
+      "fingerprint": "0f16b0fa73c5210a158d6a32bd641c3bc921fae89678277f51f58c374211628b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/github-copilot/README.md",
+      "size_bytes": 759,
+      "modified_at": 1782827154.4387684,
+      "fingerprint": "b6d747d958ee8dc40b7039ed56bea08fb7a575377f8709ddefe1eb39eaa18c22",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/hermes/README.md",
+      "size_bytes": 2162,
+      "modified_at": 1782827154.4407685,
+      "fingerprint": "4501fdffad36ab6839f6ab55afe0ee2c6cda0afc9f4eb0687ff7389050a53d92",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/kimi/README.md",
+      "size_bytes": 2027,
+      "modified_at": 1782827154.4427693,
+      "fingerprint": "af018d6dbce09ca63a830d628c2e863d3505bda2b15d0d0329348e13f93cf22a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/mcp-memory/backend-architect-with-memory.md",
+      "size_bytes": 10940,
+      "modified_at": 1782827154.4497726,
+      "fingerprint": "5f26a0ba201c53f87fe0302908d029bdeaa0492d44e4c76b398c398607a37bd3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/mcp-memory/README.md",
+      "size_bytes": 3760,
+      "modified_at": 1782827154.4477687,
+      "fingerprint": "a0e2db07b541fe476ab0d0d96da872f46f24b4f2e8bdc328be531fc073f2a178",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/mcp-memory/setup.sh",
+      "size_bytes": 2227,
+      "modified_at": 1782827154.4527707,
+      "fingerprint": "5e9cd6b0cee5ffdbf263b592a890f427a9170e7c1c7e2ea4ced64dc6f18fbdbc",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/openclaw/README.md",
+      "size_bytes": 697,
+      "modified_at": 1782827154.453767,
+      "fingerprint": "3d2895e0c656ba4952e05693a82183fd5a8419cda989580d26c0722e5ad97ca4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/opencode/README.md",
+      "size_bytes": 1493,
+      "modified_at": 1782827154.4567838,
+      "fingerprint": "5aadf66afd289e1404459db4e03e7823f696614a9c784e16b60d425d250bb2aa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/qwen/README.md",
+      "size_bytes": 957,
+      "modified_at": 1782827154.4597855,
+      "fingerprint": "70c3736803462d49743a3f2a932b98e0670d298f9b5ba7c4b21609739c4c1fd7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/README.md",
+      "size_bytes": 6474,
+      "modified_at": 1782827154.4212706,
+      "fingerprint": "d8f136fc62441ccb7565517471ec03412952c1bca963747e03f105c31e10e5c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/integrations/windsurf/README.md",
+      "size_bytes": 510,
+      "modified_at": 1782827154.4607868,
+      "fingerprint": "c92e8b7f28f3b370e5edf66ebd37d37927e23f735fee0663bc98aedbc85d5194",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-aeo-foundations.md",
+      "size_bytes": 15548,
+      "modified_at": 1782827154.4647899,
+      "fingerprint": "e6190cc30185daeeafc1a70ecacd7c9631baaf22f2d52c5211b0e9dda85269bb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-agentic-search-optimizer.md",
+      "size_bytes": 15674,
+      "modified_at": 1782827154.4667888,
+      "fingerprint": "a6ea6ee8fe490e7c2c527f2e773f1de8b696166b30a8a0ca62921a814a29b83a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-ai-citation-strategist.md",
+      "size_bytes": 9380,
+      "modified_at": 1782827154.4677837,
+      "fingerprint": "7c663b2b8a3a9fe13eb45bfa236ba09a8ea3fb2efd474e778484e765d30f452c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-app-store-optimizer.md",
+      "size_bytes": 13087,
+      "modified_at": 1782827154.4707935,
+      "fingerprint": "5fcbe268cec219193299551ee97ede54adefd0417ca0095d5d582110066a08c6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-baidu-seo-specialist.md",
+      "size_bytes": 12968,
+      "modified_at": 1782827154.4727888,
+      "fingerprint": "3a6a1888f802beaa152a5f50943a9c720ee75a0f6d47e08ab959362ad311d3d4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-bilibili-content-strategist.md",
+      "size_bytes": 11647,
+      "modified_at": 1782827154.4757907,
+      "fingerprint": "45bedf3924aad7324f13cd10487545c0b218b3b6c743635c2a1378e6e7dc84a1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-book-co-author.md",
+      "size_bytes": 5083,
+      "modified_at": 1782827154.4807906,
+      "fingerprint": "dc52a19019848c414d9c3cdd6419c98fc380f66a405888d26b2e2961b1a69079",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-carousel-growth-engine.md",
+      "size_bytes": 14840,
+      "modified_at": 1782827154.4827902,
+      "fingerprint": "6e6eee28e64044848733fd97936d2ffc580ff77920d1177046343f6b08f1bbdb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-china-ecommerce-operator.md",
+      "size_bytes": 16791,
+      "modified_at": 1782827154.4853096,
+      "fingerprint": "13ab5c2f6d82a204f333025a01dbd72b3794a36cebf88235e41d155956870f4e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-china-market-localization-strategist.md",
+      "size_bytes": 16913,
+      "modified_at": 1782827154.488314,
+      "fingerprint": "2c8929e9b4be4fcc5f0401de733fb75916d491b393dca95edc216e8128f7de47",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-content-creator.md",
+      "size_bytes": 3129,
+      "modified_at": 1782827154.4913137,
+      "fingerprint": "0c84b4b96fa477af9a92cb4a3373897bb892f366056b353f2aec64b8aab4f79e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-cross-border-ecommerce.md",
+      "size_bytes": 17415,
+      "modified_at": 1782827154.4953103,
+      "fingerprint": "0b54dca43eb5b35d6637919e3f97f7f07e023c6d2b6f18dd053dd57f7422ec4a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-douyin-strategist.md",
+      "size_bytes": 6954,
+      "modified_at": 1782827154.5013125,
+      "fingerprint": "c6166cfdc769d4ccb77b9f9f5d46520a766cc465b8d6604b6de5e2531e13f965",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-email-strategist.md",
+      "size_bytes": 16198,
+      "modified_at": 1782827154.5043151,
+      "fingerprint": "57fdf105a805b525c4984f4d7df1d33c4fe5b20f6540f6fccc77c37b07d4033a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-global-podcast-strategist.md",
+      "size_bytes": 21857,
+      "modified_at": 1782827154.508314,
+      "fingerprint": "b0e7711346530040440c1b946a526af0af7d3bc395fd178bda3ce786e7a1acbd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-growth-hacker.md",
+      "size_bytes": 3044,
+      "modified_at": 1782827154.5103118,
+      "fingerprint": "f150221afd489b8fbc6578053663024c3a2dbcde59cb8ca5035c4a36a9174402",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-instagram-curator.md",
+      "size_bytes": 6563,
+      "modified_at": 1782827154.5133176,
+      "fingerprint": "c8e1a579679e2a0f767f050148421231054b5c3110b0f84a4ab254b6b96c0950",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-kuaishou-strategist.md",
+      "size_bytes": 13889,
+      "modified_at": 1782827154.514311,
+      "fingerprint": "3fcb34059a2492ebbc42d0890b2dfa68369493250962fb7d6137390f8c8796f0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-linkedin-content-creator.md",
+      "size_bytes": 13361,
+      "modified_at": 1782827154.516309,
+      "fingerprint": "5eb7f0d306db6b95a6195917581613a576771c54b3791f1331958023f68c52e0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-livestream-commerce-coach.md",
+      "size_bytes": 17166,
+      "modified_at": 1782827154.5173113,
+      "fingerprint": "b32fbfe3e504ce98355bb352d23678f4e504b84e05038106b8fd3c1b651132da",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-multi-platform-publisher.md",
+      "size_bytes": 14660,
+      "modified_at": 1782827154.5193224,
+      "fingerprint": "fdeb29798106ee765ee6fb05073e6521b5af18d94b2930dd1d046e718a192183",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-podcast-strategist.md",
+      "size_bytes": 18038,
+      "modified_at": 1782827154.5223217,
+      "fingerprint": "42a2e79e1aba31f8d89ceb88586ece4170fcdc13caa0bfd43d844214351eadec",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-pr-communications-manager.md",
+      "size_bytes": 24692,
+      "modified_at": 1782827154.523322,
+      "fingerprint": "3f6e74187becd9e8ebcf300fbe5a0c5fe313977b3da6213c59fc19a9837e9233",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-private-domain-operator.md",
+      "size_bytes": 16176,
+      "modified_at": 1782827154.5253477,
+      "fingerprint": "50af2551573c4aad1bdcc6e5da7491cf0ade60d2882f124f32bc91117070e31a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-reddit-community-builder.md",
+      "size_bytes": 7498,
+      "modified_at": 1782827154.5273454,
+      "fingerprint": "155db42712cf3eea9f1e44f2dbc9e8116e815930b55563f4ba260942b813bff7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-seo-specialist.md",
+      "size_bytes": 17975,
+      "modified_at": 1782827154.5283446,
+      "fingerprint": "2bdef1635deed7a901805006384484b96a13472bad5d679de52205f1ee13c7d1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-short-video-editing-coach.md",
+      "size_bytes": 30779,
+      "modified_at": 1782827154.5296974,
+      "fingerprint": "0b5d0796a958591f0986d9578076b91da5fccb236943e7125ffe18d9c71743ed",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-social-media-strategist.md",
+      "size_bytes": 7414,
+      "modified_at": 1782827154.5306969,
+      "fingerprint": "d775fb1056712319e57bb6feb78d6eee1953693d34d42beff4ca3609e58c0731",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-tiktok-strategist.md",
+      "size_bytes": 7559,
+      "modified_at": 1782827154.5331855,
+      "fingerprint": "385395bc9670ad2d9b60b35659385d726c4603097ba1eb31500e0260be442ed9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-twitter-engager.md",
+      "size_bytes": 7760,
+      "modified_at": 1782827154.5357075,
+      "fingerprint": "95a754c15fd011f8cca140ca978ca28a792925749bf23157aef96f47d8b738c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-video-optimization-specialist.md",
+      "size_bytes": 6245,
+      "modified_at": 1782827154.536705,
+      "fingerprint": "3c5d60c5931ad299ec9585266b6d32864a57d1ad5af9d5bd02448e70ccac3acb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-wechat-official-account.md",
+      "size_bytes": 9832,
+      "modified_at": 1782827154.536705,
+      "fingerprint": "2c9ca779df2a7c62186331bbdd63c9378f878e09f7161a209dad75f6ba42f202",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-weibo-strategist.md",
+      "size_bytes": 15697,
+      "modified_at": 1782827154.538191,
+      "fingerprint": "213137f0124cf8d8cc38e99b482ed8c9d8dedfa61925d4f3fcd2fccba9b93536",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-x-twitter-intelligence-analyst.md",
+      "size_bytes": 9730,
+      "modified_at": 1782827154.5396729,
+      "fingerprint": "4814933059188d91cc8032df4f71df02c3eef7ab392f093fa6bd17f8e1d6a5ff",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-xiaohongshu-specialist.md",
+      "size_bytes": 9609,
+      "modified_at": 1782827154.541681,
+      "fingerprint": "78c8aae34b59231ee545811ead515d66d02910f9de62db23734fc144d6b36152",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/marketing/marketing-zhihu-strategist.md",
+      "size_bytes": 12006,
+      "modified_at": 1782827154.542684,
+      "fingerprint": "bb12b6df81ffbb311555e46eae3ceb299d043986a44ab329d1d7d8e689ec8391",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-auditor.md",
+      "size_bytes": 5546,
+      "modified_at": 1782827154.5440395,
+      "fingerprint": "09d24bdf7a14dc143d22096c52bc6e347295670234fc9702e13a07c41736ae30",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-creative-strategist.md",
+      "size_bytes": 5151,
+      "modified_at": 1782827154.545258,
+      "fingerprint": "3bdd2ecc8546d4af1e0469adc89b48db2a70f38bd4d883b3c2047c544656f4d7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-paid-social-strategist.md",
+      "size_bytes": 5440,
+      "modified_at": 1782827154.5472634,
+      "fingerprint": "12dbdfc5345cd14c63feeeb2710326cacf0ddf9791ce465d09a6710ac1d279cf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-ppc-strategist.md",
+      "size_bytes": 4984,
+      "modified_at": 1782827154.5492616,
+      "fingerprint": "b618c3a17fc3f644fe129f855b4f460da183474c73714baadb1648663aefc6f6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-programmatic-buyer.md",
+      "size_bytes": 5271,
+      "modified_at": 1782827154.551259,
+      "fingerprint": "ccbc22b5b357b40070d622e179bff33c4bb8b405d66677c35f95f6d56a23cf47",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-search-query-analyst.md",
+      "size_bytes": 4930,
+      "modified_at": 1782827154.55326,
+      "fingerprint": "1cfa90da70ca5cd56cffaa4d7fcf6c92b9f2b631d3e5de41d23306e3f4ef5448",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/paid-media/paid-media-tracking-specialist.md",
+      "size_bytes": 5315,
+      "modified_at": 1782827154.5542574,
+      "fingerprint": "e7b0204de057a42a14d58bce8fca2ac05cdb961b18ad559cb49c2848f553296d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/product/product-behavioral-nudge-engine.md",
+      "size_bytes": 5335,
+      "modified_at": 1782827154.5577884,
+      "fingerprint": "6795b0741adf729b068d5f8f9b8bb0ff8d60dc6061b3234da7952a1a7a2f3029",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/product/product-feedback-synthesizer.md",
+      "size_bytes": 7260,
+      "modified_at": 1782827154.5597866,
+      "fingerprint": "7fed3166e9786af73c4f8413473fc6936732f77c6290fffe7737e84b2d9d0882",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/product/product-manager.md",
+      "size_bytes": 22687,
+      "modified_at": 1782827154.5637877,
+      "fingerprint": "51879802793669ff3a9e688ede4faf30beac9c6584ff959616f78a877c662735",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/product/product-sprint-prioritizer.md",
+      "size_bytes": 9464,
+      "modified_at": 1782827154.5647855,
+      "fingerprint": "e63a70e0883dd7c8bd848e813e4f7919f6ab641252e37680efab343124336fe6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/product/product-trend-researcher.md",
+      "size_bytes": 10482,
+      "modified_at": 1782827154.5667589,
+      "fingerprint": "edeb0c552de54ebffdccfb579602fc5010f6fc664c61b0f19d3737ac49499eb1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-experiment-tracker.md",
+      "size_bytes": 9455,
+      "modified_at": 1782827154.5712903,
+      "fingerprint": "f59df80b0f6b23419692ed9e96adf36024b5c813cf685f18059f0a4836e4639e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-jira-workflow-steward.md",
+      "size_bytes": 13498,
+      "modified_at": 1782827154.5722885,
+      "fingerprint": "162e1fd5cc489fe84ceee7c62d0c4fee5d3e06228ab8544ccff09f4b538011b9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-meeting-notes-specialist.md",
+      "size_bytes": 5616,
+      "modified_at": 1782827154.5732896,
+      "fingerprint": "d6707579d3aa3e868e7723b05c41a025eb9830ef4c4abb8c2f78b80addce8a55",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-project-shepherd.md",
+      "size_bytes": 9825,
+      "modified_at": 1782827154.5762892,
+      "fingerprint": "6dd5817951a45ec53c7dfbc4a04fcdc1d29e9c91a253e7e55ec03d0b81eee4de",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-studio-operations.md",
+      "size_bytes": 9926,
+      "modified_at": 1782827154.5782902,
+      "fingerprint": "9113a08d618f8429480ae6709705a2b49e3336728b30f6d1c15f7144a703d4a3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-management-studio-producer.md",
+      "size_bytes": 10905,
+      "modified_at": 1782827154.5810785,
+      "fingerprint": "e55853cab8a9e90204a8b8a29f7bb699947d00a3f62b753b140435f06d4b0bad",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/project-management/project-manager-senior.md",
+      "size_bytes": 5308,
+      "modified_at": 1782827154.587301,
+      "fingerprint": "2bf84517a8d77e352cc05cb87da839253923e89b6b90127b689b7e7ce56165d6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-account-strategist.md",
+      "size_bytes": 14844,
+      "modified_at": 1782827154.5931656,
+      "fingerprint": "91d8141b9186bf9c182c356fe701b9a210282b6afc2d0d6143a9361c7504c29d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-coach.md",
+      "size_bytes": 21009,
+      "modified_at": 1782827154.5960133,
+      "fingerprint": "f69347d9f81677d4d4b0922c7f896a0ae4f80c2436c641f77867cb508b9d93ea",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-deal-strategist.md",
+      "size_bytes": 13698,
+      "modified_at": 1782827154.598586,
+      "fingerprint": "5f1b39aef2eede21aa52242986650d83d04437a5c3504dc04a68552f1604ea1f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-discovery-coach.md",
+      "size_bytes": 13591,
+      "modified_at": 1782827154.5996993,
+      "fingerprint": "5ac72255540888a67b30187e235110da7b91033b70ca2703dc1355a6ec1558a9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-engineer.md",
+      "size_bytes": 13948,
+      "modified_at": 1782827154.6009102,
+      "fingerprint": "e9adc71087508b214c3801b659061bd775d3a3d3f1ecee656b6299aeb4e90a79",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-offer-lead-gen-strategist.md",
+      "size_bytes": 16126,
+      "modified_at": 1782827154.6044312,
+      "fingerprint": "32454f1ac3daf157f35020afa5ec7ea60ae1a499351f6004baade641d2ed133e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-outbound-strategist.md",
+      "size_bytes": 10744,
+      "modified_at": 1782827154.6067793,
+      "fingerprint": "046e4840b3abc1cd14075cc2f7c9d22367bfdee7915a189e9d8de81622d5a2b4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-pipeline-analyst.md",
+      "size_bytes": 18765,
+      "modified_at": 1782827154.6081626,
+      "fingerprint": "7ca17def22d51ec41dd1ca94274ba0ec1e21e744c8f4c937aa358744167211a3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/sales/sales-proposal-strategist.md",
+      "size_bytes": 14295,
+      "modified_at": 1782827154.611507,
+      "fingerprint": "6526504f8dcf777875f01b621988bd45843a78c9a9f3baaa9a4df742492ea5e0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/agents-to-install.example",
+      "size_bytes": 373,
+      "modified_at": 1782827154.6145065,
+      "fingerprint": "f24cba853c4b8214622562027694d64ccb4e83d9a041c440e1637bac62b274c3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/build-hermes-plugin.py",
+      "size_bytes": 17136,
+      "modified_at": 1782827154.6156406,
+      "fingerprint": "3eb4f91cbc80695c05c49acfcc371383faae5d441604d97db098db17b9f517ac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/check-agent-originality.sh",
+      "size_bytes": 6209,
+      "modified_at": 1782827154.618641,
+      "fingerprint": "8191994cd85227528ed7f3200dc2e9f8782b9c3cddd6b05c220155242ef8426e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/check-divisions.sh",
+      "size_bytes": 5479,
+      "modified_at": 1782827154.6196384,
+      "fingerprint": "f300834e5a0b1af4a13a87d9c46fe2fd17ddf5076a6458063f1b002ae177f219",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/check-tools.sh",
+      "size_bytes": 4067,
+      "modified_at": 1782827154.621653,
+      "fingerprint": "e15822cf579ba68297d23df9786b640fe688e3a0eb84a1f2404078b8cdcc4bfc",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/convert.sh",
+      "size_bytes": 20762,
+      "modified_at": 1782827154.6226494,
+      "fingerprint": "be743f9eccae13d59faee6f8ab632180a062c49a667f7f85c7ce76ffc7177a0c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_rfc005_specs.py",
+      "size_bytes": 71211,
+      "modified_at": 1782927979.314701,
+      "fingerprint": "6171f1863b2c5b30773193b0c166e5729735b242870bf3e28c639059bc9a1aea",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_rfc007_specs.py",
+      "size_bytes": 60778,
+      "modified_at": 1782928276.8040948,
+      "fingerprint": "b2bf81b07fc97fc0c0287bbc0a65b6b4bb33b1def0b48e387fa4ab32c41940bd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_rfc008_specs.py",
+      "size_bytes": 74210,
+      "modified_at": 1782928953.37237,
+      "fingerprint": "ea10c53c514d31a37622a86aacd577350e0856b835166d8375292e5c381b4b79",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_rfc009_specs.py",
+      "size_bytes": 51277,
+      "modified_at": 1782929272.5061648,
+      "fingerprint": "0a2f2debf9db4b86b8a612a31ef4aa3c7a3480f0ab96e2866a7813a4cbcee236",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_rfc009_vol2_specs.py",
+      "size_bytes": 45561,
+      "modified_at": 1782929448.431574,
+      "fingerprint": "107621a0aae5825fabcdb4ab32d72db9e27112cf090339977d691ca3d73f085a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/generate_specs_tests.py",
+      "size_bytes": 21818,
+      "modified_at": 1782930629.2069342,
+      "fingerprint": "c1d645589e61292848fd3a5a95aa96b89f2fb45d6d0fb15cfee6139524de547c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/i18n/agent-names-zh.json",
+      "size_bytes": 22512,
+      "modified_at": 1782827154.6266465,
+      "fingerprint": "f9884fe4cdd9e45d54274a62c2dc4e7c3b5e713f0c4a5917d677282c25ab09eb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/i18n/localize-agents-zh.ps1",
+      "size_bytes": 1654,
+      "modified_at": 1782827154.62748,
+      "fingerprint": "1b5d93df5452659a88d6ff090a64766cd3f5781919025c54e6be2e095a609438",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/i18n/README.md",
+      "size_bytes": 1842,
+      "modified_at": 1782827154.6246483,
+      "fingerprint": "2f9a1dc68a32fefbc5f1dd7c42165edeb064e46f19e7d76f8d8dcd5caa16f85c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/install.sh",
+      "size_bytes": 51702,
+      "modified_at": 1782827154.629755,
+      "fingerprint": "6821e0296ce818a0915659e79e5141d28df86f0c01fa136c9d455e7f6c8d30b4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/lib.sh",
+      "size_bytes": 6551,
+      "modified_at": 1782827154.63162,
+      "fingerprint": "83745f04dcfcd6d6e2ed9971f6a7eddb3e4b9ba77b394e94926821bc08b292ea",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/lint-agents.sh",
+      "size_bytes": 4608,
+      "modified_at": 1782827154.6335156,
+      "fingerprint": "9ae3a4fd27a198c93a3226fb53fcb15bfeb01f62a4dcc67fe7b8b70569b0579c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfc006.py",
+      "size_bytes": 1518,
+      "modified_at": 1782928756.4582572,
+      "fingerprint": "aeff1000569a31d31d640d821381838fe1afb29ee85fa871408dc6c318822b13",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfc007.py",
+      "size_bytes": 1506,
+      "modified_at": 1782928286.0355244,
+      "fingerprint": "30df972a4dea8ab3fac148595629782d0411506cec6ef5ee6721e23f8b205953",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfc008.py",
+      "size_bytes": 2013,
+      "modified_at": 1782929037.8889258,
+      "fingerprint": "53a2dc87c9d39981886851bfa39602fe513d3767bd332610ca6820116a03f2a3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfc009.py",
+      "size_bytes": 2604,
+      "modified_at": 1782929285.913918,
+      "fingerprint": "10508b3f2bef6aac10b43bc560366f9b6ce9161c218cd50d3e7f0a896d39a789",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfc009_vol2.py",
+      "size_bytes": 2593,
+      "modified_at": 1782929471.1902664,
+      "fingerprint": "cb6daeef41554d170475a437adbc6f7a022662dba4744836fb12da7aa3df2409",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/scripts/verify_rfcs.py",
+      "size_bytes": 1807,
+      "modified_at": 1782927993.6653225,
+      "fingerprint": "111fcf46ea5d34513df4d032a99d97e6d175db2ebb08532fd8b24d1bc26c0a86",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-appsec-engineer.md",
+      "size_bytes": 25789,
+      "modified_at": 1782827154.6381128,
+      "fingerprint": "10b5c36e90eb4f0709f0610b2e2cbaeaa8672ef257826bcefb5a0118e64fd512",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-architect.md",
+      "size_bytes": 18029,
+      "modified_at": 1782827154.6398726,
+      "fingerprint": "a7325770fc6919c309876537699bf72eec79485eac6c0e195fc126b510913631",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-blockchain-security-auditor.md",
+      "size_bytes": 21130,
+      "modified_at": 1782827154.641532,
+      "fingerprint": "95f86c96ab1a1796ec7a71a6ba58ed8b60d2ae37fa64ff59b18910c56f4c82aa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-cloud-security-architect.md",
+      "size_bytes": 23042,
+      "modified_at": 1782827154.6431463,
+      "fingerprint": "e10fc7b513dde71f91c6d02f3f217334ff39f4b2e884524a9741ac5df6b90c81",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-compliance-auditor.md",
+      "size_bytes": 7213,
+      "modified_at": 1782827154.644907,
+      "fingerprint": "47951ab85636efab8d50783faa5464f0934ffcf44aa679a818ecf34f3768f3da",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-incident-responder.md",
+      "size_bytes": 24298,
+      "modified_at": 1782827154.646358,
+      "fingerprint": "ed18c5dcfb0ee1ea067aba7d0410cad68c2ef6cc33b1dc27d6d7f65007c62a0c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-penetration-tester.md",
+      "size_bytes": 21436,
+      "modified_at": 1782827154.6473672,
+      "fingerprint": "2e97316dcf3d6581bee3c7484206421d4cf9703a22544663536a5f4a467f18be",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-senior-secops.md",
+      "size_bytes": 31340,
+      "modified_at": 1782827154.6493676,
+      "fingerprint": "a8235bf83d44bf16c8889294c85d302fdbce39a02c21f11dc7c9aef7ba10c833",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-threat-detection-engineer.md",
+      "size_bytes": 24873,
+      "modified_at": 1782827154.6513915,
+      "fingerprint": "e8f6c8940fb2181b479ed49ed22c8909ce2aec7676d2c70ea24b9b8f28957912",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/security/security-threat-intelligence-analyst.md",
+      "size_bytes": 28365,
+      "modified_at": 1782827154.653057,
+      "fingerprint": "3898d706fa75db1b43e8283d4fcb0bfa09119580ec7a7d627af605496a5da480",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/macos-spatial-metal-engineer.md",
+      "size_bytes": 12141,
+      "modified_at": 1782827154.6553512,
+      "fingerprint": "6fed74f8200cc2a3c2ba54d166bdb0ad423e6c3bc2d128f971fed4944aef28e4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/terminal-integration-specialist.md",
+      "size_bytes": 4110,
+      "modified_at": 1782827154.6564364,
+      "fingerprint": "c03effa12c91a1a8d1455ca3f724b6888e6e86834cc9f7c62fb5016354e2bfa0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/visionos-spatial-engineer.md",
+      "size_bytes": 3400,
+      "modified_at": 1782827154.6580703,
+      "fingerprint": "98e08dda1d7c754b4064313fbc297ec3530045239234099d82ca34b5b0b29d6b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/xr-cockpit-interaction-specialist.md",
+      "size_bytes": 1795,
+      "modified_at": 1782827154.6593728,
+      "fingerprint": "3ef492d6d6fc54a02b9ef47b8b52638838a08751affd5482487c7dc293a22e04",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/xr-immersive-developer.md",
+      "size_bytes": 1847,
+      "modified_at": 1782827154.6613495,
+      "fingerprint": "ed4cb9950e4776e47451efd0b204b349383d0fe495d566f8063256d04e068b60",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/spatial-computing/xr-interface-architect.md",
+      "size_bytes": 1700,
+      "modified_at": 1782827154.6618922,
+      "fingerprint": "0e8d4a6dd9f9fed9c6eeb5ff28ff2343965c61624241c10ad4dca4b0bd70f177",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/accounts-payable-agent.md",
+      "size_bytes": 6795,
+      "modified_at": 1782827154.6635087,
+      "fingerprint": "f00e0e58e7d59eedff81afeed444d6cf77fe60f0aa4f7042bcd611e9857fd5aa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/agentic-identity-trust.md",
+      "size_bytes": 18398,
+      "modified_at": 1782827154.6655195,
+      "fingerprint": "32d5314f33f1813fa1205fa15f13f17be972b2634b8f96a2911b13ba73aef870",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/agents-orchestrator.md",
+      "size_bytes": 15725,
+      "modified_at": 1782827154.6685207,
+      "fingerprint": "20c308675a5bf40fdd8999a1c59effc3dde191f71c3a5be54c70d4a0c6086fb2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/automation-governance-architect.md",
+      "size_bytes": 5831,
+      "modified_at": 1782827154.6706388,
+      "fingerprint": "51a28e745634e4456854a2c103bc6cd7381afd957a8765f1e5f01f819d8d0906",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/business-strategist.md",
+      "size_bytes": 25296,
+      "modified_at": 1782827154.671996,
+      "fingerprint": "daaae2b35dba7cf1947d69c2a5edecb7069a5a3563cfc41901ef0b342e0e9c13",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/change-management-consultant.md",
+      "size_bytes": 27377,
+      "modified_at": 1782827154.6751473,
+      "fingerprint": "9d1237f5c21f9a61b9b58f589b668993f0ba53aa6343eff5e4dce1aef9a2f495",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/chief-financial-officer.md",
+      "size_bytes": 18628,
+      "modified_at": 1782827154.6769404,
+      "fingerprint": "6fd3739400f90dd7de9c7e10a05378b54a7f851ce126683e981cbe141da63bf1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/corporate-training-designer.md",
+      "size_bytes": 15673,
+      "modified_at": 1782827154.6789548,
+      "fingerprint": "a9eb12a62421a7dfdbd932caa04d55379c3a315b8aaf6aa20220f8f481509c72",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/customer-service.md",
+      "size_bytes": 19184,
+      "modified_at": 1782827154.6803877,
+      "fingerprint": "724e4882b9a01c7c67b5405d7635bd7e1495ce868ebf92bf882bcec704c4f394",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/customer-success-manager.md",
+      "size_bytes": 23313,
+      "modified_at": 1782827154.6820078,
+      "fingerprint": "e4342f5dc24912789d4b235479035dc0497da32f2fd9850175b9f896457fea76",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/data-consolidation-agent.md",
+      "size_bytes": 2393,
+      "modified_at": 1782827154.684008,
+      "fingerprint": "5a65d7d2d07f72166ffacbe1e79ff4fc8787ca519ada5e89caca6cd92c487f4f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/data-privacy-officer.md",
+      "size_bytes": 22433,
+      "modified_at": 1782827154.686011,
+      "fingerprint": "5d534cf8ccab0153a93d7a0173431c6f93ef1e485a499b31d9e6fcdfca19ee85",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/esg-sustainability-officer.md",
+      "size_bytes": 20839,
+      "modified_at": 1782827154.688213,
+      "fingerprint": "0f17865070f5f1ff851431c5fd9f98eed055a08cb7d1aaf3f373ade820205338",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/government-digital-presales-consultant.md",
+      "size_bytes": 22759,
+      "modified_at": 1782827154.691118,
+      "fingerprint": "a4043645fcd340770a9f4381ca68a99efaa3a2d33048fc1241b92a5eee41154d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/grant-writer.md",
+      "size_bytes": 27051,
+      "modified_at": 1782827154.7050514,
+      "fingerprint": "4c3171d50679ada419e7c04febf68f649d88f50fcfafa908694cf19becc14bbf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/healthcare-customer-service.md",
+      "size_bytes": 22100,
+      "modified_at": 1782827154.710052,
+      "fingerprint": "135c6ff859f672ba65551c08c5eb2e5102cd814b4e3d7fd2beb1176d17751067",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/healthcare-marketing-compliance.md",
+      "size_bytes": 35322,
+      "modified_at": 1782827154.7140546,
+      "fingerprint": "2f72772cea3138317bb397bdf1b5decb821a524d018409359c6470f5cb530f06",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/hospitality-guest-services.md",
+      "size_bytes": 27773,
+      "modified_at": 1782827154.7194793,
+      "fingerprint": "0d2e3c8fab0126167b281a8967738b10f7c0ce1e950cb13184bf3fb8b59d2fcf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/hr-onboarding.md",
+      "size_bytes": 23923,
+      "modified_at": 1782827154.723206,
+      "fingerprint": "072a25561684ab5b38c4cd10350f7768d4ea3d211c4c64d9fe9c12e758c5fc90",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/identity-graph-operator.md",
+      "size_bytes": 14122,
+      "modified_at": 1782827154.7249322,
+      "fingerprint": "ff8a85b500249f963a6cfc547a9df55d537075343bfc0025f7a2eb0650f7ac22",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/language-translator.md",
+      "size_bytes": 16086,
+      "modified_at": 1782827154.7266178,
+      "fingerprint": "62b249bc6eda961fe60a5f7386a3e81843eb429a90f20ffe19042f9d1ef59ee3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/legal-billing-time-tracking.md",
+      "size_bytes": 27280,
+      "modified_at": 1782827154.7295952,
+      "fingerprint": "6ffb514d2abac42ca67f75deaf0c7c48aed3922497197c2880e28794ebe63d98",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/legal-client-intake.md",
+      "size_bytes": 25630,
+      "modified_at": 1782827154.7308228,
+      "fingerprint": "d7e42296d3135b468df3de90785f37dabf581194300200119eab8441b46db0a9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/legal-document-review.md",
+      "size_bytes": 24728,
+      "modified_at": 1782827154.7328324,
+      "fingerprint": "61eda7933df06b366d40e37c79e16d0c15d7e5b712264afc9540940b15e45ff9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/loan-officer-assistant.md",
+      "size_bytes": 28515,
+      "modified_at": 1782827154.7373464,
+      "fingerprint": "ef1be100d6c751564cb2282ceac95938e2d1be7455b613a93c457773125ea849",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/lsp-index-engineer.md",
+      "size_bytes": 11197,
+      "modified_at": 1782827154.7387395,
+      "fingerprint": "c79d58e24ae9ce989e4f81e9fc0c9cccf062386278da894a1d5d51426fc14905",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/ma-integration-manager.md",
+      "size_bytes": 21438,
+      "modified_at": 1782827154.7404318,
+      "fingerprint": "36f786ad9bad1c894412b02bdb316a86b2e686eb1f7c9137241b72c494dc0275",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/medical-billing-coding-specialist.md",
+      "size_bytes": 24636,
+      "modified_at": 1782827154.743004,
+      "fingerprint": "7772c1f491f705a6899461a359c8e2f4f661584e30d5d2e66a671048262e084d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/operations-manager.md",
+      "size_bytes": 19209,
+      "modified_at": 1782827154.7446454,
+      "fingerprint": "b690abceab02533cac43dbc1b137c4dedc46d11f666ba5816d9370964776ffbb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/organizational-psychologist.md",
+      "size_bytes": 22579,
+      "modified_at": 1782827154.7462735,
+      "fingerprint": "5c0fb5dc882af26316cd0028613e1d5acf910ce5277ead11843b7762f1ef8fc7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/personal-growth-mentor.md",
+      "size_bytes": 7833,
+      "modified_at": 1782827154.7473364,
+      "fingerprint": "d7498e9b7de91f4a19ac816588082081bc1498b97256987b62bdce7481ae72f9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/real-estate-buyer-seller.md",
+      "size_bytes": 31124,
+      "modified_at": 1782827154.750164,
+      "fingerprint": "b14d57c8058a7ce2f9a426a01829d4b2f7a1260ae19d0ba256844e4c0e78c42f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/recruitment-specialist.md",
+      "size_bytes": 29401,
+      "modified_at": 1782827154.7517076,
+      "fingerprint": "3ff6fea457127162ce61677760d627a695eeab681d8435990942bde20ce54f58",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/report-distribution-agent.md",
+      "size_bytes": 2653,
+      "modified_at": 1782827154.7545035,
+      "fingerprint": "e9b7864cc09187c327083e882b2b5946bdc3365582fbc235cc2ecf53ed880850",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/retail-customer-returns.md",
+      "size_bytes": 27700,
+      "modified_at": 1782827154.756516,
+      "fingerprint": "487731543aa09650e7d1c1c83c98d4652e059ddad9ff6856bc510c7dca78a6c0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/sales-data-extraction-agent.md",
+      "size_bytes": 2697,
+      "modified_at": 1782827154.758515,
+      "fingerprint": "86b6cb8abe5513e9f1d222fb420537d7d025764e099844b789fbba30967d3431",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/sales-outreach.md",
+      "size_bytes": 20656,
+      "modified_at": 1782827154.7625139,
+      "fingerprint": "7504f8ddd1714182b3987e8490f0bedfd99b2a4bbb332334ebe8761f3ecacb5d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-chief-of-staff.md",
+      "size_bytes": 18190,
+      "modified_at": 1782827154.7652245,
+      "fingerprint": "2f81585123bb1ff63aee0e2760bcb843ee322c7dd7f0391cd5f1ccd8e48699c7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-civil-engineer.md",
+      "size_bytes": 17068,
+      "modified_at": 1782827154.7689497,
+      "fingerprint": "05a1185d19e2d2517c382a534d9e4455afa8556525a2f3b0afb3a601936540aa",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-cultural-intelligence-strategist.md",
+      "size_bytes": 6643,
+      "modified_at": 1782827154.7703097,
+      "fingerprint": "e1158a44a07de0660dc0d8e7d4f0368e72425095eb1c3988923120bb70988b0b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-developer-advocate.md",
+      "size_bytes": 14829,
+      "modified_at": 1782827154.7718272,
+      "fingerprint": "9c0e792af3d6adf0400698c1bdb0bfee00a8860715bf9b6204301708764969c7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-document-generator.md",
+      "size_bytes": 2437,
+      "modified_at": 1782827154.7732997,
+      "fingerprint": "3f0fff07e56c30aa4ccd1547269a719806bd477d94d85181b528c0ed2844828a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-french-consulting-market.md",
+      "size_bytes": 11156,
+      "modified_at": 1782827154.7742286,
+      "fingerprint": "717a6f41bada9e25078f7c824ed31fbddb4ab06919d3589d73d2e6f2796a4504",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-korean-business-navigator.md",
+      "size_bytes": 14071,
+      "modified_at": 1782827154.7790403,
+      "fingerprint": "c4e2816f5bb5da0b9ce8396b6fb8761478fb011ba2c0a3a93fa8010594854f27",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-mcp-builder.md",
+      "size_bytes": 12062,
+      "modified_at": 1782827154.7820482,
+      "fingerprint": "0bcf4161f46023a8e18e735960a07a8b0b23cc8b2d830c2909af5a75cc663135",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-model-qa.md",
+      "size_bytes": 20143,
+      "modified_at": 1782827154.78705,
+      "fingerprint": "78143b07f8009078eea6aa3aa01da6e2fc52da5b6367d47c80b7acdd4e7b5e81",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-pricing-analyst.md",
+      "size_bytes": 12770,
+      "modified_at": 1782827154.7895212,
+      "fingerprint": "128a2186a2ed204dd9a2c728d8b09f535036972a382e7251b85c79723f3347bb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-salesforce-architect.md",
+      "size_bytes": 9904,
+      "modified_at": 1782827154.791654,
+      "fingerprint": "b45aead460464aff742dc0f97fee0cb09a70bf3fb699b5f1f7fc665ccb51c610",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-strategy-duel-agent.md",
+      "size_bytes": 5946,
+      "modified_at": 1782827154.7926655,
+      "fingerprint": "90365cf459a1c437a48bdd7c78237940fa1f99d77b972f2e7a8ad13011c38e88",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/specialized-workflow-architect.md",
+      "size_bytes": 26479,
+      "modified_at": 1782827154.7954392,
+      "fingerprint": "93c02275432172a5be1e24ad61676053a5bab4cba6630d9baf1dca5f2d46501d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/study-abroad-advisor.md",
+      "size_bytes": 16984,
+      "modified_at": 1782827154.7968597,
+      "fingerprint": "fe1339a7475d34f2353b5ef5b64096ddc0f3bd202b055340062eb272dd317ae2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/supply-chain-strategist.md",
+      "size_bytes": 32397,
+      "modified_at": 1782827154.7993014,
+      "fingerprint": "a68d1e16a94559c0f5e26b566e784188e76002a37c530f093c0a0811d160ef31",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/specialized/zk-steward.md",
+      "size_bytes": 10892,
+      "modified_at": 1782827154.800846,
+      "fingerprint": "bf060be896b22611156033238d76cb84cf5d7c9dec8202b1ee2e3b0c874846fe",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/coordination/agent-activation-prompts.md",
+      "size_bytes": 13158,
+      "modified_at": 1782827154.807752,
+      "fingerprint": "193e8db54165b39ce0ef60a805b44c54a068e51b89fd62b014a81c9ec1e1a709",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/coordination/handoff-templates.md",
+      "size_bytes": 10073,
+      "modified_at": 1782827154.8091784,
+      "fingerprint": "1833ea54ed451447af6a6b2c4bc9ab9a57f8740c84cf06122d02716157b2719d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/EXECUTIVE-BRIEF.md",
+      "size_bytes": 5800,
+      "modified_at": 1782827154.8040133,
+      "fingerprint": "9517112682357ae1b79c56d22f0ab4df22fe74c0b40d7ef8b849c11709ec43af",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/nexus-strategy.md",
+      "size_bytes": 55287,
+      "modified_at": 1782827154.8109097,
+      "fingerprint": "8880b7ddb6d9f1eba9d689cbb2465d62d4ee4282ae7ce22a06929d593b38151c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-0-discovery.md",
+      "size_bytes": 6150,
+      "modified_at": 1782827154.8133998,
+      "fingerprint": "01f4857d9a369669ca504ea4294129ad145d1b7d5f6b6392d41f2213d7d7329b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-1-strategy.md",
+      "size_bytes": 8094,
+      "modified_at": 1782827154.8146148,
+      "fingerprint": "adb99be3859376ed4f8412925f7abc6a76ab48a4a50ff0667eb5bcfeac5db8f5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-2-foundation.md",
+      "size_bytes": 8916,
+      "modified_at": 1782827154.8172624,
+      "fingerprint": "6ec52c536f4a0af53fb9ea3ae2f181c653bd1d9faae2cef7f94d88d1c5cbbd28",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-3-build.md",
+      "size_bytes": 9641,
+      "modified_at": 1782827154.819036,
+      "fingerprint": "904f6572fde2e35be855e91d48402b0b31bff2d149ac71c49ea3e32f18dedd68",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-4-hardening.md",
+      "size_bytes": 10546,
+      "modified_at": 1782827154.8215394,
+      "fingerprint": "db9e65f46b90b337d27f04f61650c2276ae7de3861f8a597f248b9ed2bb22389",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-5-launch.md",
+      "size_bytes": 8280,
+      "modified_at": 1782827154.8228889,
+      "fingerprint": "c097db9f9bea30f3ede0f7cc9fcc3f8b54449e9ba5b79aa0252ca14bd1d7f32d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/playbooks/phase-6-operate.md",
+      "size_bytes": 9802,
+      "modified_at": 1782827154.8265536,
+      "fingerprint": "2a64aefe9ee87bbcb1eaad0f3d240574ecd63d177d198fac76b52b37f80f6980",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/QUICKSTART.md",
+      "size_bytes": 8388,
+      "modified_at": 1782827154.80618,
+      "fingerprint": "97ec2ecfc9f32721297be2abdef8883025839c5d679d9b22d98b0f4032067a44",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/runbooks/scenario-enterprise-feature.md",
+      "size_bytes": 6256,
+      "modified_at": 1782827154.8376937,
+      "fingerprint": "5c150ef151c44b07ea737b2f1fb04ab197f624a7c760c1e5520db39c7eb75763",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/runbooks/scenario-incident-response.md",
+      "size_bytes": 6789,
+      "modified_at": 1782827154.8396947,
+      "fingerprint": "d1042df978149e201b1610125641ff743a06ffc6a69b1839b9dd0478d1c23b3e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/runbooks/scenario-marketing-campaign.md",
+      "size_bytes": 7072,
+      "modified_at": 1782827154.8421407,
+      "fingerprint": "afeb458579440e8ab19be872eb8b9e14b22507cea647dbb636f2e88216062ad8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/strategy/runbooks/scenario-startup-mvp.md",
+      "size_bytes": 5631,
+      "modified_at": 1782827154.8501503,
+      "fingerprint": "df834c0e5ad45b25726919f984a2b9647a353852fff78492bb362b9e5d29d87d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-analytics-reporter.md",
+      "size_bytes": 15796,
+      "modified_at": 1782827154.8551536,
+      "fingerprint": "02fa5f0a0b298a59433dd68aef054a666cfa4a88073599b1707205758ff43526",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-executive-summary-generator.md",
+      "size_bytes": 8992,
+      "modified_at": 1782827154.8629572,
+      "fingerprint": "6fd932687aa9c95fd4d7459da47aef4412d855072ed0ad17cda8ee2e20eb7ba4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-finance-tracker.md",
+      "size_bytes": 19249,
+      "modified_at": 1782827154.8696325,
+      "fingerprint": "ea61156631a7bd7264206c33c53aafb792e70b7df4c718c09f4ec4ee7adea39d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-infrastructure-maintainer.md",
+      "size_bytes": 22365,
+      "modified_at": 1782827154.873133,
+      "fingerprint": "6a22b32077d2f3bc47c80ace0cc8a11d53cc208673281fd47310f7b8ed8d0b3e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-legal-compliance-checker.md",
+      "size_bytes": 26545,
+      "modified_at": 1782827154.8763392,
+      "fingerprint": "3888b9ef60f9877d3b70927a00c1029ea14c1ba73ee4a878defb3495e6550900",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/support/support-support-responder.md",
+      "size_bytes": 24683,
+      "modified_at": 1782827154.8781898,
+      "fingerprint": "c18d6d79d74dfd3eff483bafaf7056c745fbecb011229d2d302ecd5cf0292cbf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-accessibility-auditor.md",
+      "size_bytes": 15300,
+      "modified_at": 1782827154.8833718,
+      "fingerprint": "60468c347a88884f858e41d4743850115c379d6b0f55aeb40fcfb36d17f5f4d4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-api-tester.md",
+      "size_bytes": 12539,
+      "modified_at": 1782827154.888705,
+      "fingerprint": "c6ecf1cff23c0e8dc436cb6ad60514fb2bec02566c5bef94c732c079966b2fb0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-evidence-collector.md",
+      "size_bytes": 8354,
+      "modified_at": 1782827154.9000783,
+      "fingerprint": "fdc3f296e0b7de62c6f075b7c40ace3b3e874ec7b95f0982180debca92df24ec",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-performance-benchmarker.md",
+      "size_bytes": 12224,
+      "modified_at": 1782827154.9087062,
+      "fingerprint": "6b2ab2b3c4726423e9346cd715cfd67cda94cf781c41c4508311d7193599e879",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-reality-checker.md",
+      "size_bytes": 9969,
+      "modified_at": 1782827154.915084,
+      "fingerprint": "8ef7f2ee692a555eec22018cfea57ddb70542a59ec330a3183422cebde6b8d84",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-test-results-analyzer.md",
+      "size_bytes": 14602,
+      "modified_at": 1782827154.9185548,
+      "fingerprint": "41f343ca7b4300ad15136bffb98f02c3e145d17831e10ebbedae2952043b4913",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-tool-evaluator.md",
+      "size_bytes": 17542,
+      "modified_at": 1782827154.9249094,
+      "fingerprint": "ce68c467bb48172225cdfbaf21736e58ca6be1e934f75c71b9d9c12e22c80636",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "skills/testing/testing-workflow-optimizer.md",
+      "size_bytes": 22050,
+      "modified_at": 1782827154.9266188,
+      "fingerprint": "549dba2c7c6c5eea100895badfe866a37ba28da5b7e44db266607f32bebb0208",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.8159728,
+      "fingerprint": "29894fe44c49fbff8af771613cd4030a65c631901a61e47dd51971146734d81e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/adapters/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.8159728,
+      "fingerprint": "29894fe44c49fbff8af771613cd4030a65c631901a61e47dd51971146734d81e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/dashboard/page.tsx",
+      "size_bytes": 7015,
+      "modified_at": 1783013080.2481556,
+      "fingerprint": "5f26b7e4d2b12934bdc44e174e8f11b1afe153a67ceabc8f0dbf285b678c1b75",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/docs/page.tsx",
+      "size_bytes": 1519,
+      "modified_at": 1783013080.2447658,
+      "fingerprint": "a038f6b0dd79eb65bef5bcd171c03191e30bd161bf9de31d71325aa7945dc3ea",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/downloads/page.tsx",
+      "size_bytes": 3623,
+      "modified_at": 1783013080.2471542,
+      "fingerprint": "5d2d6d1eb3c4ee7d7864d5fc01f78aec96b3bf8eda2c03e5cd8c4c27b0b2d484",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/globals.css",
+      "size_bytes": 1216,
+      "modified_at": 1783013080.2491553,
+      "fingerprint": "cb401d483966bb8950635a4a6210b0682f5b5ad89d69b500c24bbf38583584fb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "size_bytes": 4423,
+      "modified_at": 1783013080.240031,
+      "fingerprint": "19d5ea7bc37e1e91410b5090ab6c28735d800780bc32f16dd18fa7728b7bdc3b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/playground/page.tsx",
+      "size_bytes": 4323,
+      "modified_at": 1783013080.2471542,
+      "fingerprint": "9090d76c60a602dfa250b310dad5e98370e8393503a98c442bd90b8e7323183f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/rfc-explorer/page.tsx",
+      "size_bytes": 4304,
+      "modified_at": 1783013080.2425153,
+      "fingerprint": "37df73c6b4912b797267072cc140e865a8076f14ea7b6e19993ba06f10f54640",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/skills-marketplace/page.tsx",
+      "size_bytes": 4852,
+      "modified_at": 1783013080.2447658,
+      "fingerprint": "5986f40613dcae8400fb26a111174ee061a2db10c0ee52127e10ab15489827c4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/spec-explorer/page.tsx",
+      "size_bytes": 6316,
+      "modified_at": 1783013080.2435663,
+      "fingerprint": "8ad504c3615767173b2a275604da9e555a7f3f900fb34c4b52dbe76fdf236d12",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/app/what-is-aetheris/page.tsx",
+      "size_bytes": 4473,
+      "modified_at": 1783013080.2415133,
+      "fingerprint": "0705c331c7918610701ca0d09cffae638c48ab2876b7b0edc1b755aad832c59b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/auth_middleware.py",
+      "size_bytes": 37,
+      "modified_at": 1783013080.250868,
+      "fingerprint": "4ab75110ce8d335e7ed0dc06fb71637d22f3219111fd220338c2616dc30a4b59",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/command-palette.tsx",
+      "size_bytes": 3751,
+      "modified_at": 1783013080.2378728,
+      "fingerprint": "f01b096a97305067a2f53cf46290bd373daa5dcf77a95f089ccecaf03680935c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/footer.tsx",
+      "size_bytes": 2534,
+      "modified_at": 1783013080.238873,
+      "fingerprint": "e2bf4d3a16804bf3c8368a7e625b6b64c1d2fb109196bf7d4f8683d10df697c6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/hero-scene.tsx",
+      "size_bytes": 1354,
+      "modified_at": 1783013080.238873,
+      "fingerprint": "bba038c85a07756495d176e0a3e1c7bd6e05a667e657619d652f9bd5f5bc1816",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/navbar.tsx",
+      "size_bytes": 4891,
+      "modified_at": 1783013080.2378728,
+      "fingerprint": "3f06469284541b672f43a99aadec0255579fa5185fc272865ac25da127bfec38",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/terminal-demo.tsx",
+      "size_bytes": 3020,
+      "modified_at": 1783013080.240031,
+      "fingerprint": "335be6eacf1f2de6ba96c53d787517c3e0e1353ce4d49d432ee8c4e1b35145b3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/components/ui-components.tsx",
+      "size_bytes": 3498,
+      "modified_at": 1783013080.2367172,
+      "fingerprint": "ac2447752859c137ef724ea8905b1b3279a093ad871a7e178c8ab01ca9f322f4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/config.py",
+      "size_bytes": 940,
+      "modified_at": 1783011697.8174348,
+      "fingerprint": "0b04a7f7b4df938fd92a47094c12e55c7aa013d3e743b9f054ff076913b3cb45",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/context.py",
+      "size_bytes": 706,
+      "modified_at": 1783011697.8184333,
+      "fingerprint": "4fb88767c44c7599a6dc843441909c4033b4c752464895e524b90219147fa31a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/data/docs.ts",
+      "size_bytes": 2913,
+      "modified_at": 1783013080.235716,
+      "fingerprint": "230516a3d5775f403be9672e615e1caeed0c2a4370182a230d4ed6f5936c74c8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/data/rfcs.ts",
+      "size_bytes": 8139,
+      "modified_at": 1783013080.0119293,
+      "fingerprint": "eaa81b0abc3ead8279c7db16d1521a4540c7ec183a1d2269b88d202251bb3b8b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/data/skills.ts",
+      "size_bytes": 180733,
+      "modified_at": 1783013080.2345257,
+      "fingerprint": "922320350f1e22186382d65b2d27742f98867b7283ef9d6dc68a56ae02a1a689",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/data/specs.ts",
+      "size_bytes": 566086,
+      "modified_at": 1783013080.1684546,
+      "fingerprint": "629c02ff383275ea7b8e609de78936233cc22c3936e023ace5661d4499e048c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/db_init_bootstrap.sql",
+      "size_bytes": 61,
+      "modified_at": 1783013080.0005949,
+      "fingerprint": "2f6a0f907f178577069e0c13d6ddd55a13cb61294324abc59877b70e514393f4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/enterprise/__init__.py",
+      "size_bytes": 312,
+      "modified_at": 1783011697.8194861,
+      "fingerprint": "b81b224d42f1b07acd7604e24cffd5d519fa0568372ce6c393cc044ae396420e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/enterprise/platform.py",
+      "size_bytes": 3307,
+      "modified_at": 1783013830.9548156,
+      "fingerprint": "c81e4eee1642012b8317586db163a60b086b5bb5cc7ed259f4631dc648666b91",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/event_bus.py",
+      "size_bytes": 39,
+      "modified_at": 1783011697.8209918,
+      "fingerprint": "7975e7ec480647691774bb4ab95afd052d35c6450b7687a61aef9099da0b0b50",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/evolution/__init__.py",
+      "size_bytes": 700,
+      "modified_at": 1783011697.82199,
+      "fingerprint": "0b0a9eb5a0339dc91c2a7ec485cee05a4d932791bdef18a830665276e5c1783f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/evolution/orchestrator.py",
+      "size_bytes": 3221,
+      "modified_at": 1783011697.8229933,
+      "fingerprint": "90a1a073352ad3e37ae7e412f5fb66f28eb96a6414fa49544d13a9ad6d17c087",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/__init__.py",
+      "size_bytes": 37,
+      "modified_at": 1783011697.8243506,
+      "fingerprint": "320d0c9f7181779a369c2cbc8e27d98abdc01bbe01e4b23131c3ed0d25c2a247",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/acge.py",
+      "size_bytes": 3933,
+      "modified_at": 1783011697.8243506,
+      "fingerprint": "a3ac12176080baf15b83ab5e85773b44e85a57365d30f0a9a192602a9bb16048",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/cae.py",
+      "size_bytes": 4044,
+      "modified_at": 1783011697.8257954,
+      "fingerprint": "aa40d9b87af398fdf7b1f87ca92b4c47c8854e8afb35d49c1f695ff44f60c613",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/dgb.py",
+      "size_bytes": 6515,
+      "modified_at": 1783011697.8257954,
+      "fingerprint": "bc0df661264f59a202465bf4860ef28a3fafabeec95c7897e800587de9d4ae44",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/dge.py",
+      "size_bytes": 2741,
+      "modified_at": 1783011697.8271112,
+      "fingerprint": "893a373eec5384cf7628a2f7d2cf7caf703a60f76823977615c617693b02325e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/eme.py",
+      "size_bytes": 2225,
+      "modified_at": 1783011697.8281121,
+      "fingerprint": "19ce9aab40fc5fd8b3525dbc1e96b8b02e1472e1230e13dfdd3de8329e006389",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/eo.py",
+      "size_bytes": 2610,
+      "modified_at": 1783011697.8294926,
+      "fingerprint": "182599904d6001b0d32fbf056d1b870386fc68e53d10390b8b2f4a9b71ad2d2b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/es.py",
+      "size_bytes": 3178,
+      "modified_at": 1783011697.8306127,
+      "fingerprint": "4ead6cfe1bdce7727d25de2bbd341111a6decee39f9378f5b23265adfbe9a455",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/goe.py",
+      "size_bytes": 2143,
+      "modified_at": 1783011697.8306127,
+      "fingerprint": "72432cc321ee020ae1d11fb7c72c02a6fb3d9cf0f0326d046ca9fb5002891cdd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/mre.py",
+      "size_bytes": 4695,
+      "modified_at": 1783011697.8317595,
+      "fingerprint": "735698f74c85b407a71174fbad5693e6bafc013d0d91151141c27d42d77032ac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/pee.py",
+      "size_bytes": 2693,
+      "modified_at": 1783011697.8327599,
+      "fingerprint": "d8ed09740c188b328399f2ce6fc77037fd3fdaa635079f3f641b11fe68f49b10",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/pre.py",
+      "size_bytes": 2818,
+      "modified_at": 1783011697.8327599,
+      "fingerprint": "8922e7dea2add7fb21811a0a92b3bf399e8138d950b291e853cbfa537f4d0f4c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/spe.py",
+      "size_bytes": 2427,
+      "modified_at": 1783011697.8342283,
+      "fingerprint": "13b522ed9e49a777798473f2ebc07ca1cb01eb04be18e2fd02bfcdf13ebedca7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/sre.py",
+      "size_bytes": 2896,
+      "modified_at": 1783011697.8354225,
+      "fingerprint": "b56289241498e749aa4e3730fd61ed91b663e8acd153edcc65c261fd5e68ba49",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/sse.py",
+      "size_bytes": 3374,
+      "modified_at": 1783011697.8366752,
+      "fingerprint": "89052aa9b2b87878f7bb5e2b65ef1f62120290b2f6a8954f986ae6f8409c1d64",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/tde.py",
+      "size_bytes": 5773,
+      "modified_at": 1783011697.8379707,
+      "fingerprint": "2a9f789ca06b670cde93c23b129ca0027179bd1315a58f61c69c2c8a371b8ff7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/execution/website_generator.py",
+      "size_bytes": 111988,
+      "modified_at": 1783011697.8391054,
+      "fingerprint": "9684be0df5181f86326eacb6dbd44cabef5b1975a312791efdd91eb81b9d1406",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/__init__.py",
+      "size_bytes": 420,
+      "modified_at": 1783014121.224454,
+      "fingerprint": "047ab3d0ead1b9dce0e394775d2b84df61bb95ec7436312292ba6ef676a3c411",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ape.py",
+      "size_bytes": 9961,
+      "modified_at": 1783011697.8404202,
+      "fingerprint": "c40be303cdbe204e3bf291694293a938c6fa52a1b69515f5be1100cda7ab32e9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/benchmark_engine.py",
+      "size_bytes": 2260,
+      "modified_at": 1783014112.5755084,
+      "fingerprint": "23b37cd49f2930e0bc91f2672e563b73cb84d2f37f5af7fafe08f1984ee9fe6d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/blueprint.py",
+      "size_bytes": 2289,
+      "modified_at": 1783011697.8404202,
+      "fingerprint": "f4112e7f3bd976ee40d54a1b772a7083b876237e6d3eb24a8af08f4e2c06e7dd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/coe.py",
+      "size_bytes": 248,
+      "modified_at": 1783011697.842904,
+      "fingerprint": "6b3c079fff64832fe3a41a499cf56000734fec9251f0951d2fcddba4c6b12ac0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/coe2.py",
+      "size_bytes": 195,
+      "modified_at": 1783011697.842904,
+      "fingerprint": "459de6840f97296086fc84d2b6c97dde89f0d7f1a9c103e5f922ac2e5c5b9390",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/context.py",
+      "size_bytes": 6798,
+      "modified_at": 1783011697.8439052,
+      "fingerprint": "460424daeef76f36a9cfae0c17353bc67ddac5aa605089018a07458e2a8d5827",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/context_optimizer.py",
+      "size_bytes": 5832,
+      "modified_at": 1783014095.6062267,
+      "fingerprint": "fc9d496d0557ee992ab9b57e118d97ef70823e18a6618be0f78c58cbd1673b0f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/cost_analyzer.py",
+      "size_bytes": 888,
+      "modified_at": 1783014074.3766844,
+      "fingerprint": "f983f7a75b7e3c79adf5945231418e6f43cfa32a67303c6b53fb65a732dd25ac",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/dashboard_metrics.py",
+      "size_bytes": 1701,
+      "modified_at": 1783014106.3410263,
+      "fingerprint": "ac8851cd632b203db46224409adaaf8347985ef3f359ebc44209d8050ee19e01",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/decision.py",
+      "size_bytes": 2074,
+      "modified_at": 1783011697.8449042,
+      "fingerprint": "5c9828c5a32e33add41edc271f857d3c2a6aa48a4ee74e461e2131989c79efd2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/dsee.py",
+      "size_bytes": 240,
+      "modified_at": 1783011697.8459044,
+      "fingerprint": "d86f772285043918cbdcf97580f36cd780baf004ab764b99a02d7c17e71a8d8c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ede.py",
+      "size_bytes": 4139,
+      "modified_at": 1783011697.8469024,
+      "fingerprint": "e9c43c6d45ce00a573fc96138de42f9e36e274c465d11553c2ee70be832c5cff",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ege.py",
+      "size_bytes": 4424,
+      "modified_at": 1783011697.8479016,
+      "fingerprint": "f5a29bd66aaada851f025bd300f2c1cc16b0a1b42fe4a41dff8a6b23f8f7e884",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ekb.py",
+      "size_bytes": 4674,
+      "modified_at": 1783011697.8479016,
+      "fingerprint": "d21747d9dbaee206a8440ce55b3c3589fea7920815aaf75090092fdc39a94d4a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/eoe.py",
+      "size_bytes": 210,
+      "modified_at": 1783011697.8489032,
+      "fingerprint": "d325a919600c7e96bff5bbab3a44bbdc528e455da6e6c6dfcee3ca4f7d80cc41",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ere.py",
+      "size_bytes": 550,
+      "modified_at": 1783011697.8499043,
+      "fingerprint": "dab24f55bcfcb4c3dffb360545319d5a3b22c63b4162d5d79755610fd6449e5c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/fve.py",
+      "size_bytes": 189,
+      "modified_at": 1783011697.8509066,
+      "fingerprint": "13a7d230daeec27a576e9f3a023bcfeeaaf6b53dc1b9b1ffd57509aaf7c0eb15",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/hde.py",
+      "size_bytes": 229,
+      "modified_at": 1783011697.8509066,
+      "fingerprint": "063fd4f83b3b871d04b7b96edd4c7513c16fa3bc846dd82f1553b0316c0a7b45",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/historical_analytics.py",
+      "size_bytes": 6808,
+      "modified_at": 1783014101.740052,
+      "fingerprint": "4c5d7e2fc8cbca8748b3f0c9575ec72e6f0269d01d07972f54f39852b6a26601",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/io.py",
+      "size_bytes": 271,
+      "modified_at": 1783011697.8521864,
+      "fingerprint": "d004ba839b75fbc05cc69d36f9b24fdd1e09d454f3a8493bd3188fce19f8fc15",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/kre.py",
+      "size_bytes": 203,
+      "modified_at": 1783011697.8531842,
+      "fingerprint": "9727c48c1347d5775ebdfc8f80e631f9e5e2290d0f0218c77811671cc711822e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/lce.py",
+      "size_bytes": 222,
+      "modified_at": 1783011697.8531842,
+      "fingerprint": "0febfa66aab560ef0729c45afcbe52e1514ebbcd6676ec75a4025d2b6513523c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/mie.py",
+      "size_bytes": 2753,
+      "modified_at": 1783011697.8541842,
+      "fingerprint": "4478825942bebfb826b9ca8b5fe358973f2dea4fadd1e1f3abf53ab6b8199ad7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/mmce.py",
+      "size_bytes": 218,
+      "modified_at": 1783011697.8541842,
+      "fingerprint": "7b2a9396899efb3092c1766f3d6d0c4c934831c4a33062c61201ac494c034c49",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/mre.py",
+      "size_bytes": 690,
+      "modified_at": 1783011697.8554404,
+      "fingerprint": "9a2ca4d3347de9470a99da6f1cf86c63b4dd91783ff941de41e38042d62fbba8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/pce.py",
+      "size_bytes": 515,
+      "modified_at": 1783011697.8566327,
+      "fingerprint": "56e9a5fd6f227060ae1b2c37bf7d665a02ecbcebe115191e82fb587ccab940f5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/pde.py",
+      "size_bytes": 10088,
+      "modified_at": 1783011697.8566327,
+      "fingerprint": "888884c73e96a3baec10d631d4591136982c9132b94dccb9128b9a7c8b19ac51",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/planners.py",
+      "size_bytes": 54423,
+      "modified_at": 1783011697.859095,
+      "fingerprint": "9d1e7d7a1f2be2dbd45d85a9104aba29bddb40bf22ba6a7310ba336c2daf418e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/ple.py",
+      "size_bytes": 200,
+      "modified_at": 1783011697.859095,
+      "fingerprint": "e7f894f61155a6091e3da5603f841b06d697ed2f2c1308401517e16fb09492c9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/poe.py",
+      "size_bytes": 551,
+      "modified_at": 1783011697.8603463,
+      "fingerprint": "8cf4f58fb086442d99293be4ca1cda38d85b7169522e14f5b0ceeeafd4dd2727",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/qia.py",
+      "size_bytes": 7553,
+      "modified_at": 1783011697.8617432,
+      "fingerprint": "307eb910f15787644764a0d30fb41c2187df9ead93e7483ad4de5c74d694451b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/repository_metrics.py",
+      "size_bytes": 6262,
+      "modified_at": 1783014088.413833,
+      "fingerprint": "6b690b42fab133a918eef8fad9240cf7a5963dcf787fd4890161b2ac9ac265d9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/sbe.py",
+      "size_bytes": 213,
+      "modified_at": 1783011697.8617432,
+      "fingerprint": "adf8d0bf5acfabc2663135875239e699595da85fc2edd46e18e3c152a93240cb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/scanner.py",
+      "size_bytes": 7675,
+      "modified_at": 1783011697.8628335,
+      "fingerprint": "7c4ccb9d4dd7e3a8b2c2d2c602f4749c016d3e774999b8bdbf8288e83b94dd98",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/sre.py",
+      "size_bytes": 463,
+      "modified_at": 1783011697.8641267,
+      "fingerprint": "9c15752297df4c8bffe7822d4103648cfdc19ffcff91ea684ca4be90496d8e25",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/technology.py",
+      "size_bytes": 2159,
+      "modified_at": 1783011697.8641267,
+      "fingerprint": "cd23d2b17c5eae4f0b34ba4e4d6df8305a3780d1ac8ba7e3bcbf354e54305be4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/toe.py",
+      "size_bytes": 228,
+      "modified_at": 1783011697.8651245,
+      "fingerprint": "d5bbec1105bfd0ef3f2c0082b7e4bc59296f48d26e364406e3fcd82a7966ec6b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/token_intelligence.py",
+      "size_bytes": 3438,
+      "modified_at": 1783014081.3570287,
+      "fingerprint": "a5dc880ffb82a5810931e832299bc20e2002f61b3fbaa386e54fb8ae150090de",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/urue.py",
+      "size_bytes": 14533,
+      "modified_at": 1783011697.8661947,
+      "fingerprint": "7bbc3984e5e3b6d4c511220e8cdf3cb68bd458d7b785fce68169a6a6dcf5fbdf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/intelligence/wde.py",
+      "size_bytes": 22905,
+      "modified_at": 1783011697.867407,
+      "fingerprint": "040b7b0067198e976d9e2b9f3a40f661d0cc1d7b717410a664ca7a5225de8bf6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.8684063,
+      "fingerprint": "3f57b8110e29d5d65ecd95e65dd6106b16644f4b13ae7d0c4bdd59ab1ae72134",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/core.py",
+      "size_bytes": 29254,
+      "modified_at": 1783014491.5392995,
+      "fingerprint": "6b6b38fba629ec7ae8897b2d8e3262ae4fe5f6e475fb1ccf2cb2be6b085b8096",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/event_bus.py",
+      "size_bytes": 3670,
+      "modified_at": 1783011697.870409,
+      "fingerprint": "9f0c4a6ad2264b825e8eb3480d9c809d38407f8c6064cadebceef4a8d1b921e9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/goal_manager.py",
+      "size_bytes": 34476,
+      "modified_at": 1783011697.871408,
+      "fingerprint": "84bbaf846b890e470ac368c57af9189ca6d103e9996c85bc908b48054049e78f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/planner.py",
+      "size_bytes": 12796,
+      "modified_at": 1783011697.8734088,
+      "fingerprint": "15a14e77156fe23590528b4fa5c3621411fcda9457ed933767b7daccdde6d096",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/recovery.py",
+      "size_bytes": 1379,
+      "modified_at": 1783011697.8744085,
+      "fingerprint": "5f877807133af1e18c4ffd9ba13dae150305503bb888f4ca0e761c54d9d314cb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/scheduler.py",
+      "size_bytes": 4913,
+      "modified_at": 1783011697.8744085,
+      "fingerprint": "ac268743094eeb5b42240cba6f4a11167062b3ced4c8d797c67356adb31c5f57",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/telemetry.py",
+      "size_bytes": 4682,
+      "modified_at": 1783011697.8759153,
+      "fingerprint": "8ae691912bef1b6de04a17f4f23471f5d57313c225aba9c37cc22e31f9a45d93",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/kernel/utils.py",
+      "size_bytes": 2900,
+      "modified_at": 1783011697.876926,
+      "fingerprint": "4688bd5e1724728400c82bde66b8d336f126412dc21078043e4257563ab5733b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/learning/__init__.py",
+      "size_bytes": 366,
+      "modified_at": 1783011697.8779256,
+      "fingerprint": "f65eeacff84f2949052fc4ba1b8bb21777f54d4b69eb83336a514daa8aa08cdb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/learning/engine.py",
+      "size_bytes": 3321,
+      "modified_at": 1783011697.8792984,
+      "fingerprint": "a347f3ec0f8ede91802f229251c61e0585f062c7b2ef6ef7765cce279a3ce0c5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/lib/search.ts",
+      "size_bytes": 1132,
+      "modified_at": 1783013080.235716,
+      "fingerprint": "9bb2ba7fe2961950e0bf72cfd852a6243cfb60de4d718b55c6c29b8797b786ee",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/memory.py",
+      "size_bytes": 42,
+      "modified_at": 1783011697.8792984,
+      "fingerprint": "1415092ac7367a0447e9b909cf10efe9a2e6def58a82b670afb56b3e6ce71b9d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.8804579,
+      "fingerprint": "63487f24c26bff3b170335858c4b997823af236cca3e508942b649e7682fc73a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/config.py",
+      "size_bytes": 8014,
+      "modified_at": 1783011697.8816962,
+      "fingerprint": "4606cee3f7d48e729e54330d29a37791dd1e76127502848a168df29e28688a0c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/plugins.py",
+      "size_bytes": 6480,
+      "modified_at": 1783013857.943982,
+      "fingerprint": "4f29d607e3a100a002d0e7752a42d0e2b74008a4408a0363bfec2cc204a35b4f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/registry_cache.py",
+      "size_bytes": 6498,
+      "modified_at": 1783011697.8828907,
+      "fingerprint": "d8fc0665feb91cb550007befea84f6e9b1b1f313e2fdda1777418019b23d6611",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/skill_parser.py",
+      "size_bytes": 6071,
+      "modified_at": 1783011697.8843772,
+      "fingerprint": "9f3a543256a4182c874e7ae9b5d0840913d72834d5051f1de9429781907a7066",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/orchestration/skill_scanner.py",
+      "size_bytes": 2436,
+      "modified_at": 1783011697.8858356,
+      "fingerprint": "f12c17844c9e76b95391fbbaa5ed38ef3d0ae41bb095a12391fff0946a44e6b4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/organization/__init__.py",
+      "size_bytes": 302,
+      "modified_at": 1783011697.8858356,
+      "fingerprint": "12d287cce5469966c87e8eb69d26453ce766c560ccd850d38ca9173f49206748",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/organization/agents.py",
+      "size_bytes": 1810,
+      "modified_at": 1783011697.8872883,
+      "fingerprint": "c121934156ac769bdf291eed3b5f26b3284512a8f809d3de6a7496abc24a6a6a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/plugins.py",
+      "size_bytes": 49,
+      "modified_at": 1783011697.8882885,
+      "fingerprint": "cb4033ff6a04ec0bba12fcc87b0ec89a51b96949e25ce60770f9eb2e5d572d46",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/registry_cache.py",
+      "size_bytes": 56,
+      "modified_at": 1783011697.8882885,
+      "fingerprint": "8cc118e8dfd95d6d1c08ec964db671110051157fd3c401c957a7e5a709b2c0f7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/runtime/__init__.py",
+      "size_bytes": 343,
+      "modified_at": 1783011697.8892887,
+      "fingerprint": "a12cbe7dc8842fe96b73f6b5e0f7a1e179f69da3b4c4a56f534ee1dd67837197",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/runtime/cluster.py",
+      "size_bytes": 672,
+      "modified_at": 1783011697.8902984,
+      "fingerprint": "ac4fed5a8af4ef7f32e89404797c57cd73d0a8c4c99abefb85736b0a43374d17",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/runtime/rpc.py",
+      "size_bytes": 864,
+      "modified_at": 1783011697.8917987,
+      "fingerprint": "34661d0d42fd40e5b719192940cc29dd572651535b08a31483b5ab58177b25c2",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/runtime/sandbox.py",
+      "size_bytes": 2727,
+      "modified_at": 1783011697.8917987,
+      "fingerprint": "07c3f909623643718da621ea964aab046d26b10f7e398b83ad7470882014eafb",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/scanner.py",
+      "size_bytes": 407,
+      "modified_at": 1783011697.8933017,
+      "fingerprint": "143584bf22c5f98b575f400ef57fbbfc7610c7fc50ffd6c2887a20d7bbd14bf1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/sdk/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.894294,
+      "fingerprint": "b3e5dfec28986c31ef1aad4b1937dad51255d40b797f15a5847130ea19780f17",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/skill_parser.py",
+      "size_bytes": 52,
+      "modified_at": 1783011697.8955545,
+      "fingerprint": "ef12fb8401ee6f967247b028c943df20df70358c574eca28dba422fe8a3a800a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/skill_scanner.py",
+      "size_bytes": 54,
+      "modified_at": 1783011697.896556,
+      "fingerprint": "aadb2227edbc9fe6cc6f84d1b4ec723e1c86d0ac4399e2c91db52eb81ea28ff8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/storage/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.8979585,
+      "fingerprint": "91dff9ca614d7de80dedab90067f438e06ce089991244d622f5928f68fb20ce9",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/storage/manager.py",
+      "size_bytes": 5128,
+      "modified_at": 1783011697.8993337,
+      "fingerprint": "ac650fae473e0988b4150446de6d7db87069d881b4eb51e33dd68602a39d586a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/telemetry.py",
+      "size_bytes": 46,
+      "modified_at": 1783011697.900817,
+      "fingerprint": "f61f1f60560f6ee430be3717cfb970f9a9aab0967f1cc8724832a24864eb6121",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/utils.py",
+      "size_bytes": 77,
+      "modified_at": 1783011697.9028187,
+      "fingerprint": "d90daa3d37d92cf7c2b9567bf1d4c2425240f28760edce8144441b33121e34dd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/validation/__init__.py",
+      "size_bytes": 0,
+      "modified_at": 1783011697.9028187,
+      "fingerprint": "2f8d1bb1922db3a31c7dc95dd57cc9b47b70fb6457056adb4eb5fd1b507bcce6",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "src/validation/readiness.py",
+      "size_bytes": 1452,
+      "modified_at": 1783011697.9050212,
+      "fingerprint": "002fccd823c4d1609dc80f999d399b47c1f36fc0e51f5d7e7dda7a88b236a1dd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "TASKS.md",
+      "size_bytes": 3052,
+      "modified_at": 1783011697.5308754,
+      "fingerprint": "71a4616aa43e704bc52047ad4a9fe1e6480ca1be3d070d119988042734471af7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size_bytes": 194,
+      "modified_at": 1783011697.906022,
+      "fingerprint": "8c380766a8c9b91af449b498268281401dc1f5d00e598be0e7002878f1c1822f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/config-manager-test-plan.md",
+      "size_bytes": 1957,
+      "modified_at": 1783011697.9085271,
+      "fingerprint": "142ccb2231023a2d1d7416f0801c757aef01deb661d5bf011f3ce052eddb1e10",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/context-engine-test-plan.md",
+      "size_bytes": 1800,
+      "modified_at": 1783011697.9085271,
+      "fingerprint": "7a2bc57bc95914b492e88ea6203040c76a89bb733a3e36c6c0d1c5c6e49d716e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/event-bus-test-plan.md",
+      "size_bytes": 1652,
+      "modified_at": 1783011697.9111576,
+      "fingerprint": "e59d8f3db6ec09732dffe030df447b88eb7e233099ef0743d491a62a1319a1ee",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/kernel-test-plan.md",
+      "size_bytes": 1786,
+      "modified_at": 1783011697.9123392,
+      "fingerprint": "99c8f00f83f67099c417a75e7bc45500ee4b0fc0eef60f632106fd3ab3a6374a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/learning-system-test-plan.md",
+      "size_bytes": 1622,
+      "modified_at": 1783011697.9133372,
+      "fingerprint": "ae4ef2a19aa4d7d5ad2ab2b4692f3251ea18172e54ef7a9114de8402b29e98d0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/memory-engine-test-plan.md",
+      "size_bytes": 1651,
+      "modified_at": 1783011697.9143333,
+      "fingerprint": "7f21f47c16de8d3106aec0fee600abcc2f9e28a50e2135a0dd06322e05d27759",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/planner-test-plan.md",
+      "size_bytes": 1673,
+      "modified_at": 1783011697.9165084,
+      "fingerprint": "8cf6684deb7b7eaf88bfd0cd7cb42512946e639b084570d60bb502c487d276d7",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/plugin-manager-test-plan.md",
+      "size_bytes": 1859,
+      "modified_at": 1783011697.9178305,
+      "fingerprint": "a82c793a7081e3bf9499d0d991d14dcbab87d03558781a6dd9533ed4e40764d4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/project-discovery-test-plan.md",
+      "size_bytes": 1644,
+      "modified_at": 1783011697.9189708,
+      "fingerprint": "bee55df7047bc0641e551573a4d4032886a6f979904263e75196c6c7d5fffbb4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/resource-router-test-plan.md",
+      "size_bytes": 1775,
+      "modified_at": 1783011697.919971,
+      "fingerprint": "174c4d4531807ab4339454cb55e18702ee6c583e722ec63f4a4cbcb402a9f3a3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/runtime-infrastructure-test-plan.md",
+      "size_bytes": 1494,
+      "modified_at": 1783011697.9214082,
+      "fingerprint": "dcad3114a52f3f10af6cee795899f958be288cbf0d08e3242ba24e9e0c54fb25",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/telemetry-engine-test-plan.md",
+      "size_bytes": 1810,
+      "modified_at": 1783011697.9225495,
+      "fingerprint": "932bfd7569df0c23450835ee737563d9f0e8c95c09ba226e15a92c8dacfdca33",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/plans/verification-engine-test-plan.md",
+      "size_bytes": 1808,
+      "modified_at": 1783011697.9240184,
+      "fingerprint": "e280f64e7f083671e10e01a3128c1615cf606229ec8ea76a61901a069e07946e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_all_specs_compliance.py",
+      "size_bytes": 32758,
+      "modified_at": 1783011697.9250226,
+      "fingerprint": "ba94de915d6fb9ef5e1c700344052a1bd7d128efbc94fa46fa0216b2bb459875",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_antigravity.py",
+      "size_bytes": 2102,
+      "modified_at": 1783011697.9264507,
+      "fingerprint": "216233e464c27c5e4cedc609aee872a22bff506354e1b3ad492932e1726a2e7f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_ape.py",
+      "size_bytes": 4130,
+      "modified_at": 1783011697.9274526,
+      "fingerprint": "1ef0e29ac34fe207363b4a56240d45dd2e86848169b5e436a85fdebe3e5ccfee",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_atib.py",
+      "size_bytes": 10162,
+      "modified_at": 1783014157.7992444,
+      "fingerprint": "9969217520d37c3c8c20e1f83b044c0dc7b5f9079c257c61ebe51d8b9e27fff0",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "size_bytes": 1058,
+      "modified_at": 1783013886.7563238,
+      "fingerprint": "5ff206c2eb81b0cc239c1548e254c404348d63a1a8355052d9677e5a0858f7f5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_compile_repo.py",
+      "size_bytes": 2459,
+      "modified_at": 1783011697.9284532,
+      "fingerprint": "69f928e67c038a269085bd03781815ef86c6d939a4c6eeb598af8864a44d8a36",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_ede.py",
+      "size_bytes": 2965,
+      "modified_at": 1783011697.9294503,
+      "fingerprint": "c8e333998cb165c21e674a9fbddbf7267125ad052c09c97bfdc2f37b15836bc4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_ege.py",
+      "size_bytes": 2461,
+      "modified_at": 1783011697.9304492,
+      "fingerprint": "6ef4714e5577f0a3da4455d9b3bad21c784e1c31272087350abf9717737ab414",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_ekb.py",
+      "size_bytes": 2727,
+      "modified_at": 1783011697.9314537,
+      "fingerprint": "2a67c492e1ecb6709ea058ee8eacf398683fbf907788fff772a54de3e03dcf7d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_ekc_capabilities.py",
+      "size_bytes": 4590,
+      "modified_at": 1783011697.9324486,
+      "fingerprint": "3eb5057a7a4b6b1dd3765d3951668954428b8cac5f7c67493d6e852f7d079b85",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_enterprise.py",
+      "size_bytes": 1752,
+      "modified_at": 1783011697.9335635,
+      "fingerprint": "ba5737cb39b90fdc49fc640fc5518f0920c2c60fb4bac7825b3131d4b951fd71",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_evolution.py",
+      "size_bytes": 1371,
+      "modified_at": 1783011697.9350553,
+      "fingerprint": "a1108535baadd1d0b9cb23d766bcb2765942a4463a34f7547192bac4dc993e22",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_execution.py",
+      "size_bytes": 10133,
+      "modified_at": 1783011697.9350553,
+      "fingerprint": "83dab388fa85f5a0c03eb444181d0bc8263d969a5c7a7d1e8dea5cc7dc1dfa81",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_goal_manager.py",
+      "size_bytes": 2558,
+      "modified_at": 1783011697.9364636,
+      "fingerprint": "c15d8ab895a5103120ac39a5e984127367049b853279b9915517f22b40ee228f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_learning.py",
+      "size_bytes": 1368,
+      "modified_at": 1783011697.937881,
+      "fingerprint": "88cd57ae68fe44e1e78c34e7422fb4c50481344e66c3a0a9e20ba2236a251fb1",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_organization.py",
+      "size_bytes": 996,
+      "modified_at": 1783011697.9391768,
+      "fingerprint": "d547d5c9fec40d9006a238d9aabec2587427b088e8cd935d8c0399276156bf4c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_pde.py",
+      "size_bytes": 3570,
+      "modified_at": 1783011697.9404478,
+      "fingerprint": "c81d0060f0133400158e0d9050f785cd782e29ddf657dd90a2fe7d6b14687521",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_planner_capabilities.py",
+      "size_bytes": 3139,
+      "modified_at": 1783011697.941635,
+      "fingerprint": "e2f5648b3ea6d2846419c0eab2569eac5b9be15fbfa3c348af5ee0d723c54c55",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_planners.py",
+      "size_bytes": 8396,
+      "modified_at": 1783011697.943637,
+      "fingerprint": "5e7ea922580b1f2a1ef02d73da724fe9158e8ea3e7834a99c2305ed5ebb43d2a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_qia.py",
+      "size_bytes": 4002,
+      "modified_at": 1783011697.944641,
+      "fingerprint": "22f1054f2850d076ce16e6799545780cb5187fb66a013c8007e23688b51723a8",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_rfc004_core.py",
+      "size_bytes": 5117,
+      "modified_at": 1783011697.9466362,
+      "fingerprint": "7171aadb227f649007a9dc0e258944e67c46c463e7b93281ae40db80fa75293e",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_runtime.py",
+      "size_bytes": 1725,
+      "modified_at": 1783011697.948722,
+      "fingerprint": "10980c078c2d41b1f02e2ec1da55b2786c304f3b2e9d4d8c30494b206cb56c03",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_urue.py",
+      "size_bytes": 3836,
+      "modified_at": 1783011697.9507196,
+      "fingerprint": "ce0b09ce4f21213ceb217af8a817affc126e55b1793030d7a6a101c216ff1df3",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "tests/test_wde.py",
+      "size_bytes": 3946,
+      "modified_at": 1783011697.9517217,
+      "fingerprint": "f3d6f203ab85fdb499cf67adba5b4a82da94446d1951630174cdf07024dff91f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "VERSION",
+      "size_bytes": 5,
+      "modified_at": 1783013851.4687934,
+      "fingerprint": "8c91f18739cb21b7adc4c7bc909e4b05a6003130f47e0a682a5fb613b66f822d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/.gitignore",
+      "size_bytes": 277,
+      "modified_at": 1783011697.9537177,
+      "fingerprint": "6e93be05c6e0b3502ae58b97194c15a90c01369ef8c9915ce5a3d709905deac5",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/.oxlintrc.json",
+      "size_bytes": 253,
+      "modified_at": 1783011697.9562383,
+      "fingerprint": "b02a865760ecba7b95bfbbc1cc2c780b179b848b3fe0358b8a18fd6f3ac265dd",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/docs/planning/execution_plan.md",
+      "size_bytes": 1120,
+      "modified_at": 1783011697.9615943,
+      "fingerprint": "40ccf60eb5ec9710b1bbda11114dcae1110eaebed8ec9e52a17ce283a708a00d",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/docs/planning/prd.md",
+      "size_bytes": 1298,
+      "modified_at": 1783011697.9630558,
+      "fingerprint": "240004f495bb3133bdbbb7d95f7d88635ec8ece8a1cb9eb6186e1eca3c46317f",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/docs/requirements/acceptance_criteria.md",
+      "size_bytes": 1285,
+      "modified_at": 1783011697.964055,
+      "fingerprint": "c10b64738b9960d51b03463e2806e5a026b1d89bfc0b97c86527389484df4aaf",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/docs/requirements/requirements.md",
+      "size_bytes": 1978,
+      "modified_at": 1783011697.967015,
+      "fingerprint": "a2b416bf7746e0426d80c532c26949c31e595638aadd2a629bcfa40186320c9b",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/docs/requirements/user_stories.md",
+      "size_bytes": 1529,
+      "modified_at": 1783011697.9684327,
+      "fingerprint": "21f6881e066f572e8fd29134727f2c3eb41148fb60b65b5a3626782d79edca4a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/index.html",
+      "size_bytes": 960,
+      "modified_at": 1783011697.970464,
+      "fingerprint": "effadffa62d56d2ad358981bce1284b1575c32ab0850ab0d9dd899d7d9c5dc3a",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/package-lock.json",
+      "size_bytes": 45039,
+      "modified_at": 1783011697.971879,
+      "fingerprint": "77d1f89b26c1ab62d570e13de54863601e96e61d87d92fe2bbaa80a28927d285",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/package.json",
+      "size_bytes": 580,
+      "modified_at": 1783011697.9740908,
+      "fingerprint": "217488b025fb98b51207cbb4030baf745d949fb23aab26c46bdd6487645347f4",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/public/data.json",
+      "size_bytes": 1987937,
+      "modified_at": 1783011698.4338257,
+      "fingerprint": "20ed3a22fd193a99b32b6b2d60cc1f95ca84f351e13d5b973d4265cf797e612c",
+      "mime_type": "text/plain"
+    },
+    {
+      "path": "web/README.md",
+      "size_bytes": 1310,
+      "modified_at": 1783011697.9572392,
+      "fingerprint": "7eca7879973d33e6059fcd540d919acf258a641636bfce16e82f5239c7da91a7",
+      "mime_type": "text/plain"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "object_id": "backend_controllers_plan_1783016887659",
+  "version": 1,
+  "type": "backend_controllers_plan",
+  "producer": "BPE",
+  "content": {
+    "controllers": [
+      {
+        "name": "PersistenceContextController",
+        "service": "PersistenceContextService",
+        "routes": [
+          "/data_schema_migration"
+        ]
+      },
+      {
+        "name": "CoreDomainController",
+        "service": "CoreDomainService",
+        "routes": [
+          "/low_latency_scan_execution"
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "8bb7c575d741105bcaf4e2b39ef83714a7de41ac9b7b11c6962aeb62e0978f92",
+    "verified": true,
+    "timestamp": 1783016887.6594431
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "app_shell": "AppShellLayout",
+  "navigation": [
+    "Sidebar",
+    "Navbar",
+    "Breadcrumbs"
+  ],
+  "component_hierarchy": {
+    "Home": [
+      "HomeHeader",
+      "HomeContainer",
+      "HomeFooter"
+    ],
+    "Fr-Db": [
+      "Fr-DbHeader",
+      "Fr-DbContainer",
+      "Fr-DbFooter"
+    ]
+  }
+}

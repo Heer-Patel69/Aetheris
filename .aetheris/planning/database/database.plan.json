@@ -1,0 +1,8 @@
+{
+  "engine": "PostgreSQL",
+  "version": "16",
+  "hosting": "Managed Instance",
+  "multi_tenancy": {
+    "strategy": "Shared Database Separate Schemas"
+  }
+}

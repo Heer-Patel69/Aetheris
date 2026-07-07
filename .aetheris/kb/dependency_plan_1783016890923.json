@@ -1,0 +1,14 @@
+{
+  "object_id": "dependency_plan_1783016890923",
+  "version": 1,
+  "type": "dependency_plan",
+  "producer": "TDDCompiler",
+  "content": {
+    "backend_dependencies": []
+  },
+  "validation": {
+    "checksum": "70b8ebae1b8bffdd4ecbf7d33a9e41f7842f66f14cd9c260e3423988e7702ae9",
+    "verified": true,
+    "timestamp": 1783016890.9241207
+  }
+}

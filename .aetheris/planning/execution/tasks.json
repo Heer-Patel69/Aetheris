@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "id": "task_db_init",
+      "dependencies": []
+    },
+    {
+      "id": "task_auth_pipeline",
+      "dependencies": [
+        "task_db_init"
+      ]
+    }
+  ]
+}

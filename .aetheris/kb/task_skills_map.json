@@ -1,0 +1,38 @@
+{
+  "object_id": "task_skills_map",
+  "version": 1,
+  "type": "task_skills_mappings",
+  "producer": "SSE",
+  "content": {
+    "id": "task_skills_map",
+    "mappings": [
+      {
+        "task_id": "task_db_init",
+        "selected_skills": [
+          {
+            "name": "agency-database-optimizer",
+            "confidence": 0.95,
+            "role": "primary"
+          }
+        ],
+        "fallback_skill": "agency-senior-developer"
+      },
+      {
+        "task_id": "task_auth_pipeline",
+        "selected_skills": [
+          {
+            "name": "agency-cloud-security-architect",
+            "confidence": 0.9,
+            "role": "primary"
+          }
+        ],
+        "fallback_skill": "agency-senior-developer"
+      }
+    ]
+  },
+  "validation": {
+    "checksum": "09b7d82df3630401001ec7b1ac2eb5be72f1772d1a0ae4b71a6d7082556dc47b",
+    "verified": true,
+    "timestamp": 1783016888.5967102
+  }
+}

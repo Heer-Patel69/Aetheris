@@ -1,0 +1,31 @@
+{
+  "object_id": "frontend_components_plan_1783016887639",
+  "version": 1,
+  "type": "frontend_components_plan",
+  "producer": "FPE",
+  "content": {
+    "app_shell": "AppShellLayout",
+    "navigation": [
+      "Sidebar",
+      "Navbar",
+      "Breadcrumbs"
+    ],
+    "component_hierarchy": {
+      "Home": [
+        "HomeHeader",
+        "HomeContainer",
+        "HomeFooter"
+      ],
+      "Fr-Db": [
+        "Fr-DbHeader",
+        "Fr-DbContainer",
+        "Fr-DbFooter"
+      ]
+    }
+  },
+  "validation": {
+    "checksum": "4e5f2fdd724724a5ee2b354271580a2f6d36d9a510e1deaaf1f3a5101c9a2886",
+    "verified": true,
+    "timestamp": 1783016887.63994
+  }
+}

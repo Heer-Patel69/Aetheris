@@ -1,0 +1,12 @@
+{
+  "filters": [
+    "CORSFilter",
+    "RateLimiterFilter",
+    "AuthHeaderFilter",
+    "ValidationFilter"
+  ],
+  "security": {
+    "authentication": "JWT validation token checker",
+    "authorization": "RBAC role validator check"
+  }
+}

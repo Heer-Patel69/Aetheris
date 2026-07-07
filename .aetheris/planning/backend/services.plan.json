@@ -1,0 +1,18 @@
+{
+  "services": [
+    {
+      "name": "PersistenceContextService",
+      "repository": "PersistenceContextRepository",
+      "methods": [
+        "execute_data_schema_migration"
+      ]
+    },
+    {
+      "name": "CoreDomainService",
+      "repository": "CoreDomainRepository",
+      "methods": [
+        "execute_low_latency_scan_execution"
+      ]
+    }
+  ]
+}

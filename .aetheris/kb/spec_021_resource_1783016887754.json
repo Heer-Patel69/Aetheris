@@ -1,0 +1,17 @@
+{
+  "object_id": "spec_021_resource_1783016887754",
+  "version": 1,
+  "type": "spec_021_resource",
+  "producer": "RCPE",
+  "content": {
+    "baseline": {
+      "cpu_cores": 2,
+      "ram_gb": 4
+    }
+  },
+  "validation": {
+    "checksum": "3f0dc52f6e4a4007fab8a0dff0daa0e80edb0c5298afce71841b29af494f2c4e",
+    "verified": true,
+    "timestamp": 1783016887.7544444
+  }
+}

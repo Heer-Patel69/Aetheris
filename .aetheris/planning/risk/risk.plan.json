@@ -1,0 +1,10 @@
+{
+  "risks": [
+    {
+      "id": "R01",
+      "name": "Third party API desync",
+      "probability": "low",
+      "impact": "medium"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "indexes": [
+    {
+      "name": "idx_users_email",
+      "entity": "User",
+      "columns": [
+        "email"
+      ],
+      "type": "B-Tree"
+    }
+  ]
+}
