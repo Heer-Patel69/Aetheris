@@ -91,6 +91,33 @@ export interface ReplayStep {
   retries: number;
 }
 
+export interface RfcSpecCoverage {
+  id: string;
+  title: string;
+  type: 'RFC' | 'SPEC';
+  coverage_percentage: number;
+  referenced_skills: string[];
+  missing_implementations: string[];
+  verification_status: 'passed' | 'warning' | 'failed';
+}
+
+export interface IntegrationCard {
+  name: string;
+  adapter_health: 'healthy' | 'warning' | 'unhealthy';
+  latency_ms: number;
+  version: string;
+  capabilities_mapped: number;
+  compatibility_score: number;
+}
+
+export interface MemoryLog {
+  id: string;
+  timestamp: string;
+  category: 'decision' | 'rejected_idea' | 'lesson_learned' | 'coding_standard';
+  title: string;
+  description: string;
+}
+
 export type NavScreen =
   | 'overview'
   | 'mission'

@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from 'react'
-import type { RuntimeState, BrainState, MissionState, ProjectHealth, SkillEntry, ModelUsage, ReplayStep } from '../types'
+import type { RuntimeState, BrainState, MissionState, ProjectHealth, SkillEntry, ModelUsage, ReplayStep, RfcSpecCoverage, IntegrationCard, MemoryLog } from '../types'
 
 interface AetherisState {
   runtime: RuntimeState | null;
@@ -9,6 +9,9 @@ interface AetherisState {
   skills: SkillEntry[];
   models: ModelUsage[];
   replay: ReplayStep[];
+  rfcSpecs: RfcSpecCoverage[];
+  integrations: IntegrationCard[];
+  memoryLogs: MemoryLog[];
   loading: boolean;
 }
 
@@ -20,6 +23,9 @@ const defaultState: AetherisState = {
   skills: [],
   models: [],
   replay: [],
+  rfcSpecs: [],
+  integrations: [],
+  memoryLogs: [],
   loading: true,
 };
 
@@ -31,14 +37,13 @@ export function AetherisProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<AetherisState>(defaultState);
 
   useEffect(() => {
-    // Generate realistic live metrics and execution state in context for a fully dynamic screen experience
     function generateLiveMockData() {
       const mockRuntime: RuntimeState = {
         brain_state: "IDLE",
         workflow_phase: "PLANNING_PHASE",
         active_goal: "Migrate Aetheris Workspace to .aetheris Directory",
         current_branch: "main",
-        uptime_seconds: 12450,
+        uptime_seconds: 12450 + Math.floor(Math.random() * 60),
         engines_online: 18,
         total_engines: 18,
         cpu_usage: 12 + Math.floor(Math.random() * 25),
@@ -116,35 +121,25 @@ export function AetherisProvider({ children }: { children: ReactNode }) {
           files_modified: [],
           tokens_consumed: 4200,
           retries: 0
-        },
-        {
-          step_number: 3,
-          timestamp: "11:34:25",
-          stage: "Implementation",
-          description: "Scaffolded React components for Phase 2: Runtime, Engineering, Analytics, Replay",
-          input_prompt: "now build phase 2",
-          selected_capabilities: ["FileWrite", "ViteBuild"],
-          loaded_skills: ["agency-minimal-change-engineer"],
-          models_used: ["Claude 3.5 Sonnet"],
-          status: "success",
-          files_modified: ["src/components/screens/RuntimeScreen.tsx", "src/components/screens/EngineeringScreen.tsx", "src/components/screens/AnalyticsScreen.tsx", "src/components/screens/ReplayScreen.tsx"],
-          tokens_consumed: 12000,
-          retries: 0
-        },
-        {
-          step_number: 4,
-          timestamp: "11:34:40",
-          stage: "Verification",
-          description: "VRE executed TypeScript type validation and Vite build verification compiler tests",
-          input_prompt: "now build phase 2",
-          selected_capabilities: ["TypeScriptCompileCheck", "UnitTestRun"],
-          loaded_skills: ["agency-test-results-analyzer"],
-          models_used: ["Gemini 1.5 Pro"],
-          status: "success",
-          files_modified: [],
-          tokens_consumed: 1500,
-          retries: 0
         }
+      ];
+
+      const mockRfcSpecs: RfcSpecCoverage[] = [
+        { id: "RFC-001", title: "Project Workspace Specification", type: "RFC", coverage_percentage: 100, referenced_skills: ["agency-senior-developer"], missing_implementations: [], verification_status: "passed" },
+        { id: "RFC-002", title: "3-Level Indexing Core Pattern", type: "RFC", coverage_percentage: 85, referenced_skills: ["agency-solidity-smart-contract-engineer"], missing_implementations: ["Warm Cache Sync"], verification_status: "warning" },
+        { id: "SPEC-010", title: "Security Threat Containment", type: "SPEC", coverage_percentage: 90, referenced_skills: ["agency-penetration-tester"], missing_implementations: ["Docker Outbound Restrictions"], verification_status: "passed" }
+      ];
+
+      const mockIntegrations: IntegrationCard[] = [
+        { name: "Headroom Adapter", adapter_health: "healthy", latency_ms: 124, version: "v1.2.0", capabilities_mapped: 12, compatibility_score: 95 },
+        { name: "Everything Claude Code (ECC)", adapter_health: "healthy", latency_ms: 220, version: "v2.1.0", capabilities_mapped: 8, compatibility_score: 92 },
+        { name: "Claude Templates", adapter_health: "warning", latency_ms: 380, version: "v0.9.1", capabilities_mapped: 4, compatibility_score: 85 }
+      ];
+
+      const mockMemoryLogs: MemoryLog[] = [
+        { id: "MEM-4910", timestamp: "11:15:30", category: "decision", title: "Hidden Workspace Directory Structure", description: "Consolidated all local project engineering documentation, memory layers, and assets inside a hidden project root directory .aetheris/." },
+        { id: "MEM-4911", timestamp: "11:16:10", category: "rejected_idea", title: "Global SQLite Database Storage", description: "Rejected the proposal to host the 3-level index globally in a shared SQLite DB. Decided to provision dedicated local vector DB endpoints." },
+        { id: "MEM-4912", timestamp: "11:17:45", category: "lesson_learned", title: "Async event execution limits", description: "Encountered thread deadlock during parallel RSE execution. Set explicit asyncio task group limits to prevent thread starvation." }
       ];
 
       setState({
@@ -152,9 +147,12 @@ export function AetherisProvider({ children }: { children: ReactNode }) {
         brain: mockBrain,
         mission: mockMission,
         health: mockHealth,
-        skills: [], // loaded separately or in other pages
+        skills: [],
         models: mockModels,
         replay: mockReplay,
+        rfcSpecs: mockRfcSpecs,
+        integrations: mockIntegrations,
+        memoryLogs: mockMemoryLogs,
         loading: false
       });
     }

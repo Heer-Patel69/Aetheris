@@ -10,6 +10,11 @@ import RuntimeScreen from './components/screens/RuntimeScreen'
 import EngineeringScreen from './components/screens/EngineeringScreen'
 import AnalyticsScreen from './components/screens/AnalyticsScreen'
 import ReplayScreen from './components/screens/ReplayScreen'
+import RfcSpecScreen from './components/screens/RfcSpecScreen'
+import IntegrationsScreen from './components/screens/IntegrationsScreen'
+import MemoryScreen from './components/screens/MemoryScreen'
+import SettingsScreen from './components/screens/SettingsScreen'
+import KnowledgeGraphScreen from './components/screens/KnowledgeGraphScreen'
 import type { NavScreen } from './types'
 
 export default function App() {
@@ -32,11 +37,13 @@ export default function App() {
       case 'engineering': return <EngineeringScreen />;
       case 'analytics': return <AnalyticsScreen />;
       case 'replay': return <ReplayScreen />;
-      default: return (
-        <div className="no-data animate-in">
-          <p>Screen "{screen}" is coming in Phase 3.</p>
-        </div>
-      );
+      case 'rfc': return <RfcSpecScreen />;
+      case 'spec': return <RfcSpecScreen />; // Alias to the unified screen
+      case 'integrations': return <IntegrationsScreen />;
+      case 'memory': return <MemoryScreen />;
+      case 'settings': return <SettingsScreen />;
+      case 'knowledge-graph': return <KnowledgeGraphScreen />;
+      default: return <OverviewScreen />;
     }
   };
 
