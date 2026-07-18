@@ -288,3 +288,15 @@ If the answer is no, redesign it before implementing.
 
 ## 14. Permanent Rule: Challenge the Architecture
 Do not agree with proposals simply because they are written. If you identify a simpler, more scalable, more maintainable, or more deterministic design, explain it with trade-offs and recommend it before implementation. The goal is to build the best engineering system possible, not to preserve earlier decisions.
+
+---
+
+## 15. Engineering Documentation Policy
+Documentation is NOT a summary. It is the Engineering Source of Truth.
+- **No Token Optimization:** Never optimize documentation for fewer tokens or shorter output. Optimize ONLY for Accuracy, Completeness, Engineering Value, Maintainability, and Long-term readability. Quality is more important than size.
+- **The Golden Rule:** Every document must answer WHAT, WHY, HOW, WHEN, WHERE, WHO, and WHAT IF for every engineering decision.
+- **Exhaustive Structure:** Every document must structurally include exhaustive sections ranging from Purpose, Architecture, Design Decisions, Trade-offs, down to Failure Cases, Security Considerations, and Future Improvements.
+- **No Placeholders:** Never generate one-paragraph explanations, bullet-only lists, or generic AI summaries. Every section must contain meaningful engineering content.
+- **Diagrams:** Generating a diagram is NOT enough. Every diagram must include Purpose, Explanation, Components, Relationships, Execution, Examples, Edge Cases, and Engineering Notes.
+- **Code Documentation:** Never describe code line-by-line. Explain Purpose, Responsibilities, Inputs, Outputs, Dependencies, Execution, Interactions, Performance, Security, Failure Handling, and Examples.
+- **Self Review:** Before finalizing, the system must internally review if a new engineer could understand, maintain, and extend the system based entirely on the generated document.

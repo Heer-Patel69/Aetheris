@@ -1,22 +1,8564 @@
 {
-  "session_id": "sess-autonomous",
-  "current_milestone": "deployment_pipelines",
-  "status": "COMPLETED",
-  "tasks": [
+  "skills": [
     {
-      "task_id": "P0",
-      "name": "Requirement Analysis",
-      "status": "Completed"
+      "name": "duplicate_skills",
+      "status": "indexed"
     },
     {
-      "task_id": "P1",
-      "name": "database_migrations_layer",
-      "status": "Completed"
+      "name": "missing_skills",
+      "status": "indexed"
     },
     {
-      "task_id": "P2",
-      "name": "deployment_pipelines",
-      "status": "Completed"
+      "name": "skill_execution_trace",
+      "status": "indexed"
+    },
+    {
+      "name": "skill_inventory",
+      "status": "indexed"
+    },
+    {
+      "name": "skill_usage_matrix",
+      "status": "indexed"
+    },
+    {
+      "name": "unused_skills",
+      "status": "indexed"
+    },
+    {
+      "name": "academic-anthropologist",
+      "status": "indexed"
+    },
+    {
+      "name": "academic-geographer",
+      "status": "indexed"
+    },
+    {
+      "name": "academic-historian",
+      "status": "indexed"
+    },
+    {
+      "name": "academic-narratologist",
+      "status": "indexed"
+    },
+    {
+      "name": "academic-psychologist",
+      "status": "indexed"
+    },
+    {
+      "name": "SKILL",
+      "status": "indexed"
+    },
+    {
+      "name": "design-brand-guardian",
+      "status": "indexed"
+    },
+    {
+      "name": "design-image-prompt-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "design-inclusive-visuals-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "design-persona-walkthrough",
+      "status": "indexed"
+    },
+    {
+      "name": "design-ui-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "design-ux-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "design-ux-researcher",
+      "status": "indexed"
+    },
+    {
+      "name": "design-visual-storyteller",
+      "status": "indexed"
+    },
+    {
+      "name": "design-whimsy-injector",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-ai-data-remediation-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-ai-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-autonomous-optimization-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-backend-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-cms-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-code-reviewer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-codebase-onboarding-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-data-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-database-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-devops-automator",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-drupal-shopping-cart",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-email-intelligence-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-embedded-firmware-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-feishu-integration-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-filament-optimization-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-frontend-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-git-workflow-master",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-incident-response-commander",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-it-service-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-minimal-change-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-mobile-app-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-multi-agent-systems-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-network-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-orgscript-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-prompt-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-rapid-prototyper",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-senior-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-software-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-solidity-smart-contract-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-sre",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-technical-writer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-voice-ai-integration-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-wechat-mini-program-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering-wordpress-shopping-cart",
+      "status": "indexed"
+    },
+    {
+      "name": "nexus-spatial-discovery",
+      "status": "indexed"
+    },
+    {
+      "name": "README",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-book-chapter",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-landing-page",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-startup-mvp",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-with-memory",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-bookkeeper-controller",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-financial-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-fpa-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-investment-researcher",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-tax-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "game-audio-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "game-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "level-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "narrative-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "technical-artist",
+      "status": "indexed"
+    },
+    {
+      "name": "blender-addon-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "godot-gameplay-scripter",
+      "status": "indexed"
+    },
+    {
+      "name": "godot-multiplayer-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "godot-shader-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "roblox-avatar-creator",
+      "status": "indexed"
+    },
+    {
+      "name": "roblox-experience-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "roblox-systems-scripter",
+      "status": "indexed"
+    },
+    {
+      "name": "unity-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "unity-editor-tool-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "unity-multiplayer-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "unity-shader-graph-artist",
+      "status": "indexed"
+    },
+    {
+      "name": "unreal-multiplayer-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "unreal-systems-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "unreal-technical-artist",
+      "status": "indexed"
+    },
+    {
+      "name": "unreal-world-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-3d-scene-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-bim-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-cartography-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-drone-reality-mapping",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-geoai-ml-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-geoprocessing-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-qa-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-solution-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-spatial-data-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-spatial-data-scientist",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-technical-consultant",
+      "status": "indexed"
+    },
+    {
+      "name": "gis-web-gis-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "backend-architect-with-memory",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-aeo-foundations",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-agentic-search-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-ai-citation-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-app-store-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-baidu-seo-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-bilibili-content-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-book-co-author",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-carousel-growth-engine",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-china-ecommerce-operator",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-china-market-localization-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-content-creator",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-cross-border-ecommerce",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-douyin-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-email-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-global-podcast-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-growth-hacker",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-instagram-curator",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-kuaishou-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-linkedin-content-creator",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-livestream-commerce-coach",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-multi-platform-publisher",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-podcast-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-pr-communications-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-private-domain-operator",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-reddit-community-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-seo-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-short-video-editing-coach",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-social-media-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-tiktok-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-twitter-engager",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-video-optimization-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-wechat-official-account",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-weibo-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-x-twitter-intelligence-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-xiaohongshu-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-zhihu-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-auditor",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-creative-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-paid-social-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-ppc-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-programmatic-buyer",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-search-query-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "paid-media-tracking-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "product-behavioral-nudge-engine",
+      "status": "indexed"
+    },
+    {
+      "name": "product-feedback-synthesizer",
+      "status": "indexed"
+    },
+    {
+      "name": "product-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "product-sprint-prioritizer",
+      "status": "indexed"
+    },
+    {
+      "name": "product-trend-researcher",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-experiment-tracker",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-jira-workflow-steward",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-meeting-notes-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-project-shepherd",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-studio-operations",
+      "status": "indexed"
+    },
+    {
+      "name": "project-management-studio-producer",
+      "status": "indexed"
+    },
+    {
+      "name": "project-manager-senior",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-account-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-coach",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-deal-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-discovery-coach",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-offer-lead-gen-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-outbound-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-pipeline-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-proposal-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "security-appsec-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "security-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "security-blockchain-security-auditor",
+      "status": "indexed"
+    },
+    {
+      "name": "security-cloud-security-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "security-compliance-auditor",
+      "status": "indexed"
+    },
+    {
+      "name": "security-incident-responder",
+      "status": "indexed"
+    },
+    {
+      "name": "security-penetration-tester",
+      "status": "indexed"
+    },
+    {
+      "name": "security-senior-secops",
+      "status": "indexed"
+    },
+    {
+      "name": "security-threat-detection-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "security-threat-intelligence-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "macos-spatial-metal-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "terminal-integration-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "visionos-spatial-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "xr-cockpit-interaction-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "xr-immersive-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "xr-interface-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "accounts-payable-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "agentic-identity-trust",
+      "status": "indexed"
+    },
+    {
+      "name": "agents-orchestrator",
+      "status": "indexed"
+    },
+    {
+      "name": "automation-governance-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "business-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "change-management-consultant",
+      "status": "indexed"
+    },
+    {
+      "name": "chief-financial-officer",
+      "status": "indexed"
+    },
+    {
+      "name": "corporate-training-designer",
+      "status": "indexed"
+    },
+    {
+      "name": "customer-service",
+      "status": "indexed"
+    },
+    {
+      "name": "customer-success-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "data-consolidation-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "data-privacy-officer",
+      "status": "indexed"
+    },
+    {
+      "name": "esg-sustainability-officer",
+      "status": "indexed"
+    },
+    {
+      "name": "government-digital-presales-consultant",
+      "status": "indexed"
+    },
+    {
+      "name": "grant-writer",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-customer-service",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-marketing-compliance",
+      "status": "indexed"
+    },
+    {
+      "name": "hospitality-guest-services",
+      "status": "indexed"
+    },
+    {
+      "name": "hr-onboarding",
+      "status": "indexed"
+    },
+    {
+      "name": "identity-graph-operator",
+      "status": "indexed"
+    },
+    {
+      "name": "language-translator",
+      "status": "indexed"
+    },
+    {
+      "name": "legal-billing-time-tracking",
+      "status": "indexed"
+    },
+    {
+      "name": "legal-client-intake",
+      "status": "indexed"
+    },
+    {
+      "name": "legal-document-review",
+      "status": "indexed"
+    },
+    {
+      "name": "loan-officer-assistant",
+      "status": "indexed"
+    },
+    {
+      "name": "lsp-index-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "ma-integration-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "medical-billing-coding-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "operations-manager",
+      "status": "indexed"
+    },
+    {
+      "name": "organizational-psychologist",
+      "status": "indexed"
+    },
+    {
+      "name": "personal-growth-mentor",
+      "status": "indexed"
+    },
+    {
+      "name": "real-estate-buyer-seller",
+      "status": "indexed"
+    },
+    {
+      "name": "recruitment-specialist",
+      "status": "indexed"
+    },
+    {
+      "name": "report-distribution-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "retail-customer-returns",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-data-extraction-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "sales-outreach",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-chief-of-staff",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-civil-engineer",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-cultural-intelligence-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-developer-advocate",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-document-generator",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-french-consulting-market",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-korean-business-navigator",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-mcp-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-model-qa",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-pricing-analyst",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-salesforce-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-strategy-duel-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "specialized-workflow-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "study-abroad-advisor",
+      "status": "indexed"
+    },
+    {
+      "name": "supply-chain-strategist",
+      "status": "indexed"
+    },
+    {
+      "name": "zk-steward",
+      "status": "indexed"
+    },
+    {
+      "name": "EXECUTIVE-BRIEF",
+      "status": "indexed"
+    },
+    {
+      "name": "nexus-strategy",
+      "status": "indexed"
+    },
+    {
+      "name": "QUICKSTART",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-activation-prompts",
+      "status": "indexed"
+    },
+    {
+      "name": "handoff-templates",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-0-discovery",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-1-strategy",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-2-foundation",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-3-build",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-4-hardening",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-5-launch",
+      "status": "indexed"
+    },
+    {
+      "name": "phase-6-operate",
+      "status": "indexed"
+    },
+    {
+      "name": "scenario-enterprise-feature",
+      "status": "indexed"
+    },
+    {
+      "name": "scenario-incident-response",
+      "status": "indexed"
+    },
+    {
+      "name": "scenario-marketing-campaign",
+      "status": "indexed"
+    },
+    {
+      "name": "scenario-startup-mvp",
+      "status": "indexed"
+    },
+    {
+      "name": "support-analytics-reporter",
+      "status": "indexed"
+    },
+    {
+      "name": "support-executive-summary-generator",
+      "status": "indexed"
+    },
+    {
+      "name": "support-finance-tracker",
+      "status": "indexed"
+    },
+    {
+      "name": "support-infrastructure-maintainer",
+      "status": "indexed"
+    },
+    {
+      "name": "support-legal-compliance-checker",
+      "status": "indexed"
+    },
+    {
+      "name": "support-support-responder",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-accessibility-auditor",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-api-tester",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-evidence-collector",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-performance-benchmarker",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-reality-checker",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-test-results-analyzer",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-tool-evaluator",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-workflow-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "accessibility",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-architecture-audit",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-eval",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-harness-construction",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-introspection-debugging",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-payment-x402",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-self-evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-sort",
+      "status": "indexed"
+    },
+    {
+      "name": "agentic-engineering",
+      "status": "indexed"
+    },
+    {
+      "name": "agentic-os",
+      "status": "indexed"
+    },
+    {
+      "name": "ai-first-engineering",
+      "status": "indexed"
+    },
+    {
+      "name": "ai-regression-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "android-clean-architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "angular-developer",
+      "status": "indexed"
+    },
+    {
+      "name": "api-connector-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "api-design",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture-decision-records",
+      "status": "indexed"
+    },
+    {
+      "name": "article-writing",
+      "status": "indexed"
+    },
+    {
+      "name": "automation-audit-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "autonomous-agent-harness",
+      "status": "indexed"
+    },
+    {
+      "name": "autonomous-loops",
+      "status": "indexed"
+    },
+    {
+      "name": "backend-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "benchmark-methodology",
+      "status": "indexed"
+    },
+    {
+      "name": "benchmark-optimization-loop",
+      "status": "indexed"
+    },
+    {
+      "name": "benchmark",
+      "status": "indexed"
+    },
+    {
+      "name": "blender-motion-state-inspection",
+      "status": "indexed"
+    },
+    {
+      "name": "blueprint",
+      "status": "indexed"
+    },
+    {
+      "name": "brand-discovery",
+      "status": "indexed"
+    },
+    {
+      "name": "brand-voice",
+      "status": "indexed"
+    },
+    {
+      "name": "browser-qa",
+      "status": "indexed"
+    },
+    {
+      "name": "bun-runtime",
+      "status": "indexed"
+    },
+    {
+      "name": "canary-watch",
+      "status": "indexed"
+    },
+    {
+      "name": "carrier-relationship-management",
+      "status": "indexed"
+    },
+    {
+      "name": "cisco-ios-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "ck",
+      "status": "indexed"
+    },
+    {
+      "name": "claude-devfleet",
+      "status": "indexed"
+    },
+    {
+      "name": "click-path-audit",
+      "status": "indexed"
+    },
+    {
+      "name": "clickhouse-io",
+      "status": "indexed"
+    },
+    {
+      "name": "code-tour",
+      "status": "indexed"
+    },
+    {
+      "name": "codebase-onboarding",
+      "status": "indexed"
+    },
+    {
+      "name": "codehealth-mcp",
+      "status": "indexed"
+    },
+    {
+      "name": "coding-standards",
+      "status": "indexed"
+    },
+    {
+      "name": "competitive-platform-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "competitive-report-structure",
+      "status": "indexed"
+    },
+    {
+      "name": "compose-multiplatform-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "config-gc",
+      "status": "indexed"
+    },
+    {
+      "name": "configure-ecc",
+      "status": "indexed"
+    },
+    {
+      "name": "connections-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "content-engine",
+      "status": "indexed"
+    },
+    {
+      "name": "content-hash-cache-pattern",
+      "status": "indexed"
+    },
+    {
+      "name": "context-budget",
+      "status": "indexed"
+    },
+    {
+      "name": "continuous-agent-loop",
+      "status": "indexed"
+    },
+    {
+      "name": "continuous-learning-v2",
+      "status": "indexed"
+    },
+    {
+      "name": "continuous-learning",
+      "status": "indexed"
+    },
+    {
+      "name": "cost-aware-llm-pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "cost-tracking",
+      "status": "indexed"
+    },
+    {
+      "name": "council",
+      "status": "indexed"
+    },
+    {
+      "name": "cpp-coding-standards",
+      "status": "indexed"
+    },
+    {
+      "name": "cpp-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "crosspost",
+      "status": "indexed"
+    },
+    {
+      "name": "csharp-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "customer-billing-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "customs-trade-compliance",
+      "status": "indexed"
+    },
+    {
+      "name": "dart-flutter-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "dashboard-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "data-scraper-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "data-throughput-accelerator",
+      "status": "indexed"
+    },
+    {
+      "name": "database-migrations",
+      "status": "indexed"
+    },
+    {
+      "name": "deep-research",
+      "status": "indexed"
+    },
+    {
+      "name": "defi-amm-security",
+      "status": "indexed"
+    },
+    {
+      "name": "delivery-gate",
+      "status": "indexed"
+    },
+    {
+      "name": "deployment-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "design-system",
+      "status": "indexed"
+    },
+    {
+      "name": "django-celery",
+      "status": "indexed"
+    },
+    {
+      "name": "django-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "django-security",
+      "status": "indexed"
+    },
+    {
+      "name": "django-tdd",
+      "status": "indexed"
+    },
+    {
+      "name": "django-verification",
+      "status": "indexed"
+    },
+    {
+      "name": "dmux-workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "docker-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "documentation-lookup",
+      "status": "indexed"
+    },
+    {
+      "name": "dotnet-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "dynamic-workflow-mode",
+      "status": "indexed"
+    },
+    {
+      "name": "e2e-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "ecc-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "ecc-recipes",
+      "status": "indexed"
+    },
+    {
+      "name": "ecc-tools-cost-audit",
+      "status": "indexed"
+    },
+    {
+      "name": "email-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "energy-procurement",
+      "status": "indexed"
+    },
+    {
+      "name": "enterprise-agent-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "error-handling",
+      "status": "indexed"
+    },
+    {
+      "name": "eval-harness",
+      "status": "indexed"
+    },
+    {
+      "name": "evm-token-decimals",
+      "status": "indexed"
+    },
+    {
+      "name": "exa-search",
+      "status": "indexed"
+    },
+    {
+      "name": "fal-ai-media",
+      "status": "indexed"
+    },
+    {
+      "name": "fastapi-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "finance-billing-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "flox-environments",
+      "status": "indexed"
+    },
+    {
+      "name": "flutter-dart-code-review",
+      "status": "indexed"
+    },
+    {
+      "name": "foundation-models-on-device",
+      "status": "indexed"
+    },
+    {
+      "name": "frontend-a11y",
+      "status": "indexed"
+    },
+    {
+      "name": "frontend-design-direction",
+      "status": "indexed"
+    },
+    {
+      "name": "frontend-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "frontend-slides",
+      "status": "indexed"
+    },
+    {
+      "name": "fsharp-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "gan-style-harness",
+      "status": "indexed"
+    },
+    {
+      "name": "gateguard",
+      "status": "indexed"
+    },
+    {
+      "name": "generating-python-installer",
+      "status": "indexed"
+    },
+    {
+      "name": "git-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "github-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "golang-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "golang-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "google-workspace-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "growth-log",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-cdss-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-emr-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-eval-harness",
+      "status": "indexed"
+    },
+    {
+      "name": "healthcare-phi-compliance",
+      "status": "indexed"
+    },
+    {
+      "name": "hermes-imports",
+      "status": "indexed"
+    },
+    {
+      "name": "hexagonal-architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "hipaa-compliance",
+      "status": "indexed"
+    },
+    {
+      "name": "homelab-network-readiness",
+      "status": "indexed"
+    },
+    {
+      "name": "homelab-network-setup",
+      "status": "indexed"
+    },
+    {
+      "name": "homelab-pihole-dns",
+      "status": "indexed"
+    },
+    {
+      "name": "homelab-vlan-segmentation",
+      "status": "indexed"
+    },
+    {
+      "name": "homelab-wireguard-vpn",
+      "status": "indexed"
+    },
+    {
+      "name": "hookify-rules",
+      "status": "indexed"
+    },
+    {
+      "name": "inherit-legacy-style",
+      "status": "indexed"
+    },
+    {
+      "name": "intent-driven-development",
+      "status": "indexed"
+    },
+    {
+      "name": "inventory-demand-planning",
+      "status": "indexed"
+    },
+    {
+      "name": "investor-materials",
+      "status": "indexed"
+    },
+    {
+      "name": "investor-outreach",
+      "status": "indexed"
+    },
+    {
+      "name": "ios-icon-gen",
+      "status": "indexed"
+    },
+    {
+      "name": "iterative-retrieval",
+      "status": "indexed"
+    },
+    {
+      "name": "ito-basket-compare",
+      "status": "indexed"
+    },
+    {
+      "name": "ito-data-atlas-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "ito-market-intelligence",
+      "status": "indexed"
+    },
+    {
+      "name": "ito-trade-planner",
+      "status": "indexed"
+    },
+    {
+      "name": "java-coding-standards",
+      "status": "indexed"
+    },
+    {
+      "name": "jira-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "jpa-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "knowledge-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "kotlin-coroutines-flows",
+      "status": "indexed"
+    },
+    {
+      "name": "kotlin-exposed-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "kotlin-ktor-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "kotlin-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "kotlin-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "kubernetes-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "laravel-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "laravel-plugin-discovery",
+      "status": "indexed"
+    },
+    {
+      "name": "laravel-security",
+      "status": "indexed"
+    },
+    {
+      "name": "laravel-tdd",
+      "status": "indexed"
+    },
+    {
+      "name": "laravel-verification",
+      "status": "indexed"
+    },
+    {
+      "name": "latency-critical-systems",
+      "status": "indexed"
+    },
+    {
+      "name": "lead-intelligence",
+      "status": "indexed"
+    },
+    {
+      "name": "liquid-glass-design",
+      "status": "indexed"
+    },
+    {
+      "name": "llm-trading-agent-security",
+      "status": "indexed"
+    },
+    {
+      "name": "logistics-exception-management",
+      "status": "indexed"
+    },
+    {
+      "name": "loop-design-check",
+      "status": "indexed"
+    },
+    {
+      "name": "mailtrap-email-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "make-interfaces-feel-better",
+      "status": "indexed"
+    },
+    {
+      "name": "manim-video",
+      "status": "indexed"
+    },
+    {
+      "name": "market-research",
+      "status": "indexed"
+    },
+    {
+      "name": "marketing-campaign",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-server-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "messages-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "ml-adoption-playbook",
+      "status": "indexed"
+    },
+    {
+      "name": "mle-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "motion-advanced",
+      "status": "indexed"
+    },
+    {
+      "name": "motion-foundations",
+      "status": "indexed"
+    },
+    {
+      "name": "motion-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "motion-ui",
+      "status": "indexed"
+    },
+    {
+      "name": "mysql-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "nanoclaw-repl",
+      "status": "indexed"
+    },
+    {
+      "name": "nestjs-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "netmiko-ssh-automation",
+      "status": "indexed"
+    },
+    {
+      "name": "network-bgp-diagnostics",
+      "status": "indexed"
+    },
+    {
+      "name": "network-config-validation",
+      "status": "indexed"
+    },
+    {
+      "name": "network-interface-health",
+      "status": "indexed"
+    },
+    {
+      "name": "nextjs-turbopack",
+      "status": "indexed"
+    },
+    {
+      "name": "nodejs-keccak256",
+      "status": "indexed"
+    },
+    {
+      "name": "nutrient-document-processing",
+      "status": "indexed"
+    },
+    {
+      "name": "nuxt4-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "openclaw-persona-forge",
+      "status": "indexed"
+    },
+    {
+      "name": "opensource-pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-add-feature",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-build-mvp",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-change-feature",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-fix-defect",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "orch-refine-code",
+      "status": "indexed"
+    },
+    {
+      "name": "parallel-execution-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "perl-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "perl-security",
+      "status": "indexed"
+    },
+    {
+      "name": "perl-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "plan-orchestrate",
+      "status": "indexed"
+    },
+    {
+      "name": "plankton-code-quality",
+      "status": "indexed"
+    },
+    {
+      "name": "postgres-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "prediction-market-oracle-research",
+      "status": "indexed"
+    },
+    {
+      "name": "prediction-market-risk-review",
+      "status": "indexed"
+    },
+    {
+      "name": "prisma-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "product-capability",
+      "status": "indexed"
+    },
+    {
+      "name": "product-lens",
+      "status": "indexed"
+    },
+    {
+      "name": "production-audit",
+      "status": "indexed"
+    },
+    {
+      "name": "production-scheduling",
+      "status": "indexed"
+    },
+    {
+      "name": "project-flow-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-optimizer",
+      "status": "indexed"
+    },
+    {
+      "name": "python-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "python-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "pytorch-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "quality-nonconformance",
+      "status": "indexed"
+    },
+    {
+      "name": "quarkus-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "quarkus-security",
+      "status": "indexed"
+    },
+    {
+      "name": "quarkus-tdd",
+      "status": "indexed"
+    },
+    {
+      "name": "quarkus-verification",
+      "status": "indexed"
+    },
+    {
+      "name": "ralphinho-rfc-pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "react-native-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "react-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "react-performance",
+      "status": "indexed"
+    },
+    {
+      "name": "react-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "recsys-pipeline-architect",
+      "status": "indexed"
+    },
+    {
+      "name": "recursive-decision-ledger",
+      "status": "indexed"
+    },
+    {
+      "name": "redis-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "regex-vs-llm-structured-text",
+      "status": "indexed"
+    },
+    {
+      "name": "remotion-video-creation",
+      "status": "indexed"
+    },
+    {
+      "name": "repo-scan",
+      "status": "indexed"
+    },
+    {
+      "name": "research-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "returns-reverse-logistics",
+      "status": "indexed"
+    },
+    {
+      "name": "rules-distill",
+      "status": "indexed"
+    },
+    {
+      "name": "rust-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "rust-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "safety-guard",
+      "status": "indexed"
+    },
+    {
+      "name": "santa-method",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific-db-pubmed-database",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific-db-uspto-database",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific-pkg-gget",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific-thinking-literature-review",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific-thinking-scholar-evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "search-first",
+      "status": "indexed"
+    },
+    {
+      "name": "security-bounty-hunter",
+      "status": "indexed"
+    },
+    {
+      "name": "security-review",
+      "status": "indexed"
+    },
+    {
+      "name": "security-scan",
+      "status": "indexed"
+    },
+    {
+      "name": "seo",
+      "status": "indexed"
+    },
+    {
+      "name": "skill-comply",
+      "status": "indexed"
+    },
+    {
+      "name": "skill-scout",
+      "status": "indexed"
+    },
+    {
+      "name": "skill-stocktake",
+      "status": "indexed"
+    },
+    {
+      "name": "social-graph-ranker",
+      "status": "indexed"
+    },
+    {
+      "name": "social-publisher",
+      "status": "indexed"
+    },
+    {
+      "name": "springboot-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "springboot-security",
+      "status": "indexed"
+    },
+    {
+      "name": "springboot-tdd",
+      "status": "indexed"
+    },
+    {
+      "name": "springboot-verification",
+      "status": "indexed"
+    },
+    {
+      "name": "strategic-compact",
+      "status": "indexed"
+    },
+    {
+      "name": "swift-actor-persistence",
+      "status": "indexed"
+    },
+    {
+      "name": "swift-concurrency-6-2",
+      "status": "indexed"
+    },
+    {
+      "name": "swift-protocol-di-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "swiftui-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "taste",
+      "status": "indexed"
+    },
+    {
+      "name": "tdd-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "team-agent-orchestration",
+      "status": "indexed"
+    },
+    {
+      "name": "team-builder",
+      "status": "indexed"
+    },
+    {
+      "name": "terminal-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "tinystruct-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "token-budget-advisor",
+      "status": "indexed"
+    },
+    {
+      "name": "ui-demo",
+      "status": "indexed"
+    },
+    {
+      "name": "ui-to-vue",
+      "status": "indexed"
+    },
+    {
+      "name": "uncloud",
+      "status": "indexed"
+    },
+    {
+      "name": "unified-notifications-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "verification-loop",
+      "status": "indexed"
+    },
+    {
+      "name": "video-editing",
+      "status": "indexed"
+    },
+    {
+      "name": "videodb",
+      "status": "indexed"
+    },
+    {
+      "name": "visa-doc-translate",
+      "status": "indexed"
+    },
+    {
+      "name": "vite-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "vue-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "windows-desktop-e2e",
+      "status": "indexed"
+    },
+    {
+      "name": "workspace-surface-audit",
+      "status": "indexed"
+    },
+    {
+      "name": "x-api",
+      "status": "indexed"
+    },
+    {
+      "name": "ANTHROPIC_ATTRIBUTION",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "troubleshooting",
+      "status": "indexed"
+    },
+    {
+      "name": "flows",
+      "status": "indexed"
+    },
+    {
+      "name": "tools",
+      "status": "indexed"
+    },
+    {
+      "name": "agents",
+      "status": "indexed"
+    },
+    {
+      "name": "integration",
+      "status": "indexed"
+    },
+    {
+      "name": "rag",
+      "status": "indexed"
+    },
+    {
+      "name": "data_connectors",
+      "status": "indexed"
+    },
+    {
+      "name": "query_engines",
+      "status": "indexed"
+    },
+    {
+      "name": "deduplication",
+      "status": "indexed"
+    },
+    {
+      "name": "filtering",
+      "status": "indexed"
+    },
+    {
+      "name": "transformations",
+      "status": "indexed"
+    },
+    {
+      "name": "dashboards",
+      "status": "indexed"
+    },
+    {
+      "name": "logs-commands",
+      "status": "indexed"
+    },
+    {
+      "name": "metrics",
+      "status": "indexed"
+    },
+    {
+      "name": "query-syntax",
+      "status": "indexed"
+    },
+    {
+      "name": "workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "research-brief-template",
+      "status": "indexed"
+    },
+    {
+      "name": "custom-plugins",
+      "status": "indexed"
+    },
+    {
+      "name": "megatron-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "performance",
+      "status": "indexed"
+    },
+    {
+      "name": "08",
+      "status": "indexed"
+    },
+    {
+      "name": "09",
+      "status": "indexed"
+    },
+    {
+      "name": "2020",
+      "status": "indexed"
+    },
+    {
+      "name": "2023",
+      "status": "indexed"
+    },
+    {
+      "name": "assets",
+      "status": "indexed"
+    },
+    {
+      "name": "index",
+      "status": "indexed"
+    },
+    {
+      "name": "mii",
+      "status": "indexed"
+    },
+    {
+      "name": "other",
+      "status": "indexed"
+    },
+    {
+      "name": "tutorials",
+      "status": "indexed"
+    },
+    {
+      "name": "benchmarks",
+      "status": "indexed"
+    },
+    {
+      "name": "parallelism-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "production-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "training-recipes",
+      "status": "indexed"
+    },
+    {
+      "name": "callbacks",
+      "status": "indexed"
+    },
+    {
+      "name": "distributed",
+      "status": "indexed"
+    },
+    {
+      "name": "hyperparameter-tuning",
+      "status": "indexed"
+    },
+    {
+      "name": "multi-node",
+      "status": "indexed"
+    },
+    {
+      "name": "minillm",
+      "status": "indexed"
+    },
+    {
+      "name": "extension_methods",
+      "status": "indexed"
+    },
+    {
+      "name": "fine_tuning",
+      "status": "indexed"
+    },
+    {
+      "name": "rope",
+      "status": "indexed"
+    },
+    {
+      "name": "evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "examples",
+      "status": "indexed"
+    },
+    {
+      "name": "methods",
+      "status": "indexed"
+    },
+    {
+      "name": "wanda",
+      "status": "indexed"
+    },
+    {
+      "name": "architectures",
+      "status": "indexed"
+    },
+    {
+      "name": "inference",
+      "status": "indexed"
+    },
+    {
+      "name": "training",
+      "status": "indexed"
+    },
+    {
+      "name": "lookahead",
+      "status": "indexed"
+    },
+    {
+      "name": "medusa",
+      "status": "indexed"
+    },
+    {
+      "name": "custom-tasks",
+      "status": "indexed"
+    },
+    {
+      "name": "issues",
+      "status": "indexed"
+    },
+    {
+      "name": "api-evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "benchmark-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "distributed-eval",
+      "status": "indexed"
+    },
+    {
+      "name": "adapter-system",
+      "status": "indexed"
+    },
+    {
+      "name": "configuration",
+      "status": "indexed"
+    },
+    {
+      "name": "custom-benchmarks",
+      "status": "indexed"
+    },
+    {
+      "name": "execution-backends",
+      "status": "indexed"
+    },
+    {
+      "name": "api",
+      "status": "indexed"
+    },
+    {
+      "name": "dataset-formats",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced",
+      "status": "indexed"
+    },
+    {
+      "name": "getting_started",
+      "status": "indexed"
+    },
+    {
+      "name": "_images",
+      "status": "indexed"
+    },
+    {
+      "name": "llms-full",
+      "status": "indexed"
+    },
+    {
+      "name": "llms-txt",
+      "status": "indexed"
+    },
+    {
+      "name": "llms",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced_features",
+      "status": "indexed"
+    },
+    {
+      "name": "bounding_box",
+      "status": "indexed"
+    },
+    {
+      "name": "embeddings",
+      "status": "indexed"
+    },
+    {
+      "name": "live_api",
+      "status": "indexed"
+    },
+    {
+      "name": "media_generation",
+      "status": "indexed"
+    },
+    {
+      "name": "model_tuning",
+      "status": "indexed"
+    },
+    {
+      "name": "safety",
+      "status": "indexed"
+    },
+    {
+      "name": "structured_and_tools",
+      "status": "indexed"
+    },
+    {
+      "name": "text_and_multimodal",
+      "status": "indexed"
+    },
+    {
+      "name": "external-review",
+      "status": "indexed"
+    },
+    {
+      "name": "interview-protocol",
+      "status": "indexed"
+    },
+    {
+      "name": "research-protocol",
+      "status": "indexed"
+    },
+    {
+      "name": "section-index",
+      "status": "indexed"
+    },
+    {
+      "name": "section-splitting",
+      "status": "indexed"
+    },
+    {
+      "name": "optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "quantization",
+      "status": "indexed"
+    },
+    {
+      "name": "server",
+      "status": "indexed"
+    },
+    {
+      "name": "deployment",
+      "status": "indexed"
+    },
+    {
+      "name": "radix-attention",
+      "status": "indexed"
+    },
+    {
+      "name": "structured-generation",
+      "status": "indexed"
+    },
+    {
+      "name": "multi-gpu",
+      "status": "indexed"
+    },
+    {
+      "name": "serving",
+      "status": "indexed"
+    },
+    {
+      "name": "server-deployment",
+      "status": "indexed"
+    },
+    {
+      "name": "commands",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp",
+      "status": "indexed"
+    },
+    {
+      "name": "ACKNOWLEDGEMENTS",
+      "status": "indexed"
+    },
+    {
+      "name": "CHANGELOG",
+      "status": "indexed"
+    },
+    {
+      "name": "CLAUDE",
+      "status": "indexed"
+    },
+    {
+      "name": "CONTEXT-EXPORT",
+      "status": "indexed"
+    },
+    {
+      "name": "INSTALLATION",
+      "status": "indexed"
+    },
+    {
+      "name": "CONSTITUTION",
+      "status": "indexed"
+    },
+    {
+      "name": "SUMMARY",
+      "status": "indexed"
+    },
+    {
+      "name": "voice-over-script",
+      "status": "indexed"
+    },
+    {
+      "name": "COMPETITIVE-ANALYSIS",
+      "status": "indexed"
+    },
+    {
+      "name": "api-only",
+      "status": "indexed"
+    },
+    {
+      "name": "full-stack-demo",
+      "status": "indexed"
+    },
+    {
+      "name": "simple-todo-app",
+      "status": "indexed"
+    },
+    {
+      "name": "static-landing-page",
+      "status": "indexed"
+    },
+    {
+      "name": "E2E_VERIFICATION_REPORT",
+      "status": "indexed"
+    },
+    {
+      "name": "PRD",
+      "status": "indexed"
+    },
+    {
+      "name": "TASK_018_COMPLETION",
+      "status": "indexed"
+    },
+    {
+      "name": "TESTING_DOCUMENTATION",
+      "status": "indexed"
+    },
+    {
+      "name": "TEST_REPORT",
+      "status": "indexed"
+    },
+    {
+      "name": "CONTINUITY",
+      "status": "indexed"
+    },
+    {
+      "name": "vibe-kanban",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-types",
+      "status": "indexed"
+    },
+    {
+      "name": "business-ops",
+      "status": "indexed"
+    },
+    {
+      "name": "core-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "lab-research-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "memory-system",
+      "status": "indexed"
+    },
+    {
+      "name": "openai-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "production-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "quality-control",
+      "status": "indexed"
+    },
+    {
+      "name": "sdlc-phases",
+      "status": "indexed"
+    },
+    {
+      "name": "task-queue",
+      "status": "indexed"
+    },
+    {
+      "name": "tool-orchestration",
+      "status": "indexed"
+    },
+    {
+      "name": "checklists",
+      "status": "indexed"
+    },
+    {
+      "name": "citation-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "reviewer-guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "sources",
+      "status": "indexed"
+    },
+    {
+      "name": "writing-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "formatting",
+      "status": "indexed"
+    },
+    {
+      "name": "model-registry",
+      "status": "indexed"
+    },
+    {
+      "name": "tracking",
+      "status": "indexed"
+    },
+    {
+      "name": "integrations",
+      "status": "indexed"
+    },
+    {
+      "name": "profiling",
+      "status": "indexed"
+    },
+    {
+      "name": "visualization",
+      "status": "indexed"
+    },
+    {
+      "name": "artifacts",
+      "status": "indexed"
+    },
+    {
+      "name": "sweeps",
+      "status": "indexed"
+    },
+    {
+      "name": "custom-models",
+      "status": "indexed"
+    },
+    {
+      "name": "distributed-training",
+      "status": "indexed"
+    },
+    {
+      "name": "supported-models",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture-details",
+      "status": "indexed"
+    },
+    {
+      "name": "training-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "data",
+      "status": "indexed"
+    },
+    {
+      "name": "rwkv7",
+      "status": "indexed"
+    },
+    {
+      "name": "state-management",
+      "status": "indexed"
+    },
+    {
+      "name": "checkpoint",
+      "status": "indexed"
+    },
+    {
+      "name": "float8",
+      "status": "indexed"
+    },
+    {
+      "name": "fsdp",
+      "status": "indexed"
+    },
+    {
+      "name": "applications",
+      "status": "indexed"
+    },
+    {
+      "name": "languages",
+      "status": "indexed"
+    },
+    {
+      "name": "memory-optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "qlora-training",
+      "status": "indexed"
+    },
+    {
+      "name": "quantization-formats",
+      "status": "indexed"
+    },
+    {
+      "name": "transformers-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "calibration",
+      "status": "indexed"
+    },
+    {
+      "name": "api-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "algorithm-comparison",
+      "status": "indexed"
+    },
+    {
+      "name": "custom-rewards",
+      "status": "indexed"
+    },
+    {
+      "name": "hybrid-engine",
+      "status": "indexed"
+    },
+    {
+      "name": "multi-node-training",
+      "status": "indexed"
+    },
+    {
+      "name": "datasets",
+      "status": "indexed"
+    },
+    {
+      "name": "hyperparameters",
+      "status": "indexed"
+    },
+    {
+      "name": "loss-functions",
+      "status": "indexed"
+    },
+    {
+      "name": "dpo-variants",
+      "status": "indexed"
+    },
+    {
+      "name": "online-rl",
+      "status": "indexed"
+    },
+    {
+      "name": "reward-modeling",
+      "status": "indexed"
+    },
+    {
+      "name": "sft-training",
+      "status": "indexed"
+    },
+    {
+      "name": "modules",
+      "status": "indexed"
+    },
+    {
+      "name": "optimizers",
+      "status": "indexed"
+    },
+    {
+      "name": "backends",
+      "status": "indexed"
+    },
+    {
+      "name": "constraints",
+      "status": "indexed"
+    },
+    {
+      "name": "providers",
+      "status": "indexed"
+    },
+    {
+      "name": "validation",
+      "status": "indexed"
+    },
+    {
+      "name": "json_generation",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-template-library",
+      "status": "indexed"
+    },
+    {
+      "name": "chain-of-thought",
+      "status": "indexed"
+    },
+    {
+      "name": "few-shot-learning",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-templates",
+      "status": "indexed"
+    },
+    {
+      "name": "system-prompts",
+      "status": "indexed"
+    },
+    {
+      "name": "bug_report_templates",
+      "status": "indexed"
+    },
+    {
+      "name": "figma_validation",
+      "status": "indexed"
+    },
+    {
+      "name": "regression_testing",
+      "status": "indexed"
+    },
+    {
+      "name": "test_case_templates",
+      "status": "indexed"
+    },
+    {
+      "name": "index_types",
+      "status": "indexed"
+    },
+    {
+      "name": "models",
+      "status": "indexed"
+    },
+    {
+      "name": "code-quality-reviewer-prompt",
+      "status": "indexed"
+    },
+    {
+      "name": "implementer-prompt",
+      "status": "indexed"
+    },
+    {
+      "name": "algorithms",
+      "status": "indexed"
+    },
+    {
+      "name": "pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "EXAMPLES",
+      "status": "indexed"
+    },
+    {
+      "name": "REFERENCE",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-coordination",
+      "status": "indexed"
+    },
+    {
+      "name": "feature-building",
+      "status": "indexed"
+    },
+    {
+      "name": "project-detection",
+      "status": "indexed"
+    },
+    {
+      "name": "scaffolding",
+      "status": "indexed"
+    },
+    {
+      "name": "tech-stack",
+      "status": "indexed"
+    },
+    {
+      "name": "TEMPLATE",
+      "status": "indexed"
+    },
+    {
+      "name": "HOW_TO_USE",
+      "status": "indexed"
+    },
+    {
+      "name": "board_governance_investor_relations",
+      "status": "indexed"
+    },
+    {
+      "name": "executive_decision_framework",
+      "status": "indexed"
+    },
+    {
+      "name": "leadership_organizational_culture",
+      "status": "indexed"
+    },
+    {
+      "name": "content_calendar_template",
+      "status": "indexed"
+    },
+    {
+      "name": "brand_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "content_frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "social_media_optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture_decision_records",
+      "status": "indexed"
+    },
+    {
+      "name": "engineering_metrics",
+      "status": "indexed"
+    },
+    {
+      "name": "technology_evaluation_framework",
+      "status": "indexed"
+    },
+    {
+      "name": "prd_templates",
+      "status": "indexed"
+    },
+    {
+      "name": "auth-flow",
+      "status": "indexed"
+    },
+    {
+      "name": "candidate-catalog",
+      "status": "indexed"
+    },
+    {
+      "name": "candidate-recipes",
+      "status": "indexed"
+    },
+    {
+      "name": "candidate-troubleshooting",
+      "status": "indexed"
+    },
+    {
+      "name": "employer-catalog",
+      "status": "indexed"
+    },
+    {
+      "name": "employer-recipes",
+      "status": "indexed"
+    },
+    {
+      "name": "employer-troubleshooting",
+      "status": "indexed"
+    },
+    {
+      "name": "c4-syntax",
+      "status": "indexed"
+    },
+    {
+      "name": "common-mistakes",
+      "status": "indexed"
+    },
+    {
+      "name": "colour-schemes",
+      "status": "indexed"
+    },
+    {
+      "name": "d3-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "scale-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "aws-icons",
+      "status": "indexed"
+    },
+    {
+      "name": "layout-guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "DELIVERY_SUMMARY",
+      "status": "indexed"
+    },
+    {
+      "name": "DIRECTORY_STRUCTURE",
+      "status": "indexed"
+    },
+    {
+      "name": "IMPLEMENTATION_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "analytics",
+      "status": "indexed"
+    },
+    {
+      "name": "brand",
+      "status": "indexed"
+    },
+    {
+      "name": "campaigns",
+      "status": "indexed"
+    },
+    {
+      "name": "content",
+      "status": "indexed"
+    },
+    {
+      "name": "email",
+      "status": "indexed"
+    },
+    {
+      "name": "social_media",
+      "status": "indexed"
+    },
+    {
+      "name": "templates",
+      "status": "indexed"
+    },
+    {
+      "name": "figma-mcp-config",
+      "status": "indexed"
+    },
+    {
+      "name": "figma-tools-and-prompts",
+      "status": "indexed"
+    },
+    {
+      "name": "cli",
+      "status": "indexed"
+    },
+    {
+      "name": "codex-network",
+      "status": "indexed"
+    },
+    {
+      "name": "image-api",
+      "status": "indexed"
+    },
+    {
+      "name": "prompting",
+      "status": "indexed"
+    },
+    {
+      "name": "sample-prompts",
+      "status": "indexed"
+    },
+    {
+      "name": "template-basic",
+      "status": "indexed"
+    },
+    {
+      "name": "template-business",
+      "status": "indexed"
+    },
+    {
+      "name": "template-colorful",
+      "status": "indexed"
+    },
+    {
+      "name": "template-dark",
+      "status": "indexed"
+    },
+    {
+      "name": "template-gradient",
+      "status": "indexed"
+    },
+    {
+      "name": "template-minimal",
+      "status": "indexed"
+    },
+    {
+      "name": "template-tech",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-features",
+      "status": "indexed"
+    },
+    {
+      "name": "best-practices",
+      "status": "indexed"
+    },
+    {
+      "name": "image-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "marp-syntax",
+      "status": "indexed"
+    },
+    {
+      "name": "official-themes",
+      "status": "indexed"
+    },
+    {
+      "name": "theme-css-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "theme-selection",
+      "status": "indexed"
+    },
+    {
+      "name": "markdown-memes-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "c4-diagrams",
+      "status": "indexed"
+    },
+    {
+      "name": "class-diagrams",
+      "status": "indexed"
+    },
+    {
+      "name": "erd-diagrams",
+      "status": "indexed"
+    },
+    {
+      "name": "flowcharts",
+      "status": "indexed"
+    },
+    {
+      "name": "sequence-diagrams",
+      "status": "indexed"
+    },
+    {
+      "name": "decision-trees",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-backend",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-color-system",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-debugging",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-design-thinking",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-navigation",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-performance",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "mobile-typography",
+      "status": "indexed"
+    },
+    {
+      "name": "platform-android",
+      "status": "indexed"
+    },
+    {
+      "name": "platform-ios",
+      "status": "indexed"
+    },
+    {
+      "name": "touch-psychology",
+      "status": "indexed"
+    },
+    {
+      "name": "3d",
+      "status": "indexed"
+    },
+    {
+      "name": "animations",
+      "status": "indexed"
+    },
+    {
+      "name": "audio",
+      "status": "indexed"
+    },
+    {
+      "name": "calculate-metadata",
+      "status": "indexed"
+    },
+    {
+      "name": "can-decode",
+      "status": "indexed"
+    },
+    {
+      "name": "charts",
+      "status": "indexed"
+    },
+    {
+      "name": "compositions",
+      "status": "indexed"
+    },
+    {
+      "name": "display-captions",
+      "status": "indexed"
+    },
+    {
+      "name": "extract-frames",
+      "status": "indexed"
+    },
+    {
+      "name": "fonts",
+      "status": "indexed"
+    },
+    {
+      "name": "get-audio-duration",
+      "status": "indexed"
+    },
+    {
+      "name": "get-video-dimensions",
+      "status": "indexed"
+    },
+    {
+      "name": "get-video-duration",
+      "status": "indexed"
+    },
+    {
+      "name": "gifs",
+      "status": "indexed"
+    },
+    {
+      "name": "images",
+      "status": "indexed"
+    },
+    {
+      "name": "import-srt-captions",
+      "status": "indexed"
+    },
+    {
+      "name": "lottie",
+      "status": "indexed"
+    },
+    {
+      "name": "measuring-dom-nodes",
+      "status": "indexed"
+    },
+    {
+      "name": "measuring-text",
+      "status": "indexed"
+    },
+    {
+      "name": "sequencing",
+      "status": "indexed"
+    },
+    {
+      "name": "tailwind",
+      "status": "indexed"
+    },
+    {
+      "name": "text-animations",
+      "status": "indexed"
+    },
+    {
+      "name": "timing",
+      "status": "indexed"
+    },
+    {
+      "name": "transcribe-captions",
+      "status": "indexed"
+    },
+    {
+      "name": "transitions",
+      "status": "indexed"
+    },
+    {
+      "name": "trimming",
+      "status": "indexed"
+    },
+    {
+      "name": "videos",
+      "status": "indexed"
+    },
+    {
+      "name": "arctic-frost",
+      "status": "indexed"
+    },
+    {
+      "name": "botanical-garden",
+      "status": "indexed"
+    },
+    {
+      "name": "desert-rose",
+      "status": "indexed"
+    },
+    {
+      "name": "forest-canopy",
+      "status": "indexed"
+    },
+    {
+      "name": "golden-hour",
+      "status": "indexed"
+    },
+    {
+      "name": "midnight-galaxy",
+      "status": "indexed"
+    },
+    {
+      "name": "modern-minimalist",
+      "status": "indexed"
+    },
+    {
+      "name": "ocean-depths",
+      "status": "indexed"
+    },
+    {
+      "name": "sunset-boulevard",
+      "status": "indexed"
+    },
+    {
+      "name": "tech-innovation",
+      "status": "indexed"
+    },
+    {
+      "name": "cli-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "client-library-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "core-concepts",
+      "status": "indexed"
+    },
+    {
+      "name": "iac-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "iam-security",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "AGENTS",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-full-text-search",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-jsonb-indexing",
+      "status": "indexed"
+    },
+    {
+      "name": "conn-idle-timeout",
+      "status": "indexed"
+    },
+    {
+      "name": "conn-limits",
+      "status": "indexed"
+    },
+    {
+      "name": "conn-pooling",
+      "status": "indexed"
+    },
+    {
+      "name": "conn-prepared-statements",
+      "status": "indexed"
+    },
+    {
+      "name": "data-batch-inserts",
+      "status": "indexed"
+    },
+    {
+      "name": "data-n-plus-one",
+      "status": "indexed"
+    },
+    {
+      "name": "data-pagination",
+      "status": "indexed"
+    },
+    {
+      "name": "data-upsert",
+      "status": "indexed"
+    },
+    {
+      "name": "lock-advisory",
+      "status": "indexed"
+    },
+    {
+      "name": "lock-deadlock-prevention",
+      "status": "indexed"
+    },
+    {
+      "name": "lock-short-transactions",
+      "status": "indexed"
+    },
+    {
+      "name": "lock-skip-locked",
+      "status": "indexed"
+    },
+    {
+      "name": "monitor-explain-analyze",
+      "status": "indexed"
+    },
+    {
+      "name": "monitor-pg-stat-statements",
+      "status": "indexed"
+    },
+    {
+      "name": "monitor-vacuum-analyze",
+      "status": "indexed"
+    },
+    {
+      "name": "query-composite-indexes",
+      "status": "indexed"
+    },
+    {
+      "name": "query-covering-indexes",
+      "status": "indexed"
+    },
+    {
+      "name": "query-index-types",
+      "status": "indexed"
+    },
+    {
+      "name": "query-missing-indexes",
+      "status": "indexed"
+    },
+    {
+      "name": "query-partial-indexes",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-data-types",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-foreign-key-indexes",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-lowercase-identifiers",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-partitioning",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-primary-keys",
+      "status": "indexed"
+    },
+    {
+      "name": "security-privileges",
+      "status": "indexed"
+    },
+    {
+      "name": "security-rls-basics",
+      "status": "indexed"
+    },
+    {
+      "name": "security-rls-performance",
+      "status": "indexed"
+    },
+    {
+      "name": "_contributing",
+      "status": "indexed"
+    },
+    {
+      "name": "_sections",
+      "status": "indexed"
+    },
+    {
+      "name": "_template",
+      "status": "indexed"
+    },
+    {
+      "name": "connection-methods",
+      "status": "indexed"
+    },
+    {
+      "name": "devtools",
+      "status": "indexed"
+    },
+    {
+      "name": "features",
+      "status": "indexed"
+    },
+    {
+      "name": "getting-started",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-auth",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-cli",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-drizzle",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-js",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-platform-api",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-python-sdk",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-serverless",
+      "status": "indexed"
+    },
+    {
+      "name": "neon-typescript-sdk",
+      "status": "indexed"
+    },
+    {
+      "name": "referencing-docs",
+      "status": "indexed"
+    },
+    {
+      "name": "what-is-neon",
+      "status": "indexed"
+    },
+    {
+      "name": "auth-methods",
+      "status": "indexed"
+    },
+    {
+      "name": "setup-nextjs",
+      "status": "indexed"
+    },
+    {
+      "name": "setup-react-spa",
+      "status": "indexed"
+    },
+    {
+      "name": "ui-components",
+      "status": "indexed"
+    },
+    {
+      "name": "data-api",
+      "status": "indexed"
+    },
+    {
+      "name": "branches",
+      "status": "indexed"
+    },
+    {
+      "name": "endpoints",
+      "status": "indexed"
+    },
+    {
+      "name": "guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "keys",
+      "status": "indexed"
+    },
+    {
+      "name": "operations",
+      "status": "indexed"
+    },
+    {
+      "name": "organizations",
+      "status": "indexed"
+    },
+    {
+      "name": "projects",
+      "status": "indexed"
+    },
+    {
+      "name": "WCAG",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-creation-prompt",
+      "status": "indexed"
+    },
+    {
+      "name": "complete-agent-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-creation-system-prompt",
+      "status": "indexed"
+    },
+    {
+      "name": "system-prompt-design",
+      "status": "indexed"
+    },
+    {
+      "name": "triggering-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "api-design-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "graphql-schema-design",
+      "status": "indexed"
+    },
+    {
+      "name": "rest-best-practices",
+      "status": "indexed"
+    },
+    {
+      "name": "implementation-playbook",
+      "status": "indexed"
+    },
+    {
+      "name": "api-style",
+      "status": "indexed"
+    },
+    {
+      "name": "auth",
+      "status": "indexed"
+    },
+    {
+      "name": "documentation",
+      "status": "indexed"
+    },
+    {
+      "name": "graphql",
+      "status": "indexed"
+    },
+    {
+      "name": "rate-limiting",
+      "status": "indexed"
+    },
+    {
+      "name": "response",
+      "status": "indexed"
+    },
+    {
+      "name": "rest",
+      "status": "indexed"
+    },
+    {
+      "name": "security-testing",
+      "status": "indexed"
+    },
+    {
+      "name": "trpc",
+      "status": "indexed"
+    },
+    {
+      "name": "versioning",
+      "status": "indexed"
+    },
+    {
+      "name": "context-discovery",
+      "status": "indexed"
+    },
+    {
+      "name": "pattern-selection",
+      "status": "indexed"
+    },
+    {
+      "name": "patterns-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "trade-off-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "behaviors",
+      "status": "indexed"
+    },
+    {
+      "name": "components",
+      "status": "indexed"
+    },
+    {
+      "name": "containers",
+      "status": "indexed"
+    },
+    {
+      "name": "icons",
+      "status": "indexed"
+    },
+    {
+      "name": "themes",
+      "status": "indexed"
+    },
+    {
+      "name": "composition",
+      "status": "indexed"
+    },
+    {
+      "name": "navigation_sections",
+      "status": "indexed"
+    },
+    {
+      "name": "viewmodels",
+      "status": "indexed"
+    },
+    {
+      "name": "wizards",
+      "status": "indexed"
+    },
+    {
+      "name": "avalonia-reactive-rules",
+      "status": "indexed"
+    },
+    {
+      "name": "core-technical-skills",
+      "status": "indexed"
+    },
+    {
+      "name": "naming-standards",
+      "status": "indexed"
+    },
+    {
+      "name": "patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "zafiro-shortcuts",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture-overview",
+      "status": "indexed"
+    },
+    {
+      "name": "async-and-errors",
+      "status": "indexed"
+    },
+    {
+      "name": "complete-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "database-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "middleware-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "routing-and-controllers",
+      "status": "indexed"
+    },
+    {
+      "name": "sentry-and-monitoring",
+      "status": "indexed"
+    },
+    {
+      "name": "services-and-repositories",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "validation-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "action-point-template",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "claude-code-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "handoff-formats",
+      "status": "indexed"
+    },
+    {
+      "name": "knowledge-base-pattern",
+      "status": "indexed"
+    },
+    {
+      "name": "landscape-research",
+      "status": "indexed"
+    },
+    {
+      "name": "research-and-citations",
+      "status": "indexed"
+    },
+    {
+      "name": "session-persistence",
+      "status": "indexed"
+    },
+    {
+      "name": "claude-api",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents",
+      "status": "indexed"
+    },
+    {
+      "name": "batches",
+      "status": "indexed"
+    },
+    {
+      "name": "files-api",
+      "status": "indexed"
+    },
+    {
+      "name": "streaming",
+      "status": "indexed"
+    },
+    {
+      "name": "tool-use",
+      "status": "indexed"
+    },
+    {
+      "name": "agent-design",
+      "status": "indexed"
+    },
+    {
+      "name": "error-codes",
+      "status": "indexed"
+    },
+    {
+      "name": "live-sources",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-api-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-client-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-core",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-environments",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-events",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-memory",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-multiagent",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-onboarding",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-outcomes",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-overview",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-tools",
+      "status": "indexed"
+    },
+    {
+      "name": "managed-agents-webhooks",
+      "status": "indexed"
+    },
+    {
+      "name": "model-migration",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-caching",
+      "status": "indexed"
+    },
+    {
+      "name": "tool-use-concepts",
+      "status": "indexed"
+    },
+    {
+      "name": "effort",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-snippets",
+      "status": "indexed"
+    },
+    {
+      "name": "gotchas",
+      "status": "indexed"
+    },
+    {
+      "name": "dynamic-routing",
+      "status": "indexed"
+    },
+    {
+      "name": "sdk-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "testing",
+      "status": "indexed"
+    },
+    {
+      "name": "api-live",
+      "status": "indexed"
+    },
+    {
+      "name": "networking",
+      "status": "indexed"
+    },
+    {
+      "name": "frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "IMPLEMENTATION_SUMMARY",
+      "status": "indexed"
+    },
+    {
+      "name": "api_operations",
+      "status": "indexed"
+    },
+    {
+      "name": "cli_operations",
+      "status": "indexed"
+    },
+    {
+      "name": "custom_functions",
+      "status": "indexed"
+    },
+    {
+      "name": "flow_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "code_review_checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "coding_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "common_antipatterns",
+      "status": "indexed"
+    },
+    {
+      "name": "plugin-commands",
+      "status": "indexed"
+    },
+    {
+      "name": "simple-commands",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "documentation-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "frontmatter-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "interactive-commands",
+      "status": "indexed"
+    },
+    {
+      "name": "marketplace-considerations",
+      "status": "indexed"
+    },
+    {
+      "name": "plugin-features-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "LCP",
+      "status": "indexed"
+    },
+    {
+      "name": "build-tooling",
+      "status": "indexed"
+    },
+    {
+      "name": "concurrency",
+      "status": "indexed"
+    },
+    {
+      "name": "memory-performance",
+      "status": "indexed"
+    },
+    {
+      "name": "modern-cpp",
+      "status": "indexed"
+    },
+    {
+      "name": "database-selection",
+      "status": "indexed"
+    },
+    {
+      "name": "indexing",
+      "status": "indexed"
+    },
+    {
+      "name": "migrations",
+      "status": "indexed"
+    },
+    {
+      "name": "orm-selection",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-design",
+      "status": "indexed"
+    },
+    {
+      "name": "schema-design-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "design-system-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "component-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "cicd",
+      "status": "indexed"
+    },
+    {
+      "name": "cloud_platforms",
+      "status": "indexed"
+    },
+    {
+      "name": "kubernetes",
+      "status": "indexed"
+    },
+    {
+      "name": "observability",
+      "status": "indexed"
+    },
+    {
+      "name": "security",
+      "status": "indexed"
+    },
+    {
+      "name": "terraform",
+      "status": "indexed"
+    },
+    {
+      "name": "ddd-deliverables",
+      "status": "indexed"
+    },
+    {
+      "name": "root-cause",
+      "status": "indexed"
+    },
+    {
+      "name": "stack-trace",
+      "status": "indexed"
+    },
+    {
+      "name": "database",
+      "status": "indexed"
+    },
+    {
+      "name": "docker",
+      "status": "indexed"
+    },
+    {
+      "name": "git",
+      "status": "indexed"
+    },
+    {
+      "name": "go",
+      "status": "indexed"
+    },
+    {
+      "name": "network",
+      "status": "indexed"
+    },
+    {
+      "name": "nodejs",
+      "status": "indexed"
+    },
+    {
+      "name": "python",
+      "status": "indexed"
+    },
+    {
+      "name": "react",
+      "status": "indexed"
+    },
+    {
+      "name": "rust",
+      "status": "indexed"
+    },
+    {
+      "name": "authorization",
+      "status": "indexed"
+    },
+    {
+      "name": "full-oauth-server",
+      "status": "indexed"
+    },
+    {
+      "name": "oauth-proxy",
+      "status": "indexed"
+    },
+    {
+      "name": "oidc-proxy",
+      "status": "indexed"
+    },
+    {
+      "name": "remote-oauth",
+      "status": "indexed"
+    },
+    {
+      "name": "token-verification",
+      "status": "indexed"
+    },
+    {
+      "name": "background-tasks",
+      "status": "indexed"
+    },
+    {
+      "name": "dependency-injection",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-context",
+      "status": "indexed"
+    },
+    {
+      "name": "user-elicitation",
+      "status": "indexed"
+    },
+    {
+      "name": "client-logging",
+      "status": "indexed"
+    },
+    {
+      "name": "lifespans",
+      "status": "indexed"
+    },
+    {
+      "name": "middleware",
+      "status": "indexed"
+    },
+    {
+      "name": "opentelemetry",
+      "status": "indexed"
+    },
+    {
+      "name": "pagination",
+      "status": "indexed"
+    },
+    {
+      "name": "progress-reporting",
+      "status": "indexed"
+    },
+    {
+      "name": "sampling",
+      "status": "indexed"
+    },
+    {
+      "name": "storage-backends",
+      "status": "indexed"
+    },
+    {
+      "name": "installation",
+      "status": "indexed"
+    },
+    {
+      "name": "quickstart",
+      "status": "indexed"
+    },
+    {
+      "name": "upgrade-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "custom",
+      "status": "indexed"
+    },
+    {
+      "name": "filesystem",
+      "status": "indexed"
+    },
+    {
+      "name": "local",
+      "status": "indexed"
+    },
+    {
+      "name": "skills",
+      "status": "indexed"
+    },
+    {
+      "name": "resources-and-templates",
+      "status": "indexed"
+    },
+    {
+      "name": "server-class",
+      "status": "indexed"
+    },
+    {
+      "name": "additional-skills",
+      "status": "indexed"
+    },
+    {
+      "name": "common-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "component-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "data-fetching",
+      "status": "indexed"
+    },
+    {
+      "name": "file-organization",
+      "status": "indexed"
+    },
+    {
+      "name": "loading-and-error-states",
+      "status": "indexed"
+    },
+    {
+      "name": "routing-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "styling-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "typescript-standards",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-templates",
+      "status": "indexed"
+    },
+    {
+      "name": "cli-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-app-onboarding",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-backup-dr",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-batch-hpc",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-cluster-creation",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-compute-classes",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-cost",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-golden-path",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-inference",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-multitenancy",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-networking",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-observability",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-reliability",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-scaling",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-security",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-storage",
+      "status": "indexed"
+    },
+    {
+      "name": "gke-upgrades",
+      "status": "indexed"
+    },
+    {
+      "name": "cloud-nat-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "connectivity-tests",
+      "status": "indexed"
+    },
+    {
+      "name": "firewall-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "metrics-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "threat-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "vpc-flow-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "google-cloud-setup",
+      "status": "indexed"
+    },
+    {
+      "name": "chart-structure",
+      "status": "indexed"
+    },
+    {
+      "name": "authentication",
+      "status": "indexed"
+    },
+    {
+      "name": "avatars",
+      "status": "indexed"
+    },
+    {
+      "name": "backgrounds",
+      "status": "indexed"
+    },
+    {
+      "name": "captions",
+      "status": "indexed"
+    },
+    {
+      "name": "dimensions",
+      "status": "indexed"
+    },
+    {
+      "name": "photo-avatars",
+      "status": "indexed"
+    },
+    {
+      "name": "quota",
+      "status": "indexed"
+    },
+    {
+      "name": "remotion-integration",
+      "status": "indexed"
+    },
+    {
+      "name": "scripts",
+      "status": "indexed"
+    },
+    {
+      "name": "streaming-avatars",
+      "status": "indexed"
+    },
+    {
+      "name": "text-overlays",
+      "status": "indexed"
+    },
+    {
+      "name": "video-agent",
+      "status": "indexed"
+    },
+    {
+      "name": "video-generation",
+      "status": "indexed"
+    },
+    {
+      "name": "video-status",
+      "status": "indexed"
+    },
+    {
+      "name": "video-translation",
+      "status": "indexed"
+    },
+    {
+      "name": "voices",
+      "status": "indexed"
+    },
+    {
+      "name": "webhooks",
+      "status": "indexed"
+    },
+    {
+      "name": "migration",
+      "status": "indexed"
+    },
+    {
+      "name": "automation",
+      "status": "indexed"
+    },
+    {
+      "name": "backup-recovery",
+      "status": "indexed"
+    },
+    {
+      "name": "incident-management",
+      "status": "indexed"
+    },
+    {
+      "name": "infrastructure",
+      "status": "indexed"
+    },
+    {
+      "name": "monitoring",
+      "status": "indexed"
+    },
+    {
+      "name": "experiment-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "notebook-structure",
+      "status": "indexed"
+    },
+    {
+      "name": "quality-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "tutorial-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp_best_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "node_mcp_server",
+      "status": "indexed"
+    },
+    {
+      "name": "python_mcp_server",
+      "status": "indexed"
+    },
+    {
+      "name": "server-types",
+      "status": "indexed"
+    },
+    {
+      "name": "tool-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "component-library",
+      "status": "indexed"
+    },
+    {
+      "name": "theme-customization",
+      "status": "indexed"
+    },
+    {
+      "name": "cli-commands",
+      "status": "indexed"
+    },
+    {
+      "name": "netlify-toml",
+      "status": "indexed"
+    },
+    {
+      "name": "assertions",
+      "status": "indexed"
+    },
+    {
+      "name": "config",
+      "status": "indexed"
+    },
+    {
+      "name": "fixtures",
+      "status": "indexed"
+    },
+    {
+      "name": "page-objects",
+      "status": "indexed"
+    },
+    {
+      "name": "marketplace-schema",
+      "status": "indexed"
+    },
+    {
+      "name": "plugin-structure",
+      "status": "indexed"
+    },
+    {
+      "name": "create-settings-command",
+      "status": "indexed"
+    },
+    {
+      "name": "example-settings",
+      "status": "indexed"
+    },
+    {
+      "name": "parsing-techniques",
+      "status": "indexed"
+    },
+    {
+      "name": "real-world-examples",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-plugin",
+      "status": "indexed"
+    },
+    {
+      "name": "minimal-plugin",
+      "status": "indexed"
+    },
+    {
+      "name": "standard-plugin",
+      "status": "indexed"
+    },
+    {
+      "name": "manifest-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-event-handler-refs",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-use-latest",
+      "status": "indexed"
+    },
+    {
+      "name": "async-api-routes",
+      "status": "indexed"
+    },
+    {
+      "name": "async-defer-await",
+      "status": "indexed"
+    },
+    {
+      "name": "async-dependencies",
+      "status": "indexed"
+    },
+    {
+      "name": "async-parallel",
+      "status": "indexed"
+    },
+    {
+      "name": "async-suspense-boundaries",
+      "status": "indexed"
+    },
+    {
+      "name": "bundle-barrel-imports",
+      "status": "indexed"
+    },
+    {
+      "name": "bundle-conditional",
+      "status": "indexed"
+    },
+    {
+      "name": "bundle-defer-third-party",
+      "status": "indexed"
+    },
+    {
+      "name": "bundle-dynamic-imports",
+      "status": "indexed"
+    },
+    {
+      "name": "bundle-preload",
+      "status": "indexed"
+    },
+    {
+      "name": "client-event-listeners",
+      "status": "indexed"
+    },
+    {
+      "name": "client-swr-dedup",
+      "status": "indexed"
+    },
+    {
+      "name": "js-batch-dom-css",
+      "status": "indexed"
+    },
+    {
+      "name": "js-cache-function-results",
+      "status": "indexed"
+    },
+    {
+      "name": "js-cache-property-access",
+      "status": "indexed"
+    },
+    {
+      "name": "js-cache-storage",
+      "status": "indexed"
+    },
+    {
+      "name": "js-combine-iterations",
+      "status": "indexed"
+    },
+    {
+      "name": "js-early-exit",
+      "status": "indexed"
+    },
+    {
+      "name": "js-hoist-regexp",
+      "status": "indexed"
+    },
+    {
+      "name": "js-index-maps",
+      "status": "indexed"
+    },
+    {
+      "name": "js-length-check-first",
+      "status": "indexed"
+    },
+    {
+      "name": "js-min-max-loop",
+      "status": "indexed"
+    },
+    {
+      "name": "js-set-map-lookups",
+      "status": "indexed"
+    },
+    {
+      "name": "js-tosorted-immutable",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-activity",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-animate-svg-wrapper",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-conditional-render",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-content-visibility",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-hoist-jsx",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-hydration-no-flicker",
+      "status": "indexed"
+    },
+    {
+      "name": "rendering-svg-precision",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-defer-reads",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-dependencies",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-derived-state",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-functional-setstate",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-lazy-state-init",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-memo",
+      "status": "indexed"
+    },
+    {
+      "name": "rerender-transitions",
+      "status": "indexed"
+    },
+    {
+      "name": "server-after-nonblocking",
+      "status": "indexed"
+    },
+    {
+      "name": "server-cache-lru",
+      "status": "indexed"
+    },
+    {
+      "name": "server-cache-react",
+      "status": "indexed"
+    },
+    {
+      "name": "server-parallel-fetching",
+      "status": "indexed"
+    },
+    {
+      "name": "server-serialization",
+      "status": "indexed"
+    },
+    {
+      "name": "generic-components",
+      "status": "indexed"
+    },
+    {
+      "name": "server-components",
+      "status": "indexed"
+    },
+    {
+      "name": "event-handlers",
+      "status": "indexed"
+    },
+    {
+      "name": "hooks",
+      "status": "indexed"
+    },
+    {
+      "name": "react-19-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "react-router",
+      "status": "indexed"
+    },
+    {
+      "name": "tanstack-router",
+      "status": "indexed"
+    },
+    {
+      "name": "alternatives",
+      "status": "indexed"
+    },
+    {
+      "name": "anti-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "blueprint-spec",
+      "status": "indexed"
+    },
+    {
+      "name": "codebase-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "configuration-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "deployment-details",
+      "status": "indexed"
+    },
+    {
+      "name": "direct-creation",
+      "status": "indexed"
+    },
+    {
+      "name": "error-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "post-deploy-checks",
+      "status": "indexed"
+    },
+    {
+      "name": "runtimes",
+      "status": "indexed"
+    },
+    {
+      "name": "service-types",
+      "status": "indexed"
+    },
+    {
+      "name": "troubleshooting-basics",
+      "status": "indexed"
+    },
+    {
+      "name": "code-reviewer",
+      "status": "indexed"
+    },
+    {
+      "name": "output-format",
+      "status": "indexed"
+    },
+    {
+      "name": "incident-response-template",
+      "status": "indexed"
+    },
+    {
+      "name": "soc2-control-example",
+      "status": "indexed"
+    },
+    {
+      "name": "application-security",
+      "status": "indexed"
+    },
+    {
+      "name": "compliance-frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "security-architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "security-operations",
+      "status": "indexed"
+    },
+    {
+      "name": "threat-modeling-risk",
+      "status": "indexed"
+    },
+    {
+      "name": "architecture_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "system_design_workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "tech_decision_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "api_design_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "backend_security_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "database_optimization_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "computer_vision_architectures",
+      "status": "indexed"
+    },
+    {
+      "name": "object_detection_optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "production_vision_systems",
+      "status": "indexed"
+    },
+    {
+      "name": "dataops_best_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "data_modeling_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "data_pipeline_architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "experiment_design_frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "feature_engineering_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "statistical_methods_advanced",
+      "status": "indexed"
+    },
+    {
+      "name": "cicd_pipeline_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "deployment_strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "infrastructure_as_code",
+      "status": "indexed"
+    },
+    {
+      "name": "frontend_best_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "nextjs_optimization_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "react_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "development_workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "tech_stack_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "llm_integration_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "mlops_production_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "rag_system_architecture",
+      "status": "indexed"
+    },
+    {
+      "name": "agentic_system_design",
+      "status": "indexed"
+    },
+    {
+      "name": "llm_evaluation_frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt_engineering_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "qa_best_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "testing_strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "test_automation_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "compliance_requirements",
+      "status": "indexed"
+    },
+    {
+      "name": "security_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "vulnerability_management_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "cryptography_implementation",
+      "status": "indexed"
+    },
+    {
+      "name": "penetration_testing_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "security_architecture_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "output-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "analyzer",
+      "status": "indexed"
+    },
+    {
+      "name": "comparator",
+      "status": "indexed"
+    },
+    {
+      "name": "grader",
+      "status": "indexed"
+    },
+    {
+      "name": "schemas",
+      "status": "indexed"
+    },
+    {
+      "name": "skill-creator-original",
+      "status": "indexed"
+    },
+    {
+      "name": "TROUBLESHOOTING",
+      "status": "indexed"
+    },
+    {
+      "name": "repo-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "research-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "smoke-prompts",
+      "status": "indexed"
+    },
+    {
+      "name": "approachable-concurrency",
+      "status": "indexed"
+    },
+    {
+      "name": "swift-6-2-concurrency",
+      "status": "indexed"
+    },
+    {
+      "name": "swiftui-concurrency-tour-wwdc",
+      "status": "indexed"
+    },
+    {
+      "name": "condition-based-waiting",
+      "status": "indexed"
+    },
+    {
+      "name": "CREATION-LOG",
+      "status": "indexed"
+    },
+    {
+      "name": "defense-in-depth",
+      "status": "indexed"
+    },
+    {
+      "name": "root-cause-tracing",
+      "status": "indexed"
+    },
+    {
+      "name": "test-academic",
+      "status": "indexed"
+    },
+    {
+      "name": "test-pressure-1",
+      "status": "indexed"
+    },
+    {
+      "name": "test-pressure-2",
+      "status": "indexed"
+    },
+    {
+      "name": "test-pressure-3",
+      "status": "indexed"
+    },
+    {
+      "name": "task-format",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "api_methods",
+      "status": "indexed"
+    },
+    {
+      "name": "api_types",
+      "status": "indexed"
+    },
+    {
+      "name": "patterns_and_examples",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-anti-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "typescript-cheatsheet",
+      "status": "indexed"
+    },
+    {
+      "name": "anthropic-best-practices",
+      "status": "indexed"
+    },
+    {
+      "name": "persuasion-principles",
+      "status": "indexed"
+    },
+    {
+      "name": "testing-skills-with-subagents",
+      "status": "indexed"
+    },
+    {
+      "name": "CLAUDE_MD_TESTING",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "zaps",
+      "status": "indexed"
+    },
+    {
+      "name": "docx-js",
+      "status": "indexed"
+    },
+    {
+      "name": "ooxml",
+      "status": "indexed"
+    },
+    {
+      "name": "forms",
+      "status": "indexed"
+    },
+    {
+      "name": "reference",
+      "status": "indexed"
+    },
+    {
+      "name": "FORMS",
+      "status": "indexed"
+    },
+    {
+      "name": "OCR",
+      "status": "indexed"
+    },
+    {
+      "name": "TABLES",
+      "status": "indexed"
+    },
+    {
+      "name": "editing",
+      "status": "indexed"
+    },
+    {
+      "name": "html2pptx",
+      "status": "indexed"
+    },
+    {
+      "name": "pptxgenjs",
+      "status": "indexed"
+    },
+    {
+      "name": "api_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "conversation-framework",
+      "status": "indexed"
+    },
+    {
+      "name": "delivery-scripts",
+      "status": "indexed"
+    },
+    {
+      "name": "emotional-regulation",
+      "status": "indexed"
+    },
+    {
+      "name": "preparation-template",
+      "status": "indexed"
+    },
+    {
+      "name": "difficult-conversation-scripts",
+      "status": "indexed"
+    },
+    {
+      "name": "expectation-alignment",
+      "status": "indexed"
+    },
+    {
+      "name": "feedback-sbi-model",
+      "status": "indexed"
+    },
+    {
+      "name": "3p-updates",
+      "status": "indexed"
+    },
+    {
+      "name": "company-newsletter",
+      "status": "indexed"
+    },
+    {
+      "name": "faq-answers",
+      "status": "indexed"
+    },
+    {
+      "name": "general-comms",
+      "status": "indexed"
+    },
+    {
+      "name": "email-templates",
+      "status": "indexed"
+    },
+    {
+      "name": "jargon-simplification",
+      "status": "indexed"
+    },
+    {
+      "name": "meeting-structures",
+      "status": "indexed"
+    },
+    {
+      "name": "remote-async-communication",
+      "status": "indexed"
+    },
+    {
+      "name": "eu-mdr-submission-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "fda-submission-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "model-expectations",
+      "status": "indexed"
+    },
+    {
+      "name": "results-opus-baseline",
+      "status": "indexed"
+    },
+    {
+      "name": "test-scenarios",
+      "status": "indexed"
+    },
+    {
+      "name": "handoff-template",
+      "status": "indexed"
+    },
+    {
+      "name": "resume-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "signs-of-ai-writing",
+      "status": "indexed"
+    },
+    {
+      "name": "01-introductory",
+      "status": "indexed"
+    },
+    {
+      "name": "02-elementary-rules-of-usage",
+      "status": "indexed"
+    },
+    {
+      "name": "03-elementary-principles-of-composition",
+      "status": "indexed"
+    },
+    {
+      "name": "04-a-few-matters-of-form",
+      "status": "indexed"
+    },
+    {
+      "name": "05-words-and-expressions-commonly-misused",
+      "status": "indexed"
+    },
+    {
+      "name": "file_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "addon-structure",
+      "status": "indexed"
+    },
+    {
+      "name": "common-error",
+      "status": "indexed"
+    },
+    {
+      "name": "state-exp",
+      "status": "indexed"
+    },
+    {
+      "name": "audio-api",
+      "status": "indexed"
+    },
+    {
+      "name": "ivr",
+      "status": "indexed"
+    },
+    {
+      "name": "narration",
+      "status": "indexed"
+    },
+    {
+      "name": "voice-directions",
+      "status": "indexed"
+    },
+    {
+      "name": "voiceover",
+      "status": "indexed"
+    },
+    {
+      "name": "section-checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "style-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "using-references",
+      "status": "indexed"
+    },
+    {
+      "name": "art-of-readme",
+      "status": "indexed"
+    },
+    {
+      "name": "make-a-readme",
+      "status": "indexed"
+    },
+    {
+      "name": "standard-readme-example-maximal",
+      "status": "indexed"
+    },
+    {
+      "name": "standard-readme-example-minimal",
+      "status": "indexed"
+    },
+    {
+      "name": "standard-readme-spec",
+      "status": "indexed"
+    },
+    {
+      "name": "internal",
+      "status": "indexed"
+    },
+    {
+      "name": "oss",
+      "status": "indexed"
+    },
+    {
+      "name": "personal",
+      "status": "indexed"
+    },
+    {
+      "name": "xdg-config",
+      "status": "indexed"
+    },
+    {
+      "name": "AUTHENTICATION",
+      "status": "indexed"
+    },
+    {
+      "name": "usage_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "keywords",
+      "status": "indexed"
+    },
+    {
+      "name": "analysis-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "bases-workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "filters",
+      "status": "indexed"
+    },
+    {
+      "name": "json-schema",
+      "status": "indexed"
+    },
+    {
+      "name": "variables",
+      "status": "indexed"
+    },
+    {
+      "name": "findings",
+      "status": "indexed"
+    },
+    {
+      "name": "progress",
+      "status": "indexed"
+    },
+    {
+      "name": "task_plan",
+      "status": "indexed"
+    },
+    {
+      "name": "adding-reference-mindsets",
+      "status": "indexed"
+    },
+    {
+      "name": "data-over-abstractions",
+      "status": "indexed"
+    },
+    {
+      "name": "design-is-taking-apart",
+      "status": "indexed"
+    },
+    {
+      "name": "expensive-to-add-later",
+      "status": "indexed"
+    },
+    {
+      "name": "simplicity-vs-easy",
+      "status": "indexed"
+    },
+    {
+      "name": "ADVANCED",
+      "status": "indexed"
+    },
+    {
+      "name": "HOOK_MECHANISMS",
+      "status": "indexed"
+    },
+    {
+      "name": "PATTERNS_LIBRARY",
+      "status": "indexed"
+    },
+    {
+      "name": "SKILL_RULES_REFERENCE",
+      "status": "indexed"
+    },
+    {
+      "name": "TRIGGER_TYPES",
+      "status": "indexed"
+    },
+    {
+      "name": "environment-config",
+      "status": "indexed"
+    },
+    {
+      "name": "monorepo",
+      "status": "indexed"
+    },
+    {
+      "name": "railpack",
+      "status": "indexed"
+    },
+    {
+      "name": "experiments",
+      "status": "indexed"
+    },
+    {
+      "name": "protein_optimization",
+      "status": "indexed"
+    },
+    {
+      "name": "anomaly_detection",
+      "status": "indexed"
+    },
+    {
+      "name": "classification",
+      "status": "indexed"
+    },
+    {
+      "name": "clustering",
+      "status": "indexed"
+    },
+    {
+      "name": "datasets_benchmarking",
+      "status": "indexed"
+    },
+    {
+      "name": "distances",
+      "status": "indexed"
+    },
+    {
+      "name": "forecasting",
+      "status": "indexed"
+    },
+    {
+      "name": "networks",
+      "status": "indexed"
+    },
+    {
+      "name": "regression",
+      "status": "indexed"
+    },
+    {
+      "name": "segmentation",
+      "status": "indexed"
+    },
+    {
+      "name": "similarity_search",
+      "status": "indexed"
+    },
+    {
+      "name": "best_practices",
+      "status": "indexed"
+    },
+    {
+      "name": "concatenation",
+      "status": "indexed"
+    },
+    {
+      "name": "data_structure",
+      "status": "indexed"
+    },
+    {
+      "name": "io_operations",
+      "status": "indexed"
+    },
+    {
+      "name": "manipulation",
+      "status": "indexed"
+    },
+    {
+      "name": "basic_inference",
+      "status": "indexed"
+    },
+    {
+      "name": "distributed_computing",
+      "status": "indexed"
+    },
+    {
+      "name": "coordinates",
+      "status": "indexed"
+    },
+    {
+      "name": "cosmology",
+      "status": "indexed"
+    },
+    {
+      "name": "fits",
+      "status": "indexed"
+    },
+    {
+      "name": "tables",
+      "status": "indexed"
+    },
+    {
+      "name": "time",
+      "status": "indexed"
+    },
+    {
+      "name": "units",
+      "status": "indexed"
+    },
+    {
+      "name": "wcs_and_other_modules",
+      "status": "indexed"
+    },
+    {
+      "name": "api_endpoints",
+      "status": "indexed"
+    },
+    {
+      "name": "sdk_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "llm_providers",
+      "status": "indexed"
+    },
+    {
+      "name": "use_cases",
+      "status": "indexed"
+    },
+    {
+      "name": "alignment",
+      "status": "indexed"
+    },
+    {
+      "name": "blast",
+      "status": "indexed"
+    },
+    {
+      "name": "databases",
+      "status": "indexed"
+    },
+    {
+      "name": "phylogenetics",
+      "status": "indexed"
+    },
+    {
+      "name": "sequence_io",
+      "status": "indexed"
+    },
+    {
+      "name": "structure",
+      "status": "indexed"
+    },
+    {
+      "name": "identifier_mapping",
+      "status": "indexed"
+    },
+    {
+      "name": "services_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "census_schema",
+      "status": "indexed"
+    },
+    {
+      "name": "common_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "building",
+      "status": "indexed"
+    },
+    {
+      "name": "hardware",
+      "status": "indexed"
+    },
+    {
+      "name": "noise",
+      "status": "indexed"
+    },
+    {
+      "name": "simulation",
+      "status": "indexed"
+    },
+    {
+      "name": "transformation",
+      "status": "indexed"
+    },
+    {
+      "name": "citation_checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "bibtex_formatting",
+      "status": "indexed"
+    },
+    {
+      "name": "citation_validation",
+      "status": "indexed"
+    },
+    {
+      "name": "google_scholar_search",
+      "status": "indexed"
+    },
+    {
+      "name": "metadata_extraction",
+      "status": "indexed"
+    },
+    {
+      "name": "pubmed_search",
+      "status": "indexed"
+    },
+    {
+      "name": "example_gbm_cohort",
+      "status": "indexed"
+    },
+    {
+      "name": "recommendation_strength_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "biomarker_classification",
+      "status": "indexed"
+    },
+    {
+      "name": "clinical_decision_algorithms",
+      "status": "indexed"
+    },
+    {
+      "name": "evidence_synthesis",
+      "status": "indexed"
+    },
+    {
+      "name": "outcome_analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "patient_cohort_analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "treatment_recommendations",
+      "status": "indexed"
+    },
+    {
+      "name": "case_report_template",
+      "status": "indexed"
+    },
+    {
+      "name": "clinical_trial_csr_template",
+      "status": "indexed"
+    },
+    {
+      "name": "clinical_trial_sae_template",
+      "status": "indexed"
+    },
+    {
+      "name": "consult_note_template",
+      "status": "indexed"
+    },
+    {
+      "name": "discharge_summary_template",
+      "status": "indexed"
+    },
+    {
+      "name": "hipaa_compliance_checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "history_physical_template",
+      "status": "indexed"
+    },
+    {
+      "name": "lab_report_template",
+      "status": "indexed"
+    },
+    {
+      "name": "pathology_report_template",
+      "status": "indexed"
+    },
+    {
+      "name": "quality_checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "radiology_report_template",
+      "status": "indexed"
+    },
+    {
+      "name": "soap_note_template",
+      "status": "indexed"
+    },
+    {
+      "name": "case_report_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "clinical_trial_reporting",
+      "status": "indexed"
+    },
+    {
+      "name": "data_presentation",
+      "status": "indexed"
+    },
+    {
+      "name": "diagnostic_reports_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "medical_terminology",
+      "status": "indexed"
+    },
+    {
+      "name": "patient_documentation",
+      "status": "indexed"
+    },
+    {
+      "name": "peer_review_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "regulatory_compliance",
+      "status": "indexed"
+    },
+    {
+      "name": "clinical_significance",
+      "status": "indexed"
+    },
+    {
+      "name": "data_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "api_quick_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "cosmic_data_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "arrays",
+      "status": "indexed"
+    },
+    {
+      "name": "bags",
+      "status": "indexed"
+    },
+    {
+      "name": "dataframes",
+      "status": "indexed"
+    },
+    {
+      "name": "futures",
+      "status": "indexed"
+    },
+    {
+      "name": "schedulers",
+      "status": "indexed"
+    },
+    {
+      "name": "node",
+      "status": "indexed"
+    },
+    {
+      "name": "observation",
+      "status": "indexed"
+    },
+    {
+      "name": "resolve",
+      "status": "indexed"
+    },
+    {
+      "name": "conformers_module",
+      "status": "indexed"
+    },
+    {
+      "name": "core_api",
+      "status": "indexed"
+    },
+    {
+      "name": "descriptors_viz",
+      "status": "indexed"
+    },
+    {
+      "name": "fragments_scaffolds",
+      "status": "indexed"
+    },
+    {
+      "name": "io_module",
+      "status": "indexed"
+    },
+    {
+      "name": "reactions_data",
+      "status": "indexed"
+    },
+    {
+      "name": "quick_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "effective_genome_sizes",
+      "status": "indexed"
+    },
+    {
+      "name": "normalization_methods",
+      "status": "indexed"
+    },
+    {
+      "name": "tools_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "llm_configuration",
+      "status": "indexed"
+    },
+    {
+      "name": "research_pipeline",
+      "status": "indexed"
+    },
+    {
+      "name": "confidence_and_limitations",
+      "status": "indexed"
+    },
+    {
+      "name": "parameters_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "workflows_examples",
+      "status": "indexed"
+    },
+    {
+      "name": "app-development",
+      "status": "indexed"
+    },
+    {
+      "name": "data-operations",
+      "status": "indexed"
+    },
+    {
+      "name": "job-execution",
+      "status": "indexed"
+    },
+    {
+      "name": "python-sdk",
+      "status": "indexed"
+    },
+    {
+      "name": "chemical-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "data-access",
+      "status": "indexed"
+    },
+    {
+      "name": "drug-queries",
+      "status": "indexed"
+    },
+    {
+      "name": "interactions",
+      "status": "indexed"
+    },
+    {
+      "name": "targets-pathways",
+      "status": "indexed"
+    },
+    {
+      "name": "esm-c-api",
+      "status": "indexed"
+    },
+    {
+      "name": "esm3-api",
+      "status": "indexed"
+    },
+    {
+      "name": "forge-api",
+      "status": "indexed"
+    },
+    {
+      "name": "report_template",
+      "status": "indexed"
+    },
+    {
+      "name": "bioinformatics_genomics_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "chemistry_molecular_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "general_scientific_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "microscopy_imaging_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "proteomics_metabolomics_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "spectroscopy_analytical_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "animal_veterinary",
+      "status": "indexed"
+    },
+    {
+      "name": "api_basics",
+      "status": "indexed"
+    },
+    {
+      "name": "devices",
+      "status": "indexed"
+    },
+    {
+      "name": "drugs",
+      "status": "indexed"
+    },
+    {
+      "name": "foods",
+      "status": "indexed"
+    },
+    {
+      "name": "output_analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "parameters",
+      "status": "indexed"
+    },
+    {
+      "name": "simulation_workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "solvers",
+      "status": "indexed"
+    },
+    {
+      "name": "common_workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "bedspace",
+      "status": "indexed"
+    },
+    {
+      "name": "consensus_peaks",
+      "status": "indexed"
+    },
+    {
+      "name": "region2vec",
+      "status": "indexed"
+    },
+    {
+      "name": "scembed",
+      "status": "indexed"
+    },
+    {
+      "name": "utilities",
+      "status": "indexed"
+    },
+    {
+      "name": "geo_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "crs-management",
+      "status": "indexed"
+    },
+    {
+      "name": "data-io",
+      "status": "indexed"
+    },
+    {
+      "name": "data-structures",
+      "status": "indexed"
+    },
+    {
+      "name": "geometric-operations",
+      "status": "indexed"
+    },
+    {
+      "name": "spatial-analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "database_info",
+      "status": "indexed"
+    },
+    {
+      "name": "module_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "coverage",
+      "status": "indexed"
+    },
+    {
+      "name": "overlap",
+      "status": "indexed"
+    },
+    {
+      "name": "python-api",
+      "status": "indexed"
+    },
+    {
+      "name": "refget",
+      "status": "indexed"
+    },
+    {
+      "name": "tokenizers",
+      "status": "indexed"
+    },
+    {
+      "name": "filters_preprocessing",
+      "status": "indexed"
+    },
+    {
+      "name": "slide_management",
+      "status": "indexed"
+    },
+    {
+      "name": "tile_extraction",
+      "status": "indexed"
+    },
+    {
+      "name": "tissue_masks",
+      "status": "indexed"
+    },
+    {
+      "name": "hmdb_data_fields",
+      "status": "indexed"
+    },
+    {
+      "name": "FORMATTING_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "experimental_design_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "hypothesis_quality_criteria",
+      "status": "indexed"
+    },
+    {
+      "name": "literature_search_strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "kegg_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "authentication_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "annotation-validation",
+      "status": "indexed"
+    },
+    {
+      "name": "data-management",
+      "status": "indexed"
+    },
+    {
+      "name": "ontologies",
+      "status": "indexed"
+    },
+    {
+      "name": "setup-deployment",
+      "status": "indexed"
+    },
+    {
+      "name": "resource-configuration",
+      "status": "indexed"
+    },
+    {
+      "name": "verified-workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow-creation",
+      "status": "indexed"
+    },
+    {
+      "name": "poster_quality_checklist",
+      "status": "indexed"
+    },
+    {
+      "name": "latex_poster_packages",
+      "status": "indexed"
+    },
+    {
+      "name": "poster_content_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "poster_design_principles",
+      "status": "indexed"
+    },
+    {
+      "name": "poster_layout_design",
+      "status": "indexed"
+    },
+    {
+      "name": "review_template",
+      "status": "indexed"
+    },
+    {
+      "name": "citation_styles",
+      "status": "indexed"
+    },
+    {
+      "name": "database_strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "data_analysis_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "report_structure_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "visual_generation_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "INSTALLATION_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "OPENROUTER_INTEGRATION",
+      "status": "indexed"
+    },
+    {
+      "name": "QUICK_REFERENCE",
+      "status": "indexed"
+    },
+    {
+      "name": "SKILL_SUMMARY",
+      "status": "indexed"
+    },
+    {
+      "name": "example_usage",
+      "status": "indexed"
+    },
+    {
+      "name": "importing_exporting",
+      "status": "indexed"
+    },
+    {
+      "name": "similarity",
+      "status": "indexed"
+    },
+    {
+      "name": "common_issues",
+      "status": "indexed"
+    },
+    {
+      "name": "plot_types",
+      "status": "indexed"
+    },
+    {
+      "name": "styling_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "api_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "rules_catalog",
+      "status": "indexed"
+    },
+    {
+      "name": "functions",
+      "status": "indexed"
+    },
+    {
+      "name": "gpu",
+      "status": "indexed"
+    },
+    {
+      "name": "resources",
+      "status": "indexed"
+    },
+    {
+      "name": "scaling",
+      "status": "indexed"
+    },
+    {
+      "name": "scheduled-jobs",
+      "status": "indexed"
+    },
+    {
+      "name": "secrets",
+      "status": "indexed"
+    },
+    {
+      "name": "volumes",
+      "status": "indexed"
+    },
+    {
+      "name": "web-endpoints",
+      "status": "indexed"
+    },
+    {
+      "name": "available_featurizers",
+      "status": "indexed"
+    },
+    {
+      "name": "generators",
+      "status": "indexed"
+    },
+    {
+      "name": "graph-basics",
+      "status": "indexed"
+    },
+    {
+      "name": "io",
+      "status": "indexed"
+    },
+    {
+      "name": "bio_module",
+      "status": "indexed"
+    },
+    {
+      "name": "complexity",
+      "status": "indexed"
+    },
+    {
+      "name": "ecg_cardiac",
+      "status": "indexed"
+    },
+    {
+      "name": "eda",
+      "status": "indexed"
+    },
+    {
+      "name": "eeg",
+      "status": "indexed"
+    },
+    {
+      "name": "emg",
+      "status": "indexed"
+    },
+    {
+      "name": "eog",
+      "status": "indexed"
+    },
+    {
+      "name": "epochs_events",
+      "status": "indexed"
+    },
+    {
+      "name": "hrv",
+      "status": "indexed"
+    },
+    {
+      "name": "ppg",
+      "status": "indexed"
+    },
+    {
+      "name": "rsp",
+      "status": "indexed"
+    },
+    {
+      "name": "signal_processing",
+      "status": "indexed"
+    },
+    {
+      "name": "AI_CURATION",
+      "status": "indexed"
+    },
+    {
+      "name": "ANALYSIS",
+      "status": "indexed"
+    },
+    {
+      "name": "AUTOMATED_CURATION",
+      "status": "indexed"
+    },
+    {
+      "name": "MOTION_CORRECTION",
+      "status": "indexed"
+    },
+    {
+      "name": "PREPROCESSING",
+      "status": "indexed"
+    },
+    {
+      "name": "QUALITY_METRICS",
+      "status": "indexed"
+    },
+    {
+      "name": "SPIKE_SORTING",
+      "status": "indexed"
+    },
+    {
+      "name": "plotting_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "standard_workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "connection",
+      "status": "indexed"
+    },
+    {
+      "name": "data_access",
+      "status": "indexed"
+    },
+    {
+      "name": "image_processing",
+      "status": "indexed"
+    },
+    {
+      "name": "metadata",
+      "status": "indexed"
+    },
+    {
+      "name": "rois",
+      "status": "indexed"
+    },
+    {
+      "name": "common_queries",
+      "status": "indexed"
+    },
+    {
+      "name": "evidence_types",
+      "status": "indexed"
+    },
+    {
+      "name": "target_annotations",
+      "status": "indexed"
+    },
+    {
+      "name": "paper2poster",
+      "status": "indexed"
+    },
+    {
+      "name": "paper2video",
+      "status": "indexed"
+    },
+    {
+      "name": "paper2web",
+      "status": "indexed"
+    },
+    {
+      "name": "usage_examples",
+      "status": "indexed"
+    },
+    {
+      "name": "data_management",
+      "status": "indexed"
+    },
+    {
+      "name": "graphs",
+      "status": "indexed"
+    },
+    {
+      "name": "image_loading",
+      "status": "indexed"
+    },
+    {
+      "name": "machine_learning",
+      "status": "indexed"
+    },
+    {
+      "name": "multiparametric",
+      "status": "indexed"
+    },
+    {
+      "name": "preprocessing",
+      "status": "indexed"
+    },
+    {
+      "name": "reporting_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "devices_backends",
+      "status": "indexed"
+    },
+    {
+      "name": "quantum_chemistry",
+      "status": "indexed"
+    },
+    {
+      "name": "quantum_circuits",
+      "status": "indexed"
+    },
+    {
+      "name": "quantum_ml",
+      "status": "indexed"
+    },
+    {
+      "name": "model_comparison",
+      "status": "indexed"
+    },
+    {
+      "name": "openrouter_setup",
+      "status": "indexed"
+    },
+    {
+      "name": "search_strategies",
+      "status": "indexed"
+    },
+    {
+      "name": "chart-types",
+      "status": "indexed"
+    },
+    {
+      "name": "export-interactivity",
+      "status": "indexed"
+    },
+    {
+      "name": "graph-objects",
+      "status": "indexed"
+    },
+    {
+      "name": "layouts-styling",
+      "status": "indexed"
+    },
+    {
+      "name": "plotly-express",
+      "status": "indexed"
+    },
+    {
+      "name": "core_concepts",
+      "status": "indexed"
+    },
+    {
+      "name": "io_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "pandas_migration",
+      "status": "indexed"
+    },
+    {
+      "name": "additional_features",
+      "status": "indexed"
+    },
+    {
+      "name": "discussions",
+      "status": "indexed"
+    },
+    {
+      "name": "file_manager",
+      "status": "indexed"
+    },
+    {
+      "name": "protocols_api",
+      "status": "indexed"
+    },
+    {
+      "name": "workspaces",
+      "status": "indexed"
+    },
+    {
+      "name": "search_syntax",
+      "status": "indexed"
+    },
+    {
+      "name": "environments",
+      "status": "indexed"
+    },
+    {
+      "name": "policies",
+      "status": "indexed"
+    },
+    {
+      "name": "vectorization",
+      "status": "indexed"
+    },
+    {
+      "name": "workflow_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "common_tags",
+      "status": "indexed"
+    },
+    {
+      "name": "transfer_syntaxes",
+      "status": "indexed"
+    },
+    {
+      "name": "medical_coding",
+      "status": "indexed"
+    },
+    {
+      "name": "tasks",
+      "status": "indexed"
+    },
+    {
+      "name": "training_evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "analytical-equipment",
+      "status": "indexed"
+    },
+    {
+      "name": "hardware-backends",
+      "status": "indexed"
+    },
+    {
+      "name": "liquid-handling",
+      "status": "indexed"
+    },
+    {
+      "name": "material-handling",
+      "status": "indexed"
+    },
+    {
+      "name": "analysis_modules",
+      "status": "indexed"
+    },
+    {
+      "name": "core_classes",
+      "status": "indexed"
+    },
+    {
+      "name": "io_formats",
+      "status": "indexed"
+    },
+    {
+      "name": "materials_project_api",
+      "status": "indexed"
+    },
+    {
+      "name": "transformations_workflows",
+      "status": "indexed"
+    },
+    {
+      "name": "distributions",
+      "status": "indexed"
+    },
+    {
+      "name": "sampling_inference",
+      "status": "indexed"
+    },
+    {
+      "name": "constraints_mcdm",
+      "status": "indexed"
+    },
+    {
+      "name": "operators",
+      "status": "indexed"
+    },
+    {
+      "name": "problems",
+      "status": "indexed"
+    },
+    {
+      "name": "data_structures",
+      "status": "indexed"
+    },
+    {
+      "name": "feature_detection",
+      "status": "indexed"
+    },
+    {
+      "name": "file_io",
+      "status": "indexed"
+    },
+    {
+      "name": "identification",
+      "status": "indexed"
+    },
+    {
+      "name": "metabolomics",
+      "status": "indexed"
+    },
+    {
+      "name": "alignment_files",
+      "status": "indexed"
+    },
+    {
+      "name": "sequence_files",
+      "status": "indexed"
+    },
+    {
+      "name": "variant_files",
+      "status": "indexed"
+    },
+    {
+      "name": "oracles",
+      "status": "indexed"
+    },
+    {
+      "name": "data_module",
+      "status": "indexed"
+    },
+    {
+      "name": "distributed_training",
+      "status": "indexed"
+    },
+    {
+      "name": "lightning_module",
+      "status": "indexed"
+    },
+    {
+      "name": "logging",
+      "status": "indexed"
+    },
+    {
+      "name": "trainer",
+      "status": "indexed"
+    },
+    {
+      "name": "circuits",
+      "status": "indexed"
+    },
+    {
+      "name": "primitives",
+      "status": "indexed"
+    },
+    {
+      "name": "setup",
+      "status": "indexed"
+    },
+    {
+      "name": "transpilation",
+      "status": "indexed"
+    },
+    {
+      "name": "analysis",
+      "status": "indexed"
+    },
+    {
+      "name": "time_evolution",
+      "status": "indexed"
+    },
+    {
+      "name": "descriptors_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "smarts_patterns",
+      "status": "indexed"
+    },
+    {
+      "name": "budget_justification_template",
+      "status": "indexed"
+    },
+    {
+      "name": "nih_specific_aims_template",
+      "status": "indexed"
+    },
+    {
+      "name": "nsf_project_summary_template",
+      "status": "indexed"
+    },
+    {
+      "name": "broader_impacts",
+      "status": "indexed"
+    },
+    {
+      "name": "darpa_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "doe_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "nih_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "nsf_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "specific_aims_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "evaluation_framework",
+      "status": "indexed"
+    },
+    {
+      "name": "brainstorming_methods",
+      "status": "indexed"
+    },
+    {
+      "name": "common_biases",
+      "status": "indexed"
+    },
+    {
+      "name": "evidence_hierarchy",
+      "status": "indexed"
+    },
+    {
+      "name": "experimental_design",
+      "status": "indexed"
+    },
+    {
+      "name": "logical_fallacies",
+      "status": "indexed"
+    },
+    {
+      "name": "scientific_method",
+      "status": "indexed"
+    },
+    {
+      "name": "statistical_pitfalls",
+      "status": "indexed"
+    },
+    {
+      "name": "powerpoint_design_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "timing_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "beamer_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "data_visualization_slides",
+      "status": "indexed"
+    },
+    {
+      "name": "presentation_structure",
+      "status": "indexed"
+    },
+    {
+      "name": "slide_design_principles",
+      "status": "indexed"
+    },
+    {
+      "name": "talk_types_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "visual_review_workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "color_palettes",
+      "status": "indexed"
+    },
+    {
+      "name": "journal_requirements",
+      "status": "indexed"
+    },
+    {
+      "name": "matplotlib_examples",
+      "status": "indexed"
+    },
+    {
+      "name": "publication_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "figures_tables",
+      "status": "indexed"
+    },
+    {
+      "name": "imrad_structure",
+      "status": "indexed"
+    },
+    {
+      "name": "reporting_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "writing_principles",
+      "status": "indexed"
+    },
+    {
+      "name": "model_evaluation",
+      "status": "indexed"
+    },
+    {
+      "name": "pipelines_and_composition",
+      "status": "indexed"
+    },
+    {
+      "name": "supervised_learning",
+      "status": "indexed"
+    },
+    {
+      "name": "unsupervised_learning",
+      "status": "indexed"
+    },
+    {
+      "name": "competing-risks",
+      "status": "indexed"
+    },
+    {
+      "name": "cox-models",
+      "status": "indexed"
+    },
+    {
+      "name": "data-handling",
+      "status": "indexed"
+    },
+    {
+      "name": "ensemble-models",
+      "status": "indexed"
+    },
+    {
+      "name": "evaluation-metrics",
+      "status": "indexed"
+    },
+    {
+      "name": "svm-models",
+      "status": "indexed"
+    },
+    {
+      "name": "differential-expression",
+      "status": "indexed"
+    },
+    {
+      "name": "models-atac-seq",
+      "status": "indexed"
+    },
+    {
+      "name": "models-multimodal",
+      "status": "indexed"
+    },
+    {
+      "name": "models-scrna-seq",
+      "status": "indexed"
+    },
+    {
+      "name": "models-spatial",
+      "status": "indexed"
+    },
+    {
+      "name": "models-specialized",
+      "status": "indexed"
+    },
+    {
+      "name": "theoretical-foundations",
+      "status": "indexed"
+    },
+    {
+      "name": "function_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "objects_interface",
+      "status": "indexed"
+    },
+    {
+      "name": "explainers",
+      "status": "indexed"
+    },
+    {
+      "name": "plots",
+      "status": "indexed"
+    },
+    {
+      "name": "theory",
+      "status": "indexed"
+    },
+    {
+      "name": "events",
+      "status": "indexed"
+    },
+    {
+      "name": "process-interaction",
+      "status": "indexed"
+    },
+    {
+      "name": "real-time",
+      "status": "indexed"
+    },
+    {
+      "name": "custom_environments",
+      "status": "indexed"
+    },
+    {
+      "name": "vectorized_envs",
+      "status": "indexed"
+    },
+    {
+      "name": "assumptions_and_diagnostics",
+      "status": "indexed"
+    },
+    {
+      "name": "bayesian_statistics",
+      "status": "indexed"
+    },
+    {
+      "name": "effect_sizes_and_power",
+      "status": "indexed"
+    },
+    {
+      "name": "test_selection_guide",
+      "status": "indexed"
+    },
+    {
+      "name": "discrete_choice",
+      "status": "indexed"
+    },
+    {
+      "name": "glm",
+      "status": "indexed"
+    },
+    {
+      "name": "linear_models",
+      "status": "indexed"
+    },
+    {
+      "name": "stats_diagnostics",
+      "status": "indexed"
+    },
+    {
+      "name": "time_series",
+      "status": "indexed"
+    },
+    {
+      "name": "string_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-topics",
+      "status": "indexed"
+    },
+    {
+      "name": "code-generation-printing",
+      "status": "indexed"
+    },
+    {
+      "name": "core-capabilities",
+      "status": "indexed"
+    },
+    {
+      "name": "matrices-linear-algebra",
+      "status": "indexed"
+    },
+    {
+      "name": "physics-mechanics",
+      "status": "indexed"
+    },
+    {
+      "name": "knowledge_graphs",
+      "status": "indexed"
+    },
+    {
+      "name": "models_architectures",
+      "status": "indexed"
+    },
+    {
+      "name": "molecular_generation",
+      "status": "indexed"
+    },
+    {
+      "name": "molecular_property_prediction",
+      "status": "indexed"
+    },
+    {
+      "name": "protein_modeling",
+      "status": "indexed"
+    },
+    {
+      "name": "retrosynthesis",
+      "status": "indexed"
+    },
+    {
+      "name": "datasets_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "layers_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "transforms_reference",
+      "status": "indexed"
+    },
+    {
+      "name": "generation",
+      "status": "indexed"
+    },
+    {
+      "name": "pipelines",
+      "status": "indexed"
+    },
+    {
+      "name": "STYLING_QUICK_REFERENCE",
+      "status": "indexed"
+    },
+    {
+      "name": "goal_setting_frameworks",
+      "status": "indexed"
+    },
+    {
+      "name": "intervention_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "specialty_specific_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "treatment_plan_standards",
+      "status": "indexed"
+    },
+    {
+      "name": "api_examples",
+      "status": "indexed"
+    },
+    {
+      "name": "api_fields",
+      "status": "indexed"
+    },
+    {
+      "name": "id_mapping_databases",
+      "status": "indexed"
+    },
+    {
+      "name": "query_syntax",
+      "status": "indexed"
+    },
+    {
+      "name": "additional_apis",
+      "status": "indexed"
+    },
+    {
+      "name": "patentsearch_api",
+      "status": "indexed"
+    },
+    {
+      "name": "peds_api",
+      "status": "indexed"
+    },
+    {
+      "name": "trademark_api",
+      "status": "indexed"
+    },
+    {
+      "name": "core_dataframes",
+      "status": "indexed"
+    },
+    {
+      "name": "data_processing",
+      "status": "indexed"
+    },
+    {
+      "name": "conferences_formatting",
+      "status": "indexed"
+    },
+    {
+      "name": "grants_requirements",
+      "status": "indexed"
+    },
+    {
+      "name": "journals_formatting",
+      "status": "indexed"
+    },
+    {
+      "name": "posters_guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-attacks",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-aws-pentesting",
+      "status": "indexed"
+    },
+    {
+      "name": "advanced-cloud-scripts",
+      "status": "indexed"
+    },
+    {
+      "name": "golang-general-backend-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-express-web-server-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-general-web-frontend-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-jquery-web-frontend-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-typescript-nextjs-web-server-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-typescript-react-web-frontend-security",
+      "status": "indexed"
+    },
+    {
+      "name": "javascript-typescript-vue-web-frontend-security",
+      "status": "indexed"
+    },
+    {
+      "name": "python-django-web-server-security",
+      "status": "indexed"
+    },
+    {
+      "name": "python-fastapi-web-server-security",
+      "status": "indexed"
+    },
+    {
+      "name": "python-flask-web-server-security",
+      "status": "indexed"
+    },
+    {
+      "name": "neo4j-import",
+      "status": "indexed"
+    },
+    {
+      "name": "prompt-template",
+      "status": "indexed"
+    },
+    {
+      "name": "security-controls-and-assets",
+      "status": "indexed"
+    },
+    {
+      "name": "ioc-database",
+      "status": "indexed"
+    },
+    {
+      "name": "API_REFERENCE",
+      "status": "indexed"
+    },
+    {
+      "name": "latex",
+      "status": "indexed"
+    },
+    {
+      "name": "mobjects",
+      "status": "indexed"
+    },
+    {
+      "name": "scenes",
+      "status": "indexed"
+    },
+    {
+      "name": "signals",
+      "status": "indexed"
+    },
+    {
+      "name": "cinematic-shots",
+      "status": "indexed"
+    },
+    {
+      "name": "social-ads",
+      "status": "indexed"
+    },
+    {
+      "name": "video-api",
+      "status": "indexed"
+    },
+    {
+      "name": "browser-api",
+      "status": "indexed"
+    },
+    {
+      "name": "serp-api",
+      "status": "indexed"
+    },
+    {
+      "name": "web-scraper-api",
+      "status": "indexed"
+    },
+    {
+      "name": "web-unlocker",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-setup",
+      "status": "indexed"
+    },
+    {
+      "name": "mcp-tools",
+      "status": "indexed"
+    },
+    {
+      "name": "apply-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "capture-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "css-extraction",
+      "status": "indexed"
+    },
+    {
+      "name": "blog-image-style-guide",
+      "status": "indexed"
+    },
+    {
+      "name": "blog-technical-requirements",
+      "status": "indexed"
+    },
+    {
+      "name": "react-performance-guidelines",
+      "status": "indexed"
+    },
+    {
+      "name": "customization",
+      "status": "indexed"
+    },
+    {
+      "name": "base-vs-radix",
+      "status": "indexed"
+    },
+    {
+      "name": "styling",
+      "status": "indexed"
+    },
+    {
+      "name": "extensions",
+      "status": "indexed"
+    },
+    {
+      "name": "argocd-setup",
+      "status": "indexed"
+    },
+    {
+      "name": "sync-policies",
+      "status": "indexed"
+    },
+    {
+      "name": "LICENSE",
+      "status": "indexed"
+    },
+    {
+      "name": "BUILTIN_FUNCTIONS",
+      "status": "indexed"
+    },
+    {
+      "name": "COMMON_PATTERNS",
+      "status": "indexed"
+    },
+    {
+      "name": "DATA_ACCESS",
+      "status": "indexed"
+    },
+    {
+      "name": "ERROR_PATTERNS",
+      "status": "indexed"
+    },
+    {
+      "name": "STANDARD_LIBRARY",
+      "status": "indexed"
+    },
+    {
+      "name": "COMMON_MISTAKES",
+      "status": "indexed"
+    },
+    {
+      "name": "SEARCH_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "VALIDATION_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "WORKFLOW_GUIDE",
+      "status": "indexed"
+    },
+    {
+      "name": "DEPENDENCIES",
+      "status": "indexed"
+    },
+    {
+      "name": "OPERATION_PATTERNS",
+      "status": "indexed"
+    },
+    {
+      "name": "ERROR_CATALOG",
+      "status": "indexed"
+    },
+    {
+      "name": "FALSE_POSITIVES",
+      "status": "indexed"
+    },
+    {
+      "name": "ai_agent_workflow",
+      "status": "indexed"
+    },
+    {
+      "name": "database_operations",
+      "status": "indexed"
+    },
+    {
+      "name": "http_api_integration",
+      "status": "indexed"
+    },
+    {
+      "name": "scheduled_tasks",
+      "status": "indexed"
+    },
+    {
+      "name": "webhook_processing",
+      "status": "indexed"
+    },
+    {
+      "name": "10_purpose-why",
+      "status": "indexed"
+    },
+    {
+      "name": "20_positioning",
+      "status": "indexed"
+    },
+    {
+      "name": "30_audience-niche",
+      "status": "indexed"
+    },
+    {
+      "name": "40_personality-archetype",
+      "status": "indexed"
+    },
+    {
+      "name": "50_voice-tone",
+      "status": "indexed"
+    },
+    {
+      "name": "60_narrative-story",
+      "status": "indexed"
+    },
+    {
+      "name": "70_founder-tension",
+      "status": "indexed"
+    },
+    {
+      "name": "90_SYNTHESIS",
+      "status": "indexed"
+    },
+    {
+      "name": "voice-profile-schema",
+      "status": "indexed"
+    },
+    {
+      "name": "STYLE_PRESETS",
+      "status": "indexed"
+    },
+    {
+      "name": "observer",
+      "status": "indexed"
+    },
+    {
+      "name": "cloud-infrastructure-security",
+      "status": "indexed"
+    },
+    {
+      "name": "capture-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "capture",
+      "status": "indexed"
+    },
+    {
+      "name": "editor",
+      "status": "indexed"
+    },
+    {
+      "name": "generative",
+      "status": "indexed"
+    },
+    {
+      "name": "rtstream-reference",
+      "status": "indexed"
+    },
+    {
+      "name": "rtstream",
+      "status": "indexed"
+    },
+    {
+      "name": "search",
+      "status": "indexed"
+    },
+    {
+      "name": "use-cases",
+      "status": "indexed"
     }
-  ]
+  ],
+  "rfcSpecs": [
+    {
+      "name": "RFC-000-Roadmap",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-001-EKC",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-002-Planner",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-003-Skill-Intelligence",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-003-Validation-Report",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-004-Engineering-Intelligence",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-004-Model-Intelligence",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-005-Execution-Engine",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-005-Runtime-Infrastructure",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-006-Learning-System",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-007-Enterprise-Platform",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-007-Production-Auditor",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-008-AI-Organization",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-008-Learning-Engine",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-009-Self-Evolution",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-010-Benchmarking-Platform",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RFC-011-Product-Brand-DNA",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-001-WDE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-002-URUE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-003-PDE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-004-APE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-005-EDE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-006-EGE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-007-EKB",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-008-QIA",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-009-EDPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-010-FPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-011-BPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-012-PE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-013-APIE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-014-SPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-015-IPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-016-ESPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-017-DPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-018-TPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-019-DOPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-020-EEPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-021-RCPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-022-CPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-023-RPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-024-CGPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-025-OPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-026-SPPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-027-DRPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-028-RRPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-029-MLPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-030-FEBC",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-031-PVE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-032-TDE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-033-DGB",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-034-SSE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-035-MRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-036-CAE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-037-ES",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-038-PEE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-039-ACGE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-040-SRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-041-PRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-042-SPE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-043-GOE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-044-DGE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-045-EME",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-046-EO",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-047-MIE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-048-PCE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-049-POE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-050-ERE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-051-SRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-052-LCE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-053-KRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-054-MRE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-055-FVE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-056-HDE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-057-PLE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-058-TOE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-059-COE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-060-EOE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-061-COE2",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-062-DSEE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-063-SBE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-064-MMCE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-065-IO",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-066-Plugin-SDK-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-067-Extension-Marketplace-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-068-Runtime-Plugin-Loader",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-069-RPC-Framework",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-070-IPC-Framework",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-071-Distributed-Execution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-072-Worker-Pool-Manager",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-073-Cluster-Manager",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-074-Node-Discovery-Cluster-Registry",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-075-Distributed-Consensus-Leader-Election",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-076-Sandboxed-Execution-Environment",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-077-Secure-Vault-Secrets-Service",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-078-Distributed-Log-Event-Aggregation-Bus",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-079-High-Performance-Routing-Message-Queue",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-080-Resource-Allocator-Hardware-Scheduler",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-081-Distributed-State-Cache-Synchronization",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-082-Cryptographic-Identity-Trust-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-083-Hot-Reload-Live-Upgrade-Subsystem",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-084-Chaos-Injection-Fault-Simulation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-085-Global-Runtime-Orchestrator",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-086-EME2",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-087-PME",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-088-BPE2",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-089-FKE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-090-SKE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-091-PRE2",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-092-SLE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-093-ALE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-094-TLE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-095-RLE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-096-ARSU",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-097-CLE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-098-LAE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-099-AFE",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-100-LSO",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-101-Identity-Authentication-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-102-Role-Based-Access-Control-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-103-Organization-Management-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-104-Workspace-Management-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-105-Multi-Tenancy-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-106-Billing-Subscription-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-107-API-Gateway-Rate-Limiter",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-108-Enterprise-Audit-Logging-Service",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-109-Tenant-Resource-Quota-Manager",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-110-SAML-SSO-Integration-Adapter",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-111-Key-Management-Data-Encryption-Service",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-112-Collaboration-Real-Time-Sync-Server",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-113-Compliance-GDPR-Governance-Auditor",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-114-Notification-Webhook-Dispatcher",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-115-Backup-Disaster-Recovery-Orchestrator",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-116-Administrative-Control-Panel-(Admin-API)",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-117-Model-Licensing-Usage-Tracker",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-118-Agent-Activity-Session-Monitor",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-119-System-Health-SLA-Dashboard",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-120-Dynamic-Feature-Flag-Policy-Decider",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-121-CEO-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-122-CTO-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-123-Chief-Architect-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-124-Product-Manager-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-125-Engineering-Manager-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-126-Staff-Backend-Engineer",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-127-Staff-Frontend-Engineer",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-128-Staff-AI-ML-Engineer",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-129-DevOps-Lead",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-130-Security-Lead",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-131-QA-Lead-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-132-Technical-Writer-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-133-UX-UI-Designer-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-134-Product-Marketing-Manager-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-135-Legal-Compliance-Officer-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-136-Scrum-Master-Agile-Coordinator-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-137-Financial-Analyst-Budget-Controller-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-138-Customer-Support-Feedback-Synthesizer-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-139-Human-Resources-Onboarding-Agent",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-140-Multi-Agent-Collaboration-Protocol",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-141-Self-Architecture-Review-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-142-Self-Decision-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-143-Self-Performance-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-144-Self-Learning-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-145-Self-Evolution-Orchestrator",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-146-Self-RFC-Generation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-147-Self-SPEC-Generation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-148-Self-Refactoring-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-149-Self-Benchmark-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-150-Self-Optimization-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-151-Self-Cost-Reduction-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-152-Self-Quality-Improvement-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-153-Self-Testing-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-154-Self-Deployment-Preparation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-155-Evolution-Planning-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-156-Autonomous-Deployment-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-157-Self-Validation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-158-Self-Governance-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-159-Self-Policy-Evolution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-160-Autonomous-Incident-Response-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-161-Autonomous-Recovery-Evolution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-162-Self-Knowledge-Expansion-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-163-Self-Skill-Creation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-164-Self-Runtime-Optimization-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-165-Self-Infrastructure-Evolution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-166-Self-Security-Evolution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-167-Autonomous-Research-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-168-Continuous-Innovation-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-169-Autonomous-Platform-Evolution-Engine",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "SPEC-170-Global-Self-Evolution-Orchestrator",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "AGENTS",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "CLAUDE",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "RULES",
+      "type": "RFC",
+      "coverage": 100
+    },
+    {
+      "name": "spec-reviewer-prompt",
+      "type": "SPEC",
+      "coverage": 100
+    },
+    {
+      "name": "spec-miner",
+      "type": "SPEC",
+      "coverage": 100
+    }
+  ],
+  "health": {
+    "architecture": 100,
+    "security": 100,
+    "testing": 100,
+    "performance": 100,
+    "documentation": 100,
+    "maintainability": 100
+  },
+  "models": [],
+  "replay": []
 }

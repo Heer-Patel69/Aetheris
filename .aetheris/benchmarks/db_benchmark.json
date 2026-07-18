@@ -1,0 +1,20 @@
+{
+  "skill": "db",
+  "tasks_run": 2,
+  "avg_score": 0.89,
+  "p50_ms": 0.02,
+  "p95_ms": 0.02,
+  "results": [
+    {
+      "task": "Generate a simple function using db",
+      "score": 0.89,
+      "latency_ms": 0.02
+    },
+    {
+      "task": "Explain the role of db",
+      "score": 0.89,
+      "latency_ms": 0.0
+    }
+  ],
+  "ran_at": 1783886237.6010447
+}

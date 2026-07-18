@@ -1,0 +1,128 @@
+{
+  "models": [
+    {
+      "provider": "google",
+      "model_id": "gemini-2.5-pro",
+      "display_name": "Gemini 2.5 Pro",
+      "capabilities": [
+        "reasoning",
+        "long_context",
+        "multimodal",
+        "code",
+        "analysis"
+      ],
+      "context_window": 2000000,
+      "cost_input_per_1m": 1.25,
+      "cost_output_per_1m": 5.0,
+      "p95_latency_ms": 4000,
+      "quality_score": 0.96,
+      "available": true,
+      "tier": "quality"
+    },
+    {
+      "provider": "google",
+      "model_id": "gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "capabilities": [
+        "speed",
+        "code",
+        "multimodal",
+        "analysis"
+      ],
+      "context_window": 1000000,
+      "cost_input_per_1m": 0.075,
+      "cost_output_per_1m": 0.3,
+      "p95_latency_ms": 1200,
+      "quality_score": 0.88,
+      "available": true,
+      "tier": "fast"
+    },
+    {
+      "provider": "google",
+      "model_id": "gemini-1.5-flash",
+      "display_name": "Gemini 1.5 Flash",
+      "capabilities": [
+        "speed",
+        "code",
+        "multimodal"
+      ],
+      "context_window": 1000000,
+      "cost_input_per_1m": 0.075,
+      "cost_output_per_1m": 0.3,
+      "p95_latency_ms": 1500,
+      "quality_score": 0.85,
+      "available": true,
+      "tier": "fast"
+    },
+    {
+      "provider": "anthropic",
+      "model_id": "claude-3-7-sonnet",
+      "display_name": "Claude 3.7 Sonnet",
+      "capabilities": [
+        "coding",
+        "reasoning",
+        "analysis",
+        "security"
+      ],
+      "context_window": 200000,
+      "cost_input_per_1m": 3.0,
+      "cost_output_per_1m": 15.0,
+      "p95_latency_ms": 3500,
+      "quality_score": 0.94,
+      "available": true,
+      "tier": "quality"
+    },
+    {
+      "provider": "anthropic",
+      "model_id": "claude-3-5-sonnet",
+      "display_name": "Claude 3.5 Sonnet",
+      "capabilities": [
+        "coding",
+        "reasoning",
+        "analysis"
+      ],
+      "context_window": 200000,
+      "cost_input_per_1m": 3.0,
+      "cost_output_per_1m": 15.0,
+      "p95_latency_ms": 3000,
+      "quality_score": 0.92,
+      "available": true,
+      "tier": "balanced"
+    },
+    {
+      "provider": "openai",
+      "model_id": "gpt-4o",
+      "display_name": "GPT-4o",
+      "capabilities": [
+        "tool_use",
+        "general",
+        "code",
+        "multimodal"
+      ],
+      "context_window": 128000,
+      "cost_input_per_1m": 5.0,
+      "cost_output_per_1m": 15.0,
+      "p95_latency_ms": 2500,
+      "quality_score": 0.91,
+      "available": true,
+      "tier": "balanced"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "codellama:13b",
+      "display_name": "CodeLlama 13B (local)",
+      "capabilities": [
+        "code",
+        "speed"
+      ],
+      "context_window": 16000,
+      "cost_input_per_1m": 0.0,
+      "cost_output_per_1m": 0.0,
+      "p95_latency_ms": 5000,
+      "quality_score": 0.72,
+      "available": false,
+      "tier": "fast"
+    }
+  ],
+  "updated_at": 1783884565.8923929
+}

@@ -7,6 +7,10 @@ def main():
     parser = argparse.ArgumentParser(description="Aetheris Engineering Operating System CLI")
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
 
+    # start command
+    parser_start = subparsers.add_parser("start", help="Initialize and start the continuous Engineering Workspace")
+    parser_start.add_argument("--dir", default=os.getcwd(), help="Target directory")
+
     # init command
     parser_init = subparsers.add_parser("init", help="Initialize a new .aetheris workspace")
     parser_init.add_argument("--dir", default=os.getcwd(), help="Target directory")
@@ -32,7 +36,10 @@ def main():
     project_dir = getattr(args, 'dir', os.getcwd())
     wm = WorkspaceManager(project_dir)
 
-    if args.command == "init":
+    if args.command == "start":
+        wm.start_workspace()
+        
+    elif args.command == "init":
         wm.initialize_workspace()
     
     elif args.command in ["cleanup", "purge"]:

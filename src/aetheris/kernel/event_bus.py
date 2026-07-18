@@ -68,6 +68,18 @@ class AetherisEventBus:
             cls._instance.project_id = "default-project"
             cls._instance.workspace_id = "default-workspace"
             cls._instance.execution_id = ""
+            
+            # Auto-register EventStore and ProjectionEngine
+            try:
+                from aetheris.infrastructure.event_store import EventStore
+                EventStore()
+            except Exception:
+                pass
+            try:
+                from aetheris.kernel.projections import ProjectionEngine
+                ProjectionEngine()
+            except Exception:
+                pass
         return cls._instance
 
     def set_context(self, session_id: str = "", project_id: str = "", workspace_id: str = "", execution_id: str = ""):
@@ -100,17 +112,29 @@ class AetherisEventBus:
 
     def publish_sync(self, event: AetherisEvent):
         import asyncio
+        coro = self.publish(event)
         try:
+            try:
+                loop = asyncio.get_running_loop()
+                if loop.is_running():
+                    loop.create_task(coro)
+                    return
+            except RuntimeError:
+                pass
+            
             loop = asyncio.get_event_loop()
             if loop.is_running():
-                loop.create_task(self.publish(event))
+                loop.create_task(coro)
             else:
-                loop.run_until_complete(self.publish(event))
+                loop.run_until_complete(coro)
         except Exception:
             try:
                 new_loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(new_loop)
-                new_loop.run_until_complete(self.publish(event))
+                new_loop.run_until_complete(coro)
                 new_loop.close()
             except Exception:
-                pass
+                try:
+                    coro.close()
+                except Exception:
+                    pass

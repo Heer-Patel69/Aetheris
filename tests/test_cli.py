@@ -123,10 +123,10 @@ class TestAetherisRuntime(unittest.TestCase):
         runtime.stop()
 
         # State file should exist
-        self.assertTrue(RUNTIME_STATE_FILE.exists())
+        self.assertTrue(runtime.state_file.exists())
 
         # Load state from file
-        with open(RUNTIME_STATE_FILE) as f:
+        with open(runtime.state_file) as f:
             data = json.load(f)
         self.assertEqual(data["runtime_status"], "stopped")
         self.assertIn("version", data)

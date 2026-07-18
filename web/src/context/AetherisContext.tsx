@@ -97,7 +97,7 @@ export function AetherisProvider({ children }: { children: ReactNode }) {
     let reconnectTimeout: number | null = null;
 
     function connect() {
-      const host = "127.0.0.1:8449";
+      const host = "127.0.0.1:8448";
       const protocol = "ws:";
       
       console.log(`[WebSocket] Connecting to ${protocol}//${host}/ws`);

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 # Add scripts directory to path to allow importing antigravity_planner
-scripts_dir = Path(__file__).resolve().parent.parent / "scripts"
+scripts_dir = Path(__file__).resolve().parent.parent.parent / "scripts"
 if str(scripts_dir) not in sys.path:
     sys.path.insert(0, str(scripts_dir))
 

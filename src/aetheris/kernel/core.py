@@ -39,7 +39,8 @@ class KernelController:
             # often fail due to permission restrictions. WMI process creation safely
             # escapes the Job Object and runs independently.
             pythonw = sys.executable.replace("python.exe", "pythonw.exe")
-            ps_cmd = f"$cmd = '{pythonw} \"{drg_script}\"'; Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList $cmd"
+            cwd_escaped = os.getcwd().replace("'", "''")
+            ps_cmd = f"$cmd = '{pythonw} \"{drg_script}\"'; Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList $cmd, '{cwd_escaped}'"
             
             proc = subprocess.Popen(
                 ["powershell", "-NoProfile", "-Command", ps_cmd],

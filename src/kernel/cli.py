@@ -79,22 +79,24 @@ class AetherisRuntime:
     
     def __init__(self):
         self.runtime_dir = get_runtime_dir()
+        self.state_file = self.runtime_dir / "runtime" / "state.json"
+        self.pid_file = self.runtime_dir / "runtime" / "aetheris.pid"
         self.state = self._load_state()
         self._process: Optional[subprocess.Popen] = None
         self._running = False
     
     def _load_state(self) -> RuntimeState:
-        if RUNTIME_STATE_FILE.exists():
+        if self.state_file.exists():
             try:
-                with open(RUNTIME_STATE_FILE, "r") as f:
+                with open(self.state_file, "r") as f:
                     return RuntimeState.from_dict(json.load(f))
             except Exception:
                 pass
         return RuntimeState()
     
     def _save_state(self):
-        RUNTIME_STATE_FILE.parent.mkdir(parents=True, exist_ok=True)
-        with open(RUNTIME_STATE_FILE, "w") as f:
+        self.state_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.state_file, "w") as f:
             json.dump(self.state.to_dict(), f, indent=2)
     
     def initialize_directories(self) -> bool:
@@ -208,8 +210,8 @@ class AetherisRuntime:
         self._save_state()
         
         # Write PID file
-        PID_FILE.parent.mkdir(parents=True, exist_ok=True)
-        with open(PID_FILE, "w") as f:
+        self.pid_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(self.pid_file, "w") as f:
             f.write(str(os.getpid()))
         
         print()
@@ -382,8 +384,8 @@ Available commands:
         self._save_state()
         
         # Remove PID file
-        if PID_FILE.exists():
-            PID_FILE.unlink()
+        if self.pid_file.exists():
+            self.pid_file.unlink()
         
         print("Aetheris runtime stopped")
         return True
@@ -398,9 +400,9 @@ Available commands:
     
     def is_running(self) -> bool:
         """Check if runtime is running"""
-        if PID_FILE.exists():
+        if self.pid_file.exists():
             try:
-                with open(PID_FILE, "r") as f:
+                with open(self.pid_file, "r") as f:
                     pid = int(f.read().strip())
                 # Check if process exists
                 if platform.system() == "Windows":
@@ -618,7 +620,19 @@ class AetherisInstaller:
 # ─── CLI Commands ────────────────────────────────────────────────────────
 
 def cmd_start(args):
-    """Start the Aetheris runtime"""
+    """Start the Aetheris runtime (Phase 4 — daemon + Mission Control + WebSocket gateway)"""
+    # ── Phase 4: start RuntimeDaemon + WebSocket gateway + Mission Control ──
+    try:
+        from kernel.cli_phase4 import phase4_start
+        workspace = os.getcwd()
+        p4_started = phase4_start(workspace)
+        if not p4_started:
+            # Already running — offered dashboard connection; nothing more to do
+            return
+    except Exception as e:
+        sys.stderr.write(f"[Phase4] Warning: could not start Phase 4 daemon: {e}\n")
+
+    # ── Legacy Phase 1-3 runtime (skills, memory, planner, brain) ──────────
     runtime = AetherisRuntime()
     if args.foreground:
         runtime.start(foreground=True)
@@ -627,15 +641,42 @@ def cmd_start(args):
 
 
 def cmd_stop(args):
-    """Stop the Aetheris runtime"""
+    """Stop the Aetheris runtime + Phase 4 daemon"""
+    # ── Phase 4: stop daemon if running ──────────────────────────────────────
+    try:
+        from runtime.runtime_daemon import RuntimeDaemon
+        daemon = RuntimeDaemon(os.getcwd())
+        if daemon.is_already_running():
+            daemon.stop()
+            print("  Phase 4 daemon stopped.")
+    except Exception as e:
+        sys.stderr.write(f"[Phase4] Warning: could not stop daemon: {e}\n")
+    # ─────────────────────────────────────────────────────────────────────────
     runtime = AetherisRuntime()
     runtime.stop()
 
 
 def cmd_status(args):
-    """Show runtime status"""
+    """Show runtime status (Phase 1-3 + Phase 4)"""
     runtime = AetherisRuntime()
     runtime.print_status()
+    # ── Phase 4: show live daemon status ─────────────────────────────────────
+    try:
+        from runtime.runtime_daemon import RuntimeDaemon
+        from pathlib import Path as _Path
+        state_file = _Path.home() / ".aetheris" / "runtime" / "daemon_state.json"
+        if state_file.exists():
+            import json as _json
+            s = _json.loads(state_file.read_text())
+            print()
+            print("  ── Phase 4 Mission Control ──────────────────────")
+            print(f"  Daemon:   {s.get('status', 'unknown').upper()}")
+            print(f"  Session:  {s.get('session_id', 'n/a')}")
+            print(f"  Gateway:  {s.get('gateway_url', 'ws://127.0.0.1:8449')}")
+            print(f"  PID:      {s.get('pid', 'n/a')}")
+            print("  ─────────────────────────────────────────────────")
+    except Exception:
+        pass
 
 
 def cmd_doctor(args):

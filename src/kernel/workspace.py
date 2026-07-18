@@ -7,9 +7,9 @@ class WorkspaceManager:
     Engineering Brain for the project.
     """
     SUBDIRS = [
-        "architecture", "assets", "cache", "context", "documentation",
-        "execution", "graphs", "integrations", "journal", "logs",
-        "memory", "planning", "registry", "reports", "runtime", "state", "verification"
+        "docs", "architecture", "planning", "runtime", "memory", 
+        "telemetry", "replay", "progress", "verification", "assets", 
+        "knowledge", "reports", "diagrams", "journal"
     ]
 
     def __init__(self, project_root: str):
@@ -25,7 +25,20 @@ class WorkspaceManager:
         for subdir in self.SUBDIRS:
             os.makedirs(os.path.join(self.aetheris_dir, subdir), exist_ok=True)
             
-        print("[Workspace] Scaffolding complete. Ready for Architecture generation.")
+        print("[Workspace] Engineering Brain initialized.")
+
+    def start_workspace(self):
+        """Initializes the workspace and starts the continuous engineering synchronization."""
+        self.initialize_workspace()
+        
+        print("[Workspace] Starting Autonomous Engineering Synchronization...")
+        
+        try:
+            from src.runtime.synchronizer import EngineeringSynchronizer
+            synchronizer = EngineeringSynchronizer(self.project_root)
+            synchronizer.start()
+        except ImportError as e:
+            print(f"[Workspace] Failed to start synchronizer: {e}")
 
     def cleanup(self):
         """Wipes temporary cache and runtime state, preserving documentation."""

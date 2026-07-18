@@ -4,6 +4,7 @@ Renders real-time progress animations and manages kernel daemon state.
 """
 import sys
 import time
+import psutil
 from pathlib import Path
 import click
 from rich.console import Console
@@ -29,7 +30,7 @@ ASCII_LOGO = r"""
     / \  | ____|_   _| | | | ____|  _ \|_ _/ ___|
    / _ \ |  _|   | | | |_| |  _| | |_) || |\___ \
   / ___ \| |___  | | |  _  | |___|  _ < | | ___) |
- /_/   \_\_____|  |_| |_| |_|_____|_| \_\___|____/
+ /_/   \_\_____| |_| |_| |_|_____|_| \_\___|____/
 """
 
 
@@ -278,11 +279,10 @@ def stop():
 
     with Status("[bold red]Dismantling context compression routing layers...", console=console):
         success = controller.terminate_daemon()
-        import psutil
         for p in psutil.process_iter(['pid', 'name']):
             try:
-                for conn in p.connections(kind='inet'):
-                    if conn.laddr.port in (8449, 5173):
+                for conn in p.net_connections(kind='inet'):
+                    if conn.laddr.port in (8448, 8449, 5173):
                         p.terminate()
             except Exception:
                 pass
@@ -301,28 +301,105 @@ def stop():
 
 
 @main.command()
-def dashboard():
+@click.option('--debug', is_flag=True, help="Diagnose dashboard and runtime data connection.")
+@click.pass_context
+def dashboard(ctx, debug):
     """Connects to the running telemetry portal or starts it."""
     print_banner()
+    
+    if debug:
+        console.print("[bold blue]Running Dashboard & Telemetry Diagnostics...[/bold blue]\n")
+        
+        # 1. Check if daemon is running
+        is_daemon_running = controller.is_running()
+        pid = controller.get_active_pid()
+        if is_daemon_running:
+            console.print(f" [bold green]✓[/bold green] Hypervisor Daemon status: [bold green]Active[/bold green] (PID: {pid})")
+        else:
+            console.print(" [bold red]✗[/bold red] Hypervisor Daemon status: [bold red]Inactive[/bold red]")
+            
+        # 2. Check port 8448
+        import socket
+        port_open = False
+        try:
+            with socket.create_connection(("127.0.0.1", 8448), timeout=1.0):
+                port_open = True
+        except Exception:
+            pass
+            
+        if port_open:
+            console.print(" [bold green]✓[/bold green] Gateway Port 8448: [bold green]Open / Listening[/bold green]")
+        else:
+            console.print(" [bold red]✗[/bold red] Gateway Port 8448: [bold red]Closed / Unreachable[/bold red]")
+            
+        # 3. Test HTTP connectivity to Gateway
+        import urllib.request
+        http_ok = False
+        http_err = None
+        try:
+            req = urllib.request.Request("http://127.0.0.1:8448/ws")
+            urllib.request.urlopen(req, timeout=1.0)
+            http_ok = True
+        except Exception as e:
+            # 426 Upgrade Required is a success for WebSocket endpoint
+            if hasattr(e, 'code') and e.code in (404, 426, 400):
+                http_ok = True
+            else:
+                http_err = str(e)
+                
+        if http_ok:
+            console.print(" [bold green]✓[/bold green] HTTP Connection to ws endpoint: [bold green]Connected[/bold green]")
+        else:
+            console.print(f" [bold red]✗[/bold red] HTTP Connection to ws endpoint: [bold red]Failed[/bold red] ({http_err})")
+            
+        # 4. Check telemetry files
+        runtime_json = Path(".aetheris/state/runtime.json")
+        exec_json = Path(".aetheris/execution_state.json")
+        events_db = Path(".aetheris/telemetry/events.db")
+        
+        if runtime_json.exists():
+            console.print(f" [bold green]✓[/bold green] Telemetry Cache [cyan]{runtime_json}[/cyan]: [bold green]Exists[/bold green] ({runtime_json.stat().st_size} bytes)")
+        else:
+            console.print(f" [bold yellow]![/bold yellow] Telemetry Cache [cyan]{runtime_json}[/cyan]: [bold yellow]Missing[/bold yellow]")
+            
+        if exec_json.exists():
+            console.print(f" [bold green]✓[/bold green] Telemetry Cache [cyan]{exec_json}[/cyan]: [bold green]Exists[/bold green] ({exec_json.stat().st_size} bytes)")
+        else:
+            console.print(f" [bold yellow]![/bold yellow] Telemetry Cache [cyan]{exec_json}[/cyan]: [bold yellow]Missing[/bold yellow]")
+            
+        # 5. Check SQLite database
+        if events_db.exists():
+            import sqlite3
+            try:
+                conn = sqlite3.connect(str(events_db))
+                cursor = conn.cursor()
+                cursor.execute("SELECT COUNT(*) FROM engineering_events")
+                count = cursor.fetchone()[0]
+                conn.close()
+                console.print(f" [bold green]✓[/bold green] Event DB [cyan]{events_db}[/cyan]: [bold green]Connected[/bold green] ({count} recorded events)")
+            except Exception as e:
+                console.print(f" [bold red]✗[/bold red] Event DB [cyan]{events_db}[/cyan]: [bold red]Corrupt / Error[/bold red] ({e})")
+        else:
+            console.print(f" [bold yellow]![/bold yellow] Event DB [cyan]{events_db}[/cyan]: [bold yellow]Missing[/bold yellow]")
+            
+        # Diagnostic summary
+        console.print("\n[bold magenta]=== DIAGNOSTIC REPORT ===[/bold magenta]")
+        if is_daemon_running and port_open and http_ok:
+            console.print("[bold green]System online and synchronized successfully.[/bold green]")
+            console.print("Mission Control web app connects to the live daemon gateway on port 8448.")
+        else:
+            console.print("[bold red]Connection issues detected.[/bold red]")
+            console.print("Please run [yellow]aetheris start[/yellow] to initialize the Hypervisor control plane.")
+        return
+
     if not controller.is_running():
         if click.confirm("Aetheris Runtime is not currently running. Would you like to start it?", default=True):
-            ctx = click.get_current_context()
             ctx.invoke(start)
         else:
             return
             
-    console.print("Starting Aetheris Mission Control Backend (WebSocket Server)...")
-    import subprocess
-    import os
-    from pathlib import Path
-    
-    ws_server_path = Path(__file__).parent.parent / "infrastructure" / "dashboard_server.py"
-    subprocess.Popen([sys.executable, str(ws_server_path)])
-    
     console.print("Starting Aetheris Mission Control UI (Vite Dev Server)...")
     # Determine the web directory
-    # main.py is located at src/aetheris/cli/main.py
-    # web is located at web/ relative to the project root
     web_dir = Path(__file__).resolve().parent.parent.parent.parent / "web"
     
     if not web_dir.exists():
@@ -334,7 +411,15 @@ def dashboard():
         subprocess.run("npm install", cwd=web_dir, shell=True)
 
     # Start Vite dev server
-    subprocess.Popen("npm run dev", cwd=web_dir, shell=True)
+    import subprocess
+    subprocess.Popen(
+        "npm run dev",
+        cwd=web_dir,
+        shell=True,
+        stdin=subprocess.DEVNULL,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL
+    )
     
     console.print("Connecting to active Aetheris control plane at [bold cyan]http://localhost:5173[/bold cyan]...")
     import webbrowser

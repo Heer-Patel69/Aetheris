@@ -92,7 +92,24 @@ class AetherisKernel:
             
         import uuid
         bus = AetherisEventBus()
-        bus.set_context(execution_id=str(uuid.uuid4()))
+        _session_id = str(uuid.uuid4())
+        bus.set_context(execution_id=_session_id)
+
+        # ── Phase 4: initialise all runtime engines for this session ─────────
+        _p4 = {}
+        try:
+            from kernel.core_phase4_patch import init_phase4_engines, emit_stage, emit_token_usage, finalize_session
+            _p4 = init_phase4_engines(str(self.workspace_path), _session_id)
+        except Exception as _p4_err:
+            sys.stderr.write(f"[Phase4] Warning: could not init Phase 4 engines: {_p4_err}\n")
+
+        def _p4_emit_stage(stage: str, status: str, duration_ms: int = 0, error: str = ""):
+            if _p4:
+                try:
+                    emit_stage(_p4, stage, status, _session_id, duration_ms, error)
+                except Exception:
+                    pass
+        # ─────────────────────────────────────────────────────────────────────
 
         self.telemetry.log_stage_start("sess-autonomous", "SESSION_START")
         self._update_dashboard("Ingesting user goal...", 5.0)
@@ -173,6 +190,7 @@ class AetherisKernel:
 
         # Step 1: Run Workspace Discovery Engine (WDE)
         print("Executing Workspace Discovery Engine...")
+        _p4_emit_stage("Discovery", "started")
         bus.publish_sync(AetherisEvent(category="TASK_STARTED", payload={"phase": "Discovery", "task": "Workspace Scan", "detail": "Executing WDE..."}))
         try:
             from intelligence.wde import WorkspaceDiscoveryEngine
@@ -180,6 +198,7 @@ class AetherisKernel:
             inventories = wde.scan()
             ekb.register_object("wde_inventories", inventories, producer="WDE")
             self.event_bus.publish("RepositoryIndexed", "WDE", inventories)
+            _p4_emit_stage("Discovery", "completed")
             bus.publish_sync(AetherisEvent(category="TASK_COMPLETED", payload={"phase": "Discovery", "task": "Workspace Scan", "detail": f"Discovered {len(inventories)} inventories"}))
         except Exception as e:
             print(f"Warning: WDE module failed: {e}. Utilizing default mock inventories.")
@@ -425,6 +444,7 @@ class AetherisKernel:
         
         # Step 3: Plan & Build task DAG
         print("Compiling task execution DAG...")
+        _p4_emit_stage("Planning", "started")
         bus.publish_sync(AetherisEvent(category="TASK_STARTED", payload={"phase": "Planning", "task": "Task DAG Compiling", "detail": "Building engineering blueprint execution queue"}))
         try:
             from kernel.planner import EngineeringPlanner
@@ -435,12 +455,14 @@ class AetherisKernel:
             
         # Trigger TaskScheduled event
         self.event_bus.publish("TaskScheduled", "Kernel", {"dag": dag})
+        _p4_emit_stage("Planning", "completed")
         bus.publish_sync(AetherisEvent(category="TASK_COMPLETED", payload={"phase": "Planning", "task": "Task DAG Compiling", "detail": f"Compiled {len(dag)} wave segments"}))
         
         self._update_dashboard("Executing tasks...", 60.0)
         
         # Step 4: Run Scheduler Loops (AEKS Parallel Schedulers)
         print("Executing task DAG...")
+        _p4_emit_stage("Implementation", "started")
         for t in dag:
             bus.publish_sync(AetherisEvent(category="TASK_STARTED", payload={"phase": "Implementation", "task": f"Build: {t}", "detail": f"Scheduling worker threads for {t}"}))
             time.sleep(0.05) # Brief delay to simulate execution ticks on UI
@@ -449,6 +471,7 @@ class AetherisKernel:
         from kernel.scheduler import RuntimeScheduler
         scheduler = RuntimeScheduler(self.workspace_path)
         scheduler_success = scheduler.execute_dag(dag)
+        _p4_emit_stage("Implementation", "completed" if scheduler_success else "failed")
         if not scheduler_success:
             self.event_bus.publish("VerificationFailed", "Scheduler", {"dag": dag})
             return False
@@ -457,6 +480,7 @@ class AetherisKernel:
         
         # Step 5: Verify DoD (AEKS DoD Engine)
         print("Evaluating Definition of Done compliance...")
+        _p4_emit_stage("Verification", "started")
         bus.publish_sync(AetherisEvent(category="TASK_STARTED", payload={"phase": "Verification", "task": "DoD Evaluation", "detail": "Executing QA regression audit suite..."}))
         from validation.dod import DoDEngine
         dod_engine = DoDEngine(str(self.workspace_path))
@@ -474,6 +498,7 @@ class AetherisKernel:
             }
         }))
         bus.publish_sync(AetherisEvent(category="TASK_COMPLETED", payload={"phase": "Verification", "task": "DoD Evaluation", "detail": "DoD evaluation complete. Readiness: 100%"}))
+        _p4_emit_stage("Verification", "completed")
         
         self.event_bus.publish("StateSaved", "Kernel", {"compliance": compliance})
         self._update_dashboard("Execution Complete.", 100.0)
@@ -552,6 +577,24 @@ class AetherisKernel:
         # Stop compression proxy daemon
         compression_cap.stop()
         
+        # ── Phase 4: emit real token + cost telemetry, finalise session ──────
+        if _p4:
+            try:
+                emit_token_usage(
+                    _p4,
+                    model_id      = token_summary.get("model", "gemini-1.5-flash"),
+                    input_tokens  = token_summary.get("input_tokens", 0),
+                    output_tokens = token_summary.get("output_tokens", 0),
+                    session_id    = _session_id,
+                )
+                _p4_emit_stage("Completion", "completed")
+                finalize_session(_p4, _session_id, "completed")
+                # Flush Engineering Insights report
+                _p4["insights"].generate_report(str(self.workspace_path))
+            except Exception as _p4_fin_err:
+                sys.stderr.write(f"[Phase4] Warning: finalize failed: {_p4_fin_err}\n")
+        # ─────────────────────────────────────────────────────────────────────
+
         self.runtime.stop()
         print("Autonomous loop completed successfully.")
         return True

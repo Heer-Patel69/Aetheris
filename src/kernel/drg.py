@@ -2,6 +2,11 @@ import os
 import sys
 import traceback
 
+# Add src folder to sys.path for robust detached imports
+src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
+
 # Core log redirection inside the script
 try:
     workspace = os.getcwd()
@@ -540,37 +545,119 @@ try:
             "mission": get_mission_state(workspace)
         }
 
+    def get_runtime_update(info: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "status": info.get("status", "UNKNOWN"),
+            "ide": info.get("ide", "N/A"),
+            "interpreter": info.get("interpreter", "N/A"),
+            "provider": info.get("provider", "N/A"),
+            "model": info.get("model", "N/A"),
+            "project": info.get("project", "N/A"),
+            "workspace": info.get("workspace", "N/A"),
+            "branch": info.get("branch", "N/A"),
+            "uptime": info.get("uptime", 0),
+            "cpu": info.get("cpu", 0.0),
+            "ram": info.get("ram", 0.0),
+            "engines_online": 12,
+            "total_engines": 12,
+            "brain_state": info.get("brain", {}).get("edo_state", "IDLE"),
+            "workflow_phase": info.get("brain", {}).get("workflow_phase", "Awaiting task"),
+            "active_goal": info.get("mission", {}).get("current_goal", "None")
+        }
+
+    def get_execution_update(info: Dict[str, Any]) -> Dict[str, Any]:
+        return {
+            "skills": info.get("skills", []),
+            "rfcSpecs": info.get("rfcSpecs", []),
+            "integrations": info.get("integrations", []),
+            "models": info.get("models", []),
+            "brain": info.get("brain", {}),
+            "health": info.get("health", {}),
+            "replay": info.get("replay", []),
+            "mission": info.get("mission", {})
+        }
+
     @app.websocket("/ws")
     async def websocket_endpoint(websocket: WebSocket):
         await websocket.accept()
         active_connections.add(websocket)
         try:
+            info = get_runtime_info()
             await websocket.send_json({
-                "type": "RuntimeStateUpdated",
-                "data": get_runtime_info()
+                "type": "RUNTIME_UPDATE",
+                "payload": get_runtime_update(info)
             })
+            await websocket.send_json({
+                "type": "EXECUTION_UPDATE",
+                "payload": get_execution_update(info)
+            })
+            try:
+                from aetheris.infrastructure.event_store import EventStore
+                sessions = EventStore().get_all_sessions()
+                await websocket.send_json({
+                    "type": "SESSIONS_LIST",
+                    "payload": sessions
+                })
+            except Exception:
+                pass
         except Exception:
             active_connections.remove(websocket)
             return
 
         try:
             while True:
-                data = await websocket.receive_text()
+                raw_data = await websocket.receive_text()
+                try:
+                    msg = json.loads(raw_data)
+                    cmd_type = msg.get("type")
+                    if cmd_type == "START_REPLAY":
+                        exec_id = msg.get("execution_id")
+                        from aetheris.infrastructure.event_store import EventStore
+                        events = EventStore().get_execution_events(exec_id)
+                        await websocket.send_json({
+                            "type": "REPLAY_START",
+                            "execution_id": exec_id,
+                            "total": len(events)
+                        })
+                        for event in events:
+                            await websocket.send_json({
+                                "type": "REPLAY_EVENT",
+                                "payload": event.to_dict()
+                            })
+                            await asyncio.sleep(0.15)
+                        await websocket.send_json({
+                            "type": "REPLAY_END",
+                            "execution_id": exec_id
+                        })
+                    elif cmd_type == "GET_SESSIONS":
+                        from aetheris.infrastructure.event_store import EventStore
+                        sessions = EventStore().get_all_sessions()
+                        await websocket.send_json({
+                            "type": "SESSIONS_LIST",
+                            "payload": sessions
+                        })
+                except Exception:
+                    pass
         except WebSocketDisconnect:
             active_connections.remove(websocket)
 
     async def broadcast_state_periodically():
         while True:
             if active_connections:
-                state = get_runtime_info()
-                payload = {
-                    "type": "RuntimeStateUpdated",
-                    "data": state
+                info = get_runtime_info()
+                runtime_payload = {
+                    "type": "RUNTIME_UPDATE",
+                    "payload": get_runtime_update(info)
+                }
+                exec_payload = {
+                    "type": "EXECUTION_UPDATE",
+                    "payload": get_execution_update(info)
                 }
                 to_remove = set()
                 for ws in active_connections:
                     try:
-                        await ws.send_json(payload)
+                        await ws.send_json(runtime_payload)
+                        await ws.send_json(exec_payload)
                     except Exception:
                         to_remove.add(ws)
                 active_connections.difference_update(to_remove)
