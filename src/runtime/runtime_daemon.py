@@ -134,6 +134,20 @@ class RuntimeDaemon:
                                 gateway=self.gateway.url)
 
         self._save_state("running")
+
+        # Start Autonomous Engineering Workspace Synchronization
+        try:
+            from kernel.workspace import WorkspaceManager
+            workspace_manager = WorkspaceManager(str(self.workspace))
+            threading.Thread(
+                target=workspace_manager.start_workspace,
+                name="AetherisWorkspaceSync",
+                daemon=True
+            ).start()
+            self.observability.info("RuntimeDaemon", "Autonomous Workspace Synchronization started.")
+        except Exception as e:
+            self.observability.error("RuntimeDaemon", f"Failed to start WorkspaceManager: {e}")
+
         return True
 
     # ── emit convenience ──────────────────────────────────────────────────────

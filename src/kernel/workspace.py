@@ -34,7 +34,7 @@ class WorkspaceManager:
         print("[Workspace] Starting Autonomous Engineering Synchronization...")
         
         try:
-            from src.runtime.synchronizer import EngineeringSynchronizer
+            from runtime.synchronizer import EngineeringSynchronizer
             synchronizer = EngineeringSynchronizer(self.project_root)
             synchronizer.start()
         except ImportError as e:

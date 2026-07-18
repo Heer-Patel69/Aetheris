@@ -1,11 +1,11 @@
 import os
 import time
 import threading
-from src.kernel.watcher import ProjectWatcher
-from src.intelligence.discovery import ProjectDiscovery
-from src.intelligence.documentation_generator import DocumentationGenerator
-from src.intelligence.diagram_generator import DiagramGenerator
-from src.intelligence.knowledge_graph import KnowledgeGraph
+from kernel.watcher import ProjectWatcher
+from intelligence.discovery import ProjectDiscovery
+from intelligence.documentation_generator import DocumentationGenerator
+from intelligence.diagram_generator import DiagramGenerator
+from intelligence.knowledge_graph import KnowledgeGraph
 
 class EngineeringSynchronizer:
     def __init__(self, project_root: str):
@@ -63,7 +63,7 @@ class EngineeringSynchronizer:
         """Runs the full synchronization pipeline."""
         # 1. Rebuild Unified Skill Registry if any skills/rfcs/integrations changed
         try:
-            from src.orchestration.registry_cache import RegistryCache
+            from orchestration.registry_cache import RegistryCache
             registry = RegistryCache(self.project_root)
             registry.load_registry(force_rebuild=True)
         except Exception as e:
