@@ -61,16 +61,24 @@ class EngineeringSynchronizer:
 
     def _sync_all(self):
         """Runs the full synchronization pipeline."""
-        # 1. Update Knowledge Graph
+        # 1. Rebuild Unified Skill Registry if any skills/rfcs/integrations changed
+        try:
+            from src.orchestration.registry_cache import RegistryCache
+            registry = RegistryCache(self.project_root)
+            registry.load_registry(force_rebuild=True)
+        except Exception as e:
+            print(f"[Synchronizer] Failed to rebuild Skill Registry: {e}")
+
+        # 2. Update Knowledge Graph
         self.kg.update()
         
-        # 2. Update Documentation
+        # 3. Update Documentation
         self.doc_gen.generate_all(self.discovery.get_state(), self.kg.get_graph())
         
-        # 3. Update Diagrams
+        # 4. Update Diagrams
         self.diag_gen.generate_all(self.kg.get_graph())
         
-        # 4. Update Runtime Memory (Progress, Journal, Timeline, etc)
+        # 5. Update Runtime Memory (Progress, Journal, Timeline, etc)
         self._update_runtime_memory()
         
         print("[Synchronizer] Synchronization complete.")
